@@ -5,12 +5,12 @@
     "githubUser": "lwansbrough",
     "githubRepo": "react-native-camera",
     "description": "A <Camera> element for React Native",
-    "latestVersion": "0.0.1",
-    "versions": 1,
+    "latestVersion": "0.0.2",
+    "versions": 2,
     "homepage": "https://github.com/lwansbrough/react-native-camera",
     "created": "2015-04-01T00:52:59.934Z",
-    "modified": "2015-04-01T00:52:59.934Z",
-    "stars": 29,
+    "modified": "2015-04-01T17:33:43.808Z",
+    "stars": 34,
     "issues": 2
   },
   {
@@ -24,7 +24,7 @@
     "homepage": "https://github.com/brentvatne/react-native-linear-gradient",
     "created": "2015-03-31T17:45:13.484Z",
     "modified": "2015-04-01T00:48:44.754Z",
-    "stars": 8,
+    "stars": 9,
     "issues": 0
   },
   {
@@ -38,7 +38,7 @@
     "homepage": "https://github.com/Kureev/react-native-navbar",
     "created": "2015-03-30T22:41:22.851Z",
     "modified": "2015-04-01T10:39:46.671Z",
-    "stars": 35,
+    "stars": 37,
     "issues": 2
   },
   {
@@ -52,7 +52,7 @@
     "homepage": "https://github.com/jsdf/react-native-refreshable-listview",
     "created": "2015-03-31T16:05:41.252Z",
     "modified": "2015-03-31T16:05:41.252Z",
-    "stars": 17,
+    "stars": 18,
     "issues": 0
   },
   {
@@ -66,8 +66,8 @@
     "homepage": "https://github.com/brentvatne/react-native-video",
     "created": "2015-03-31T05:09:13.105Z",
     "modified": "2015-03-31T06:30:09.213Z",
-    "stars": 21,
-    "issues": 1
+    "stars": 22,
+    "issues": 0
   },
   {
     "name": "tcomb-form-native",
