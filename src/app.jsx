@@ -45,7 +45,7 @@ export var App = React.createClass({
     };
     return (
       <div style={styles.container}>
-        <NavBar title={title} height={this.remCalc(55)} />
+        <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
           <h2 style={styles.title}>A catalog of React Native components</h2>
@@ -58,6 +58,10 @@ export var App = React.createClass({
         </div>
       </div>
     );
+  },
+  handleSearch(value) {
+    let filtered = components.filter((c) => c.name.indexOf(value) != -1);
+    this.setState({ components: filtered });
   }
 });
 

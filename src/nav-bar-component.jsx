@@ -11,6 +11,12 @@ let NavBar = React.createClass({
   propTypes: {
     title: React.PropTypes.string.isRequired,
     height: React.PropTypes.string.isRequired,
+    onSearch: React.PropTypes.func
+  },
+  getDefaultProps() {
+    return {
+      onSearch() {}
+    };
   },
   render() {
     let styles = {
@@ -66,9 +72,11 @@ let NavBar = React.createClass({
         </div>
         <div style={styles.center}>
           <input
+            ref="search"
             style={styles.search}
             type="text"
             placeholder="Search"
+            onKeyUp={this.handleKeyUp}
           />
         </div>
         <a href="/submit" style={styles.link}>
@@ -76,6 +84,11 @@ let NavBar = React.createClass({
         </a>
       </div>
     );
+  },
+  handleKeyUp() {
+    var field = React.findDOMNode(this.refs.search);
+    var value = field.value.trim();
+    this.props.onSearch(value);
   }
 });
 
