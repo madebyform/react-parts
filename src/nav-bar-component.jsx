@@ -33,7 +33,13 @@ let NavBar = React.createClass({
       titleArea: {
         flex: 1,
         lineHeight: this.props.height,
-        minWidth: this.remCalc(150)
+        minWidth: this.remCalc(180)
+      },
+      logo: {
+        height: "1em",
+        paddingRight: this.remCalc(10),
+        verticalAlign: "-0.05em",
+        width: "1em"
       },
       title: {
         fontSize: this.remCalc(26),
@@ -68,6 +74,7 @@ let NavBar = React.createClass({
     return (
       <div className="NavBar" style={styles.container}>
         <div style={styles.titleArea}>
+          <img style={styles.logo} src="/logo.svg" alt="Logo" />
           <span style={styles.title}>{this.props.title}</span>
         </div>
         <div style={styles.center}>
