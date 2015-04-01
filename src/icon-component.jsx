@@ -43,7 +43,8 @@ let Icon = React.createClass({
       fill: "currentcolor",
       margin: "0 .1em",
       verticalAlign: "-0.05em",
-      width: this.props.size // CSS instead of the width attr to support non-pixel units
+      width: this.props.size, // CSS instead of the width attr to support non-pixel units
+      height: this.props.size
     };
     return (
       <svg viewBox="0 0 1024 896" preserveAspectRatio="xMidYMid meet" fit
