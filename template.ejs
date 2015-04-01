@@ -24,6 +24,12 @@
       height: 100%;
       min-height: 100%;
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    /* Temporary hack for Safari */
+    .NavBar, .ComponentItem-header {
+      display: -webkit-box;
+      -webkit-align-items: center;
     }
 
     ::-webkit-input-placeholder {

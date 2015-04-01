@@ -38,8 +38,8 @@
     "homepage": "https://github.com/Kureev/react-native-navbar",
     "created": "2015-03-30T22:41:22.851Z",
     "modified": "2015-04-01T10:39:46.671Z",
-    "stars": 37,
-    "issues": 2
+    "stars": 38,
+    "issues": 4
   },
   {
     "name": "react-native-refreshable-listview",
@@ -80,7 +80,7 @@
     "homepage": "https://github.com/gcanti/tcomb-form-native",
     "created": "2015-03-28T19:05:27.793Z",
     "modified": "2015-03-30T08:13:27.819Z",
-    "stars": 200,
+    "stars": 201,
     "issues": 0
   }
 ]

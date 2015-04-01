@@ -35,6 +35,7 @@ let ComponentItem = React.createClass({
       },
       title: {
         flex: 1,
+        WebkitBoxFlex: 1,
         margin: 0
       },
       name: {
@@ -57,8 +58,8 @@ let ComponentItem = React.createClass({
       }
     };
     return (
-      <div style={styles.container}>
-        <div style={styles.header}>
+      <div className="ComponentItem" style={styles.container}>
+        <div className="ComponentItem-header" style={styles.header}>
           <h3 style={styles.title}>
             <a style={styles.name} href={this.props.homepage}>
               {this.props.name}

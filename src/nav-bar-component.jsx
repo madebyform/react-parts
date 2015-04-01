@@ -28,9 +28,10 @@ let NavBar = React.createClass({
         color: "#fff",
         display: "flex",
         height: this.props.height,
-        padding: this.remCalc(20)
+        padding: this.remCalc(0, 20)
       },
       titleArea: {
+        WebkitBoxFlex: 1,
         flex: 1,
         lineHeight: this.props.height,
         minWidth: this.remCalc(180)
@@ -47,6 +48,7 @@ let NavBar = React.createClass({
       },
       center: {
         alignItems: "center",
+        WebkitBoxFlex: 1,
         flex: 1,
         flexGrow: 4,
         justifyContent: "center",
@@ -65,8 +67,11 @@ let NavBar = React.createClass({
       },
       link: {
         color: "#fff",
+        WebkitBoxFlex: 1,
         flex: 1,
+        margin: this.remCalc(12, 0),
         minWidth: this.remCalc(180),
+        display: "block",
         textAlign: "right",
         textDecoration: "none"
       }
