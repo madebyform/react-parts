@@ -67,7 +67,7 @@ let ComponentItem = React.createClass({
             <small>
               <span style={styles.author}>by {this.props.githubUser}</span>
               <time dateTime={this.props.modified} style={styles.timestamp}>
-                {timeago(this.props.modified)}
+                updated {timeago(this.props.modified)}
               </time>
             </small>
           </h3>
