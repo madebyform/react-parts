@@ -4,6 +4,10 @@
     "repo": "lwansbrough/react-native-camera"
   },
   {
+    "name": "react-native-htmlview",
+    "repo": "jsdf/react-native-htmlview"
+  },
+  {
     "name": "react-native-linear-gradient",
     "repo": "brentvatne/react-native-linear-gradient"
   },
