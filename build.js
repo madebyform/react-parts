@@ -24,7 +24,7 @@ global.components = components;
 
 // Require and wrap the React main component in a factory before calling it
 // This is necessary because we'll do `App()` instead of <App />
-var App = React.createFactory(require("./app.jsx").App);
+var App = React.createFactory(require("./src/app.jsx").App);
 
 // Render the app and send the markup for faster page loads and SEO
 // On the client, React will preserve the markup and only attach event handlers
@@ -50,6 +50,8 @@ function fetchPackageInfo(component, callback) {
 
     callback(error, {
       name: component.name,
+      githubUser: component.repo.split("/")[0],
+      githubRepo: component.repo.split("/")[1],
       description: data.description,
       latestVersion: latestVersion,
       versions: Object.keys(data.versions).length,
