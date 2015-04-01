@@ -74,7 +74,7 @@ let NavBar = React.createClass({
     return (
       <div className="NavBar" style={styles.container}>
         <div style={styles.titleArea}>
-          <img style={styles.logo} src="/logo.svg" alt="Logo" />
+          <img style={styles.logo} src="logo.svg" alt="Logo" />
           <span style={styles.title}>{this.props.title}</span>
         </div>
         <div style={styles.center}>
