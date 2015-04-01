@@ -14,6 +14,20 @@
     "issues": 2
   },
   {
+    "name": "react-native-htmlview",
+    "repo": "jsdf/react-native-htmlview",
+    "githubUser": "jsdf",
+    "githubRepo": "react-native-htmlview",
+    "description": "A component which renders HTML content as native views",
+    "latestVersion": "0.1.2",
+    "versions": 1,
+    "homepage": "https://github.com/jsdf/react-native-htmlview",
+    "created": "2015-04-01T03:21:01.292Z",
+    "modified": "2015-04-01T03:21:01.292Z",
+    "stars": 1,
+    "issues": 0
+  },
+  {
     "name": "react-native-linear-gradient",
     "repo": "brentvatne/react-native-linear-gradient",
     "githubUser": "brentvatne",
@@ -33,13 +47,13 @@
     "githubUser": "Kureev",
     "githubRepo": "react-native-navbar",
     "description": "Simple customizable navbar component for react-native",
-    "latestVersion": "0.2.0",
-    "versions": 2,
+    "latestVersion": "0.2.1",
+    "versions": 3,
     "homepage": "https://github.com/Kureev/react-native-navbar",
     "created": "2015-03-30T22:41:22.851Z",
-    "modified": "2015-04-01T10:39:46.671Z",
+    "modified": "2015-04-01T22:07:43.906Z",
     "stars": 38,
-    "issues": 4
+    "issues": 2
   },
   {
     "name": "react-native-refreshable-listview",
@@ -52,7 +66,7 @@
     "homepage": "https://github.com/jsdf/react-native-refreshable-listview",
     "created": "2015-03-31T16:05:41.252Z",
     "modified": "2015-03-31T16:05:41.252Z",
-    "stars": 18,
+    "stars": 20,
     "issues": 0
   },
   {
