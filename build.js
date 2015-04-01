@@ -95,6 +95,10 @@ async.map(components, fetchPackageInfo, function(error, data) {
       return Object.assign(component, data[index]);
     });
 
+    // Persist the new data
+    var str = JSON.stringify(components, null, '  '); // \t for pretty-print
+    fs.writeFile("components.json", str);
+
     var html = render("template.ejs", new App(), components);
     fs.writeFileSync("index.html", html);
   });
