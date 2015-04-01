@@ -1,0 +1,26 @@
+[
+  {
+    "name": "react-native-camera",
+    "repo": "lwansbrough/react-native-camera"
+  },
+  {
+    "name": "react-native-linear-gradient",
+    "repo": "brentvatne/react-native-linear-gradient"
+  },
+  {
+    "name": "react-native-navbar",
+    "repo": "Kureev/react-native-navbar"
+  },
+  {
+    "name": "react-native-refreshable-listview",
+    "repo": "jsdf/react-native-refreshable-listview"
+  },
+  {
+    "name": "react-native-video",
+    "repo": "brentvatne/react-native-video"
+  },
+  {
+    "name": "tcomb-form-native",
+    "repo": "gcanti/tcomb-form-native"
+  }
+]
