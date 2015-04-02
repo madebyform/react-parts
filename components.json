@@ -10,8 +10,22 @@
     "homepage": "https://github.com/lwansbrough/react-native-camera",
     "created": "2015-04-01T00:52:59.934Z",
     "modified": "2015-04-01T17:33:43.808Z",
-    "stars": 34,
+    "stars": 36,
     "issues": 2
+  },
+  {
+    "name": "react-native-carousel",
+    "repo": "nick/react-native-carousel",
+    "githubUser": "nick",
+    "githubRepo": "react-native-carousel",
+    "description": "Simple carousel component for react-native",
+    "latestVersion": "0.1.0",
+    "versions": 1,
+    "homepage": "https://github.com/nick/react-native-carousel",
+    "created": "2015-04-01T21:31:44.659Z",
+    "modified": "2015-04-01T21:31:44.659Z",
+    "stars": 1,
+    "issues": 0
   },
   {
     "name": "react-native-htmlview",
@@ -80,7 +94,7 @@
     "homepage": "https://github.com/brentvatne/react-native-video",
     "created": "2015-03-31T05:09:13.105Z",
     "modified": "2015-03-31T06:30:09.213Z",
-    "stars": 23,
+    "stars": 24,
     "issues": 1
   },
   {
@@ -94,7 +108,7 @@
     "homepage": "https://github.com/gcanti/tcomb-form-native",
     "created": "2015-03-28T19:05:27.793Z",
     "modified": "2015-03-30T08:13:27.819Z",
-    "stars": 201,
+    "stars": 202,
     "issues": 0
   }
 ]
