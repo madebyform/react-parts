@@ -1,114 +1,38 @@
 [
   {
     "name": "react-native-camera",
-    "repo": "lwansbrough/react-native-camera",
-    "githubUser": "lwansbrough",
-    "githubRepo": "react-native-camera",
-    "description": "A Camera element for React Native",
-    "latestVersion": "0.0.3",
-    "versions": 3,
-    "homepage": "https://github.com/lwansbrough/react-native-camera",
-    "created": "2015-04-01T00:52:59.934Z",
-    "modified": "2015-04-02T09:49:28.093Z",
-    "stars": 51,
-    "issues": 2
+    "repo": "lwansbrough/react-native-camera"
   },
   {
     "name": "react-native-carousel",
-    "repo": "nick/react-native-carousel",
-    "githubUser": "nick",
-    "githubRepo": "react-native-carousel",
-    "description": "Simple carousel component for react-native",
-    "latestVersion": "0.1.0",
-    "versions": 1,
-    "homepage": "https://github.com/nick/react-native-carousel",
-    "created": "2015-04-01T21:31:44.659Z",
-    "modified": "2015-04-01T21:31:44.659Z",
-    "stars": 3,
-    "issues": 0
+    "repo": "nick/react-native-carousel"
   },
   {
     "name": "react-native-htmlview",
-    "repo": "jsdf/react-native-htmlview",
-    "githubUser": "jsdf",
-    "githubRepo": "react-native-htmlview",
-    "description": "A component which renders HTML content as native views",
-    "latestVersion": "0.1.2",
-    "versions": 1,
-    "homepage": "https://github.com/jsdf/react-native-htmlview",
-    "created": "2015-04-01T03:21:01.292Z",
-    "modified": "2015-04-01T03:21:01.292Z",
-    "stars": 2,
-    "issues": 0
+    "repo": "jsdf/react-native-htmlview"
   },
   {
     "name": "react-native-linear-gradient",
-    "repo": "brentvatne/react-native-linear-gradient",
-    "githubUser": "brentvatne",
-    "githubRepo": "react-native-linear-gradient",
-    "description": "A <LinearGradient> element for react-native",
-    "latestVersion": "0.1.2",
-    "versions": 3,
-    "homepage": "https://github.com/brentvatne/react-native-linear-gradient",
-    "created": "2015-03-31T17:45:13.484Z",
-    "modified": "2015-04-01T00:48:44.754Z",
-    "stars": 12,
-    "issues": 0
+    "repo": "brentvatne/react-native-linear-gradient"
+  },
+  {
+    "name": "react-native-looped-carousel",
+    "repo": "appintheair/react-native-looped-carousel"
   },
   {
     "name": "react-native-navbar",
-    "repo": "Kureev/react-native-navbar",
-    "githubUser": "Kureev",
-    "githubRepo": "react-native-navbar",
-    "description": "Simple customizable navbar component for react-native",
-    "latestVersion": "0.2.1",
-    "versions": 3,
-    "homepage": "https://github.com/Kureev/react-native-navbar",
-    "created": "2015-03-30T22:41:22.851Z",
-    "modified": "2015-04-01T22:07:43.906Z",
-    "stars": 42,
-    "issues": 2
+    "repo": "Kureev/react-native-navbar"
   },
   {
     "name": "react-native-refreshable-listview",
-    "repo": "jsdf/react-native-refreshable-listview",
-    "githubUser": "jsdf",
-    "githubRepo": "react-native-refreshable-listview",
-    "description": "A pull-to-refresh ListView which shows a loading spinner while your data reloads",
-    "latestVersion": "0.1.1",
-    "versions": 1,
-    "homepage": "https://github.com/jsdf/react-native-refreshable-listview",
-    "created": "2015-03-31T16:05:41.252Z",
-    "modified": "2015-03-31T16:05:41.252Z",
-    "stars": 25,
-    "issues": 1
+    "repo": "jsdf/react-native-refreshable-listview"
   },
   {
     "name": "react-native-video",
-    "repo": "brentvatne/react-native-video",
-    "githubUser": "brentvatne",
-    "githubRepo": "react-native-video",
-    "description": "A <Video> element for react-native",
-    "latestVersion": "0.1.4",
-    "versions": 4,
-    "homepage": "https://github.com/brentvatne/react-native-video",
-    "created": "2015-03-31T05:09:13.105Z",
-    "modified": "2015-03-31T06:30:09.213Z",
-    "stars": 26,
-    "issues": 1
+    "repo": "brentvatne/react-native-video"
   },
   {
     "name": "tcomb-form-native",
-    "repo": "gcanti/tcomb-form-native",
-    "githubUser": "gcanti",
-    "githubRepo": "tcomb-form-native",
-    "description": "react-native powered UI library for developing forms writing less code",
-    "latestVersion": "0.1.4",
-    "versions": 5,
-    "homepage": "https://github.com/gcanti/tcomb-form-native",
-    "created": "2015-03-28T19:05:27.793Z",
-    "modified": "2015-04-02T10:45:32.792Z",
-    "stars": 208,
-    "issues": 0
+    "repo": "gcanti/tcomb-form-native"
   }
 ]

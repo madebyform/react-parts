@@ -10,7 +10,7 @@
     "homepage": "https://github.com/lwansbrough/react-native-camera",
     "created": "2015-04-01T00:52:59.934Z",
     "modified": "2015-04-02T09:49:28.093Z",
-    "stars": 65,
+    "stars": 67,
     "issues": 3
   },
   {
@@ -24,7 +24,7 @@
     "homepage": "https://github.com/nick/react-native-carousel",
     "created": "2015-04-01T21:31:44.659Z",
     "modified": "2015-04-01T21:31:44.659Z",
-    "stars": 8,
+    "stars": 9,
     "issues": 1
   },
   {
@@ -56,6 +56,20 @@
     "issues": 0
   },
   {
+    "name": "react-native-looped-carousel",
+    "repo": "appintheair/react-native-looped-carousel",
+    "githubUser": "appintheair",
+    "githubRepo": "react-native-looped-carousel",
+    "description": "Looped carousel for React Native",
+    "latestVersion": "0.0.3",
+    "versions": 3,
+    "homepage": "https://github.com/appintheair/react-native-looped-carousel",
+    "created": "2015-04-02T19:51:54.149Z",
+    "modified": "2015-04-02T20:46:07.515Z",
+    "stars": 3,
+    "issues": 0
+  },
+  {
     "name": "react-native-navbar",
     "repo": "Kureev/react-native-navbar",
     "githubUser": "Kureev",
@@ -66,7 +80,7 @@
     "homepage": "https://github.com/Kureev/react-native-navbar",
     "created": "2015-03-30T22:41:22.851Z",
     "modified": "2015-04-01T22:07:43.906Z",
-    "stars": 48,
+    "stars": 49,
     "issues": 2
   },
   {
@@ -80,7 +94,7 @@
     "homepage": "https://github.com/jsdf/react-native-refreshable-listview",
     "created": "2015-03-31T16:05:41.252Z",
     "modified": "2015-03-31T16:05:41.252Z",
-    "stars": 29,
+    "stars": 30,
     "issues": 2
   },
   {
@@ -108,7 +122,7 @@
     "homepage": "https://github.com/gcanti/tcomb-form-native",
     "created": "2015-03-28T19:05:27.793Z",
     "modified": "2015-04-02T10:45:32.792Z",
-    "stars": 220,
-    "issues": 0
+    "stars": 222,
+    "issues": 1
   }
 ]
