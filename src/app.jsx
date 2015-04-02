@@ -41,6 +41,11 @@ export var App = React.createClass({
         fontWeight: 200,
         margin: this.remCalc(30, 0),
         textAlign: "center"
+      },
+      author: {
+        color: "#3949ab",
+        fontWeight: "bold",
+        textDecoration: "none"
       }
     };
     return (
@@ -53,7 +58,8 @@ export var App = React.createClass({
 
           <p style={styles.footer}>
             React, React Native and logos are copyright of Facebook.
-            This page is not affiliated with Facebook.
+            This page is not affiliated with Facebook.<br/>
+            <a style={styles.author} href="http://madebyform.com">Made by Form</a>
           </p>
         </div>
       </div>
