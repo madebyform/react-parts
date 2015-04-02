@@ -24,6 +24,10 @@
     "repo": "brentvatne/react-native-linear-gradient"
   },
   {
+    "name": "react-native-modal",
+    "repo": "brentvatne/react-native-modal"
+  },
+  {
     "name": "react-native-navbar",
     "repo": "Kureev/react-native-navbar"
   },
