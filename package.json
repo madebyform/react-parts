@@ -17,6 +17,7 @@
   "scripts": {
     "build": "npm run build:client && npm run build:index",
     "build:index": "node build.js",
+    "fetch": "node fetch.js",
     "build:client": "browserify src/app.jsx -t babelify --outfile app.js && uglifyjs app.js -o app.min.js",
     "watch:client": "watchify src/app.jsx -t babelify --outfile app.min.js"
   }
