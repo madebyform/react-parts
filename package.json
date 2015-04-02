@@ -11,7 +11,8 @@
     "timeago": "^0.2.0"
   },
   "devDependencies": {
-    "uglifyjs": "^2.4.10"
+    "uglifyjs": "^2.4.10",
+    "watchify": "^2.4.0"
   },
   "scripts": {
     "build": "npm run build:client && npm run build:index",
