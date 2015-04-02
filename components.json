@@ -12,6 +12,10 @@
     "repo": "nick/react-native-carousel"
   },
   {
+    "name": "react-native-htmltext",
+    "repo": "siuying/react-native-htmltext"
+  },
+  {
     "name": "react-native-htmlview",
     "repo": "jsdf/react-native-htmlview"
   },
