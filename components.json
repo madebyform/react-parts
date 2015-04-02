@@ -4,6 +4,10 @@
     "repo": "lwansbrough/react-native-camera"
   },
   {
+    "name": "react-native-carousel",
+    "repo": "nick/react-native-carousel"
+  },
+  {
     "name": "react-native-htmlview",
     "repo": "jsdf/react-native-htmlview"
   },
