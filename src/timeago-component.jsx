@@ -30,10 +30,10 @@ let TimeAgo = React.createClass({
         paddingLeft: this.remCalc(8)
       },
     };
-    let content = (this.state.timeAgo === null) ? `updated ${this.state.timeAgo}` : null;
+
     return (
       <time dateTime={this.props.dateTime} style={styles.timestamp}>
-        {content}
+        {this.state.timeAgo && `updated ${this.state.timeAgo}`}
       </time>
     );
   }
