@@ -1,10 +1,10 @@
 /*jshint esnext:true, browserify:true, unused:true */
 'use strict';
 
-import timeago from 'timeago';
 import React from 'react/addons';
 import StylingMixin from './styling-mixin.jsx';
 import Icon from './icon-component.jsx';
+import TimeAgo from './timeago-component.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;
 
@@ -66,9 +66,7 @@ let ComponentItem = React.createClass({
             </a>
             <small>
               <span style={styles.author}>by {this.props.githubUser}</span>
-              <time dateTime={this.props.modified} style={styles.timestamp}>
-                updated {timeago(this.props.modified)}
-              </time>
+              <TimeAgo dateTime={this.props.modified} />
             </small>
           </h3>
           <div style={styles.stats}>
