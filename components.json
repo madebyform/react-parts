@@ -1,5 +1,9 @@
 [
   {
+    "name": "react-native-looped-carousel",
+    "repo": "appintheair/react-native-looped-carousel"
+  },
+  {
     "name": "react-native-camera",
     "repo": "lwansbrough/react-native-camera"
   },
