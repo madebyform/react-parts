@@ -17,11 +17,6 @@ let TimeAgo = React.createClass({
       timeAgo: null
     };
   },
-  componentWillMount() {
-    this.setState({
-      timeAgo: timeago(this.props.dateTime),
-    });
-  },
   componentDidMount() {
     this.setState({
       timeAgo: timeago(this.props.dateTime),
@@ -35,9 +30,10 @@ let TimeAgo = React.createClass({
         paddingLeft: this.remCalc(8)
       },
     };
+    let content = (this.state.timeAgo === null) ? `updated ${this.state.timeAgo}` : null;
     return (
       <time dateTime={this.props.dateTime} style={styles.timestamp}>
-        updated {this.state.timeAgo}
+        {content}
       </time>
     );
   }
