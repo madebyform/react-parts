@@ -10,7 +10,7 @@
     "homepage": "https://github.com/lwansbrough/react-native-camera",
     "created": "2015-04-01T00:52:59.934Z",
     "modified": "2015-04-02T09:49:28.093Z",
-    "stars": 67,
+    "stars": 68,
     "issues": 3
   },
   {
@@ -26,6 +26,20 @@
     "modified": "2015-04-01T21:31:44.659Z",
     "stars": 9,
     "issues": 1
+  },
+  {
+    "name": "react-native-htmltext",
+    "repo": "siuying/react-native-htmltext",
+    "githubUser": "siuying",
+    "githubRepo": "react-native-htmltext",
+    "description": "Use HTML like markup to create stylized text in react-native.",
+    "latestVersion": "0.1.2",
+    "versions": 3,
+    "homepage": "https://github.com/siuying/react-native-htmltext",
+    "created": "2015-03-30T16:26:52.711Z",
+    "modified": "2015-03-31T16:54:50.830Z",
+    "stars": 2,
+    "issues": 0
   },
   {
     "name": "react-native-htmlview",
@@ -66,8 +80,22 @@
     "homepage": "https://github.com/appintheair/react-native-looped-carousel",
     "created": "2015-04-02T19:51:54.149Z",
     "modified": "2015-04-02T20:46:07.515Z",
-    "stars": 4,
+    "stars": 5,
     "issues": 0
+  },
+  {
+    "name": "react-native-modal",
+    "repo": "brentvatne/react-native-modal",
+    "githubUser": "brentvatne",
+    "githubRepo": "react-native-modal",
+    "description": "A <Modal /> component for react-native",
+    "latestVersion": "0.0.4",
+    "versions": 4,
+    "homepage": "https://github.com/brentvatne/react-native-modal",
+    "created": "2015-04-01T17:37:12.456Z",
+    "modified": "2015-04-02T17:39:47.388Z",
+    "stars": 8,
+    "issues": 1
   },
   {
     "name": "react-native-navbar",

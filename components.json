@@ -8,6 +8,10 @@
     "repo": "nick/react-native-carousel"
   },
   {
+    "name": "react-native-htmltext",
+    "repo": "siuying/react-native-htmltext"
+  },
+  {
     "name": "react-native-htmlview",
     "repo": "jsdf/react-native-htmlview"
   },
@@ -18,6 +22,10 @@
   {
     "name": "react-native-looped-carousel",
     "repo": "appintheair/react-native-looped-carousel"
+  },
+  {
+    "name": "react-native-modal",
+    "repo": "brentvatne/react-native-modal"
   },
   {
     "name": "react-native-navbar",
