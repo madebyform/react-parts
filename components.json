@@ -30,9 +30,5 @@
   {
     "name": "tcomb-form-native",
     "repo": "gcanti/tcomb-form-native"
-  },
-  {
-  	"name" : "react-native-icons",
-  	"repo" : "corymsmith/react-native-icons"
   }
 ]
