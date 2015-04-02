@@ -19,7 +19,7 @@ let TimeAgo = React.createClass({
   },
   componentWillMount() {
     this.setState({
-      timeAgo: this.props.dateTime,
+      timeAgo: timeago(this.props.dateTime),
     });
   },
   componentDidMount() {
