@@ -42,5 +42,9 @@
   {
     "name": "tcomb-form-native",
     "repo": "gcanti/tcomb-form-native"
+  },
+  {
+    "name": "sidemnu",
+    "repo": "khanghoang/RNSideMenu"
   }
 ]
