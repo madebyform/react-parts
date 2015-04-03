@@ -5,6 +5,7 @@
 // This will be the only file where JSX and ES6 features are not supported
 require('babel/register');
 
+var fs = require('fs');
 var React = require('react');
 var express = require('express');
 var ejs = require('ejs');
@@ -17,18 +18,40 @@ server.set('view engine', 'ejs');
 // This is necessary because we'll do `App()` instead of <App />
 var App = React.createFactory(require("./src/app.jsx").App);
 
+// Redirect the user to the list of native components for iOS
 server.get('/', function(req, res) {
-  // The catalog of react packages
-  var components = require('./data.json');
+  res.redirect('/native-ios');
+});
 
-  // Render the app and send the markup for faster page loads and SEO
-  // On the client, React will preserve the markup and only attach event handlers
-  var app = new App({ components: components });
-  var output = React.renderToString(app);
+// List of native components for iOS
+server.get('/native-ios', function(req, res) {
+  fs.readFile('./data/react-native-ios.json', function(err, data) {
+    // The catalog of react packages
+    var components = JSON.parse(data);
 
-  res.render('template', {
-    output: output,
-    components: components
+    // Render the app and send the markup for faster page loads and SEO
+    // On the client, React will preserve the markup and only attach event handlers
+    var app = new App({ components: components });
+    var output = React.renderToString(app);
+
+    res.render('template', {
+      output: output,
+      components: components
+    });
+  });
+});
+
+// List of components for the web
+server.get('/web', function(req, res) {
+  fs.readFile('./data/react.json', function(err, data) {
+    var components = JSON.parse(data);
+    var app = new App({ components: components });
+    var output = React.renderToString(app);
+
+    res.render('template', {
+      output: output,
+      components: components
+    });
   });
 });
 

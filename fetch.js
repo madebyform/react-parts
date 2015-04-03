@@ -5,9 +5,14 @@
 require('babel/register');
 
 var fs = require('fs');
+var path = require('path');
 var request = require('request');
-var components = require('./components.json');
 var keys = require('./keys.json');
+
+// Pass the components list you which to update "react" or "react-native-ios"
+var componentsType = process.argv[2] || "react-native-ios";
+var componentsFile = path.join(__dirname, 'components', componentsType + '.json');
+var components = require(componentsFile);
 
 var endpoints = {
   npm: "https://registry.npmjs.com/",
@@ -98,5 +103,5 @@ Promise.all(promises).then(function(values) {
   console.log("\nsuccess!!");
   // Persist the new data
   var str = JSON.stringify(components, null, '  '); // '  ' for indentation
-  fs.writeFile("data.json", str);
+  fs.writeFile(componentsFile, str);
 });

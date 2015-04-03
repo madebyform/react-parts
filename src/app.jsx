@@ -55,7 +55,7 @@ export var App = React.createClass({
         <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
-          <h2 style={styles.title}>A catalog of React Native components</h2>
+          <h2 style={styles.title}>A catalog of React components</h2>
           <ComponentList components={list} />
 
           <p style={styles.footer}>

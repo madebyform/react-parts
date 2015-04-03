@@ -1,0 +1,17 @@
+[
+  {
+    "name": "react",
+    "repo": "facebook/react",
+    "stars": 19588,
+    "issues": 493,
+    "githubUser": "facebook",
+    "githubRepo": "react",
+    "description": "React is a JavaScript library for building user interfaces.",
+    "latestVersion": "0.13.1",
+    "versions": 44,
+    "homepage": "https://github.com/facebook/react/tree/master/npm-react",
+    "created": "2011-10-26T17:46:21.942Z",
+    "modified": "2015-03-17T00:01:25.829Z",
+    "downloads": 895015
+  }
+]
