@@ -10,8 +10,9 @@
     "homepage": "https://github.com/lwansbrough/react-native-camera",
     "created": "2015-04-01T00:52:59.934Z",
     "modified": "2015-04-03T01:07:51.629Z",
-    "stars": 85,
-    "issues": 3
+    "stars": 86,
+    "issues": 3,
+    "downloads": 80
   },
   {
     "name": "react-native-carousel",
@@ -25,11 +26,14 @@
     "created": "2015-04-01T21:31:44.659Z",
     "modified": "2015-04-01T21:31:44.659Z",
     "stars": 12,
-    "issues": 1
+    "issues": 1,
+    "downloads": 26
   },
   {
     "name": "react-native-htmltext",
     "repo": "siuying/react-native-htmltext",
+    "stars": 4,
+    "issues": 0,
     "githubUser": "siuying",
     "githubRepo": "react-native-htmltext",
     "description": "Use HTML like markup to create stylized text in react-native.",
@@ -38,8 +42,7 @@
     "homepage": "https://github.com/siuying/react-native-htmltext",
     "created": "2015-03-30T16:26:52.711Z",
     "modified": "2015-03-31T16:54:50.830Z",
-    "stars": 4,
-    "issues": 0
+    "downloads": 68
   },
   {
     "name": "react-native-htmlview",
@@ -53,7 +56,8 @@
     "created": "2015-04-01T03:21:01.292Z",
     "modified": "2015-04-01T03:21:01.292Z",
     "stars": 8,
-    "issues": 0
+    "issues": 0,
+    "downloads": 26
   },
   {
     "name": "react-native-linear-gradient",
@@ -67,7 +71,8 @@
     "created": "2015-03-31T17:45:13.484Z",
     "modified": "2015-04-01T00:48:44.754Z",
     "stars": 16,
-    "issues": 0
+    "issues": 0,
+    "downloads": 81
   },
   {
     "name": "react-native-looped-carousel",
@@ -80,12 +85,15 @@
     "homepage": "https://github.com/appintheair/react-native-looped-carousel",
     "created": "2015-04-02T19:51:54.149Z",
     "modified": "2015-04-02T20:46:07.515Z",
-    "stars": 19,
-    "issues": 0
+    "stars": 20,
+    "issues": 1,
+    "downloads": 67
   },
   {
     "name": "react-native-modal",
     "repo": "brentvatne/react-native-modal",
+    "stars": 12,
+    "issues": 1,
     "githubUser": "brentvatne",
     "githubRepo": "react-native-modal",
     "description": "A <Modal /> component for react-native",
@@ -94,8 +102,7 @@
     "homepage": "https://github.com/brentvatne/react-native-modal",
     "created": "2015-04-01T17:37:12.456Z",
     "modified": "2015-04-02T17:39:47.388Z",
-    "stars": 12,
-    "issues": 1
+    "downloads": 107
   },
   {
     "name": "react-native-navbar",
@@ -108,8 +115,9 @@
     "homepage": "https://github.com/Kureev/react-native-navbar",
     "created": "2015-03-30T22:41:22.851Z",
     "modified": "2015-04-01T22:07:43.906Z",
-    "stars": 54,
-    "issues": 2
+    "stars": 55,
+    "issues": 2,
+    "downloads": 101
   },
   {
     "name": "react-native-refreshable-listview",
@@ -122,6 +130,7 @@
     "homepage": "https://github.com/jsdf/react-native-refreshable-listview",
     "created": "2015-03-31T16:05:41.252Z",
     "modified": "2015-03-31T16:05:41.252Z",
+    "downloads": 27,
     "stars": 32,
     "issues": 1
   },
@@ -137,7 +146,8 @@
     "created": "2015-03-31T05:09:13.105Z",
     "modified": "2015-03-31T06:30:09.213Z",
     "stars": 30,
-    "issues": 2
+    "issues": 2,
+    "downloads": 114
   },
   {
     "name": "sidemenu",
@@ -150,12 +160,15 @@
     "homepage": "https://github.com/khanghoang/RNSideMenu",
     "created": "2015-04-01T04:34:51.452Z",
     "modified": "2015-04-03T07:34:08.589Z",
+    "downloads": 22,
     "stars": 6,
     "issues": 1
   },
   {
     "name": "tcomb-form-native",
     "repo": "gcanti/tcomb-form-native",
+    "stars": 228,
+    "issues": 1,
     "githubUser": "gcanti",
     "githubRepo": "tcomb-form-native",
     "description": "react-native powered UI library for developing forms writing less code",
@@ -164,7 +177,6 @@
     "homepage": "https://github.com/gcanti/tcomb-form-native",
     "created": "2015-03-28T19:05:27.793Z",
     "modified": "2015-04-02T10:45:32.792Z",
-    "stars": 227,
-    "issues": 1
+    "downloads": 160
   }
 ]

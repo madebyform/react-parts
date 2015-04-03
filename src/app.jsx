@@ -32,6 +32,7 @@ export var App = React.createClass({
       },
       content: {
         margin: "0 auto",
+        fontSize: this.remCalc(17),
         maxWidth: this.remCalc(800),
         padding: this.remCalc(10)
       },

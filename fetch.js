@@ -1,79 +1,102 @@
-/*jshint node:true */
+/*jshint node:true, unused:vars */
+/*globals Promise*/
 'use strict';
 
 require('babel/register');
 
 var fs = require('fs');
-var async = require('async');
 var request = require('request');
 var components = require('./components.json');
 var keys = require('./keys.json');
 
 var endpoints = {
   npm: "https://registry.npmjs.com/",
-  github: "https://api.github.com/repos/"
+  github: "https://api.github.com/repos/",
+  npm_stat: "http://npm-stat.com/downloads/range/"
 };
 
-// Fetch the package.json for a given component
-function fetchPackageInfo(component, callback) {
-  var options = {
-    url: endpoints.npm + component.name
+var promises = [];
+
+components.forEach(function(component) {
+  var merge = function(val) {
+    process.stdout.write(".");
+    Object.assign(component, val);
   };
-  request(options, function(error, response, body) {
-    var data = JSON.parse(body);
-    var latestVersion = data["dist-tags"].latest;
-    var githubUrl = "https://github.com/" + component.repo;
 
-    callback(error, {
-      name: component.name,
-      githubUser: component.repo.split("/")[0],
-      githubRepo: component.repo.split("/")[1],
-      description: data.description,
-      latestVersion: latestVersion,
-      versions: Object.keys(data.versions).length,
-      homepage: data.versions[latestVersion].homepage || githubUrl,
-      created: data.time.created,
-      modified: data.time.modified
-    });
-  });
-}
+  promises.push(
+    new Promise(function(resolve, reject) {
+      var options = {
+        url: endpoints.npm + component.name
+      };
 
-// Fetch statistics from the GitHub repository
-function fetchStats(component, callback) {
-  var options = {
-    url: endpoints.github + component.repo,
-    headers: { 'User-Agent': 'request' },
-    auth: {'user': keys.github.username,'pass': keys.github.password}
-  };
-  request(options, function(error, response, body) {
-    var data = JSON.parse(body);
+      // NPM
+      request(options, function(error, response, body) {
+        var data = JSON.parse(body);
+        var latestVersion = data["dist-tags"].latest;
+        var githubUrl = "https://github.com/" + component.repo;
 
-    callback(error, {
-      stars: data.stargazers_count,
-      issues: data.open_issues_count
-    });
-  });
-}
+        resolve({
+          name: component.name,
+          githubUser: component.repo.split("/")[0],
+          githubRepo: component.repo.split("/")[1],
+          description: data.description,
+          latestVersion: latestVersion,
+          versions: Object.keys(data.versions).length,
+          homepage: data.versions[latestVersion].homepage || githubUrl,
+          created: data.time.created,
+          modified: data.time.modified
+        });
 
-// Fetch data and build the app
-async.map(components, fetchPackageInfo, function(error, data) {
-  if (error) console.error(error);
-  console.log("Package info fetched successfully.");
+      });
+    }).then(function(val){
+      merge(val);
 
-  components.map(function(component, index) {
-    return Object.assign(component, data[index]);
-  });
+      // NPM-STAT depends on the NPM, so we chain the promises
+      return new Promise(function(resolve, reject) {
+        var current_time = (new Date()).toISOString().substr(0,10);
+        var start = (new Date(component.created)).toISOString().substr(0,10);
 
-  async.map(components, fetchStats, function(error, data) {
-    if (error) console.error(error);
-    console.log("GitHub stats fetched successfully.");
+        var options = {
+          url: endpoints.npm_stat + start + ":" + current_time + "/" + component.name
+        };
 
-    components.map(function(component, index) {
-      return Object.assign(component, data[index]);
-    });
+        request(options, function(error, response, body) {
+          var data = JSON.parse(body);
 
-    // Persist the new data
-    var str = JSON.stringify(components, null, '  '); // \t for pretty-print
-    fs.writeFile("data.json", str);
-  });
+          resolve({
+            downloads: data.downloads.reduce(function(total, daily) {
+              return total + daily.downloads;
+            }, 0)
+          });
+        });
+      });
+    }).then(merge)
+  );
+
+  promises.push(
+    // GitHub
+    new Promise(function(resolve, reject) {
+      var options = {
+        url: endpoints.github + component.repo,
+        headers: { 'User-Agent': 'request' },
+        auth: {'user': keys.github.username,'pass': keys.github.password}
+      };
+
+      request(options, function(error, response, body) {
+        var data = JSON.parse(body);
+
+        resolve({
+          stars: data.stargazers_count,
+          issues: data.open_issues_count
+        });
+      });
+    }).then(merge)
+  );
+});
+
+Promise.all(promises).then(function(values) {
+  console.log("\nsuccess!!");
+  // Persist the new data
+  var str = JSON.stringify(components, null, '  '); // '  ' for indentation
+  fs.writeFile("data.json", str);
 });
