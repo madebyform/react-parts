@@ -1,4 +1,5 @@
 node_modules/
-app.js
+assets/app.js
+assets/app.min.js
 keys.json
 npm-debug.log

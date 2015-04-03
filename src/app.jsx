@@ -1,5 +1,4 @@
 /*jshint esnext:true, browserify:true */
-/*globals components */
 'use strict';
 
 import 'babel/polyfill';
@@ -14,7 +13,9 @@ let PureRenderMixin = React.addons.PureRenderMixin;
 export var App = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   getInitialState() {
-    return { components };
+    return {
+      components: this.props.components
+    };
   },
   render() {
     let title = "React.parts";
@@ -67,11 +68,14 @@ export var App = React.createClass({
     );
   },
   handleSearch(value) {
-    let filtered = components.filter((c) => c.name.indexOf(value) != -1);
+    let filtered = this.props.components.filter((c) => c.name.indexOf(value) != -1);
     this.setState({ components: filtered });
   }
 });
 
 if (typeof(document) !== "undefined") {
-  React.render(<App />, document.getElementById("container"));
+  React.render(
+    <App components={window.components} />,
+    document.getElementById("container")
+  );
 }

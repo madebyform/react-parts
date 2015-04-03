@@ -6,6 +6,7 @@
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",
     "ejs": "^2.3.1",
+    "express": "^4.12.3",
     "react": "^0.13.1",
     "request": "^2.54.0",
     "timeago": "^0.2.0"
@@ -15,10 +16,9 @@
     "watchify": "^2.4.0"
   },
   "scripts": {
-    "build": "npm run build:client && npm run build:index",
-    "build:index": "node build.js",
+    "start": "npm run build && node server.js",
     "fetch": "node fetch.js",
-    "build:client": "browserify src/app.jsx -t babelify --outfile app.js && uglifyjs app.js -o app.min.js",
-    "watch:client": "watchify src/app.jsx -t babelify --outfile app.min.js"
+    "build": "browserify src/app.jsx -t babelify --outfile assets/app.js && uglifyjs assets/app.js -o assets/app.min.js",
+    "watch": "watchify src/app.jsx -t babelify --outfile assets/app.min.js"
   }
 }
