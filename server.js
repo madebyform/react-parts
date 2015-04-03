@@ -31,7 +31,7 @@ server.get('/native-ios', function(req, res) {
 
     // Render the app and send the markup for faster page loads and SEO
     // On the client, React will preserve the markup and only attach event handlers
-    var app = new App({ components: components });
+    var app = new App({ components: components, currentPath: req.path });
     var output = React.renderToString(app);
 
     res.render('template', {
@@ -45,7 +45,7 @@ server.get('/native-ios', function(req, res) {
 server.get('/web', function(req, res) {
   fs.readFile('./data/react.json', function(err, data) {
     var components = JSON.parse(data);
-    var app = new App({ components: components });
+    var app = new App({ components: components, currentPath: req.path });
     var output = React.renderToString(app);
 
     res.render('template', {
