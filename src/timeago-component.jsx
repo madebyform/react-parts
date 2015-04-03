@@ -12,16 +12,6 @@ let TimeAgo = React.createClass({
   propTypes: {
     dateTime: React.PropTypes.string.isRequired,
   },
-  getInitialState() {
-    return {
-      timeAgo: null
-    };
-  },
-  componentDidMount() {
-    this.setState({
-      timeAgo: timeago(this.props.dateTime),
-    });
-  },
   render() {
     let styles = {
       timestamp: {
@@ -33,7 +23,7 @@ let TimeAgo = React.createClass({
 
     return (
       <time dateTime={this.props.dateTime} style={styles.timestamp}>
-        {this.state.timeAgo && `updated ${this.state.timeAgo}`}
+        updated {timeago(this.props.dateTime)}
       </time>
     );
   }
