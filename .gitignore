@@ -2,3 +2,4 @@ node_modules/
 app.js
 keys.json
 npm-debug.log
+npm.json
