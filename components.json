@@ -40,6 +40,10 @@
     "repo": "brentvatne/react-native-video"
   },
   {
+    "name": "sidemenu",
+    "repo": "khanghoang/RNSideMenu"
+  },
+  {
     "name": "tcomb-form-native",
     "repo": "gcanti/tcomb-form-native"
   }
