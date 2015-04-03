@@ -11,69 +11,94 @@ var keys = require('./keys.json');
 
 var endpoints = {
   npm: "https://registry.npmjs.com/",
-  github: "https://api.github.com/repos/"
+  github: "https://api.github.com/repos/",
+  npm_stat: "http://npm-stat.com/downloads/range/"
 };
 
-// Fetch the package.json for a given component
-function fetchPackageInfo(component, callback) {
-  var options = {
-    url: endpoints.npm + component.name
-  };
-  request(options, function(error, response, body) {
-    var data = JSON.parse(body);
-    var latestVersion = data["dist-tags"].latest;
-    var githubUrl = "https://github.com/" + component.repo;
+var promises = [];
 
-    callback(error, {
-      name: component.name,
-      githubUser: component.repo.split("/")[0],
-      githubRepo: component.repo.split("/")[1],
-      description: data.description,
-      latestVersion: latestVersion,
-      versions: Object.keys(data.versions).length,
-      homepage: data.versions[latestVersion].homepage || githubUrl,
-      created: data.time.created,
-      modified: data.time.modified
-    });
-  });
-}
+components.forEach(function(component){
 
-// Fetch statistics from the GitHub repository
-function fetchStats(component, callback) {
-  var options = {
-    url: endpoints.github + component.repo,
-    headers: { 'User-Agent': 'request' },
-    auth: {'user': keys.github.username,'pass': keys.github.password}
-  };
-  request(options, function(error, response, body) {
-    var data = JSON.parse(body);
+  var merge = function(val) {
+    process.stdout.write(".");
+    Object.assign(component, val);
+  }
+  
+  promises.push(
+    new Promise(function(resolve, reject){
+      var options = {
+        url: endpoints.npm + component.name
+      };
 
-    callback(error, {
-      stars: data.stargazers_count,
-      issues: data.open_issues_count
-    });
-  });
-}
+      // NPM
+      request(options, function(error, response, body) {
+        var data = JSON.parse(body);
+        var latestVersion = data["dist-tags"].latest;
+        var githubUrl = "https://github.com/" + component.repo;
 
-// Fetch data and build the app
-async.map(components, fetchPackageInfo, function(error, data) {
-  if (error) console.error(error);
-  console.log("Package info fetched successfully.");
+        resolve({
+          name: component.name,
+          githubUser: component.repo.split("/")[0],
+          githubRepo: component.repo.split("/")[1],
+          description: data.description,
+          latestVersion: latestVersion,
+          versions: Object.keys(data.versions).length,
+          homepage: data.versions[latestVersion].homepage || githubUrl,
+          created: data.time.created,
+          modified: data.time.modified
+        });
 
-  components.map(function(component, index) {
-    return Object.assign(component, data[index]);
-  });
+      });
+    }).then(function(val){
+      merge(val);
 
-  async.map(components, fetchStats, function(error, data) {
-    if (error) console.error(error);
-    console.log("GitHub stats fetched successfully.");
+      // NPM-STAT depends on the NPM, so we chain the promises
+      return new Promise(function(resolve, reject){
 
-    components.map(function(component, index) {
-      return Object.assign(component, data[index]);
-    });
+        var current_time = (new Date()).toISOString().substr(0,10);
+        var start = (new Date(component.created)).toISOString().substr(0,10);
 
-    // Persist the new data
-    var str = JSON.stringify(components, null, '  '); // \t for pretty-print
-    fs.writeFile("data.json", str);
-  });
+        var options = {
+          url: endpoints.npm_stat + start + ":" + current_time + "/" + component.name
+        }
+
+        request(options, function(error, response, body) {
+
+          var data = JSON.parse(body);
+
+          resolve({
+            downloads: data.downloads.reduce(function(total, daily) {return total + daily.downloads}, 0)
+          });
+
+        });
+      }); 
+    }).then(merge)
+  );
+
+  promises.push(
+    new Promise(function(resolve, reject){
+      var options = {
+        url: endpoints.github + component.repo,
+        headers: { 'User-Agent': 'request' },
+        auth: {'user': keys.github.username,'pass': keys.github.password}
+      };
+
+      request(options, function(error, response, body) {
+        var data = JSON.parse(body);
+
+        resolve({
+          stars: data.stargazers_count,
+          issues: data.open_issues_count
+        });
+      });
+    }).then(merge)
+  );
+
+});
+
+Promise.all(promises).then(function(values){
+  console.log("\nsuccess!!");
+  // Persist the new data
+  var str = JSON.stringify(components, null, '  '); // \t for pretty-print
+  fs.writeFile("data.json", str);
 });

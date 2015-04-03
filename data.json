@@ -5,12 +5,13 @@
     "githubUser": "lwansbrough",
     "githubRepo": "react-native-camera",
     "description": "A Camera element for React Native",
-    "latestVersion": "0.0.3",
-    "versions": 3,
+    "latestVersion": "0.0.4",
+    "versions": 4,
     "homepage": "https://github.com/lwansbrough/react-native-camera",
     "created": "2015-04-01T00:52:59.934Z",
-    "modified": "2015-04-02T09:49:28.093Z",
-    "stars": 67,
+    "modified": "2015-04-03T01:07:51.629Z",
+    "downloads": 80,
+    "stars": 71,
     "issues": 3
   },
   {
@@ -24,6 +25,7 @@
     "homepage": "https://github.com/nick/react-native-carousel",
     "created": "2015-04-01T21:31:44.659Z",
     "modified": "2015-04-01T21:31:44.659Z",
+    "downloads": 26,
     "stars": 9,
     "issues": 1
   },
@@ -38,7 +40,8 @@
     "homepage": "https://github.com/jsdf/react-native-htmlview",
     "created": "2015-04-01T03:21:01.292Z",
     "modified": "2015-04-01T03:21:01.292Z",
-    "stars": 5,
+    "downloads": 26,
+    "stars": 7,
     "issues": 0
   },
   {
@@ -52,7 +55,8 @@
     "homepage": "https://github.com/brentvatne/react-native-linear-gradient",
     "created": "2015-03-31T17:45:13.484Z",
     "modified": "2015-04-01T00:48:44.754Z",
-    "stars": 14,
+    "downloads": 81,
+    "stars": 15,
     "issues": 0
   },
   {
@@ -66,7 +70,8 @@
     "homepage": "https://github.com/appintheair/react-native-looped-carousel",
     "created": "2015-04-02T19:51:54.149Z",
     "modified": "2015-04-02T20:46:07.515Z",
-    "stars": 4,
+    "downloads": 67,
+    "stars": 5,
     "issues": 0
   },
   {
@@ -80,6 +85,7 @@
     "homepage": "https://github.com/Kureev/react-native-navbar",
     "created": "2015-03-30T22:41:22.851Z",
     "modified": "2015-04-01T22:07:43.906Z",
+    "downloads": 101,
     "stars": 49,
     "issues": 2
   },
@@ -94,8 +100,9 @@
     "homepage": "https://github.com/jsdf/react-native-refreshable-listview",
     "created": "2015-03-31T16:05:41.252Z",
     "modified": "2015-03-31T16:05:41.252Z",
-    "stars": 30,
-    "issues": 2
+    "downloads": 27,
+    "stars": 31,
+    "issues": 1
   },
   {
     "name": "react-native-video",
@@ -108,7 +115,8 @@
     "homepage": "https://github.com/brentvatne/react-native-video",
     "created": "2015-03-31T05:09:13.105Z",
     "modified": "2015-03-31T06:30:09.213Z",
-    "stars": 28,
+    "downloads": 114,
+    "stars": 29,
     "issues": 1
   },
   {
@@ -122,7 +130,8 @@
     "homepage": "https://github.com/gcanti/tcomb-form-native",
     "created": "2015-03-28T19:05:27.793Z",
     "modified": "2015-04-02T10:45:32.792Z",
-    "stars": 222,
+    "downloads": 160,
+    "stars": 223,
     "issues": 1
   }
 ]
