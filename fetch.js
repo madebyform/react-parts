@@ -1,10 +1,10 @@
-/*jshint node:true */
+/*jshint node:true, unused:vars */
+/*globals Promise*/
 'use strict';
 
 require('babel/register');
 
 var fs = require('fs');
-var async = require('async');
 var request = require('request');
 var components = require('./components.json');
 var keys = require('./keys.json');
@@ -17,15 +17,14 @@ var endpoints = {
 
 var promises = [];
 
-components.forEach(function(component){
-
+components.forEach(function(component) {
   var merge = function(val) {
     process.stdout.write(".");
     Object.assign(component, val);
-  }
-  
+  };
+
   promises.push(
-    new Promise(function(resolve, reject){
+    new Promise(function(resolve, reject) {
       var options = {
         url: endpoints.npm + component.name
       };
@@ -53,30 +52,30 @@ components.forEach(function(component){
       merge(val);
 
       // NPM-STAT depends on the NPM, so we chain the promises
-      return new Promise(function(resolve, reject){
-
+      return new Promise(function(resolve, reject) {
         var current_time = (new Date()).toISOString().substr(0,10);
         var start = (new Date(component.created)).toISOString().substr(0,10);
 
         var options = {
           url: endpoints.npm_stat + start + ":" + current_time + "/" + component.name
-        }
+        };
 
         request(options, function(error, response, body) {
-
           var data = JSON.parse(body);
 
           resolve({
-            downloads: data.downloads.reduce(function(total, daily) {return total + daily.downloads}, 0)
+            downloads: data.downloads.reduce(function(total, daily) {
+              return total + daily.downloads;
+            }, 0)
           });
-
         });
-      }); 
+      });
     }).then(merge)
   );
 
   promises.push(
-    new Promise(function(resolve, reject){
+    // GitHub
+    new Promise(function(resolve, reject) {
       var options = {
         url: endpoints.github + component.repo,
         headers: { 'User-Agent': 'request' },
@@ -93,12 +92,11 @@ components.forEach(function(component){
       });
     }).then(merge)
   );
-
 });
 
-Promise.all(promises).then(function(values){
+Promise.all(promises).then(function(values) {
   console.log("\nsuccess!!");
   // Persist the new data
-  var str = JSON.stringify(components, null, '  '); // \t for pretty-print
+  var str = JSON.stringify(components, null, '  '); // '  ' for indentation
   fs.writeFile("data.json", str);
 });

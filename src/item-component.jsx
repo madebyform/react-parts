@@ -70,6 +70,10 @@ let ComponentItem = React.createClass({
             </small>
           </h3>
           <div style={styles.stats}>
+            <Icon icon="cloud-download" />
+            <span>{this.props.downloads}</span>
+          </div>
+          <div style={styles.stats}>
             <Icon icon="stars" />
             <span>{this.props.stars}</span>
           </div>
