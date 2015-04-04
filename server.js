@@ -8,8 +8,24 @@ require('babel/register');
 var fs = require('fs');
 var React = require('react');
 var express = require('express');
+var cachify = require('connect-cachify');
 var ejs = require('ejs');
 var server = express();
+
+// List of assets where the keys are your production urls, and the value
+// is a  list of development urls that produce the same asset
+var assets = {
+  "/app.min.js": [ "/app.js" ]
+};
+
+// Enable browser cache and HTTP caching (cache busting, etc.)
+server.use(cachify.setup(assets, {
+  root: "assets",
+  production: (process.env.NODE_ENV != "development")
+}));
+
+// Serve static files
+server.use('/', express.static('assets'));
 
 // Use Embedded JavaScript to embed the output from React into our layout
 server.set('view engine', 'ejs');
@@ -54,9 +70,6 @@ server.get('/web', function(req, res) {
     });
   });
 });
-
-// Serve static files
-server.use('/', express.static('assets'));
 
 // Listen for connections
 server.listen(process.env.PORT || 8080, function() {

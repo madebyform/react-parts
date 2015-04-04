@@ -5,6 +5,7 @@
     "babel": "^4.7.16",
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",
+    "connect-cachify": "0.0.17",
     "ejs": "^2.3.1",
     "express": "^4.12.3",
     "react": "^0.13.1",
@@ -18,9 +19,9 @@
   },
   "scripts": {
     "start": "npm run build:js && node server.js",
-    "live": "npm run watch:js & nodemon server.js",
+    "live": "npm run watch:js & NODE_ENV=development nodemon server.js",
     "fetch": "node fetch.js",
     "build:js": "browserify src/app.jsx -t babelify --outfile assets/app.js && uglifyjs assets/app.js -o assets/app.min.js",
-    "watch:js": "watchify src/app.jsx -t babelify --outfile assets/app.min.js"
+    "watch:js": "watchify src/app.jsx -t babelify --outfile assets/app.js"
   }
 }
