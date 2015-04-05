@@ -47,23 +47,22 @@ components.forEach(function(component) {
           githubRepo: component.repo.split("/")[1],
           description: data.description,
           latestVersion: latestVersion,
-          versions: Object.keys(data.versions).length,
           homepage: data.versions[latestVersion].homepage || githubUrl,
           created: data.time.created,
           modified: data.time.modified
         });
 
       });
-    }).then(function(val){
+    }).then(function(val) {
       merge(val);
 
       // NPM-STAT depends on the NPM, so we chain the promises
       return new Promise(function(resolve, reject) {
-        var current_time = (new Date()).toISOString().substr(0,10);
+        var currentTime = (new Date()).toISOString().substr(0,10);
         var start = (new Date(component.created)).toISOString().substr(0,10);
 
         var options = {
-          url: endpoints.npm_stat + start + ":" + current_time + "/" + component.name
+          url: endpoints.npm_stat + start + ":" + currentTime + "/" + component.name
         };
 
         request(options, function(error, response, body) {
@@ -85,15 +84,14 @@ components.forEach(function(component) {
       var options = {
         url: endpoints.github + component.repo,
         headers: { 'User-Agent': 'request' },
-        auth: {'user': keys.github.username,'pass': keys.github.password}
+        auth: { 'user': keys.github.username, 'pass': keys.github.password }
       };
 
       request(options, function(error, response, body) {
         var data = JSON.parse(body);
 
         resolve({
-          stars: data.stargazers_count,
-          issues: data.open_issues_count
+          stars: data.stargazers_count
         });
       });
     }).then(merge)
