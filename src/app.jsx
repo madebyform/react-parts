@@ -2,36 +2,35 @@
 'use strict';
 
 import 'babel/polyfill';
+import 'isomorphic-fetch';
 import React from 'react/addons';
-
+import Router from 'react-router';
 import StylingMixin from './styling-mixin.jsx';
 import NavBar from './nav-bar-component.jsx';
 import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
 
-let PureRenderMixin = React.addons.PureRenderMixin;
+let Route = Router.Route;
+let RouteHandler = Router.RouteHandler;
 
 export var App = React.createClass({
-  mixins: [StylingMixin, PureRenderMixin],
-
-  tabs: [{
-      url: "/native-ios",
-      title: "React Native"
-    },
-    {
-      url: "/web",
-      title: "React Web"
-    }
-  ],
-
+  mixins: [StylingMixin],
+  contextTypes: {
+    router: React.PropTypes.func
+  },
+  propTypes: {
+    initialComponents: React.PropTypes.object.isRequired
+  },
   getInitialState() {
     return {
-      components: this.props.components
+      components: this.props.initialComponents,
+      filtered: this.props.initialComponents[this.props.params.type]
     };
   },
   render() {
     let title = "React.parts";
-    let list = this.state.components;
+    let type = this.props.params.type;
+    let components = this.state.filtered || [];
 
     let styles = {
       container:  {
@@ -62,21 +61,18 @@ export var App = React.createClass({
         textDecoration: "none"
       }
     };
-
-    // Mark selected tab and map to Tab component instances
-    let tabs = this.tabs.map( (tab, index) => {
-      let selected = this.props.currentPath === tab.url;
-      return <Tab url={tab.url} title={tab.title} selected={selected} key={index} />;
-    });
-
     return (
       <div style={styles.container}>
         <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
           <h2 style={styles.title}>A catalog of React components</h2>
-          <Tabs>{tabs}</Tabs>
-          <ComponentList components={list} />
+          <Tabs>
+            <Tab to="components" params={{type: "native-ios"}}>React Native</Tab>
+            <Tab to="components" params={{type: "web"}}>React for Web</Tab>
+          </Tabs>
+
+          <RouteHandler components={components} />
 
           <p style={styles.footer}>
             React, React Native and logos are copyright of Facebook.
@@ -87,16 +83,46 @@ export var App = React.createClass({
       </div>
     );
   },
+  componentWillReceiveProps(newProps) {
+    let type = newProps.params.type;
+    let components = this.state.components;
+
+    // If the user changed tab, and we don't have the data, fetch it
+    if (!components[type] || components[type].length === 0) {
+      window.fetch(`/api/components/${type}`).then((response) => {
+        response.json().then((data) => {
+          components[type] = data;
+          // Update both the complete and filtered components list s
+          this.setState({ components, filtered: components[type] });
+        });
+      });
+    } else {
+      // We already have the data, simply reset the search filters
+      this.setState({ filtered: components[type] });
+    }
+  },
   handleSearch(value) {
-    let filtered = this.props.components.filter((c) => c.name.indexOf(value) != -1 || c.description.indexOf(value) != -1);
-    this.setState({ components: filtered });
+    // Get all components available for the current tab
+    let components = this.state.components[this.props.params.type];
+
+    let filtered = components.filter((c) => {
+      return c.name.indexOf(value) != -1 || c.description.indexOf(value) != -1;
+    });
+    this.setState({ filtered });
   }
 });
 
+export var routes = (
+  <Route name="app" path="/" handler={App}>
+    <Route name="components" path=":type" handler={ComponentList} />
+  </Route>
+);
+
 if (typeof(document) !== "undefined") {
-  let currentPath = window.location.pathname;
-  React.render(
-    <App components={window.components} currentPath={currentPath} />,
-    document.getElementById("container")
-  );
+  Router.run(routes, Router.HistoryLocation, function(Handler, state) {
+    React.render(
+      <Handler params={state.params} initialComponents={window.initialComponents} />,
+      document.getElementById("container")
+    );
+  });
 }

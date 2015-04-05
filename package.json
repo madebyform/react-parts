@@ -8,7 +8,9 @@
     "connect-cachify": "0.0.17",
     "ejs": "^2.3.1",
     "express": "^4.12.3",
+    "isomorphic-fetch": "^2.0.0",
     "react": "^0.13.1",
+    "react-router": "^0.13.2",
     "request": "^2.54.0",
     "timeago": "^0.2.0"
   },

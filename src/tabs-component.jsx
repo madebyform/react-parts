@@ -2,22 +2,13 @@
 'use strict';
 
 import React from 'react/addons';
+import Router from 'react-router';
 import StylingMixin from './styling-mixin.jsx';
 
-let PureRenderMixin = React.addons.PureRenderMixin;
+let Link = Router.Link;
 
 export let Tab = React.createClass({
-  mixins: [StylingMixin, PureRenderMixin],
-  propTypes: {
-    url: React.PropTypes.string.isRequired,
-    title: React.PropTypes.string.isRequired,
-    selected: React.PropTypes.bool,
-  },
-  getDefaultProps() {
-    return {
-      selected: false,
-    };
-  },
+  mixins: [StylingMixin],
   render() {
     let styles = {
       tab: {
@@ -34,16 +25,21 @@ export let Tab = React.createClass({
       }
     };
     return (
-      <a href={this.props.url}
-         style={this.mergeStyles(styles.tab, this.props.selected && styles.selectedTab)}>
-        {this.props.title}
-      </a>
+      <Link
+        {...this.props}
+        style={styles.tab}
+        activeStyle={this.mergeStyles(
+          styles.tab,
+          styles.selectedTab
+        )}>
+          {this.props.children}
+      </Link>
     );
   }
 });
 
 export let Tabs = React.createClass({
-  mixins: [StylingMixin, PureRenderMixin],
+  mixins: [StylingMixin],
   render() {
     let styles = {
       container: {

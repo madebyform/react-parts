@@ -55,7 +55,7 @@
 <body>
   <div id="container"><%- output %></div>
 
-  <script>window.components = <%- JSON.stringify(components) %>;</script>
+  <script>window.initialComponents = <%- JSON.stringify(initialComponents) %>;</script>
   <%- cachify_js("/app.min.js") %>
 </body>
 </html>

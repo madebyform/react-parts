@@ -7,6 +7,7 @@ require('babel/register');
 
 var fs = require('fs');
 var React = require('react');
+var Router = require('react-router');
 var express = require('express');
 var cachify = require('connect-cachify');
 var ejs = require('ejs');
@@ -32,42 +33,47 @@ server.set('view engine', 'ejs');
 
 // Require and wrap the React main component in a factory before calling it
 // This is necessary because we'll do `App()` instead of <App />
-var App = React.createFactory(require("./src/app.jsx").App);
+var routes = require("./src/app.jsx").routes;
 
 // Redirect the user to the list of native components for iOS
 server.get('/', function(req, res) {
   res.redirect('/native-ios');
 });
 
-// List of native components for iOS
-server.get('/native-ios', function(req, res) {
-  fs.readFile('./data/react-native-ios.json', function(err, data) {
+// Return the HTML page with the list of native components for iOS or components for web
+server.get('/:type', function(req, res) {
+  var type = req.params.type;
+
+  fs.readFile('./data/react-'+ type +'.json', function(err, data) {
     // The catalog of react packages
-    var components = JSON.parse(data);
+    var components = {};
+    components[type] = JSON.parse(data);
 
-    // Render the app and send the markup for faster page loads and SEO
-    // On the client, React will preserve the markup and only attach event handlers
-    var app = new App({ components: components, currentPath: req.path });
-    var output = React.renderToString(app);
+    Router.run(routes, req.url, function (handler, state) {
+      // Render the app and send the markup for faster page loads and SEO
+      // On the client, React will preserve the markup and only attach event handlers
+      var Handler = React.createFactory(handler);
+      var content = new Handler({
+        params: state.params,
+        initialComponents: components
+      });
+      var output = React.renderToString(content);
 
-    res.render('template', {
-      output: output,
-      components: components
+      res.render('template', {
+        output: output,
+        initialComponents: components
+      });
     });
   });
 });
 
-// List of components for the web
-server.get('/web', function(req, res) {
-  fs.readFile('./data/react.json', function(err, data) {
-    var components = JSON.parse(data);
-    var app = new App({ components: components, currentPath: req.path });
-    var output = React.renderToString(app);
+// Return JSON with the list of native components for iOS or components for web
+server.get('/api/components/:type', function(req, res) {
+  var type = req.params.type;
 
-    res.render('template', {
-      output: output,
-      components: components
-    });
+  fs.readFile('./data/react-'+ type +'.json', function(error, data) {
+    if (error) return console.error(error);
+    res.json(JSON.parse(data));
   });
 });
 
