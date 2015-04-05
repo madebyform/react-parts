@@ -232,11 +232,219 @@
     "repo": "KyleAMathews/react-icon-factory"
   },
   {
+    "name": "react-icon-rating",
+    "repo": "dlau/react-icon-rating"
+  },
+  {
     "name": "react-image",
     "repo": "yuanyan/react-image"
   },
   {
     "name": "react-imageloader",
     "repo": "hzdg/react-imageloader"
+  },
+  {
+    "name": "react-inlinesvg",
+    "repo": "matthewwithanm/react-inlinesvg"
+  },
+  {
+    "name": "react-input-autosize",
+    "repo": "JedWatson/react-input-autosize"
+  },
+  {
+    "name": "react-input-calendar",
+    "repo": "Rudeg/react-input-calendar"
+  },
+  {
+    "name": "react-input-datalist",
+    "repo": "Lapple/react-input-datalist"
+  },
+  {
+    "name": "react-input-field",
+    "repo": "radubrehar/react-input-field"
+  },
+  {
+    "name": "react-input-placeholder",
+    "repo": "enigma-io/react-input-placeholder"
+  },
+  {
+    "name": "react-notification",
+    "repo": "pburtchaell/react-notification"
+  },
+  {
+    "name": "react-paper",
+    "repo": "OlavHN/react-paper"
+  },
+  {
+    "name": "react-pdf",
+    "repo": "nnarhinen/react-pdf"
+  },
+  {
+    "name": "react-pie",
+    "repo": "MateusZitelli/react-pie"
+  },
+  {
+    "name": "react-pressable",
+    "repo": "hzdg/react-pressable"
+  },
+  {
+    "name": "react-progressbar",
+    "repo": "paramaggarwal/react-progressbar"
+  },
+  {
+    "name": "react-recaptcha",
+    "repo": "appleboy/react-recaptcha"
+  },
+  {
+    "name": "react-remarkable",
+    "repo": "acdlite/react-remarkable"
+  },
+  {
+    "name": "react-resizable",
+    "repo": "STRML/react-resizable"
+  },
+  {
+    "name": "react-retina-image",
+    "repo": "KyleAMathews/react-retina-image"
+  },
+  {
+    "name": "react-s3-uploader",
+    "repo": "odysseyscience/react-s3-uploader"
+  },
+  {
+    "name": "react-simple-colorpicker",
+    "repo": "WickyNilliams/react-simple-colorpicker"
+  },
+  {
+    "name": "react-simple-tab",
+    "repo": "Rudolph-Miller/react-simple-tab"
+  },
+  {
+    "name": "react-simple-table",
+    "repo": "KyleAMathews/react-simple-table"
+  },
+  {
+    "name": "react-smart-time-ago",
+    "repo": "KyleAMathews/react-smart-time-ago"
+  },
+  {
+    "name": "react-social",
+    "repo": "olahol/react-social"
+  },
+  {
+    "name": "react-sortable-list",
+    "repo": "StevenIseki/react-sortable-list"
+  },
+  {
+    "name": "react-sparkline",
+    "repo": "KyleAMathews/react-sparkline"
+  },
+  {
+    "name": "react-spinner",
+    "repo": "chenglou/react-spinner"
+  },
+  {
+    "name": "react-spreadsheet",
+    "repo": "asm-products/little-sheet-react-spreadsheet"
+  },
+  {
+    "name": "react-star-rating-input",
+    "repo": "ikr/react-star-rating-input"
+  },
+  {
+    "name": "react-stats",
+    "repo": "sebslomski/react-stats"
+  },
+  {
+    "name": "react-stendig-calendar",
+    "repo": "wookiehangover/react-stendig-calendar"
+  },
+  {
+    "name": "react-stickydiv",
+    "repo": "svenanders/react-stickydiv"
+  },
+  {
+    "name": "react-svgicon",
+    "repo": "articulate/react-svgicon"
+  },
+  {
+    "name": "react-swipeable",
+    "repo": "dogfessional/react-swipeable"
+  },
+  {
+    "name": "react-tab-panel",
+    "repo": "radubrehar/react-tab-panel"
+  },
+  {
+    "name": "react-table-select",
+    "repo": "AllenSH12/react-table-select"
+  },
+  {
+    "name": "react-tagged-input",
+    "repo": "tutorialhorizon/react-tagged-input"
+  },
+  {
+    "name": "react-tappable",
+    "repo": "JedWatson/react-tappable"
+  },
+  {
+    "name": "react-telephone-input",
+    "repo": "mukeshsoni/react-telephone-input"
+  },
+  {
+    "name": "react-textarea-autosize",
+    "repo": "andreypopp/react-textarea-autosize"
+  },
+  {
+    "name": "react-textgradient",
+    "repo": "javierbyte/react-textgradient"
+  },
+  {
+    "name": "react-tile",
+    "repo": "excellenteasy/react-tile"
+  },
+  {
+    "name": "react-timesheet",
+    "repo": "yuanyan/react-timesheet"
+  },
+  {
+    "name": "react-toggle",
+    "repo": "instructure-react/react-toggle"
+  },
+  {
+    "name": "react-touchable",
+    "repo": "dogfessional/react-touchable"
+  },
+  {
+    "name": "react-transition",
+    "repo": "pirelenito/react-transition"
+  },
+  {
+    "name": "react-translate-component",
+    "repo": "martinandert/react-translate-component"
+  },
+  {
+    "name": "react-tree-menu",
+    "repo": "MandarinConLaBarba/react-tree-menu"
+  },
+  {
+    "name": "react-treeview",
+    "repo": "chenglou/react-treeview"
+  },
+  {
+    "name": "react-typeahead",
+    "repo": "fmoo/react-typeahead"
+  },
+  {
+    "name": "react-user-card",
+    "repo": "darthlukan/react-user-card"
+  },
+  {
+    "name": "react-video",
+    "repo": "pedronauck/react-video"
+  },
+  {
+    "name": "tabs-component",
+    "repo": "mheiber/react-tabs-component"
   }
 ]
