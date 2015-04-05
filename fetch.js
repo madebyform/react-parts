@@ -13,6 +13,7 @@ var keys = require('./keys.json');
 var componentsType = process.argv[2] || "react-native-ios";
 var componentsFile = path.join(__dirname, 'components', componentsType + '.json');
 var components = require(componentsFile);
+var dataFile = path.join(__dirname, 'data', componentsType + '.json');
 
 var endpoints = {
   npm: "https://registry.npmjs.com/",
@@ -103,5 +104,5 @@ Promise.all(promises).then(function(values) {
   console.log("\nsuccess!!");
   // Persist the new data
   var str = JSON.stringify(components, null, '  '); // '  ' for indentation
-  fs.writeFile(componentsFile, str);
+  fs.writeFile(dataFile, str);
 });
