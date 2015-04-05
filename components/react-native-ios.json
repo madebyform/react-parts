@@ -1,11 +1,19 @@
 [
   {
+    "name": "react-native-button",
+    "repo": "ide/react-native-button"
+  },
+  {
     "name": "react-native-camera",
     "repo": "lwansbrough/react-native-camera"
   },
   {
     "name": "react-native-carousel",
     "repo": "nick/react-native-carousel"
+  },
+  {
+    "name": "react-native-facebook-login",
+    "repo": "magus/react-native-facebook-login"
   },
   {
     "name": "react-native-htmltext",
@@ -20,6 +28,10 @@
     "repo": "brentvatne/react-native-linear-gradient"
   },
   {
+    "name": "react-native-listener",
+    "repo": "erikras/react-native-listener"
+  },
+  {
     "name": "react-native-looped-carousel",
     "repo": "appintheair/react-native-looped-carousel"
   },
@@ -32,8 +44,20 @@
     "repo": "Kureev/react-native-navbar"
   },
   {
+    "name": "react-native-nested-stylesheet",
+    "repo": "pjjanak/react-native-nested-stylesheets"
+  },
+  {
     "name": "react-native-refreshable-listview",
     "repo": "jsdf/react-native-refreshable-listview"
+  },
+  {
+    "name": "react-native-sqlite",
+    "repo": "almost/react-native-sqlite"
+  },
+  {
+    "name": "react-native-store",
+    "repo": "thewei/react-native-store"
   },
   {
     "name": "react-native-video",
