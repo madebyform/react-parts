@@ -1,6 +1,242 @@
 [
   {
-    "name": "react",
-    "repo": "facebook/react"
+    "name": "bezier-easing-editor",
+    "repo": "gre/bezier-easing-editor"
+  },
+  {
+    "name": "braintree-react",
+    "repo": "jeffcarp/braintree-react"
+  },
+  {
+    "name": "cupcake-react-modal",
+    "repo": "cupcake/react-modal"
+  },
+  {
+    "name": "data-calendar",
+    "repo": "yeojz/data-calendar"
+  },
+  {
+    "name": "date-pikinator",
+    "repo": "kofno/date-pikinator"
+  },
+  {
+    "name": "diffract",
+    "repo": "ameyms/diffract"
+  },
+  {
+    "name": "directions-transition-group",
+    "repo": "evindor/directions-transition-group"
+  },
+  {
+    "name": "downloadbutton",
+    "repo": "notablemind/downloadbutton"
+  },
+  {
+    "name": "fixed-data-table",
+    "repo": "facebook/fixed-data-table"
+  },
+  {
+    "name": "halogen",
+    "repo": "yuanyan/halogen"
+  },
+  {
+    "name": "hamburger-basement",
+    "repo": "arnemart/hamburger-basement"
+  },
+  {
+    "name": "material-ui",
+    "repo": "callemall/material-ui"
+  },
+  {
+    "name": "rc-calendar",
+    "repo": "react-component/calendar"
+  },
+  {
+    "name": "rc-cascade-select",
+    "repo": "react-component/cascade-select"
+  },
+  {
+    "name": "rc-css-transition-group",
+    "repo": "react-component/css-transition-group"
+  },
+  {
+    "name": "rc-dialog",
+    "repo": "react-component/dialog"
+  },
+  {
+    "name": "rc-form-validation",
+    "repo": "react-component/form-validation"
+  },
+  {
+    "name": "rc-menu",
+    "repo": "react-component/menu"
+  },
+  {
+    "name": "rc-pager",
+    "repo": "react-component/pager"
+  },
+  {
+    "name": "rc-radio",
+    "repo": "react-component/radio"
+  },
+  {
+    "name": "rc-select",
+    "repo": "react-component/select"
+  },
+  {
+    "name": "rc-table",
+    "repo": "react-component/table"
+  },
+  {
+    "name": "rc-tabs",
+    "repo": "react-component/tabs"
+  },
+  {
+    "name": "react-component-gallery",
+    "repo": "KyleAMathews/react-component-gallery"
+  },
+  {
+    "name": "react-component-resizable",
+    "repo": "nrako/react-component-resizable"
+  },
+  {
+    "name": "react-component-scrollload",
+    "repo": "nrako/react-component-scrollload"
+  },
+  {
+    "name": "react-components",
+    "repo": "Khan/react-components"
+  },
+  {
+    "name": "react-contenteditable",
+    "repo": "lovasoa/react-contenteditable"
+  },
+  {
+    "name": "react-datepicker",
+    "repo": "Hacker0x01/react-datepicker"
+  },
+  {
+    "name": "react-daterange-picker",
+    "repo": "onefinestay/react-daterange-picker"
+  },
+  {
+    "name": "react-day-picker",
+    "repo": "gpbl/react-day-picker"
+  },
+  {
+    "name": "react-disqus-thread",
+    "repo": "mzabriskie/react-disqus-thread"
+  },
+  {
+    "name": "react-drag-and-drop",
+    "repo": "asbjornenge/react-drag-and-drop"
+  },
+  {
+    "name": "react-dropdown",
+    "repo": "fraserxu/react-dropdown"
+  },
+  {
+    "name": "react-dropdown-button",
+    "repo": "zippyui/react-dropdown-button"
+  },
+  {
+    "name": "react-dropzone",
+    "repo": "paramaggarwal/react-dropzone"
+  },
+  {
+    "name": "react-easy-sortable-table",
+    "repo": "brettdewoody/react-easy-sortable-table"
+  },
+  {
+    "name": "react-editable-div",
+    "repo": "svenanders/react-editable-div"
+  },
+  {
+    "name": "react-emoji",
+    "repo": "banyan/react-emoji"
+  },
+  {
+    "name": "react-fa",
+    "repo": "andreypopp/react-fa"
+  },
+  {
+    "name": "react-favicon",
+    "repo": "cezary/react-favicon"
+  },
+  {
+    "name": "react-fileprompt",
+    "repo": "nnarhinen/react-fileprompt"
+  },
+  {
+    "name": "react-filtered-multiselect",
+    "repo": "insin/react-filtered-multiselect"
+  },
+  {
+    "name": "react-fittext",
+    "repo": "gianu/react-fittext"
+  },
+  {
+    "name": "react-fuzzy-search",
+    "repo": "zsutton/react-fuzzy-search"
+  },
+  {
+    "name": "react-gemini-scrollbar",
+    "repo": "noeldelgado/react-gemini-scrollbar"
+  },
+  {
+    "name": "react-gmaps",
+    "repo": "MicheleBertoli/react-gmaps"
+  },
+  {
+    "name": "react-google-analytics",
+    "repo": "hzdg/react-google-analytics"
+  },
+  {
+    "name": "react-googlemaps",
+    "repo": "pieterv/react-googlemaps"
+  },
+  {
+    "name": "react-gravatar",
+    "repo": "KyleAMathews/react-gravatar"
+  },
+  {
+    "name": "react-grid",
+    "repo": "svenanders/react-grid"
+  },
+  {
+    "name": "react-growing-textarea",
+    "repo": "cezary/react-growing-textarea"
+  },
+  {
+    "name": "react-growl",
+    "repo": "Moosylvania/react-growl"
+  },
+  {
+    "name": "react-headroom",
+    "repo": "KyleAMathews/react-headroom"
+  },
+  {
+    "name": "react-hexviewer",
+    "repo": "travisperson/react-hexviewer"
+  },
+  {
+    "name": "react-highlight",
+    "repo": "akiran/react-highlight"
+  },
+  {
+    "name": "react-highlighter",
+    "repo": "helior/react-highlighter"
+  },
+  {
+    "name": "react-icon-factory",
+    "repo": "KyleAMathews/react-icon-factory"
+  },
+  {
+    "name": "react-image",
+    "repo": "yuanyan/react-image"
+  },
+  {
+    "name": "react-imageloader",
+    "repo": "hzdg/react-imageloader"
   }
 ]
