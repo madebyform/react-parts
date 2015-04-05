@@ -88,7 +88,7 @@ export var App = React.createClass({
     );
   },
   handleSearch(value) {
-    let filtered = this.props.components.filter((c) => c.name.indexOf(value) != -1);
+    let filtered = this.props.components.filter((c) => c.name.indexOf(value) != -1 || c.description.indexOf(value) != -1);
     this.setState({ components: filtered });
   }
 });
