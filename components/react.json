@@ -28,12 +28,24 @@
     "repo": "evindor/directions-transition-group"
   },
   {
+    "name": "directive-components",
+    "repo": "MonstroThemes/directive-components"
+  },
+  {
     "name": "downloadbutton",
     "repo": "notablemind/downloadbutton"
   },
   {
     "name": "fixed-data-table",
     "repo": "facebook/fixed-data-table"
+  },
+  {
+    "name": "ga-react-router-component",
+    "repo": "wali-s/ga-react-router-component"
+  },
+  {
+    "name": "gmaps-places-autocomplete",
+    "repo": "bh5-js/gmaps-places-autocomplete"
   },
   {
     "name": "halogen",
@@ -44,8 +56,20 @@
     "repo": "arnemart/hamburger-basement"
   },
   {
+    "name": "lazy-input",
+    "repo": "HurricaneJames/lazy-input"
+  },
+  {
+    "name": "made-with-heart",
+    "repo": "jugoncalves/heart"
+  },
+  {
     "name": "material-ui",
     "repo": "callemall/material-ui"
+  },
+  {
+    "name": "qrcode.react",
+    "repo": "zpao/qrcode.react"
   },
   {
     "name": "rc-calendar",
@@ -92,6 +116,42 @@
     "repo": "react-component/tabs"
   },
   {
+    "name": "react-ago-component",
+    "repo": "martinandert/react-ago-component"
+  },
+  {
+    "name": "react-ajax",
+    "repo": "yuanyan/react-ajax"
+  },
+  {
+    "name": "react-animate",
+    "repo": "elierotenberg/react-animate"
+  },
+  {
+    "name": "react-anything-sortable",
+    "repo": "jasonslyvia/react-anything-sortable"
+  },
+  {
+    "name": "react-article-metadata",
+    "repo": "adamrneary/react-article-metadata"
+  },
+  {
+    "name": "react-autolink",
+    "repo": "banyan/react-autolink"
+  },
+  {
+    "name": "react-autosuggest",
+    "repo": "moroshko/react-autosuggest"
+  },
+  {
+    "name": "react-avatar",
+    "repo": "sitebase/react-avatar"
+  },
+  {
+    "name": "react-avatar-editor",
+    "repo": "mosch/react-avatar-editor"
+  },
+  {
     "name": "react-component-gallery",
     "repo": "KyleAMathews/react-component-gallery"
   },
@@ -128,8 +188,16 @@
     "repo": "mzabriskie/react-disqus-thread"
   },
   {
+    "name": "react-document-title",
+    "repo": "gaearon/react-document-title"
+  },
+  {
     "name": "react-drag-and-drop",
     "repo": "asbjornenge/react-drag-and-drop"
+  },
+  {
+    "name": "react-draggable",
+    "repo": "mzabriskie/react-draggable"
   },
   {
     "name": "react-dropdown",
@@ -182,6 +250,22 @@
   {
     "name": "react-gemini-scrollbar",
     "repo": "noeldelgado/react-gemini-scrollbar"
+  },
+  {
+    "name": "react-gif",
+    "repo": "cezary/react-gif"
+  },
+  {
+    "name": "react-gist",
+    "repo": "tleunen/react-gist"
+  },
+  {
+    "name": "react-gist-embed",
+    "repo": "adamrneary/react-gist-embed"
+  },
+  {
+    "name": "react-github-fork-ribbon",
+    "repo": "jessy1092/react-github-fork-ribbon"
   },
   {
     "name": "react-gmaps",
@@ -266,6 +350,42 @@
   {
     "name": "react-input-placeholder",
     "repo": "enigma-io/react-input-placeholder"
+  },
+  {
+    "name": "react-leaflet",
+    "repo": "PaulLeCam/react-leaflet"
+  },
+  {
+    "name": "react-loading",
+    "repo": "cezary/react-loading"
+  },
+  {
+    "name": "react-magic-move",
+    "repo": "ryanflorence/react-magic-move"
+  },
+  {
+    "name": "react-markdown-el",
+    "repo": "odysseyscience/react-markdown-el"
+  },
+  {
+    "name": "react-markdown-file",
+    "repo": "adamrneary/react-markdown-file"
+  },
+  {
+    "name": "react-markdown-textarea",
+    "repo": "KyleAMathews/react-markdown-textarea"
+  },
+  {
+    "name": "react-math",
+    "repo": "cezary/react-math"
+  },
+  {
+    "name": "react-mentions",
+    "repo": "effektif/react-mentions"
+  },
+  {
+    "name": "react-menu-bar",
+    "repo": "ahutchings/react-menu-bar"
   },
   {
     "name": "react-notification",
@@ -376,12 +496,32 @@
     "repo": "radubrehar/react-tab-panel"
   },
   {
+    "name": "react-tabbar",
+    "repo": "wearefractal/react-tabbar"
+  },
+  {
     "name": "react-table-select",
     "repo": "AllenSH12/react-table-select"
   },
   {
+    "name": "react-table-view",
+    "repo": "StevenIseki/react-table-view"
+  },
+  {
     "name": "react-tagged-input",
     "repo": "tutorialhorizon/react-tagged-input"
+  },
+  {
+    "name": "react-tagsinput",
+    "repo": "olahol/react-tagsinput"
+  },
+  {
+    "name": "react-tangle",
+    "repo": "mapbox/react-tangle"
+  },
+  {
+    "name": "react-tangle-compat",
+    "repo": "mapbox/react-tangle"
   },
   {
     "name": "react-tappable",
@@ -410,6 +550,10 @@
   {
     "name": "react-toggle",
     "repo": "instructure-react/react-toggle"
+  },
+  {
+    "name": "react-tokenizer",
+    "repo": "chenzihui/react-tokenizer"
   },
   {
     "name": "react-touchable",
