@@ -29,9 +29,11 @@ export let Tab = React.createClass({
         color: "#828282",
         WebkitUserSelect: "none",
         MozUserSelect: "none",
-        display: "block"
+        display: "block",
+        padding: this.remCalc(15, 20)
       },
       selectedTab: {
+        background: "#fff",
         color: "#05a5d1"
       },
       disabledTab: {
@@ -68,11 +70,10 @@ export let Tabs = React.createClass({
   render() {
     let styles = {
       container: {
-        background: "#fff",
+        background: "#f6f6f6",
         boxShadow: "0 1px 2px rgba(0,0,0,.2)",
-        margin: 1,
-        padding: this.remCalc(15, 20),
         display: "flex",
+        margin: 1
       },
     };
     return (
