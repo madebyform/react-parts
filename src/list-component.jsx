@@ -22,7 +22,7 @@ let NoComponents = React.createClass({
       },
     };
     return (
-      <div style={styles.container}>
+      <div style={styles.container} className="NoComponents">
         <p>No components found.</p>
       </div>
     );
