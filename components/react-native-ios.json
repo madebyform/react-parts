@@ -24,6 +24,14 @@
     "repo": "jsdf/react-native-htmlview"
   },
   {
+    "name": "react-native-html-webview",
+    "repo": "almost/react-native-html-webview"
+  },
+  {
+    "name": "react-native-icons",
+    "repo": "corymsmith/react-native-icons"
+  },
+  {
     "name": "react-native-linear-gradient",
     "repo": "brentvatne/react-native-linear-gradient"
   },
