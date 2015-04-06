@@ -17,13 +17,15 @@ let NoComponents = React.createClass({
         margin: 1,
         padding: this.remCalc(15, 20),
         color: "#999",
-        display: "flex",
-        justifyContent: "center",
       },
+      message: {
+        width: "100%",
+        textAlign: "center",
+      }
     };
     return (
-      <div style={styles.container} className="NoComponents">
-        <p>No components found.</p>
+      <div style={styles.container}>
+        <p style={styles.message}>No components found.</p>
       </div>
     );
   }
