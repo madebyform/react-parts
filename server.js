@@ -41,10 +41,12 @@ server.get('/', function(req, res) {
 });
 
 // Return the HTML page with the list of native components for iOS or components for web
-server.get('/:type', function(req, res) {
+server.get('/:type(web|native-ios)', function(req, res) {
   var type = req.params.type;
 
-  fs.readFile('./data/react-'+ type +'.json', function(err, data) {
+  fs.readFile('./data/react-'+ type +'.json', function(error, data) {
+    if (error) return console.error(error);
+
     // The catalog of react packages
     var components = {};
     components[type] = JSON.parse(data);
@@ -55,6 +57,7 @@ server.get('/:type', function(req, res) {
       var Handler = React.createFactory(handler);
       var content = new Handler({
         params: state.params,
+        query: state.query,
         initialComponents: components
       });
       var output = React.renderToString(content);
@@ -68,7 +71,7 @@ server.get('/:type', function(req, res) {
 });
 
 // Return JSON with the list of native components for iOS or components for web
-server.get('/api/components/:type', function(req, res) {
+server.get('/api/components/:type(web|native-ios)', function(req, res) {
   var type = req.params.type;
 
   fs.readFile('./data/react-'+ type +'.json', function(error, data) {

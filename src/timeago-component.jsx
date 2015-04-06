@@ -14,16 +14,14 @@ let TimeAgo = React.createClass({
   },
   render() {
     let styles = {
-      timestamp: {
-        color: "#999",
-        fontWeight: 200,
-        paddingLeft: this.remCalc(8)
-      },
+      color: "#999",
+      fontWeight: 200,
+      paddingLeft: this.remCalc(8)
     };
-
+    let relativeTimestamp = timeago(this.props.dateTime);
     return (
-      <time dateTime={this.props.dateTime} style={styles.timestamp}>
-        updated {timeago(this.props.dateTime)}
+      <time dateTime={this.props.dateTime} style={styles}>
+        { relativeTimestamp && `updated ${relativeTimestamp}` }
       </time>
     );
   }
