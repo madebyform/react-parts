@@ -26,10 +26,12 @@ export let Tab = React.createClass({
         textTransform: "uppercase",
         letterSpacing: this.remCalc(1),
         textDecoration: "none",
-        color: "#828282"
+        color: "#828282",
+        WebkitUserSelect: "none",
+        MozUserSelect: "none"
       },
       selectedTab: {
-        color: "#05a5d1",
+        color: "#05a5d1"
       },
       disabledTab: {
         color: "#ccc"
