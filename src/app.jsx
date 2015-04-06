@@ -32,7 +32,8 @@ export var App = React.createClass({
   getInitialState() {
     return {
       components: this.props.initialComponents,
-      filtered: this.props.initialComponents[this.props.params.type]
+      filtered: this.props.initialComponents[this.props.params.type],
+      searchQuery: null,
     };
   },
   render() {
@@ -102,36 +103,44 @@ export var App = React.createClass({
   componentWillReceiveProps(newProps) {
     let type = newProps.params.type;
     let components = this.state.components;
+    let searchQuery = this.state.searchQuery;
 
     // If the user changed tab, and we don't have the data, fetch it
     if (!components[type] || components[type].length === 0) {
       window.fetch(`/api/components/${type}`).then((response) => {
         response.json().then((data) => {
           components[type] = data;
-          // Update both the complete and filtered components list s
-          this.setState({ components, filtered: components[type] });
+          // Update both the complete and filtered components lists
+          let filtered = this.filterForSearch(components[type], searchQuery);
+          this.setState({ components, filtered });
         });
       });
     } else {
       // We already have the data, simply reset the search filters
-      this.setState({ filtered: components[type] });
+      let filtered = this.filterForSearch(components[type], searchQuery);
+      this.setState({ filtered });
     }
   },
-  handleSearch(value) {
+  handleSearch(searchQuery) {
     // Get all components available for the current tab
     let components = this.state.components[this.props.params.type];
 
-    let filtered = components.filter((c) => {
-      return (
-        c.name.indexOf(value) != -1 ||
-        c.description.indexOf(value) != -1 ||
-        c.keywords.indexOf(value) != -1
-      );
-    });
-    this.setState({ filtered });
+    let filtered = this.filterForSearch(components, searchQuery);
+    this.setState({ filtered, searchQuery });
 
     // TODO Improve this code: return to the first page
     this.context.router.transitionTo("/:type", this.props.params, {});
+  },
+  filterForSearch(components, query) {
+    // Return the whole list if the query is null
+    if (query === null) return components;
+
+    // Otherwise, filter
+    return components.filter((c) => (
+      c.name.indexOf(query) != -1 ||
+      c.description.indexOf(query) != -1 ||
+      c.keywords.indexOf(query) != -1
+    ));
   },
   currentPage() {
     var currentPage = parseInt(this.props.query.page); // May return NaN
