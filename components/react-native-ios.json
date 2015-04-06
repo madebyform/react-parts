@@ -52,6 +52,10 @@
     "repo": "jsdf/react-native-refreshable-listview"
   },
   {
+    "name": "react-native-side-menu",
+    "repo": "Kureev/react-native-side-menu"
+  },
+  {
     "name": "react-native-sqlite",
     "repo": "almost/react-native-sqlite"
   },
