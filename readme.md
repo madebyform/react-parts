@@ -1,4 +1,4 @@
-[![React.parts — A catalog of React Native components](https://gc.david.tools/react-parts-v2.svg)](https://react.parts)
+[![React.parts — A catalog of React Native components](https://react.parts/react-parts.svg)](https://react.parts)
 
 #### Adding a new component to the catalog
 
