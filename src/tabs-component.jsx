@@ -9,6 +9,14 @@ let Link = Router.Link;
 
 export let Tab = React.createClass({
   mixins: [StylingMixin],
+  propTypes: {
+    disabled: React.PropTypes.bool
+  },
+  getDefaultProps() {
+    return {
+      disabled: false
+    };
+  },
   render() {
     let styles = {
       tab: {
@@ -22,19 +30,33 @@ export let Tab = React.createClass({
       },
       selectedTab: {
         color: "#05a5d1",
+      },
+      disabledTab: {
+        color: "#ccc"
       }
     };
-    return (
-      <Link
-        {...this.props}
-        style={styles.tab}
-        activeStyle={this.mergeStyles(
+    if (!this.props.disabled) {
+      return (
+        <Link
+          {...this.props}
+          style={styles.tab}
+          activeStyle={this.mergeStyles(
+            styles.tab,
+            styles.selectedTab
+          )}>
+            {this.props.children}
+        </Link>
+      );
+    } else {
+      return (
+        <div style={this.mergeStyles(
           styles.tab,
-          styles.selectedTab
+          styles.disabledTab
         )}>
           {this.props.children}
-      </Link>
-    );
+        </div>
+      );
+    }
   }
 });
 

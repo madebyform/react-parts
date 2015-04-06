@@ -9,6 +9,7 @@ import StylingMixin from './styling-mixin.jsx';
 import NavBar from './nav-bar-component.jsx';
 import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
+import Pagination from './pagination-component.jsx';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;
@@ -19,7 +20,13 @@ export var App = React.createClass({
     router: React.PropTypes.func
   },
   propTypes: {
-    initialComponents: React.PropTypes.object.isRequired
+    initialComponents: React.PropTypes.object.isRequired,
+    perPage: React.PropTypes.number
+  },
+  getDefaultProps() {
+    return {
+      perPage: 20
+    };
   },
   getInitialState() {
     return {
@@ -30,7 +37,8 @@ export var App = React.createClass({
   render() {
     let title = "React.parts";
     let type = this.props.params.type;
-    let components = this.state.filtered || [];
+    let components = this.state.filtered;
+    let componentsForPage = this.componentsForPage(components);
 
     let styles = {
       container:  {
@@ -72,8 +80,15 @@ export var App = React.createClass({
             <Tab to="components" params={{type: "web"}}>React for Web</Tab>
           </Tabs>
 
-          <RouteHandler components={components} />
+          <RouteHandler components={componentsForPage} />
 
+          <Pagination
+            to="components"
+            params={{ type }}
+            currentPage={this.currentPage()}
+            perPage={this.props.perPage}
+            totalItems={components.length}
+          />
           <p style={styles.footer}>
             React, React Native and logos are copyright of Facebook.
             This page is not affiliated with Facebook.<br/>
@@ -109,6 +124,19 @@ export var App = React.createClass({
       return c.name.indexOf(value) != -1 || c.description.indexOf(value) != -1;
     });
     this.setState({ filtered });
+
+    // TODO Improve this code: return to the first page
+    this.context.router.transitionTo("/:type", this.props.params, {});
+  },
+  currentPage() {
+    var currentPage = parseInt(this.props.query.page); // May return NaN
+    if (isNaN(currentPage)) currentPage = 1; // This works, even for 0
+    return currentPage;
+  },
+  componentsForPage(items) {
+    let i = Math.max(0, (this.currentPage() - 1) * this.props.perPage);
+    let j = Math.max(0, this.currentPage() * this.props.perPage);
+    return items.slice(i, j);
   }
 });
 
@@ -121,7 +149,7 @@ export var routes = (
 if (typeof(document) !== "undefined") {
   Router.run(routes, Router.HistoryLocation, function(Handler, state) {
     React.render(
-      <Handler params={state.params} initialComponents={window.initialComponents} />,
+      <Handler {...state} initialComponents={window.initialComponents} />,
       document.getElementById("container")
     );
   });
