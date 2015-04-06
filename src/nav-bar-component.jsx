@@ -43,8 +43,10 @@ let NavBar = React.createClass({
         width: "1em"
       },
       title: {
+        color: "#fff",
         fontSize: this.remCalc(26),
-        fontWeight: 600
+        fontWeight: 600,
+        textDecoration: "none"
       },
       center: {
         alignItems: "center",
@@ -80,7 +82,7 @@ let NavBar = React.createClass({
       <div className="NavBar" style={styles.container}>
         <div style={styles.titleArea}>
           <img style={styles.logo} src="/logo.svg" alt="Logo" draggable="false" />
-          <span style={styles.title}>{this.props.title}</span>
+          <a href="/" style={styles.title}>{this.props.title}</a>
         </div>
         <div style={styles.center}>
           <input
