@@ -7,6 +7,28 @@ import ComponentItem from './item-component.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;
 
+let NoComponents = React.createClass({
+  mixins: [StylingMixin, PureRenderMixin],
+  render() {
+    let styles = {
+      container: {
+        background: "#fff",
+        boxShadow: "0 1px 2px rgba(0,0,0,.2)",
+        margin: 1,
+        padding: this.remCalc(15, 20),
+        color: "#999",
+        display: "flex",
+        justifyContent: "center",
+      },
+    };
+    return (
+      <div style={styles.container}>
+        <p>No components found.</p>
+      </div>
+    );
+  }
+});
+
 let ComponentList = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   propTypes: {
@@ -25,6 +47,13 @@ let ComponentList = React.createClass({
         </li>
       );
     });
+
+    if (components.length === 0) {
+      return (
+        <NoComponents />
+      );
+    }
+
     return (
       <ul style={styles}>
         {components}
