@@ -11,6 +11,7 @@ import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
 import Pagination from './pagination-component.jsx';
 import Scroller from './scroller-component.jsx';
+import sortBy from './sort';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;
@@ -126,6 +127,9 @@ export var App = React.createClass({
     let components = this.state.components[this.props.params.type];
 
     let filtered = this.filterForSearch(components, searchQuery);
+    // sort results by stars
+    filtered = filtered.sort(sortBy("stars", Number, false));
+
     this.setState({ filtered, searchQuery });
 
     // TODO Improve this code: return to the first page
@@ -139,7 +143,8 @@ export var App = React.createClass({
     return components.filter((c) => (
       c.name.indexOf(query) != -1 ||
       c.description.indexOf(query) != -1 ||
-      c.keywords.indexOf(query) != -1
+      c.keywords.indexOf(query) != -1 ||
+      c.githubUser.toLowerCase() == query
     ));
   },
   currentPage() {

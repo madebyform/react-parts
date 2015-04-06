@@ -11,6 +11,7 @@ var Router = require('react-router');
 var express = require('express');
 var cachify = require('connect-cachify');
 var ejs = require('ejs');
+var sortBy = require('./src/sort');
 var server = express();
 
 // List of assets where the keys are your production urls, and the value
@@ -49,7 +50,7 @@ server.get('/:type(web|native-ios)', function(req, res) {
 
     // The catalog of react packages
     var components = {};
-    components[type] = JSON.parse(data);
+    components[type] = JSON.parse(data).sort(sortBy("modified", Date, false));
 
     Router.run(routes, req.url, function (handler, state) {
       // Render the app and send the markup for faster page loads and SEO
@@ -76,7 +77,9 @@ server.get('/api/components/:type(web|native-ios)', function(req, res) {
 
   fs.readFile('./data/react-'+ type +'.json', function(error, data) {
     if (error) return console.error(error);
-    res.json(JSON.parse(data));
+
+    var components = JSON.parse(data).sort(sortBy("modified", Date, false));
+    res.json(components);
   });
 });
 
