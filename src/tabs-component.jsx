@@ -28,7 +28,8 @@ export let Tab = React.createClass({
         textDecoration: "none",
         color: "#828282",
         WebkitUserSelect: "none",
-        MozUserSelect: "none"
+        MozUserSelect: "none",
+        display: "block"
       },
       selectedTab: {
         color: "#05a5d1"
