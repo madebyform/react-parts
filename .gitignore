@@ -4,3 +4,4 @@ assets/app.min.js
 data/*
 keys.json
 npm-debug.log
+npm.json
