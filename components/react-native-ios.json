@@ -36,6 +36,10 @@
     "repo": "appintheair/react-native-looped-carousel"
   },
   {
+    "name": "react-native-markdown",
+    "repo": "lwansbrough/react-native-markdown"
+  },
+  {
     "name": "react-native-modal",
     "repo": "brentvatne/react-native-modal"
   },
