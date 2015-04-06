@@ -1,5 +1,17 @@
 [
   {
+    "name": "react-native-ui",
+    "repo": "ambitioninc/react-native-ui"
+  },
+  {
+    "name": "react-native-viewport-units",
+    "repo": "jmstout/react-native-viewport-units"
+  },
+  {
+    "name": "react-uikit",
+    "repo": "react-uikit/react-uikit"
+  },
+  {
     "name": "react-native-button",
     "repo": "ide/react-native-button"
   },

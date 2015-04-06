@@ -5,7 +5,7 @@ var existing = {};
 from_array_to_map(require('./components/react-native-ios.json'), existing);
 from_array_to_map(require('./components/react-web.json'), existing);
 
-var since_date = new Date("2010-01-01");
+var since_date = new Date(process.argv[2] || "2010-01-01");
 
 var web_keywords = [
   "react-component",

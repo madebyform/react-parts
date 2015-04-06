@@ -1,5 +1,21 @@
 [
   {
+    "name": "glsl-transition-vignette",
+    "repo": "glslio/glsl-transition-vignette"
+  },
+  {
+    "name": "glsl-transition-vignette-grid",
+    "repo": "glslio/glsl-transition-vignette-grid"
+  },
+  {
+    "name": "glsl-uniforms-editor",
+    "repo": "gre/glsl-uniforms-editor"
+  },
+  {
+    "name": "griddle-react",
+    "repo": "DynamicTyped/Griddle"
+  }
+  {
     "name": "bezier-easing-editor",
     "repo": "gre/bezier-easing-editor"
   },
