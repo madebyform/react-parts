@@ -122,7 +122,11 @@ export var App = React.createClass({
     let components = this.state.components[this.props.params.type];
 
     let filtered = components.filter((c) => {
-      return c.name.indexOf(value) != -1 || c.description.indexOf(value) != -1;
+      return (
+        c.name.indexOf(value) != -1 ||
+        c.description.indexOf(value) != -1 ||
+        c.keywords.indexOf(value) != -1
+      );
     });
     this.setState({ filtered });
 

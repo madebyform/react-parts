@@ -48,6 +48,7 @@ components.forEach(function(component) {
           description: data.description,
           latestVersion: latestVersion,
           homepage: data.versions[latestVersion].homepage || githubUrl,
+          keywords: (data.versions[latestVersion].keywords || []).join(", "),
           created: data.time.created,
           modified: data.time.modified
         });
