@@ -1,4 +1,11 @@
 var fs = require('fs');
+var path = require('path');
+
+var existing = {};
+from_array_to_map(require('./components/react-native-ios.json'), existing);
+from_array_to_map(require('./components/react-web.json'), existing);
+
+var since_date = new Date("2010-01-01");
 
 var web_keywords = [
   "react-component",
@@ -40,9 +47,23 @@ function partial_matcher(prop, keywords, partial_store) {
   return complete;
 }
 
+function from_array_to_map(ary, map) {
+  for (var i = 0; i < ary.length; i++) {
+    map[ary[i].name] = ary[i];
+  }
+}
+
+function is_github_based(candidate) {
+  return (candidate.repository && candidate.repository.url && candidate.repository.url.indexOf("github.com") != -1);
+}
+
+function is_modified_since(candidate, since) {
+  return (candidate['time'] && candidate['time'].modified && new Date(candidate['time'].modified) >= since)
+}
+
 var p = new Promise(function(resolve,reject){
   var obj;
-  fs.readFile('npm.json', 'utf8', function (err, data) {
+  fs.readFile(path.join(__dirname, 'data', 'npm.json'), 'utf8', function (err, data) {
     obj = JSON.parse(data);
     resolve(obj);
   });
@@ -59,39 +80,39 @@ var p = new Promise(function(resolve,reject){
     var web_partial_store = {};
     var native_partial_store = {};
 
-    if (candidate instanceof Object) {
+    if (candidate instanceof Object && is_modified_since(candidate, since_date) && is_github_based(candidate)) {
 
       if (candidate.keywords && candidate.keywords instanceof Array) {
-        if (matcher(candidate.keywords, native_partial_store, native_keywords)) {
+        if (matcher(candidate.keywords, native_partial_store, native_keywords) && !existing[candidate.name]) {
           native_candidates.push(candidate);
           return;
         }
 
-        if (matcher(candidate.keywords, web_partial_store, web_keywords)) {
+        if (matcher(candidate.keywords, web_partial_store, web_keywords) && !existing[candidate.name]) {
           web_candidates.push(candidate);
           return;
         }
       }
 
       if (candidate.description) {
-        if (matcher(candidate.description, native_partial_store, native_keywords)) {
+        if (matcher(candidate.description, native_partial_store, native_keywords) && !existing[candidate.name]) {
           native_candidates.push(candidate);
           return;
         }
 
-        if (matcher(candidate.description, web_partial_store, web_keywords)) {
+        if (matcher(candidate.description, web_partial_store, web_keywords) && !existing[candidate.name]) {
           web_candidates.push(candidate);
           return;
         }
       }
 
       if (candidate.readme) {
-        if (matcher(candidate.readme, native_partial_store, native_keywords)) {
+        if (matcher(candidate.readme, native_partial_store, native_keywords) && !existing[candidate.name]) {
           native_candidates.push(candidate);
           return;
         }
 
-        if (matcher(candidate.readme, web_partial_store, web_keywords)) {
+        if (matcher(candidate.readme, web_partial_store, web_keywords) && !existing[candidate.name]) {
           web_candidates.push(candidate);
           return;
         }
@@ -101,12 +122,12 @@ var p = new Promise(function(resolve,reject){
         var versions = Object.keys(candidate.versions);
         for (var v = 0; v < versions.length; v++) {
           if (versions[v].dependencies) {
-            if (matcher(Object.keys(versions[v].dependencies), native_partial_store, native_keywords)) {
+            if (matcher(Object.keys(versions[v].dependencies), native_partial_store, native_keywords) && !existing[candidate.name]) {
               native_candidates.push(candidate);
               return;
             }
 
-            if (matcher(Object.keys(versions[v].dependencies), web_partial_store, web_keywords)) {
+            if (matcher(Object.keys(versions[v].dependencies), web_partial_store, web_keywords) && !existing[candidate.name]) {
               web_candidates.push(candidate);
               return;
             }
@@ -117,8 +138,8 @@ var p = new Promise(function(resolve,reject){
     }
   });
 
-  fs.writeFile("web_candidates.json", JSON.stringify(web_candidates, null, '  '));
-  fs.writeFile("native_candidates.json", JSON.stringify(native_candidates, null, '  '));
+  fs.writeFile(path.join(__dirname, 'data', "web_candidates.json"), JSON.stringify(web_candidates, null, '  '));
+  fs.writeFile(path.join(__dirname, 'data', "native_candidates.json"), JSON.stringify(native_candidates, null, '  '));
 
   console.log("finish: \n "+ web_candidates.length + " web components.\n " + native_candidates.length + " native components.");
 });

@@ -24,7 +24,7 @@
     "live": "npm run watch:js & NODE_ENV=development nodemon server.js",
     "build:js": "browserify src/app.jsx -t babelify --outfile assets/app.js && uglifyjs assets/app.js -o assets/app.min.js",
     "watch:js": "watchify src/app.jsx -t babelify --outfile assets/app.js",
-    "download": "curl -L http://registry.npmjs.eu/-/all -o npm.json",
+    "download": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
     "fetch": "node fetch.js",
     "parse": "node parse.js"
   }
