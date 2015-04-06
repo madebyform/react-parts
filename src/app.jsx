@@ -34,13 +34,13 @@ export var App = React.createClass({
     return {
       components: this.props.initialComponents,
       filtered: this.props.initialComponents[this.props.params.type],
-      searchQuery: null,
+      searchQuery: "",
     };
   },
   render() {
     let title = "React.parts";
     let type = this.props.params.type;
-    let components = this.state.filtered;
+    let components = this.sortComponents(this.state.filtered);
     let componentsForPage = this.componentsForPage(components);
 
     let styles = {
@@ -127,25 +127,27 @@ export var App = React.createClass({
     let components = this.state.components[this.props.params.type];
 
     let filtered = this.filterForSearch(components, searchQuery);
-    // sort results by stars
-    filtered = filtered.sort(sortBy("stars", Number, false));
-
     this.setState({ filtered, searchQuery });
 
     // TODO Improve this code: return to the first page
     this.context.router.transitionTo("/:type", this.props.params, {});
   },
   filterForSearch(components, query) {
-    // Return the whole list if the query is null
-    if (query === null) return components;
-
-    // Otherwise, filter
     return components.filter((c) => (
       c.name.indexOf(query) != -1 ||
       c.description.indexOf(query) != -1 ||
       c.keywords.indexOf(query) != -1 ||
       c.githubUser.toLowerCase() == query
     ));
+  },
+  sortComponents(components) {
+    if (this.state.searchQuery) {
+      // Sort results by stars
+      return components.sort(sortBy("stars", Number, false));
+    } else {
+      // Default sorting from server
+      return components;
+    }
   },
   currentPage() {
     var currentPage = parseInt(this.props.query.page); // May return NaN
