@@ -10,6 +10,7 @@ import NavBar from './nav-bar-component.jsx';
 import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
 import Pagination from './pagination-component.jsx';
+import Scroller from './scroller-component.jsx';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;
@@ -70,7 +71,7 @@ export var App = React.createClass({
       }
     };
     return (
-      <div style={styles.container}>
+      <Scroller className="scrollable" position="top" style={styles.container}>
         <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
@@ -95,7 +96,7 @@ export var App = React.createClass({
             <a style={styles.author} href="http://madebyform.com">Made by Form</a>
           </p>
         </div>
-      </div>
+      </Scroller>
     );
   },
   componentWillReceiveProps(newProps) {
