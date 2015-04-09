@@ -98,5 +98,17 @@
   {
     "name": "tcomb-form-native",
     "repo": "gcanti/tcomb-form-native"
+  },
+  {
+    "name": "react-native-viewport",
+    "repo": "pjjanak/react-native-viewport"
+  },
+  {
+    "name": "react-native-twitter-login",
+    "repo": "yosit/react-native-twitter-login"
+  },
+  {
+    "name": "react-native-headers",
+    "repo": "sheebz/react-native-headers"
   }
 ]
