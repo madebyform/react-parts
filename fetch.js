@@ -68,9 +68,10 @@ components.forEach(function(component) {
 
         request(options, function(error, response, body) {
           var data = JSON.parse(body);
+          var noDownloads = [{downloads: 0}];
 
           resolve({
-            downloads: data.downloads.reduce(function(total, daily) {
+            downloads: (data.downloads || noDownloads).reduce(function(total, daily) {
               return total + daily.downloads;
             }, 0)
           });
