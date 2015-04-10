@@ -110,5 +110,9 @@
   {
     "name": "react-native-headers",
     "repo": "sheebz/react-native-headers"
+  },
+  {
+    "name": "react-native-blur",
+    "repo": "Kureev/react-native-blur"
   }
 ]
