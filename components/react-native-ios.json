@@ -114,5 +114,9 @@
   {
     "name": "react-native-blur",
     "repo": "Kureev/react-native-blur"
+  },
+  {
+    "name": "react-native-grid-view",
+    "repo": "lucholaf/react-native-grid-view"
   }
 ]
