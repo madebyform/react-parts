@@ -44,7 +44,6 @@ components.forEach(function(component) {
         resolve({
           name: component.name,
           githubUser: component.repo.split("/")[0],
-          githubRepo: component.repo.split("/")[1],
           description: data.description,
           latestVersion: latestVersion,
           homepage: data.versions[latestVersion].homepage || githubUrl,
