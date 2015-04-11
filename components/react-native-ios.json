@@ -118,5 +118,9 @@
   {
     "name": "react-native-grid-view",
     "repo": "lucholaf/react-native-grid-view"
+  },
+  {
+    "name": "react-native-localization",
+    "repo": "stefalda/ReactNativeLocalization"
   }
 ]
