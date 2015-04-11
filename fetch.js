@@ -100,8 +100,9 @@ components.forEach(function(component) {
 });
 
 Promise.all(promises).then(function(values) {
-  console.log("\nsuccess!!");
   // Persist the new data
-  var str = JSON.stringify(components, null, '  '); // '  ' for indentation
+  var str = JSON.stringify(components);
   fs.writeFile(dataFile, str);
+
+  console.log("\nSuccess!");
 });
