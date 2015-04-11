@@ -1,5 +1,161 @@
 [
   {
+    "name": "time-pikinator",
+    "repo": "kofno/time-pikinator"
+  },
+  {
+    "name": "react-vui-forms",
+    "repo": "Brightspace/react-valence-ui-forms"
+  },
+  {
+    "name": "react-vui-alerts",
+    "repo": "Brightspace/react-valence-ui-alerts"
+  },
+  {
+    "name": "react-viewport",
+    "repo": "jmfurlott/react-viewport"
+  },
+  {
+    "name": "react-topcoat",
+    "repo": "arnemart/react-topcoat"
+  },
+  {
+    "name": "react-tabs",
+    "repo": "mzabriskie/react-tabs"
+  },
+  {
+    "name": "react-swipper",
+    "repo": "michalradziwon/react-swipper"
+  },
+  {
+    "name": "react-svg",
+    "repo": "atomic-app/react-svg"
+  },
+  {
+    "name": "react-suitcss",
+    "repo": "acdlite/react-suitcss"
+  },
+  {
+    "name": "react-styleguide",
+    "repo": "jmfurlott/react-styleguide"
+  },
+  {
+    "name": "react-style-guide",
+    "repo": "alexlande/react-style-guide"
+  },
+  {
+    "name": "react-semantic-ui",
+    "repo": "jhudson8/react-semantic-ui"
+  },
+  {
+    "name": "react-select-box",
+    "repo": "instructure/react-select-box"
+  },
+  {
+    "name": "react-router-proxy-loader",
+    "repo": "odysseyscience/react-router-proxy-loader"
+  },
+  {
+    "name": "react-router-bootstrap",
+    "repo": "mtscout6/react-router-bootstrap"
+  },
+  {
+    "name": "react-router-active-component",
+    "repo": "insin/react-router-active-component"
+  },
+  {
+    "name": "react-reorderable",
+    "repo": "mgechev/react-reorderable"
+  },
+  {
+    "name": "react-radio-group",
+    "repo": "jergason/react-radio-group"
+  },
+  {
+    "name": "react-presentation",
+    "repo": "kirjs/react-presentation"
+  },
+  {
+    "name": "react-portal",
+    "repo": "tajo/react-portal"
+  },
+  {
+    "name": "react-paginate-component",
+    "repo": "eliseumds/react-paginate"
+  },
+  {
+    "name": "react-object-fit-cover",
+    "repo": "acdlite/react-object-fit-cover"
+  },
+  {
+    "name": "react-memory-stats",
+    "repo": "nicolasbrugneaux/react-memory-stats"
+  },
+  {
+    "name": "react-media-query",
+    "repo": "panquish/react-media-query"
+  },
+  {
+    "name": "react-kaomoji",
+    "repo": "enaqx/react-kaomoji"
+  },
+  {
+    "name": "react-ink",
+    "repo": "vigetlabs/react-ink"
+  },
+  {
+    "name": "react-free-style",
+    "repo": "blakeembrey/react-free-style"
+  },
+  {
+    "name": "react-focuspoint",
+    "repo": "acdlite/react-focuspoint"
+  },
+  {
+    "name": "react-dragon",
+    "repo": "vigetlabs/react-dragon"
+  },
+  {
+    "name": "react-credit-card",
+    "repo": "JohnyDays/react-credit-card"
+  },
+  {
+    "name": "react-continuous-scroll",
+    "repo": "nrako/react-continuous-scroll"
+  },
+  {
+    "name": "react-charts-line",
+    "repo": "fiatjaf/react-charts"
+  },
+  {
+    "name": "react-canvas",
+    "repo": "Flipboard/react-canvas"
+  },
+  {
+    "name": "react-calendar-component",
+    "repo": "Hanse/react-calendar"
+  },
+  {
+    "name": "react-btn-checkbox",
+    "repo": "iam4x/react-btn-checkbox"
+  },
+  {
+    "name": "react-bootstrap-calendar",
+    "repo": "nnarhinen/react-bootstrap-calendar"
+  },
+  {
+    "name": "react-bootstrap-async-autocomplete",
+    "repo": "nnarhinen/react-bootstrap-async-autocomplete"
+  },
+  {
+    "name": "imager.jsx",
+    "repo": "oncletom/Imager.jsx"
+  },
+  {
+    "name": "idle-maps",
+    "repo": "zpratt/react-maps"
+  },
+  {
     "name": "glsl-transition-vignette",
     "repo": "glslio/glsl-transition-vignette"
   },
