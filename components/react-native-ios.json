@@ -122,5 +122,9 @@
   {
     "name": "react-native-localization",
     "repo": "stefalda/ReactNativeLocalization"
+  },
+  {
+    "name": "react-native-overlay",
+    "repo": "brentvatne/react-native-overlay"
   }
 ]
