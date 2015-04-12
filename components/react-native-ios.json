@@ -130,5 +130,9 @@
   {
     "name": "react-native-effects-view",
     "repo": "voronianski/react-native-effects-view"
+  },
+  {
+    "name": "rn-drawer",
+    "repo": "rt2zz/rn-drawer"
   }
 ]
