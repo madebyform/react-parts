@@ -126,5 +126,9 @@
   {
     "name": "react-native-overlay",
     "repo": "brentvatne/react-native-overlay"
+  },
+  {
+    "name": "react-native-effects-view",
+    "repo": "voronianski/react-native-effects-view"
   }
 ]
