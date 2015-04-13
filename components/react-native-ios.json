@@ -134,5 +134,9 @@
   {
     "name": "rn-drawer",
     "repo": "rt2zz/rn-drawer"
+  },
+  {
+    "name": "react-native-router",
+    "repo": "t4t5/react-native-router"
   }
 ]
