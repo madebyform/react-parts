@@ -138,5 +138,9 @@
   {
     "name": "react-native-router",
     "repo": "t4t5/react-native-router"
+  },
+  {
+    "name": "react-native-audiorecorder",
+    "repo": "jsierles/react-native-audiorecorder"
   }
 ]
