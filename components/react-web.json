@@ -49,7 +49,7 @@
   },
   {
     "name": "react-select-box",
-    "repo": "instructure/react-select-box"
+    "repo": "instructure-react/react-select-box"
   },
   {
     "name": "react-router-proxy-loader",
@@ -120,10 +120,6 @@
     "repo": "JohnyDays/react-credit-card"
   },
   {
-    "name": "react-continuous-scroll",
-    "repo": "nrako/react-continuous-scroll"
-  },
-  {
     "name": "react-charts-line",
     "repo": "fiatjaf/react-charts"
   },
@@ -153,7 +149,7 @@
   },
   {
     "name": "idle-maps",
-    "repo": "zpratt/react-maps"
+    "repo": "zpratt/idle-maps"
   },
   {
     "name": "glsl-transition-vignette",
@@ -941,7 +937,7 @@
   },
   {
     "name": "react-selector",
-    "repo": "jvalente/react-selector"
+    "repo": "Doist/react-selector"
   },
   {
     "name": "react-select",
@@ -1377,7 +1373,7 @@
   },
   {
     "name": "react-image-grid",
-    "repo": "KyleAMathews/react-image-grid"
+    "repo": "KyleAMathews/react-component-gallery"
   },
   {
     "name": "react-infinite",
@@ -1397,7 +1393,7 @@
   },
   {
     "name": "react-infinity",
-    "repo": "naman34/react-infinity"
+    "repo": "nmn/react-infinity"
   },
   {
     "name": "react-inline-css",
@@ -1497,7 +1493,7 @@
   },
   {
     "name": "react-menu",
-    "repo": "knomedia/react-menu"
+    "repo": "instructure-react/react-menu"
   },
   {
     "name": "react-menus",
@@ -1622,5 +1618,45 @@
   {
     "name": "react-pure",
     "repo": "hailocab/react-pure"
+  },
+  {
+    "name": "bezier-easing-picker",
+    "repo": "gre/bezier-easing-picker"
+  },
+  {
+    "name": "faster-react-tabs",
+    "repo": "edenspiekermann/faster-react-tabs"
+  },
+  {
+    "name": "react-bootstrap-table",
+    "repo": "AllenFang/react-bootstrap-table"
+  },
+  {
+    "name": "react-doc-meta",
+    "repo": "geekyme/react-doc-meta"
+  },
+  {
+    "name": "react-lite-dropdown",
+    "repo": "teambition/react-lite-dropdown"
+  },
+  {
+    "name": "react-packer",
+    "repo": "towry/react-packer"
+  },
+  {
+    "name": "react-simple-toolbar",
+    "repo": "zippyui/react-simple-toolbar"
+  },
+  {
+    "name": "react-simple-wizard",
+    "repo": "kujohn/react-simple-wizard"
+  },
+  {
+    "name": "react-tooltip",
+    "repo": "wwayne/react-tooltip"
+  },
+  {
+    "name": "react-tree-component",
+    "repo": "zetkin/react-tree-component"
   }
 ]
