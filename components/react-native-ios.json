@@ -142,5 +142,9 @@
   {
     "name": "react-native-audiorecorder",
     "repo": "jsierles/react-native-audiorecorder"
+  },
+  {
+    "name": "react-native-calendar-picker",
+    "repo": "stephy/CalendarPicker"
   }
 ]
