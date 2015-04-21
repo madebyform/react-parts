@@ -158,5 +158,9 @@
   {
     "name": "react-native-device",
     "repo": "GertjanReynaert/react-native-device"
+  },
+  {
+    "name": "react-native-swiper",
+    "repo": "leecade/react-native-swiper"
   }
 ]
