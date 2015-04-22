@@ -162,5 +162,13 @@
   {
     "name": "react-native-swiper",
     "repo": "leecade/react-native-swiper"
+  },
+  {
+    "name": "react-native-invertible-scroll-view",
+    "repo": "650Industries/react-native-invertible-scroll-view"
+  },
+  {
+    "name": "react-native-ibeacon",
+    "repo": "geniuxconsulting/react-native-ibeacon"
   }
 ]
