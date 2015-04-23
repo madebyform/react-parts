@@ -170,5 +170,13 @@
   {
     "name": "react-native-ibeacon",
     "repo": "geniuxconsulting/react-native-ibeacon"
+  },
+  {
+    "name": "react-native-ab",
+    "repo": "lwansbrough/react-native-ab"
+  },
+  {
+    "name": "react-native-css",
+    "repo": "sabeurthabti/react-native-css"
   }
 ]
