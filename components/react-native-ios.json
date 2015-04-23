@@ -178,5 +178,9 @@
   {
     "name": "react-native-css",
     "repo": "sabeurthabti/react-native-css"
+  },
+  {
+    "name": "react-native-google-analytics",
+    "repo": "lwansbrough/react-native-google-analytics"
   }
 ]
