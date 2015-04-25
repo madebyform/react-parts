@@ -141,7 +141,7 @@
   },
   {
     "name": "react-native-audiorecorder",
-    "repo": "jsierles/react-native-audiorecorder"
+    "repo": "jsierles/react-native-audio"
   },
   {
     "name": "react-native-calendar-picker",
@@ -198,5 +198,9 @@
   {
     "name": "react-native-multipicker",
     "repo": "veddermatic/react-native-multipicker"
+  },
+  {
+    "name": "react-native-progress-bar",
+    "repo": "lwansbrough/react-native-progress-bar"
   }
 ]
