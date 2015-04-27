@@ -202,5 +202,8 @@
   {
     "name": "react-native-progress-bar",
     "repo": "lwansbrough/react-native-progress-bar"
+  }, {
+    "name": "react-native-social-share",
+    "repo": "doefler/react-native-social-share"
   }
 ]
