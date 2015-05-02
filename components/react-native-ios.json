@@ -208,5 +208,8 @@
   }, {
     "name": "react-native-addressbook",
     "repo": "rt2zz/react-native-addressbook"
+  }, {
+    "name": "react-native-mapbox-gl",
+    "repo": "bsudekum/react-native-mapbox-gl"
   }
 ]
