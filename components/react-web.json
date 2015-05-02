@@ -1177,7 +1177,7 @@
   },
   {
     "name": "react-color-picker",
-    "repo": "radubrehar/react-color-picker"
+    "repo": "zippyui/react-color-picker"
   },
   {
     "name": "react-colorpicker",
@@ -1658,5 +1658,261 @@
   {
     "name": "react-tree-component",
     "repo": "zetkin/react-tree-component"
+  },
+  {
+    "name": "carpentry",
+    "repo": "lebowski89/carpentry"
+  },
+  {
+    "name": "formsy-react",
+    "repo": "christianalfoni/formsy-react"
+  },
+  {
+    "name": "material-ui-cssinjs",
+    "repo": "callemall/material-ui"
+  },
+  {
+    "name": "mnq-react-bootstrap-datetimepicker",
+    "repo": "alex1712/react-bootstrap-datetimepicker"
+  },
+  {
+    "name": "null-default-props",
+    "repo": "jarsbe/null-default-props"
+  },
+  {
+    "name": "piwik-react-router",
+    "repo": "joernroeder/piwik-react-router"
+  },
+  {
+    "name": "pjebs-react-date-picker",
+    "repo": "pjebs/react-date-picker"
+  },
+  {
+    "name": "pui-react-alerts",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-buttons",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-collapse",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-dividers",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-draggable-list",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-dropdowns",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-expander",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-grids",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-iconography",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-images",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-labels",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-lists",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-media",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-modals",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-notifications",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-overlay-trigger",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-panels",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-panes",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-radio",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-radio-group",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-ribbons",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-search-input",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-sortable-table",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-tabs",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-tooltip",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "pui-react-typography",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "react-array-chunk-render",
+    "repo": "davidxi/react-array-chunk-render"
+  },
+  {
+    "name": "react-asset-loader",
+    "repo": "juancabrera/react-asset-loader"
+  },
+  {
+    "name": "react-bootstrap-datetime",
+    "repo": "katyo/react-bootstrap-datetime"
+  },
+  {
+    "name": "react-bs-notifier",
+    "repo": "chadly/react-bs-notifier"
+  },
+  {
+    "name": "react-cloudinary-image",
+    "repo": "unsworn/react-cloudinary-image"
+  },
+  {
+    "name": "react-compat-component",
+    "repo": "philplckthun/react-compat-component"
+  },
+  {
+    "name": "react-count-to",
+    "repo": "MicheleBertoli/react-count-to"
+  },
+  {
+    "name": "react-date-select",
+    "repo": "JedWatson/react-date-select"
+  },
+  {
+    "name": "react-datetime-picker",
+    "repo": "zippyui/react-datetime-picker"
+  },
+  {
+    "name": "react-facebook-login",
+    "repo": "keppelen/react-facebook-login"
+  },
+  {
+    "name": "react-file-drag-and-drop",
+    "repo": "fedosejev/react-file-drag-and-drop"
+  },
+  {
+    "name": "react-file-input",
+    "repo": "captivationsoftware/react-file-input"
+  },
+  {
+    "name": "react-flexr",
+    "repo": "chriskjaer/react-flexr"
+  },
+  {
+    "name": "react-html-select",
+    "repo": "tomkis1/react-html-select"
+  },
+  {
+    "name": "react-lite-layered",
+    "repo": "teambition/react-lite-dropdown"
+  },
+  {
+    "name": "react-lite-uploader",
+    "repo": "teambition/react-lite-uploader"
+  },
+  {
+    "name": "react-loaders",
+    "repo": "jonjaques/react-loaders"
+  },
+  {
+    "name": "react-matterkit",
+    "repo": "azazdeaz/react-matterkit"
+  },
+  {
+    "name": "react-phone-input",
+    "repo": "razagill/react-phone-input"
+  },
+  {
+    "name": "react-pop",
+    "repo": "Nase00/react-pop"
+  },
+  {
+    "name": "react-progress-button",
+    "repo": "mathieudutour/react-progress-button"
+  },
+  {
+    "name": "react-scrollbar",
+    "repo": "souhe/reactScrollbar"
+  },
+  {
+    "name": "react-simple-pie-chart",
+    "repo": "brigade/react-simple-pie-chart"
+  },
+  {
+    "name": "react-stateful",
+    "repo": "gaearon/react-stateful"
+  },
+  {
+    "name": "react-swipe-views",
+    "repo": "damusnet/react-swipe-views"
+  },
+  {
+    "name": "react-swipr",
+    "repo": "isekivacenz/react-swipr"
+  },
+  {
+    "name": "react-tray",
+    "repo": "instructure-react/react-tray"
+  },
+  {
+    "name": "react-virtual-scroller",
+    "repo": "zippyui/react-virtual-scroller"
+  },
+  {
+    "name": "react-vm-flower",
+    "repo": "flosse/react-vm-flower"
+  },
+  {
+    "name": "reactypeahead",
+    "repo": "raymondmuller/reactypeahead"
+  },
+  {
+    "name": "ribcage-preview",
+    "repo": "Techwraith/ribcage-preview"
   }
 ]
