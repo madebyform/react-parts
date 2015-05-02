@@ -211,5 +211,11 @@
   }, {
     "name": "react-native-mapbox-gl",
     "repo": "bsudekum/react-native-mapbox-gl"
+  }, {
+    "name": "react-native-realtimestorage-ios",
+    "repo": "realtime-framework/RCTRealtimeCloudStorage"
+  }, {
+    "name": "react-native-realtimemessaging-ios",
+    "repo": "realtime-framework/RCTRealtimeMessaging"
   }
 ]
