@@ -217,5 +217,8 @@
   }, {
     "name": "react-native-realtimemessaging-ios",
     "repo": "realtime-framework/RCTRealtimeMessaging"
+  }, {
+    "name": "react-native-tween-animation",
+    "repo": "kirkness/react-native-tween-animation"
   }
 ]
