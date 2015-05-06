@@ -1,9 +1,5 @@
 [
   {
-    "name": "react-native-ui",
-    "repo": "ambitioninc/react-native-ui"
-  },
-  {
     "name": "react-native-viewport-units",
     "repo": "jmstout/react-native-viewport-units"
   },
