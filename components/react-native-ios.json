@@ -220,5 +220,8 @@
   }, {
     "name": "react-native-tween-animation",
     "repo": "kirkness/react-native-tween-animation"
+  }, {
+    "name": "react-native-chart",
+    "repo": "onefold/react-native-chart"
   }
 ]
