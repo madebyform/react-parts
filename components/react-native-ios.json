@@ -219,5 +219,8 @@
   }, {
     "name": "react-native-chart",
     "repo": "onefold/react-native-chart"
+  }, {
+    "name": "react-native-fs-modal",
+    "repo": "kirkness/react-native-fs-modal"
   }
 ]
