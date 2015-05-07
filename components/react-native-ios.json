@@ -222,5 +222,8 @@
   }, {
     "name": "react-native-fs-modal",
     "repo": "kirkness/react-native-fs-modal"
+  }, {
+    "name": "react-native-floating-labels",
+    "repo": "mayank-patel/react-native-floating-labels"
   }
 ]
