@@ -231,5 +231,8 @@
   }, {
     "name": "react-native-message-composer",
     "repo": "anarchicknight/react-native-message-composer"
+  }, {
+    "name": "react-native-communications",
+    "repo": "anarchicknight/react-native-communications"
   }
 ]
