@@ -234,5 +234,8 @@
   }, {
     "name": "react-native-communications",
     "repo": "anarchicknight/react-native-communications"
+  }, {
+    "name": "react-native-toggle-switch",
+    "repo": "rpastorelle/react-native-toggle-switch"
   }
 ]
