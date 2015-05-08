@@ -246,5 +246,8 @@
   }, {
     "name": "react-native-fs",
     "repo": "johanneslumpe/react-native-fs"
+  }, {
+    "name": "react-native-svg",
+    "repo": "brentvatne/react-native-svg"
   }
 ]
