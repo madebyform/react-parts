@@ -240,5 +240,8 @@
   }, {
     "name": "react-native-segmented-view",
     "repo": "lelandrichardson/react-native-segmented-view"
+  }, {
+    "name": "react-native-parallax-view",
+    "repo": "lelandrichardson/react-native-parallax-view"
   }
 ]
