@@ -228,5 +228,8 @@
   }, {
     "name": "react-native-dashed-border",
     "repo": "chirag04/react-native-dashed-border"
+  }, {
+    "name": "react-native-message-composer",
+    "repo": "anarchicknight/react-native-message-composer"
   }
 ]
