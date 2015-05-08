@@ -252,5 +252,8 @@
   }, {
     "name": "react-native-canvas",
     "repo": "lwansbrough/react-native-canvas"
+  }, {
+    "name": "react-native-alert",
+    "repo": "leecade/react-native-alert"
   }
 ]
