@@ -237,5 +237,8 @@
   }, {
     "name": "react-native-toggle-switch",
     "repo": "rpastorelle/react-native-toggle-switch"
+  }, {
+    "name": "react-native-segmented-view",
+    "repo": "lelandrichardson/react-native-segmented-view"
   }
 ]
