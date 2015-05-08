@@ -261,5 +261,8 @@
   }, {
     "name": "react-native-list-popover",
     "repo": "bulenttastan/react-native-list-popover"
+  }, {
+    "name": "react-native-del",
+    "repo": "yuanyan/react-native-del"
   }
 ]
