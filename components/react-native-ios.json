@@ -258,5 +258,8 @@
   }, {
     "name": "react-native-html",
     "repo": "turingou/react-native-html"
+  }, {
+    "name": "react-native-list-popover",
+    "repo": "bulenttastan/react-native-list-popover"
   }
 ]
