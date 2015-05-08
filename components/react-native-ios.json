@@ -264,5 +264,8 @@
   }, {
     "name": "react-native-del",
     "repo": "yuanyan/react-native-del"
+  }, {
+    "name": "react-native-progress",
+    "repo": "MandarinConLaBarba/react-native-progress"
   }
 ]
