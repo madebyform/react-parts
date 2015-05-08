@@ -249,5 +249,8 @@
   }, {
     "name": "react-native-svg",
     "repo": "brentvatne/react-native-svg"
+  }, {
+    "name": "react-native-canvas",
+    "repo": "lwansbrough/react-native-canvas"
   }
 ]
