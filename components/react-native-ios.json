@@ -225,5 +225,8 @@
   }, {
     "name": "react-native-floating-labels",
     "repo": "mayank-patel/react-native-floating-labels"
+  }, {
+    "name": "react-native-dashed-border",
+    "repo": "chirag04/react-native-dashed-border"
   }
 ]
