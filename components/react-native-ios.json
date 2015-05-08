@@ -243,5 +243,8 @@
   }, {
     "name": "react-native-parallax-view",
     "repo": "lelandrichardson/react-native-parallax-view"
+  }, {
+    "name": "react-native-fs",
+    "repo": "johanneslumpe/react-native-fs"
   }
 ]
