@@ -255,5 +255,8 @@
   }, {
     "name": "react-native-alert",
     "repo": "leecade/react-native-alert"
+  }, {
+    "name": "react-native-html",
+    "repo": "turingou/react-native-html"
   }
 ]
