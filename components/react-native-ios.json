@@ -267,5 +267,8 @@
   }, {
     "name": "react-native-progress",
     "repo": "MandarinConLaBarba/react-native-progress"
+  }, {
+    "name": "react-native-carrier-info",
+    "repo": "anarchicknight/react-native-carrier-info"
   }
 ]
