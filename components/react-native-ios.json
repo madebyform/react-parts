@@ -270,5 +270,8 @@
   }, {
     "name": "react-native-carrier-info",
     "repo": "anarchicknight/react-native-carrier-info"
+  }, {
+    "name": "react-native-asciimage",
+    "repo": "turley/react-native-asciimage"
   }
 ]
