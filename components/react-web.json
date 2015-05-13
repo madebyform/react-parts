@@ -1914,5 +1914,153 @@
   {
     "name": "ribcage-preview",
     "repo": "Techwraith/ribcage-preview"
+  },
+  {
+    "name": "d3-react-squared",
+    "repo": "bgrsquared/d3-react-squared"
+  },
+  {
+    "name": "fancy-react-s3-uploader",
+    "repo": "BDiehr/quantum-jwt-s3-uploader"
+  },
+  {
+    "name": "flip-rectangle-react-component",
+    "repo": "kenjiSpecial/flip-rectangle-react-component"
+  },
+  {
+    "name": "formsy-react-components",
+    "repo": "twisty/formsy-react-components"
+  },
+  {
+    "name": "gregory",
+    "repo": "fiskus/gregory"
+  },
+  {
+    "name": "mighty-mail",
+    "repo": "dschnare/mighty-mail"
+  },
+  {
+    "name": "ngraph.react",
+    "repo": "DariaP/ngraph.react"
+  },
+  {
+    "name": "pretty-react-growl",
+    "repo": "BDiehr/pretty-react-growl"
+  },
+  {
+    "name": "pui-react-back-to-top",
+    "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "q-react-markdown-textarea",
+    "repo": "BDiehr/q-react-markdown-textarea"
+  },
+  {
+    "name": "rc-input-number",
+    "repo": "react-component/input-number"
+  },
+  {
+    "name": "rc-progress",
+    "repo": "react-component/progress"
+  },
+  {
+    "name": "react-animated-label",
+    "repo": "young/react-animated-label"
+  },
+  {
+    "name": "react-cropper",
+    "repo": "roadmanfong/react-cropper"
+  },
+  {
+    "name": "react-d3-component",
+    "repo": "bgrsquared/react-d3-component"
+  },
+  {
+    "name": "react-date-input",
+    "repo": "JedWatson/react-date-input"
+  },
+  {
+    "name": "react-decorators",
+    "repo": "kriasoft/react-component-starter"
+  },
+  {
+    "name": "react-dom-assertion",
+    "repo": "avik-das/react-dom-assertion"
+  },
+  {
+    "name": "react-flex-layout",
+    "repo": "AdaptiveConsulting/react-flex-layout"
+  },
+  {
+    "name": "react-formal",
+    "repo": "jquense/react-formal"
+  },
+  {
+    "name": "react-geomicons",
+    "repo": "jxnblk/react-geomicons"
+  },
+  {
+    "name": "react-iframe",
+    "repo": "svenanders/react-iframe"
+  },
+  {
+    "name": "react-lite-misc",
+    "repo": "teambition/react-lite-misc"
+  },
+  {
+    "name": "react-modal-static-overlay",
+    "repo": "zacharyz/react-modal-static-overlay"
+  },
+  {
+    "name": "react-notification-system",
+    "repo": "igorprado/react-notification-system"
+  },
+  {
+    "name": "react-predict",
+    "repo": "talyssonoc/react-predict"
+  },
+  {
+    "name": "react-proxy-plus-loader",
+    "repo": "vn38minhtran/react-proxy-plus-loader"
+  },
+  {
+    "name": "react-pure-render",
+    "repo": "gaearon/react-pure-render"
+  },
+  {
+    "name": "react-quill",
+    "repo": "zenoamaro/react-quill"
+  },
+  {
+    "name": "react-svgify",
+    "repo": "raulmatei/react-svgify"
+  },
+  {
+    "name": "react-ui-tree",
+    "repo": "pqx/react-ui-tree"
+  },
+  {
+    "name": "reloading",
+    "repo": "ekonstantinidis/reloading"
+  },
+  {
+    "name": "focusjs-components",
+    "repo": "KleeGroup/focus-components"
+  },
+  {
+    "name": "react-3d-carousel",
+    "repo": "bobiblazeski/react-3d-carousel"
+  },
+  {
+    "name": "react-sidebar",
+    "repo": "balloob/react-sidebar"
+  },
+  {
+    "name": "react-svg-loaders",
+    "repo": "yonatanmn/react-svg-loaders"
+  },
+  {
+    "name": "react-text-highlight",
+    "repo": "henriquea/react-text-highlight"
   }
 ]
