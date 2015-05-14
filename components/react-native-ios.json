@@ -198,80 +198,105 @@
   {
     "name": "react-native-progress-bar",
     "repo": "lwansbrough/react-native-progress-bar"
-  }, {
+  },
+  {
     "name": "react-native-social-share",
     "repo": "doefler/react-native-social-share"
-  }, {
+  },
+  {
     "name": "react-native-addressbook",
     "repo": "rt2zz/react-native-addressbook"
-  }, {
+  },
+  {
     "name": "react-native-mapbox-gl",
     "repo": "bsudekum/react-native-mapbox-gl"
-  }, {
+  },
+  {
     "name": "react-native-realtimestorage-ios",
     "repo": "realtime-framework/RCTRealtimeCloudStorage"
-  }, {
+  },
+  {
     "name": "react-native-realtimemessaging-ios",
     "repo": "realtime-framework/RCTRealtimeMessaging"
-  }, {
+  },
+  {
     "name": "react-native-tween-animation",
     "repo": "kirkness/react-native-tween-animation"
-  }, {
+  },
+  {
     "name": "react-native-chart",
     "repo": "onefold/react-native-chart"
-  }, {
+  },
+  {
     "name": "react-native-fs-modal",
     "repo": "kirkness/react-native-fs-modal"
-  }, {
+  },
+  {
     "name": "react-native-floating-labels",
     "repo": "mayank-patel/react-native-floating-labels"
-  }, {
+  },
+  {
     "name": "react-native-dashed-border",
     "repo": "chirag04/react-native-dashed-border"
-  }, {
+  },
+  {
     "name": "react-native-message-composer",
     "repo": "anarchicknight/react-native-message-composer"
-  }, {
+  },
+  {
     "name": "react-native-communications",
     "repo": "anarchicknight/react-native-communications"
-  }, {
-    "name": "react-native-toggle-switch",
-    "repo": "rpastorelle/react-native-toggle-switch"
-  }, {
+  },
+  {
     "name": "react-native-segmented-view",
     "repo": "lelandrichardson/react-native-segmented-view"
-  }, {
+  },
+  {
     "name": "react-native-parallax-view",
     "repo": "lelandrichardson/react-native-parallax-view"
-  }, {
+  },
+  {
     "name": "react-native-fs",
     "repo": "johanneslumpe/react-native-fs"
-  }, {
+  },
+  {
     "name": "react-native-svg",
     "repo": "brentvatne/react-native-svg"
-  }, {
+  },
+  {
     "name": "react-native-canvas",
     "repo": "lwansbrough/react-native-canvas"
-  }, {
+  },
+  {
     "name": "react-native-alert",
     "repo": "leecade/react-native-alert"
-  }, {
+  },
+  {
     "name": "react-native-html",
     "repo": "turingou/react-native-html"
-  }, {
+  },
+  {
     "name": "react-native-list-popover",
     "repo": "bulenttastan/react-native-list-popover"
-  }, {
+  },
+  {
     "name": "react-native-del",
     "repo": "yuanyan/react-native-del"
-  }, {
+  },
+  {
     "name": "react-native-progress",
     "repo": "MandarinConLaBarba/react-native-progress"
-  }, {
+  },
+  {
     "name": "react-native-carrier-info",
     "repo": "anarchicknight/react-native-carrier-info"
-  }, {
+  },
+  {
     "name": "react-native-asciimage",
     "repo": "turley/react-native-asciimage"
+  },
+  {
+    "name": "react-native-touchable-set-active",
+    "repo": "jmstout/react-native-TouchableSetActive"
   }
 ]
