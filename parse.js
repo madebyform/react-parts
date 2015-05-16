@@ -4,10 +4,12 @@ var path = require('path');
 
 var existingNativeComponents = require('./components/react-native-ios.json');
 var existingWebComponents = require('./components/react-web.json');
+var rejectedComponents = require('./components/rejected.json');
 
 var existing = {};
 fromArrayToMap(existingNativeComponents, existing);
 fromArrayToMap(existingWebComponents, existing);
+fromArrayToMap(rejectedComponents, existing);
 
 var npmDataFilename = path.join(__dirname, 'data', 'npm.json');
 var sinceDate = new Date(process.argv[2] || "2010-01-01");
