@@ -13,7 +13,9 @@ var keys = require('./keys.json');
 var componentsType = process.argv[2] || "react-native-ios";
 var componentsFile = path.join(__dirname, 'components', componentsType + '.json');
 var components = require(componentsFile);
-var dataFile = path.join(__dirname, 'data', componentsType + '.json');
+var componentsDataFile = path.join(__dirname, 'data', componentsType + '.json');
+var oldComponentsData = require(componentsDataFile);
+var rejectedComponents = require('./components/rejected.json');
 
 var endpoints = {
   npm: "https://registry.npmjs.com/",
@@ -22,6 +24,21 @@ var endpoints = {
 };
 
 var promises = [];
+
+// Example usage: `npm run fetch react-web 2`
+// This will make a partial update to the data file
+if (process.argv[3]) {
+  var sliceArg = parseInt(process.argv[3]); // Eg: 2
+  var sliceStart = sliceArg * 100 - 100;    // 100
+  var sliceEnd   = sliceArg * 100;          // 200
+  components = components.slice(sliceStart, sliceEnd);
+}
+
+function fromArrayToMap(ary, map) {
+  for (var i = 0; i < ary.length; i++) {
+    map[ary[i].name] = ary[i];
+  }
+}
 
 components.forEach(function(component) {
   var merge = function(val) {
@@ -100,9 +117,24 @@ components.forEach(function(component) {
 });
 
 Promise.all(promises).then(function(values) {
+  var allData = {}, newList = [], rejected = {};
+  fromArrayToMap(rejectedComponents, rejected);
+
+  // Merge old fetched data with the new one, since we may have done a
+  // partial fetch this time
+  oldComponentsData.concat(components).forEach(function(c) {
+    allData[c.name] = Object.assign(allData[c.name] || {}, c);
+  });
+
+  // Convert back to an array and make sure there aren't duplicates
+  Object.keys(allData).forEach(function(key) {
+    if (!rejected[key])
+      newList.push(allData[key]);
+  });
+
   // Persist the new data
-  var str = JSON.stringify(components);
-  fs.writeFile(dataFile, str);
+  var str = JSON.stringify(newList);
+  fs.writeFile(componentsDataFile, str);
 
   console.log("\nSuccess!");
 });
