@@ -298,5 +298,45 @@
   {
     "name": "react-native-touchable-set-active",
     "repo": "jmstout/react-native-TouchableSetActive"
+  },
+  {
+    "name": "asyncstorage-down",
+    "repo": "tradle/asyncstorage-down"
+  },
+  {
+    "name": "react-native-activity-indicator-ios",
+    "repo": "pwmckenna/react-native-activity-indicator-ios"
+  },
+  {
+    "name": "react-native-fluxbone",
+    "repo": "jgable/react-native-fluxbone"
+  },
+  {
+    "name": "react-native-mail",
+    "repo": "chirag04/react-native-mail"
+  },
+  {
+    "name": "react-native-reverse-geo",
+    "repo": "aaronksaunders/react-native-reverse-geo"
+  },
+  {
+    "name": "react-native-scrollable-mixin",
+    "repo": "650Industries/react-native-scrollable-mixin"
+  },
+  {
+    "name": "react-native-swift-socketio",
+    "repo": "kirkness/react-native-swift-socketio"
+  },
+  {
+    "name": "react-native-udp",
+    "repo": "tradle/react-native-udp"
+  },
+  {
+    "name": "react-native-vector-icons",
+    "repo": "oblador/react-native-vector-icons"
+  },
+  {
+    "name": "react-transmit-native",
+    "repo": "RickWong/react-transmit"
   }
 ]

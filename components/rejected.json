@@ -1,1 +1,154 @@
-[]
+[
+  {
+    "name": "react-level",
+    "repo": "tradle/react-level"
+  },
+  {
+    "name": "mask.js",
+    "repo": "PhilNehaev/mask.js"
+  },
+  {
+    "name": "pui-css-react-animations",
+    "repo": "pivotal-cf/pivotal-ui"
+  },
+  {
+    "name": "react-emoji-keyboard",
+    "repo": "javierbyte/react-emoji-keyboard"
+  },
+  {
+    "name": "react-table-component",
+    "repo": "RnbWd/react-table-component"
+  },
+  {
+    "name": "react-effects",
+    "repo": "yuanyan/react-effects"
+  },
+  {
+    "name": "react-force-render-loader",
+    "repo": "miklschmidt/react-force-render-loader"
+  },
+  {
+    "name": "react-jonathan",
+    "repo": "Rudolph-Miller/jonathan/tree/master/npm"
+  },
+  {
+    "name": "react-soundcloud",
+    "repo": "Rudeg/react-soundcloud"
+  },
+  {
+    "name": "react-continuous-scroll",
+    "repo": "nrako/react-continuous-scroll"
+  },
+  {
+    "name": "integratedstyle",
+    "repo": "SanderSpies/IntegratedStyle"
+  },
+  {
+    "name": "react-component-file-input",
+    "repo": "ambitioninc/react-component-file-input"
+  },
+  {
+    "name": "react-component-ajax-form",
+    "repo": "ambitioninc/react-component-ajax-form"
+  },
+  {
+    "name": "react-builder",
+    "repo": "js947/react-builder"
+  },
+  {
+    "name": "htmlparser2-react",
+    "repo": "browniefed/htlmparser2-react"
+  },
+  {
+    "name": "omiescent",
+    "repo": "torgeir/omiescent"
+  },
+  {
+    "name": "omniescent",
+    "repo": "torgeir/omniescent"
+  },
+  {
+    "name": "react-danmaku",
+    "repo": "immkoala/react-dammaku"
+  },
+  {
+    "name": "react-downloadbutton",
+    "repo": "notablemind/react-downloadbutton"
+  },
+  {
+    "name": "react-typography",
+    "repo": "KyleAMathews/react-typography"
+  },
+  {
+    "name": "quiescent-for-js",
+    "repo": "torgeir/quiescent-for-js"
+  },
+  {
+    "name": "2048-react",
+    "repo": "IvanVergiliev/2048-react"
+  },
+  {
+    "name": "react-2048",
+    "repo": "IvanVergiliev/2048-react"
+  },
+  {
+    "name": "d-mapbox-map",
+    "repo": "onerussell/d-mapbox-map"
+  },
+  {
+    "name": "fusionify",
+    "repo": "jaredly/fusion"
+  },
+  {
+    "name": "generator-adz-scaffold",
+    "repo": "adazzle/generator-adz-scaffold"
+  },
+  {
+    "name": "generator-iced-react-webpack",
+    "repo": "DylanLukes/generator-iced-react-webpack"
+  },
+  {
+    "name": "proact",
+    "repo": "cainus/proact"
+  },
+  {
+    "name": "rc-test-utils",
+    "repo": "react-component/test-utils"
+  },
+  {
+    "name": "react-app-server-runtime",
+    "repo": "andreypopp/react-app-server-runtime"
+  },
+  {
+    "name": "react-bem",
+    "repo": "artemshitov/react-bem"
+  },
+  {
+    "name": "react-crossroads-bootstrap",
+    "repo": "react-crossroads/react-crossroads-bootstrap"
+  },
+  {
+    "name": "react-fusion",
+    "repo": "jaredly/fusion"
+  },
+  {
+    "name": "react-model",
+    "repo": "jaredly/react-model"
+  },
+  {
+    "name": "react-number-field",
+    "repo": "radubrehar/react-number-field"
+  },
+  {
+    "name": "react-only-update-on-change",
+    "repo": "elierotenberg/react-only-update-on-change"
+  },
+  {
+    "name": "react-tabs2",
+    "repo": "abergs/react-tabs2"
+  },
+  {
+    "name": "react-tag-field",
+    "repo": "KlimMalgin/react-tag-field"
+  }
+]
