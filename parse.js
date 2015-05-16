@@ -2,15 +2,19 @@
 var fs = require('fs');
 var path = require('path');
 
+var existingNativeComponents = require('./components/react-native-ios.json');
+var existingWebComponents = require('./components/react-web.json');
+
 var existing = {};
-fromArrayToMap(require('./components/react-native-ios.json'), existing);
-fromArrayToMap(require('./components/react-web.json'), existing);
+fromArrayToMap(existingNativeComponents, existing);
+fromArrayToMap(existingWebComponents, existing);
 
 var npmDataFilename = path.join(__dirname, 'data', 'npm.json');
 var sinceDate = new Date(process.argv[2] || "2010-01-01");
 
-var webCandidatesFilename = path.join(__dirname, 'data', "web-candidates.json");
-var nativeCandidatesFilename = path.join(__dirname, 'data', "native-candidates.json");
+// Paths to the JSON files with the lists of components
+var webCandidatesFilename = path.join(__dirname, 'components', "react-web.json");
+var nativeCandidatesFilename = path.join(__dirname, 'components', "react-native-ios.json");
 
 // Keywords that identify a component for react for web
 // For eg, `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
@@ -67,6 +71,26 @@ function isGitHubBased(candidate) {
 function isModifiedSince(candidate, since) {
   return (candidate.time && candidate.time.modified &&
     new Date(candidate.time.modified) >= since);
+}
+
+// Receives an URL to GitHub and returns a shorthand
+// (eg: "http://github.com/madebyform/react-parts" becomes "madebyform/react-parts")
+function repoUrlToShortRepo(url) {
+  return url.replace(/^.*\:\/\//, "") // Remove protocol
+    .replace(/\.git(#.+)?$/, "") // Remove .git (and optional branch) suffix
+    .replace(/(\w+@)?github\.com[\/\:]/, ""); // Remove domain or ssh clone url
+}
+
+// Keep only the component name and its repo
+function slimComponentInfo(components) {
+  return components.map(function(candidate) {
+    return {
+      name: candidate.name,
+      repo: repoUrlToShortRepo(candidate.repository.url),
+      // npm: "https://npmjs.com/package/" + candidate.name,
+      // github: candidate.repository.url.replace("git://", "https://")
+    };
+  });
 }
 
 function parseAndSave(data) {
@@ -132,12 +156,19 @@ function parseAndSave(data) {
     }
   });
 
-  fs.writeFile(webCandidatesFilename, JSON.stringify(webCandidates, null, '  '));
-  fs.writeFile(nativeCandidatesFilename, JSON.stringify(nativeCandidates, null, '  '));
+  // Keep only the component name and its repo
+  webCandidates = slimComponentInfo(webCandidates);
+  nativeCandidates = slimComponentInfo(nativeCandidates);
 
-  console.log("Finish: \n "+
-    webCandidates.length +" web components.\n "+
-    nativeCandidates.length +" native components.");
+  // Update the JSON files
+  var webComponents = existingWebComponents.concat(webCandidates);
+  var nativeComponents = existingNativeComponents.concat(nativeCandidates);
+  fs.writeFile(webCandidatesFilename, JSON.stringify(webComponents, null, '  '));
+  fs.writeFile(nativeCandidatesFilename, JSON.stringify(nativeComponents, null, '  '));
+
+  console.log("Completed with: \n "+
+    webCandidates.length +" new web components\n "+
+    nativeCandidates.length +" new native components");
 }
 
 // Read and parse all the data in the file downloaded from NPM
