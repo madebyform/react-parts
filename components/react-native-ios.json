@@ -338,5 +338,9 @@
   {
     "name": "react-transmit-native",
     "repo": "RickWong/react-transmit"
+  },
+  {
+    "name": "react-native-level-fs",
+    "repo": "tradle/react-native-level-fs"
   }
 ]

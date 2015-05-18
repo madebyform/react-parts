@@ -513,7 +513,7 @@
   },
   {
     "name": "react-input-field",
-    "repo": "radubrehar/react-input-field"
+    "repo": "zippyui/react-input-field"
   },
   {
     "name": "react-input-placeholder",
@@ -3382,5 +3382,57 @@
   {
     "name": "y-tabs",
     "repo": "floatdrop/y-tabs"
+  },
+  {
+    "name": "react-checkbox-list",
+    "repo": "sonyan/react-checkbox-list"
+  },
+  {
+    "name": "react-countdown",
+    "repo": "athaeryn/react-countdown"
+  },
+  {
+    "name": "react-creditcard-input",
+    "repo": "eniz/react-creditcard-input"
+  },
+  {
+    "name": "react-designer-widgets",
+    "repo": "rsamec/react-widgets"
+  },
+  {
+    "name": "react-lazysizes",
+    "repo": "vn38minhtran/react-lazysizes"
+  },
+  {
+    "name": "react-modal-bootstrap",
+    "repo": "vn38minhtran/react-modal-bootstrap"
+  },
+  {
+    "name": "react-page-renderer",
+    "repo": "rsamec/react-page-renderer"
+  },
+  {
+    "name": "react-progress-bar-plus",
+    "repo": "vn38minhtran/react-progress-bar-plus"
+  },
+  {
+    "name": "react-router-ie8",
+    "repo": "rackt/react-router"
+  },
+  {
+    "name": "react-speech",
+    "repo": "andrewkeig/react-speech"
+  },
+  {
+    "name": "react-sticky",
+    "repo": "captivationsoftware/react-sticky"
+  },
+  {
+    "name": "react-treeview-draggable",
+    "repo": "asvsfs/react-treeview-draggable"
+  },
+  {
+    "name": "react-typeahead-component",
+    "repo": "ezequiel/react-typeahead-component"
   }
 ]
