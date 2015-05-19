@@ -3434,5 +3434,9 @@
   {
     "name": "react-typeahead-component",
     "repo": "ezequiel/react-typeahead-component"
+  },
+  {
+    "name": "react-markdown",
+    "repo": "rexxars/react-markdown"
   }
 ]

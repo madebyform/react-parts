@@ -342,5 +342,9 @@
   {
     "name": "react-native-level-fs",
     "repo": "tradle/react-native-level-fs"
+  },
+  {
+    "name": "react-native-tooltip",
+    "repo": "chirag04/react-native-tooltip"
   }
 ]
