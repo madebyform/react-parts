@@ -133,12 +133,17 @@ export var App = React.createClass({
     this.context.router.transitionTo("/:type", this.props.params, {});
   },
   filterForSearch(components, query) {
-    return components.filter((c) => (
-      c.name.indexOf(query) != -1 ||
-      c.description.indexOf(query) != -1 ||
-      c.keywords.indexOf(query) != -1 ||
-      c.githubUser.toLowerCase() == query
-    ));
+    var results = components;
+
+    query.split(/\s+/).forEach(function(term) {
+      results = results.filter((c) => (
+        c.name.indexOf(term) != -1 ||
+        c.description.indexOf(term) != -1 ||
+        c.keywords.indexOf(term) != -1 ||
+        c.githubUser.toLowerCase() == term
+      ));
+    });
+    return results;
   },
   sortComponents(components) {
     if (this.state.searchQuery) {
