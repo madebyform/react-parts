@@ -346,5 +346,13 @@
   {
     "name": "react-native-tooltip",
     "repo": "chirag04/react-native-tooltip"
+  },
+  {
+    "name": "react-native-piechart",
+    "repo": "frostney/react-native-piechart"
+  },
+  {
+    "name": "react-native-userdefaults-ios",
+    "repo": "dsibiski/react-native-userdefaults-ios"
   }
 ]

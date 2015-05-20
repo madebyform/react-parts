@@ -3438,5 +3438,21 @@
   {
     "name": "react-markdown",
     "repo": "rexxars/react-markdown"
+  },
+  {
+    "name": "react-frame",
+    "repo": "pqx/react-frame"
+  },
+  {
+    "name": "react-inline-edit",
+    "repo": "vasanthk/React-InlineEdit"
+  },
+  {
+    "name": "react-routsy",
+    "repo": "laurelandwolf/react-routsy"
+  },
+  {
+    "name": "react-validator-prop-types",
+    "repo": "pwmckenna/react-validator-prop-types"
   }
 ]
