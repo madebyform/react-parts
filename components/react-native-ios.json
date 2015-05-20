@@ -354,5 +354,17 @@
   {
     "name": "react-native-userdefaults-ios",
     "repo": "dsibiski/react-native-userdefaults-ios"
+  },
+  {
+    "name": "react-native-link",
+    "repo": "650Industries/react-native-link"
+  },
+  {
+    "name": "react-native-progress-hud",
+    "repo": "naoufal/react-native-progress-hud"
+  },
+  {
+    "name": "react-native-calendar",
+    "repo": "christopherdro/react-native-calendar"
   }
 ]

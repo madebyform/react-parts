@@ -3454,5 +3454,9 @@
   {
     "name": "react-validator-prop-types",
     "repo": "pwmckenna/react-validator-prop-types"
+  },
+  {
+    "name": "react-pathevaluator",
+    "repo": "maestroh/react-pathevaluator"
   }
 ]
