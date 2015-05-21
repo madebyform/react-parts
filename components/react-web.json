@@ -3498,5 +3498,25 @@
   {
     "name": "webpack-react-starter",
     "repo": "henriquea/webpack-react-starter"
+  },
+  {
+    "name": "carbondream",
+    "repo": "ZeroarcSoftware/carbondream"
+  },
+  {
+    "name": "react-codemirror",
+    "repo": "JedWatson/react-codemirror"
+  },
+  {
+    "name": "react-medium-editor",
+    "repo": "wangzuo/react-medium-editor"
+  },
+  {
+    "name": "react-ui-builder",
+    "repo": "ipselon/react-ui-builder"
+  },
+  {
+    "name": "reactorator",
+    "repo": "r3dm/reactorator"
   }
 ]
