@@ -3458,5 +3458,45 @@
   {
     "name": "react-pathevaluator",
     "repo": "maestroh/react-pathevaluator"
+  },
+  {
+    "name": "primed",
+    "repo": "iceddev/primed"
+  },
+  {
+    "name": "react-aria-menubutton",
+    "repo": "davidtheclark/react-aria-menubutton"
+  },
+  {
+    "name": "react-control",
+    "repo": "jackmoore/react-control"
+  },
+  {
+    "name": "react-fa-icon",
+    "repo": "timnew/react-fa-icon"
+  },
+  {
+    "name": "react-img",
+    "repo": "jackmoore/react-img"
+  },
+  {
+    "name": "react-page-width",
+    "repo": "KyleAMathews/react-page-width"
+  },
+  {
+    "name": "react-password",
+    "repo": "jprichardson/react-password"
+  },
+  {
+    "name": "react-sticky-position",
+    "repo": "jackmoore/react-sticky-position"
+  },
+  {
+    "name": "react-svg-icons",
+    "repo": "publitas/react-svg-icons"
+  },
+  {
+    "name": "webpack-react-starter",
+    "repo": "henriquea/webpack-react-starter"
   }
 ]

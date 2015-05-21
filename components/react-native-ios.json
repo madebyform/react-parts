@@ -366,5 +366,9 @@
   {
     "name": "react-native-calendar",
     "repo": "christopherdro/react-native-calendar"
+  },
+  {
+    "name": "react-native-keychain",
+    "repo": "oblador/react-native-keychain"
   }
 ]
