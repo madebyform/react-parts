@@ -370,5 +370,9 @@
   {
     "name": "react-native-keychain",
     "repo": "oblador/react-native-keychain"
+  },
+  {
+    "name": "react-native-accordion",
+    "repo": "naoufal/react-native-accordion"
   }
 ]

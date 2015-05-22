@@ -3518,5 +3518,21 @@
   {
     "name": "reactorator",
     "repo": "r3dm/reactorator"
+  },
+  {
+    "name": "react-deep-link-state",
+    "repo": "EarthlingInteractive/react-deep-link-state"
+  },
+  {
+    "name": "react-flexgrid",
+    "repo": "nkt/react-flexgrid"
+  },
+  {
+    "name": "react-typeahead-mouseover",
+    "repo": "jerchung/react-typeahead"
+  },
+  {
+    "name": "react-mmmt-swiper",
+    "repo": "sooth-sayer/react-swiper"
   }
 ]
