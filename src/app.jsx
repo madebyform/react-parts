@@ -6,7 +6,7 @@ import 'isomorphic-fetch';
 import React from 'react/addons';
 import Router from 'react-router';
 import StylingMixin from './styling-mixin.jsx';
-import NavBar from './nav-bar-component.jsx';
+import Navbar from './navbar-component.jsx';
 import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
 import Pagination from './pagination-component.jsx';
@@ -73,7 +73,7 @@ export var App = React.createClass({
     };
     return (
       <Scroller className="scrollable" position={ this.props.debugMode ? "same" : "top" } style={styles.container}>
-        <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
+        <Navbar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
           <Tabs>

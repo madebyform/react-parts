@@ -6,7 +6,7 @@ import StylingMixin from './styling-mixin.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;
 
-let NavBar = React.createClass({
+let Navbar = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   propTypes: {
     title: React.PropTypes.string.isRequired,
@@ -41,7 +41,7 @@ let NavBar = React.createClass({
       center: {
         WebkitBoxFlex: 1,
         alignItems: "center",
-        background: "#4b67a5 url('/search.svg') no-repeat 16px center",
+        background: "#4b67a5 url(/search.svg) no-repeat 16px center",
         backgroundSize: "auto 100%",
         flex: 1,
         flexGrow: 4,
@@ -85,7 +85,7 @@ let NavBar = React.createClass({
       }
     };
     return (
-      <div className="NavBar" style={styles.container}>
+      <div className="Navbar" style={styles.container}>
         <div style={styles.left}>
           <a href="/">
             <img style={styles.logo} src="/react-logo.svg" alt="Logo" draggable="false" />
@@ -101,7 +101,7 @@ let NavBar = React.createClass({
           />
         </div>
         <div style={styles.right}>
-          <a className="NavBar-submit" style={styles.link} href="/submit">
+          <a className="Navbar-submit" style={styles.link} href="/submit">
             Submit a component
           </a>
         </div>
@@ -115,4 +115,4 @@ let NavBar = React.createClass({
   }
 });
 
-export default NavBar;
+export default Navbar;
