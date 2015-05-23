@@ -3534,5 +3534,25 @@
   {
     "name": "react-mmmt-swiper",
     "repo": "sooth-sayer/react-swiper"
+  },
+  {
+    "name": "react-geo-location",
+    "repo": "colynb/react-geo-location"
+  },
+  {
+    "name": "react-layer-router",
+    "repo": "ryan-mahoney/react-layer-router"
+  },
+  {
+    "name": "react-overlay",
+    "repo": "mfunkie/react-overlay"
+  },
+  {
+    "name": "react-steps",
+    "repo": "jakubzloczewski/react-steps"
+  },
+  {
+    "name": "react-ux-password-field",
+    "repo": "seethroughtrees/react-ux-password-field"
   }
 ]
