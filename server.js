@@ -13,6 +13,7 @@ var cachify = require('connect-cachify');
 var ejs = require('ejs');
 var sortBy = require('./src/sort');
 var server = express();
+var production = (process.env.NODE_ENV != "development");
 
 // List of assets where the keys are your production urls, and the value
 // is a  list of development urls that produce the same asset
@@ -23,7 +24,7 @@ var assets = {
 // Enable browser cache and HTTP caching (cache busting, etc.)
 server.use(cachify.setup(assets, {
   root: "assets",
-  production: (process.env.NODE_ENV != "development")
+  production: production
 }));
 
 // Serve static files
@@ -59,13 +60,15 @@ server.get('/:type(web|native-ios)', function(req, res) {
       var content = new Handler({
         params: state.params,
         query: state.query,
-        initialComponents: components
+        initialComponents: components,
+        debug: !production
       });
       var output = React.renderToString(content);
 
       res.render('template', {
         output: output,
-        initialComponents: components
+        initialComponents: components,
+        debugMode: !production
       });
     });
   });

@@ -1,4 +1,4 @@
-/*jshint esnext:true, browserify:true, unused:true */
+/*jshint esnext:true, browserify:true, unused:true, devel:true */
 'use strict';
 
 import React from 'react/addons';
@@ -17,7 +17,13 @@ let ComponentItem = React.createClass({
     latestVersion: React.PropTypes.string.isRequired,
     modified: React.PropTypes.string.isRequired,
     name: React.PropTypes.string.isRequired,
-    stars: React.PropTypes.number.isRequired
+    stars: React.PropTypes.number.isRequired,
+    debugMode: React.PropTypes.bool
+  },
+  getDefaultProps() {
+    return {
+      debugMode: false
+    };
   },
   render() {
     let styles = {
@@ -57,6 +63,13 @@ let ComponentItem = React.createClass({
         margin: 0
       }
     };
+
+    if (this.props.debugMode) {
+      ['description', 'modified', 'stars'].forEach((prop) => {
+        if (typeof this.props[prop] == "undefined")
+          console.log(`Undefined ${ prop } for ${ this.props.repo }`);
+      });
+    }
     return (
       <div className="ComponentItem" style={styles.container}>
         <div className="ComponentItem-header" style={styles.header}>

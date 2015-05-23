@@ -1,4 +1,5 @@
 node_modules/
+scripts/
 assets/app.js
 assets/app.min.js
 data/*

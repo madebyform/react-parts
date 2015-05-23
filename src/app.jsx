@@ -23,11 +23,13 @@ export var App = React.createClass({
   },
   propTypes: {
     initialComponents: React.PropTypes.object.isRequired,
-    perPage: React.PropTypes.number
+    perPage: React.PropTypes.number,
+    debugMode: React.PropTypes.bool
   },
   getDefaultProps() {
     return {
-      perPage: 20
+      perPage: 20,
+      debugMode: false
     };
   },
   getInitialState() {
@@ -73,7 +75,7 @@ export var App = React.createClass({
       }
     };
     return (
-      <Scroller className="scrollable" position="top" style={styles.container}>
+      <Scroller className="scrollable" position={ this.props.debugMode ? "same" : "top" } style={styles.container}>
         <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
@@ -83,7 +85,7 @@ export var App = React.createClass({
             <Tab to="components" params={{type: "web"}}>React for Web</Tab>
           </Tabs>
 
-          <RouteHandler components={componentsForPage} />
+          <RouteHandler components={componentsForPage} debugMode={this.props.debugMode} />
 
           <Pagination
             to="components"
@@ -175,7 +177,10 @@ export var routes = (
 if (typeof(document) !== "undefined") {
   Router.run(routes, Router.HistoryLocation, function(Handler, state) {
     React.render(
-      <Handler {...state} initialComponents={window.initialComponents} />,
+      <Handler {...state}
+        initialComponents={window.initialComponents}
+        debugMode={window.debugMode}
+      />,
       document.getElementById("container")
     );
   });

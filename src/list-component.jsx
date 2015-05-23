@@ -34,7 +34,13 @@ let NoComponents = React.createClass({
 let ComponentList = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   propTypes: {
-    components: React.PropTypes.array.isRequired
+    components: React.PropTypes.array.isRequired,
+    debugMode: React.PropTypes.bool
+  },
+  getDefaultProps() {
+    return {
+      debugMode: false
+    };
   },
   render() {
     let styles = {
@@ -42,10 +48,10 @@ let ComponentList = React.createClass({
       margin: 0,
       padding: 0
     };
-    let components = this.props.components.map(function(item, index) {
+    let components = this.props.components.map((item, index) => {
       return (
         <li key={index}>
-          <ComponentItem {...item} />
+          <ComponentItem {...item} debugMode={ this.props.debugMode } />
         </li>
       );
     });
