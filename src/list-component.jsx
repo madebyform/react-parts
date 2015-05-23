@@ -13,7 +13,6 @@ let NoComponents = React.createClass({
     let styles = {
       container: {
         background: "#fff",
-        boxShadow: "0 1px 2px rgba(0,0,0,.2)",
         margin: 1,
         padding: this.remCalc(15, 20),
         color: "#999",

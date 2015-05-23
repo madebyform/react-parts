@@ -11,17 +11,13 @@ let TimeAgo = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   propTypes: {
     dateTime: React.PropTypes.string.isRequired,
+    style: React.PropTypes.object
   },
   render() {
-    let styles = {
-      color: "#999",
-      fontWeight: 200,
-      paddingLeft: this.remCalc(8)
-    };
     let relativeTimestamp = timeago(this.props.dateTime);
     return (
-      <time dateTime={this.props.dateTime} style={styles}>
-        { relativeTimestamp && `updated ${relativeTimestamp}` }
+      <time dateTime={this.props.dateTime} style={this.props.style}>
+        { relativeTimestamp && `updated ${ relativeTimestamp }` }
       </time>
     );
   }

@@ -52,24 +52,21 @@ export var App = React.createClass({
         lineHeight: "1.5",
         cursor: "default"
       },
-      title: {
-        textAlign: "center"
-      },
       content: {
         margin: "0 auto",
-        fontSize: this.remCalc(17),
+        fontSize: this.remCalc(15),
         maxWidth: this.remCalc(800),
-        padding: this.remCalc(10)
+        padding: this.remCalc(50, 10, 10)
       },
       footer: {
         color: "#999",
-        fontSize: this.remCalc(16),
+        fontSize: this.remCalc(15),
         fontWeight: 200,
         margin: this.remCalc(30, 0),
         textAlign: "center"
       },
       author: {
-        color: "#3949ab",
+        color: "#253b6b",
         fontWeight: "bold",
         textDecoration: "none"
       }
@@ -79,7 +76,6 @@ export var App = React.createClass({
         <NavBar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
 
         <div style={styles.content}>
-          <h2 style={styles.title}>A catalog of React components</h2>
           <Tabs>
             <Tab to="components" params={{type: "native-ios"}}>React Native</Tab>
             <Tab to="components" params={{type: "web"}}>React for Web</Tab>

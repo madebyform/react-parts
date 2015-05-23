@@ -21,7 +21,7 @@ let Icon = React.createClass({
   },
   getDefaultProps() {
     return {
-      size: "1em"
+      size: "0.9em"
     };
   },
   renderGraphic() {
@@ -59,7 +59,7 @@ let Icon = React.createClass({
     let styles = {
       fill: "currentcolor",
       margin: "0 .2em 0 .1em",
-      verticalAlign: "-0.05em",
+      verticalAlign: "-0.03em",
       width: this.props.size, // CSS instead of the width attr to support non-pixel units
       height: this.props.size
     };

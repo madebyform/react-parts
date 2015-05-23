@@ -22,67 +22,74 @@ let NavBar = React.createClass({
     let styles = {
       container: {
         alignItems: "center",
-        background: "#05a5d1",
-        boxShadow: "0 -8px 4px 10px rgba(0,0,0,.2)",
+        background: "#253b6b",
         boxSizing: "border-box",
         color: "#fff",
         display: "flex",
         height: this.props.height,
-        padding: this.remCalc(0, 20)
+        overflow: "hidden"
       },
-      titleArea: {
+      left: {
         WebkitBoxFlex: 1,
-        flex: 1,
-        lineHeight: this.props.height,
-        minWidth: this.remCalc(180)
+        flex: 1
       },
       logo: {
-        height: "1em",
-        paddingRight: this.remCalc(10),
-        verticalAlign: "-0.05em",
-        width: "1em"
-      },
-      title: {
-        color: "#fff",
-        fontSize: this.remCalc(26),
-        fontWeight: 600,
-        textDecoration: "none"
+        float: "right",
+        height: this.remCalc(62),
+        width: this.remCalc(62)
       },
       center: {
-        alignItems: "center",
         WebkitBoxFlex: 1,
+        alignItems: "center",
+        background: "#4b67a5 url('/search.svg') no-repeat 16px center",
+        backgroundSize: "auto 100%",
         flex: 1,
         flexGrow: 4,
+        height: "100%",
         justifyContent: "center",
-        margin: this.remCalc(10),
-        maxWidth: this.remCalc(800)
+        marginLeft: this.remCalc(12),
+        maxWidth: this.remCalc(800),
+        paddingRight: this.remCalc(10)
       },
       search: {
-        background: "rgba(255,255,255, .15)",
+        background: "transparent",
         border: "none",
-        borderRadius: "2px",
         boxSizing: "border-box",
-        fontSize: this.remCalc(16),
+        fontSize: this.remCalc(19),
+        height: "100%",
         outline: "none",
-        padding: this.remCalc(8, 10),
+        paddingBottom: this.remCalc(4),
+        paddingLeft: this.remCalc(50),
         width: "100%"
       },
-      link: {
-        color: "#fff",
+      right: {
         WebkitBoxFlex: 1,
-        flex: 1,
-        margin: this.remCalc(12, 0),
-        minWidth: this.remCalc(180),
+        background: "#4b67a5",
+        height: "100%",
+        flex: 1
+      },
+      link: {
+        background: "#253b6b",
+        borderRadius: this.remCalc(2),
+        boxSizing: "border-box",
+        color: "#fff",
         display: "block",
-        textAlign: "right",
+        float: "right",
+        fontSize: this.remCalc(17),
+        fontWeight: 200,
+        margin: this.remCalc(7),
+        minWidth: this.remCalc(186),
+        padding: this.remCalc(8, 20),
+        textAlign: "center",
         textDecoration: "none"
       }
     };
     return (
       <div className="NavBar" style={styles.container}>
-        <div style={styles.titleArea}>
-          <img style={styles.logo} src="/logo.svg" alt="Logo" draggable="false" />
-          <a href="/" style={styles.title}>{this.props.title}</a>
+        <div style={styles.left}>
+          <a href="/">
+            <img style={styles.logo} src="/react-logo.svg" alt="Logo" draggable="false" />
+          </a>
         </div>
         <div style={styles.center}>
           <input
@@ -93,9 +100,11 @@ let NavBar = React.createClass({
             onKeyUp={this.handleKeyUp}
           />
         </div>
-        <a href="/submit" style={styles.link}>
-          Submit a component
-        </a>
+        <div style={styles.right}>
+          <a className="NavBar-submit" style={styles.link} href="/submit">
+            Submit a component
+          </a>
+        </div>
       </div>
     );
   },

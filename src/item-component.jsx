@@ -29,35 +29,38 @@ let ComponentItem = React.createClass({
     let styles = {
       container: {
         background: "#fff",
-        boxShadow: "0 1px 2px rgba(0,0,0,.2)",
         margin: 1,
-        padding: this.remCalc(15, 20)
+        padding: this.remCalc(12, 16, 14)
       },
       header: {
         alignItems: "center",
         boxSizing: "border-box",
         display: "flex",
-        marginBottom: this.remCalc(10)
+        marginBottom: this.remCalc(4)
       },
       title: {
-        flex: 1,
         WebkitBoxFlex: 1,
-        margin: 0
+        color: "#aaa",
+        flex: 1,
+        fontSize: this.remCalc(15),
+        fontWeight: 200,
+        margin: 0,
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+        whiteSpace: "nowrap"
       },
       name: {
-        color: "#3949ab",
+        fontSize: this.remCalc(17),
+        fontWeight: 600,
         textDecoration: "none"
       },
-      author: {
-        paddingLeft: this.remCalc(8)
-      },
-      timestamp: {
-        color: "#999",
-        fontWeight: 200,
-        paddingLeft: this.remCalc(8)
+      metadata: {
+        fontSize: this.remCalc(15),
+        paddingLeft: this.remCalc(4)
       },
       stats: {
-        paddingLeft: this.remCalc(12)
+        fontSize: this.remCalc(15),
+        paddingLeft: this.remCalc(8)
       },
       description: {
         margin: 0
@@ -78,8 +81,8 @@ let ComponentItem = React.createClass({
               {this.props.name}
             </a>
             <small>
-              <span style={styles.author}>by {this.props.githubUser}</span>
-              <TimeAgo dateTime={this.props.modified} />
+              <span style={styles.metadata}>by {this.props.githubUser}</span>
+              <TimeAgo dateTime={this.props.modified} style={styles.metadata} />
             </small>
           </h3>
           <div style={styles.stats}>

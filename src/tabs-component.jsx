@@ -20,24 +20,25 @@ export let Tab = React.createClass({
   render() {
     let styles = {
       tab: {
-        WebkitBoxFlex: 1,
-        flex: 1,
-        textAlign: "center",
-        textTransform: "uppercase",
-        letterSpacing: this.remCalc(1),
-        textDecoration: "none",
-        color: "#828282",
-        WebkitUserSelect: "none",
         MozUserSelect: "none",
+        WebkitBoxFlex: 1,
+        WebkitUserSelect: "none",
+        color: "#4b67a5",
         display: "block",
-        padding: this.remCalc(15, 20)
+        flex: 1,
+        fontSize: this.remCalc(20),
+        letterSpacing: this.remCalc(0),
+        padding: this.remCalc(10, 10, 11),
+        textAlign: "center",
+        textDecoration: "none"
       },
       selectedTab: {
         background: "#fff",
-        color: "#05a5d1"
+        fontWeight: 600
       },
       disabledTab: {
-        color: "#ccc"
+        color: "#aaa",
+        fontWeight: 200
       }
     };
     if (!this.props.disabled) {
@@ -70,8 +71,7 @@ export let Tabs = React.createClass({
   render() {
     let styles = {
       container: {
-        background: "#f6f6f6",
-        boxShadow: "0 1px 2px rgba(0,0,0,.2)",
+        background: "#f7f8fa",
         display: "flex",
         margin: 1
       },

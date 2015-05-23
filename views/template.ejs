@@ -14,7 +14,7 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background: #ececec;
+      background: #ebedf2;
       margin: 0;
     }
     /* This class keeps the content scrollable and allows to programmatically change
@@ -30,6 +30,14 @@
     .NavBar, .ComponentItem-header, .Tabs {
       display: -webkit-box;
       -webkit-align-items: center;
+    }
+
+    /* Make visited links slightly brighter */
+    a {
+      color: #000;
+    }
+    a:visited {
+      color: #666;
     }
 
     ::-webkit-input-placeholder {
@@ -48,6 +56,9 @@
     @media only screen and (max-width: 768px) {
       html {
         font-size: 70%;
+      }
+      .NavBar-submit {
+        display: none !important;
       }
     }
   </style>
