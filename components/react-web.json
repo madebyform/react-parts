@@ -3554,5 +3554,9 @@
   {
     "name": "react-ux-password-field",
     "repo": "seethroughtrees/react-ux-password-field"
+  },
+  {
+    "name": "rc-upload",
+    "repo": "react-component/upload"
   }
 ]
