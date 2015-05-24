@@ -29,8 +29,10 @@ let ComponentItem = React.createClass({
     let styles = {
       container: {
         background: "#fff",
+        display: "block",
         margin: 1,
-        padding: this.remCalc(12, 16, 14)
+        padding: this.remCalc(12, 16, 14),
+        textDecoration: "none"
       },
       header: {
         alignItems: "center",
@@ -40,7 +42,6 @@ let ComponentItem = React.createClass({
       },
       title: {
         WebkitBoxFlex: 1,
-        color: "#aaa",
         flex: 1,
         fontSize: this.remCalc(15),
         fontWeight: 200,
@@ -55,14 +56,17 @@ let ComponentItem = React.createClass({
         textDecoration: "none"
       },
       metadata: {
+        color: "#aaa",
         fontSize: this.remCalc(15),
         paddingLeft: this.remCalc(4)
       },
       stats: {
+        color: "#000",
         fontSize: this.remCalc(15),
         paddingLeft: this.remCalc(8)
       },
       description: {
+        color: "#000",
         margin: 0
       }
     };
@@ -74,12 +78,12 @@ let ComponentItem = React.createClass({
       });
     }
     return (
-      <div className="ComponentItem" style={styles.container}>
+      <a className="ComponentItem" style={styles.container} href={this.props.homepage}>
         <div className="ComponentItem-header" style={styles.header}>
           <h3 style={styles.title}>
-            <a style={styles.name} href={this.props.homepage}>
+            <span style={styles.name}>
               {this.props.name}
-            </a>
+            </span>
             <small>
               <span style={styles.metadata}>by {this.props.githubUser}</span>
               <TimeAgo dateTime={this.props.modified} style={styles.metadata} />
@@ -101,7 +105,7 @@ let ComponentItem = React.createClass({
         <p style={styles.description}>
           {this.props.description}
         </p>
-      </div>
+      </a>
     );
   }
 });
