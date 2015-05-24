@@ -93,11 +93,14 @@ let Navbar = React.createClass({
         </div>
         <div style={styles.center}>
           <input
+            className="Navbar-search"
             ref="search"
             style={styles.search}
             type="text"
             placeholder="Search"
             onKeyUp={this.handleKeyUp}
+            autoCapitalize="off"
+            spellCheck="false"
           />
         </div>
         <div style={styles.right}>
@@ -110,7 +113,7 @@ let Navbar = React.createClass({
   },
   handleKeyUp() {
     var field = React.findDOMNode(this.refs.search);
-    var value = field.value.trim();
+    var value = field.value.trim().toLowerCase();
     this.props.onSearch(value);
   }
 });
