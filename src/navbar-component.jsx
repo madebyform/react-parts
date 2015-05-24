@@ -101,7 +101,7 @@ let Navbar = React.createClass({
           />
         </div>
         <div style={styles.right}>
-          <a className="Navbar-submit" style={styles.link} href="/submit">
+          <a className="u-hideSmall" style={styles.link} href="/submit">
             Submit a component
           </a>
         </div>

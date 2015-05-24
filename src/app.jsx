@@ -11,6 +11,7 @@ import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
 import Pagination from './pagination-component.jsx';
 import Scroller from './scroller-component.jsx';
+import Footer from './footer-component.jsx';
 import sortBy from './sort';
 
 let Route = Router.Route;
@@ -57,18 +58,6 @@ export var App = React.createClass({
         fontSize: this.remCalc(15),
         maxWidth: this.remCalc(800),
         padding: this.remCalc(50, 10, 10)
-      },
-      footer: {
-        color: "#999",
-        fontSize: this.remCalc(15),
-        fontWeight: 200,
-        margin: this.remCalc(30, 0),
-        textAlign: "center"
-      },
-      author: {
-        color: "#253b6b",
-        fontWeight: "bold",
-        textDecoration: "none"
       }
     };
     return (
@@ -90,11 +79,8 @@ export var App = React.createClass({
             perPage={this.props.perPage}
             totalItems={components.length}
           />
-          <p style={styles.footer}>
-            React, React Native and logos are copyright of Facebook.
-            This page is not affiliated with Facebook.<br/>
-            <a style={styles.author} href="http://madebyform.com">Made by Form</a>
-          </p>
+
+          <Footer />
         </div>
       </Scroller>
     );
