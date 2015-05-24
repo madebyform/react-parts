@@ -3566,5 +3566,13 @@
   {
     "name": "stilr",
     "repo": "chriskjaer/stilr"
+  },
+  {
+    "name": "bem-classnames",
+    "repo": "pocotan001/bem-classnames"
+  },
+  {
+    "name": "react-md-editor",
+    "repo": "JedWatson/react-md-editor"
   }
 ]
