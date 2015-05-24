@@ -3558,5 +3558,13 @@
   {
     "name": "rc-upload",
     "repo": "react-component/upload"
+  },
+  {
+    "name": "reactg",
+    "repo": "zackify/React-Generator"
+  },
+  {
+    "name": "stilr",
+    "repo": "chriskjaer/stilr"
   }
 ]
