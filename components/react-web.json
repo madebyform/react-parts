@@ -3574,5 +3574,17 @@
   {
     "name": "react-md-editor",
     "repo": "JedWatson/react-md-editor"
+  },
+  {
+    "name": "react-mobiscroll",
+    "repo": "xicombd/react-mobiscroll"
+  },
+  {
+    "name": "react-subrouter",
+    "repo": "UgnisSoftware/react-subrouter"
+  },
+  {
+    "name": "uxcore-layout",
+    "repo": "uxcore/uxcore-layout"
   }
 ]
