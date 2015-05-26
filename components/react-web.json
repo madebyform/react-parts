@@ -3602,5 +3602,13 @@
   {
     "name": "react-virtual-list",
     "repo": "developerdizzle/react-virtual-list"
+  },
+  {
+    "name": "rc-tree",
+    "repo": "react-component/tree"
+  },
+  {
+    "name": "react-blink",
+    "repo": "jossmac/react-blink"
   }
 ]

@@ -374,5 +374,9 @@
   {
     "name": "react-native-accordion",
     "repo": "naoufal/react-native-accordion"
+  },
+  {
+    "name": "react-refresh-control",
+    "repo": "Shuangzuan/RCTRefreshControl"
   }
 ]
