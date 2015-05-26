@@ -1668,10 +1668,6 @@
     "repo": "christianalfoni/formsy-react"
   },
   {
-    "name": "material-ui-cssinjs",
-    "repo": "callemall/material-ui"
-  },
-  {
     "name": "mnq-react-bootstrap-datetimepicker",
     "repo": "alex1712/react-bootstrap-datetimepicker"
   },
@@ -3586,5 +3582,25 @@
   {
     "name": "uxcore-layout",
     "repo": "uxcore/uxcore-layout"
+  },
+  {
+    "name": "react-chrtst",
+    "repo": "rojerua/react-chartist"
+  },
+  {
+    "name": "react-photo-swiper",
+    "repo": "sooth-sayer/react-photo-swiper"
+  },
+  {
+    "name": "react-stub-context",
+    "repo": "karlbright/react-stub-context"
+  },
+  {
+    "name": "react-tinycolorpicker",
+    "repo": "ppoliani/tinycolorpicker"
+  },
+  {
+    "name": "react-virtual-list",
+    "repo": "developerdizzle/react-virtual-list"
   }
 ]
