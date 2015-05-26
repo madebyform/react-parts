@@ -50,23 +50,23 @@ let Footer = React.createClass({
         <div style={styles.content}>
           <span style={styles.label}>More Resources</span>
 
-          <a style={styles.link} href="https://github.com/facebook/react/wiki/">
-            <span className="u-hideSmall">React</span> Wiki
-          </a>
           <a style={styles.link} href="https://discuss.reactjs.org/">
-            <span className="u-hideSmall">React</span> Discuss
+            Discussions
           </a>
           <a style={styles.link} href="http://reactiflux.com/">
-            Slack <span className="u-hideSmall">Group</span>
+            Slack
+          </a>
+          <a style={styles.link} href="https://github.com/facebook/react/wiki/">
+            <span className="u-hideSmall">React</span> Wiki
           </a>
           <a style={styles.link} href="https://github.com/enaqx/awesome-react/">
             Awesome React
           </a>
+          <a style={styles.link} href="https://github.com/ericvicenti/react-native-community/">
+            <span className="u-hideSmall">React Native</span> Community
+          </a>
           <a style={styles.link} href="https://rnplay.org/">
             RNPlay
-          </a>
-          <a style={styles.link} href="https://github.com/brentvatne/react-native-newsletter/">
-            <span className="u-hideSmall">Native</span> Newsletter
           </a>
 
           <div style={styles.copy}>
