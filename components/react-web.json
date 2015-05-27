@@ -3610,5 +3610,25 @@
   {
     "name": "react-blink",
     "repo": "jossmac/react-blink"
+  },
+  {
+    "name": "react-droparea",
+    "repo": "avocode/react-droparea"
+  },
+  {
+    "name": "react-editor",
+    "repo": "henriquea/react-editor"
+  },
+  {
+    "name": "react-json",
+    "repo": "arqex/react-json"
+  },
+  {
+    "name": "react-revalidator",
+    "repo": "vn38minhtran/react-revalidator"
+  },
+  {
+    "name": "react-either",
+    "repo": "dashed/react-either"
   }
 ]
