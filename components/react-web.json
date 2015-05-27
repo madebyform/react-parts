@@ -3333,7 +3333,7 @@
   },
   {
     "name": "touchstonejs",
-    "repo": "JedWatson/touchstonejs"
+    "repo": "touchstonejs/touchstonejs"
   },
   {
     "name": "uncontrollable",
@@ -3630,5 +3630,21 @@
   {
     "name": "react-either",
     "repo": "dashed/react-either"
+  },
+  {
+    "name": "mnq-react-select",
+    "repo": "alex1712/react-select"
+  },
+  {
+    "name": "react-flatui",
+    "repo": "cokeSchlumpf/react-flatui"
+  },
+  {
+    "name": "react-highlightable",
+    "repo": "mitchellvanw/react-highlightable"
+  },
+  {
+    "name": "react-segmented-control",
+    "repo": "enki-com/react-segmented-control"
   }
 ]
