@@ -25,6 +25,7 @@
     "build:js": "browserify src/app.jsx -t babelify --outfile assets/app.js && uglifyjs assets/app.js -o assets/app.min.js",
     "watch:js": "watchify src/app.jsx -t babelify --outfile assets/app.js",
     "download": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
+    "today": "curl -L https://registry.npmjs.org/-/all/static/today.json -o data/npm.json",
     "fetch": "node fetch.js",
     "parse": "node parse.js"
   }
