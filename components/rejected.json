@@ -52,6 +52,14 @@
     "repo": "ambitioninc/react-component-ajax-form"
   },
   {
+    "name": "react-component-combo-box",
+    "repo": "ambitioninc/react-component-combo-box"
+  },
+  {
+    "name": "react-component-grid",
+    "repo": "ambitioninc/react-component-grid"
+  },
+  {
     "name": "react-builder",
     "repo": "js947/react-builder"
   },
@@ -158,5 +166,37 @@
   {
     "name": "my-component",
     "repo": "JedWatson/my-component"
+  },
+  {
+    "name": "hv-components",
+    "repo": "HireVue/hv-components"
+  },
+  {
+    "name": "backbone-react-mixin",
+    "repo": "ahdinosaur/backbone-react-mixin"
+  },
+  {
+    "name": "amazeui-react",
+    "repo": "amazeui/amazeui-react"
+  },
+  {
+    "name": "react-minimal-router",
+    "repo": "skidding/react-minimal-router"
+  },
+  {
+    "name": "react-fast",
+    "repo": "eXon/react-fast"
+  },
+  {
+    "name": "react-autocomplete-temp-fork",
+    "repo": "prometheusresearch/react-autocomplete"
+  },
+  {
+    "name": "jasmine-react",
+    "repo": "amireh/jasmine_react"
+  },
+  {
+    "name": "integratedcss",
+    "repo": "SanderSpies/IntegratedCSS"
   }
 ]

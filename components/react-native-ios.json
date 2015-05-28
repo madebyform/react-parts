@@ -378,5 +378,9 @@
   {
     "name": "react-refresh-control",
     "repo": "Shuangzuan/RCTRefreshControl"
+  },
+  {
+    "name": "react-native-swipeout",
+    "repo": "dancormier/react-native-swipeout"
   }
 ]
