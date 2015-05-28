@@ -20,7 +20,7 @@
     "watchify": "^2.4.0"
   },
   "scripts": {
-    "start": "npm run build:js && node server.js",
+    "start": "NODE_ENV=production npm run build:js && NODE_ENV=production node server.js",
     "live": "npm run watch:js & NODE_ENV=development nodemon server.js",
     "build:js": "browserify src/app.jsx -t babelify --outfile assets/app.js && uglifyjs assets/app.js -o assets/app.min.js",
     "watch:js": "watchify src/app.jsx -t babelify --outfile assets/app.js",
