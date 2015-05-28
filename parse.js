@@ -120,22 +120,22 @@ function parseAndSave(data) {
     }
 
     if (candidate.description) {
-      if (matcher(candidate.description, nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
+      if (matcher(candidate.description.toLowerCase(), nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
         nativeCandidates.push(candidate);
         return;
       }
-      if (matcher(candidate.description, webPartialStore, webKeywords) && !existing[candidate.name]) {
+      if (matcher(candidate.description.toLowerCase(), webPartialStore, webKeywords) && !existing[candidate.name]) {
         webCandidates.push(candidate);
         return;
       }
     }
 
     if (candidate.readme) {
-      if (matcher(candidate.readme, nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
+      if (matcher(candidate.readme.toLowerCase(), nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
         nativeCandidates.push(candidate);
         return;
       }
-      if (matcher(candidate.readme, webPartialStore, webKeywords) && !existing[candidate.name]) {
+      if (matcher(candidate.readme.toLowerCase(), webPartialStore, webKeywords) && !existing[candidate.name]) {
         webCandidates.push(candidate);
         return;
       }
