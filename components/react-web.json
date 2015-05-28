@@ -2301,7 +2301,7 @@
   },
   {
     "name": "holon",
-    "repo": "coding-amigos/holon"
+    "repo": "codingamigos/holon"
   },
   {
     "name": "htmltojsx",
@@ -4102,5 +4102,17 @@
   {
     "name": "xtuple-react-components",
     "repo": "xtuple/xtuple-react-components"
+  },
+  {
+    "name": "react-datepicker-compat",
+    "repo": "svenanders/react-datepicker-compat"
+  },
+  {
+    "name": "react-mainloop",
+    "repo": "ThomWright/react-mainloop"
+  },
+  {
+    "name": "react-root",
+    "repo": "schmittyjd/react-root"
   }
 ]
