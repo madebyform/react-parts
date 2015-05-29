@@ -4114,5 +4114,9 @@
   {
     "name": "react-root",
     "repo": "schmittyjd/react-root"
+  },
+  {
+    "name": "react-i13n-ga",
+    "repo": "kaesonho/react-i13n-ga"
   }
 ]
