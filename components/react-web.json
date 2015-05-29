@@ -4118,5 +4118,9 @@
   {
     "name": "react-i13n-ga",
     "repo": "kaesonho/react-i13n-ga"
+  },
+  {
+    "name": "pui-react-portals",
+    "repo": "pivotal-cf/pivotal-ui-react"
   }
 ]
