@@ -4138,5 +4138,17 @@
   {
     "name": "react-slug",
     "repo": "zackify/react-slug"
+  },
+  {
+    "name": "kwik-e-mart",
+    "repo": "jquense/kwik-e-mart"
+  },
+  {
+    "name": "react-sticky-notes",
+    "repo": "flarnie/react-sticky-notes"
+  },
+  {
+    "name": "react-wysiwyg-editor",
+    "repo": "sonyan/react-wysiwyg-editor"
   }
 ]
