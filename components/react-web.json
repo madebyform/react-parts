@@ -4122,5 +4122,21 @@
   {
     "name": "pui-react-portals",
     "repo": "pivotal-cf/pivotal-ui-react"
+  },
+  {
+    "name": "grunt-react-seajs",
+    "repo": "Hi-Rube/grunt-react-seajs"
+  },
+  {
+    "name": "react-grid-table",
+    "repo": "riverside/react-grid"
+  },
+  {
+    "name": "react-i13n",
+    "repo": "yahoo/react-i13n"
+  },
+  {
+    "name": "react-slug",
+    "repo": "zackify/react-slug"
   }
 ]

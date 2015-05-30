@@ -382,5 +382,9 @@
   {
     "name": "react-native-swipeout",
     "repo": "dancormier/react-native-swipeout"
+  },
+  {
+    "name": "react-native-popover",
+    "repo": "jeanregisser/react-native-popover"
   }
 ]
