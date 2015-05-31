@@ -4150,5 +4150,9 @@
   {
     "name": "react-wysiwyg-editor",
     "repo": "sonyan/react-wysiwyg-editor"
+  },
+  {
+    "name": "react-image-magnifier",
+    "repo": "lelandrichardson/react-image-magnifier"
   }
 ]
