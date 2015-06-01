@@ -28,6 +28,8 @@ let ComponentItem = React.createClass({
   render() {
     let styles = {
       container: {
+        MozUserSelect: "none",
+        WebkitUserSelect: "none",
         background: "#fff",
         display: "block",
         margin: 1,
