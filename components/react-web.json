@@ -4154,5 +4154,17 @@
   {
     "name": "react-image-magnifier",
     "repo": "lelandrichardson/react-image-magnifier"
+  },
+  {
+    "name": "dust-react-helper",
+    "repo": "ryandao/dust-react-helper"
+  },
+  {
+    "name": "react-currency-masked-input",
+    "repo": "imcnally/react-currency-masked-input"
+  },
+  {
+    "name": "react-linkify",
+    "repo": "tasti/react-linkify"
   }
 ]
