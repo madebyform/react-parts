@@ -4170,5 +4170,13 @@
   {
     "name": "react-purecss",
     "repo": "rezzza/react-purecss"
+  },
+  {
+    "name": "cosmos-js",
+    "repo": "skidding/cosmos"
+  },
+  {
+    "name": "react-colorpicker-updated",
+    "repo": "tallstreet/react-colorpicker-updated"
   }
 ]
