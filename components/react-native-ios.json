@@ -386,5 +386,9 @@
   {
     "name": "react-native-popover",
     "repo": "jeanregisser/react-native-popover"
+  },
+  {
+    "name": "react-native-remote-push",
+    "repo": "darylrowland/react-native-remote-push"
   }
 ]
