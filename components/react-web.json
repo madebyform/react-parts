@@ -2425,7 +2425,7 @@
   },
   {
     "name": "rc-style",
-    "repo": "react-component/style"
+    "repo": "ant-design/style"
   },
   {
     "name": "rc-switch",
@@ -4190,5 +4190,9 @@
   {
     "name": "react-state-store",
     "repo": "wwayne/react-state-store"
+  },
+  {
+    "name": "protoncms-core",
+    "repo": "jhsware/protoncms-core"
   }
 ]
