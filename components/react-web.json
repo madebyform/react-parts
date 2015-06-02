@@ -4178,5 +4178,17 @@
   {
     "name": "react-colorpicker-updated",
     "repo": "tallstreet/react-colorpicker-updated"
+  },
+  {
+    "name": "react-fetch",
+    "repo": "zackify/react-fetch"
+  },
+  {
+    "name": "react-infinite-carousel",
+    "repo": "roeierez/react-infinite-carousel"
+  },
+  {
+    "name": "react-state-store",
+    "repo": "wwayne/react-state-store"
   }
 ]
