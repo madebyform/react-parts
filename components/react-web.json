@@ -4194,5 +4194,9 @@
   {
     "name": "protoncms-core",
     "repo": "jhsware/protoncms-core"
+  },
+  {
+    "name": "react-bootstrap-components",
+    "repo": "mathieumg/react-bootstrap-components"
   }
 ]

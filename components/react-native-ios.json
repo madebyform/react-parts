@@ -390,5 +390,9 @@
   {
     "name": "react-native-remote-push",
     "repo": "darylrowland/react-native-remote-push"
+  },
+  {
+    "name": "react-native-masked-view",
+    "repo": "gilbox/react-native-masked-view"
   }
 ]
