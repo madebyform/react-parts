@@ -4198,5 +4198,25 @@
   {
     "name": "react-bootstrap-components",
     "repo": "mathieumg/react-bootstrap-components"
+  },
+  {
+    "name": "gravel",
+    "repo": "appsforartists/gravel"
+  },
+  {
+    "name": "react-calendar-flexible",
+    "repo": "Blackening999/react-calendar"
+  },
+  {
+    "name": "react-draggable-tab",
+    "repo": "georgeosddev/react-draggable-tab"
+  },
+  {
+    "name": "react-keybinding",
+    "repo": "mapbox/react-keybinding"
+  },
+  {
+    "name": "react-rich-text-template",
+    "repo": "anmi/react-rich-text-template"
   }
 ]
