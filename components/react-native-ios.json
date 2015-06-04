@@ -394,5 +394,9 @@
   {
     "name": "react-native-masked-view",
     "repo": "gilbox/react-native-masked-view"
+  },
+  {
+    "name": "react-native-touch-id",
+    "repo": "naoufal/react-native-touch-id"
   }
 ]

@@ -4218,5 +4218,13 @@
   {
     "name": "react-rich-text-template",
     "repo": "anmi/react-rich-text-template"
+  },
+  {
+    "name": "react-dataview",
+    "repo": "zippyui/react-dataview"
+  },
+  {
+    "name": "react-form-elements",
+    "repo": "kevnz/react-form-elements"
   }
 ]
