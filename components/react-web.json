@@ -4266,5 +4266,13 @@
   {
     "name": "react-scrolla",
     "repo": "chentsulin/react-scrolla"
+  },
+  {
+    "name": "react-data-grid",
+    "repo": "adazzle/react-data-grid"
+  },
+  {
+    "name": "react-preload",
+    "repo": "sambernard/react-preload"
   }
 ]
