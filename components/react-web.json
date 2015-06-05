@@ -4226,5 +4226,37 @@
   {
     "name": "react-form-elements",
     "repo": "kevnz/react-form-elements"
+  },
+  {
+    "name": "css-animation",
+    "repo": "yiminghe/css-animation"
+  },
+  {
+    "name": "eventful-react",
+    "repo": "TheRealest/eventful-react"
+  },
+  {
+    "name": "functional-react",
+    "repo": "aickin/functional-react"
+  },
+  {
+    "name": "obscene-layout",
+    "repo": "obscene/Obscene-Layout"
+  },
+  {
+    "name": "react-json-table",
+    "repo": "arqex/react-json-table"
+  },
+  {
+    "name": "react-sortable-component",
+    "repo": "vn38minhtran/react-sortable-component"
+  },
+  {
+    "name": "react-tageditor",
+    "repo": "NdYAG/react-tageditor"
+  },
+  {
+    "name": "react-transitive-number",
+    "repo": "Lapple/react-transitive-number"
   }
 ]
