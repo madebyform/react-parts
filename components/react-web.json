@@ -2908,10 +2908,6 @@
     "repo": "passy/react-pokemon"
   },
   {
-    "name": "react-popup",
-    "repo": "minutemailer/react-popup"
-  },
-  {
     "name": "react-positionable-component",
     "repo": "Pomax/react-positionable-component"
   },
@@ -3924,10 +3920,6 @@
     "repo": "skiano/react-layout-factory"
   },
   {
-    "name": "react-libs",
-    "repo": "Lobos/react-ui"
-  },
-  {
     "name": "react-lightbox",
     "repo": "LaustAxelsen/react-lightbox"
   },
@@ -4274,5 +4266,9 @@
   {
     "name": "react-preload",
     "repo": "sambernard/react-preload"
+  },
+  {
+    "name": "react-splicer",
+    "repo": "chenzihui/react-splicer"
   }
 ]

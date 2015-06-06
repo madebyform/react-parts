@@ -398,5 +398,13 @@
   {
     "name": "react-native-touch-id",
     "repo": "naoufal/react-native-touch-id"
+  },
+  {
+    "name": "react-native-location",
+    "repo": "timfpark/react-native-location"
+  },
+  {
+    "name": "react-native-square-view",
+    "repo": "Shuangzuan/react-native-square-view"
   }
 ]

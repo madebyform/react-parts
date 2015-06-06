@@ -198,5 +198,41 @@
   {
     "name": "integratedcss",
     "repo": "SanderSpies/IntegratedCSS"
+  },
+  {
+    "name": "rctui",
+    "repo": "Lobos/react-ui"
+  },
+  {
+    "name": "react-price-component",
+    "repo": "scm-spain/react-price-component"
+  },
+  {
+    "name": "react-prop-types",
+    "repo": "react-bootstrap/react-prop-types"
+  },
+  {
+    "name": "react.paginate",
+    "repo": "Mosho1/react-paginate"
+  },
+  {
+    "name": "slavik-m-react-data-components",
+    "repo": "slavik-m/react-data-components"
+  },
+  {
+    "name": "uc-essence",
+    "repo": "University-Of-Cincinnati/Essence"
+  },
+  {
+    "name": "markdown-react-native",
+    "repo": "fakefish/markdown-react-native"
+  },
+  {
+    "name": "react-native-context-menu",
+    "repo": "naoufal/react-native-context-menu"
+  },
+  {
+    "name": "react-native-custom-alert",
+    "repo": "naoufal/react-native-custom-alert"
   }
 ]
