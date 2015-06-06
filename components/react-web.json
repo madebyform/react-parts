@@ -4270,5 +4270,13 @@
   {
     "name": "react-splicer",
     "repo": "chenzihui/react-splicer"
+  },
+  {
+    "name": "plotypus",
+    "repo": "levitanong/plotypus"
+  },
+  {
+    "name": "react-treeview-component",
+    "repo": "yjcxy12/react-treeview-component"
   }
 ]

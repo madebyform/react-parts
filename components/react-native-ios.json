@@ -406,5 +406,9 @@
   {
     "name": "react-native-square-view",
     "repo": "Shuangzuan/react-native-square-view"
+  },
+  {
+    "name": "react-native-loading-effect",
+    "repo": "Iliker/react-native-loading-effect"
   }
 ]
