@@ -234,5 +234,9 @@
   {
     "name": "react-native-custom-alert",
     "repo": "naoufal/react-native-custom-alert"
+  },
+  {
+    "name": "react-movie-select",
+    "repo": "rsamec/react-movie-select"
   }
 ]
