@@ -4298,5 +4298,21 @@
   {
     "name": "react-workbench",
     "repo": "unindented/react-workbench"
+  },
+  {
+    "name": "bapmrl-react-autocomplete",
+    "repo": "bapmrl/bapmrl-react-autocomplete"
+  },
+  {
+    "name": "react-movie-select",
+    "repo": "rsamec/react-movie-select"
+  },
+  {
+    "name": "react-popup",
+    "repo": "minutemailer/react-popup"
+  },
+  {
+    "name": "tilting-image",
+    "repo": "darklight721/tilting-image"
   }
 ]
