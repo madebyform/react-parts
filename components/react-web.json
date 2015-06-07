@@ -4278,5 +4278,25 @@
   {
     "name": "react-treeview-component",
     "repo": "yjcxy12/react-treeview-component"
+  },
+  {
+    "name": "react-beam",
+    "repo": "izaakschroeder/react-beam"
+  },
+  {
+    "name": "react-bootstrap-combobox",
+    "repo": "thealjey/react-bootstrap-combobox"
+  },
+  {
+    "name": "react-resolver-csp",
+    "repo": "gilesbradshaw/react-resolver-csp"
+  },
+  {
+    "name": "react-tinymce-input",
+    "repo": "HurricaneJames/react-tinymce-input"
+  },
+  {
+    "name": "react-workbench",
+    "repo": "unindented/react-workbench"
   }
 ]
