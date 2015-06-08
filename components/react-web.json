@@ -4334,5 +4334,25 @@
   {
     "name": "responsive-fixed-data-table",
     "repo": "vaiRk/responsive-fixed-data-table"
+  },
+  {
+    "name": "grunt-svg-react-component",
+    "repo": "okcoker/grunt-svg-react-component"
+  },
+  {
+    "name": "jsx-control-statements",
+    "repo": "valtech-au/jsx-control-statements"
+  },
+  {
+    "name": "rc-dropdown",
+    "repo": "react-component/dropdown"
+  },
+  {
+    "name": "react-popout",
+    "repo": "JakeGinnivan/react-popout"
+  },
+  {
+    "name": "react-wufoo-embed",
+    "repo": "seethroughtrees/react-wufoo-embed"
   }
 ]
