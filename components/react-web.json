@@ -4310,5 +4310,29 @@
   {
     "name": "tilting-image",
     "repo": "darklight721/tilting-image"
+  },
+  {
+    "name": "boron",
+    "repo": "yuanyan/boron"
+  },
+  {
+    "name": "react-grid-components",
+    "repo": "omaksi/react-grid-components"
+  },
+  {
+    "name": "react-lorem-image",
+    "repo": "chriskjaer/react-lorem-image"
+  },
+  {
+    "name": "react-polymer-layout",
+    "repo": "wizawu/react-polymer-layout"
+  },
+  {
+    "name": "react-subcomponent",
+    "repo": "UgnisSoftware/react-subcomponent"
+  },
+  {
+    "name": "responsive-fixed-data-table",
+    "repo": "vaiRk/responsive-fixed-data-table"
   }
 ]
