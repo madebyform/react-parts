@@ -4354,5 +4354,17 @@
   {
     "name": "react-wufoo-embed",
     "repo": "seethroughtrees/react-wufoo-embed"
+  },
+  {
+    "name": "obscene-stylesheet",
+    "repo": "obscene/Obscene-Stylesheet"
+  },
+  {
+    "name": "react-event-listener",
+    "repo": "oliviertassinari/react-event-listener"
+  },
+  {
+    "name": "size-decorator",
+    "repo": "istarkov/size-decorator"
   }
 ]
