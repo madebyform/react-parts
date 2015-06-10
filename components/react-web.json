@@ -1837,7 +1837,7 @@
   },
   {
     "name": "react-flexr",
-    "repo": "chriskjaer/react-flexr"
+    "repo": "kodyl/react-flexr"
   },
   {
     "name": "react-html-select",
@@ -2424,7 +2424,7 @@
     "repo": "react-component/slider"
   },
   {
-    "name": "rc-style",
+    "name": "ant-style",
     "repo": "ant-design/style"
   },
   {
@@ -3557,7 +3557,7 @@
   },
   {
     "name": "stilr",
-    "repo": "chriskjaer/stilr"
+    "repo": "kodyl/stilr"
   },
   {
     "name": "bem-classnames",
@@ -4366,5 +4366,33 @@
   {
     "name": "size-decorator",
     "repo": "istarkov/size-decorator"
+  },
+  {
+    "name": "grove-react-router",
+    "repo": "grovelabs/react-router"
+  },
+  {
+    "name": "react-anchorify-text",
+    "repo": "georgeosddev/react-anchorify-text"
+  },
+  {
+    "name": "react-container",
+    "repo": "JedWatson/react-container"
+  },
+  {
+    "name": "react-twitter-typeahead",
+    "repo": "erikschlegel/React-Twitter-Typeahead"
+  },
+  {
+    "name": "ts-react-pager",
+    "repo": "toshi0383/ts-react-pager"
+  },
+  {
+    "name": "react-twzipcode",
+    "repo": "patw0929/react-twzipcode"
+  },
+  {
+    "name": "react-web-notification",
+    "repo": "georgeosddev/react-web-notification"
   }
 ]

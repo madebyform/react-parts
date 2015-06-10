@@ -128,10 +128,6 @@
     "repo": "voronianski/react-native-effects-view"
   },
   {
-    "name": "rn-drawer",
-    "repo": "rt2zz/rn-drawer"
-  },
-  {
     "name": "react-native-router",
     "repo": "t4t5/react-native-router"
   },
@@ -418,5 +414,13 @@
   {
     "name": "react-native-collapsible",
     "repo": "oblador/react-native-collapsible"
+  },
+  {
+    "name": "react-native-drawer",
+    "repo": "rt2zz/react-native-drawer"
+  },
+  {
+    "name": "react-native-listitem",
+    "repo": "dancormier/react-native-listitem"
   }
 ]
