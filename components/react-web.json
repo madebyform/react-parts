@@ -4394,5 +4394,37 @@
   {
     "name": "react-web-notification",
     "repo": "georgeosddev/react-web-notification"
+  },
+  {
+    "name": "google-map-react",
+    "repo": "istarkov/google-map-react"
+  },
+  {
+    "name": "react-avatar-cropper",
+    "repo": "DropsOfSerenity/react-avatar-cropper"
+  },
+  {
+    "name": "react-document-meta",
+    "repo": "kodyl/react-document-meta"
+  },
+  {
+    "name": "react-modal-render-decorator",
+    "repo": "ssilab/react-modal-render-decorator"
+  },
+  {
+    "name": "react-routing",
+    "repo": "kriasoft/react-routing"
+  },
+  {
+    "name": "react-simple-alert",
+    "repo": "cheriejiajia/react-simple-alert"
+  },
+  {
+    "name": "react-sortable-mixin2",
+    "repo": "ganeshp0001/react-sortable-mixin"
+  },
+  {
+    "name": "react-swap",
+    "repo": "nkbt/react-swap"
   }
 ]

@@ -238,5 +238,9 @@
   {
     "name": "react-movie-select",
     "repo": "rsamec/react-movie-select"
+  },
+  {
+    "name": "rn-drawer",
+    "repo": "rt2zz/rn-drawer"
   }
 ]
