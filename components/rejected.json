@@ -242,5 +242,9 @@
   {
     "name": "rn-drawer",
     "repo": "rt2zz/rn-drawer"
+  },
+  {
+    "name": "ant-style",
+    "repo": "ant-design/style"
   }
 ]

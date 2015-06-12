@@ -2424,10 +2424,6 @@
     "repo": "react-component/slider"
   },
   {
-    "name": "ant-style",
-    "repo": "ant-design/style"
-  },
-  {
     "name": "rc-switch",
     "repo": "react-component/switch"
   },
@@ -4426,5 +4422,17 @@
   {
     "name": "react-swap",
     "repo": "nkbt/react-swap"
+  },
+  {
+    "name": "junisphere-react-intl",
+    "repo": "yahoo/react-intl"
+  },
+  {
+    "name": "pandapush-react",
+    "repo": "neilgupta/pandapush-react"
+  },
+  {
+    "name": "react-text-filter",
+    "repo": "nkbt/react-text-filter"
   }
 ]
