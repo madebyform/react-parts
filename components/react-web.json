@@ -3292,10 +3292,6 @@
     "repo": "Legitcode/socialbuttons"
   },
   {
-    "name": "standard-resume",
-    "repo": "StandardResume/StandardResume"
-  },
-  {
     "name": "statefy",
     "repo": "gearz-lab/statefy"
   },
@@ -3752,12 +3748,8 @@
     "repo": "justinwoo/etch-sketch"
   },
   {
-    "name": "ld-reactor-components",
-    "repo": "ali1k/ld-reactor-components"
-  },
-  {
     "name": "linked-data-reactor",
-    "repo": "ali1k/ld-reactor"
+    "repo": "ali1k/ld-r"
   },
   {
     "name": "markdown-react-js",
@@ -3781,7 +3773,7 @@
   },
   {
     "name": "rackt-cli",
-    "repo": "instructure-react/rackt-cli"
+    "repo": "mzabriskie/rackt-cli"
   },
   {
     "name": "rc-util",
@@ -4434,5 +4426,65 @@
   {
     "name": "react-text-filter",
     "repo": "nkbt/react-text-filter"
+  },
+  {
+    "name": "dlr-list-filter",
+    "repo": "mattstyles/dlr-list-filter"
+  },
+  {
+    "name": "er-react-intl",
+    "repo": "balmma/react-intl"
+  },
+  {
+    "name": "fluxible-plugin-fetchr-component-context",
+    "repo": "charosez/fluxible-plugin-fetchr"
+  },
+  {
+    "name": "hire-forms-input",
+    "repo": "Hire-Forms/hire-forms-input"
+  },
+  {
+    "name": "react-autolink-text",
+    "repo": "OpenGov/react-autolink-text"
+  },
+  {
+    "name": "react-flexbox-ui",
+    "repo": "cokeSchlumpf/react-flexbox-ui"
+  },
+  {
+    "name": "react-notification-badge",
+    "repo": "georgeosddev/react-notification-badge"
+  },
+  {
+    "name": "react-prop-once",
+    "repo": "dashed/react-prop-once"
+  },
+  {
+    "name": "react-sanfona",
+    "repo": "daviferreira/react-sanfona"
+  },
+  {
+    "name": "react-testutils-additions",
+    "repo": "rvdkooy/react-testutils-additions"
+  },
+  {
+    "name": "atril",
+    "repo": "Mitranim/atril"
+  },
+  {
+    "name": "matthewmueller-react-remarkable",
+    "repo": "acdlite/react-remarkable"
+  },
+  {
+    "name": "react-input-mask",
+    "repo": "sanniassin/react-input-mask"
+  },
+  {
+    "name": "react-styleguide-generator",
+    "repo": "pocotan001/react-styleguide-generator"
+  },
+  {
+    "name": "uxcore-select",
+    "repo": "uxcore/uxcore-select"
   }
 ]

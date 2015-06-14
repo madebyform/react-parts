@@ -157,7 +157,7 @@
   },
   {
     "name": "react-native-invertible-scroll-view",
-    "repo": "650Industries/react-native-invertible-scroll-view"
+    "repo": "exponentjs/react-native-invertible-scroll-view"
   },
   {
     "name": "react-native-ibeacon",
@@ -317,7 +317,7 @@
   },
   {
     "name": "react-native-scrollable-mixin",
-    "repo": "650Industries/react-native-scrollable-mixin"
+    "repo": "exponentjs/react-native-scrollable-mixin"
   },
   {
     "name": "react-native-swift-socketio",
@@ -422,5 +422,17 @@
   {
     "name": "react-native-listitem",
     "repo": "dancormier/react-native-listitem"
+  },
+  {
+    "name": "react-native-in-app-utils",
+    "repo": "chirag04/react-native-in-app-utils"
+  },
+  {
+    "name": "react-native-page-control",
+    "repo": "silentcloud/react-native-page-control"
+  },
+  {
+    "name": "react-native-search-bar",
+    "repo": "umhan35/react-native-search-bar"
   }
 ]
