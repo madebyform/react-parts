@@ -434,5 +434,21 @@
   {
     "name": "react-native-search-bar",
     "repo": "umhan35/react-native-search-bar"
+  },
+  {
+    "name": "elegant-react",
+    "repo": "gilbox/elegant-react"
+  },
+  {
+    "name": "react-native-eupage",
+    "repo": "2005wangliqun/react-native-eupage"
+  },
+  {
+    "name": "react-native-i18n",
+    "repo": "AlexanderZaytsev/react-native-i18n"
+  },
+  {
+    "name": "react-native-scrollable-tab-view",
+    "repo": "brentvatne/react-native-scrollable-tab-view"
   }
 ]

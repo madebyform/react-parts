@@ -4486,5 +4486,37 @@
   {
     "name": "uxcore-select",
     "repo": "uxcore/uxcore-select"
+  },
+  {
+    "name": "hire-forms-options",
+    "repo": "Hire-Forms/hire-forms-options"
+  },
+  {
+    "name": "react-auto-suggest",
+    "repo": "tomkp/react-auto-suggest"
+  },
+  {
+    "name": "react-bootstrap-datetimepicker-placeholder",
+    "repo": "quri/react-bootstrap-datetimepicker"
+  },
+  {
+    "name": "react-calendar-pane",
+    "repo": "tomkp/react-calendar-pane"
+  },
+  {
+    "name": "react-layout-pane",
+    "repo": "tomkp/react-layout-pane"
+  },
+  {
+    "name": "react-split-pane",
+    "repo": "tomkp/react-split-pane"
+  },
+  {
+    "name": "react-tab-pane",
+    "repo": "tomkp/react-tab-pane"
+  },
+  {
+    "name": "reactive-compass",
+    "repo": "artpi/Reactive-Compass"
   }
 ]
