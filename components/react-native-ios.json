@@ -441,7 +441,7 @@
   },
   {
     "name": "react-native-eupage",
-    "repo": "2005wangliqun/react-native-eupage"
+    "repo": "mmslate/react-native-eupage"
   },
   {
     "name": "react-native-i18n",
@@ -450,5 +450,9 @@
   {
     "name": "react-native-scrollable-tab-view",
     "repo": "brentvatne/react-native-scrollable-tab-view"
+  },
+  {
+    "name": "react-native-grid-example",
+    "repo": "yelled3/react-native-grid-example"
   }
 ]

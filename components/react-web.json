@@ -4518,5 +4518,45 @@
   {
     "name": "reactive-compass",
     "repo": "artpi/Reactive-Compass"
+  },
+  {
+    "name": "building-os-charts",
+    "repo": "luciddg/building-os-charts"
+  },
+  {
+    "name": "hire-forms-select",
+    "repo": "Hire-Forms/hire-forms-select"
+  },
+  {
+    "name": "hire-forms-textarea",
+    "repo": "Hire-Forms/hire-forms-textarea"
+  },
+  {
+    "name": "instatype",
+    "repo": "gragland/instatype"
+  },
+  {
+    "name": "react-avatr",
+    "repo": "studiofrenetic/react-avatr"
+  },
+  {
+    "name": "react-ghost-button",
+    "repo": "KyleAMathews/react-ghost-button"
+  },
+  {
+    "name": "react-input-textarea",
+    "repo": "shovon/react-input-textarea"
+  },
+  {
+    "name": "react-mini",
+    "repo": "stoeffel/react-mini"
+  },
+  {
+    "name": "react-test-helpers",
+    "repo": "joakimbeng/react-test-helpers"
+  },
+  {
+    "name": "state-transitions",
+    "repo": "jacobp100/state-transitions"
   }
 ]
