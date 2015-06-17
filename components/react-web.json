@@ -4558,5 +4558,25 @@
   {
     "name": "state-transitions",
     "repo": "jacobp100/state-transitions"
+  },
+  {
+    "name": "hire-forms-checkbox",
+    "repo": "Hire-Forms/hire-forms-checkbox"
+  },
+  {
+    "name": "hire-forms-static-list",
+    "repo": "Hire-Forms/hire-forms-static-list"
+  },
+  {
+    "name": "impromptu-react-sidemenu",
+    "repo": "johanneshilden/impromptu-react-sidemenu"
+  },
+  {
+    "name": "rc-notification",
+    "repo": "react-component/notification"
+  },
+  {
+    "name": "react-geohunter",
+    "repo": "matt-major/react-geohunter"
   }
 ]

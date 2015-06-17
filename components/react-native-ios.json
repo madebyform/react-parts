@@ -454,5 +454,9 @@
   {
     "name": "react-native-grid-example",
     "repo": "yelled3/react-native-grid-example"
+  },
+  {
+    "name": "react-native-swipeable-modal",
+    "repo": "apolkingg8/React-Native-Swipeable-Modal"
   }
 ]
