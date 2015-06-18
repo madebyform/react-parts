@@ -4578,5 +4578,69 @@
   {
     "name": "react-geohunter",
     "repo": "matt-major/react-geohunter"
+  },
+  {
+    "name": "elegant-react",
+    "repo": "gilbox/elegant-react"
+  },
+  {
+    "name": "c3-react",
+    "repo": "terry81811/c3-react"
+  },
+  {
+    "name": "flux-common-store",
+    "repo": "nkbt/flux-common-store"
+  },
+  {
+    "name": "hire-forms-list",
+    "repo": "Hire-Forms/hire-forms-list"
+  },
+  {
+    "name": "hire-forms-list-filter",
+    "repo": "Hire-Forms/hire-forms-list-filter"
+  },
+  {
+    "name": "hire-forms-multi-form",
+    "repo": "Hire-Forms/hire-forms-multi-form"
+  },
+  {
+    "name": "hire-forms-multi-select",
+    "repo": "Hire-Forms/hire-forms-multi-select"
+  },
+  {
+    "name": "hire-forms-mutable-list",
+    "repo": "Hire-Forms/hire-forms-mutable-list"
+  },
+  {
+    "name": "hire-forms-select-list",
+    "repo": "Hire-Forms/hire-forms-select-list"
+  },
+  {
+    "name": "react-flags",
+    "repo": "wiredmax/react-flags"
+  },
+  {
+    "name": "react-helmet",
+    "repo": "nfl/react-helmet"
+  },
+  {
+    "name": "react-layer-manager",
+    "repo": "ryan-mahoney/react-layer-manager"
+  },
+  {
+    "name": "react-leaflet-lmt",
+    "repo": "PaulLeCam/react-leaflet"
+  },
+  {
+    "name": "react-pgr",
+    "repo": "matt-major/react-pgr"
+  },
+  {
+    "name": "react-router-transition-context",
+    "repo": "buildo/react-router"
+  },
+  {
+    "name": "react-svg-piechart",
+    "repo": "cedricdelpoux/react-svg-piechart"
   }
 ]

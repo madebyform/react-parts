@@ -436,10 +436,6 @@
     "repo": "umhan35/react-native-search-bar"
   },
   {
-    "name": "elegant-react",
-    "repo": "gilbox/elegant-react"
-  },
-  {
     "name": "react-native-eupage",
     "repo": "mmslate/react-native-eupage"
   },
@@ -458,5 +454,9 @@
   {
     "name": "react-native-swipeable-modal",
     "repo": "apolkingg8/React-Native-Swipeable-Modal"
+  },
+  {
+    "name": "react-native-speech",
+    "repo": "naoufal/react-native-speech"
   }
 ]
