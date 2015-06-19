@@ -4642,5 +4642,33 @@
   {
     "name": "react-svg-piechart",
     "repo": "cedricdelpoux/react-svg-piechart"
+  },
+  {
+    "name": "canon-react",
+    "repo": "rackerlabs/canon-react"
+  },
+  {
+    "name": "greg-slider",
+    "repo": "gregsqueeb/greg-slider"
+  },
+  {
+    "name": "hydraulik",
+    "repo": "doodzik/hydraulik"
+  },
+  {
+    "name": "react-form-controlled",
+    "repo": "seeden/react-form-controlled"
+  },
+  {
+    "name": "react-observable",
+    "repo": "vslinko/react-observable"
+  },
+  {
+    "name": "react-responsive-tooltip",
+    "repo": "ganmor/react-responsive-tooltip"
+  },
+  {
+    "name": "react-soundcloud-embed",
+    "repo": "keske/react-soundcloud"
   }
 ]
