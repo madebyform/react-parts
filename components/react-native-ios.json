@@ -458,5 +458,9 @@
   {
     "name": "react-native-speech",
     "repo": "naoufal/react-native-speech"
+  },
+  {
+    "name": "react-native-geocoder",
+    "repo": "devfd/react-native-geocoder"
   }
 ]

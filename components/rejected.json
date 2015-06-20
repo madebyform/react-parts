@@ -246,5 +246,9 @@
   {
     "name": "ant-style",
     "repo": "ant-design/style"
+  },
+  {
+    "name": "react-root",
+    "repo": "schmittyjd/react-root"
   }
 ]

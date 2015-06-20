@@ -4092,10 +4092,6 @@
     "repo": "ThomWright/react-mainloop"
   },
   {
-    "name": "react-root",
-    "repo": "schmittyjd/react-root"
-  },
-  {
     "name": "react-i13n-ga",
     "repo": "kaesonho/react-i13n-ga"
   },
@@ -4670,5 +4666,13 @@
   {
     "name": "react-soundcloud-embed",
     "repo": "keske/react-soundcloud"
+  },
+  {
+    "name": "react-media-object",
+    "repo": "chantastic/react-media-object"
+  },
+  {
+    "name": "react-pathjs-chart",
+    "repo": "rsamec/react-pathjs-chart"
   }
 ]
