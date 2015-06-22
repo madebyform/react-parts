@@ -4674,5 +4674,41 @@
   {
     "name": "react-pathjs-chart",
     "repo": "rsamec/react-pathjs-chart"
+  },
+  {
+    "name": "html-to-react",
+    "repo": "mikenikles/html-to-react"
+  },
+  {
+    "name": "in-flux",
+    "repo": "nkbt/in-flux"
+  },
+  {
+    "name": "react-datetime",
+    "repo": "arqex/react-datetime"
+  },
+  {
+    "name": "react-intl-tel-input",
+    "repo": "patw0929/react-intl-tel-input"
+  },
+  {
+    "name": "reflux-state-mixin",
+    "repo": "yonatanmn/reflux-state-mixin"
+  },
+  {
+    "name": "shoreline-ui",
+    "repo": "linzerui/shoreline-ui"
+  },
+  {
+    "name": "x-view",
+    "repo": "lixiaoyan/x-view"
+  },
+  {
+    "name": "react-chessboard",
+    "repo": "moroshko/react-chessboard"
+  },
+  {
+    "name": "react-mui",
+    "repo": "SimonDegraeve/react-mui"
   }
 ]
