@@ -122,7 +122,7 @@ export var App = React.createClass({
     query.split(/\s+/).forEach(function(term) {
       results = results.filter((c) => (
         c.name.toLowerCase().indexOf(term) != -1 ||
-        c.description.toLowerCase().indexOf(term) != -1 ||
+        (c.description || "").toLowerCase().indexOf(term) != -1 ||
         c.keywords.toLowerCase().indexOf(term) != -1 ||
         c.githubUser.toLowerCase().toLowerCase() == term
       ));
