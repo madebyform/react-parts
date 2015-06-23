@@ -462,5 +462,9 @@
   {
     "name": "react-native-geocoder",
     "repo": "devfd/react-native-geocoder"
+  },
+  {
+    "name": "react-paypal",
+    "repo": "MattFoley/react-native-paypal"
   }
 ]

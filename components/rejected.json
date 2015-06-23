@@ -250,5 +250,9 @@
   {
     "name": "react-root",
     "repo": "schmittyjd/react-root"
+  },
+  {
+    "name": "react-logo",
+    "repo": "xudafeng/react-logo"
   }
 ]

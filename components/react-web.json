@@ -4710,5 +4710,33 @@
   {
     "name": "react-mui",
     "repo": "SimonDegraeve/react-mui"
+  },
+  {
+    "name": "chartbuilder-ui",
+    "repo": "Quartz/chartbuilder-ui"
+  },
+  {
+    "name": "react-blocks",
+    "repo": "whoisandie/react-blocks"
+  },
+  {
+    "name": "react-dropfile-field",
+    "repo": "georgeosddev/react-dropfile-field"
+  },
+  {
+    "name": "react-iso-animate",
+    "repo": "mangochomp/react-static-jsx"
+  },
+  {
+    "name": "react-labels-input",
+    "repo": "hellocreep/react-labels-input"
+  },
+  {
+    "name": "react-visualizer",
+    "repo": "cheminfo/visualizer-react"
+  },
+  {
+    "name": "velocity-transition-group",
+    "repo": "jakemhiller/ReactVelocityTransitionGroup"
   }
 ]
