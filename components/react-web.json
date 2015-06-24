@@ -4738,5 +4738,33 @@
   {
     "name": "velocity-transition-group",
     "repo": "jakemhiller/ReactVelocityTransitionGroup"
+  },
+  {
+    "name": "react-gist-slideshow",
+    "repo": "andrewjmeier/react-gist-slideshow"
+  },
+  {
+    "name": "react-input-link",
+    "repo": "buildo/react-input-link"
+  },
+  {
+    "name": "react-select-search",
+    "repo": "tbleckert/react-select-search"
+  },
+  {
+    "name": "slush-react-component",
+    "repo": "ssnau/slush-react-component"
+  },
+  {
+    "name": "react-component-metadata",
+    "repo": "jquense/react-component-metadata"
+  },
+  {
+    "name": "react-pong",
+    "repo": "ohall/react-pong"
+  },
+  {
+    "name": "react-shallow-component",
+    "repo": "kristoferjoseph/react-shallow-component"
   }
 ]
