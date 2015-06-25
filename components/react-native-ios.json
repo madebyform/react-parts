@@ -466,5 +466,13 @@
   {
     "name": "react-paypal",
     "repo": "MattFoley/react-native-paypal"
+  },
+  {
+    "name": "popeye",
+    "repo": "levitanong/popeye"
+  },
+  {
+    "name": "react-native-safari-view",
+    "repo": "naoufal/react-native-safari-view"
   }
 ]

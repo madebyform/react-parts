@@ -4766,5 +4766,13 @@
   {
     "name": "react-shallow-component",
     "repo": "kristoferjoseph/react-shallow-component"
+  },
+  {
+    "name": "react-respond-to",
+    "repo": "onefinestay/react-respond-to"
+  },
+  {
+    "name": "transhand",
+    "repo": "azazdeaz/transhand"
   }
 ]
