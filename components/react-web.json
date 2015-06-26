@@ -1889,7 +1889,7 @@
   },
   {
     "name": "react-swipr",
-    "repo": "isekivacenz/react-swipr"
+    "repo": "StevenIseki/react-swipr"
   },
   {
     "name": "react-tray",
@@ -3126,10 +3126,6 @@
   {
     "name": "react-toastr",
     "repo": "tomchentw/react-toastr"
-  },
-  {
-    "name": "react-todo",
-    "repo": "StevenIseki/react-todo"
   },
   {
     "name": "react-toolbar",
@@ -4774,5 +4770,29 @@
   {
     "name": "transhand",
     "repo": "azazdeaz/transhand"
+  },
+  {
+    "name": "generator-react-fullstack",
+    "repo": "kriasoft/react-starter-kit"
+  },
+  {
+    "name": "react-autosize-textarea",
+    "repo": "buildo/react-autosize-textarea"
+  },
+  {
+    "name": "react-cookie-banner",
+    "repo": "buildo/react-cookie-banner"
+  },
+  {
+    "name": "react-navbar",
+    "repo": "ikr/react-navbar"
+  },
+  {
+    "name": "react-simple-grid",
+    "repo": "gragland/react-simple-grid"
+  },
+  {
+    "name": "react-tabbordion",
+    "repo": "merri/react-tabbordion"
   }
 ]

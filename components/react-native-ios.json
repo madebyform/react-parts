@@ -474,5 +474,13 @@
   {
     "name": "react-native-safari-view",
     "repo": "naoufal/react-native-safari-view"
+  },
+  {
+    "name": "react-native-timeago",
+    "repo": "TylerLH/react-native-timeago"
+  },
+  {
+    "name": "react-native-touchable-ripple",
+    "repo": "apolkingg8/React-Native-Touchable-Ripple"
   }
 ]
