@@ -4794,5 +4794,77 @@
   {
     "name": "react-tabbordion",
     "repo": "merri/react-tabbordion"
+  },
+  {
+    "name": "nodeproto",
+    "repo": "Inkdpixels/NodeProto"
+  },
+  {
+    "name": "pyxley",
+    "repo": "stitchfix/pyxleyJS"
+  },
+  {
+    "name": "rc-datepicker",
+    "repo": "buildo/react-semantic-datepicker"
+  },
+  {
+    "name": "rc-steps",
+    "repo": "react-component/steps"
+  },
+  {
+    "name": "react-alloy",
+    "repo": "skeswa/alloy"
+  },
+  {
+    "name": "react-center-component",
+    "repo": "qimingweng/react-center-component"
+  },
+  {
+    "name": "react-class",
+    "repo": "zippyui/react-class"
+  },
+  {
+    "name": "react-medium-spinner",
+    "repo": "skuridin/react-medium-spinner"
+  },
+  {
+    "name": "react-placeholder",
+    "repo": "buildo/react-placeholder"
+  },
+  {
+    "name": "react-popups",
+    "repo": "Radivarig/react-popups"
+  },
+  {
+    "name": "react-render-stream",
+    "repo": "ahdinosaur/react-render-stream"
+  },
+  {
+    "name": "react-server-render",
+    "repo": "danielmeneses/react-server-render"
+  },
+  {
+    "name": "react-swicth-button",
+    "repo": "gfazioli/react-switch-button"
+  },
+  {
+    "name": "react-switch-case",
+    "repo": "jihchi/react-switch-case"
+  },
+  {
+    "name": "react-transition-manager",
+    "repo": "collingo/react-transition-manager"
+  },
+  {
+    "name": "scrollable",
+    "repo": "yahoo/scrollable"
+  },
+  {
+    "name": "synfrastructure",
+    "repo": "synapsestudios/synfrastructure"
+  },
+  {
+    "name": "velocitytransitiongroup",
+    "repo": "souporserious/velocitytransitiongroup"
   }
 ]
