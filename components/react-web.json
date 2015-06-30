@@ -4866,5 +4866,25 @@
   {
     "name": "velocitytransitiongroup",
     "repo": "souporserious/velocitytransitiongroup"
+  },
+  {
+    "name": "react-contentable",
+    "repo": "anthonator/react-contentable"
+  },
+  {
+    "name": "react-qiniu",
+    "repo": "lingochamp/react-qiniu"
+  },
+  {
+    "name": "react-sparklines",
+    "repo": "borisyankov/react-sparklines"
+  },
+  {
+    "name": "stylo",
+    "repo": "michalkvasnicak/stylo"
+  },
+  {
+    "name": "supertable",
+    "repo": "bigdatr/supertable"
   }
 ]

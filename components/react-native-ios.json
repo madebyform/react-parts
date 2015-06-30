@@ -482,5 +482,9 @@
   {
     "name": "react-native-touchable-ripple",
     "repo": "apolkingg8/React-Native-Touchable-Ripple"
+  },
+  {
+    "name": "react-native-device-display",
+    "repo": "kkjdaniel/react-native-device-display"
   }
 ]
