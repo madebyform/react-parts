@@ -4805,7 +4805,7 @@
   },
   {
     "name": "rc-datepicker",
-    "repo": "buildo/react-semantic-datepicker"
+    "repo": "buildo/react-datepicker"
   },
   {
     "name": "rc-steps",
@@ -4813,7 +4813,7 @@
   },
   {
     "name": "react-alloy",
-    "repo": "skeswa/alloy"
+    "repo": "skeswa/react-alloy"
   },
   {
     "name": "react-center-component",
@@ -4886,5 +4886,17 @@
   {
     "name": "supertable",
     "repo": "bigdatr/supertable"
+  },
+  {
+    "name": "react-octicon",
+    "repo": "insin/react-octicon"
+  },
+  {
+    "name": "react-card",
+    "repo": "spudly/react-card"
+  },
+  {
+    "name": "react-lite-audio",
+    "repo": "teambition/react-lite-dropdown"
   }
 ]

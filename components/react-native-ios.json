@@ -486,5 +486,13 @@
   {
     "name": "react-native-device-display",
     "repo": "kkjdaniel/react-native-device-display"
+  },
+  {
+    "name": "react-native-screcorder",
+    "repo": "maxs15/react-native-screcorder"
+  },
+  {
+    "name": "react-native-youtube",
+    "repo": "paramaggarwal/react-native-youtube"
   }
 ]
