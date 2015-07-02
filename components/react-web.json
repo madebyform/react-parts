@@ -4930,5 +4930,17 @@
   {
     "name": "react-use-decorator",
     "repo": "malyshevalex/react-use-decorator"
+  },
+  {
+    "name": "react-renderif",
+    "repo": "ericlynnpeterson/react-renderif"
+  },
+  {
+    "name": "react-chosen",
+    "repo": "chenglou/react-chosen"
+  },
+  {
+    "name": "react-simple-dropdown",
+    "repo": "Fauntleroy/react-simple-dropdown"
   }
 ]

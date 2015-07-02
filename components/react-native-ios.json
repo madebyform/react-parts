@@ -205,7 +205,7 @@
   },
   {
     "name": "react-native-mapbox-gl",
-    "repo": "bsudekum/react-native-mapbox-gl"
+    "repo": "mapbox/react-native-mapbox-gl"
   },
   {
     "name": "react-native-realtimestorage-ios",
@@ -494,5 +494,9 @@
   {
     "name": "react-native-youtube",
     "repo": "paramaggarwal/react-native-youtube"
+  },
+  {
+    "name": "react-native-infinite-scroll-view",
+    "repo": "exponentjs/react-native-infinite-scroll-view"
   }
 ]
