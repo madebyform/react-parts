@@ -4677,7 +4677,7 @@
   },
   {
     "name": "in-flux",
-    "repo": "nkbt/in-flux"
+    "repo": "in-flux/in-flux"
   },
   {
     "name": "react-datetime",
@@ -4898,5 +4898,37 @@
   {
     "name": "react-lite-audio",
     "repo": "teambition/react-lite-dropdown"
+  },
+  {
+    "name": "react-copyable",
+    "repo": "hongchae/react-copyable"
+  },
+  {
+    "name": "react-memorystats",
+    "repo": "vigneshshanmugam/react-memorystats"
+  },
+  {
+    "name": "react-parallax",
+    "repo": "RRutsche/react-parallax"
+  },
+  {
+    "name": "react-qr",
+    "repo": "jprichardson/react-qr"
+  },
+  {
+    "name": "react-simple-tooltip",
+    "repo": "cedricdelpoux/react-simple-tooltip"
+  },
+  {
+    "name": "react-stockcharts",
+    "repo": "rrag/react-stockcharts"
+  },
+  {
+    "name": "react-svg-line-chart",
+    "repo": "cedricdelpoux/react-svg-line-chart"
+  },
+  {
+    "name": "react-use-decorator",
+    "repo": "malyshevalex/react-use-decorator"
   }
 ]
