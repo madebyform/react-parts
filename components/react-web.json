@@ -4942,5 +4942,25 @@
   {
     "name": "react-simple-dropdown",
     "repo": "Fauntleroy/react-simple-dropdown"
+  },
+  {
+    "name": "autoresponsive-react",
+    "repo": "xudafeng/autoresponsive-react"
+  },
+  {
+    "name": "react-bootstrap-multiselect-tempfix",
+    "repo": "skratchdot/react-bootstrap-multiselect"
+  },
+  {
+    "name": "react-deck",
+    "repo": "spudly/react-deck"
+  },
+  {
+    "name": "react-material-icons",
+    "repo": "mikamaunula/react-material-icons"
+  },
+  {
+    "name": "react-rotation",
+    "repo": "andrepolischuk/react-rotation"
   }
 ]
