@@ -498,5 +498,13 @@
   {
     "name": "react-native-infinite-scroll-view",
     "repo": "exponentjs/react-native-infinite-scroll-view"
+  },
+  {
+    "name": "autoresponsive-react-native",
+    "repo": "xudafeng/autoresponsive-react"
+  },
+  {
+    "name": "react-native-autocomplete",
+    "repo": "nulrich/RCTAutoComplete"
   }
 ]

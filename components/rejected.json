@@ -258,5 +258,9 @@
   {
     "name": "react-todo",
     "repo": "StevenIseki/react-todo"
+  },
+  {
+    "name": "react-timeline",
+    "repo": "kuansim/react-timeline"
   }
 ]

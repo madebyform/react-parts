@@ -3116,10 +3116,6 @@
     "repo": "radubrehar/react-time-field"
   },
   {
-    "name": "react-timeline",
-    "repo": "kuansim/react-timeline"
-  },
-  {
     "name": "react-timer-mixin",
     "repo": "reactjs/react-timer-mixin"
   },
@@ -4962,5 +4958,61 @@
   {
     "name": "react-rotation",
     "repo": "andrepolischuk/react-rotation"
+  },
+  {
+    "name": "impromptu-react-animated-header",
+    "repo": "johanneshilden/impromptu-react-animated-header"
+  },
+  {
+    "name": "react-base",
+    "repo": "jamesknelson/react-base"
+  },
+  {
+    "name": "react-colors-picker",
+    "repo": "noyobo/react-colors-picker"
+  },
+  {
+    "name": "react-contextmenu",
+    "repo": "vkbansal/react-contextmenu"
+  },
+  {
+    "name": "react-copy-to-clipboard",
+    "repo": "nkbt/react-copy-to-clipboard"
+  },
+  {
+    "name": "react-socket",
+    "repo": "coma/react-socket"
+  },
+  {
+    "name": "react-sonic",
+    "repo": "wi2/react-sonic"
+  },
+  {
+    "name": "react-teleport",
+    "repo": "coma/react-teleport"
+  },
+  {
+    "name": "react-toggle-display",
+    "repo": "ccnokes/react-toggle-display"
+  },
+  {
+    "name": "react-typewriter",
+    "repo": "ianbjorndilling/react-typewriter"
+  },
+  {
+    "name": "rgx",
+    "repo": "jxnblk/rgx"
+  },
+  {
+    "name": "thumb-preview",
+    "repo": "caike/React-Thumb-Preview"
+  },
+  {
+    "name": "uikit-react",
+    "repo": "stipsan/uikit-react"
+  },
+  {
+    "name": "react-overlay-popup",
+    "repo": "taskworld/react-overlay-popup"
   }
 ]
