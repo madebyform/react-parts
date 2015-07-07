@@ -506,5 +506,9 @@
   {
     "name": "react-native-autocomplete",
     "repo": "nulrich/RCTAutoComplete"
+  },
+  {
+    "name": "react-native-app-info",
+    "repo": "Iragne/react-native-app-info"
   }
 ]

@@ -262,5 +262,9 @@
   {
     "name": "react-timeline",
     "repo": "kuansim/react-timeline"
+  },
+  {
+    "name": "react-bootstrap-multiselect-tempfix",
+    "repo": "skratchdot/react-bootstrap-multiselect"
   }
 ]

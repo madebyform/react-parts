@@ -4944,10 +4944,6 @@
     "repo": "xudafeng/autoresponsive-react"
   },
   {
-    "name": "react-bootstrap-multiselect-tempfix",
-    "repo": "skratchdot/react-bootstrap-multiselect"
-  },
-  {
     "name": "react-deck",
     "repo": "spudly/react-deck"
   },
@@ -5014,5 +5010,17 @@
   {
     "name": "react-overlay-popup",
     "repo": "taskworld/react-overlay-popup"
+  },
+  {
+    "name": "buildo-react-components",
+    "repo": "buildo/react-components"
+  },
+  {
+    "name": "react-rx-component",
+    "repo": "acdlite/react-rx-component"
+  },
+  {
+    "name": "react-theme",
+    "repo": "azazdeaz/react-theme"
   }
 ]
