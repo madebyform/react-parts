@@ -861,7 +861,7 @@
   },
   {
     "name": "react-stylist",
-    "repo": "yuanyan/react-stylist"
+    "repo": "yuanyan/barium"
   },
   {
     "name": "react-stylesheet",
@@ -5022,5 +5022,37 @@
   {
     "name": "react-theme",
     "repo": "azazdeaz/react-theme"
+  },
+  {
+    "name": "fontello-react-component",
+    "repo": "mderrick/fontello-react-component"
+  },
+  {
+    "name": "mobservable",
+    "repo": "mweststrate/mobservable"
+  },
+  {
+    "name": "react-components-9dots",
+    "repo": "danleavitt0/react-components"
+  },
+  {
+    "name": "react-lil-router",
+    "repo": "collardeau/react-lil-router"
+  },
+  {
+    "name": "react-multi-select-dropdown",
+    "repo": "belongco/react-multi-select-dropdown"
+  },
+  {
+    "name": "react-progress-label",
+    "repo": "wangzuo/react-progress-label"
+  },
+  {
+    "name": "react-splitter",
+    "repo": "mauricedb/react-splitter"
+  },
+  {
+    "name": "react-themeable",
+    "repo": "markdalgleish/react-themeable"
   }
 ]

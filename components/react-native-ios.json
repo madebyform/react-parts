@@ -510,5 +510,9 @@
   {
     "name": "react-native-app-info",
     "repo": "Iragne/react-native-app-info"
+  },
+  {
+    "name": "react-native-refresher",
+    "repo": "syrusakbary/react-native-refresher"
   }
 ]
