@@ -5054,5 +5054,29 @@
   {
     "name": "react-themeable",
     "repo": "markdalgleish/react-themeable"
+  },
+  {
+    "name": "cpr-multiselect",
+    "repo": "CanopyTax/cpr-multiselect"
+  },
+  {
+    "name": "markdown-to-react-components",
+    "repo": "christianalfoni/markdown-to-react-components"
+  },
+  {
+    "name": "react-component-icon",
+    "repo": "bsbeeks/react-component-icon"
+  },
+  {
+    "name": "react-crop",
+    "repo": "shichongrui/react-crop"
+  },
+  {
+    "name": "react-custom-scroll",
+    "repo": "rommguy/React-Custom-Scroll"
+  },
+  {
+    "name": "react-vimeo",
+    "repo": "freecodecamp/react-vimeo"
   }
 ]

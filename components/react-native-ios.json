@@ -514,5 +514,17 @@
   {
     "name": "react-native-refresher",
     "repo": "syrusakbary/react-native-refresher"
+  },
+  {
+    "name": "react-native-audioplayer",
+    "repo": "andreaskeller/react-native-audioplayer"
+  },
+  {
+    "name": "react-native-html-render",
+    "repo": "soliury/react-native-html-render"
+  },
+  {
+    "name": "react-native-scrollable-decorator",
+    "repo": "exponentjs/react-native-scrollable-decorator"
   }
 ]
