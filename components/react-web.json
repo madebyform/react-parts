@@ -4332,10 +4332,6 @@
     "repo": "seethroughtrees/react-wufoo-embed"
   },
   {
-    "name": "obscene-stylesheet",
-    "repo": "obscene/Obscene-Stylesheet"
-  },
-  {
     "name": "react-event-listener",
     "repo": "oliviertassinari/react-event-listener"
   },
@@ -5078,5 +5074,61 @@
   {
     "name": "react-vimeo",
     "repo": "freecodecamp/react-vimeo"
+  },
+  {
+    "name": "barium",
+    "repo": "yuanyan/barium"
+  },
+  {
+    "name": "mocha-mix",
+    "repo": "rexk/mocha-mix"
+  },
+  {
+    "name": "react-bootstrap-tree",
+    "repo": "luqin/react-bootstrap-tree"
+  },
+  {
+    "name": "react-element-query",
+    "repo": "joeybaker/react-element-query"
+  },
+  {
+    "name": "react-look",
+    "repo": "rofrischmann/react-look"
+  },
+  {
+    "name": "react-pulr",
+    "repo": "StevenIseki/react-pulr"
+  },
+  {
+    "name": "react-resizable-bar",
+    "repo": "ActionIQ/react-resizable-bar"
+  },
+  {
+    "name": "react-starter-kit",
+    "repo": "skyrin/react-starter-kit"
+  },
+  {
+    "name": "react-svg-loader",
+    "repo": "boopathi/react-svg-loader"
+  },
+  {
+    "name": "react-tap-to-reveal-options",
+    "repo": "enki-com/react-tap-to-reveal-options"
+  },
+  {
+    "name": "react-textselect",
+    "repo": "javierbyte/react-textselect"
+  },
+  {
+    "name": "react-tour",
+    "repo": "javierbyte/react-tour"
+  },
+  {
+    "name": "react-tree-pane",
+    "repo": "tomkp/react-tree-pane"
+  },
+  {
+    "name": "react-xeditable",
+    "repo": "kodbiro/react-xeditable"
   }
 ]

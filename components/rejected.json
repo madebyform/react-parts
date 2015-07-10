@@ -266,5 +266,13 @@
   {
     "name": "react-bootstrap-multiselect-tempfix",
     "repo": "skratchdot/react-bootstrap-multiselect"
+  },
+  {
+    "name": "rc-accordion",
+    "repo": "react-component/rc-accordion"
+  },
+  {
+    "name": "obscene-stylesheet",
+    "repo": "obscene/Obscene-Stylesheet"
   }
 ]
