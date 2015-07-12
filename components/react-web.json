@@ -4840,10 +4840,6 @@
     "repo": "gfazioli/react-switch-button"
   },
   {
-    "name": "react-switch-case",
-    "repo": "jihchi/react-switch-case"
-  },
-  {
     "name": "react-transition-manager",
     "repo": "collingo/react-transition-manager"
   },
@@ -5130,5 +5126,37 @@
   {
     "name": "react-xeditable",
     "repo": "kodbiro/react-xeditable"
+  },
+  {
+    "name": "autoresponsive-common",
+    "repo": "xudafeng/autoresponsive-common"
+  },
+  {
+    "name": "react-children-utils",
+    "repo": "elliottsj/react-children-utils"
+  },
+  {
+    "name": "react-component-bootstrap",
+    "repo": "mvader/react-component-bootstrap"
+  },
+  {
+    "name": "react-dimensions",
+    "repo": "digidem/react-dimensions"
+  },
+  {
+    "name": "react-progress-deck",
+    "repo": "linghuaj/react-progress-deck"
+  },
+  {
+    "name": "react-readalong-component",
+    "repo": "TalkingBibles/react-readalong-component"
+  },
+  {
+    "name": "react-scroll-effects",
+    "repo": "anorudes/React-Scroll-Effect"
+  },
+  {
+    "name": "react-suitcssify",
+    "repo": "brentertz/react-suitcssify"
   }
 ]

@@ -274,5 +274,9 @@
   {
     "name": "obscene-stylesheet",
     "repo": "obscene/Obscene-Stylesheet"
+  },
+  {
+    "name": "react-switch-case",
+    "repo": "jihchi/react-switch-case"
   }
 ]
