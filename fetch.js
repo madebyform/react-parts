@@ -49,12 +49,13 @@ components.forEach(function(component) {
   promises.push(
     new Promise(function(resolve, reject) {
       var options = {
-        url: endpoints.npm + component.name
+        url: endpoints.npm + component.name,
+        json: true
       };
 
       // NPM
-      request(options, function(error, response, body) {
-        var data = JSON.parse(body);
+      request(options, function(error, response, data) {
+        if (!data["dist-tags"]) console.log("Problems with dist data for: "+ component.name);
         var latestVersion = data["dist-tags"].latest;
         var githubUrl = "https://github.com/" + component.repo;
 
@@ -79,11 +80,11 @@ components.forEach(function(component) {
         var start = (new Date(component.created)).toISOString().substr(0,10);
 
         var options = {
-          url: endpoints.npm_stat + start + ":" + currentTime + "/" + component.name
+          url: endpoints.npm_stat + start + ":" + currentTime + "/" + component.name,
+          json: true
         };
 
-        request(options, function(error, response, body) {
-          var data = JSON.parse(body);
+        request(options, function(error, response, data) {
           var noDownloads = [{downloads: 0}];
 
           resolve({
@@ -102,12 +103,11 @@ components.forEach(function(component) {
       var options = {
         url: endpoints.github + component.repo,
         headers: { 'User-Agent': 'request' },
-        auth: { 'user': keys.github.username, 'pass': keys.github.password }
+        auth: { 'user': keys.github.username, 'pass': keys.github.password },
+        json: true
       };
 
-      request(options, function(error, response, body) {
-        var data = JSON.parse(body);
-
+      request(options, function(error, response, data) {
         resolve({
           stars: data.stargazers_count
         });
