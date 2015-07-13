@@ -282,5 +282,49 @@
   {
     "name": "react-suitcss-mixin",
     "repo": "brentertz/react-suitcss-mixin"
+  },
+  {
+    "name": "cache-store",
+    "repo": "qiu8310/react-data-store"
+  },
+  {
+    "name": "rc-collapse",
+    "repo": "react-component/rc-collapse"
+  },
+  {
+    "name": "colorplane-react",
+    "repo": "meandavejustice/colorplane-react"
+  },
+  {
+    "name": "creactjs",
+    "repo": "taddei/creactjs"
+  },
+  {
+    "name": "forrrm",
+    "repo": "paulrayes/forrrm"
+  },
+  {
+    "name": "immreact",
+    "repo": "mattstyles/immreact"
+  },
+  {
+    "name": "react-adapt-to-width",
+    "repo": "fredfogerty/react-adapt-to-width"
+  },
+  {
+    "name": "react-infinite-scroll-seed",
+    "repo": "lapanoid/react-infinite-scroll-seed"
+  },
+  {
+    "name": "react-provider",
+    "repo": "morisuke/react-provider"
+  },
+  {
+    "name": "react-topbar",
+    "repo": "chantastic/react-topbar"
+  },
+  {
+    "name": "ld-reactor-components",
+    "repo": "ali1k/ld-reactor-components"
   }
 ]

@@ -5182,5 +5182,181 @@
   {
     "name": "react-svg-buttons",
     "repo": "plouc/react-svg-buttons"
+  },
+  {
+    "name": "react-click-outside",
+    "repo": "kako0507/react-click-outside"
+  },
+  {
+    "name": "basscss-logo",
+    "repo": "basscss/logo"
+  },
+  {
+    "name": "express-cjsx",
+    "repo": "CarbinCreative/express-cjsx"
+  },
+  {
+    "name": "react-toolbox",
+    "repo": "soyjavi/react-toolbox"
+  },
+  {
+    "name": "fluxis",
+    "repo": "stvkoch/fluxis"
+  },
+  {
+    "name": "sentai",
+    "repo": "antisocialmunky/sentai"
+  },
+  {
+    "name": "react-soundplayer",
+    "repo": "soundblogs/react-soundplayer"
+  },
+  {
+    "name": "radon-select",
+    "repo": "FormidableLabs/radon-select"
+  },
+  {
+    "name": "react-autodoc",
+    "repo": "Skookum/react-autodoc"
+  },
+  {
+    "name": "react-click-to-select",
+    "repo": "mapbox/react-click-to-select"
+  },
+  {
+    "name": "react-clipboard",
+    "repo": "WickyNilliams/react-clipboard"
+  },
+  {
+    "name": "react-combobox",
+    "repo": "jmreidy/react-combobox"
+  },
+  {
+    "name": "react-data-calendar",
+    "repo": "zdoc01/react-data-calendar"
+  },
+  {
+    "name": "react-components-asserts",
+    "repo": "uxebu/react-components-asserts"
+  },
+  {
+    "name": "react-google-calendar-events-list",
+    "repo": "VinSpee/react-gcal-events-list"
+  },
+  {
+    "name": "react-fitter-happier-text",
+    "repo": "jxnblk/react-fitter-happier-text"
+  },
+  {
+    "name": "react-inline-svg",
+    "repo": "loopj/react-inline-svg"
+  },
+  {
+    "name": "text-transition",
+    "repo": "nmn/text-transition"
+  },
+  {
+    "name": "roguelikeboard",
+    "repo": "prettymuchbryce/roguelikeboard"
+  },
+  {
+    "name": "soundplayer-widget",
+    "repo": "soundblogs/soundplayer-widget"
+  },
+  {
+    "name": "uniflow-component",
+    "repo": "uniflow/uniflow-component"
+  },
+  {
+    "name": "react-autosize",
+    "repo": "akiran/react-autosize"
+  },
+  {
+    "name": "react-hydra",
+    "repo": "mr-damagii/react-hydra"
+  },
+  {
+    "name": "react-konva",
+    "repo": "olimsaidov/react-konva"
+  },
+  {
+    "name": "react-kube",
+    "repo": "raymondmuller/react-kube"
+  },
+  {
+    "name": "react-motion",
+    "repo": "chenglou/react-motion"
+  },
+  {
+    "name": "react-number-easing",
+    "repo": "javierbyte/react-number-easing"
+  },
+  {
+    "name": "react-odometer",
+    "repo": "adamrneary/react-odometer"
+  },
+  {
+    "name": "react-popup-menu",
+    "repo": "wizawu/react-popup-menu"
+  },
+  {
+    "name": "react-radial-menu",
+    "repo": "Antho2407/react-radial-menu"
+  },
+  {
+    "name": "react-scrollbars",
+    "repo": "ojame/react-scrollbars"
+  },
+  {
+    "name": "react-select-multiple",
+    "repo": "AdeleD/react-select-multiple"
+  },
+  {
+    "name": "react-semantify",
+    "repo": "jessy1092/react-semantify"
+  },
+  {
+    "name": "react-shrinking-header",
+    "repo": "lapanoid/react-shrinking-header"
+  },
+  {
+    "name": "react-snackbar",
+    "repo": "raymondmuller/react-snackbar"
+  },
+  {
+    "name": "react-sound",
+    "repo": "leoasis/react-sound"
+  },
+  {
+    "name": "react-star-rating",
+    "repo": "cameronjroe/react-star-rating"
+  },
+  {
+    "name": "react-stepper",
+    "repo": "wuct/react-stepper"
+  },
+  {
+    "name": "react-styleable",
+    "repo": "pluralsight/react-styleable"
+  },
+  {
+    "name": "react-thrift",
+    "repo": "ymichael/react-thrift"
+  },
+  {
+    "name": "react-tinymce",
+    "repo": "mzabriskie/react-tinymce"
+  },
+  {
+    "name": "react-vtt",
+    "repo": "ChineseCubes/react-vtt"
+  },
+  {
+    "name": "react-zh-stroker",
+    "repo": "g0v/react-zh-stroker"
+  },
+  {
+    "name": "rebass-example",
+    "repo": "jxnblk/rebass-example"
   }
 ]
