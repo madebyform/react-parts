@@ -278,5 +278,9 @@
   {
     "name": "react-switch-case",
     "repo": "jihchi/react-switch-case"
+  },
+  {
+    "name": "react-suitcss-mixin",
+    "repo": "brentertz/react-suitcss-mixin"
   }
 ]

@@ -526,5 +526,9 @@
   {
     "name": "react-native-scrollable-decorator",
     "repo": "exponentjs/react-native-scrollable-decorator"
+  },
+  {
+    "name": "react-native-network-info",
+    "repo": "pusherman/react-native-network-info"
   }
 ]

@@ -3072,10 +3072,6 @@
     "repo": "harrybabu/react-autosuggest"
   },
   {
-    "name": "react-suitcss-mixin",
-    "repo": "brentertz/react-suitcss-mixin"
-  },
-  {
     "name": "react-super-select",
     "repo": "alsoscotland/react-super-select"
   },
@@ -4209,7 +4205,7 @@
   },
   {
     "name": "obscene-layout",
-    "repo": "obscene/Obscene-Layout"
+    "repo": "rofrischmann/react-layout-kit"
   },
   {
     "name": "react-json-table",
@@ -4689,7 +4685,7 @@
   },
   {
     "name": "x-view",
-    "repo": "lixiaoyan/x-view"
+    "repo": "x-view/x-view"
   },
   {
     "name": "react-chessboard",
@@ -5158,5 +5154,33 @@
   {
     "name": "react-suitcssify",
     "repo": "brentertz/react-suitcssify"
+  },
+  {
+    "name": "arsenic",
+    "repo": "yuanyan/arsenic"
+  },
+  {
+    "name": "react-flipcard",
+    "repo": "mzabriskie/react-flipcard"
+  },
+  {
+    "name": "react-html5-sortable",
+    "repo": "ericlathrop/react-html5-sortable"
+  },
+  {
+    "name": "react-image-publisher",
+    "repo": "blockai/react-image-publisher"
+  },
+  {
+    "name": "react-motion-ui-pack",
+    "repo": "souporserious/react-motion-ui-pack"
+  },
+  {
+    "name": "react-noisy-canvas",
+    "repo": "phoenixstormcrow/react-noisy-canvas"
+  },
+  {
+    "name": "react-svg-buttons",
+    "repo": "plouc/react-svg-buttons"
   }
 ]
