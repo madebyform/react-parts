@@ -530,5 +530,13 @@
   {
     "name": "react-native-network-info",
     "repo": "pusherman/react-native-network-info"
+  },
+  {
+    "name": "react-derive",
+    "repo": "gilbox/react-derive"
+  },
+  {
+    "name": "react-native-eximage",
+    "repo": "guodong000/react-native-eximage"
   }
 ]

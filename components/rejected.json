@@ -326,5 +326,17 @@
   {
     "name": "ld-reactor-components",
     "repo": "ali1k/ld-reactor-components"
+  },
+  {
+    "name": "react-native-chart-justinmakaila",
+    "repo": "justinmakaila/react-native-chart"
+  },
+  {
+    "name": "tabtor-react-native-chart",
+    "repo": "justinmakaila/react-native-chart"
+  },
+  {
+    "name": "grunt-gallery",
+    "repo": "daolf/grunt-gallery"
   }
 ]

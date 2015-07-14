@@ -5358,5 +5358,21 @@
   {
     "name": "rebass-example",
     "repo": "jxnblk/rebass-example"
+  },
+  {
+    "name": "react-pagination",
+    "repo": "mvader/react-pagination"
+  },
+  {
+    "name": "react-redirect",
+    "repo": "Driftt/react-redirect"
+  },
+  {
+    "name": "react-stripe-checkout",
+    "repo": "azmenak/react-stripe-checkout"
+  },
+  {
+    "name": "zingchart-react",
+    "repo": "zingchart/zingchart-react"
   }
 ]
