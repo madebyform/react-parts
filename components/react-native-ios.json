@@ -538,5 +538,9 @@
   {
     "name": "react-native-eximage",
     "repo": "guodong000/react-native-eximage"
+  },
+  {
+    "name": "react-native-signature-capture",
+    "repo": "RepairShopr/react-native-signature-capture"
   }
 ]

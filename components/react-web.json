@@ -5374,5 +5374,37 @@
   {
     "name": "zingchart-react",
     "repo": "zingchart/zingchart-react"
+  },
+  {
+    "name": "on-resize",
+    "repo": "pirosikick/on-resize"
+  },
+  {
+    "name": "panel.jsx",
+    "repo": "zemirco/panel.jsx"
+  },
+  {
+    "name": "rc-checkbox",
+    "repo": "react-component/checkbox"
+  },
+  {
+    "name": "rc-pagination",
+    "repo": "react-component/pagination"
+  },
+  {
+    "name": "react-ajaxing",
+    "repo": "blackbing/react-ajaxing"
+  },
+  {
+    "name": "react-keymapper",
+    "repo": "joshblack/keymapper"
+  },
+  {
+    "name": "react-material-design-lite",
+    "repo": "iceddev/react-material-design-lite"
+  },
+  {
+    "name": "react-simple-calendar",
+    "repo": "souporserious/react-simple-calendar"
   }
 ]
