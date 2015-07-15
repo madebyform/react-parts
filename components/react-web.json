@@ -5406,5 +5406,69 @@
   {
     "name": "react-simple-calendar",
     "repo": "souporserious/react-simple-calendar"
+  },
+  {
+    "name": "cycle-react",
+    "repo": "pH200/cycle-react"
+  },
+  {
+    "name": "es6-react-mixins",
+    "repo": "angus-c/es6-react-mixins"
+  },
+  {
+    "name": "jsxlate",
+    "repo": "drd/jsxlate"
+  },
+  {
+    "name": "radium",
+    "repo": "formidablelabs/radium"
+  },
+  {
+    "name": "react-edit-inline",
+    "repo": "kaivi/ReactInlineEdit"
+  },
+  {
+    "name": "react-fastclick",
+    "repo": "JakeSidSmith/react-fastclick"
+  },
+  {
+    "name": "react-flexbox-layout",
+    "repo": "byronmwong/react-flexbox-layout"
+  },
+  {
+    "name": "react-redux",
+    "repo": "gaearon/react-redux"
+  },
+  {
+    "name": "react-styling",
+    "repo": "halt-hammerzeit/react-styling"
+  },
+  {
+    "name": "react-winjs",
+    "repo": "winjs/react-winjs"
+  },
+  {
+    "name": "reactabular",
+    "repo": "bebraw/reactabular"
+  },
+  {
+    "name": "reactlink-immutable",
+    "repo": "idolize/reactlink-immutable"
+  },
+  {
+    "name": "redux",
+    "repo": "gaearon/redux"
+  },
+  {
+    "name": "rquery",
+    "repo": "percyhanna/rquery"
+  },
+  {
+    "name": "tap-flux",
+    "repo": "TechnologyAdvice/tap-flux"
+  },
+  {
+    "name": "thundercats-react",
+    "repo": "ThunderCatsJS/thundercats-react"
   }
 ]

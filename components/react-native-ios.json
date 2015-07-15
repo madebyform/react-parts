@@ -542,5 +542,17 @@
   {
     "name": "react-native-signature-capture",
     "repo": "RepairShopr/react-native-signature-capture"
+  },
+  {
+    "name": "react-native-audio",
+    "repo": "jsierles/react-native-audio"
+  },
+  {
+    "name": "react-native-image-picker",
+    "repo": "marcshilling/react-native-image-picker"
+  },
+  {
+    "name": "react-native-webview-bridge",
+    "repo": "alinz/react-native-webview-bridge"
   }
 ]
