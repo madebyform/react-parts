@@ -4793,7 +4793,7 @@
   },
   {
     "name": "rc-datepicker",
-    "repo": "buildo/react-datepicker"
+    "repo": "buildo/rc-datepicker"
   },
   {
     "name": "rc-steps",
@@ -5470,5 +5470,17 @@
   {
     "name": "thundercats-react",
     "repo": "ThunderCatsJS/thundercats-react"
+  },
+  {
+    "name": "react-burger-menu",
+    "repo": "negomi/react-burger-menu"
+  },
+  {
+    "name": "react-tinyscrollbar",
+    "repo": "jostw/react-tinyscrollbar"
+  },
+  {
+    "name": "treeview-react-bootstrap",
+    "repo": "eliftech/treeview-react-bootstrap"
   }
 ]
