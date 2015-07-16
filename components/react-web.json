@@ -5482,5 +5482,49 @@
   {
     "name": "treeview-react-bootstrap",
     "repo": "eliftech/treeview-react-bootstrap"
+  },
+  {
+    "name": "baobab-react",
+    "repo": "Yomguithereal/baobab-react"
+  },
+  {
+    "name": "bemact",
+    "repo": "merri/bemact"
+  },
+  {
+    "name": "biff",
+    "repo": "formidablelabs/biff"
+  },
+  {
+    "name": "eslint-plugin-react",
+    "repo": "yannickcr/eslint-plugin-react"
+  },
+  {
+    "name": "fluxette",
+    "repo": "edge/fluxette"
+  },
+  {
+    "name": "iflux",
+    "repo": "QianmiOpen/iflux"
+  },
+  {
+    "name": "material-design-react",
+    "repo": "nikvm/material-design-react"
+  },
+  {
+    "name": "md2react",
+    "repo": "mizchi/md2react"
+  },
+  {
+    "name": "react-shuffle",
+    "repo": "FormidableLabs/react-shuffle"
+  },
+  {
+    "name": "reactly",
+    "repo": "dangw/reactly"
+  },
+  {
+    "name": "rebels",
+    "repo": "matthewcheok/react-rebels"
   }
 ]
