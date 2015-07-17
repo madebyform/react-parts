@@ -554,5 +554,13 @@
   {
     "name": "react-native-webview-bridge",
     "repo": "alinz/react-native-webview-bridge"
+  },
+  {
+    "name": "react-native-clipboard",
+    "repo": "silentcloud/react-native-clipboard"
+  },
+  {
+    "name": "react-native-material-kit",
+    "repo": "xinthink/react-native-material-kit"
   }
 ]

@@ -4204,10 +4204,6 @@
     "repo": "aickin/functional-react"
   },
   {
-    "name": "obscene-layout",
-    "repo": "rofrischmann/react-layout-kit"
-  },
-  {
     "name": "react-json-table",
     "repo": "arqex/react-json-table"
   },
@@ -4662,10 +4658,6 @@
   {
     "name": "html-to-react",
     "repo": "mikenikles/html-to-react"
-  },
-  {
-    "name": "in-flux",
-    "repo": "in-flux/in-flux"
   },
   {
     "name": "react-datetime",
@@ -5526,5 +5518,37 @@
   {
     "name": "rebels",
     "repo": "matthewcheok/react-rebels"
+  },
+  {
+    "name": "antd",
+    "repo": "ant-design/ant-design"
+  },
+  {
+    "name": "card-react",
+    "repo": "shatran/card-react"
+  },
+  {
+    "name": "component-router",
+    "repo": "in-flux/component-router"
+  },
+  {
+    "name": "react-inline-style",
+    "repo": "dowjones/react-inline-style"
+  },
+  {
+    "name": "react-interval",
+    "repo": "nkbt/react-interval"
+  },
+  {
+    "name": "react-morph-material-icons",
+    "repo": "friktor/react-material-icons"
+  },
+  {
+    "name": "react-select-popover",
+    "repo": "bharani91/react-select-popover"
+  },
+  {
+    "name": "obscene-layout",
+    "repo": "rofrischmann/react-flex-kit"
   }
 ]

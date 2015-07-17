@@ -338,5 +338,9 @@
   {
     "name": "grunt-gallery",
     "repo": "daolf/grunt-gallery"
+  },
+  {
+    "name": "in-flux",
+    "repo": "in-flux/in-flux"
   }
 ]
