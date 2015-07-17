@@ -5550,5 +5550,17 @@
   {
     "name": "obscene-layout",
     "repo": "rofrischmann/react-flex-kit"
+  },
+  {
+    "name": "eslint-config-standard-react",
+    "repo": "feross/eslint-config-standard-react"
+  },
+  {
+    "name": "fluxible-action-utils",
+    "repo": "yahoo/fluxible-action-utils"
+  },
+  {
+    "name": "fluxible-immutable-utils",
+    "repo": "yahoo/fluxible-immutable-utils"
   }
 ]

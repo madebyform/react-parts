@@ -562,5 +562,9 @@
   {
     "name": "react-native-material-kit",
     "repo": "xinthink/react-native-material-kit"
+  },
+  {
+    "name": "react-native-navigation-drawer",
+    "repo": "ilansas/react-native-navigation-drawer"
   }
 ]
