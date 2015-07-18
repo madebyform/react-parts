@@ -200,10 +200,6 @@
     "repo": "MonstroThemes/directive-components"
   },
   {
-    "name": "downloadbutton",
-    "repo": "notablemind/downloadbutton"
-  },
-  {
     "name": "fixed-data-table",
     "repo": "facebook/fixed-data-table"
   },
@@ -5562,5 +5558,37 @@
   {
     "name": "fluxible-immutable-utils",
     "repo": "yahoo/fluxible-immutable-utils"
+  },
+  {
+    "name": "react-fullscreen",
+    "repo": "ThomWright/react-fullscreen"
+  },
+  {
+    "name": "react-responsive-display",
+    "repo": "wbeard/react-responsive-display"
+  },
+  {
+    "name": "react-bem-render",
+    "repo": "morlay/react-bem-render"
+  },
+  {
+    "name": "react-component-visibility",
+    "repo": "Pomax/react-component-visibility"
+  },
+  {
+    "name": "react-fullscreen-component",
+    "repo": "jeroencoumans/react-fullscreen-component"
+  },
+  {
+    "name": "react-loading-status-mixin",
+    "repo": "react-components/react-loading-status-mixin"
+  },
+  {
+    "name": "react-material",
+    "repo": "SanderSpies/react-material"
+  },
+  {
+    "name": "react-modal-component",
+    "repo": "vegetableman/react-modal-component"
   }
 ]

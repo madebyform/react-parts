@@ -566,5 +566,17 @@
   {
     "name": "react-native-navigation-drawer",
     "repo": "ilansas/react-native-navigation-drawer"
+  },
+  {
+    "name": "react-native-modalbox",
+    "repo": "maxs15/react-native-modalbox"
+  },
+  {
+    "name": "react-level",
+    "repo": "tradle/react-level"
+  },
+  {
+    "name": "react-native-responsive-image",
+    "repo": "Dharmoslap/react-native-responsive-image"
   }
 ]
