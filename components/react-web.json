@@ -5590,5 +5590,33 @@
   {
     "name": "react-modal-component",
     "repo": "vegetableman/react-modal-component"
+  },
+  {
+    "name": "i18n-react",
+    "repo": "alexdrel/i18n-react"
+  },
+  {
+    "name": "microcosm",
+    "repo": "vigetlabs/microcosm"
+  },
+  {
+    "name": "re-base",
+    "repo": "tylermcginnis/re-base"
+  },
+  {
+    "name": "react-isomorphic-starterkit",
+    "repo": "RickWong/react-isomorphic-starterkit"
+  },
+  {
+    "name": "react-shallow-testutils",
+    "repo": "sheepsteak/react-shallow-testutils"
+  },
+  {
+    "name": "reflux",
+    "repo": "spoike/refluxjs"
+  },
+  {
+    "name": "routex",
+    "repo": "michalkvasnicak/routex"
   }
 ]

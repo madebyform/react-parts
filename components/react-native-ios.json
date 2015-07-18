@@ -578,5 +578,13 @@
   {
     "name": "react-native-responsive-image",
     "repo": "Dharmoslap/react-native-responsive-image"
+  },
+  {
+    "name": "react-native-eval",
+    "repo": "artemyarulin/react-native-eval"
+  },
+  {
+    "name": "react-native-orientation",
+    "repo": "yamill/react-native-orientation"
   }
 ]
