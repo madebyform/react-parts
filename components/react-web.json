@@ -5618,5 +5618,25 @@
   {
     "name": "routex",
     "repo": "michalkvasnicak/routex"
+  },
+  {
+    "name": "examplecode",
+    "repo": "uxcore/examplecode"
+  },
+  {
+    "name": "react-demo",
+    "repo": "rpominov/react-demo"
+  },
+  {
+    "name": "react-laravel-paginator",
+    "repo": "dgoguerra/react-paginator"
+  },
+  {
+    "name": "react-mdl",
+    "repo": "tleunen/react-mdl"
+  },
+  {
+    "name": "react-upvote",
+    "repo": "echenley/react-upvote"
   }
 ]

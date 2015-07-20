@@ -586,5 +586,9 @@
   {
     "name": "react-native-orientation",
     "repo": "yamill/react-native-orientation"
+  },
+  {
+    "name": "react-native-device-orientation",
+    "repo": "DrMabuse23/react-native-device-orientation"
   }
 ]
