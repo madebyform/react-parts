@@ -5638,5 +5638,29 @@
   {
     "name": "react-upvote",
     "repo": "echenley/react-upvote"
+  },
+  {
+    "name": "react-highcharts",
+    "repo": "kirjs/react-highcharts"
+  },
+  {
+    "name": "react-immutable-proptypes",
+    "repo": "HurricaneJames/react-immutable-proptypes"
+  },
+  {
+    "name": "react-rethinkdb",
+    "repo": "mikemintz/react-rethinkdb"
+  },
+  {
+    "name": "react-validate-mixin",
+    "repo": "paulserraino/react-validate-mixin"
+  },
+  {
+    "name": "smart-css",
+    "repo": "hackhat/smart-css"
+  },
+  {
+    "name": "subschema",
+    "repo": "jspears/subschema"
   }
 ]

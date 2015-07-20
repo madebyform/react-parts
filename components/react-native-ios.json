@@ -590,5 +590,9 @@
   {
     "name": "react-native-device-orientation",
     "repo": "DrMabuse23/react-native-device-orientation"
+  },
+  {
+    "name": "react-native-custom-navigation",
+    "repo": "superdami/react-native-custom-navigation"
   }
 ]
