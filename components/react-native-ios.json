@@ -594,5 +594,17 @@
   {
     "name": "react-native-custom-navigation",
     "repo": "superdami/react-native-custom-navigation"
+  },
+  {
+    "name": "react-native-bluetooth-state",
+    "repo": "frostney/react-native-bluetooth-state"
+  },
+  {
+    "name": "react-native-image-progress",
+    "repo": "oblador/react-native-image-progress"
+  },
+  {
+    "name": "react-native-range-selector",
+    "repo": "gaoli/react-native-range-selector"
   }
 ]

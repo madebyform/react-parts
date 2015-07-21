@@ -342,5 +342,9 @@
   {
     "name": "in-flux",
     "repo": "in-flux/in-flux"
+  },
+  {
+    "name": "formsy-react-patch",
+    "repo": "charosez/formsy-react"
   }
 ]

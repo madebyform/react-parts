@@ -5662,5 +5662,49 @@
   {
     "name": "subschema",
     "repo": "jspears/subschema"
+  },
+  {
+    "name": "iniquest",
+    "repo": "maximilianschmitt/iniquest"
+  },
+  {
+    "name": "connect-to-backbone",
+    "repo": "ericmatthys/connect-to-backbone"
+  },
+  {
+    "name": "redux-react-connector",
+    "repo": "pluralsight/redux-react-connector"
+  },
+  {
+    "name": "react-flex-kit",
+    "repo": "rofrischmann/react-flex-kit"
+  },
+  {
+    "name": "ars-arsenal",
+    "repo": "vigetlabs/ars-arsenal"
+  },
+  {
+    "name": "flux-stateful",
+    "repo": "alexeyraspopov/flux-stateful"
+  },
+  {
+    "name": "generator-alt",
+    "repo": "jimzhan/generator-alt"
+  },
+  {
+    "name": "generator-flux",
+    "repo": "banderson/generator-flux-react"
+  },
+  {
+    "name": "generator-react-gulp-browserify",
+    "repo": "randylien/generator-react-gulp-browserify"
+  },
+  {
+    "name": "react-moment-proptypes",
+    "repo": "CalebMorris/react-moment-proptypes"
+  },
+  {
+    "name": "react-popover",
+    "repo": "littlebits/react-popover"
   }
 ]
