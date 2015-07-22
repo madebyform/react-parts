@@ -5706,5 +5706,41 @@
   {
     "name": "react-popover",
     "repo": "littlebits/react-popover"
+  },
+  {
+    "name": "fynx-mixins",
+    "repo": "foss-haas/fynx-mixins"
+  },
+  {
+    "name": "react-c",
+    "repo": "jamesknelson/react-c"
+  },
+  {
+    "name": "react-internal-nav",
+    "repo": "henrikjoreteg/react-internal-nav"
+  },
+  {
+    "name": "react-mask",
+    "repo": "andrevvalle/react-mask"
+  },
+  {
+    "name": "react-mdlite",
+    "repo": "EdStudio/react-mdlite"
+  },
+  {
+    "name": "react-passthrough",
+    "repo": "jamesknelson/react-passthrough"
+  },
+  {
+    "name": "react-rating",
+    "repo": "dreyescat/react-rating"
+  },
+  {
+    "name": "react-weekday-picker",
+    "repo": "ntdb/react-weekday-picker"
+  },
+  {
+    "name": "table.jsx",
+    "repo": "zemirco/table.jsx"
   }
 ]

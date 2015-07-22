@@ -572,10 +572,6 @@
     "repo": "maxs15/react-native-modalbox"
   },
   {
-    "name": "react-level",
-    "repo": "tradle/react-level"
-  },
-  {
     "name": "react-native-responsive-image",
     "repo": "Dharmoslap/react-native-responsive-image"
   },
@@ -606,5 +602,9 @@
   {
     "name": "react-native-range-selector",
     "repo": "gaoli/react-native-range-selector"
+  },
+  {
+    "name": "react-native-slider",
+    "repo": "jeanregisser/react-native-slider"
   }
 ]
