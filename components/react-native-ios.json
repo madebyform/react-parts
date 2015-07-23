@@ -606,5 +606,9 @@
   {
     "name": "react-native-slider",
     "repo": "jeanregisser/react-native-slider"
+  },
+  {
+    "name": "rn-calendar",
+    "repo": "vczero/react-native-calendar"
   }
 ]

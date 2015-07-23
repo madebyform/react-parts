@@ -5742,5 +5742,57 @@
   {
     "name": "table.jsx",
     "repo": "zemirco/table.jsx"
+  },
+  {
+    "name": "babel-plugin-react-error-catcher",
+    "repo": "loggur/babel-plugin-react-error-catcher"
+  },
+  {
+    "name": "react-baseplate",
+    "repo": "theogravity/react-baseplate"
+  },
+  {
+    "name": "react-callback-register",
+    "repo": "jamesknelson/react-base"
+  },
+  {
+    "name": "react-perf-component",
+    "repo": "sheepsteak/react-perf-component"
+  },
+  {
+    "name": "generator-javascript",
+    "repo": "kriasoft/babel-starter-kit"
+  },
+  {
+    "name": "reapp",
+    "repo": "reapp/reapp"
+  },
+  {
+    "name": "generator-fluxible",
+    "repo": "yahoo/generator-fluxible"
+  },
+  {
+    "name": "react-chrome-extension-boilerplate",
+    "repo": "jhen0409/react-chrome-extension-boilerplate"
+  },
+  {
+    "name": "react-round-trip-rate",
+    "repo": "tjunghans/react-round-trip-rate"
+  },
+  {
+    "name": "react-seed",
+    "repo": "badsyntax/react-seed"
+  },
+  {
+    "name": "relae",
+    "repo": "joakimbeng/relae"
+  },
+  {
+    "name": "reselect",
+    "repo": "faassen/reselect"
+  },
+  {
+    "name": "synapse-react-autocomplete",
+    "repo": "synapsestudios/react-autocomplete"
   }
 ]
