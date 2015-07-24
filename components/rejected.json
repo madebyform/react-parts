@@ -350,5 +350,9 @@
   {
     "name": "obscene-layout",
     "repo": "rofrischmann/react-flex-kit"
+  },
+  {
+    "name": "blocks.js",
+    "repo": "Tixit/blocks.js"
   }
 ]

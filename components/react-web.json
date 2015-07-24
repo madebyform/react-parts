@@ -5842,5 +5842,37 @@
   {
     "name": "react-router-component-transition",
     "repo": "strml/react-router-component-transition"
+  },
+  {
+    "name": "doob",
+    "repo": "mistadikay/doob"
+  },
+  {
+    "name": "flux-crud",
+    "repo": "golmansax/flux-crud"
+  },
+  {
+    "name": "fynx",
+    "repo": "foss-haas/fynx"
+  },
+  {
+    "name": "mdl-react",
+    "repo": "Fandora/mdl-react"
+  },
+  {
+    "name": "react-modal-dialog",
+    "repo": "qimingweng/react-modal-dialog"
+  },
+  {
+    "name": "react-nexus",
+    "repo": "elierotenberg/react-nexus"
+  },
+  {
+    "name": "react-stampit",
+    "repo": "stampit-org/react-stampit"
+  },
+  {
+    "name": "react-swal",
+    "repo": "lanetix/react-swal"
   }
 ]
