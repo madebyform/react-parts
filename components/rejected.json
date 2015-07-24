@@ -346,5 +346,9 @@
   {
     "name": "formsy-react-patch",
     "repo": "charosez/formsy-react"
+  },
+  {
+    "name": "obscene-layout",
+    "repo": "rofrischmann/react-flex-kit"
   }
 ]

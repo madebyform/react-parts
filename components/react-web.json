@@ -5544,10 +5544,6 @@
     "repo": "bharani91/react-select-popover"
   },
   {
-    "name": "obscene-layout",
-    "repo": "rofrischmann/react-flex-kit"
-  },
-  {
     "name": "eslint-config-standard-react",
     "repo": "feross/eslint-config-standard-react"
   },
@@ -5794,5 +5790,57 @@
   {
     "name": "synapse-react-autocomplete",
     "repo": "synapsestudios/react-autocomplete"
+  },
+  {
+    "name": "fynx-decorators",
+    "repo": "foss-haas/fynx-decorators"
+  },
+  {
+    "name": "generator-react-baseplate",
+    "repo": "theogravity/generator-react-baseplate"
+  },
+  {
+    "name": "rc-align",
+    "repo": "react-component/align"
+  },
+  {
+    "name": "rc-animate",
+    "repo": "react-component/animate"
+  },
+  {
+    "name": "react-autogrow-textarea",
+    "repo": "lanetix/react-autogrow-textarea"
+  },
+  {
+    "name": "react-debounce",
+    "repo": "threepointone/react-debounce"
+  },
+  {
+    "name": "react-json-viewer",
+    "repo": "nsisodiya/react-json-viewer"
+  },
+  {
+    "name": "react-pikaday-component",
+    "repo": "voronianski/react-pikaday-component"
+  },
+  {
+    "name": "react-superagent",
+    "repo": "threepointone/react-superagent"
+  },
+  {
+    "name": "react-taplink",
+    "repo": "jsifalda/react-taplink"
+  },
+  {
+    "name": "web-routing",
+    "repo": "kriasoft/react-routing"
+  },
+  {
+    "name": "react-yandex-metrika",
+    "repo": "narkq/react-yandex-metrika"
+  },
+  {
+    "name": "react-router-component-transition",
+    "repo": "strml/react-router-component-transition"
   }
 ]
