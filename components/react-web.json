@@ -5874,5 +5874,53 @@
   {
     "name": "react-swal",
     "repo": "lanetix/react-swal"
+  },
+  {
+    "name": "arc-reactor",
+    "repo": "devrieda/arc-reactor"
+  },
+  {
+    "name": "material-ui-with-sass",
+    "repo": "sarink/material-ui-with-sass"
+  },
+  {
+    "name": "react-geojson-cluster",
+    "repo": "paulserraino/react-geojson-cluster"
+  },
+  {
+    "name": "react-image-blur",
+    "repo": "LingyuCoder/react-image-blur"
+  },
+  {
+    "name": "react-lazyrender-mixin",
+    "repo": "maxkueng/react-lazyrender-mixin"
+  },
+  {
+    "name": "react-refresh-indicator",
+    "repo": "maoziliang/react-refresh-indicator"
+  },
+  {
+    "name": "react-validation",
+    "repo": "Lesha-spr/react-validation"
+  },
+  {
+    "name": "reactify-semantic-ui",
+    "repo": "mugli/reactify-semantic-ui"
+  },
+  {
+    "name": "ainojs-react-image",
+    "repo": "aino/ainojs-react-image"
+  },
+  {
+    "name": "generator-formidable-react-component",
+    "repo": "formidablelabs/generator-formidable-react-component"
+  },
+  {
+    "name": "perpetually",
+    "repo": "renke/perpetually"
+  },
+  {
+    "name": "react-aria-tabpanel",
+    "repo": "davidtheclark/react-aria-tabpanel"
   }
 ]

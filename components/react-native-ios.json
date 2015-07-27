@@ -532,10 +532,6 @@
     "repo": "pusherman/react-native-network-info"
   },
   {
-    "name": "react-derive",
-    "repo": "gilbox/react-derive"
-  },
-  {
     "name": "react-native-eximage",
     "repo": "guodong000/react-native-eximage"
   },
@@ -610,5 +606,13 @@
   {
     "name": "rn-calendar",
     "repo": "vczero/react-native-calendar"
+  },
+  {
+    "name": "react-native-localsearch",
+    "repo": "wmcmahan/React-Native-LocalSearch"
+  },
+  {
+    "name": "react-native-parallax",
+    "repo": "oblador/react-native-parallax"
   }
 ]
