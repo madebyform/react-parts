@@ -5922,5 +5922,77 @@
   {
     "name": "react-aria-tabpanel",
     "repo": "davidtheclark/react-aria-tabpanel"
+  },
+  {
+    "name": "es6-react-component",
+    "repo": "aaronkaka/es6-react-component"
+  },
+  {
+    "name": "react-d3-wrap",
+    "repo": "skellyb/react-d3-wrap"
+  },
+  {
+    "name": "react-date-picker-cs",
+    "repo": "chenxsan/react-date-picker-cs"
+  },
+  {
+    "name": "antwar",
+    "repo": "antwarjs/antwar"
+  },
+  {
+    "name": "fluxible",
+    "repo": "yahoo/fluxible"
+  },
+  {
+    "name": "fluxible-router",
+    "repo": "yahoo/fluxible-router"
+  },
+  {
+    "name": "fluxxor",
+    "repo": "BinaryMuse/fluxxor"
+  },
+  {
+    "name": "react-async-loader",
+    "repo": "EdStudio/react-async-loader"
+  },
+  {
+    "name": "react-bootstrap-breadcrumbs",
+    "repo": "alexkuz/react-bootstrap-breadcrumbs"
+  },
+  {
+    "name": "react-context",
+    "repo": "casesandberg/react-context"
+  },
+  {
+    "name": "react-flux-starter-kit",
+    "repo": "timthez/react-flux-starter-kit"
+  },
+  {
+    "name": "react-maps",
+    "repo": "dcousens/react-maps"
+  },
+  {
+    "name": "react-mini-router",
+    "repo": "larrymyers/react-mini-router"
+  },
+  {
+    "name": "react-mixin",
+    "repo": "brigand/react-mixin"
+  },
+  {
+    "name": "tag-input",
+    "repo": "tjunghans/tag-input"
+  },
+  {
+    "name": "tannen.js",
+    "repo": "tirdadc/tannen.js"
+  },
+  {
+    "name": "unijs",
+    "repo": "unijs/unijs"
+  },
+  {
+    "name": "wayfarer",
+    "repo": "yoshuawuyts/wayfarer"
   }
 ]

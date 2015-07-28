@@ -614,5 +614,9 @@
   {
     "name": "react-native-parallax",
     "repo": "oblador/react-native-parallax"
+  },
+  {
+    "name": "react-native-storage",
+    "repo": "sunnylqm/react-native-storage"
   }
 ]
