@@ -12,18 +12,20 @@
     "react": "^0.13.1",
     "react-router": "^0.13.2",
     "request": "^2.54.0",
-    "timeago": "^0.2.0"
+    "timeago": "^0.2.0",
+    "uglifyjs": "^2.4.10"
   },
   "devDependencies": {
     "nodemon": "^1.3.7",
-    "uglifyjs": "^2.4.10",
     "watchify": "^2.4.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production npm run build:js && NODE_ENV=production node server.js",
-    "live": "npm run watch:js & NODE_ENV=development nodemon server.js",
-    "build:js": "browserify src/app.jsx -t babelify --outfile assets/app.js && uglifyjs assets/app.js -o assets/app.min.js",
-    "watch:js": "watchify src/app.jsx -t babelify --outfile assets/app.js",
+    "start": "node server.js",
+    "live": "npm run js:watch & nodemon server.js",
+    "postinstall": "npm run js:build && npm run js:minify",
+    "js:build": "browserify src/app.jsx -t babelify --outfile assets/app.js",
+    "js:minify": "uglifyjs assets/app.js -o assets/app.min.js",
+    "js:watch": "watchify src/app.jsx -t babelify --outfile assets/app.js",
     "download:all": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
     "download:recent": "npm run download:today && npm run download:yesterday",
     "download:today": "curl -L https://registry.npmjs.org/-/all/static/today.json -o data/npm.json",
