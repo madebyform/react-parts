@@ -5994,5 +5994,41 @@
   {
     "name": "wayfarer",
     "repo": "yoshuawuyts/wayfarer"
+  },
+  {
+    "name": "redbox-react",
+    "repo": "KeywordBrain/redbox-react"
+  },
+  {
+    "name": "react-accordion-component",
+    "repo": "saulecabrera/react-accordion-component"
+  },
+  {
+    "name": "react-bootstrap-validation",
+    "repo": "heilhead/react-bootstrap-validation"
+  },
+  {
+    "name": "react-inview",
+    "repo": "rxaviers/react-inview"
+  },
+  {
+    "name": "react-lazy",
+    "repo": "merri/react-lazy"
+  },
+  {
+    "name": "react-masonry-component",
+    "repo": "eiriklv/react-masonry-component"
+  },
+  {
+    "name": "react-ui-datepicker",
+    "repo": "WJsjtu/react-datepicker"
+  },
+  {
+    "name": "react-websocket",
+    "repo": "Sedus/react-websocket"
+  },
+  {
+    "name": "stilr-classnames",
+    "repo": "chcokr/stilr-classnames"
   }
 ]

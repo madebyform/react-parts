@@ -618,5 +618,17 @@
   {
     "name": "react-native-storage",
     "repo": "sunnylqm/react-native-storage"
+  },
+  {
+    "name": "react-native-file-upload",
+    "repo": "booxood/react-native-file-upload"
+  },
+  {
+    "name": "react-native-icon-button",
+    "repo": "kkjdaniel/react-native-icon-button"
+  },
+  {
+    "name": "react-native-radio-buttons",
+    "repo": "ArnaudRinquin/react-native-radio-buttons"
   }
 ]
