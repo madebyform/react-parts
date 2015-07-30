@@ -630,5 +630,9 @@
   {
     "name": "react-native-radio-buttons",
     "repo": "ArnaudRinquin/react-native-radio-buttons"
+  },
+  {
+    "name": "react-native-simple-auth",
+    "repo": "adamjmcgrath/react-native-simple-auth"
   }
 ]
