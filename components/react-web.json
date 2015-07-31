@@ -6030,5 +6030,93 @@
   {
     "name": "stilr-classnames",
     "repo": "chcokr/stilr-classnames"
+  },
+  {
+    "name": "gulp-jsx2example",
+    "repo": "noyobo/gulp-jsx2example"
+  },
+  {
+    "name": "react-famous",
+    "repo": "pilwon/react-famous"
+  },
+  {
+    "name": "react-mapbox-components",
+    "repo": "theogravity/react-mapbox-components"
+  },
+  {
+    "name": "react-matter",
+    "repo": "bentatum/react-matter"
+  },
+  {
+    "name": "accelerator",
+    "repo": "AndrewGuenther/Accelerator"
+  },
+  {
+    "name": "autoprefix",
+    "repo": "uxtemple/autoprefix"
+  },
+  {
+    "name": "babel-plugin-react-autoprefix",
+    "repo": "uxtemple/babel-plugin-react-prefix-styles"
+  },
+  {
+    "name": "center-aligning-jumbotron",
+    "repo": "chcokr/center-aligning-jumbotron"
+  },
+  {
+    "name": "cerebral-react-immutable-store",
+    "repo": "christianalfoni/cerebral-react-immutable-store"
+  },
+  {
+    "name": "enter-animation",
+    "repo": "ant-design/enter-animation"
+  },
+  {
+    "name": "flux-master-flex",
+    "repo": "jomaxx/flux-master-flex"
+  },
+  {
+    "name": "react-as-tagfield",
+    "repo": "LingyuCoder/react-as-tagfield"
+  },
+  {
+    "name": "react-as-textarea",
+    "repo": "LingyuCoder/react-as-textarea"
+  },
+  {
+    "name": "react-calculator",
+    "repo": "LingyuCoder/react-calculator"
+  },
+  {
+    "name": "react-engine",
+    "repo": "paypal/react-engine"
+  },
+  {
+    "name": "react-form-input",
+    "repo": "tommy351/react-form-input"
+  },
+  {
+    "name": "react-ga",
+    "repo": "mozilla/react-ga"
+  },
+  {
+    "name": "react-heatpack",
+    "repo": "insin/react-heatpack"
+  },
+  {
+    "name": "react-materializecss",
+    "repo": "react-materialize/react-materialize"
+  },
+  {
+    "name": "react-tag-suggest",
+    "repo": "tjunghans/react-tag-suggest"
+  },
+  {
+    "name": "react-titanium",
+    "repo": "yuchi/react-titanium"
+  },
+  {
+    "name": "router5-react",
+    "repo": "router5/router5-react"
   }
 ]
