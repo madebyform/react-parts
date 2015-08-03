@@ -6036,10 +6036,6 @@
     "repo": "noyobo/gulp-jsx2example"
   },
   {
-    "name": "react-famous",
-    "repo": "pilwon/react-famous"
-  },
-  {
     "name": "react-mapbox-components",
     "repo": "theogravity/react-mapbox-components"
   },
@@ -6166,5 +6162,33 @@
   {
     "name": "react-dately",
     "repo": "souporserious/react-dately"
+  },
+  {
+    "name": "css-to-radium",
+    "repo": "FormidableLabs/css-to-radium"
+  },
+  {
+    "name": "eslint-config-xo-react",
+    "repo": "sindresorhus/eslint-config-xo-react"
+  },
+  {
+    "name": "generator-flux-on-rails",
+    "repo": "alexfedoseev/generator-flux-on-rails"
+  },
+  {
+    "name": "re-structure",
+    "repo": "loopmachine/re-structure"
+  },
+  {
+    "name": "react-google-charts",
+    "repo": "rakannimer/react-google-charts"
+  },
+  {
+    "name": "react-property-editor",
+    "repo": "rsamec/react-property-editor"
+  },
+  {
+    "name": "react-simple-stepper",
+    "repo": "vladzelinschi/react-simple-stepper"
   }
 ]
