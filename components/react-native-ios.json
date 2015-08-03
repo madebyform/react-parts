@@ -634,5 +634,9 @@
   {
     "name": "react-native-simple-auth",
     "repo": "adamjmcgrath/react-native-simple-auth"
+  },
+  {
+    "name": "react-native-scrollview-lazyload",
+    "repo": "IskenHuang/react-native-scrollview-lazyload"
   }
 ]

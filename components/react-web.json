@@ -6118,5 +6118,53 @@
   {
     "name": "router5-react",
     "repo": "router5/router5-react"
+  },
+  {
+    "name": "react-as-event-mixin",
+    "repo": "LingyuCoder/react-as-event-mixin"
+  },
+  {
+    "name": "react-break",
+    "repo": "nygardk/react-break"
+  },
+  {
+    "name": "react-burger-nav",
+    "repo": "Lafinboy/react-burger-nav"
+  },
+  {
+    "name": "react-cloudinary-img",
+    "repo": "JimmyMakesThings/react-cloudinary-img"
+  },
+  {
+    "name": "react-iconpack",
+    "repo": "ryanmcgrath/react-iconpack"
+  },
+  {
+    "name": "react-image-placeholder",
+    "repo": "Youpinadi/react-image-placeholder"
+  },
+  {
+    "name": "react-numeral-input",
+    "repo": "blackbing/react-numeral-input"
+  },
+  {
+    "name": "react-overlays",
+    "repo": "react-bootstrap/react-overlays"
+  },
+  {
+    "name": "react-search-bar",
+    "repo": "vakhtang/react-search-bar"
+  },
+  {
+    "name": "react-validate-decorator",
+    "repo": "haoqiang/react-validate-decorator"
+  },
+  {
+    "name": "valya",
+    "repo": "deepsweet/valya"
+  },
+  {
+    "name": "react-dately",
+    "repo": "souporserious/react-dately"
   }
 ]
