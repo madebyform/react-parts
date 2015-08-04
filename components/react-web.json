@@ -6190,5 +6190,33 @@
   {
     "name": "react-simple-stepper",
     "repo": "vladzelinschi/react-simple-stepper"
+  },
+  {
+    "name": "react-openpublish-assets",
+    "repo": "howardwu/react-openpublish-assets"
+  },
+  {
+    "name": "react-origami-notifications",
+    "repo": "origami-ui/react-origami-notifications"
+  },
+  {
+    "name": "react-ui-select",
+    "repo": "WJsjtu/react-ui-select"
+  },
+  {
+    "name": "browserify-react-live",
+    "repo": "Kureev/browserify-react-live"
+  },
+  {
+    "name": "react-colorpickr",
+    "repo": "mapbox/react-colorpickr"
+  },
+  {
+    "name": "react-dragdrop",
+    "repo": "itsh01/react-dragdrop"
+  },
+  {
+    "name": "uflux",
+    "repo": "rstacruz/uflux"
   }
 ]
