@@ -624,10 +624,6 @@
     "repo": "booxood/react-native-file-upload"
   },
   {
-    "name": "react-native-icon-button",
-    "repo": "kkjdaniel/react-native-icon-button"
-  },
-  {
     "name": "react-native-radio-buttons",
     "repo": "ArnaudRinquin/react-native-radio-buttons"
   },
@@ -638,5 +634,21 @@
   {
     "name": "react-native-scrollview-lazyload",
     "repo": "IskenHuang/react-native-scrollview-lazyload"
+  },
+  {
+    "name": "react-native-custom-actsheet",
+    "repo": "guodong000/react-native-custom-actsheet"
+  },
+  {
+    "name": "react-native-icloud-sync",
+    "repo": "chirag04/react-native-icloud-sync"
+  },
+  {
+    "name": "react-native-lightbox",
+    "repo": "oblador/react-native-lightbox"
+  },
+  {
+    "name": "react-native-mediaplayer",
+    "repo": "chriselly/react-native-mediaplayer"
   }
 ]

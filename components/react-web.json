@@ -6218,5 +6218,33 @@
   {
     "name": "uflux",
     "repo": "rstacruz/uflux"
+  },
+  {
+    "name": "react-geosuggest-sw",
+    "repo": "ubilabs/react-geosuggest"
+  },
+  {
+    "name": "react-graphics-layers-panel",
+    "repo": "boyw165/react-a-graphics-layers-panel"
+  },
+  {
+    "name": "react-latex",
+    "repo": "zzish/react-latex"
+  },
+  {
+    "name": "react-onclickout",
+    "repo": "boblauer/react-onclickout"
+  },
+  {
+    "name": "react-seinfeld",
+    "repo": "sotojuan/react-seinfeld"
+  },
+  {
+    "name": "uxcore-button",
+    "repo": "uxcore/button"
+  },
+  {
+    "name": "uxcore-dialog",
+    "repo": "uxcore/uxcore-dialog"
   }
 ]
