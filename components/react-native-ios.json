@@ -650,5 +650,9 @@
   {
     "name": "react-native-mediaplayer",
     "repo": "chriselly/react-native-mediaplayer"
+  },
+  {
+    "name": "react-native-circle-progress",
+    "repo": "guodong000/react-native-circle-progress"
   }
 ]

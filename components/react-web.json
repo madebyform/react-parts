@@ -6246,5 +6246,45 @@
   {
     "name": "uxcore-dialog",
     "repo": "uxcore/uxcore-dialog"
+  },
+  {
+    "name": "formidable-react-component-boilerplate",
+    "repo": "FormidableLabs/formidable-react-component-boilerplate"
+  },
+  {
+    "name": "generator-react-static",
+    "repo": "koistya/react-static-boilerplate"
+  },
+  {
+    "name": "react-datepicker-cn",
+    "repo": "xuluxi/react-datepicker"
+  },
+  {
+    "name": "react-lite-coder",
+    "repo": "teambition/react-lite-coder"
+  },
+  {
+    "name": "react-signature-pad",
+    "repo": "blackjk3/react-signature-pad"
+  },
+  {
+    "name": "react-ui-layers-panel",
+    "repo": "boyw165/react-ui-layers-panel"
+  },
+  {
+    "name": "reflux-tx",
+    "repo": "consensys/reflux-tx"
+  },
+  {
+    "name": "totoui",
+    "repo": "callemall/material-ui"
+  },
+  {
+    "name": "react-three",
+    "repo": "Izzimach/react-three"
+  },
+  {
+    "name": "react-art",
+    "repo": "reactjs/react-art"
   }
 ]
