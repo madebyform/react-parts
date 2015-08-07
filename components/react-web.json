@@ -6286,5 +6286,29 @@
   {
     "name": "react-art",
     "repo": "reactjs/react-art"
+  },
+  {
+    "name": "material-ui-mdi",
+    "repo": "conundrumer/material-ui-mdi"
+  },
+  {
+    "name": "reactular",
+    "repo": "zzarcon/reactular"
+  },
+  {
+    "name": "youtube-autocomplete",
+    "repo": "hackingbeauty/youtube-autocomplete"
+  },
+  {
+    "name": "react-dd-menu",
+    "repo": "mlaursen/react-dd-menu"
+  },
+  {
+    "name": "react-nomnoml",
+    "repo": "fru/react-nomnoml"
+  },
+  {
+    "name": "react-published-images-list",
+    "repo": "blockai/react-published-images-list"
   }
 ]

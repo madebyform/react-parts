@@ -654,5 +654,21 @@
   {
     "name": "react-native-circle-progress",
     "repo": "guodong000/react-native-circle-progress"
+  },
+  {
+    "name": "react-native-fbsdkcore",
+    "repo": "facebook/react-native-fbsdk"
+  },
+  {
+    "name": "react-native-fbsdklogin",
+    "repo": "facebook/react-native-fbsdk"
+  },
+  {
+    "name": "react-native-fbsdkshare",
+    "repo": "facebook/react-native-fbsdk"
+  },
+  {
+    "name": "react-native-adbannerview",
+    "repo": "Purii/react-native-adbannerview"
   }
 ]
