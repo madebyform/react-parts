@@ -92,10 +92,6 @@
     "repo": "nicolasbrugneaux/react-memory-stats"
   },
   {
-    "name": "react-media-query",
-    "repo": "panquish/react-media-query"
-  },
-  {
     "name": "react-kaomoji",
     "repo": "enaqx/react-kaomoji"
   },
@@ -5172,10 +5168,6 @@
     "repo": "plouc/react-svg-buttons"
   },
   {
-    "name": "react-click-outside",
-    "repo": "kako0507/react-click-outside"
-  },
-  {
     "name": "basscss-logo",
     "repo": "basscss/logo"
   },
@@ -6224,10 +6216,6 @@
     "repo": "ubilabs/react-geosuggest"
   },
   {
-    "name": "react-graphics-layers-panel",
-    "repo": "boyw165/react-a-graphics-layers-panel"
-  },
-  {
     "name": "react-latex",
     "repo": "zzish/react-latex"
   },
@@ -6310,5 +6298,93 @@
   {
     "name": "react-published-images-list",
     "repo": "blockai/react-published-images-list"
+  },
+  {
+    "name": "easy-day",
+    "repo": "hwstovall/easy-day"
+  },
+  {
+    "name": "react-custom-scrollbars",
+    "repo": "malte-wessel/react-custom-scrollbars"
+  },
+  {
+    "name": "react-format-number",
+    "repo": "leftstick/react-format-number"
+  },
+  {
+    "name": "react-routes",
+    "repo": "xpepermint/react-routes"
+  },
+  {
+    "name": "react-shapes",
+    "repo": "rsamec/react-shapes"
+  },
+  {
+    "name": "react-stack-view",
+    "repo": "polovi/react-stack-view"
+  },
+  {
+    "name": "react-action-tabs",
+    "repo": "HurricaneJames/react-action-tabs"
+  },
+  {
+    "name": "react-f-ui-modal",
+    "repo": "fcomb/react-f-ui-modal"
+  },
+  {
+    "name": "react-lazyload",
+    "repo": "jasonslyvia/react-lazyload"
+  },
+  {
+    "name": "react-object-inspector",
+    "repo": "xyc/react-object-inspector"
+  },
+  {
+    "name": "react-portal-tooltip",
+    "repo": "romainberger/react-portal-tooltip"
+  },
+  {
+    "name": "react-defer-image",
+    "repo": "are-are-/react-defer-image"
+  },
+  {
+    "name": "react-input-switch",
+    "repo": "pqx/react-input-switch"
+  },
+  {
+    "name": "react-leaflet-geojson-cluster",
+    "repo": "paulserraino/react-geojson-cluster"
+  },
+  {
+    "name": "react-look-tools",
+    "repo": "rofrischmann/react-look-tools"
+  },
+  {
+    "name": "react-media-player",
+    "repo": "souporserious/react-media-player"
+  },
+  {
+    "name": "react-observer-mixin",
+    "repo": "ccarpita/react-observer-mixin"
+  },
+  {
+    "name": "react-origami-bottoming",
+    "repo": "origami-ui/react-origami-bottoming"
+  },
+  {
+    "name": "react-origami-lightbox",
+    "repo": "origami-ui/react-origami-lightbox"
+  },
+  {
+    "name": "redux-loader",
+    "repo": "sporto/redux-loader"
+  },
+  {
+    "name": "talk-message-forms",
+    "repo": "teambition/talk-message-forms"
+  },
+  {
+    "name": "uni-carousel-react",
+    "repo": "abhilashsajeev/uni-carousel-react"
   }
 ]
