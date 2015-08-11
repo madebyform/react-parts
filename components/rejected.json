@@ -354,5 +354,9 @@
   {
     "name": "blocks.js",
     "repo": "Tixit/blocks.js"
+  },
+  {
+    "name": "mithril-resolver",
+    "repo": "matthiasak/mithril-resolver"
   }
 ]

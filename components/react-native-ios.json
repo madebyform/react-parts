@@ -670,5 +670,25 @@
   {
     "name": "react-native-adbannerview",
     "repo": "Purii/react-native-adbannerview"
+  },
+  {
+    "name": "react-native-dropdown",
+    "repo": "alinz/react-native-dropdown"
+  },
+  {
+    "name": "react-native-pasteboard",
+    "repo": "yamill/react-native-pasteboard"
+  },
+  {
+    "name": "react-native-toolkit",
+    "repo": "marty-wang/react-native-toolkit"
+  },
+  {
+    "name": "react-native-barcode",
+    "repo": "leofidjeland/react-native-barcode"
+  },
+  {
+    "name": "react-native-cookies",
+    "repo": "joeferraro/react-native-cookies"
   }
 ]
