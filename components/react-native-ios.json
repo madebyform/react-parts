@@ -690,5 +690,33 @@
   {
     "name": "react-native-cookies",
     "repo": "joeferraro/react-native-cookies"
+  },
+  {
+    "name": "angular-react-native-renderer",
+    "repo": "angular/react-native-renderer"
+  },
+  {
+    "name": "react-native-background-geolocation",
+    "repo": "transistorsoft/react-native-background-geolocation"
+  },
+  {
+    "name": "react-native-color-grabber",
+    "repo": "bsudekum/react-native-color-grabber"
+  },
+  {
+    "name": "react-native-google-signin",
+    "repo": "apptailor/react-native-google-signin"
+  },
+  {
+    "name": "react-native-sglistview",
+    "repo": "sghiassy/react-native-sglistview"
+  },
+  {
+    "name": "react-native-status-bar-size",
+    "repo": "brentvatne/react-native-status-bar-size"
+  },
+  {
+    "name": "react-native-versions",
+    "repo": "reployapp/react-native-versions"
   }
 ]

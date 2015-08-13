@@ -6434,5 +6434,45 @@
   {
     "name": "generator-react-flux",
     "repo": "vn38minhtran/generator-react-flux"
+  },
+  {
+    "name": "dataminr-react-components",
+    "repo": "dataminr/react-components"
+  },
+  {
+    "name": "react-bem-grid",
+    "repo": "nordnet/react-bem-grid"
+  },
+  {
+    "name": "react-easy-style",
+    "repo": "maxguzenski/react-easy-style"
+  },
+  {
+    "name": "react-gandalf",
+    "repo": "wearefractal/react-gandalf"
+  },
+  {
+    "name": "react-intl-custom",
+    "repo": "sergiodxa/react-intl"
+  },
+  {
+    "name": "react-loadscript",
+    "repo": "threepointone/react-script"
+  },
+  {
+    "name": "react-pacman-progress",
+    "repo": "mathieudutour/react-pacman-progress"
+  },
+  {
+    "name": "react-tagging",
+    "repo": "morzzz007/react-tagging"
+  },
+  {
+    "name": "simple-react-modal",
+    "repo": "zackify/simple-react-modal"
+  },
+  {
+    "name": "ya-ui",
+    "repo": "ali322/ya-ui"
   }
 ]
