@@ -718,5 +718,21 @@
   {
     "name": "react-native-versions",
     "repo": "reployapp/react-native-versions"
+  },
+  {
+    "name": "react-native-url-handler",
+    "repo": "exponentjs/react-native-url-handler"
+  },
+  {
+    "name": "react-native-web-polyfill",
+    "repo": "mattiamanzati/react-native-web-polyfill"
+  },
+  {
+    "name": "redux-middleware-react-native-appstate",
+    "repo": "michaelcontento/redux-middleware-react-native-appstate"
+  },
+  {
+    "name": "redux-middleware-react-native-netinfo",
+    "repo": "michaelcontento/redux-middleware-react-native-netinfo"
   }
 ]

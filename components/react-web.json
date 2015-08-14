@@ -6474,5 +6474,13 @@
   {
     "name": "ya-ui",
     "repo": "ali322/ya-ui"
+  },
+  {
+    "name": "react-layout-components",
+    "repo": "rofrischmann/react-layout-components"
+  },
+  {
+    "name": "silent-yolocaust",
+    "repo": "jekku/silent-yolocaust"
   }
 ]
