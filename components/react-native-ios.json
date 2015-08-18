@@ -734,5 +734,133 @@
   {
     "name": "redux-middleware-react-native-netinfo",
     "repo": "michaelcontento/redux-middleware-react-native-netinfo"
+  },
+  {
+    "name": "react-native-leancloud",
+    "repo": "turingou/react-native-leancloud"
+  },
+  {
+    "name": "react-native-slider-button",
+    "repo": "agentS/react-native-slider-button"
+  },
+  {
+    "name": "firebase-react-native",
+    "repo": "sjmueller/firebase-react-native"
+  },
+  {
+    "name": "gulp-react-native-css",
+    "repo": "soliury/gulp-react-native-css"
+  },
+  {
+    "name": "js-data-asyncstorage",
+    "repo": "lukasreichart/js-data-asyncstorage"
+  },
+  {
+    "name": "react-apple-easing",
+    "repo": "exponentjs/react-apple-easing"
+  },
+  {
+    "name": "react-native-applinks",
+    "repo": "facebook/react-native-applinks"
+  },
+  {
+    "name": "react-native-bridgeable-webview",
+    "repo": "Intellicode/react-native-bridgeable-webview"
+  },
+  {
+    "name": "react-native-browser-polyfill",
+    "repo": "johanneslumpe/react-native-browser-polyfill"
+  },
+  {
+    "name": "react-native-clone-referenced-element",
+    "repo": "ide/react-native-clone-referenced-element"
+  },
+  {
+    "name": "react-native-db-models",
+    "repo": "darkrishabh/react-native-db-models"
+  },
+  {
+    "name": "react-native-debug-stylesheet",
+    "repo": "brentvatne/react-native-debug-stylesheet"
+  },
+  {
+    "name": "react-native-device-clock-format",
+    "repo": "brentvatne/react-native-device-clock-format"
+  },
+  {
+    "name": "react-native-device-uuid",
+    "repo": "lazywei/react-native-device-uuid"
+  },
+  {
+    "name": "react-native-env",
+    "repo": "joeferraro/react-native-env"
+  },
+  {
+    "name": "react-native-event-source",
+    "repo": "jordanbyron/react-native-event-source"
+  },
+  {
+    "name": "react-native-file-transfer",
+    "repo": "kamilkp/react-native-file-transfer"
+  },
+  {
+    "name": "react-native-gesture-recognizers",
+    "repo": "johanneslumpe/react-native-gesture-recognizers"
+  },
+  {
+    "name": "react-native-hypertext",
+    "repo": "agentcooper/react-native-hypertext"
+  },
+  {
+    "name": "react-native-intercom",
+    "repo": "asamiller/react-native-intercom"
+  },
+  {
+    "name": "react-native-multipeer",
+    "repo": "lwansbrough/react-native-multipeer"
+  },
+  {
+    "name": "react-native-networking",
+    "repo": "eduedix/react-native-networking"
+  },
+  {
+    "name": "react-native-refreshable-scroll-view",
+    "repo": "exponentjs/react-native-refreshable-scroll-view"
+  },
+  {
+    "name": "react-native-routes",
+    "repo": "wenkesj/react-native-routes"
+  },
+  {
+    "name": "react-native-scene-manager",
+    "repo": "alinz/react-native-scene-manager"
+  },
+  {
+    "name": "react-native-svg-elements",
+    "repo": "aksonov/react-native-svg-elements"
+  },
+  {
+    "name": "react-native-tabbar",
+    "repo": "alinz/react-native-tabbar"
+  },
+  {
+    "name": "react-native-tableview",
+    "repo": "aksonov/react-native-tableview"
+  },
+  {
+    "name": "react-native-transparent-bar",
+    "repo": "23c/react-native-transparent-bar"
+  },
+  {
+    "name": "react-native-util",
+    "repo": "exponentjs/react-native-util"
+  },
+  {
+    "name": "react-native-voximplant",
+    "repo": "voximplant/react-native-voximplant"
+  },
+  {
+    "name": "react-native-webpack-server",
+    "repo": "mjohnston/react-native-webpack-server"
   }
 ]

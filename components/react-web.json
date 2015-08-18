@@ -6482,5 +6482,41 @@
   {
     "name": "silent-yolocaust",
     "repo": "jekku/silent-yolocaust"
+  },
+  {
+    "name": "focus-trap-react",
+    "repo": "davidtheclark/focus-trap-react"
+  },
+  {
+    "name": "react-autowhatever",
+    "repo": "moroshko/react-autowhatever"
+  },
+  {
+    "name": "react-banner-notification",
+    "repo": "vasanthk/react-banner-notification"
+  },
+  {
+    "name": "react-color",
+    "repo": "casesandberg/react-color"
+  },
+  {
+    "name": "react-context-provider",
+    "repo": "gnoff/react-context-provider"
+  },
+  {
+    "name": "react-finance",
+    "repo": "quentin-/react-finance"
+  },
+  {
+    "name": "react-rebound",
+    "repo": "steadicat/react-rebound"
+  },
+  {
+    "name": "react-tunnel",
+    "repo": "gnoff/react-tunnel"
+  },
+  {
+    "name": "react-bem-helper",
+    "repo": "marcohamersma/react-bem-helper"
   }
 ]
