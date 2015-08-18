@@ -6518,5 +6518,37 @@
   {
     "name": "react-bem-helper",
     "repo": "marcohamersma/react-bem-helper"
+  },
+  {
+    "name": "stylistic-elements",
+    "repo": "steadicat/stylistic-elements"
+  },
+  {
+    "name": "svg-react-loader",
+    "repo": "jhamlet/svg-react-loader"
+  },
+  {
+    "name": "react-currency-conversion",
+    "repo": "hemanth/react-currency-conversion"
+  },
+  {
+    "name": "react-date-range-picker",
+    "repo": "iSnifer/react-date-range-picker"
+  },
+  {
+    "name": "react-mailcheck",
+    "repo": "quentin-/react-mailcheck"
+  },
+  {
+    "name": "react-scrollable-list",
+    "repo": "jwarning/react-scrollable-list"
+  },
+  {
+    "name": "react-select2-wrapper",
+    "repo": "rkit/react-select2-wrapper"
+  },
+  {
+    "name": "suggestible-input",
+    "repo": "robmclarty/suggestible-input"
   }
 ]
