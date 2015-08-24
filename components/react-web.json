@@ -6550,5 +6550,69 @@
   {
     "name": "suggestible-input",
     "repo": "robmclarty/suggestible-input"
+  },
+  {
+    "name": "react-mousedown-awayable",
+    "repo": "RonaldoLee/react-mousedown-awayable"
+  },
+  {
+    "name": "react-openpublish-profile",
+    "repo": "howardwu/react-openpublish-profile"
+  },
+  {
+    "name": "2r-button",
+    "repo": "vladzelinschi/2r-button"
+  },
+  {
+    "name": "2r-image",
+    "repo": "vladzelinschi/2r-image"
+  },
+  {
+    "name": "2r-stepper",
+    "repo": "vladzelinschi/2r-stepper"
+  },
+  {
+    "name": "bem-cx",
+    "repo": "brigand/bem-cx"
+  },
+  {
+    "name": "dt-service-calculator",
+    "repo": "chantastic/dt-service-calculator"
+  },
+  {
+    "name": "express-iso-react-views",
+    "repo": "mlrawlings/express-iso-react-views"
+  },
+  {
+    "name": "growing-textarea-component",
+    "repo": "groovy354/react-growing-textarea"
+  },
+  {
+    "name": "luxo",
+    "repo": "Charityware/Luxo"
+  },
+  {
+    "name": "react-aria-modal",
+    "repo": "davidtheclark/react-aria-modal"
+  },
+  {
+    "name": "react-chrome-app-window",
+    "repo": "olineham/react-chrome-app-window"
+  },
+  {
+    "name": "react-classy",
+    "repo": "inturn/classy"
+  },
+  {
+    "name": "react-coffee-timer",
+    "repo": "coffee-timers/react-coffee-timer"
+  },
+  {
+    "name": "react-colgroup",
+    "repo": "gcedo/react-colgroup"
+  },
+  {
+    "name": "react-copyright",
+    "repo": "jasonbellamy/react-copyright"
   }
 ]

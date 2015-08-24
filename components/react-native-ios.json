@@ -862,5 +862,53 @@
   {
     "name": "react-native-webpack-server",
     "repo": "mjohnston/react-native-webpack-server"
+  },
+  {
+    "name": "ampersand-fetch",
+    "repo": "stephengrider/ampersand-fetch"
+  },
+  {
+    "name": "k-react-native-swipe-unlocker",
+    "repo": "leowang721/k-react-native-swipe-unlocker"
+  },
+  {
+    "name": "lakhu",
+    "repo": "sreejithr/lakhu"
+  },
+  {
+    "name": "react-native-bloodhound",
+    "repo": "yelled3/node-bloodhound"
+  },
+  {
+    "name": "react-native-draggable-drawer",
+    "repo": "llanox/react-native-draggable-drawer"
+  },
+  {
+    "name": "react-native-es6",
+    "repo": "UXtemple/react-native-es6"
+  },
+  {
+    "name": "react-native-google-plus-login",
+    "repo": "justinmakaila/react-native-google-plus-login"
+  },
+  {
+    "name": "react-native-google-static-map",
+    "repo": "yelled3/react-native-google-static-map"
+  },
+  {
+    "name": "react-native-immutable",
+    "repo": "thewei/react-native-immutable"
+  },
+  {
+    "name": "react-native-radio-button-classic",
+    "repo": "pressly/react-native-radio-button-classic"
+  },
+  {
+    "name": "react-native-slidable-tab-bar",
+    "repo": "pwbrown/react-native-slidable-tab-bar"
+  },
+  {
+    "name": "react-native-spinkit",
+    "repo": "maxs15/react-native-spinkit"
   }
 ]
