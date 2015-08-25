@@ -6614,5 +6614,65 @@
   {
     "name": "react-copyright",
     "repo": "jasonbellamy/react-copyright"
+  },
+  {
+    "name": "react-es7-mixin",
+    "repo": "bfollington/react-es7-mixin"
+  },
+  {
+    "name": "react-file-reader-input",
+    "repo": "ngokevin/react-file-reader-input"
+  },
+  {
+    "name": "react-gsap-enhancer",
+    "repo": "azazdeaz/react-gsap-enhancer"
+  },
+  {
+    "name": "react-hummingbird",
+    "repo": "asarode/react-hummingbird"
+  },
+  {
+    "name": "react-image-holder",
+    "repo": "hiddentao/react-image-holder"
+  },
+  {
+    "name": "react-input-completion",
+    "repo": "imcnally/react-input-completion"
+  },
+  {
+    "name": "react-intl-es6",
+    "repo": "AlexJozwicki/react-intl"
+  },
+  {
+    "name": "react-line",
+    "repo": "chtefi/react-line"
+  },
+  {
+    "name": "react-masonry-component-4meteorhacks-npm",
+    "repo": "puruzio/react-masonry-component"
+  },
+  {
+    "name": "react-modalizer",
+    "repo": "iLikeKoffee/react-modalizer"
+  },
+  {
+    "name": "react-mutable-list",
+    "repo": "dylanmackenzie/react-mutable-list"
+  },
+  {
+    "name": "react-object-tree",
+    "repo": "stomita/react-object-tree"
+  },
+  {
+    "name": "react-onclickoutside-decorator",
+    "repo": "kako0507/react-onclickoutside-decorator"
+  },
+  {
+    "name": "react-outside-event",
+    "repo": "gajus/react-outside-event"
+  },
+  {
+    "name": "react-photoswipe",
+    "repo": "vn38minhtran/react-photoswipe"
   }
 ]
