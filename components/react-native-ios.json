@@ -910,5 +910,21 @@
   {
     "name": "react-native-spinkit",
     "repo": "maxs15/react-native-spinkit"
+  },
+  {
+    "name": "react-native-idle-timer",
+    "repo": "marcshilling/react-native-idle-timer"
+  },
+  {
+    "name": "react-native-simple-store",
+    "repo": "jasonmerino/react-native-simple-store"
+  },
+  {
+    "name": "react-native-tab-navigator",
+    "repo": "exponentjs/react-native-tab-navigator"
+  },
+  {
+    "name": "react-native-woopra",
+    "repo": "isair/react-native-woopra"
   }
 ]

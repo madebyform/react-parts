@@ -5060,10 +5060,6 @@
     "repo": "rexk/mocha-mix"
   },
   {
-    "name": "react-bootstrap-tree",
-    "repo": "luqin/react-bootstrap-tree"
-  },
-  {
     "name": "react-element-query",
     "repo": "joeybaker/react-element-query"
   },
@@ -6674,5 +6670,77 @@
   {
     "name": "react-photoswipe",
     "repo": "vn38minhtran/react-photoswipe"
+  },
+  {
+    "name": "react-placeholdit",
+    "repo": "hugobessaa/react-placeholdit"
+  },
+  {
+    "name": "react-player",
+    "repo": "CookPete/react-player"
+  },
+  {
+    "name": "react-propmatch",
+    "repo": "brigand/react-propmatch"
+  },
+  {
+    "name": "react-proxy",
+    "repo": "gaearon/react-proxy"
+  },
+  {
+    "name": "react-ptrcontainer",
+    "repo": "ta2edchimp/react-ptrcontainer"
+  },
+  {
+    "name": "react-router-reverse",
+    "repo": "ngokevin/react-router-reverse"
+  },
+  {
+    "name": "react-semantic-modal",
+    "repo": "nlhkh/react-semantic-modal"
+  },
+  {
+    "name": "react-shopping-cart-starter-kit",
+    "repo": "principle-systems/react-shopping-cart-starter-kit"
+  },
+  {
+    "name": "react-shortcuts",
+    "repo": "avocode/react-shortcuts"
+  },
+  {
+    "name": "react-static-container",
+    "repo": "reactjs/react-static-container"
+  },
+  {
+    "name": "react-static-jsx",
+    "repo": "mangochomp/react-static-jsx"
+  },
+  {
+    "name": "react-table-for-bootstrap",
+    "repo": "petermoresi/react-bootstrap-table"
+  },
+  {
+    "name": "react-validation-decorator",
+    "repo": "vn38minhtran/react-validation-decorator"
+  },
+  {
+    "name": "react-wenv",
+    "repo": "ishvetsov/react-wenv"
+  },
+  {
+    "name": "react-year",
+    "repo": "jasonbellamy/react-year"
+  },
+  {
+    "name": "sort-table",
+    "repo": "DavidBrear/sort-table"
+  },
+  {
+    "name": "svg-jsx-loader",
+    "repo": "janjakubnanista/svg-jsx-loader"
+  },
+  {
+    "name": "winterfell",
+    "repo": "andrewhathaway/winterfell"
   }
 ]

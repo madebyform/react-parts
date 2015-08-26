@@ -358,5 +358,9 @@
   {
     "name": "mithril-resolver",
     "repo": "matthiasak/mithril-resolver"
+  },
+  {
+    "name": "react-bootstrap-tree",
+    "repo": "luqin/react-bootstrap-tree"
   }
 ]
