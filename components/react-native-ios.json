@@ -926,5 +926,13 @@
   {
     "name": "react-native-woopra",
     "repo": "isair/react-native-woopra"
+  },
+  {
+    "name": "react-native-assets",
+    "repo": "llanox/react-native-assests"
+  },
+  {
+    "name": "react-native-drawer-addmenu",
+    "repo": "rt2zz/react-native-drawer"
   }
 ]

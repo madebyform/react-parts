@@ -6742,5 +6742,77 @@
   {
     "name": "winterfell",
     "repo": "andrewhathaway/winterfell"
+  },
+  {
+    "name": "hire-faceted-search",
+    "repo": "HuygensING/hire-faceted-search"
+  },
+  {
+    "name": "map-props",
+    "repo": "erikras/map-props"
+  },
+  {
+    "name": "pure-component",
+    "repo": "RealGeeks/pure-component"
+  },
+  {
+    "name": "react-css-modules",
+    "repo": "gajus/react-css-modules"
+  },
+  {
+    "name": "react-delayload",
+    "repo": "nickeljew/react-delayload"
+  },
+  {
+    "name": "react-hot-transform",
+    "repo": "AgentME/react-hot-transform"
+  },
+  {
+    "name": "react-image-responsive",
+    "repo": "Youpinadi/react-image-responsive"
+  },
+  {
+    "name": "react-json-tree",
+    "repo": "chibicode/react-json-tree"
+  },
+  {
+    "name": "react-mui-base",
+    "repo": "hemanth/react-mui-base"
+  },
+  {
+    "name": "react-nvd3",
+    "repo": "NuCivic/react-nvd3"
+  },
+  {
+    "name": "react-router-loader",
+    "repo": "uooo/react-router-loader"
+  },
+  {
+    "name": "react-svg-icon",
+    "repo": "springload/react-svg-icon"
+  },
+  {
+    "name": "router-loader",
+    "repo": "uooo/react-router-loader"
+  },
+  {
+    "name": "cursor-pure-render",
+    "repo": "spicydonuts/cursor-pure-render"
+  },
+  {
+    "name": "react-displace",
+    "repo": "davidtheclark/react-displace"
+  },
+  {
+    "name": "react-drag-select",
+    "repo": "pablofierro/react-drag-select"
+  },
+  {
+    "name": "react-forms-builder",
+    "repo": "blackjk3/react-form-builder"
+  },
+  {
+    "name": "react-overflow-tooltip",
+    "repo": "uiureo/react-overflow-tooltip"
   }
 ]
