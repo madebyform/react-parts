@@ -6814,5 +6814,37 @@
   {
     "name": "react-overflow-tooltip",
     "repo": "uiureo/react-overflow-tooltip"
+  },
+  {
+    "name": "curved-carousel",
+    "repo": "walmartreact/curved-carousel"
+  },
+  {
+    "name": "d3-react-sparkline",
+    "repo": "QubitProducts/d3-react-sparkline"
+  },
+  {
+    "name": "react-animation-mixin",
+    "repo": "whattokingu/react-animation-mixin"
+  },
+  {
+    "name": "react-compact-colorpicker",
+    "repo": "tscholl2/react-compact-colorpicker"
+  },
+  {
+    "name": "react-mermaid",
+    "repo": "jasonbellamy/react-mermaid"
+  },
+  {
+    "name": "react-shallow-renderer-helpers",
+    "repo": "robrichard/react-shallow-renderer-helpers"
+  },
+  {
+    "name": "react-ui-components",
+    "repo": "pingyuanChen/react-ui-components"
+  },
+  {
+    "name": "redux-component-state",
+    "repo": "cef62/redux-component-state"
   }
 ]

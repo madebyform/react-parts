@@ -934,5 +934,17 @@
   {
     "name": "react-native-drawer-addmenu",
     "repo": "rt2zz/react-native-drawer"
+  },
+  {
+    "name": "gl-react-native",
+    "repo": "ProjectSeptemberInc/gl-react-native"
+  },
+  {
+    "name": "react-native-device-motion",
+    "repo": "paramaggarwal/react-native-device-motion"
+  },
+  {
+    "name": "react-native-global-event-emitter",
+    "repo": "paramaggarwal/react-native-global-event-emitter"
   }
 ]
