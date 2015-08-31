@@ -6846,5 +6846,53 @@
   {
     "name": "redux-component-state",
     "repo": "cef62/redux-component-state"
+  },
+  {
+    "name": "mobservable-react-devtools",
+    "repo": "mweststrate/mobservable-react-devtools"
+  },
+  {
+    "name": "mx-react-components",
+    "repo": "moneydesktop/mx-react-components"
+  },
+  {
+    "name": "react-ellipsify",
+    "repo": "bebraw/react-ellipsify"
+  },
+  {
+    "name": "react-event-calendar",
+    "repo": "dptoot/react-event-calendar"
+  },
+  {
+    "name": "react-ghost-i18n",
+    "repo": "pzavolinsky/react-i18n"
+  },
+  {
+    "name": "react-knob",
+    "repo": "ppiekarczyk/react-knob"
+  },
+  {
+    "name": "react-lazyrender",
+    "repo": "ipy/react-lazyrender"
+  },
+  {
+    "name": "react-playemjs",
+    "repo": "adrienjoly/react-playemjs"
+  },
+  {
+    "name": "react-strict-prop-types",
+    "repo": "gajus/react-strict-prop-types"
+  },
+  {
+    "name": "react-toaster",
+    "repo": "ihaolin/react-toaster"
+  },
+  {
+    "name": "react-track",
+    "repo": "gilbox/react-track"
+  },
+  {
+    "name": "reactslides",
+    "repo": "musienkoyuriy/react-slides"
   }
 ]

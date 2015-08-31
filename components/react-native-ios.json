@@ -946,5 +946,21 @@
   {
     "name": "react-native-global-event-emitter",
     "repo": "paramaggarwal/react-native-global-event-emitter"
+  },
+  {
+    "name": "apsl-react-native-button",
+    "repo": "APSL/react-native-button"
+  },
+  {
+    "name": "react-native-check-file-exists-ios",
+    "repo": "rhaker/react-native-check-file-exists-ios"
+  },
+  {
+    "name": "react-native-create-new-file-ios",
+    "repo": "rhaker/react-native-create-new-file-ios"
+  },
+  {
+    "name": "react-native-phone-picker",
+    "repo": "Spikef/react-native-phone-picker"
   }
 ]
