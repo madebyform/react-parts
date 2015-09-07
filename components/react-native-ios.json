@@ -962,5 +962,25 @@
   {
     "name": "react-native-phone-picker",
     "repo": "Spikef/react-native-phone-picker"
+  },
+  {
+    "name": "react-native-charts",
+    "repo": "PrazAs/react-native-charts"
+  },
+  {
+    "name": "react-native-control-flashlight-ios",
+    "repo": "rhaker/react-native-control-flashlight-ios"
+  },
+  {
+    "name": "react-native-control-screen-sleep-ios",
+    "repo": "rhaker/react-native-control-screen-sleep-ios"
+  },
+  {
+    "name": "react-native-file-upload-to-server-ios",
+    "repo": "rhaker/react-native-file-upload-to-server-ios"
+  },
+  {
+    "name": "react-native-for-web",
+    "repo": "KodersLab/react-native-for-web"
   }
 ]

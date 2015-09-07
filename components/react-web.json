@@ -6894,5 +6894,29 @@
   {
     "name": "reactslides",
     "repo": "musienkoyuriy/react-slides"
+  },
+  {
+    "name": "animated-text-input",
+    "repo": "f15gdsy/Animated-Text-Input"
+  },
+  {
+    "name": "classnameify",
+    "repo": "joakimbeng/classnameify"
+  },
+  {
+    "name": "dbrans-react-maskedinput",
+    "repo": "insin/react-maskedinput"
+  },
+  {
+    "name": "delicate-error-reporter",
+    "repo": "aulizko/delicate-error-reporter"
+  },
+  {
+    "name": "dumb-react",
+    "repo": "AsaAyers/dumb-react"
+  },
+  {
+    "name": "legit-image",
+    "repo": "legitcode/image"
   }
 ]
