@@ -982,5 +982,33 @@
   {
     "name": "react-native-for-web",
     "repo": "KodersLab/react-native-for-web"
+  },
+  {
+    "name": "react-native-gesture-password",
+    "repo": "Spikef/react-native-gesture-password"
+  },
+  {
+    "name": "react-native-html-to-pdf",
+    "repo": "christopherdro/react-native-html-to-pdf"
+  },
+  {
+    "name": "react-native-item-cell",
+    "repo": "APSL/react-native-item-cell"
+  },
+  {
+    "name": "react-native-local-image-manager",
+    "repo": "asamiller/react-native-local-image-manager"
+  },
+  {
+    "name": "react-native-print",
+    "repo": "christopherdro/react-native-print"
+  },
+  {
+    "name": "react-native-videoplayer",
+    "repo": "yamill/react-native-videoplayer"
+  },
+  {
+    "name": "rn-china-region-picker",
+    "repo": "hufeng/rn-china-region-picker"
   }
 ]

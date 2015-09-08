@@ -6918,5 +6918,29 @@
   {
     "name": "legit-image",
     "repo": "legitcode/image"
+  },
+  {
+    "name": "react-native-web",
+    "repo": "necolas/react-native-web"
+  },
+  {
+    "name": "matter-react",
+    "repo": "stevenmiller888/matter-react"
+  },
+  {
+    "name": "react-accordion-menu",
+    "repo": "kenCode-de/react-accordion-menu"
+  },
+  {
+    "name": "react-code39svg",
+    "repo": "hzdg/react-code39svg.js"
+  },
+  {
+    "name": "react-codepen",
+    "repo": "jasonbellamy/react-codepen"
+  },
+  {
+    "name": "react-controllable",
+    "repo": "jamesknelson/react-controllable"
   }
 ]
