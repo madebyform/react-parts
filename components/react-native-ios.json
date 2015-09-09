@@ -1010,5 +1010,9 @@
   {
     "name": "rn-china-region-picker",
     "repo": "hufeng/rn-china-region-picker"
+  },
+  {
+    "name": "react-native-battery-status-ios",
+    "repo": "rhaker/react-native-battery-status-ios"
   }
 ]

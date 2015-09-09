@@ -6942,5 +6942,129 @@
   {
     "name": "react-controllable",
     "repo": "jamesknelson/react-controllable"
+  },
+  {
+    "name": "react-debounce-input",
+    "repo": "nkbt/react-debounce-input"
+  },
+  {
+    "name": "react-dock",
+    "repo": "alexkuz/react-dock"
+  },
+  {
+    "name": "react-es6-component",
+    "repo": "nathanial/react-es6-component"
+  },
+  {
+    "name": "react-fabric",
+    "repo": "kmees/react-fabric"
+  },
+  {
+    "name": "react-file-drop",
+    "repo": "sarink/react-file-drop"
+  },
+  {
+    "name": "react-fileupload",
+    "repo": "SoAanyip/React-FileUpload"
+  },
+  {
+    "name": "react-filtered-multiselect-custom-filter",
+    "repo": "insin/react-filtered-multiselect"
+  },
+  {
+    "name": "react-flag-object",
+    "repo": "chantastic/react-flag-object"
+  },
+  {
+    "name": "react-h5-video",
+    "repo": "eisneim/react-html5-video"
+  },
+  {
+    "name": "react-hot-service",
+    "repo": "nikhedonia/react-hot-service"
+  },
+  {
+    "name": "react-joyride",
+    "repo": "gilbarbara/react-joyride"
+  },
+  {
+    "name": "react-legit-table",
+    "repo": "legitcode/table"
+  },
+  {
+    "name": "react-mailto",
+    "repo": "jasonbellamy/react-mailto"
+  },
+  {
+    "name": "react-markdown-editor",
+    "repo": "jrm2k6/react-markdown-editor"
+  },
+  {
+    "name": "react-page-click",
+    "repo": "nkbt/react-page-click"
+  },
+  {
+    "name": "react-patch",
+    "repo": "gaearon/react-patch"
+  },
+  {
+    "name": "react-qrsvg",
+    "repo": "hzdg/react-qrsvg.js"
+  },
+  {
+    "name": "react-scrollspy",
+    "repo": "makotot/react-scrollspy"
+  },
+  {
+    "name": "react-side-effect-maimai",
+    "repo": "gaearon/react-side-effect"
+  },
+  {
+    "name": "react-simple-countdown",
+    "repo": "leonidasesteban/react-simple-countdown"
+  },
+  {
+    "name": "react-state-inspector",
+    "repo": "curioussavage/react-state-inspector"
+  },
+  {
+    "name": "react-time-bar",
+    "repo": "fghibellini/react-time-bar"
+  },
+  {
+    "name": "react-transform-catch-errors",
+    "repo": "gaearon/react-transform-catch-errors"
+  },
+  {
+    "name": "react-twitter-typeahead-babel",
+    "repo": "decomplect-io/React-Twitter-Typeahead"
+  },
+  {
+    "name": "react-unit",
+    "repo": "pzavolinsky/react-unit"
+  },
+  {
+    "name": "router-view",
+    "repo": "mvc-works/router-view"
+  },
+  {
+    "name": "sweetalert-react",
+    "repo": "chentsulin/sweetalert-react"
+  },
+  {
+    "name": "react-mini-this",
+    "repo": "stoeffel/react-mini-this"
+  },
+  {
+    "name": "react-progress-hud",
+    "repo": "naoufal/react-progress-hud"
+  },
+  {
+    "name": "react-seatmap",
+    "repo": "gcedo/react-seatmap"
+  },
+  {
+    "name": "reactkendo",
+    "repo": "aikeru/ReactKendo"
   }
 ]
