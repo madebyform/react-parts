@@ -7066,5 +7066,45 @@
   {
     "name": "reactkendo",
     "repo": "aikeru/ReactKendo"
+  },
+  {
+    "name": "electrode-bolt",
+    "repo": "walmartreact/bolt"
+  },
+  {
+    "name": "legit-context-menu",
+    "repo": "legitcode/context-menu"
+  },
+  {
+    "name": "legit-tabs",
+    "repo": "legitcode/tabs"
+  },
+  {
+    "name": "modcss",
+    "repo": "jameswomack/modcss"
+  },
+  {
+    "name": "react-decompiler",
+    "repo": "rogeriochaves/react-decompiler"
+  },
+  {
+    "name": "react-images",
+    "repo": "jossmac/react-images"
+  },
+  {
+    "name": "react-styleguidist",
+    "repo": "sapegin/react-styleguidist"
+  },
+  {
+    "name": "revenge-react-components",
+    "repo": "buildo/revenge-react-components"
+  },
+  {
+    "name": "spectacle",
+    "repo": "FormidableLabs/spectacle"
+  },
+  {
+    "name": "react-transform-boilerplate",
+    "repo": "gaearon/react-transform-boilerplate"
   }
 ]
