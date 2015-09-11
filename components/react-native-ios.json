@@ -1014,5 +1014,9 @@
   {
     "name": "react-native-battery-status-ios",
     "repo": "rhaker/react-native-battery-status-ios"
+  },
+  {
+    "name": "react-native-relative-units",
+    "repo": "benzhe/react-native-relative-units"
   }
 ]

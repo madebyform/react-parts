@@ -6352,10 +6352,6 @@
     "repo": "paulserraino/react-geojson-cluster"
   },
   {
-    "name": "react-look-tools",
-    "repo": "rofrischmann/react-look-tools"
-  },
-  {
     "name": "react-media-player",
     "repo": "souporserious/react-media-player"
   },
@@ -7106,5 +7102,85 @@
   {
     "name": "react-transform-boilerplate",
     "repo": "gaearon/react-transform-boilerplate"
+  },
+  {
+    "name": "auto-ellipsis",
+    "repo": "ideal-react/auto-ellipsis"
+  },
+  {
+    "name": "legit-tests",
+    "repo": "legitcode/tests"
+  },
+  {
+    "name": "pui-react-autocomplete",
+    "repo": "pivotal-cf/pivotal-ui"
+  },
+  {
+    "name": "pui-react-helpers",
+    "repo": "pivotal-cf/pivotal-ui"
+  },
+  {
+    "name": "pui-react-select-fancy",
+    "repo": "pivotal-cf/pivotal-ui"
+  },
+  {
+    "name": "pui-react-stream-list",
+    "repo": "pivotal-cf/pivotal-ui"
+  },
+  {
+    "name": "react-completion",
+    "repo": "holmesal/react-completion"
+  },
+  {
+    "name": "react-component-starter-kit",
+    "repo": "daviferreira/react-component-starter-kit"
+  },
+  {
+    "name": "react-google-places-suggest",
+    "repo": "cedricdelpoux/react-google-places-suggest"
+  },
+  {
+    "name": "react-inline-grid",
+    "repo": "broucz/react-inline-grid"
+  },
+  {
+    "name": "react-month-day",
+    "repo": "ryanburgess/react-month-day"
+  },
+  {
+    "name": "react-pagination-cn",
+    "repo": "xuluxi/react-pagination"
+  },
+  {
+    "name": "uxcore-dropdown",
+    "repo": "uxcore/dropdown"
+  },
+  {
+    "name": "uxcore-form",
+    "repo": "uxcore/uxcore-form"
+  },
+  {
+    "name": "uxcore-grid",
+    "repo": "uxcore/uxcore-grid"
+  },
+  {
+    "name": "uxcore-mention",
+    "repo": "uxcore/mention"
+  },
+  {
+    "name": "uxcore-pagination",
+    "repo": "uxcore/uxcore-pagination"
+  },
+  {
+    "name": "uxcore-tabs",
+    "repo": "uxcore/tabs"
+  },
+  {
+    "name": "uxcore-tooltip",
+    "repo": "uxcore/uxcore-tooltip"
+  },
+  {
+    "name": "uxcore-tree",
+    "repo": "uxcore/uxcore-tree"
   }
 ]
