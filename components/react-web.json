@@ -7100,10 +7100,6 @@
     "repo": "FormidableLabs/spectacle"
   },
   {
-    "name": "react-transform-boilerplate",
-    "repo": "gaearon/react-transform-boilerplate"
-  },
-  {
     "name": "auto-ellipsis",
     "repo": "ideal-react/auto-ellipsis"
   },
@@ -7182,5 +7178,69 @@
   {
     "name": "uxcore-tree",
     "repo": "uxcore/uxcore-tree"
+  },
+  {
+    "name": "jasmine-react-diff",
+    "repo": "rogeriochaves/jasmine-react-diff"
+  },
+  {
+    "name": "mobservable-react",
+    "repo": "mweststrate/mobservable-react"
+  },
+  {
+    "name": "react-body-classname",
+    "repo": "PactCoffee/react-body-classname"
+  },
+  {
+    "name": "react-embedded-browser",
+    "repo": "rhysd/react-embedded-browser"
+  },
+  {
+    "name": "react-flexboxgrid",
+    "repo": "sricho/react-flexboxgrid"
+  },
+  {
+    "name": "react-google-map",
+    "repo": "cedricdelpoux/react-google-map"
+  },
+  {
+    "name": "react-markdown-area",
+    "repo": "MattMcFarland/react-markdown-area"
+  },
+  {
+    "name": "react-motion-slider",
+    "repo": "souporserious/react-motion-slider"
+  },
+  {
+    "name": "react-random-notes",
+    "repo": "tdkohlbeck/react-random-notes"
+  },
+  {
+    "name": "react-region",
+    "repo": "jide/react-region"
+  },
+  {
+    "name": "react-selectize",
+    "repo": "furqanZafar/react-selectize"
+  },
+  {
+    "name": "react-shallow-output",
+    "repo": "jasonbellamy/react-shallow-output"
+  },
+  {
+    "name": "react-state-utils",
+    "repo": "kmalakoff/react-state-utils"
+  },
+  {
+    "name": "react-svg-graph",
+    "repo": "jwarning/react-svg-graph"
+  },
+  {
+    "name": "react-text-trail",
+    "repo": "trevorsenior/react-text-trail"
+  },
+  {
+    "name": "retracked",
+    "repo": "coursera/retracked"
   }
 ]

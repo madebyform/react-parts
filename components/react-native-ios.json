@@ -1018,5 +1018,25 @@
   {
     "name": "react-native-relative-units",
     "repo": "benzhe/react-native-relative-units"
+  },
+  {
+    "name": "gb-native-router",
+    "repo": "MikaelCarpenter/gb-native-router"
+  },
+  {
+    "name": "react-native-cropping",
+    "repo": "walmartreact/react-native-cropping"
+  },
+  {
+    "name": "react-native-image-progressbar",
+    "repo": "walmartreact/react-native-image-progressbar"
+  },
+  {
+    "name": "react-native-multi-slider",
+    "repo": "JackDanielsAndCode/react-native-multi-slider"
+  },
+  {
+    "name": "react-native-navigator",
+    "repo": "thewei/react-native-navigator"
   }
 ]
