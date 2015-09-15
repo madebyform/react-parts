@@ -1038,5 +1038,9 @@
   {
     "name": "react-native-navigator",
     "repo": "thewei/react-native-navigator"
+  },
+  {
+    "name": "react-native-orientation-listener",
+    "repo": "walmartreact/react-native-orientation-listener"
   }
 ]

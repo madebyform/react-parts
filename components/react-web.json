@@ -7242,5 +7242,29 @@
   {
     "name": "retracked",
     "repo": "coursera/retracked"
+  },
+  {
+    "name": "es6bindall",
+    "repo": "brownieboy/es6bindall"
+  },
+  {
+    "name": "react-flex-slick",
+    "repo": "vramana/react-flex-slick"
+  },
+  {
+    "name": "react-inline-block",
+    "repo": "zippyui/react-inline-block"
+  },
+  {
+    "name": "react-modal-inline",
+    "repo": "jackofseattle/react-modal-inline"
+  },
+  {
+    "name": "react-simple-rating",
+    "repo": "linmic/react-simple-rating"
+  },
+  {
+    "name": "react-tick-tock",
+    "repo": "willwashburn/react-tick-tock"
   }
 ]
