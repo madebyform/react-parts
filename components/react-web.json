@@ -7266,5 +7266,41 @@
   {
     "name": "react-tick-tock",
     "repo": "willwashburn/react-tick-tock"
+  },
+  {
+    "name": "kss-jade-react-generator",
+    "repo": "kotorieclair/kss-jade-react-generator"
+  },
+  {
+    "name": "legit-cards",
+    "repo": "Legitcode/cards"
+  },
+  {
+    "name": "react-awesome-modal",
+    "repo": "shibe97/react-awesome-modal"
+  },
+  {
+    "name": "react-gcaptcha",
+    "repo": "twobucks/react-gcaptcha"
+  },
+  {
+    "name": "react-hover-mixin",
+    "repo": "espeakers/react-hover-mixin"
+  },
+  {
+    "name": "react-measure",
+    "repo": "souporserious/react-measure"
+  },
+  {
+    "name": "react-nouislider",
+    "repo": "algolia/react-nouislider"
+  },
+  {
+    "name": "react-range",
+    "repo": "mapbox/react-range"
+  },
+  {
+    "name": "uxcore-popover",
+    "repo": "uxcore/uxcore-popover"
   }
 ]

@@ -1042,5 +1042,25 @@
   {
     "name": "react-native-orientation-listener",
     "repo": "walmartreact/react-native-orientation-listener"
+  },
+  {
+    "name": "gulp-react-native-stylesheet-css",
+    "repo": "jjshammas/gulp-react-native-stylesheet-css"
+  },
+  {
+    "name": "react-native-android-badge",
+    "repo": "jhen0409/react-native-android-badge"
+  },
+  {
+    "name": "react-native-battery",
+    "repo": "oojr/react-native-battery"
+  },
+  {
+    "name": "react-native-ble",
+    "repo": "jacobrosenthal/react-native-ble"
+  },
+  {
+    "name": "react-native-ios-network-audio",
+    "repo": "pwbrown/react-native-ios-network-audio"
   }
 ]
