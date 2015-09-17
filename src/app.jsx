@@ -66,7 +66,7 @@ export var App = React.createClass({
 
         <div style={styles.content}>
           <Tabs>
-            <Tab to="components" params={{type: "native-ios"}}>React Native</Tab>
+            <Tab to="components" params={{type: "native"}}>React Native</Tab>
             <Tab to="components" params={{type: "web"}}>React for Web</Tab>
           </Tabs>
 

@@ -2,7 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 
-var existingNativeComponents = require('./components/react-native-ios.json');
+var existingNativeComponents = require('./components/react-native.json');
 var existingWebComponents = require('./components/react-web.json');
 var rejectedComponents = require('./components/rejected.json');
 
@@ -16,7 +16,7 @@ var sinceDate = new Date(process.argv[2] || "2010-01-01");
 
 // Paths to the JSON files with the lists of components
 var webCandidatesFilename = path.join(__dirname, 'components', "react-web.json");
-var nativeCandidatesFilename = path.join(__dirname, 'components', "react-native-ios.json");
+var nativeCandidatesFilename = path.join(__dirname, 'components', "react-native.json");
 
 // Keywords that identify a component for react for web
 // For eg, `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`

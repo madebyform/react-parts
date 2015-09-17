@@ -9,8 +9,8 @@ var path = require('path');
 var request = require('request');
 var keys = require('./keys.json');
 
-// Pass the components list you which to update "react" or "react-native-ios"
-var componentsType = process.argv[2] || "react-native-ios";
+// Pass the components list you which to update "react" or "react-native"
+var componentsType = process.argv[2] || "react-native";
 var componentsFile = path.join(__dirname, 'components', componentsType + '.json');
 var components = require(componentsFile);
 var componentsDataFile = path.join(__dirname, 'data', componentsType + '.json');

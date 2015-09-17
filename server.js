@@ -37,13 +37,18 @@ server.set('view engine', 'ejs');
 // This is necessary because we'll do `App()` instead of <App />
 var routes = require("./src/app.jsx").routes;
 
-// Redirect the user to the list of native components for iOS
+// Redirect the user to the list of native components
 server.get('/', function(req, res) {
-  res.redirect('/native-ios');
+  res.redirect('/native');
+});
+
+// Redirect legacy iOS path to the common native tab
+server.get('/native-ios', function(req, res) {
+  res.redirect('/native');
 });
 
 // Return the HTML page with the list of native components for iOS or components for web
-server.get('/:type(web|native-ios)', function(req, res) {
+server.get('/:type(web|native)', function(req, res) {
   var type = req.params.type;
 
   fs.readFile('./data/react-'+ type +'.json', function(error, data) {
@@ -75,7 +80,7 @@ server.get('/:type(web|native-ios)', function(req, res) {
 });
 
 // Return JSON with the list of native components for iOS or components for web
-server.get('/api/components/:type(web|native-ios)', function(req, res) {
+server.get('/api/components/:type(web|native)', function(req, res) {
   var type = req.params.type;
 
   fs.readFile('./data/react-'+ type +'.json', function(error, data) {
