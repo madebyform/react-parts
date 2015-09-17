@@ -3268,10 +3268,6 @@
     "repo": "dcposch/scramble-ui"
   },
   {
-    "name": "socialbuttons",
-    "repo": "Legitcode/socialbuttons"
-  },
-  {
     "name": "statefy",
     "repo": "gearz-lab/statefy"
   },
@@ -3582,10 +3578,6 @@
   {
     "name": "react-droparea",
     "repo": "avocode/react-droparea"
-  },
-  {
-    "name": "react-editor",
-    "repo": "henriquea/react-editor"
   },
   {
     "name": "react-json",
@@ -4544,10 +4536,6 @@
     "repo": "react-component/notification"
   },
   {
-    "name": "react-geohunter",
-    "repo": "matt-major/react-geohunter"
-  },
-  {
     "name": "elegant-react",
     "repo": "gilbox/elegant-react"
   },
@@ -4814,10 +4802,6 @@
   {
     "name": "react-server-render",
     "repo": "danielmeneses/react-server-render"
-  },
-  {
-    "name": "react-swicth-button",
-    "repo": "gfazioli/react-switch-button"
   },
   {
     "name": "react-transition-manager",
@@ -7302,5 +7286,29 @@
   {
     "name": "uxcore-popover",
     "repo": "uxcore/uxcore-popover"
+  },
+  {
+    "name": "babel-plugin-react-transform",
+    "repo": "gaearon/babel-plugin-react-transform"
+  },
+  {
+    "name": "react-card-object",
+    "repo": "chantastic/react-card-object"
+  },
+  {
+    "name": "react-cloudinary",
+    "repo": "seokgyo/react-cloudinary"
+  },
+  {
+    "name": "react-deep-force-update",
+    "repo": "gaearon/react-deep-force-update"
+  },
+  {
+    "name": "react-server-pages",
+    "repo": "philcockfield/react-server-pages"
+  },
+  {
+    "name": "react-smartbanner",
+    "repo": "patw0929/react-smartbanner"
   }
 ]

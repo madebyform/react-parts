@@ -1062,5 +1062,17 @@
   {
     "name": "react-native-ios-network-audio",
     "repo": "pwbrown/react-native-ios-network-audio"
+  },
+  {
+    "name": "react-native-device-info",
+    "repo": "rebeccahughes/react-native-device-info"
+  },
+  {
+    "name": "react-native-play-audio-ios",
+    "repo": "rhaker/react-native-play-audio-ios"
+  },
+  {
+    "name": "react-native-tab",
+    "repo": "vczero/react-native-tab"
   }
 ]
