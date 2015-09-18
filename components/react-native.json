@@ -1074,5 +1074,17 @@
   {
     "name": "react-native-tab",
     "repo": "vczero/react-native-tab"
+  },
+  {
+    "name": "envirs-react-native-cli",
+    "repo": "Spikef/envirs-react-native-cli"
+  },
+  {
+    "name": "react-native-drawer-layout",
+    "repo": "iodine/react-native-drawer-layout"
+  },
+  {
+    "name": "react-native-record-audio-ios",
+    "repo": "rhaker/react-native-record-audio-ios"
   }
 ]

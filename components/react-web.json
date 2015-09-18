@@ -7310,5 +7310,25 @@
   {
     "name": "react-smartbanner",
     "repo": "patw0929/react-smartbanner"
+  },
+  {
+    "name": "bindable-component",
+    "repo": "swhite24/bindable-component"
+  },
+  {
+    "name": "react-google-ad",
+    "repo": "lukehansell/react-google-ad"
+  },
+  {
+    "name": "react-novacancy",
+    "repo": "patw0929/react-novacancy"
+  },
+  {
+    "name": "react-youtube-player",
+    "repo": "gajus/react-youtube-player"
+  },
+  {
+    "name": "redux-pouchdb",
+    "repo": "vicentedealencar/redux-pouchdb"
   }
 ]
