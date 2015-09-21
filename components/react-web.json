@@ -7330,5 +7330,41 @@
   {
     "name": "redux-pouchdb",
     "repo": "vicentedealencar/redux-pouchdb"
+  },
+  {
+    "name": "component-inspector",
+    "repo": "lahmatiy/component-inspector"
+  },
+  {
+    "name": "component-playground-responsive-iframe",
+    "repo": "iamdustan/component-playground-responsive-iframe"
+  },
+  {
+    "name": "paper-input",
+    "repo": "standard-analytics/paper-input"
+  },
+  {
+    "name": "react-dots-loader",
+    "repo": "zippyui/react-dots-loader"
+  },
+  {
+    "name": "react-field",
+    "repo": "zippyui/react-field"
+  },
+  {
+    "name": "react-google-publisher-tag",
+    "repo": "seeden/react-google-publisher-tag"
+  },
+  {
+    "name": "react-imation",
+    "repo": "gilbox/react-imation"
+  },
+  {
+    "name": "react-learning-outcome-description-component",
+    "repo": "Brightspace/react-learning-outcome-description-component"
+  },
+  {
+    "name": "redux-filter",
+    "repo": "nsmith7989/redux-filter"
   }
 ]

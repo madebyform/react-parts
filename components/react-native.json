@@ -1086,5 +1086,13 @@
   {
     "name": "react-native-record-audio-ios",
     "repo": "rhaker/react-native-record-audio-ios"
+  },
+  {
+    "name": "gravatar-api",
+    "repo": "lwhiteley/nodejs-gravatar"
+  },
+  {
+    "name": "react-native-platform-visible",
+    "repo": "walmartreact/react-native-platform-visible"
   }
 ]
