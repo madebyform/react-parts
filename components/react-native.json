@@ -1094,5 +1094,9 @@
   {
     "name": "react-native-platform-visible",
     "repo": "walmartreact/react-native-platform-visible"
+  },
+  {
+    "name": "react-native-realtimemessaging-android",
+    "repo": "realtime-framework/RCTRealtimeMessagingAndroid"
   }
 ]

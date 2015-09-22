@@ -2292,10 +2292,6 @@
     "repo": "vslinko/hoc"
   },
   {
-    "name": "holon",
-    "repo": "codingamigos/holon"
-  },
-  {
     "name": "htmltojsx",
     "repo": "reactjs/react-magic"
   },
@@ -2522,10 +2518,6 @@
   {
     "name": "react-component-starter",
     "repo": "KyleAMathews/react-component-starter"
-  },
-  {
-    "name": "react-component-tools",
-    "repo": "luqin/react-component-tools"
   },
   {
     "name": "react-component-width-mixin",
@@ -6724,10 +6716,6 @@
     "repo": "andrewhathaway/winterfell"
   },
   {
-    "name": "hire-faceted-search",
-    "repo": "HuygensING/hire-faceted-search"
-  },
-  {
     "name": "map-props",
     "repo": "erikras/map-props"
   },
@@ -7366,5 +7354,29 @@
   {
     "name": "redux-filter",
     "repo": "nsmith7989/redux-filter"
+  },
+  {
+    "name": "focus-components",
+    "repo": "KleeGroup/focus-components"
+  },
+  {
+    "name": "react-normalized-select",
+    "repo": "nkbt/react-normalized-select"
+  },
+  {
+    "name": "react-prosemirror",
+    "repo": "tgecho/react-prosemirror"
+  },
+  {
+    "name": "uxcore-rc-upload",
+    "repo": "uxcore/uxcore-rc-upload"
+  },
+  {
+    "name": "uxcore-tinymce",
+    "repo": "uxcore/uxcore-tinymce"
+  },
+  {
+    "name": "uxcore-validator",
+    "repo": "uxcore/uxcore-validator"
   }
 ]
