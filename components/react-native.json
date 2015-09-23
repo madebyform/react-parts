@@ -1098,5 +1098,13 @@
   {
     "name": "react-native-realtimemessaging-android",
     "repo": "realtime-framework/RCTRealtimeMessagingAndroid"
+  },
+  {
+    "name": "react-native-debug",
+    "repo": "bmcmahen/debug"
+  },
+  {
+    "name": "react-native-switcher",
+    "repo": "olivierlesnicki/react-native-switcher"
   }
 ]

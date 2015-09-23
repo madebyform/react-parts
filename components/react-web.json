@@ -7378,5 +7378,17 @@
   {
     "name": "uxcore-validator",
     "repo": "uxcore/uxcore-validator"
+  },
+  {
+    "name": "pui-react-tile-layout",
+    "repo": "pivotal-cf/pivotal-ui"
+  },
+  {
+    "name": "reanimation",
+    "repo": "hallister/reanimation"
+  },
+  {
+    "name": "sitegen",
+    "repo": "andreypopp/sitegen"
   }
 ]
