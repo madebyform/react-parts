@@ -1106,5 +1106,29 @@
   {
     "name": "react-native-switcher",
     "repo": "olivierlesnicki/react-native-switcher"
+  },
+  {
+    "name": "react-native-android-sqlite",
+    "repo": "jbrodriguez/react-native-android-sqlite"
+  },
+  {
+    "name": "react-native-browser",
+    "repo": "PrestoDoctor/react-native-browser"
+  },
+  {
+    "name": "react-native-webintent",
+    "repo": "ivanph/react-native-webintent"
+  },
+  {
+    "name": "react-native-xmpp",
+    "repo": "aksonov/react-native-xmpp"
+  },
+  {
+    "name": "react-router-android",
+    "repo": "rackt/react-router"
+  },
+  {
+    "name": "react-router-native",
+    "repo": "rackt/react-router"
   }
 ]

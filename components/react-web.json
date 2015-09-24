@@ -7390,5 +7390,33 @@
   {
     "name": "sitegen",
     "repo": "andreypopp/sitegen"
+  },
+  {
+    "name": "react-imgix",
+    "repo": "frederickfogerty/react-imgix"
+  },
+  {
+    "name": "paper-textarea",
+    "repo": "scienceai/paper-textarea"
+  },
+  {
+    "name": "react-antd-window",
+    "repo": "zhbhun/react-antd-window"
+  },
+  {
+    "name": "react-jrate",
+    "repo": "senthilporunan/react-jrate"
+  },
+  {
+    "name": "react-pouchdb-changes",
+    "repo": "scienceai/react-pouchdb-changes"
+  },
+  {
+    "name": "react-to-commonjs",
+    "repo": "goncalvesjoao/react-to-commonJS"
+  },
+  {
+    "name": "react-window-kit",
+    "repo": "zhbhun/react-window-kit"
   }
 ]

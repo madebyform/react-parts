@@ -362,5 +362,9 @@
   {
     "name": "react-bootstrap-tree",
     "repo": "luqin/react-bootstrap-tree"
+  },
+  {
+    "name": "react-native",
+    "repo": "facebook/react-native"
   }
 ]
