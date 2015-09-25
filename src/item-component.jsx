@@ -18,6 +18,7 @@ let ComponentItem = React.createClass({
     modified: React.PropTypes.string.isRequired,
     name: React.PropTypes.string.isRequired,
     stars: React.PropTypes.number.isRequired,
+    platforms: React.PropTypes.object,
     debugMode: React.PropTypes.bool
   },
   getDefaultProps() {
@@ -67,9 +68,22 @@ let ComponentItem = React.createClass({
         fontSize: this.remCalc(15),
         paddingLeft: this.remCalc(8)
       },
+      body: {
+        alignItems: "center",
+        boxSizing: "border-box",
+        display: "flex"
+      },
       description: {
+        WebkitBoxFlex: 1,
+        flex: 1,
         color: "#000",
         margin: 0
+      },
+      platform: {
+        color: "#aaa",
+        fontSize: this.remCalc(15),
+        marginLeft: this.remCalc(4),
+        marginRight: this.remCalc(-3)
       }
     };
 
@@ -104,9 +118,15 @@ let ComponentItem = React.createClass({
             <span>v{this.props.latestVersion}</span>
           </div>
         </div>
-        <p style={styles.description}>
-          {this.props.description}
-        </p>
+        <div style={styles.body}>
+          <p style={styles.description}>
+            {this.props.description}
+          </p>
+          { this.props.platforms && this.props.platforms.android &&
+            <div style={styles.platform}><Icon icon="android" /></div> }
+          { this.props.platforms && this.props.platforms.ios &&
+            <div style={styles.platform}><Icon icon="ios" /></div> }
+        </div>
       </a>
     );
   }

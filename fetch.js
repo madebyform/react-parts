@@ -69,7 +69,7 @@ components.forEach(function(component) {
         };
         let stat = (yield request(options)).body;
 
-        resolve({
+        let data = {
           name:        component.name,
           githubUser:  component.repo.split("/")[0],
           description: npm.description,
@@ -79,7 +79,28 @@ components.forEach(function(component) {
           stars:       github.stargazers_count,
           downloads:   (stat.downloads || [{ downloads: 0 }]).reduce((total, daily) => total + daily.downloads, 0),
           latestVersion: npm["dist-tags"].latest
-        });
+        };
+
+        // If it's a react native component, check which platforms it has specific code for
+        if (componentsType == "react-native") {
+          options = {
+            url: `${ endpoints.github }${ component.repo }/languages`,
+            headers: { 'User-Agent': 'request' },
+            auth: { 'user': keys.github.username, 'pass': keys.github.password },
+            json: true
+          };
+          let languages = (yield request(options)).body;
+
+          if (languages.Java) {
+            data.platforms = { android: true };
+          }
+          if (languages['Objective-C']) {
+            data.platforms = data.platforms || {};
+            data.platforms.ios = true;
+          }
+        }
+
+        resolve(data);
         process.stdout.write(".");
 
       }).catch(function() {
