@@ -154,6 +154,23 @@ function parseAndSave(data) {
     }
   });
 
+  // Log information about new components that can be used for tweeting
+  nativeCandidates.concat(webCandidates).forEach(function(component) {
+    let tweet = `🆕 ${ component.name }: <DSC>`;
+    let maxLength = 140 - 31 - tweet.length;
+
+    let homepage = `${ component.homepage }`.replace("#readme", "");
+    let description = `${ component.description }`;
+
+    if (description.length > maxLength) {
+      description = description.substring(0, maxLength - 1) + "…";
+    } else if (description[description.length - 1] == ".") {
+      description = description.substring(0, description.length - 1);
+    }
+    tweet = tweet.replace("<DSC>", description) + ` ${ homepage } ⚛`;
+    console.log(tweet);
+  });
+
   // Keep only the component name and its repo
   webCandidates = slimComponentInfo(webCandidates);
   nativeCandidates = slimComponentInfo(nativeCandidates);
