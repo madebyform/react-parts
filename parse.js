@@ -1,41 +1,51 @@
-/*jshint node:true, unused:true */
-var fs = require('fs');
-var path = require('path');
+/*jshint esnext:true, node:true, unused:true */
+'use strict';
 
-var existingNativeComponents = require('./components/react-native.json');
-var existingWebComponents = require('./components/react-web.json');
-var rejectedComponents = require('./components/rejected.json');
-
-var existing = {};
-fromArrayToMap(existingNativeComponents, existing);
-fromArrayToMap(existingWebComponents, existing);
-fromArrayToMap(rejectedComponents, existing);
-
-var npmDataFilename = path.join(__dirname, 'data', 'npm.json');
-var sinceDate = new Date(process.argv[2] || "2010-01-01");
+let fs = require('fs');
+let path = require('path');
 
 // Paths to the JSON files with the lists of components
-var webCandidatesFilename = path.join(__dirname, 'components', "react-web.json");
-var nativeCandidatesFilename = path.join(__dirname, 'components', "react-native.json");
+let nativeComponentsFilename = path.join(__dirname, "components", "react-native.json");
+let webComponentsFilename = path.join(__dirname, "components", "react-web.json");
+let rejectedComponentsFilename = path.join(__dirname, "components", "rejected.json");
+
+// Load existing components
+let existingNativeComponents = require(nativeComponentsFilename);
+let existingWebComponents = require(webComponentsFilename);
+let rejectedComponents = require(rejectedComponentsFilename);
+
+// List of all existing components (native, web and rejected)
+let existing = toObject(existingNativeComponents, {});
+toObject(existingWebComponents, existing);
+toObject(rejectedComponents, existing);
+
+let npmDataFilename = path.join(__dirname, 'data', 'npm.json');
+let sinceDate = new Date(process.argv[2] || "2010-01-01");
 
 // Keywords that identify a component for react for web
-// For eg, `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
-var webKeywords = [
+// For eg: `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
+let webKeywords = [
   "react-component",
   ["react", "component"],
   ["reactjs", "component"]
 ];
 
 // Keywords that identify a component for react native
-var nativeKeywords = [
+let nativeKeywords = [
+  "react-native",
   "react-native-component",
   ["react-native", "component"],
   ["react-native", "react-component"],
   ["react", "native", "component"]
 ];
 
+function toObject(array, object) {
+  array.forEach((element) => { object[element.name] = element; });
+  return object;
+}
+
 function matcher(prop, partialStore, allKeywords) {
-  for (var i = 0; i < allKeywords.length; i++) {
+  for (let i = 0; i < allKeywords.length; i++) {
     if (allKeywords[i] instanceof Array) {
       if (partialMatcher(prop, allKeywords[i], partialStore))
         return true;
@@ -48,8 +58,8 @@ function matcher(prop, partialStore, allKeywords) {
 }
 
 function partialMatcher(prop, keywords, partialStore) {
-  var complete = true;
-  for (var i = 0; i < keywords.length; i++) {
+  let complete = true;
+  for (let i = 0; i < keywords.length; i++) {
     if (prop.indexOf(keywords[i]) != -1) {
       partialStore[keywords[i]] = true;
     }
@@ -58,18 +68,13 @@ function partialMatcher(prop, keywords, partialStore) {
   return complete;
 }
 
-function fromArrayToMap(ary, map) {
-  for (var i = 0; i < ary.length; i++) {
-    map[ary[i].name] = ary[i];
-  }
-}
-
 // Checks if the component is hosted on GitHub
 function isGitHubBased(candidate) {
   return (candidate.repository && candidate.repository.url &&
     candidate.repository.url.indexOf("github.com") != -1);
 }
 
+// Check if the given candidate has been modified since a given date
 function isModifiedSince(candidate, since) {
   return (candidate.time && candidate.time.modified &&
     new Date(candidate.time.modified) >= since);
@@ -88,73 +93,64 @@ function slimComponentInfo(components) {
   return components.map(function(candidate) {
     return {
       name: candidate.name,
-      repo: repoUrlToShortRepo(candidate.repository.url),
-      // npm: "https://npmjs.com/package/" + candidate.name,
-      // github: candidate.repository.url.replace("git://", "https://")
+      repo: repoUrlToShortRepo(candidate.repository.url)
     };
   });
 }
 
 function parseAndSave(data) {
-  var webCandidates = [];
-  var nativeCandidates = [];
+  let webCandidates = [];
+  let nativeCandidates = [];
 
   Object.keys(data).forEach(function(key) {
-    var candidate = data[key];
-    var webPartialStore = {};
-    var nativePartialStore = {};
+    let candidate = data[key];
+    let webPartialStore = {};
+    let nativePartialStore = {};
 
-    // A component is considered if it's hosted on GitHub and matches the given modified timestamp
-    if (!(candidate instanceof Object) || !isModifiedSince(candidate, sinceDate) || !isGitHubBased(candidate))
-      return;
+    // A component is considered if it's hosted on GitHub and matches the given timestamp
+    if (!(candidate instanceof Object) || !isModifiedSince(candidate, sinceDate) ||
+      !isGitHubBased(candidate) || existing[candidate.name]) {
+        return;
+    }
 
+    // Search for keywords in the `keywords` prop
     if (candidate.keywords && candidate.keywords instanceof Array) {
-      if (matcher(candidate.keywords, nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
-        nativeCandidates.push(candidate);
-        return;
+      if (matcher(candidate.keywords, nativePartialStore, nativeKeywords)) {
+        return nativeCandidates.push(candidate);
       }
-      if (matcher(candidate.keywords, webPartialStore, webKeywords) && !existing[candidate.name]) {
-        webCandidates.push(candidate);
-        return;
+      if (matcher(candidate.keywords, webPartialStore, webKeywords)) {
+        return webCandidates.push(candidate);
       }
     }
 
-    if (candidate.description) {
-      if (matcher(candidate.description.toLowerCase(), nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
-        nativeCandidates.push(candidate);
-        return;
+    // Search for keywords in the other text props
+    ["name", "description", "readme"].forEach(function(prop) {
+      if (candidate[prop]) {
+        if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
+          return nativeCandidates.push(candidate);
+        }
+        if (matcher(candidate[prop].toLowerCase(), webPartialStore, webKeywords)) {
+          return webCandidates.push(candidate);
+        }
       }
-      if (matcher(candidate.description.toLowerCase(), webPartialStore, webKeywords) && !existing[candidate.name]) {
-        webCandidates.push(candidate);
-        return;
-      }
-    }
+    });
 
-    if (candidate.readme) {
-      if (matcher(candidate.readme.toLowerCase(), nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
-        nativeCandidates.push(candidate);
-        return;
-      }
-      if (matcher(candidate.readme.toLowerCase(), webPartialStore, webKeywords) && !existing[candidate.name]) {
-        webCandidates.push(candidate);
-        return;
-      }
-    }
-
+    // Search for keywords inside versions
     if (candidate.versions && candidate.versions instanceof Object) {
-      var versions = Object.keys(candidate.versions);
-      for (var v = 0; v < versions.length; v++) {
-        if (!versions[v].dependencies) continue;
+      let versions = Object.keys(candidate.versions);
 
-        if (matcher(Object.keys(versions[v].dependencies), nativePartialStore, nativeKeywords) && !existing[candidate.name]) {
-          nativeCandidates.push(candidate);
-          return;
-        }
-        if (matcher(Object.keys(versions[v].dependencies), webPartialStore, webKeywords) && !existing[candidate.name]) {
-          webCandidates.push(candidate);
-          return;
-        }
-      }
+      versions.forEach(function(version) {
+        ["dependencies", "peerDependencies", "devDependencies"].forEach(function(prop) {
+          if (version[prop]) {
+            if (matcher(version[prop], nativePartialStore, nativeKeywords)) {
+              return nativeCandidates.push(candidate);
+            }
+            if (matcher(version[prop], webPartialStore, webKeywords)) {
+              return webCandidates.push(candidate);
+            }
+          }
+        });
+      });
     }
   });
 
@@ -163,18 +159,17 @@ function parseAndSave(data) {
   nativeCandidates = slimComponentInfo(nativeCandidates);
 
   // Update the JSON files
-  var webComponents = existingWebComponents.concat(webCandidates);
-  var nativeComponents = existingNativeComponents.concat(nativeCandidates);
-  fs.writeFile(webCandidatesFilename, JSON.stringify(webComponents, null, '  '));
-  fs.writeFile(nativeCandidatesFilename, JSON.stringify(nativeComponents, null, '  '));
+  let webComponents = existingWebComponents.concat(webCandidates);
+  let nativeComponents = existingNativeComponents.concat(nativeCandidates);
+  fs.writeFile(webComponentsFilename, JSON.stringify(webComponents, null, '  '));
+  fs.writeFile(nativeComponentsFilename, JSON.stringify(nativeComponents, null, '  '));
 
-  console.log("Completed with: \n "+
-    webCandidates.length +" new web components\n "+
-    nativeCandidates.length +" new native components");
+  console.log(`Completed with ${ webCandidates.length } web components ` +
+    `and ${ nativeCandidates.length } native components`);
 }
 
 // Read and parse all the data in the file downloaded from NPM
 fs.readFile(npmDataFilename, "utf8", function (err, data) {
-  var json = JSON.parse(data);
+  let json = JSON.parse(data);
   parseAndSave(json);
 });

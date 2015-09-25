@@ -76,7 +76,7 @@ let ComponentItem = React.createClass({
     if (this.props.debugMode) {
       ['description', 'modified', 'stars'].forEach((prop) => {
         if (typeof this.props[prop] == "undefined")
-          console.log(`Undefined ${ prop } for ${ this.props.repo }`);
+          console.log(`Undefined ${ prop } for ${ this.props.name }`);
       });
     }
     return (

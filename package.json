@@ -8,6 +8,8 @@
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
+    "co": "^4.6.0",
+    "co-request": "^1.0.0",
     "connect-cachify": "^0.0.17",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
@@ -30,8 +32,6 @@
     "js:minify": "uglifyjs assets/app.js -o assets/app.min.js",
     "js:watch": "watchify src/app.jsx -t babelify --outfile assets/app.js",
     "download:all": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
-    "download:recent": "npm run download:today && npm run download:yesterday",
-    "download:today": "curl -L https://registry.npmjs.org/-/all/static/today.json -o data/npm.json",
     "download:yesterday": "curl -L https://registry.npmjs.org/-/all/static/yesterday.json -o data/npm.json",
     "fetch": "node fetch.js",
     "parse": "node parse.js"

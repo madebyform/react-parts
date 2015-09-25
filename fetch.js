@@ -1,139 +1,111 @@
-/*jshint node:true, unused:vars */
-/*globals Promise*/
+/*jshint esnext:true, node:true, unused:true */
 'use strict';
 
-require('babel/register');
+let fs = require('fs');
+let path = require('path');
+let co = require("co");
+let request = require("co-request");
+let keys = require('./keys.json');
 
-var fs = require('fs');
-var path = require('path');
-var request = require('request');
-var keys = require('./keys.json');
+// Pass the components list you which to update ("react" or "react-native")
+let componentsType = process.argv[2] || "react-native";
+let componentsFile = path.join(__dirname, "components", `${ componentsType }.json`);
+let components = require(componentsFile);
 
-// Pass the components list you which to update "react" or "react-native"
-var componentsType = process.argv[2] || "react-native";
-var componentsFile = path.join(__dirname, 'components', componentsType + '.json');
-var components = require(componentsFile);
-var componentsDataFile = path.join(__dirname, 'data', componentsType + '.json');
-var oldComponentsData = require(componentsDataFile);
-var rejectedComponents = require('./components/rejected.json');
+// Load the existing data file, with all the existing metadata
+let componentsDataFile = path.join(__dirname, "data", `${ componentsType }.json`);
+let oldComponentsData = require(componentsDataFile);
 
-var endpoints = {
+// Load rejected components. Rejected components will be removed from the data files
+let rejectedComponents = toObject(require('./components/rejected.json'), {});
+
+// We'll fetch metadata from NPM, GitHub and NPM-Stat
+let endpoints = {
   npm: "https://registry.npmjs.com/",
   github: "https://api.github.com/repos/",
-  npm_stat: "http://npm-stat.com/downloads/range/"
+  npmStat: "http://npm-stat.com/downloads/range/"
 };
 
-var promises = [];
+function toObject(array, object) {
+  array.forEach((element) => { object[element.name] = element; });
+  return object;
+}
+
+let currentTime = new Date().toISOString().substr(0, 10), startTime;
+let promises = [], options = {};
 
 // Example usage: `npm run fetch react-web 2`
 // This will make a partial update to the data file
 if (process.argv[3]) {
-  var sliceArg = parseInt(process.argv[3]); // Eg: 2
-  var sliceStart = sliceArg * 100 - 100;    // 100
-  var sliceEnd   = sliceArg * 100;          // 200
+  let interval = 50;
+  let sliceArg = parseInt(process.argv[3]); // Eg: 2
+  let sliceStart = sliceArg * interval - interval; // 50
+  let sliceEnd   = sliceArg * interval; // 100
   components = components.slice(sliceStart, sliceEnd);
 }
 
-function fromArrayToMap(ary, map) {
-  for (var i = 0; i < ary.length; i++) {
-    map[ary[i].name] = ary[i];
-  }
-}
-
 components.forEach(function(component) {
-  var merge = function(val) {
-    process.stdout.write(".");
-    Object.assign(component, val);
-  };
-
   promises.push(
-    new Promise(function(resolve, reject) {
-      var options = {
-        url: endpoints.npm + component.name,
-        json: true
-      };
-
-      // NPM
-      request(options, function(error, response, data) {
-        if (!data["dist-tags"]) console.log("Problems with dist data for: "+ component.name);
-        var latestVersion = data["dist-tags"].latest;
-        var githubUrl = "https://github.com/" + component.repo;
-
-        resolve({
-          name: component.name,
-          githubUser: component.repo.split("/")[0],
-          description: data.description,
-          latestVersion: latestVersion,
-          homepage: data.versions[latestVersion].homepage || githubUrl,
-          keywords: (data.versions[latestVersion].keywords || []).join(", "),
-          created: data.time.created,
-          modified: data.time.modified
-        });
-
-      });
-    }).then(function(val) {
-      merge(val);
-
-      // NPM-STAT depends on the NPM, so we chain the promises
-      return new Promise(function(resolve, reject) {
-        var currentTime = (new Date()).toISOString().substr(0,10);
-        var start = (new Date(component.created)).toISOString().substr(0,10);
-
-        var options = {
-          url: endpoints.npm_stat + start + ":" + currentTime + "/" + component.name,
+    new Promise(function(resolve) {
+      co(function* () {
+        options = {
+          url: endpoints.npm + component.name,
           json: true
         };
+        let npm = (yield request(options)).body;
 
-        request(options, function(error, response, data) {
-          var noDownloads = [{downloads: 0}];
+        options = {
+          url: endpoints.github + component.repo,
+          headers: { 'User-Agent': 'request' },
+          auth: { 'user': keys.github.username, 'pass': keys.github.password },
+          json: true
+        };
+        let github = (yield request(options)).body;
 
-          resolve({
-            downloads: (data.downloads || noDownloads).reduce(function(total, daily) {
-              return total + daily.downloads;
-            }, 0)
-          });
-        });
-      });
-    }).then(merge)
-  );
+        startTime = new Date(npm.time.created).toISOString().substr(0,10);
+        options = {
+          url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`,
+          json: true
+        };
+        let stat = (yield request(options)).body;
 
-  promises.push(
-    // GitHub
-    new Promise(function(resolve, reject) {
-      var options = {
-        url: endpoints.github + component.repo,
-        headers: { 'User-Agent': 'request' },
-        auth: { 'user': keys.github.username, 'pass': keys.github.password },
-        json: true
-      };
-
-      request(options, function(error, response, data) {
         resolve({
-          stars: data.stargazers_count
+          name:        component.name,
+          githubUser:  component.repo.split("/")[0],
+          description: npm.description,
+          homepage:    npm.versions[npm["dist-tags"].latest].homepage || `https://github.com/${ component.repo }`,
+          keywords:    (npm.versions[npm["dist-tags"].latest].keywords || []).join(", "),
+          modified:    npm.time.modified,
+          stars:       github.stargazers_count,
+          downloads:   (stat.downloads || [{ downloads: 0 }]).reduce((total, daily) => total + daily.downloads, 0),
+          latestVersion: npm["dist-tags"].latest
         });
+        process.stdout.write(".");
+
+      }).catch(function() {
+        process.stdout.write(` Problems with data for: ${ component.name } `);
+        resolve(component);
       });
-    }).then(merge)
+    })
   );
 });
 
-Promise.all(promises).then(function(values) {
-  var allData = {}, newList = [], rejected = {};
-  fromArrayToMap(rejectedComponents, rejected);
+Promise.all(promises).then(function(newData) {
+  let allData = {}, newList = [];
 
   // Merge old fetched data with the new one, since we may have done a
   // partial fetch this time
-  oldComponentsData.concat(components).forEach(function(c) {
+  oldComponentsData.concat(newData).forEach(function(c) {
     allData[c.name] = Object.assign(allData[c.name] || {}, c);
   });
 
   // Convert back to an array and make sure there aren't duplicates
   Object.keys(allData).forEach(function(key) {
-    if (!rejected[key])
-      newList.push(allData[key]);
+    if (!rejectedComponents[key]) newList.push(allData[key]);
   });
 
   // Persist the new data
-  var str = JSON.stringify(newList);
+  let str = JSON.stringify(newList);
   fs.writeFile(componentsDataFile, str);
 
   console.log("\nSuccess!");
