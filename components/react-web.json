@@ -1664,10 +1664,6 @@
     "repo": "alex1712/react-bootstrap-datetimepicker"
   },
   {
-    "name": "null-default-props",
-    "repo": "jarsbe/null-default-props"
-  },
-  {
     "name": "piwik-react-router",
     "repo": "joernroeder/piwik-react-router"
   },
@@ -3312,24 +3308,8 @@
     "repo": "marekhrabe/window-blur-mixin"
   },
   {
-    "name": "y-button",
-    "repo": "y-components/y-button"
-  },
-  {
-    "name": "y-checkbox",
-    "repo": "y-components/y-checkbox"
-  },
-  {
     "name": "y-header",
     "repo": "floatdrop/y-header"
-  },
-  {
-    "name": "y-input",
-    "repo": "y-components/y-input"
-  },
-  {
-    "name": "y-select",
-    "repo": "y-components/y-select"
   },
   {
     "name": "y-tabs",
@@ -7418,5 +7398,21 @@
   {
     "name": "react-window-kit",
     "repo": "zhbhun/react-window-kit"
+  },
+  {
+    "name": "react-bootstrap-window",
+    "repo": "zhbhun/react-bootstrap-window"
+  },
+  {
+    "name": "encapsulate",
+    "repo": "craftsy/encapsulate"
+  },
+  {
+    "name": "paper-checkbox",
+    "repo": "scienceai/paper-checkbox"
+  },
+  {
+    "name": "react-fileupload-progress",
+    "repo": "georgeosddev/react-fileupload-progress"
   }
 ]

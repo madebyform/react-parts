@@ -1130,5 +1130,9 @@
   {
     "name": "react-router-native",
     "repo": "rackt/react-router"
+  },
+  {
+    "name": "react-native-globalize",
+    "repo": "joshswan/react-native-globalize"
   }
 ]
