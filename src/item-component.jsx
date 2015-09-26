@@ -118,7 +118,7 @@ let ComponentItem = React.createClass({
             <span>v{this.props.latestVersion}</span>
           </div>
         </div>
-        <div style={styles.body}>
+        <div className="ComponentItem-body" style={styles.body}>
           <p style={styles.description}>
             {this.props.description}
           </p>
