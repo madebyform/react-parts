@@ -60,6 +60,7 @@ let ComponentItem = React.createClass({
         whiteSpace: "nowrap"
       },
       name: {
+        color: "#000",
         fontSize: this.remCalc(17),
         fontWeight: 600,
         textDecoration: "none"
@@ -68,7 +69,13 @@ let ComponentItem = React.createClass({
         WebkitFontSmoothing: "antialiased",
         color: "#aaa",
         letterSpacing: this.remCalc(-0.4),
-        paddingLeft: this.remCalc(5)
+        paddingLeft: this.remCalc(6)
+      },
+      visited: {
+        WebkitFontSmoothing: "antialiased",
+        display: "inline-block",
+        paddingLeft: this.remCalc(6),
+        transform: "skewX(-9deg)"
       },
       stats: {
         color: "#aaa",
@@ -93,6 +100,7 @@ let ComponentItem = React.createClass({
       },
       body: {
         boxSizing: "border-box",
+        color: "#000",
         fontSize: this.remCalc(15.5),
         lineHeight: 1.3
       },
@@ -132,7 +140,7 @@ let ComponentItem = React.createClass({
       });
     }
     return (
-      <a style={styles.container} href={this.props.homepage}>
+      <a className="u-visited" style={styles.container} href={this.props.homepage}>
         <div className="u-displayFlex" style={styles.content}>
           <div style={styles.main}>
             <h3 style={styles.title}>
@@ -142,6 +150,7 @@ let ComponentItem = React.createClass({
               <span style={styles.author}>
                 v{this.props.latestVersion} <TimeAgo dateTime={this.props.modified} /> by {this.props.githubUser}
               </span>
+              <span style={styles.visited}>visited</span>
             </h3>
             <div style={styles.body}>
               {this.props.description}
