@@ -72,14 +72,17 @@ components.forEach(function(component) {
         let data = {
           name:        component.name,
           githubUser:  component.repo.split("/")[0],
+          githubName:  component.repo.split("/")[1],
           description: npm.description,
-          homepage:    npm.versions[npm["dist-tags"].latest].homepage || `https://github.com/${ component.repo }`,
           keywords:    (npm.versions[npm["dist-tags"].latest].keywords || []).join(", "),
           modified:    npm.time.modified,
           stars:       github.stargazers_count,
           downloads:   (stat.downloads || [{ downloads: 0 }]).reduce((total, daily) => total + daily.downloads, 0),
           latestVersion: npm["dist-tags"].latest
         };
+
+        // To save some bytes, if package name and repo name are equal, keep only one
+        if (data.name === data.githubName) delete data.githubName;
 
         // If it's a react native component, check which platforms it has specific code for
         if (componentsType == "react-native") {

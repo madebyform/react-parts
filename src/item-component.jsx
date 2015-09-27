@@ -13,7 +13,7 @@ let ComponentItem = React.createClass({
   propTypes: {
     description: React.PropTypes.string,
     githubUser: React.PropTypes.string.isRequired,
-    homepage: React.PropTypes.string.isRequired,
+    githubName: React.PropTypes.string,
     latestVersion: React.PropTypes.string.isRequired,
     modified: React.PropTypes.string.isRequired,
     name: React.PropTypes.string.isRequired,
@@ -139,8 +139,10 @@ let ComponentItem = React.createClass({
           console.log(`Undefined ${ prop } for ${ this.props.name }`);
       });
     }
+
     return (
-      <a className="u-visited" style={styles.container} href={this.props.homepage}>
+      <a className="u-visited" style={styles.container}
+        href={`https://github.com/${ this.props.githubUser }/${ this.props.githubName || this.props.name }`}>
         <div className="u-displayFlex" style={styles.content}>
           <div style={styles.main}>
             <h3 style={styles.title}>
