@@ -12,6 +12,7 @@ import {Tabs, Tab} from './tabs-component.jsx';
 import Pagination from './pagination-component.jsx';
 import Scroller from './scroller-component.jsx';
 import Footer from './footer-component.jsx';
+import Twitter from './twitter-component.jsx';
 import sortBy from './sort';
 
 let Route = Router.Route;
@@ -86,6 +87,8 @@ export var App = React.createClass({
 
           <Footer />
         </div>
+
+        <Twitter />
       </Scroller>
     );
   },
