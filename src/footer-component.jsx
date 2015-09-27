@@ -20,12 +20,12 @@ let Footer = React.createClass({
         marginLeft: this.remCalc(62)
       },
       label: {
-        paddingRight: this.remCalc(20)
+        paddingRight: this.remCalc(16)
       },
       link: {
         color: "#253b6b",
         fontWeight: 600,
-        paddingRight: this.remCalc(20),
+        paddingRight: this.remCalc(16),
         textDecoration: "none"
       },
       logo: {
@@ -57,7 +57,7 @@ let Footer = React.createClass({
             Slack
           </a>
           <a style={styles.link} href="https://github.com/facebook/react/wiki/">
-            <span className="u-hideSmall">React</span> Wiki
+            Wiki
           </a>
           <a style={styles.link} href="https://github.com/enaqx/awesome-react/">
             Awesome React

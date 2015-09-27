@@ -48,7 +48,7 @@ let Navbar = React.createClass({
         height: "100%",
         justifyContent: "center",
         marginLeft: this.remCalc(12),
-        maxWidth: this.remCalc(800),
+        maxWidth: this.remCalc(710),
         paddingRight: this.remCalc(10)
       },
       search: {
