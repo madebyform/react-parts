@@ -9,6 +9,9 @@ let PureRenderMixin = React.addons.PureRenderMixin;
 
 let NoComponents = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
+  propTypes: {
+    message: React.PropTypes.string.isRequired
+  },
   render() {
     let styles = {
       container: {
@@ -24,7 +27,7 @@ let NoComponents = React.createClass({
     };
     return (
       <div style={styles.container}>
-        <p style={styles.message}>No components found.</p>
+        <p style={styles.message}>{this.props.message}</p>
       </div>
     );
   }
@@ -34,6 +37,7 @@ let ComponentList = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   propTypes: {
     components: React.PropTypes.array.isRequired,
+    loading: React.PropTypes.bool,
     debugMode: React.PropTypes.bool
   },
   getDefaultProps() {
@@ -55,9 +59,13 @@ let ComponentList = React.createClass({
       );
     });
 
-    if (components.length === 0) {
+    if (this.props.loading) {
       return (
-        <NoComponents />
+        <NoComponents message="Loading…" />
+      );
+    } else if (components.length === 0) {
+      return (
+        <NoComponents message="No components found."/>
       );
     }
 

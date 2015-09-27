@@ -70,7 +70,11 @@ export var App = React.createClass({
             <Tab to="components" params={{type: "web"}}>React for Web</Tab>
           </Tabs>
 
-          <RouteHandler components={componentsForPage} debugMode={this.props.debugMode} />
+          <RouteHandler
+            components={componentsForPage}
+            debugMode={this.props.debugMode}
+            loading={this.state.loading}
+          />
 
           <Pagination
             to="components"
@@ -92,18 +96,21 @@ export var App = React.createClass({
 
     // If the user changed tab, and we don't have the data, fetch it
     if (!components[type] || components[type].length === 0) {
+      // Clear the list and display loading message
+      this.setState({ components, filtered: [], loading: true });
+
       window.fetch(`/api/components/${type}`).then((response) => {
         response.json().then((data) => {
           components[type] = data;
           // Update both the complete and filtered components lists
           let filtered = this.filterForSearch(components[type], searchQuery);
-          this.setState({ components, filtered });
+          this.setState({ components, filtered, loading: false });
         });
       });
     } else {
       // We already have the data, simply reset the search filters
       let filtered = this.filterForSearch(components[type], searchQuery);
-      this.setState({ filtered });
+      this.setState({ filtered, loading: false });
     }
   },
   handleSearch(searchQuery) {
