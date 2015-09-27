@@ -37,18 +37,24 @@ let ComponentItem = React.createClass({
         padding: this.remCalc(12, 16, 14),
         textDecoration: "none"
       },
-      header: {
+      content: {
         alignItems: "center",
         boxSizing: "border-box",
         display: "flex",
-        marginBottom: this.remCalc(4)
       },
-      title: {
+      main: {
         WebkitBoxFlex: 1,
         flex: 1,
-        fontSize: this.remCalc(15),
-        fontWeight: 200,
+      },
+      sidebar: {
+        marginTop: this.remCalc(2),
+        marginBottom: this.remCalc(-5)
+      },
+      title: {
+        fontSize: this.remCalc(16),
+        fontWeight: 400,
         margin: 0,
+        marginBottom: this.remCalc(4),
         overflow: "hidden",
         textOverflow: "ellipsis",
         whiteSpace: "nowrap"
@@ -58,32 +64,64 @@ let ComponentItem = React.createClass({
         fontWeight: 600,
         textDecoration: "none"
       },
-      metadata: {
+      author: {
+        WebkitFontSmoothing: "antialiased",
         color: "#aaa",
-        fontSize: this.remCalc(15),
-        paddingLeft: this.remCalc(4)
+        letterSpacing: this.remCalc(-0.4),
+        paddingLeft: this.remCalc(5)
       },
       stats: {
-        color: "#000",
-        fontSize: this.remCalc(15),
-        paddingLeft: this.remCalc(8)
+        color: "#aaa",
+        fontSize: this.remCalc(14),
+        textAlign: "right",
+        marginBottom: this.remCalc(6),
+        paddingLeft: this.remCalc(16)
+      },
+      statsIcon: {
+        fontSize: this.remCalc(19),
+        marginLeft: this.remCalc(8),
+        marginRight: this.remCalc(-1),
+        verticalAlign: "-0.2em",
+      },
+      topStars: {
+        color: "#d3b656",
+        fontWeight: 600
+      },
+      topDownloads: {
+        color: "#757db1",
+        fontWeight: 600
       },
       body: {
+        boxSizing: "border-box",
+        fontSize: this.remCalc(15.5),
+        lineHeight: 1.3
+      },
+      footer: {
+        WebkitFontSmoothing: "antialiased",
         alignItems: "center",
         boxSizing: "border-box",
-        display: "flex"
+        color: "#aaa",
+        display: "flex",
+        fontSize: this.remCalc(15),
+        letterSpacing: this.remCalc(-0.4),
+        marginTop: this.remCalc(5)
       },
-      description: {
+      metadata: {
         WebkitBoxFlex: 1,
-        flex: 1,
-        color: "#000",
-        margin: 0
+        flex: 1
       },
       platform: {
-        color: "#aaa",
-        fontSize: this.remCalc(15),
-        marginLeft: this.remCalc(4),
-        marginRight: this.remCalc(-3)
+        paddingRight: this.remCalc(20)
+      },
+      platformIcon: {
+        fontSize: this.remCalc(16),
+        marginLeft: this.remCalc(-2),
+        marginRight: this.remCalc(4)
+      },
+      timestamp: {
+        WebkitBoxFlex: 1,
+        flex: 1,
+        textAlign: "right"
       }
     };
 
@@ -94,38 +132,50 @@ let ComponentItem = React.createClass({
       });
     }
     return (
-      <a className="ComponentItem" style={styles.container} href={this.props.homepage}>
-        <div className="ComponentItem-header" style={styles.header}>
-          <h3 style={styles.title}>
-            <span style={styles.name}>
-              {this.props.name}
-            </span>
-            <small>
-              <span style={styles.metadata}>by {this.props.githubUser}</span>
-              <TimeAgo dateTime={this.props.modified} style={styles.metadata} />
-            </small>
-          </h3>
-          <div style={styles.stats}>
-            <Icon icon="cloud-download" />
-            <span>{this.props.downloads}</span>
+      <a style={styles.container} href={this.props.homepage}>
+        <div className="u-displayFlex" style={styles.content}>
+          <div style={styles.main}>
+            <h3 style={styles.title}>
+              <span style={styles.name}>
+                {this.props.name}
+              </span>
+              <span style={styles.author}>
+                v{this.props.latestVersion} <TimeAgo dateTime={this.props.modified} /> by {this.props.githubUser}
+              </span>
+            </h3>
+            <div style={styles.body}>
+              {this.props.description}
+            </div>
+
+            { this.props.platforms &&
+            <div className="u-displayFlex" style={styles.footer}>
+              <span style={styles.metadata}>
+                { this.props.platforms && this.props.platforms.ios &&
+                <span style={styles.platform}>
+                  <Icon icon="ios" style={styles.platformIcon} /> For iOS
+                </span> }
+                { this.props.platforms && this.props.platforms.android &&
+                <span style={styles.platform}>
+                  <Icon icon="android" style={styles.platformIcon} /> For Android
+                </span> }
+              </span>
+            </div> }
           </div>
-          <div style={styles.stats}>
-            <Icon icon="stars" />
-            <span>{this.props.stars}</span>
+
+          <div style={styles.sidebar}>
+            <div style={styles.stats}>
+              <span style={ this.props.stars > 100 ? styles.topStars : {} }>
+                <span>{this.props.stars}</span>
+                <Icon icon="stars" style={styles.statsIcon} />
+              </span>
+            </div>
+            <div style={styles.stats}>
+              <span style={ this.props.downloads > 2500 ? styles.topDownloads : {} }>
+                <span>{this.props.downloads}</span>
+                <Icon icon="cloud-download" style={styles.statsIcon} />
+              </span>
+            </div>
           </div>
-          <div style={styles.stats}>
-            <Icon icon="versions" />
-            <span>v{this.props.latestVersion}</span>
-          </div>
-        </div>
-        <div className="ComponentItem-body" style={styles.body}>
-          <p style={styles.description}>
-            {this.props.description}
-          </p>
-          { this.props.platforms && this.props.platforms.android &&
-            <div style={styles.platform}><Icon icon="android" /></div> }
-          { this.props.platforms && this.props.platforms.ios &&
-            <div style={styles.platform}><Icon icon="ios" /></div> }
         </div>
       </a>
     );

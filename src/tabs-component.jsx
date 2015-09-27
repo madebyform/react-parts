@@ -77,7 +77,7 @@ export let Tabs = React.createClass({
       },
     };
     return (
-      <div style={styles.container} className="Tabs">
+      <div style={styles.container} className="u-displayFlex">
         {this.props.children}
       </div>
     );

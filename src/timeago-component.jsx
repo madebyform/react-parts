@@ -32,7 +32,7 @@ let TimeAgo = React.createClass({
     let relativeTimestamp = timeago(this.props.dateTime);
     return (
       <time dateTime={this.props.dateTime} style={this.props.style}>
-        { relativeTimestamp && `updated ${ relativeTimestamp }` }
+        { relativeTimestamp && `published ${ relativeTimestamp }` }
       </time>
     );
   }

@@ -25,7 +25,7 @@ let Footer = React.createClass({
       link: {
         color: "#253b6b",
         fontWeight: 600,
-        paddingRight: this.remCalc(16),
+        paddingRight: this.remCalc(14),
         textDecoration: "none"
       },
       logo: {
@@ -59,11 +59,11 @@ let Footer = React.createClass({
           <a style={styles.link} href="https://github.com/facebook/react/wiki/">
             Wiki
           </a>
-          <a style={styles.link} href="https://github.com/enaqx/awesome-react/">
-            Awesome React
-          </a>
           <a style={styles.link} href="https://github.com/ericvicenti/react-native-community/">
             <span className="u-hideSmall">React Native</span> Community
+          </a>
+          <a style={styles.link} href="https://github.com/enaqx/awesome-react/">
+            Awesome React
           </a>
           <a style={styles.link} href="https://rnplay.org/">
             RNPlay

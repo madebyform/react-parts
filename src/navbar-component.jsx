@@ -85,7 +85,7 @@ let Navbar = React.createClass({
       }
     };
     return (
-      <div className="Navbar" style={styles.container}>
+      <div className="Navbar u-displayFlex" style={styles.container}>
         <div style={styles.left}>
           <a href="/">
             <img style={styles.logo} src="/react-logo.svg" alt="Logo" draggable="false" />
@@ -93,7 +93,7 @@ let Navbar = React.createClass({
         </div>
         <div style={styles.center}>
           <input
-            className="Navbar-search"
+            className="u-forceSmall16"
             ref="search"
             style={styles.search}
             type="text"
