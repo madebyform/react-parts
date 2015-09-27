@@ -31,6 +31,13 @@ function toObject(array, object) {
   return object;
 }
 
+function isDoubleByte(str) {
+  for (var i = 0, n = str.length; i < n; i++) {
+    if (str.charCodeAt( i ) > 255) { return true; }
+  }
+  return false;
+}
+
 let currentTime = new Date().toISOString().substr(0, 10), startTime;
 let promises = [], options = {};
 
@@ -73,7 +80,7 @@ components.forEach(function(component) {
           name:        component.name,
           githubUser:  component.repo.split("/")[0],
           githubName:  component.repo.split("/")[1],
-          description: npm.description,
+          description: (npm.description || "").trim(),
           keywords:    (npm.versions[npm["dist-tags"].latest].keywords || []).join(", "),
           modified:    npm.time.modified,
           stars:       github.stargazers_count,
@@ -83,6 +90,20 @@ components.forEach(function(component) {
 
         // To save some bytes, if package name and repo name are equal, keep only one
         if (data.name === data.githubName) delete data.githubName;
+
+        // Check if our custom description should be used instead
+        if (component.custom_description) {
+          if (component.description != data.description) { // Check if our custom_description is outdated
+            console.log(`Component ${ component.name } has a new description: '${ data.description }'`);
+          } else {
+            data.description = component.custom_description; // Use our custom description
+          }
+        }
+
+        // Add a trailing dot to the description
+        if (data.description[data.description.length - 1] != "." && !isDoubleByte(data.description)) {
+          data.description += ".";
+        }
 
         // If it's a react native component, check which platforms it has specific code for
         if (componentsType == "react-native") {

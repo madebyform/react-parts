@@ -393,6 +393,6 @@
   },
   {
     "name": "neighborly-components",
-    "repo": "neighborly/components.git"
+    "repo": "neighborly/components"
   }
 ]

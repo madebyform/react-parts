@@ -93,7 +93,8 @@ function slimComponentInfo(components) {
   return components.map(function(candidate) {
     return {
       name: candidate.name,
-      repo: repoUrlToShortRepo(candidate.repository.url)
+      repo: repoUrlToShortRepo(candidate.repository.url),
+      description: candidate.description
     };
   });
 }

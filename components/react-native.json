@@ -1,467 +1,584 @@
 [
   {
     "name": "react-native-viewport-units",
-    "repo": "jmstout/react-native-viewport-units"
+    "repo": "jmstout/react-native-viewport-units",
+    "description": "Incredibly simple utility for (sort of) using viewport units with React Native."
   },
   {
     "name": "react-uikit",
-    "repo": "react-uikit/react-uikit"
+    "repo": "react-uikit/react-uikit",
+    "description": "A comprehensive collection of React Native components."
   },
   {
     "name": "react-native-button",
-    "repo": "ide/react-native-button"
+    "repo": "ide/react-native-button",
+    "description": "A button for React apps"
   },
   {
     "name": "react-native-camera",
-    "repo": "lwansbrough/react-native-camera"
+    "repo": "lwansbrough/react-native-camera",
+    "description": "A Camera component for React Native. Also reads barcodes."
   },
   {
     "name": "react-native-carousel",
-    "repo": "nick/react-native-carousel"
+    "repo": "nick/react-native-carousel",
+    "description": "Simple carousel component for react-native"
   },
   {
     "name": "react-native-facebook-login",
-    "repo": "magus/react-native-facebook-login"
+    "repo": "magus/react-native-facebook-login",
+    "description": "React Native wrapper for native iOS Facebook SDK login button and manager"
   },
   {
     "name": "react-native-htmltext",
-    "repo": "siuying/react-native-htmltext"
+    "repo": "siuying/react-native-htmltext",
+    "description": "Use HTML like markup to create stylized text in react-native."
   },
   {
     "name": "react-native-htmlview",
-    "repo": "jsdf/react-native-htmlview"
+    "repo": "jsdf/react-native-htmlview",
+    "description": "A component which renders HTML content as native views"
   },
   {
     "name": "react-native-html-webview",
-    "repo": "almost/react-native-html-webview"
+    "repo": "almost/react-native-html-webview",
+    "description": "Display (possibly untrusted) HTML using a UIWebView in React Native."
   },
   {
     "name": "react-native-icons",
-    "repo": "corymsmith/react-native-icons"
+    "repo": "corymsmith/react-native-icons",
+    "description": "Use 1000's of icon fonts in your React Native app including the tab bar."
   },
   {
     "name": "react-native-linear-gradient",
-    "repo": "brentvatne/react-native-linear-gradient"
+    "repo": "brentvatne/react-native-linear-gradient",
+    "description": "A <LinearGradient> element for react-native"
   },
   {
     "name": "react-native-listener",
-    "repo": "erikras/react-native-listener"
+    "repo": "erikras/react-native-listener",
+    "description": "A utility component to allow easy access to browser native events"
   },
   {
     "name": "react-native-looped-carousel",
-    "repo": "appintheair/react-native-looped-carousel"
+    "repo": "appintheair/react-native-looped-carousel",
+    "description": "Looped carousel for React Native"
   },
   {
     "name": "react-native-markdown",
-    "repo": "lwansbrough/react-native-markdown"
+    "repo": "lwansbrough/react-native-markdown",
+    "description": "A component for rendering Markdown in React Native"
   },
   {
     "name": "react-native-modal",
-    "repo": "brentvatne/react-native-modal"
+    "repo": "brentvatne/react-native-modal",
+    "description": "A <Modal /> component for react-native"
   },
   {
     "name": "react-native-navbar",
-    "repo": "Kureev/react-native-navbar"
+    "repo": "Kureev/react-native-navbar",
+    "description": "Simple customizable navbar component for react-native"
   },
   {
     "name": "react-native-nested-stylesheet",
-    "repo": "pjjanak/react-native-nested-stylesheets"
+    "repo": "pjjanak/react-native-nested-stylesheets",
+    "description": "Nestable stylesheets for react-native."
   },
   {
     "name": "react-native-refreshable-listview",
-    "repo": "jsdf/react-native-refreshable-listview"
+    "repo": "jsdf/react-native-refreshable-listview",
+    "description": "A pull-to-refresh ListView which shows a loading spinner while your data reloads"
   },
   {
     "name": "react-native-side-menu",
-    "repo": "Kureev/react-native-side-menu"
+    "repo": "Kureev/react-native-side-menu",
+    "description": "Simple customizable component to create side menu"
   },
   {
     "name": "react-native-sqlite",
-    "repo": "almost/react-native-sqlite"
+    "repo": "almost/react-native-sqlite",
+    "description": "SQLite3 bindings for React Native"
   },
   {
     "name": "react-native-store",
-    "repo": "thewei/react-native-store"
+    "repo": "thewei/react-native-store",
+    "description": "A simple database base on react-native AsyncStorage."
   },
   {
     "name": "react-native-video",
-    "repo": "brentvatne/react-native-video"
+    "repo": "brentvatne/react-native-video",
+    "description": "A <Video /> element for react-native"
   },
   {
     "name": "sidemenu",
-    "repo": "khanghoang/RNSideMenu"
+    "repo": "khanghoang/RNSideMenu",
+    "description": "iOS Side View with React Native </br> ![Demo](://raw.githubusercontent.com/khanghoang/RNSideView-Examples/master/demo.gif)",
+    "custom_description": "Side menu for React Native"
   },
   {
     "name": "tcomb-form-native",
-    "repo": "gcanti/tcomb-form-native"
+    "repo": "gcanti/tcomb-form-native",
+    "description": "react-native powered UI library for developing forms writing less code"
   },
   {
     "name": "react-native-viewport",
-    "repo": "pjjanak/react-native-viewport"
+    "repo": "pjjanak/react-native-viewport",
+    "description": "Viewport dimensions for react-native"
   },
   {
     "name": "react-native-twitter-login",
-    "repo": "yosit/react-native-twitter-login"
+    "repo": "yosit/react-native-twitter-login",
+    "description": "A sample on how to embed the Native Twitter Login Button in a react native application"
   },
   {
     "name": "react-native-headers",
-    "repo": "sheebz/react-native-headers"
+    "repo": "sheebz/react-native-headers",
+    "description": "generates rythmic header components (H1-H6). Sizes are based on base font size which can be adjusted. "
   },
   {
     "name": "react-native-blur",
-    "repo": "Kureev/react-native-blur"
+    "repo": "Kureev/react-native-blur",
+    "description": "React Native Blur component"
   },
   {
     "name": "react-native-grid-view",
-    "repo": "lucholaf/react-native-grid-view"
+    "repo": "lucholaf/react-native-grid-view",
+    "description": "React Native Grid/Collection View component"
   },
   {
     "name": "react-native-localization",
-    "repo": "stefalda/ReactNativeLocalization"
+    "repo": "stefalda/ReactNativeLocalization",
+    "description": "Simple module to localize the ReactNative interface"
   },
   {
     "name": "react-native-overlay",
-    "repo": "brentvatne/react-native-overlay"
+    "repo": "brentvatne/react-native-overlay",
+    "description": "An <Overlay /> component that brings content inside to the front of the view regardless of its current position in the component tree."
   },
   {
     "name": "react-native-effects-view",
-    "repo": "voronianski/react-native-effects-view"
+    "repo": "voronianski/react-native-effects-view",
+    "description": "ReactNative Component that makes easy to use iOS8 UIVisualEffect"
   },
   {
     "name": "react-native-router",
-    "repo": "t4t5/react-native-router"
+    "repo": "t4t5/react-native-router",
+    "description": "Awesome navigation for your native app."
   },
   {
     "name": "react-native-audiorecorder",
-    "repo": "jsierles/react-native-audio"
+    "repo": "jsierles/react-native-audio",
+    "description": "React Native library for simple audio recording. Wraps AVAudioRecorder."
   },
   {
     "name": "react-native-calendar-picker",
-    "repo": "stephy/CalendarPicker"
+    "repo": "stephy/CalendarPicker",
+    "description": "Calendar Picker Component for React Native"
   },
   {
     "name": "react-native-level",
-    "repo": "tradle/react-native-level"
+    "repo": "tradle/react-native-level",
+    "description": "levelup API for react-native AsyncStorage."
   },
   {
     "name": "react-native-selectablesectionlistview",
-    "repo": "johanneslumpe/react-native-selectablesectionlistview"
+    "repo": "johanneslumpe/react-native-selectablesectionlistview",
+    "description": "A Listview with a sidebar to jump to sections directly"
   },
   {
     "name": "react-native-device",
-    "repo": "GertjanReynaert/react-native-device"
+    "repo": "GertjanReynaert/react-native-device",
+    "description": "UIDevice wrapper for React Native"
   },
   {
     "name": "react-native-swiper",
-    "repo": "leecade/react-native-swiper"
+    "repo": "leecade/react-native-swiper",
+    "description": "Swiper component for React Native."
   },
   {
     "name": "react-native-invertible-scroll-view",
-    "repo": "exponentjs/react-native-invertible-scroll-view"
+    "repo": "exponentjs/react-native-invertible-scroll-view",
+    "description": "An invertible ScrollView for React Native"
   },
   {
     "name": "react-native-ibeacon",
-    "repo": "geniuxconsulting/react-native-ibeacon"
+    "repo": "geniuxconsulting/react-native-ibeacon",
+    "description": "iBeacon support for React Native. The API is very similar to the CoreLocation Objective-C one with the only major difference that regions are plain JavaScript objects. Beacons don't work in the iOS simulator."
   },
   {
     "name": "react-native-ab",
-    "repo": "lwansbrough/react-native-ab"
+    "repo": "lwansbrough/react-native-ab",
+    "description": "A component for rendering A/B tests in React Native"
   },
   {
     "name": "react-native-css",
-    "repo": "sabeurthabti/react-native-css"
+    "repo": "sabeurthabti/react-native-css",
+    "description": "CSS style your React Components"
   },
   {
     "name": "react-native-google-analytics",
-    "repo": "lwansbrough/react-native-google-analytics"
+    "repo": "lwansbrough/react-native-google-analytics",
+    "description": "Google Analytics for React Native!"
   },
   {
     "name": "react-native-motion-manager",
-    "repo": "pwmckenna/react-native-motion-manager"
+    "repo": "pwmckenna/react-native-motion-manager",
+    "description": "A react-native interface for using the Gyroscope, Accelerometer and Magnetometer"
   },
   {
     "name": "react-native-barcode-scanner",
-    "repo": "lifuzu/ReactNativeBarcodeScanner"
+    "repo": "lifuzu/ReactNativeBarcodeScanner",
+    "description": "Barcode scanner for React Native"
   },
   {
     "name": "react-native-keyboardevents",
-    "repo": "johanneslumpe/react-native-keyboardevents"
+    "repo": "johanneslumpe/react-native-keyboardevents",
+    "description": "Monitors keyboard show/hide notifications"
   },
   {
     "name": "react-native-multipicker",
-    "repo": "veddermatic/react-native-multipicker"
+    "repo": "veddermatic/react-native-multipicker",
+    "description": "A UIPicker implementation that allows multiple UIPicker components."
   },
   {
     "name": "react-native-progress-bar",
-    "repo": "lwansbrough/react-native-progress-bar"
+    "repo": "lwansbrough/react-native-progress-bar",
+    "description": "An animated progress bar component for React Native"
   },
   {
     "name": "react-native-social-share",
-    "repo": "doefler/react-native-social-share"
+    "repo": "doefler/react-native-social-share",
+    "description": "Use the iOS native Twitter and Facebook share view from react native"
   },
   {
     "name": "react-native-addressbook",
-    "repo": "rt2zz/react-native-addressbook"
+    "repo": "rt2zz/react-native-addressbook",
+    "description": "AddressBook module for react-native"
   },
   {
     "name": "react-native-mapbox-gl",
-    "repo": "mapbox/react-native-mapbox-gl"
+    "repo": "mapbox/react-native-mapbox-gl",
+    "description": "A Mapbox GL react native module for creating custom maps"
   },
   {
     "name": "react-native-realtimestorage-ios",
-    "repo": "realtime-framework/RCTRealtimeCloudStorage"
+    "repo": "realtime-framework/RCTRealtimeCloudStorage",
+    "description": "The Realtime Framework Cloud Storage client for React-Native"
   },
   {
     "name": "react-native-realtimemessaging-ios",
-    "repo": "realtime-framework/RCTRealtimeMessaging"
+    "repo": "realtime-framework/RCTRealtimeMessaging",
+    "description": "The Realtime Framework Cloud Messaging Pub/Sub client for React-Native"
   },
   {
     "name": "react-native-tween-animation",
-    "repo": "kirkness/react-native-tween-animation"
+    "repo": "kirkness/react-native-tween-animation",
+    "description": "A simple react native state tween animation module."
   },
   {
     "name": "react-native-chart",
-    "repo": "onefold/react-native-chart"
+    "repo": "onefold/react-native-chart",
+    "description": "react-native-chart is a simple module for adding line charts, area charts, or bar charts to your React Native app."
   },
   {
     "name": "react-native-fs-modal",
-    "repo": "kirkness/react-native-fs-modal"
+    "repo": "kirkness/react-native-fs-modal",
+    "description": "React native full screen modal component."
   },
   {
     "name": "react-native-floating-labels",
-    "repo": "mayank-patel/react-native-floating-labels"
+    "repo": "mayank-patel/react-native-floating-labels",
+    "description": "Reusabe floating lable component for react native"
   },
   {
     "name": "react-native-dashed-border",
-    "repo": "chirag04/react-native-dashed-border"
+    "repo": "chirag04/react-native-dashed-border",
+    "description": "A <DashedBorder> element for react-native"
   },
   {
     "name": "react-native-message-composer",
-    "repo": "anarchicknight/react-native-message-composer"
+    "repo": "anarchicknight/react-native-message-composer",
+    "description": "React Native module bridge to iOS MFMessageComposeViewController"
   },
   {
     "name": "react-native-communications",
-    "repo": "anarchicknight/react-native-communications"
+    "repo": "anarchicknight/react-native-communications",
+    "description": "Easily call, email, text or iMessage someone in React Native"
   },
   {
     "name": "react-native-segmented-view",
-    "repo": "lelandrichardson/react-native-segmented-view"
+    "repo": "lelandrichardson/react-native-segmented-view",
+    "description": "Segmented View for React Native (with animation)"
   },
   {
     "name": "react-native-parallax-view",
-    "repo": "lelandrichardson/react-native-parallax-view"
+    "repo": "lelandrichardson/react-native-parallax-view",
+    "description": "Parallax view for vertical scrollview with a header image and header content"
   },
   {
     "name": "react-native-fs",
-    "repo": "johanneslumpe/react-native-fs"
+    "repo": "johanneslumpe/react-native-fs",
+    "description": "Native filesystem access for react-native"
   },
   {
     "name": "react-native-svg",
-    "repo": "brentvatne/react-native-svg"
+    "repo": "brentvatne/react-native-svg",
+    "description": "A <Svg /> element for react-native that renders Svg images using SVGKit"
   },
   {
     "name": "react-native-canvas",
-    "repo": "lwansbrough/react-native-canvas"
+    "repo": "lwansbrough/react-native-canvas",
+    "description": "A Canvas element for React Native"
   },
   {
     "name": "react-native-alert",
-    "repo": "leecade/react-native-alert"
+    "repo": "leecade/react-native-alert",
+    "description": "Use AlertIOS as a simple way just like native javascript."
   },
   {
     "name": "react-native-html",
-    "repo": "turingou/react-native-html"
+    "repo": "turingou/react-native-html",
+    "description": "render html as react native custom elements"
   },
   {
     "name": "react-native-list-popover",
-    "repo": "bulenttastan/react-native-list-popover"
+    "repo": "bulenttastan/react-native-list-popover",
+    "description": "<ListPopover/> component to render a selectable list"
   },
   {
     "name": "react-native-del",
-    "repo": "yuanyan/react-native-del"
+    "repo": "yuanyan/react-native-del",
+    "description": "Deleted Text Component"
   },
   {
     "name": "react-native-progress",
-    "repo": "MandarinConLaBarba/react-native-progress"
+    "repo": "MandarinConLaBarba/react-native-progress",
+    "description": "A progress bar component for React Native"
   },
   {
     "name": "react-native-carrier-info",
-    "repo": "anarchicknight/react-native-carrier-info"
+    "repo": "anarchicknight/react-native-carrier-info",
+    "description": "React Native module bridge to obtain information about the user’s home cellular service provider."
   },
   {
     "name": "react-native-asciimage",
-    "repo": "turley/react-native-asciimage"
+    "repo": "turley/react-native-asciimage",
+    "description": "An ASCIImage component for React Native"
   },
   {
     "name": "react-native-touchable-set-active",
-    "repo": "jmstout/react-native-TouchableSetActive"
+    "repo": "jmstout/react-native-TouchableSetActive",
+    "description": "Touchable component for React Native that enables more advanced styling by setting an active state. Most useful for building your own touchable/button components on top of."
   },
   {
     "name": "asyncstorage-down",
-    "repo": "tradle/asyncstorage-down"
+    "repo": "tradle/asyncstorage-down",
+    "description": "A leveldown API implementation that maps to AsyncStorage in React Native, originally a fork of no9/localstorage-down"
   },
   {
     "name": "react-native-activity-indicator-ios",
-    "repo": "pwmckenna/react-native-activity-indicator-ios"
+    "repo": "pwmckenna/react-native-activity-indicator-ios",
+    "description": "ActivityIndicatorIOS wrapper that waits a second. "
   },
   {
     "name": "react-native-fluxbone",
-    "repo": "jgable/react-native-fluxbone"
+    "repo": "jgable/react-native-fluxbone",
+    "description": "A group of libraries that help with the FluxBone pattern in React Native"
   },
   {
     "name": "react-native-mail",
-    "repo": "chirag04/react-native-mail"
+    "repo": "chirag04/react-native-mail",
+    "description": "A wrapper on top of MFMailComposeViewController from iOS and Mail Intent on android"
   },
   {
     "name": "react-native-reverse-geo",
-    "repo": "aaronksaunders/react-native-reverse-geo"
+    "repo": "aaronksaunders/react-native-reverse-geo",
+    "description": "React Native module bridge to convert address to geo coordinates."
   },
   {
     "name": "react-native-scrollable-mixin",
-    "repo": "exponentjs/react-native-scrollable-mixin"
+    "repo": "exponentjs/react-native-scrollable-mixin",
+    "description": "A standard interface for your scrollable React Native components, making it easier to compose components."
   },
   {
     "name": "react-native-swift-socketio",
-    "repo": "kirkness/react-native-swift-socketio"
+    "repo": "kirkness/react-native-swift-socketio",
+    "description": "A react native wrapper for socket.io-client-swift"
   },
   {
     "name": "react-native-udp",
-    "repo": "tradle/react-native-udp"
+    "repo": "tradle/react-native-udp",
+    "description": "node's dgram API for react-native"
   },
   {
     "name": "react-native-vector-icons",
-    "repo": "oblador/react-native-vector-icons"
+    "repo": "oblador/react-native-vector-icons",
+    "description": "Customizable Icons for React Native with support for NavBar/TabBar, image source and full styling. Choose from 3000+ bundled icons or use your own."
   },
   {
     "name": "react-transmit-native",
-    "repo": "RickWong/react-transmit"
+    "repo": "RickWong/react-transmit",
+    "description": "Relay-inspired library based on Promises instead of GraphQL."
   },
   {
     "name": "react-native-level-fs",
-    "repo": "tradle/react-native-level-fs"
+    "repo": "tradle/react-native-level-fs",
+    "description": "fs for react-native using level-filesystem and asyncstorage-down"
   },
   {
     "name": "react-native-tooltip",
-    "repo": "chirag04/react-native-tooltip"
+    "repo": "chirag04/react-native-tooltip",
+    "description": "A react-native wrapper for showing tooltips"
   },
   {
     "name": "react-native-piechart",
-    "repo": "frostney/react-native-piechart"
+    "repo": "frostney/react-native-piechart",
+    "description": "A <PieChart /> component for React Native"
   },
   {
     "name": "react-native-userdefaults-ios",
-    "repo": "dsibiski/react-native-userdefaults-ios"
+    "repo": "dsibiski/react-native-userdefaults-ios",
+    "description": "React Native Module for NSUserDefaults"
   },
   {
     "name": "react-native-link",
-    "repo": "650Industries/react-native-link"
+    "repo": "650Industries/react-native-link",
+    "description": "A link component, similar to `<A href` from HTML"
   },
   {
     "name": "react-native-progress-hud",
-    "repo": "naoufal/react-native-progress-hud"
+    "repo": "naoufal/react-native-progress-hud",
+    "description": "A clean and lightweight progress HUD for your React Native app."
   },
   {
     "name": "react-native-calendar",
-    "repo": "christopherdro/react-native-calendar"
+    "repo": "christopherdro/react-native-calendar",
+    "description": "Simple Calendar Component for React Native"
   },
   {
     "name": "react-native-keychain",
-    "repo": "oblador/react-native-keychain"
+    "repo": "oblador/react-native-keychain",
+    "description": "Keychain Access for React Native"
   },
   {
     "name": "react-native-accordion",
-    "repo": "naoufal/react-native-accordion"
+    "repo": "naoufal/react-native-accordion",
+    "description": "An Accordion Component for React Native"
   },
   {
     "name": "react-refresh-control",
-    "repo": "Shuangzuan/RCTRefreshControl"
+    "repo": "Shuangzuan/RCTRefreshControl",
+    "description": "A pull down to refresh control for react native."
   },
   {
     "name": "react-native-swipeout",
-    "repo": "dancormier/react-native-swipeout"
+    "repo": "dancormier/react-native-swipeout",
+    "description": "iOS-style swipeout buttons behind component"
   },
   {
     "name": "react-native-popover",
-    "repo": "jeanregisser/react-native-popover"
+    "repo": "jeanregisser/react-native-popover",
+    "description": "A <Popover /> component for react-native"
   },
   {
     "name": "react-native-remote-push",
-    "repo": "darylrowland/react-native-remote-push"
+    "repo": "darylrowland/react-native-remote-push",
+    "description": "React Native Remote Push Notifications Component"
   },
   {
     "name": "react-native-masked-view",
-    "repo": "gilbox/react-native-masked-view"
+    "repo": "gilbox/react-native-masked-view",
+    "description": "A <MaskedView> element for react-native"
   },
   {
     "name": "react-native-touch-id",
-    "repo": "naoufal/react-native-touch-id"
+    "repo": "naoufal/react-native-touch-id",
+    "description": "React Native authentication with the native Touch ID popup."
   },
   {
     "name": "react-native-location",
-    "repo": "timfpark/react-native-location"
+    "repo": "timfpark/react-native-location",
+    "description": "Native GPS location support for React Native."
   },
   {
     "name": "react-native-square-view",
-    "repo": "Shuangzuan/react-native-square-view"
+    "repo": "Shuangzuan/react-native-square-view",
+    "description": "A square view component for react native."
   },
   {
     "name": "react-native-loading-effect",
-    "repo": "Iliker/react-native-loading-effect"
+    "repo": "Iliker/react-native-loading-effect",
+    "description": "a simple loading effect, based on ActivityIndicatorIOS Component"
   },
   {
     "name": "react-native-activity-view",
-    "repo": "naoufal/react-native-activity-view"
+    "repo": "naoufal/react-native-activity-view",
+    "description": "iOS share and action sheets for React Native"
   },
   {
     "name": "react-native-collapsible",
-    "repo": "oblador/react-native-collapsible"
+    "repo": "oblador/react-native-collapsible",
+    "description": "Animated collapsible component for React Native using the new Animated API with fallback. Good for accordions, toggles etc"
   },
   {
     "name": "react-native-drawer",
-    "repo": "rt2zz/react-native-drawer"
+    "repo": "rt2zz/react-native-drawer",
+    "description": "React Native Drawer"
   },
   {
     "name": "react-native-listitem",
-    "repo": "dancormier/react-native-listitem"
+    "repo": "dancormier/react-native-listitem",
+    "description": "iOS-style listitem component"
   },
   {
     "name": "react-native-in-app-utils",
-    "repo": "chirag04/react-native-in-app-utils"
+    "repo": "chirag04/react-native-in-app-utils",
+    "description": "A react-native wrapper for handling in-app payments."
   },
   {
     "name": "react-native-page-control",
-    "repo": "silentcloud/react-native-page-control"
+    "repo": "silentcloud/react-native-page-control",
+    "description": "React native page control, like ios  UIPageControl"
   },
   {
     "name": "react-native-search-bar",
-    "repo": "umhan35/react-native-search-bar"
+    "repo": "umhan35/react-native-search-bar",
+    "description": "The native search bar for react native."
   },
   {
     "name": "react-native-eupage",
-    "repo": "mmslate/react-native-eupage"
+    "repo": "mmslate/react-native-eupage",
+    "description": "Easy to show html, image, video fullscreen pages. "
   },
   {
     "name": "react-native-i18n",
-    "repo": "AlexanderZaytsev/react-native-i18n"
+    "repo": "AlexanderZaytsev/react-native-i18n",
+    "description": "React Native and I18n.js integration"
   },
   {
     "name": "react-native-scrollable-tab-view",
-    "repo": "brentvatne/react-native-scrollable-tab-view"
+    "repo": "brentvatne/react-native-scrollable-tab-view",
+    "description": "This is probably my favorite navigation pattern on Android, I wish it were more common on iOS! This is a very simple JavaScript-only implementation of it for React Native. For more information about how the animations behind this work, check out the Rebou"
   },
   {
     "name": "react-native-grid-example",
-    "repo": "yelled3/react-native-grid-example"
+    "repo": "yelled3/react-native-grid-example",
+    "description": "React Native - Grid Layout Example"
   },
   {
     "name": "react-native-swipeable-modal",
-    "repo": "apolkingg8/React-Native-Swipeable-Modal"
+    "repo": "apolkingg8/React-Native-Swipeable-Modal",
+    "description": "Swipeable modal component for react-native."
   },
   {
     "name": "react-native-speech",
-    "repo": "naoufal/react-native-speech"
+    "repo": "naoufal/react-native-speech",
+    "description": "A text-to-speech library for React Native."
   },
   {
     "name": "react-native-geocoder",
-    "repo": "devfd/react-native-geocoder"
+    "repo": "devfd/react-native-geocoder",
+    "description": "react native geocoding and reverse geocoding"
   },
   {
     "name": "react-paypal",
@@ -469,670 +586,835 @@
   },
   {
     "name": "popeye",
-    "repo": "levitanong/popeye"
+    "repo": "levitanong/popeye",
+    "description": "A native react popup component that can be anchored to any element"
   },
   {
     "name": "react-native-safari-view",
-    "repo": "naoufal/react-native-safari-view"
+    "repo": "naoufal/react-native-safari-view",
+    "description": "A React Native wrapper for Safari View Controller"
   },
   {
     "name": "react-native-timeago",
-    "repo": "TylerLH/react-native-timeago"
+    "repo": "TylerLH/react-native-timeago",
+    "description": "Auto-updating timeago component for React Native"
   },
   {
     "name": "react-native-touchable-ripple",
-    "repo": "apolkingg8/React-Native-Touchable-Ripple"
+    "repo": "apolkingg8/React-Native-Touchable-Ripple",
+    "description": "Ripple touch effect from Google Material Design."
   },
   {
     "name": "react-native-device-display",
-    "repo": "kkjdaniel/react-native-device-display"
+    "repo": "kkjdaniel/react-native-device-display",
+    "description": "A simple way to create dynamic views through device and display detection, allowing the creation of adaptable and universal apps."
   },
   {
     "name": "react-native-screcorder",
-    "repo": "maxs15/react-native-screcorder"
+    "repo": "maxs15/react-native-screcorder",
+    "description": "A Video recorder component for react-native"
   },
   {
     "name": "react-native-youtube",
-    "repo": "paramaggarwal/react-native-youtube"
+    "repo": "paramaggarwal/react-native-youtube",
+    "description": "A <YouTube/> component for React Native."
   },
   {
     "name": "react-native-infinite-scroll-view",
-    "repo": "exponentjs/react-native-infinite-scroll-view"
+    "repo": "exponentjs/react-native-infinite-scroll-view",
+    "description": "An infinitely scrolling view that notifies you as the scroll offset approaches the bottom"
   },
   {
     "name": "autoresponsive-react-native",
-    "repo": "xudafeng/autoresponsive-react"
+    "repo": "xudafeng/autoresponsive-react",
+    "description": "auto responsive grid layout library"
   },
   {
     "name": "react-native-autocomplete",
-    "repo": "nulrich/RCTAutoComplete"
+    "repo": "nulrich/RCTAutoComplete",
+    "description": "React Native Component for MLPAutoCompleteTextField"
   },
   {
     "name": "react-native-app-info",
-    "repo": "Iragne/react-native-app-info"
+    "repo": "Iragne/react-native-app-info",
+    "description": "React Native app info and version"
   },
   {
     "name": "react-native-refresher",
-    "repo": "syrusakbary/react-native-refresher"
+    "repo": "syrusakbary/react-native-refresher",
+    "description": "A React Native pull to refresh ListView completely written in js. Also supports custom animations."
   },
   {
     "name": "react-native-audioplayer",
-    "repo": "andreaskeller/react-native-audioplayer"
+    "repo": "andreaskeller/react-native-audioplayer",
+    "description": "Small audio player library for react native"
   },
   {
     "name": "react-native-html-render",
-    "repo": "soliury/react-native-html-render"
+    "repo": "soliury/react-native-html-render",
+    "description": "A html render for react-native"
   },
   {
     "name": "react-native-scrollable-decorator",
-    "repo": "exponentjs/react-native-scrollable-decorator"
+    "repo": "exponentjs/react-native-scrollable-decorator",
+    "description": "A standard interface for your scrollable React Native components, making it easier to compose components"
   },
   {
     "name": "react-native-network-info",
-    "repo": "pusherman/react-native-network-info"
+    "repo": "pusherman/react-native-network-info",
+    "description": "Get local network information"
   },
   {
     "name": "react-native-eximage",
-    "repo": "guodong000/react-native-eximage"
+    "repo": "guodong000/react-native-eximage",
+    "description": "A Third Party Image Module."
   },
   {
     "name": "react-native-signature-capture",
-    "repo": "RepairShopr/react-native-signature-capture"
+    "repo": "RepairShopr/react-native-signature-capture",
+    "description": "Lets users sign their signatures"
   },
   {
     "name": "react-native-audio",
-    "repo": "jsierles/react-native-audio"
+    "repo": "jsierles/react-native-audio",
+    "description": "React Native library for simple audio recording. Wraps AVAudioRecorder/Player."
   },
   {
     "name": "react-native-image-picker",
-    "repo": "marcshilling/react-native-image-picker"
+    "repo": "marcshilling/react-native-image-picker",
+    "description": "A React Native module that allows you to use the native UIImagePickerController UI to select a photo from the device library or directly from the camera."
   },
   {
     "name": "react-native-webview-bridge",
-    "repo": "alinz/react-native-webview-bridge"
+    "repo": "alinz/react-native-webview-bridge",
+    "description": "React Native WebView Javascript Bridge"
   },
   {
     "name": "react-native-clipboard",
-    "repo": "silentcloud/react-native-clipboard"
+    "repo": "silentcloud/react-native-clipboard",
+    "description": "React Native component for getting or setting clipboard content"
   },
   {
     "name": "react-native-material-kit",
-    "repo": "xinthink/react-native-material-kit"
+    "repo": "xinthink/react-native-material-kit",
+    "description": "Bringing Material Design to React Native"
   },
   {
     "name": "react-native-navigation-drawer",
-    "repo": "ilansas/react-native-navigation-drawer"
+    "repo": "ilansas/react-native-navigation-drawer",
+    "description": "A slide menu inspired from Android for React-Native"
   },
   {
     "name": "react-native-modalbox",
-    "repo": "maxs15/react-native-modalbox"
+    "repo": "maxs15/react-native-modalbox",
+    "description": "A <Modal/> component for react-native"
   },
   {
     "name": "react-native-responsive-image",
-    "repo": "Dharmoslap/react-native-responsive-image"
+    "repo": "Dharmoslap/react-native-responsive-image",
+    "description": "Image component, that resizes itself appropriately on all different iOS screens."
   },
   {
     "name": "react-native-eval",
-    "repo": "artemyarulin/react-native-eval"
+    "repo": "artemyarulin/react-native-eval",
+    "description": "Call any JS functions from your native code"
   },
   {
     "name": "react-native-orientation",
-    "repo": "yamill/react-native-orientation"
+    "repo": "yamill/react-native-orientation",
+    "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis"
   },
   {
     "name": "react-native-device-orientation",
-    "repo": "DrMabuse23/react-native-device-orientation"
+    "repo": "DrMabuse23/react-native-device-orientation",
+    "description": "detect device orientation ios"
   },
   {
     "name": "react-native-custom-navigation",
-    "repo": "superdami/react-native-custom-navigation"
+    "repo": "superdami/react-native-custom-navigation",
+    "description": "A navigation that allow to custom the appearance of navigation bar in your app"
   },
   {
     "name": "react-native-bluetooth-state",
-    "repo": "frostney/react-native-bluetooth-state"
+    "repo": "frostney/react-native-bluetooth-state",
+    "description": "Answering the question of \"Is my bluetooth on?\" in React Native"
   },
   {
     "name": "react-native-image-progress",
-    "repo": "oblador/react-native-image-progress"
+    "repo": "oblador/react-native-image-progress",
+    "description": "Progress indicator for networked images, supports progress bar and spinner"
   },
   {
     "name": "react-native-range-selector",
-    "repo": "gaoli/react-native-range-selector"
+    "repo": "gaoli/react-native-range-selector",
+    "description": "react native range selector"
   },
   {
     "name": "react-native-slider",
-    "repo": "jeanregisser/react-native-slider"
+    "repo": "jeanregisser/react-native-slider",
+    "description": "A pure JavaScript <Slider /> component for react-native"
   },
   {
     "name": "rn-calendar",
-    "repo": "vczero/react-native-calendar"
+    "repo": "vczero/react-native-calendar",
+    "description": "基于React Native的日历",
+    "custom_description": "A calendar component for React Native"
   },
   {
     "name": "react-native-localsearch",
-    "repo": "wmcmahan/React-Native-LocalSearch"
+    "repo": "wmcmahan/React-Native-LocalSearch",
+    "description": "React Native Module for MapKit Local Search"
   },
   {
     "name": "react-native-parallax",
-    "repo": "oblador/react-native-parallax"
+    "repo": "oblador/react-native-parallax",
+    "description": "Parallax effects for React Native using Animated API"
   },
   {
     "name": "react-native-storage",
-    "repo": "sunnylqm/react-native-storage"
+    "repo": "sunnylqm/react-native-storage",
+    "description": "This is a local storage wrapper for both react-native(AsyncStorage) and browser(localStorage). ES6/babel is needed."
   },
   {
     "name": "react-native-file-upload",
-    "repo": "booxood/react-native-file-upload"
+    "repo": "booxood/react-native-file-upload",
+    "description": "A file upload plugin for react-native"
   },
   {
     "name": "react-native-radio-buttons",
-    "repo": "ArnaudRinquin/react-native-radio-buttons"
+    "repo": "ArnaudRinquin/react-native-radio-buttons",
+    "description": "A react component to implement custom radio buttons-like behaviors: multiple options, only on can be selected at once."
   },
   {
     "name": "react-native-simple-auth",
-    "repo": "adamjmcgrath/react-native-simple-auth"
+    "repo": "adamjmcgrath/react-native-simple-auth",
+    "description": "Native social authentication for React Native on iOS"
   },
   {
     "name": "react-native-scrollview-lazyload",
-    "repo": "IskenHuang/react-native-scrollview-lazyload"
+    "repo": "IskenHuang/react-native-scrollview-lazyload",
+    "description": "react-native scrollview with image lazy load"
   },
   {
     "name": "react-native-custom-actsheet",
-    "repo": "guodong000/react-native-custom-actsheet"
+    "repo": "guodong000/react-native-custom-actsheet",
+    "description": "A custom ActionSheet for react-native"
   },
   {
     "name": "react-native-icloud-sync",
-    "repo": "chirag04/react-native-icloud-sync"
+    "repo": "chirag04/react-native-icloud-sync",
+    "description": "A react-native wrapper for syncing with icloud"
   },
   {
     "name": "react-native-lightbox",
-    "repo": "oblador/react-native-lightbox"
+    "repo": "oblador/react-native-lightbox",
+    "description": "Images etc in Full Screen Lightbox Popovers for React Native"
   },
   {
     "name": "react-native-mediaplayer",
-    "repo": "chriselly/react-native-mediaplayer"
+    "repo": "chriselly/react-native-mediaplayer",
+    "description": "Simple full screen media player for React Native."
   },
   {
     "name": "react-native-circle-progress",
-    "repo": "guodong000/react-native-circle-progress"
+    "repo": "guodong000/react-native-circle-progress",
+    "description": "A custom Circle Progress Indocator for React Native"
   },
   {
     "name": "react-native-fbsdkcore",
-    "repo": "facebook/react-native-fbsdk"
+    "repo": "facebook/react-native-fbsdk",
+    "description": "iOS FBSDKCoreKit support for React Native apps."
   },
   {
     "name": "react-native-fbsdklogin",
-    "repo": "facebook/react-native-fbsdk"
+    "repo": "facebook/react-native-fbsdk",
+    "description": "iOS FBSDKLoginKit support for React Native apps."
   },
   {
     "name": "react-native-fbsdkshare",
-    "repo": "facebook/react-native-fbsdk"
+    "repo": "facebook/react-native-fbsdk",
+    "description": "iOS FBSDKShareKit support for React Native apps."
   },
   {
     "name": "react-native-adbannerview",
-    "repo": "Purii/react-native-adbannerview"
+    "repo": "Purii/react-native-adbannerview",
+    "description": "React Native Bridge for ADBannerView"
   },
   {
     "name": "react-native-dropdown",
-    "repo": "alinz/react-native-dropdown"
+    "repo": "alinz/react-native-dropdown",
+    "description": "A better Select dropdown menu for react-native"
   },
   {
     "name": "react-native-pasteboard",
-    "repo": "yamill/react-native-pasteboard"
+    "repo": "yamill/react-native-pasteboard",
+    "description": "Copy text to clipboard"
   },
   {
     "name": "react-native-toolkit",
-    "repo": "marty-wang/react-native-toolkit"
+    "repo": "marty-wang/react-native-toolkit",
+    "description": "A collection of common UI components for react native mobile apps."
   },
   {
     "name": "react-native-barcode",
-    "repo": "leofidjeland/react-native-barcode"
+    "repo": "leofidjeland/react-native-barcode",
+    "description": "A barcode generator for react-native"
   },
   {
     "name": "react-native-cookies",
-    "repo": "joeferraro/react-native-cookies"
+    "repo": "joeferraro/react-native-cookies",
+    "description": "Cookie manager for react native"
   },
   {
     "name": "angular-react-native-renderer",
-    "repo": "angular/react-native-renderer"
+    "repo": "angular/react-native-renderer",
+    "description": "**ATTENTION:** This pacakge is an *experimental* renderer for Angular 2 and React Native.",
+    "custom_description": "An angular 2 renderer for react native"
   },
   {
     "name": "react-native-background-geolocation",
-    "repo": "transistorsoft/react-native-background-geolocation"
+    "repo": "transistorsoft/react-native-background-geolocation",
+    "description": "Sophisticated background location-tracking with battery-conscious motion-detection"
   },
   {
     "name": "react-native-color-grabber",
-    "repo": "bsudekum/react-native-color-grabber"
+    "repo": "bsudekum/react-native-color-grabber",
+    "description": "React native component for finding dominant colors in an image"
   },
   {
     "name": "react-native-google-signin",
-    "repo": "apptailor/react-native-google-signin"
+    "repo": "apptailor/react-native-google-signin",
+    "description": "Google Signin for your react native applications"
   },
   {
     "name": "react-native-sglistview",
-    "repo": "sghiassy/react-native-sglistview"
+    "repo": "sghiassy/react-native-sglistview",
+    "description": "A React Native module to provide a memory efficent ListView over the native implementation"
   },
   {
     "name": "react-native-status-bar-size",
-    "repo": "brentvatne/react-native-status-bar-size"
+    "repo": "brentvatne/react-native-status-bar-size",
+    "description": "Watch and respond to changes in the iOS status bar height"
   },
   {
     "name": "react-native-versions",
-    "repo": "reployapp/react-native-versions"
+    "repo": "reployapp/react-native-versions",
+    "description": "Update and manage your React Native javascript bundle versions"
   },
   {
     "name": "react-native-url-handler",
-    "repo": "exponentjs/react-native-url-handler"
+    "repo": "exponentjs/react-native-url-handler",
+    "description": "Navigate to external URLs, handle in-app URLs, and access system URLs"
   },
   {
     "name": "react-native-web-polyfill",
-    "repo": "mattiamanzati/react-native-web-polyfill"
+    "repo": "mattiamanzati/react-native-web-polyfill",
+    "description": "A set of classes and react components to make work your react-native app in a browser. (with some limitations obviously)"
   },
   {
     "name": "redux-middleware-react-native-appstate",
-    "repo": "michaelcontento/redux-middleware-react-native-appstate"
+    "repo": "michaelcontento/redux-middleware-react-native-appstate",
+    "description": "Glue AppState from react-native to Redux."
   },
   {
     "name": "redux-middleware-react-native-netinfo",
-    "repo": "michaelcontento/redux-middleware-react-native-netinfo"
+    "repo": "michaelcontento/redux-middleware-react-native-netinfo",
+    "description": "Glue NetInfo from react-native to Redux."
   },
   {
     "name": "react-native-leancloud",
-    "repo": "turingou/react-native-leancloud"
+    "repo": "turingou/react-native-leancloud",
+    "description": "a react native LeanCloud component"
   },
   {
     "name": "react-native-slider-button",
-    "repo": "agentS/react-native-slider-button"
+    "repo": "agentS/react-native-slider-button",
+    "description": "Slider button inspired by the slide to unlock widget with an optional animation manipulating the text's transparency. Of course, both the animation duration and text can be customized too."
   },
   {
     "name": "firebase-react-native",
-    "repo": "sjmueller/firebase-react-native"
+    "repo": "sjmueller/firebase-react-native",
+    "description": "firebase client api hacked to get working with react-native"
   },
   {
     "name": "gulp-react-native-css",
-    "repo": "soliury/gulp-react-native-css"
+    "repo": "soliury/gulp-react-native-css",
+    "description": "A plugin for Gulp"
   },
   {
     "name": "js-data-asyncstorage",
-    "repo": "lukasreichart/js-data-asyncstorage"
+    "repo": "lukasreichart/js-data-asyncstorage",
+    "description": "js-data Adapter for react-native AsyncStorage"
   },
   {
     "name": "react-apple-easing",
-    "repo": "exponentjs/react-apple-easing"
+    "repo": "exponentjs/react-apple-easing",
+    "description": "Apple's default Core Animation easing functions for React"
   },
   {
     "name": "react-native-applinks",
-    "repo": "facebook/react-native-applinks"
+    "repo": "facebook/react-native-applinks",
+    "description": "AppLinks support for React Native. applinks.org"
   },
   {
     "name": "react-native-bridgeable-webview",
-    "repo": "Intellicode/react-native-bridgeable-webview"
+    "repo": "Intellicode/react-native-bridgeable-webview",
+    "description": "A react-native webview with bridge to react-native code"
   },
   {
     "name": "react-native-browser-polyfill",
-    "repo": "johanneslumpe/react-native-browser-polyfill"
+    "repo": "johanneslumpe/react-native-browser-polyfill",
+    "description": "A collection of polyfills for the react-native Javascript environment."
   },
   {
     "name": "react-native-clone-referenced-element",
-    "repo": "ide/react-native-clone-referenced-element"
+    "repo": "ide/react-native-clone-referenced-element",
+    "description": "Clones a React element while preserving its original ref"
   },
   {
     "name": "react-native-db-models",
-    "repo": "darkrishabh/react-native-db-models"
+    "repo": "darkrishabh/react-native-db-models",
+    "description": "Local DB Models for React Native Apps"
   },
   {
     "name": "react-native-debug-stylesheet",
-    "repo": "brentvatne/react-native-debug-stylesheet"
+    "repo": "brentvatne/react-native-debug-stylesheet",
+    "description": "Add coloured borders or backgrounds to all views to make it easier to debug layout issues"
   },
   {
     "name": "react-native-device-clock-format",
-    "repo": "brentvatne/react-native-device-clock-format"
+    "repo": "brentvatne/react-native-device-clock-format",
+    "description": "Determine whether the device is set to 12 or 24 hour time."
   },
   {
     "name": "react-native-device-uuid",
-    "repo": "lazywei/react-native-device-uuid"
+    "repo": "lazywei/react-native-device-uuid",
+    "description": "Get the device UUID for iOS device"
   },
   {
     "name": "react-native-env",
-    "repo": "joeferraro/react-native-env"
+    "repo": "joeferraro/react-native-env",
+    "description": "Environment manager for react native"
   },
   {
     "name": "react-native-event-source",
-    "repo": "jordanbyron/react-native-event-source"
+    "repo": "jordanbyron/react-native-event-source",
+    "description": "A react-native interface for EventSource: Server-Sent Events for iOS"
   },
   {
     "name": "react-native-file-transfer",
-    "repo": "kamilkp/react-native-file-transfer"
+    "repo": "kamilkp/react-native-file-transfer",
+    "description": "react-native plugin for uploading files with multipart/form-data requests"
   },
   {
     "name": "react-native-gesture-recognizers",
-    "repo": "johanneslumpe/react-native-gesture-recognizers"
+    "repo": "johanneslumpe/react-native-gesture-recognizers",
+    "description": "Gesture recognizer decorators for react-native"
   },
   {
     "name": "react-native-hypertext",
-    "repo": "agentcooper/react-native-hypertext"
+    "repo": "agentcooper/react-native-hypertext",
+    "description": "React Native module to render hypertext (text with links)"
   },
   {
     "name": "react-native-intercom",
-    "repo": "asamiller/react-native-intercom"
+    "repo": "asamiller/react-native-intercom",
+    "description": "A React Native client for Intercom.io"
   },
   {
     "name": "react-native-multipeer",
-    "repo": "lwansbrough/react-native-multipeer"
+    "repo": "lwansbrough/react-native-multipeer",
+    "description": "Communicate over ad hoc wifi using Multipeer Connectivity"
   },
   {
     "name": "react-native-networking",
-    "repo": "eduedix/react-native-networking"
+    "repo": "eduedix/react-native-networking",
+    "description": "react-native module to download and upload files with AFNetworking"
   },
   {
     "name": "react-native-refreshable-scroll-view",
-    "repo": "exponentjs/react-native-refreshable-scroll-view"
+    "repo": "exponentjs/react-native-refreshable-scroll-view",
+    "description": "A ScrollView that supports pull-to-refresh. You can customize it with the RefreshIndicator and type of ScrollView (ex: ListView) of your choice."
   },
   {
     "name": "react-native-routes",
-    "repo": "wenkesj/react-native-routes"
+    "repo": "wenkesj/react-native-routes",
+    "description": "A react native router with awesome transitions."
   },
   {
     "name": "react-native-scene-manager",
-    "repo": "alinz/react-native-scene-manager"
+    "repo": "alinz/react-native-scene-manager",
+    "description": "Simple Scene Manager for React-Native"
   },
   {
     "name": "react-native-svg-elements",
-    "repo": "aksonov/react-native-svg-elements"
+    "repo": "aksonov/react-native-svg-elements",
+    "description": "ReactNative SVG elements using SVGgh library"
   },
   {
     "name": "react-native-tabbar",
-    "repo": "alinz/react-native-tabbar"
+    "repo": "alinz/react-native-tabbar",
+    "description": "Tab bar with more freedom"
   },
   {
     "name": "react-native-tableview",
-    "repo": "aksonov/react-native-tableview"
+    "repo": "aksonov/react-native-tableview",
+    "description": "Native iOS TableView wrapper for React Native"
   },
   {
     "name": "react-native-transparent-bar",
-    "repo": "23c/react-native-transparent-bar"
+    "repo": "23c/react-native-transparent-bar",
+    "description": "react native navigator transparent bar"
   },
   {
     "name": "react-native-util",
-    "repo": "exponentjs/react-native-util"
+    "repo": "exponentjs/react-native-util",
+    "description": "A fork of io.js's util module that works with React Native"
   },
   {
     "name": "react-native-voximplant",
-    "repo": "voximplant/react-native-voximplant"
+    "repo": "voximplant/react-native-voximplant",
+    "description": "VoxImplant Mobile SDK for embedding voice and video communication into React Native apps."
   },
   {
     "name": "react-native-webpack-server",
-    "repo": "mjohnston/react-native-webpack-server"
+    "repo": "mjohnston/react-native-webpack-server",
+    "description": "Build React Native apps with Webpack"
   },
   {
     "name": "ampersand-fetch",
-    "repo": "stephengrider/ampersand-fetch"
+    "repo": "stephengrider/ampersand-fetch",
+    "description": "Ampersand's sync implemented with Chrome's native .fetch.  Works with React Native too."
   },
   {
     "name": "k-react-native-swipe-unlocker",
-    "repo": "leowang721/k-react-native-swipe-unlocker"
+    "repo": "leowang721/k-react-native-swipe-unlocker",
+    "description": "A simple swipe unlock for React Native"
   },
   {
     "name": "lakhu",
-    "repo": "sreejithr/lakhu"
+    "repo": "sreejithr/lakhu",
+    "description": "SQLite wrapper for React Native"
   },
   {
     "name": "react-native-bloodhound",
-    "repo": "yelled3/node-bloodhound"
+    "repo": "yelled3/node-bloodhound",
+    "description": "bloodhound.js in node for react native"
   },
   {
     "name": "react-native-draggable-drawer",
-    "repo": "llanox/react-native-draggable-drawer"
+    "repo": "llanox/react-native-draggable-drawer",
+    "description": "DraggableDrawer component for React Native."
   },
   {
     "name": "react-native-es6",
-    "repo": "UXtemple/react-native-es6"
+    "repo": "UXtemple/react-native-es6",
+    "description": "react-native ES6 package base, use babel to transform those things react-native doesn't process yet"
   },
   {
     "name": "react-native-google-plus-login",
-    "repo": "justinmakaila/react-native-google-plus-login"
+    "repo": "justinmakaila/react-native-google-plus-login",
+    "description": "A Google+ login manager and <GooglePlusLoginButton /> for react-native"
   },
   {
     "name": "react-native-google-static-map",
-    "repo": "yelled3/react-native-google-static-map"
+    "repo": "yelled3/react-native-google-static-map",
+    "description": "A wrapper for Google's Static Maps"
   },
   {
     "name": "react-native-immutable",
-    "repo": "thewei/react-native-immutable"
+    "repo": "thewei/react-native-immutable",
+    "description": "using immutable.js library with react-native"
   },
   {
     "name": "react-native-radio-button-classic",
-    "repo": "pressly/react-native-radio-button-classic"
+    "repo": "pressly/react-native-radio-button-classic",
+    "description": "Bring Classic Radio to React-Native"
   },
   {
     "name": "react-native-slidable-tab-bar",
-    "repo": "pwbrown/react-native-slidable-tab-bar"
+    "repo": "pwbrown/react-native-slidable-tab-bar",
+    "description": "Slidable tab bar for instant view rendering(react-native)"
   },
   {
     "name": "react-native-spinkit",
-    "repo": "maxs15/react-native-spinkit"
+    "repo": "maxs15/react-native-spinkit",
+    "description": "A collection of animated loading indicators for React Native"
   },
   {
     "name": "react-native-idle-timer",
-    "repo": "marcshilling/react-native-idle-timer"
+    "repo": "marcshilling/react-native-idle-timer",
+    "description": "An Objective-C bridge that allows you to enable and disable the screen idle timer in your React Native app"
   },
   {
     "name": "react-native-simple-store",
-    "repo": "jasonmerino/react-native-simple-store"
+    "repo": "jasonmerino/react-native-simple-store",
+    "description": "A minimalistic wrapper around React Native's AsyncStorage."
   },
   {
     "name": "react-native-tab-navigator",
-    "repo": "exponentjs/react-native-tab-navigator"
+    "repo": "exponentjs/react-native-tab-navigator",
+    "description": "A tab bar that switches between scenes, written in JS for cross-platform support"
   },
   {
     "name": "react-native-woopra",
-    "repo": "isair/react-native-woopra"
+    "repo": "isair/react-native-woopra",
+    "description": "Promise based Woopra library for react-native"
   },
   {
     "name": "react-native-assets",
-    "repo": "llanox/react-native-assests"
+    "repo": "llanox/react-native-assests",
+    "description": "Module to manage assets. It allows you download assests from a network and store into a specific local folder on iOS"
   },
   {
     "name": "react-native-drawer-addmenu",
-    "repo": "rt2zz/react-native-drawer"
+    "repo": "rt2zz/react-native-drawer",
+    "description": "React Native Drawer"
   },
   {
     "name": "gl-react-native",
-    "repo": "ProjectSeptemberInc/gl-react-native"
+    "repo": "ProjectSeptemberInc/gl-react-native",
+    "description": "OpenGL bindings for react-native to implement complex effects over images and components, in the descriptive VDOM paradigm"
   },
   {
     "name": "react-native-device-motion",
-    "repo": "paramaggarwal/react-native-device-motion"
+    "repo": "paramaggarwal/react-native-device-motion",
+    "description": "iOS device motion wrapper for React Native. "
   },
   {
     "name": "react-native-global-event-emitter",
-    "repo": "paramaggarwal/react-native-global-event-emitter"
+    "repo": "paramaggarwal/react-native-global-event-emitter",
+    "description": "Shared event emitter between native and JS for React Native."
   },
   {
     "name": "apsl-react-native-button",
-    "repo": "APSL/react-native-button"
+    "repo": "APSL/react-native-button",
+    "description": "React Native button component with rounded corners."
   },
   {
     "name": "react-native-check-file-exists-ios",
-    "repo": "rhaker/react-native-check-file-exists-ios"
+    "repo": "rhaker/react-native-check-file-exists-ios",
+    "description": "A react-native interface for checking if a file exists in the app documents directory. Returns yes or no."
   },
   {
     "name": "react-native-create-new-file-ios",
-    "repo": "rhaker/react-native-create-new-file-ios"
+    "repo": "rhaker/react-native-create-new-file-ios",
+    "description": "A react-native interface for creating a blank new file on ios. File must not already exist."
   },
   {
     "name": "react-native-phone-picker",
-    "repo": "Spikef/react-native-phone-picker"
+    "repo": "Spikef/react-native-phone-picker",
+    "description": "React Native component for select phone number from address book"
   },
   {
     "name": "react-native-charts",
-    "repo": "PrazAs/react-native-charts"
+    "repo": "PrazAs/react-native-charts",
+    "description": "Delightfully-animated data visualization."
   },
   {
     "name": "react-native-control-flashlight-ios",
-    "repo": "rhaker/react-native-control-flashlight-ios"
+    "repo": "rhaker/react-native-control-flashlight-ios",
+    "description": "A react-native interface for controlling an ios device's flashlight. Can be on or off."
   },
   {
     "name": "react-native-control-screen-sleep-ios",
-    "repo": "rhaker/react-native-control-screen-sleep-ios"
+    "repo": "rhaker/react-native-control-screen-sleep-ios",
+    "description": "A react-native interface for controlling the screen sleep mode. Can be on, off, or toggled."
   },
   {
     "name": "react-native-file-upload-to-server-ios",
-    "repo": "rhaker/react-native-file-upload-to-server-ios"
+    "repo": "rhaker/react-native-file-upload-to-server-ios",
+    "description": "A react-native interface for uploading a file in the app documents directory to an external server."
   },
   {
     "name": "react-native-for-web",
-    "repo": "KodersLab/react-native-for-web"
+    "repo": "KodersLab/react-native-for-web",
+    "description": "A set of classes and react components to make work your react-native app in a browser. (with some limitations obviously)"
   },
   {
     "name": "react-native-gesture-password",
-    "repo": "Spikef/react-native-gesture-password"
+    "repo": "Spikef/react-native-gesture-password",
+    "description": "A gesture password component for React Native"
   },
   {
     "name": "react-native-html-to-pdf",
-    "repo": "christopherdro/react-native-html-to-pdf"
+    "repo": "christopherdro/react-native-html-to-pdf",
+    "description": "Convert html strings to PDF documents using React Native"
   },
   {
     "name": "react-native-item-cell",
-    "repo": "APSL/react-native-item-cell"
+    "repo": "APSL/react-native-item-cell",
+    "description": "React Native default style iOS item cell"
   },
   {
     "name": "react-native-local-image-manager",
-    "repo": "asamiller/react-native-local-image-manager"
+    "repo": "asamiller/react-native-local-image-manager",
+    "description": "A React Native module for downloading and resizing local images."
   },
   {
     "name": "react-native-print",
-    "repo": "christopherdro/react-native-print"
+    "repo": "christopherdro/react-native-print",
+    "description": "Print documents with React Native"
   },
   {
     "name": "react-native-videoplayer",
-    "repo": "yamill/react-native-videoplayer"
+    "repo": "yamill/react-native-videoplayer",
+    "description": "A native ios video player component"
   },
   {
     "name": "rn-china-region-picker",
-    "repo": "hufeng/rn-china-region-picker"
+    "repo": "hufeng/rn-china-region-picker",
+    "description": "china region province city area picker"
   },
   {
     "name": "react-native-battery-status-ios",
-    "repo": "rhaker/react-native-battery-status-ios"
+    "repo": "rhaker/react-native-battery-status-ios",
+    "description": "A react-native interface for getting the battery status on an ios device."
   },
   {
     "name": "react-native-relative-units",
-    "repo": "benzhe/react-native-relative-units"
+    "repo": "benzhe/react-native-relative-units",
+    "description": "Relative units for React Native"
   },
   {
     "name": "gb-native-router",
-    "repo": "MikaelCarpenter/gb-native-router"
+    "repo": "MikaelCarpenter/gb-native-router",
+    "description": "Easy to use Navigator for your native app."
   },
   {
     "name": "react-native-cropping",
-    "repo": "walmartreact/react-native-cropping"
+    "repo": "walmartreact/react-native-cropping",
+    "description": "Cropping components for react-native"
   },
   {
     "name": "react-native-image-progressbar",
-    "repo": "walmartreact/react-native-image-progressbar"
+    "repo": "walmartreact/react-native-image-progressbar",
+    "description": "An image based progress bar"
   },
   {
     "name": "react-native-multi-slider",
-    "repo": "JackDanielsAndCode/react-native-multi-slider"
+    "repo": "JackDanielsAndCode/react-native-multi-slider",
+    "description": "Pure JS slider component with multiple markers for React Native"
   },
   {
     "name": "react-native-navigator",
-    "repo": "thewei/react-native-navigator"
+    "repo": "thewei/react-native-navigator",
+    "description": "A simple router for react native"
   },
   {
     "name": "react-native-orientation-listener",
-    "repo": "walmartreact/react-native-orientation-listener"
+    "repo": "walmartreact/react-native-orientation-listener",
+    "description": "A react-native library for obtaining current device orientation"
   },
   {
     "name": "gulp-react-native-stylesheet-css",
-    "repo": "jjshammas/gulp-react-native-stylesheet-css"
+    "repo": "jjshammas/gulp-react-native-stylesheet-css",
+    "description": "Gulp plugin for converting CSS files to React Native StyleSheets."
   },
   {
     "name": "react-native-android-badge",
-    "repo": "jhen0409/react-native-android-badge"
+    "repo": "jhen0409/react-native-android-badge",
+    "description": "A react native wrapper for leolin310148/ShortcutBadger."
   },
   {
     "name": "react-native-battery",
-    "repo": "oojr/react-native-battery"
+    "repo": "oojr/react-native-battery",
+    "description": "A React Native module that returns the battery level/status of a device"
   },
   {
     "name": "react-native-ble",
-    "repo": "jacobrosenthal/react-native-ble"
+    "repo": "jacobrosenthal/react-native-ble",
+    "description": "React Native BLE using noble api surface"
   },
   {
     "name": "react-native-ios-network-audio",
-    "repo": "pwbrown/react-native-ios-network-audio"
+    "repo": "pwbrown/react-native-ios-network-audio",
+    "description": "Audio player implementation for web-based url audio clips using ios standards"
   },
   {
     "name": "react-native-device-info",
-    "repo": "rebeccahughes/react-native-device-info"
+    "repo": "rebeccahughes/react-native-device-info",
+    "description": "Get device information using react-native"
   },
   {
     "name": "react-native-play-audio-ios",
-    "repo": "rhaker/react-native-play-audio-ios"
+    "repo": "rhaker/react-native-play-audio-ios",
+    "description": "A react-native interface for controlling audio on an ios device. Play, stop, and pause."
   },
   {
     "name": "react-native-tab",
-    "repo": "vczero/react-native-tab"
+    "repo": "vczero/react-native-tab",
+    "description": "react-native-tab is a simple module for add a \"Tab Menu\" to your React Native app."
   },
   {
     "name": "envirs-react-native-cli",
-    "repo": "Spikef/envirs-react-native-cli"
+    "repo": "Spikef/envirs-react-native-cli",
+    "description": "A react native command tool build by Envirs Team."
   },
   {
     "name": "react-native-drawer-layout",
-    "repo": "iodine/react-native-drawer-layout"
+    "repo": "iodine/react-native-drawer-layout",
+    "description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android. Why? Because the drawer layout is a useful component regardless of the platform! And if you can use it without changing any code, that's perfect",
+    "custom_description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android."
   },
   {
     "name": "react-native-record-audio-ios",
-    "repo": "rhaker/react-native-record-audio-ios"
+    "repo": "rhaker/react-native-record-audio-ios",
+    "description": "A react-native interface for recording audio on an ios device. Supports .caf, .m4a, and .wav files."
   },
   {
     "name": "gravatar-api",
-    "repo": "lwhiteley/nodejs-gravatar"
+    "repo": "lwhiteley/nodejs-gravatar",
+    "description": "module to build image and profile urls for gravatar"
   },
   {
     "name": "react-native-platform-visible",
-    "repo": "walmartreact/react-native-platform-visible"
+    "repo": "walmartreact/react-native-platform-visible",
+    "description": "A very simple component visibility switch based on Platform"
   },
   {
     "name": "react-native-realtimemessaging-android",
-    "repo": "realtime-framework/RCTRealtimeMessagingAndroid"
+    "repo": "realtime-framework/RCTRealtimeMessagingAndroid",
+    "description": "The Realtime Framework Cloud Messaging Pub/Sub client for React-Native Android"
   },
   {
     "name": "react-native-debug",
-    "repo": "bmcmahen/debug"
+    "repo": "bmcmahen/debug",
+    "description": "small debugging utility"
   },
   {
     "name": "react-native-switcher",
-    "repo": "olivierlesnicki/react-native-switcher"
+    "repo": "olivierlesnicki/react-native-switcher",
+    "description": "## Installation"
   },
   {
     "name": "react-native-android-sqlite",
-    "repo": "jbrodriguez/react-native-android-sqlite"
+    "repo": "jbrodriguez/react-native-android-sqlite",
+    "description": "A react native android wrapper for SQLite"
   },
   {
     "name": "react-native-browser",
-    "repo": "PrestoDoctor/react-native-browser"
+    "repo": "PrestoDoctor/react-native-browser",
+    "description": "Full-featured web browser module for React Native apps, based on TOWebViewController"
   },
   {
     "name": "react-native-webintent",
-    "repo": "ivanph/react-native-webintent"
+    "repo": "ivanph/react-native-webintent",
+    "description": "React native android module to open links in the default browser"
   },
   {
     "name": "react-native-xmpp",
-    "repo": "aksonov/react-native-xmpp"
-  },
-  {
-    "name": "react-router-android",
-    "repo": "rackt/react-router"
+    "repo": "aksonov/react-native-xmpp",
+    "description": "XMPP Library for React Native"
   },
   {
     "name": "react-router-native",
-    "repo": "rackt/react-router"
+    "repo": "rackt/react-router",
+    "description": "A complete routing library for React.js"
   },
   {
     "name": "react-native-globalize",
-    "repo": "joshswan/react-native-globalize"
+    "repo": "joshswan/react-native-globalize",
+    "description": "Globalization helper for React Native"
   }
 ]
