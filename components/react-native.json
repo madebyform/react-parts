@@ -1416,5 +1416,31 @@
     "name": "react-native-globalize",
     "repo": "joshswan/react-native-globalize",
     "description": "Globalization helper for React Native"
+  },
+  {
+    "name": "react-native-android-audio-streaming-aac",
+    "repo": "EstebanFuentealba/react-native-android-audio-streaming-aac",
+    "description": "A react native streaming player"
+  },
+  {
+    "name": "react-native-android-iconify",
+    "repo": "lwhiteley/react-native-android-iconify",
+    "description": "icons for react native android using android-iconify"
+  },
+  {
+    "name": "react-native-quick-actions",
+    "repo": "jordanbyron/react-native-quick-actions",
+    "description": "A react-native interface for Touch 3D home screen quick actions"
+  },
+  {
+    "name": "react-stateful-stream",
+    "repo": "gilbox/react-stateful-stream",
+    "description": "stateful bliss",
+    "custom_description": "Stateful bliss. Re-examining modular state."
+  },
+  {
+    "name": "rn-websocket-stream",
+    "repo": "jacobbubu/rn-websocket-stream",
+    "description": "Use websockets with the node streams API. Works in react-native, browser and node"
   }
 ]

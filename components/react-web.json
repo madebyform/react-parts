@@ -9272,5 +9272,66 @@
     "name": "react-fileupload-progress",
     "repo": "georgeosddev/react-fileupload-progress",
     "description": "React component which render progress of fileupload"
+  },
+  {
+    "name": "bapmrl-react-multiselect",
+    "repo": "bapmrl/bapmrl-react-multiselect",
+    "description": "React Multiselect Component",
+    "custom_description": "Provides a filterable react multiselect component."
+  },
+  {
+    "name": "formsy-react-inputs",
+    "repo": "yesmeck/formsy-react-inputs",
+    "description": "A set of formsy-react inputs without any fancy."
+  },
+  {
+    "name": "js-message",
+    "repo": "RIAEvangelist/js-message",
+    "description": "normalized JS Object and JSON message and event protocol for node.js, vanialla js, react.js, components, actions, stores and dispatchers"
+  },
+  {
+    "name": "react-clock",
+    "repo": "ryanburgess/react-clock",
+    "description": "A React component to display the current time."
+  },
+  {
+    "name": "react-img-preload",
+    "repo": "wizardzloy/react-img-preload",
+    "description": "Higher-order React component for image preloading"
+  },
+  {
+    "name": "react-input-range",
+    "repo": "davidchin/react-input-range",
+    "description": "React component for inputting numeric values within a range"
+  },
+  {
+    "name": "react-loader-advanced",
+    "repo": "nygardk/react-loader-advanced",
+    "description": "Show loader overlaying your component during async events."
+  },
+  {
+    "name": "react-rangeslider",
+    "repo": "whoisandie/react-rangeslider",
+    "description": "A lightweight react component that acts as a HTML5 input range slider polyfill"
+  },
+  {
+    "name": "react-swipeable-views",
+    "repo": "oliviertassinari/react-swipeable-views",
+    "description": "A React component for swipeable views"
+  },
+  {
+    "name": "react-tiltshift",
+    "repo": "gustavoguichard/react-tiltshift",
+    "description": "A React component for adding tiltshift effect in images"
+  },
+  {
+    "name": "rsvg-path",
+    "repo": "SethDavenport/rsvg-path",
+    "description": "A simple React component for SVG paths."
+  },
+  {
+    "name": "ws-share",
+    "repo": "RIAEvangelist/ws-share",
+    "description": "sharing websockets between different modules or components for react, flux, reflux, webpack or browserify"
   }
 ]

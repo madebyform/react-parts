@@ -394,5 +394,18 @@
   {
     "name": "neighborly-components",
     "repo": "neighborly/components"
+  },
+  {
+    "name": "react-hot-api",
+    "repo": "gaearon/react-hot-api"
+  },
+  {
+    "name": "react-hotify",
+    "repo": "gaearon/react-hotify"
+  },
+  {
+    "name": "react-router-android",
+    "repo": "rackt/react-router",
+    "description": "A complete routing library for React.js"
   }
 ]
