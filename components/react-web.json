@@ -9333,5 +9333,25 @@
     "name": "ws-share",
     "repo": "RIAEvangelist/ws-share",
     "description": "sharing websockets between different modules or components for react, flux, reflux, webpack or browserify"
+  },
+  {
+    "name": "react-hi-text",
+    "repo": "rwu823/react-hi-text",
+    "description": "React text highlight component"
+  },
+  {
+    "name": "react-middleware",
+    "repo": "philcockfield/react-middleware",
+    "description": "Connect middleware for serving React components from a standard folder structure."
+  },
+  {
+    "name": "react-valid",
+    "repo": "brigand/react-valid",
+    "description": "Simple joi validation high order component for validing forms."
+  },
+  {
+    "name": "velocity-react",
+    "repo": "crashlytics/velocity-react",
+    "description": "React components to wrap Velocity animations"
   }
 ]
