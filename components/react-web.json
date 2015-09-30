@@ -9353,5 +9353,35 @@
     "name": "velocity-react",
     "repo": "crashlytics/velocity-react",
     "description": "React components to wrap Velocity animations"
+  },
+  {
+    "name": "pushtell-react",
+    "repo": "pushtell/react",
+    "description": "A/B Testing React Components"
+  },
+  {
+    "name": "react-component-sol-footer",
+    "repo": "soldotno/react-component-sol-footer",
+    "description": "A React component that displays SOLs footer. It's basically a colophon."
+  },
+  {
+    "name": "react-persian",
+    "repo": "mohebifar/react-persian",
+    "description": "A set of react components for Persian localisation"
+  },
+  {
+    "name": "react-router-link",
+    "repo": "ccapndave/react-router-link",
+    "description": "An updated version of the Link component for react-router"
+  },
+  {
+    "name": "react-scroll-spy",
+    "repo": "JedWatson/react-scroll-spy",
+    "description": "React.js mixin for updating state based on the window's scroll position"
+  },
+  {
+    "name": "retap",
+    "repo": "davidmason/retap",
+    "description": "Wrapper around tape that adds functions for testing React components"
   }
 ]

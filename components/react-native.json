@@ -1457,5 +1457,20 @@
     "name": "react-native-webrtc",
     "repo": "oney/react-native-webrtc",
     "description": "WebRTC for React Native"
+  },
+  {
+    "name": "react-native-circle-view",
+    "repo": "nucleartux/react-native-circle-view",
+    "description": "circle progress for react native android using CircleView"
+  },
+  {
+    "name": "react-native-realtimestorage-android",
+    "repo": "realtime-framework/RCTRealtimeStorageAndroid",
+    "description": "The Realtime Cloud Storage client for React-Native Android"
+  },
+  {
+    "name": "react-native-share",
+    "repo": "EstebanFuentealba/react-native-share",
+    "description": "Social Share, Sending Simple Data to Other Apps"
   }
 ]
