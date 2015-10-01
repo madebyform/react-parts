@@ -1489,8 +1489,8 @@
     "description": "Configurable redux middleware that sends your actions & user profile data to Mixpanel."
   },
   {
-    "name": "scrollview-lazyload",
-    "repo": "IskenHuang/react-native-scrollview-lazyload",
-    "description": "react-native scrollview with image lazy load"
+    "name": "react-native-timer-mixin",
+    "repo": "exponentjs/react-native-timer-mixin",
+    "description": "TimerMixin provides timer functions for executing code in the future that are safely cleaned up when the component unmounts. This is a fork that includes react-native InteractionManager support."
   }
 ]
