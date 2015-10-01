@@ -1472,5 +1472,10 @@
     "name": "react-native-share",
     "repo": "EstebanFuentealba/react-native-share",
     "description": "Social Share, Sending Simple Data to Other Apps"
+  },
+  {
+    "name": "react-native-card.io",
+    "repo": "BBB/card.io-react-native",
+    "description": "A Card.io component for react-native"
   }
 ]

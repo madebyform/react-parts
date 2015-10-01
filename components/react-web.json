@@ -9383,5 +9383,297 @@
     "name": "retap",
     "repo": "davidmason/retap",
     "description": "Wrapper around tape that adds functions for testing React components"
+  },
+  {
+    "name": "frcb",
+    "repo": "joakimbeng/frcb",
+    "description": "Fat Responsive Checkbox"
+  },
+  {
+    "name": "react-js-pagination",
+    "repo": "vayser/react-js-pagination",
+    "description": "Simple, easy to use component for pagination. Compatible with bootstrap paginator stylesheets"
+  },
+  {
+    "name": "react-markdown-it",
+    "repo": "sunflowerdeath/react-markdown",
+    "description": "A React component for rendering Markdown with markdown-it"
+  },
+  {
+    "name": "esformatter-jsx",
+    "repo": "royriojas/esformatter-jsx",
+    "description": "esformatter plugin: format javascript files that contain React JSX blocks"
+  },
+  {
+    "name": "eslint-plugin-react-props",
+    "repo": "craigbilner/eslint-plugin-react-props",
+    "description": "a collection of prop type rules"
+  },
+  {
+    "name": "fluxible-plugin-react-perf",
+    "repo": "marnusw/fluxible-plugin-react-perf",
+    "description": "A fluxible plugin that runs the React.Perf tools on every `executeAction` and `dispatch`."
+  },
+  {
+    "name": "fluxible-plugin-react-router",
+    "repo": "LegitTalon/fluxible-plugin-react-router",
+    "description": "A fluxible plugin that provides react-router context to actions"
+  },
+  {
+    "name": "generator-material-react",
+    "repo": "leftstick/generator-material-react",
+    "description": "Yeoman generator for React Material-UI with webpack"
+  },
+  {
+    "name": "hjs-webpack",
+    "repo": "henrikjoreteg/hjs-webpack",
+    "description": "Presets for setting up webpack with hotloading react and ES6(2015) using Babel."
+  },
+  {
+    "name": "inline-style-prefixer",
+    "repo": "rofrischmann/inline-style-prefixer",
+    "description": "Autoprefixer for Inline Style objects using userAgent and caniuse data"
+  },
+  {
+    "name": "jsx-gettext-extract-loader",
+    "repo": "mrblueblue/jsx-gettext-extract-loader",
+    "description": "extracts gettext strings from jsx"
+  },
+  {
+    "name": "kattappa",
+    "repo": "brijeshb42/kattappa",
+    "description": "A block based rich text editor with support of Images, embeds( Youtube, Instagram, Vine, Vimeo etc)"
+  },
+  {
+    "name": "nordnet-i18n",
+    "repo": "nordnet/nordnet-18n",
+    "description": "Nordnet React and Intl locale configuration"
+  },
+  {
+    "name": "prop-type",
+    "repo": "c9/prop-type",
+    "description": "Small wrapper to wrap your custom type check so that you can use `myCustomType.isRequired` in a similar fasion to React's built-in types."
+  },
+  {
+    "name": "react-cond",
+    "repo": "stoeffel/react-cond",
+    "description": "Lisp-Style conditional rendering in react."
+  },
+  {
+    "name": "react-d3-brush",
+    "repo": "react-d3/react-d3-brush",
+    "description": "react-d3 brush implementation"
+  },
+  {
+    "name": "react-d3-tooltip",
+    "repo": "react-d3/react-d3-tooltip",
+    "description": "react-d3 tooltip implementation"
+  },
+  {
+    "name": "react-d3-zoom",
+    "repo": "react-d3/react-d3-zoom",
+    "description": "react-d3 zoom implementation"
+  },
+  {
+    "name": "react-fast-and-lazy",
+    "repo": "LibertyGlobal/react-fast-and-lazy",
+    "description": "React lazy loading container which does not break performance"
+  },
+  {
+    "name": "react-focus-trap",
+    "repo": "vigetlabs/react-focus-trap",
+    "description": "Traps focus for accessible dropdowns and modal content."
+  },
+  {
+    "name": "react-metaform",
+    "repo": "gearz-lab/react-metaform",
+    "description": "A library for dynamically creating React.js forms out of metadata"
+  },
+  {
+    "name": "react-notify-toast",
+    "repo": "jesusoterogomez/react-notify-toast",
+    "description": "Toast notifications for React.js"
+  },
+  {
+    "name": "react-pure-render-debug",
+    "repo": "tmcw/react-pure-render-debug",
+    "description": "a loud pure-render method that makes render failures easier to debug"
+  },
+  {
+    "name": "redux-raven-middleware",
+    "repo": "ngokevin/redux-raven-middleware",
+    "description": "Redux middleware for sending error reports to Sentry through raven-js."
+  },
+  {
+    "name": "stylistic",
+    "repo": "steadicat/stylistic",
+    "description": "A small library to convert React props into a style object."
+  },
+  {
+    "name": "babel-plugin-react-html-attrs",
+    "repo": "insin/babel-plugin-react-html-attrs",
+    "description": "Babel plugin which transforms HTML attributes in JSX to their React equivalents"
+  },
+  {
+    "name": "bemmer",
+    "repo": "axross/bemmer",
+    "description": "BEM-like simple classname builder."
+  },
+  {
+    "name": "coffee-react-transform",
+    "repo": "jsdf/coffee-react-transform",
+    "description": "React JSX support for Coffeescript"
+  },
+  {
+    "name": "d3act",
+    "repo": "AnSavvides/d3act",
+    "description": "Visualising data using d3 with React.js"
+  },
+  {
+    "name": "expanded-react-test-utils",
+    "repo": "dataminr/expanded-react-test-utils",
+    "description": "Additional functions beyond the [existing ReactJS test utilities](http://facebook.github.io/react/docs/test-utils.html) to make testing quicker and easier. Adds the following functionality:",
+    "custom_description": "Additional functions beyond the existing ReactJS test utilities to make testing quicker and easier"
+  },
+  {
+    "name": "flourish",
+    "repo": "benoneal/flourish",
+    "description": "Magical JS styles"
+  },
+  {
+    "name": "fluxible-addons-react",
+    "repo": "yahoo/fluxible-addons-react",
+    "description": "Fluxible addons for use with React"
+  },
+  {
+    "name": "frill",
+    "repo": "frilljs/frill",
+    "description": "A flux + api application framework, using hapi and React."
+  },
+  {
+    "name": "gatsby",
+    "repo": "gatsby-group/gatsby",
+    "description": "React.js Static Site Generator"
+  },
+  {
+    "name": "livereactload",
+    "repo": "milankinen/livereactload",
+    "description": "Live code editing with Browserify and React"
+  },
+  {
+    "name": "paulfri-react-inlinesvg",
+    "repo": "matthewwithanm/react-inlinesvg",
+    "description": "An SVG loader for React"
+  },
+  {
+    "name": "react-case",
+    "repo": "bfollington/react-case",
+    "description": "Inline, declarative logic for React."
+  },
+  {
+    "name": "react-experiments",
+    "repo": "HubSpot/react-experiments",
+    "description": "react-experiments is a Javascript library that assists in defining and managing UI experiments in React."
+  },
+  {
+    "name": "react-fiction",
+    "repo": "remixz/react-fiction",
+    "description": "An interactive fiction framework for React."
+  },
+  {
+    "name": "react-hotkey",
+    "repo": "glenjamin/react-hotkey",
+    "description": "A simple mixin for application hotkeys with react"
+  },
+  {
+    "name": "react-pagify",
+    "repo": "bebraw/react-pagify",
+    "description": "Simple pagination for React"
+  },
+  {
+    "name": "react-router-relay",
+    "repo": "relay-tools/react-router-relay",
+    "description": "Nested react-router routes for Relay"
+  },
+  {
+    "name": "react-subclass",
+    "repo": "jide/react-subclass",
+    "description": "React CSS subClass"
+  },
+  {
+    "name": "react-submittable",
+    "repo": "mapbox/react-submittable",
+    "description": "a replacement for preventing the default behavior of forms: allows submission on enter"
+  },
+  {
+    "name": "react-svgdom-loader",
+    "repo": "zenwalker/react-svgdom-loader",
+    "description": "Import SVG as ReactDOM element"
+  },
+  {
+    "name": "react-testutil-query",
+    "repo": "jquense/react-testutil-query",
+    "description": "small wrapper around react test utils so I don't have to write long method names"
+  },
+  {
+    "name": "react-tinymce-mention",
+    "repo": "Kindling/react-tinymce-mention",
+    "description": "@Mention functionality for TinyMCE, built with React and Redux."
+  },
+  {
+    "name": "react-token-autocomplete",
+    "repo": "peterKaleta/react-token-autocomplete",
+    "description": "An easily stylable React select / token / autocomplete ready to work with flux flow."
+  },
+  {
+    "name": "react-transform-hmr",
+    "repo": "gaearon/react-transform-hmr",
+    "description": "A React Transform that enables hot reloading React classes using Hot Module Replacement API"
+  },
+  {
+    "name": "react-tvml",
+    "repo": "ramitos/react-tvml",
+    "description": "react bindings to Apple's TVJS & TVML"
+  },
+  {
+    "name": "react-zeroclipboard-mixin",
+    "repo": "wizardzloy/react-zeroclipboard-mixin",
+    "description": "React mixin for automatic binding of the ZeroClipboard client to the clipboard action DOM elements"
+  },
+  {
+    "name": "redux-devtools-log-monitor",
+    "repo": "gaearon/redux-devtools-log-monitor",
+    "description": "The default tree view monitor for Redux DevTools"
+  },
+  {
+    "name": "redux-node-logger",
+    "repo": "low-ghost/redux-node-logger",
+    "description": "Redux logger for a node environment"
+  },
+  {
+    "name": "redux-viewmodel",
+    "repo": "tdzl2003/redux-viewmodel",
+    "description": "View-Model design based on Redux & React"
+  },
+  {
+    "name": "reindex-js",
+    "repo": "reindexio/reindex-js",
+    "description": "Client library for Reindex",
+    "custom_description": "Client library for Reindex — Instant GraphQL Backend for Your React Apps"
+  },
+  {
+    "name": "skin-deep",
+    "repo": "glenjamin/skin-deep",
+    "description": "Test assertion helpers for use with React's shallowRender test utils."
+  },
+  {
+    "name": "webpack-isomorphic-tools",
+    "repo": "halt-hammerzeit/webpack-isomorphic-tools",
+    "description": "Transforms CSS-alike text into a React style JSON object"
+  },
+  {
+    "name": "xpath-react",
+    "repo": "badeball/xpath-react",
+    "description": "A React adapter for xpath-evaluator."
   }
 ]
