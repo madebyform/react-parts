@@ -1477,5 +1477,20 @@
     "name": "react-native-card.io",
     "repo": "BBB/card.io-react-native",
     "description": "A Card.io component for react-native"
+  },
+  {
+    "name": "react-native-gcm",
+    "repo": "bh5-pods/react-native-gcm",
+    "description": "Google Cloud Messaging for React Native"
+  },
+  {
+    "name": "rn-redux-mixpanel",
+    "repo": "danscan/redux-mixpanel",
+    "description": "Configurable redux middleware that sends your actions & user profile data to Mixpanel."
+  },
+  {
+    "name": "scrollview-lazyload",
+    "repo": "IskenHuang/react-native-scrollview-lazyload",
+    "description": "react-native scrollview with image lazy load"
   }
 ]
