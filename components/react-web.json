@@ -9093,11 +9093,6 @@
     "description": "Force-updates React component tree recursively"
   },
   {
-    "name": "react-server-pages",
-    "repo": "philcockfield/react-server-pages",
-    "description": "Connect middleware for serving React components from a standard folder structure."
-  },
-  {
     "name": "react-smartbanner",
     "repo": "patw0929/react-smartbanner",
     "description": "Smart app banner react version."
@@ -9675,5 +9670,97 @@
     "name": "xpath-react",
     "repo": "badeball/xpath-react",
     "description": "A React adapter for xpath-evaluator."
+  },
+  {
+    "name": "nuclear-js",
+    "repo": "optimizely/nuclear-js",
+    "description": "Immutable, reactive Flux architecture. UI Agnostic."
+  },
+  {
+    "name": "chai-xpath-react",
+    "repo": "badeball/chai-xpath-react",
+    "description": "XPath matchers for React elements."
+  },
+  {
+    "name": "drag-reorderable",
+    "repo": "zooniverse-ui/drag-reorderable",
+    "description": "This is a React component for simple reordering of items in an array."
+  },
+  {
+    "name": "freezer-js",
+    "repo": "arqex/freezer",
+    "description": "A tree data structure that is always updated from the root, making easier to think in a reactive way."
+  },
+  {
+    "name": "gl-react",
+    "repo": "ProjectSeptemberInc/gl-react",
+    "description": "WebGL bindings for react to implement complex effects over images and content, in the descriptive VDOM paradigm"
+  },
+  {
+    "name": "jasmine-xpath-react",
+    "repo": "badeball/jasmine-xpath-react",
+    "description": "XPath matchers for React elements."
+  },
+  {
+    "name": "poormansflux",
+    "repo": "ernestofreyreg/poormansflux",
+    "description": "Poor Man's Flux, a really simple React/functional based flux alternative"
+  },
+  {
+    "name": "react_datepicker",
+    "repo": "bencripps/react-datepicker",
+    "description": "a flux react datepicker built with jsx and nuclear"
+  },
+  {
+    "name": "react-d3-basic",
+    "repo": "react-d3/react-d3-basic",
+    "description": "react chart component"
+  },
+  {
+    "name": "react-d3-core",
+    "repo": "react-d3/react-d3-core",
+    "description": "react chart core component"
+  },
+  {
+    "name": "react-inline-confirm",
+    "repo": "civicsource/react-inline-confirm",
+    "description": "A simple react component that allows you to get a confirmation of action from the user before executing an action."
+  },
+  {
+    "name": "react-motion-drawer",
+    "repo": "stoeffel/react-motion-drawer",
+    "description": "Navigation drawer built with the awesome react-motion and react-hammerjs"
+  },
+  {
+    "name": "react-scroll-selectable",
+    "repo": "kako0507/react-scroll-selectable",
+    "description": "A compoent for react that allows mouse selection of child items with auto-scrolling.",
+    "custom_description": "A component for react that allows mouse selection of child items with auto-scrolling."
+  },
+  {
+    "name": "react-test-unit",
+    "repo": "jarsbe/react-test-unit",
+    "description": "A set of utilities to make testing stateless components simple, readable and fast. This is in early stage development. I wouldn't recommend using it just yet.",
+    "custom_description": "A set of utilities to make testing stateless components simple, readable and fast."
+  },
+  {
+    "name": "react-time-select",
+    "repo": "shackpank/react-time-select",
+    "description": "Component to generate a dropdown list populated with a configurable time range"
+  },
+  {
+    "name": "react-viewport-slider",
+    "repo": "daviferreira/react-viewport-slider",
+    "description": "Viewport Slider React component."
+  },
+  {
+    "name": "react-webpack-starter",
+    "repo": "krasimir/react-webpack-starter",
+    "description": "React webpack starter template"
+  },
+  {
+    "name": "syntux",
+    "repo": "DylanPiercey/syntux",
+    "description": "Highlight.js optimized for browserify and react."
   }
 ]

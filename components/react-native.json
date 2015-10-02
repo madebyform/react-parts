@@ -442,8 +442,9 @@
   },
   {
     "name": "react-native-link",
-    "repo": "650Industries/react-native-link",
-    "description": "A link component, similar to `<A href` from HTML"
+    "repo": "exponentjs/react-native-link",
+    "description": "A link component, similar to `<A href` from HTML",
+    "custom_description": "A <Link> element for React Native, analogous to the <A> tag in HTML"
   },
   {
     "name": "react-native-progress-hud",
@@ -1492,5 +1493,21 @@
     "name": "react-native-timer-mixin",
     "repo": "exponentjs/react-native-timer-mixin",
     "description": "TimerMixin provides timer functions for executing code in the future that are safely cleaned up when the component unmounts. This is a fork that includes react-native InteractionManager support."
+  },
+  {
+    "name": "react-native-dropdown-android",
+    "repo": "chymtt/ReactNativeDropdownAndroid",
+    "description": "Simple wrapper for Android's Spinner to use with react-native"
+  },
+  {
+    "name": "react-native-xkcd",
+    "repo": "hemanth/react-native-xkcd",
+    "description": "Loads a random [XKCD](http://xkcd.com/) comic with caption.",
+    "custom_description": "Loads a random XKCD comic with caption."
+  },
+  {
+    "name": "rn-nodeify",
+    "repo": "mvayngrib/rn-nodeify",
+    "description": "Run after npm install and you can use node core modules in your React Native app."
   }
 ]

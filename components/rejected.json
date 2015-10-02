@@ -412,5 +412,10 @@
     "name": "scrollview-lazyload",
     "repo": "IskenHuang/react-native-scrollview-lazyload",
     "description": "react-native scrollview with image lazy load"
+  },
+  {
+    "name": "react-server-pages",
+    "repo": "philcockfield/react-server-pages",
+    "description": "Connect middleware for serving React components from a standard folder structure."
   }
 ]
