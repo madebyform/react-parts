@@ -1509,5 +1509,16 @@
     "name": "rn-nodeify",
     "repo": "mvayngrib/rn-nodeify",
     "description": "Run after npm install and you can use node core modules in your React Native app."
+  },
+  {
+    "name": "pinkbox-react",
+    "repo": "DenisIzmaylov/pinkbox-react",
+    "description": "Customized redbox (rsod) component to display your errors"
+  },
+  {
+    "name": "react-native-device-specs",
+    "repo": "peachmeco/react-native-device-specs",
+    "description": "Detect the specifications of a device on iOS or android in react-native.",
+    "custom_description": "Detect the specifications of a device in react-native. Not yet implemented for Android."
   }
 ]

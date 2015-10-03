@@ -9762,5 +9762,125 @@
     "name": "syntux",
     "repo": "DylanPiercey/syntux",
     "description": "Highlight.js optimized for browserify and react."
+  },
+  {
+    "name": "popups",
+    "repo": "ChiefORZ/popupS",
+    "description": "Native Javascript Modal/Popup system. With react support!"
+  },
+  {
+    "name": "bloql",
+    "repo": "adriantoine/bloql",
+    "description": "Blog engine powered by blog engine powered by React using Relay and GraphQL to interact with data"
+  },
+  {
+    "name": "learnyoureact",
+    "repo": "tako-black/learnyoureact",
+    "description": "Learn React.js and server side rendering!"
+  },
+  {
+    "name": "matrix-react-sdk",
+    "repo": "matrix-org/matrix-react-sdk",
+    "description": "SDK for matrix.org using React"
+  },
+  {
+    "name": "matrix-react-skin",
+    "repo": "matrix-org/matrix-react-skin",
+    "description": "Basic skin for matrix-react-sdk"
+  },
+  {
+    "name": "micro-emitter",
+    "repo": "khirayama/MicroEmitter",
+    "description": "micro event emitter in es6."
+  },
+  {
+    "name": "micro-store",
+    "repo": "khirayama/MicroStore",
+    "description": "micro store in es6 for client."
+  },
+  {
+    "name": "nbem",
+    "repo": "ideyuta/nbem",
+    "description": "nbem is for intuitively write the class name of BEM method."
+  },
+  {
+    "name": "ne-render",
+    "repo": "node-engine/ne-render",
+    "description": "Rendering React with React-Router on the server with Pre-Render Data from API's added to the state and props"
+  },
+  {
+    "name": "react-as-range-slider",
+    "repo": "LingyuCoder/react-as-range-slider",
+    "description": "一个React实现的拖动数字输入组件"
+  },
+  {
+    "name": "react-bootcards",
+    "repo": "kobanyan/react-bootcards",
+    "description": "react-bootcards"
+  },
+  {
+    "name": "react-css-grid-layout",
+    "repo": "dlmanning/react-css-grid-layout",
+    "description": "The CSS Grid Layout wrapped in React components"
+  },
+  {
+    "name": "react-dynform",
+    "repo": "burmisov/react-dynform",
+    "description": "A pluggable react form controller."
+  },
+  {
+    "name": "react-faux-dom",
+    "repo": "Olical/react-faux-dom",
+    "description": "DOM like data structure to be mutated by D3 et al, then rendered to React elements"
+  },
+  {
+    "name": "react-keydown",
+    "repo": "jedverity/react-keydown",
+    "description": "Lightweight keydown wrapper for React components"
+  },
+  {
+    "name": "react-miniflow",
+    "repo": "emilmork/react-miniflow",
+    "description": "A simple library for unidirectional dataflow in React and React Native."
+  },
+  {
+    "name": "react-month-calendar",
+    "repo": "dbachko/react-month-calendar",
+    "description": "Simple month calendar widget for React"
+  },
+  {
+    "name": "react-number-control",
+    "repo": "davidmarkclements/react-number-control",
+    "description": "Bare bones number control - functionality only, you supply the styling."
+  },
+  {
+    "name": "react-page",
+    "repo": "chrisamaral/react-page",
+    "description": "minimalist router for react"
+  },
+  {
+    "name": "react-persian-datepicker",
+    "repo": "mohebifar/react-persian-datepicker",
+    "description": "A Persian date-picker component for react.js"
+  },
+  {
+    "name": "react-smartdate",
+    "repo": "ivelum/react-smartdate",
+    "description": "A react component for smartdate"
+  },
+  {
+    "name": "react-text-truncate",
+    "repo": "ShinyChang/react-text-truncate",
+    "description": "Truncate text for React.js"
+  },
+  {
+    "name": "react-variable-height-infinite-scroller",
+    "repo": "tnrich/react-variable-height-infinite-scroller",
+    "description": "variable row height scroller that renders just the visible rows with no precomputation of row-height necessary"
+  },
+  {
+    "name": "slush-react-express",
+    "repo": "peterjuras/slush-react-express",
+    "description": "A generator for a node express web app using react"
   }
 ]
