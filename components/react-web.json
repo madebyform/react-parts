@@ -7279,7 +7279,7 @@
   {
     "name": "react-nexus",
     "repo": "elierotenberg/react-nexus",
-    "description": "React Nexus ===========",
+    "description": "React Nexus 4.x\r ===============",
     "custom_description": "Isomorphic React apps done right well. Server-side rendering, data prefetching, SEO for free."
   },
   {
@@ -9824,11 +9824,6 @@
     "description": "The CSS Grid Layout wrapped in React components"
   },
   {
-    "name": "react-dynform",
-    "repo": "burmisov/react-dynform",
-    "description": "A pluggable react form controller."
-  },
-  {
     "name": "react-faux-dom",
     "repo": "Olical/react-faux-dom",
     "description": "DOM like data structure to be mutated by D3 et al, then rendered to React elements"
@@ -9882,5 +9877,55 @@
     "name": "slush-react-express",
     "repo": "peterjuras/slush-react-express",
     "description": "A generator for a node express web app using react"
+  },
+  {
+    "name": "apeman-demo-react",
+    "repo": "apeman-demo-labo/apeman-demo-react",
+    "description": "Demo of React component."
+  },
+  {
+    "name": "apeman-react-body",
+    "repo": "apeman-react-labo/apeman-react-body",
+    "description": "apeman react package for body component."
+  },
+  {
+    "name": "apeman-react-head",
+    "repo": "apeman-react-labo/apeman-react-head",
+    "description": "apeman react package for head component."
+  },
+  {
+    "name": "apeman-react-html",
+    "repo": "apeman-react-labo/apeman-react-html",
+    "description": "apeman react package for html component."
+  },
+  {
+    "name": "apeman-react-style",
+    "repo": "apeman-react-labo/apeman-react-style",
+    "description": "apeman react package for style component."
+  },
+  {
+    "name": "bolt-standard-flux",
+    "repo": "walmartreact/bolt-standard-flux",
+    "description": "Opinionated meta config runner for react components"
+  },
+  {
+    "name": "react-resource",
+    "repo": "cidevant/react-resource",
+    "description": "Component for building/creating restful api requests"
+  },
+  {
+    "name": "react-rt-chart",
+    "repo": "emilmork/react-rt-chart",
+    "description": "Real-time chart component for React using c3"
+  },
+  {
+    "name": "react-stateless-wrapper",
+    "repo": "ngerritsen/react-stateless-wrapper",
+    "description": "Wraps React stateless components into regular components"
+  },
+  {
+    "name": "stardust",
+    "repo": "TechnologyAdvice/stardust",
+    "description": "Semantic UI components for React."
   }
 ]

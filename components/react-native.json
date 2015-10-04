@@ -1520,5 +1520,10 @@
     "repo": "peachmeco/react-native-device-specs",
     "description": "Detect the specifications of a device on iOS or android in react-native.",
     "custom_description": "Detect the specifications of a device in react-native. Not yet implemented for Android."
+  },
+  {
+    "name": "react-native-awesome-button",
+    "repo": "larsvinter/react-native-awesome-button",
+    "description": "A button React Native component supporting showing different states with animations"
   }
 ]
