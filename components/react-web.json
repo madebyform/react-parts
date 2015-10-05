@@ -9962,5 +9962,70 @@
     "name": "sourcejs-react",
     "repo": "szarouski/sourcejs-react",
     "description": "React middleware for sourcejs.com"
+  },
+  {
+    "name": "adrenaline",
+    "repo": "gyzerok/adrenaline",
+    "description": "React bindings for Redux with Relay in mind"
+  },
+  {
+    "name": "relay-sink",
+    "repo": "acdlite/relay-sink",
+    "description": "Use Relay to fetch and store data outside of a React component."
+  },
+  {
+    "name": "redux-promise",
+    "repo": "acdlite/redux-promise",
+    "description": "FSA-compliant promise middleware for Redux."
+  },
+  {
+    "name": "redux-actions",
+    "repo": "acdlite/redux-actions",
+    "description": "Flux Standard Action utlities for Redux."
+  },
+  {
+    "name": "redux-transducers",
+    "repo": "acdlite/redux-transducers",
+    "description": "Transducer utilities for Redux."
+  },
+  {
+    "name": "flummox",
+    "repo": "acdlite/flummox",
+    "description": "Idiomatic, modular, testable, isomorphic Flux. No singletons required."
+  },
+  {
+    "name": "redux-rx",
+    "repo": "acdlite/redux-rx",
+    "description": "RxJS utilities for Redux"
+  },
+  {
+    "name": "flux-standard-action",
+    "repo": "acdlite/flux-standard-action",
+    "description": "A human-friendly standard for Flux action objects"
+  },
+  {
+    "name": "redux-router",
+    "repo": "rackt/redux-router",
+    "description": "Redux bindings for React Router — keep your router state inside your Redux Store."
+  },
+  {
+    "name": "react-a11y",
+    "repo": "rackt/react-a11y",
+    "description": "Warns about potential accessibility issues with your React elements."
+  },
+  {
+    "name": "react-relay",
+    "repo": "facebook/relay",
+    "description": "A framework for building data-driven React applications."
+  },
+  {
+    "name": "react-autocomplete",
+    "repo": "rackt/react-autocomplete",
+    "description": "Accessible, extensible, Autocomplete for React.js"
+  },
+  {
+    "name": "redux-devtools",
+    "repo": "gaearon/redux-devtools",
+    "description": "Redux DevTools with hot reloading and time travel"
   }
 ]
