@@ -4412,11 +4412,6 @@
     "description": "uxcore-layout ui component for react"
   },
   {
-    "name": "react-chrtst",
-    "repo": "rojerua/react-chartist",
-    "description": "React component for Chartist.js"
-  },
-  {
     "name": "react-photo-swiper",
     "repo": "sooth-sayer/react-photo-swiper",
     "description": "Photo Swiper, as a React component"
@@ -9927,5 +9922,45 @@
     "name": "stardust",
     "repo": "TechnologyAdvice/stardust",
     "description": "Semantic UI components for React."
+  },
+  {
+    "name": "apeman-react-component",
+    "repo": "apeman-react-labo/apeman-react-component",
+    "description": "apeman react module for abstract component."
+  },
+  {
+    "name": "apeman-react-draggable",
+    "repo": "apeman-react-labo/apeman-react-draggable",
+    "description": "apeman react package for draggable component."
+  },
+  {
+    "name": "react-googlecharts",
+    "repo": "christiaanderidder/react-googlecharts",
+    "description": "React component for rendering Google Charts"
+  },
+  {
+    "name": "react-icon-loader",
+    "repo": "barbuza/react-icon-loader",
+    "description": "load svg icons as react components"
+  },
+  {
+    "name": "apeman-scaffold-react",
+    "repo": "apeman-scaffold-labo/apeman-scaffold-react",
+    "description": "Scaffold for React projects."
+  },
+  {
+    "name": "class-name",
+    "repo": "simonify/class-name",
+    "description": "A simple utility function for generating a className, intended for use with React."
+  },
+  {
+    "name": "rcss-grid",
+    "repo": "mattferrin/rcss-grid",
+    "description": "Generates Bourbon Neat equivalent RCSS for ReactJS."
+  },
+  {
+    "name": "sourcejs-react",
+    "repo": "szarouski/sourcejs-react",
+    "description": "React middleware for sourcejs.com"
   }
 ]

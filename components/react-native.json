@@ -1525,5 +1525,10 @@
     "name": "react-native-awesome-button",
     "repo": "larsvinter/react-native-awesome-button",
     "description": "A button React Native component supporting showing different states with animations"
+  },
+  {
+    "name": "react-native-i18n-complete",
+    "repo": "mrKlar/react-native-i18n",
+    "description": "React Native and I18n.js integration. This is a fork with Android support."
   }
 ]
