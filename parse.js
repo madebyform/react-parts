@@ -125,7 +125,7 @@ function parseAndSave(data) {
     }
 
     // Search for keywords in the other text props
-    ["name", "description", "readme"].forEach(function(prop) {
+    for (let prop of ["name", "description", "readme"]) {
       if (candidate[prop]) {
         if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
           return nativeCandidates.push(candidate);
@@ -134,7 +134,7 @@ function parseAndSave(data) {
           return webCandidates.push(candidate);
         }
       }
-    });
+    }
 
     // Search for keywords inside versions
     if (candidate.versions && candidate.versions instanceof Object) {
