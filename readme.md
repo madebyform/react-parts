@@ -12,6 +12,8 @@ Some observations:
 - `update` is called once per day and its output is manually reviewed because there are packages published to NPM that have not been open sourced on GitHub, don't have a readme yet or are forks meant to be merged upstream in the near future (just to mention some of the most common cases), and so we don't include them right away;
 - The `components/react-*.json` files are pushed to GitHub just to make sure these manually curated lists are also easily available to anyone and can be reused by other projects. You may argue that having auto-generated commits pushed into master is not a great idea, but it's simple.
 
+To retrieve information from GitHub you will need to create a `keys.json` file (see `keys.json.example`). You can use your credentials but we recommend you generate a [Personal Access Token](https://github.com/settings/tokens) instead. Under "Select scopes", simply check "public_repo". You can then use that token as the value for the `username` key and leave `password` empty.
+
 ### Deploying new features
 
 React.parts is a regular database-less Node.js app, so you can host it however you like. We use Dokku, so deploying new features is as easy as:
