@@ -1530,5 +1530,15 @@
     "name": "react-native-i18n-complete",
     "repo": "mrKlar/react-native-i18n",
     "description": "React Native and I18n.js integration. This is a fork with Android support."
+  },
+  {
+    "name": "react-native-card-io",
+    "repo": "kayla-tech/react-native-card-io",
+    "description": "React Native component for card.io"
+  },
+  {
+    "name": "react-native-vibration",
+    "repo": "ideacreation/react-native-vibration",
+    "description": "Vibration support for android"
   }
 ]

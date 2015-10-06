@@ -10027,5 +10027,50 @@
     "name": "redux-devtools",
     "repo": "gaearon/redux-devtools",
     "description": "Redux DevTools with hot reloading and time travel"
+  },
+  {
+    "name": "apeman-react-range",
+    "repo": "apeman-react-labo/apeman-react-range",
+    "description": "apeman react package for range input component."
+  },
+  {
+    "name": "apeman-react-slider",
+    "repo": "apeman-react-labo/apeman-react-slider",
+    "description": "apeman react package for slider component."
+  },
+  {
+    "name": "hire-range-slider",
+    "repo": "HuygensING/hire-range-slider",
+    "description": "Range slider react component"
+  },
+  {
+    "name": "itsa-reflux-statechange",
+    "repo": "ItsAsbreuk/itsa-reflux-statechange",
+    "description": "Adds onStateChange to reflux stores which automaticly handles state-changes on any component"
+  },
+  {
+    "name": "material-components",
+    "repo": "garth/material-components",
+    "description": "Stateless UI components for react that follow material design"
+  },
+  {
+    "name": "react-ab-test",
+    "repo": "pushtell/react-ab-test",
+    "description": "A/B Testing React Components"
+  },
+  {
+    "name": "react-click-outside",
+    "repo": "kentor/react-click-outside",
+    "description": "A component wrapper that provides click outside detection."
+  },
+  {
+    "name": "react-conditions",
+    "repo": "alex1712/react-conditions",
+    "description": "Component for rendering condition content."
+  },
+  {
+    "name": "react-universal-analytics",
+    "repo": "bekerov/react-universal-analytics",
+    "description": "React component for Google Universal Analytics"
   }
 ]
