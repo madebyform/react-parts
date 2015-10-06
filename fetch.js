@@ -14,7 +14,10 @@ let components = require(componentsFile);
 
 // Load the existing data file, with all the existing metadata
 let componentsDataFile = path.join(__dirname, "data", `${ componentsType }.json`);
-let oldComponentsData = require(componentsDataFile);
+let oldComponentsData = [];
+
+try { oldComponentsData = require(componentsDataFile); }
+catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 
 // Load rejected components. Rejected components will be removed from the data files
 let rejectedComponents = toObject(require('./components/rejected.json'), {});

@@ -38,7 +38,7 @@
     "fetch": "node fetch.js",
     "fetch:all": "npm run fetch:all:native && npm run fetch:all:web",
     "fetch:all:native": "for i in {1..10}; do npm run fetch react-native $i; done",
-    "fetch:all:web": "for i in {1..40}; do npm run fetch react-web $i; done",
+    "fetch:all:web": "for i in {1..50}; do npm run fetch react-web $i; done",
     "upload": "npm run upload:native && npm run upload:web",
     "upload:native": "scp data/react-native.json react.parts:/var/www/react/data",
     "upload:web": "scp data/react-web.json react.parts:/var/www/react/data",
