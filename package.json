@@ -41,16 +41,13 @@
     "fetch:all": "npm run fetch:all:native && npm run fetch:all:web",
     "fetch:all:native": "for i in {1..10}; do npm run fetch react-native $i; done",
     "fetch:all:web": "for i in {1..50}; do npm run fetch react-web $i; done",
-    "upload": "npm run upload:native && npm run upload:web",
-    "upload:native": "scp data/react-native.json react.parts:/var/www/react/data",
-    "upload:web": "scp data/react-web.json react.parts:/var/www/react/data",
+    "reindex": "node reindex.js",
     "bender:set": "git config user.name 'Bender Rodriguez' && git config user.email 'bender@react.parts'",
     "bender:unset": "git config --unset-all user.name && git config --unset-all user.email",
     "push": "git add components && git commit -m 'Update lists of react components' && git push origin master",
 
     "update": "npm run download:yesterday && npm run parse",
     "prepare": "npm run fetch:all && npm run live",
-    "publish": "npm run upload && npm run bender:set && npm run push && npm run bender:unset",
-    "algolia": "node algolia.js"
+    "publish": "npm run reindex && npm run bender:set && npm run push && npm run bender:unset"
   }
 }

@@ -4,7 +4,6 @@ var keys = require('./keys.json');
 var algoliasearch = require('algoliasearch');
 var client = algoliasearch(keys.algolia.appId, keys.algolia.writeAPIKey);
 
-
 function arrayChunk(list, chunkSize) {
   var chunks = [];
   var max = list.length;
