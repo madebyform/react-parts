@@ -1540,5 +1540,20 @@
     "name": "react-native-vibration",
     "repo": "ideacreation/react-native-vibration",
     "description": "Vibration support for android"
+  },
+  {
+    "name": "react-native-barcodescanner",
+    "repo": "ideacreation/react-native-barcodescanner",
+    "description": "A barcode scanner component for react native"
+  },
+  {
+    "name": "react-native-css-loader",
+    "repo": "thewei/react-native-css-loader",
+    "description": "You can use react-native-css-loader width react-native-webpack-server, which can use webpack to built react-native app better."
+  },
+  {
+    "name": "react-native-privacy-snapshot",
+    "repo": "kayla-tech/react-native-privacy-snapshot",
+    "description": "Obscure passwords and other sensitive personal information when a react-native app transitions to the background"
   }
 ]

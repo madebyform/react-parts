@@ -10072,5 +10072,75 @@
     "name": "react-universal-analytics",
     "repo": "bekerov/react-universal-analytics",
     "description": "React component for Google Universal Analytics"
+  },
+  {
+    "name": "apeman-react-button",
+    "repo": "apeman-react-labo/apeman-react-button",
+    "description": "apeman react package for button component."
+  },
+  {
+    "name": "apeman-react-label",
+    "repo": "apeman-react-labo/apeman-react-label",
+    "description": "apeman react package label component."
+  },
+  {
+    "name": "apeman-react-text",
+    "repo": "apeman-react-labo/apeman-react-text",
+    "description": "apeman react package text component."
+  },
+  {
+    "name": "chamel",
+    "repo": "skystebnicki/chamel",
+    "description": "This is a ReactJS UI framework designed to provide the most native experience possible automatically across common platforms and devices."
+  },
+  {
+    "name": "express-react-render-override",
+    "repo": "rexhome7326/express-react-render-override",
+    "description": "This tool will help you to make your react component cleanly, Just setting path of layout component in your express controller, not require in view component!"
+  },
+  {
+    "name": "react-coverflow",
+    "repo": "andyyou/react-coverflow",
+    "description": "Carousel of coverflow effect"
+  },
+  {
+    "name": "react-field-kit",
+    "repo": "square/react-field-kit",
+    "description": "Components to effectively manage text entry in React using FieldKit."
+  },
+  {
+    "name": "react-stateless-generator",
+    "repo": "broucz/react-stateless-generator",
+    "description": "Component generator inpired by the Elm architecture"
+  },
+  {
+    "name": "react-tic-tac-toe",
+    "repo": "negomi/react-tic-tac-toe",
+    "description": "A React implementation of Tic Tac Toe for one or two players"
+  },
+  {
+    "name": "recompose",
+    "repo": "acdlite/recompose",
+    "description": "A microcomponentization toolkit for React"
+  },
+  {
+    "name": "tabletable",
+    "repo": "ZeroarcSoftware/tabletable",
+    "description": "A simple, but extremely flexible table component written in ReactJS."
+  },
+  {
+    "name": "webpack-react-graph",
+    "repo": "joshuaborn/webpack-react-graph",
+    "description": "A webpack plugin to create a graph visualization of a React component tree"
+  },
+  {
+    "name": "react-event-emitter-mixin",
+    "repo": "mc-zone/react-event-emitter-mixin",
+    "description": "react event emitter mixin"
+  },
+  {
+    "name": "react-sod",
+    "repo": "cshenoy/react-sod",
+    "description": "Yet another React component to style/replace select elements."
   }
 ]
