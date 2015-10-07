@@ -83,18 +83,6 @@ server.get('/:type(web|native)', function(req, res) {
   });
 });
 
-// Return JSON with the list of native components for iOS or components for web
-server.get('/api/components/:type(web|native)', function(req, res) {
-  var type = req.params.type;
-
-  fs.readFile('./data/react-'+ type +'.json', function(error, data) {
-    if (error) return console.error(error);
-
-    var components = JSON.parse(data).sort(sortBy('modified', Date, false));
-    res.json(components);
-  });
-});
-
 // Listen for connections
 server.listen(process.env.PORT || 8080, function() {
   console.log('Server is listening...');
