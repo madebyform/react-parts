@@ -34,8 +34,7 @@ export let Tab = React.createClass({
       },
       selectedTab: {
         background: "#fff",
-        fontWeight: 600,
-        borderTop: '2px solid'
+        fontWeight: 600
       },
       disabledTab: {
         color: "#aaa",

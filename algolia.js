@@ -24,7 +24,6 @@ function formatRecordsForSearch(records, type) {
   return records.map(function(record) {
     record.type = type;
     record.keywords = record.keywords.split(',');
-    record.created = stringDateToUnixTimestamp(record.created);
     record.modified = stringDateToUnixTimestamp(record.modified);
     // There currently is an issue in the way the Algolia API handle HTML chars
     // in the _highlightResult attribute. All htmlencoded data gets decoded, so
@@ -91,8 +90,7 @@ function configureIndex(index) {
     customRanking: [
       'desc(stars)',
       'desc(downloads)',
-      'desc(modified)',
-      'desc(created)'
+      'desc(modified)'
     ],
     minWordSizefor1Typo: 3,
     minWordSizefor2Typos: 7,

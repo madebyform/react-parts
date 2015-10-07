@@ -8,14 +8,14 @@ let Pagination = React.createClass({
   propTypes: {
     currentPage: React.PropTypes.number.isRequired,
     perPage: React.PropTypes.number.isRequired,
-    searchCount: React.PropTypes.number.isRequired
+    totalItems: React.PropTypes.number.isRequired
   },
   render() {
     return (
       <Tabs>
         <Tab {...this.props}
           query={{page: this.previousPage()}}
-          disabled={this.props.currentPage <= 0}>
+          disabled={this.props.currentPage <= 1}>
             Previous
         </Tab>
         <Tab {...this.props}
@@ -27,7 +27,7 @@ let Pagination = React.createClass({
     );
   },
   lastPage() {
-    return Math.ceil(this.props.searchCount / this.props.perPage) - 1;
+    return Math.ceil(this.props.totalItems / this.props.perPage);
   },
   previousPage() {
     // Math.min is only done to deal with tempered page numbers (such as -1)

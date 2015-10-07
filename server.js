@@ -50,10 +50,10 @@ server.get('/native-ios', function(req, res) {
 
 // Return the HTML page with the list of native components for iOS or components for web
 server.get('/:type(web|native)', function(req, res) {
-  var currentPage = parseInt(req.query.page || 0, 10);
+  var currentPage = parseInt(req.query.page || 1, 10);
   var searchOptions = {
     type: req.params.type,
-    page: currentPage
+    page: Math.max(0, currentPage - 1) // In Algolia, pagination starts with 0
   };
 
   getSearchResults(searchOptions).then(function(data) {

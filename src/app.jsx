@@ -34,7 +34,7 @@ export var App = React.createClass({
   },
   getDefaultProps() {
     return {
-      currentPage: 0,
+      currentPage: 1,
       debugMode: false,
       perPage: 20
     };
@@ -91,7 +91,7 @@ export var App = React.createClass({
             params={{ type }}
             currentPage={this.state.currentPage}
             perPage={this.props.perPage}
-            searchCount={searchCount}
+            totalItems={searchCount}
           />
 
           <Footer />
@@ -102,38 +102,38 @@ export var App = React.createClass({
     );
   },
   componentWillReceiveProps(newProps) {
-    var searchQuery = this.state.searchQuery;
-    var currentType = this.state.type;
-    var newType = newProps.params.type;
-    var type = newType || currentType
-    var page = newProps.query.page || this.state.currentPage;
+    let searchQuery = this.state.searchQuery;
+    let currentType = this.state.type;
+    let newType = newProps.params.type;
+    let type = newType || currentType
+    let page = newProps.query.page || this.state.currentPage;
 
     // Revert to first page if switching type
     if (newType !== currentType) {
-      page = 0;
+      page = 1;
     }
 
     this.handleSearch({ searchQuery, type, page});
   },
-  handleSearch({searchQuery = '', type = this.state.type, page = this.state.currentPage}) {
-    var searchOptions = {
+  handleSearch({ searchQuery = '', type = this.state.type, page = this.state.currentPage }) {
+    let searchOptions = {
       query: searchQuery,
       type: type,
-      page: page,
+      page: page - 1, // In Algolia, pagination starts with 0
       perPage: this.props.perPage
     }
     getSearchResults(searchOptions).then((data) => {
-      this.setState({ 
+      this.setState({
         type: type,
         searchQuery: searchQuery,
         components: data.components,
         searchCount: data.searchCount,
-        currentPage: data.page
+        currentPage: data.page + 1
       });
     });
   },
   currentPage() {
-    var currentPage = parseInt(this.props.query.page); // May return NaN
+    let currentPage = parseInt(this.props.query.page); // May return NaN
     if (isNaN(currentPage)) currentPage = 1; // This works, even for 0
     return currentPage;
   }

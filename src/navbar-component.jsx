@@ -112,9 +112,10 @@ let Navbar = React.createClass({
     );
   },
   handleKeyUp() {
-    var field = React.findDOMNode(this.refs.search);
-    var value = field.value.trim().toLowerCase();
-    this.props.onSearch({ searchQuery: value });}
+    let field = React.findDOMNode(this.refs.search);
+    let value = field.value.trim().toLowerCase();
+    this.props.onSearch({ searchQuery: value });
+  }
 });
 
 export default Navbar;
