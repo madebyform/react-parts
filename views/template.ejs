@@ -46,6 +46,11 @@
       color: #777;
     }
 
+    /* Highlight search color */
+    mark {
+      background-color: rgba(37, 59, 107, 0.1);
+    }
+
     ::-webkit-input-placeholder {
       color: #fff;
       font-weight: 300;
@@ -82,8 +87,7 @@
   <div id="container"><%- output %></div>
 
   <script>
-    window.debugMode = <%- debugMode %>;
-    window.initialComponents = <%- JSON.stringify(initialComponents) %>;
+    window.initialData = <%- initialData %>;
   </script>
   <%- cachify_js("/app.min.js") %>
 </body>

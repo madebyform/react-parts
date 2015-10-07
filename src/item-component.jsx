@@ -146,17 +146,13 @@ let ComponentItem = React.createClass({
         <div className="u-displayFlex" style={styles.content}>
           <div style={styles.main}>
             <h3 style={styles.title}>
-              <span style={styles.name}>
-                {this.props.name}
-              </span>
+              <span style={styles.name} dangerouslySetInnerHTML={{__html: this.props.name_highlight}}></span>
               <span style={styles.author}>
-                v{this.props.latestVersion} <TimeAgo dateTime={this.props.modified} /> by {this.props.githubUser}
+                v{this.props.latestVersion} <TimeAgo dateTime={this.props.modified} /> by <span dangerouslySetInnerHTML={{__html: this.props.githubUser_highlight}}></span>
               </span>
               <span style={styles.visited}>visited</span>
             </h3>
-            <div style={styles.body}>
-              {this.props.description}
-            </div>
+            <div style={styles.body} dangerouslySetInnerHTML={{__html: this.props.description_highlight}}></div>
 
             { this.props.platforms &&
             <div className="u-displayFlex" style={styles.footer}>
