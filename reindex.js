@@ -42,25 +42,11 @@ function promiseLog(text) {
 function pushDataToAlgolia(sources) {
   var indexName = 'reactparts';
   var indexNameTmp = indexName + '_tmp';
+  var indexNameSlave = indexName + '_slave';
   var indexTmp = client.initIndex(indexNameTmp);
+  var indexSlave = client.initIndex(indexNameSlave);
 
-  var allRecords = [];
-  sources.forEach(function(source) {
-    var records = require(source.file);
-    var type = source.type;
-    allRecords = allRecords.concat(formatRecordsForSearch(records, type));
-  });
-
-  return configureIndex(indexTmp)
-    .then(promiseLog('[' + indexNameTmp +']: Configured index'))
-    .then(pushRecords(allRecords, indexTmp))
-    .then(promiseLog('[' + indexNameTmp +']: Pushed all chunks'))
-    .then(overwriteTmpIndex(client, indexNameTmp, indexName))
-    .then(promiseLog('[' + indexNameTmp +']: Delete tmp index'));
-}
-
-function configureIndex(index) {
-  return index.setSettings({
+  var indexSettings = {
     attributesToIndex: [
       'unordered(name)',
       'unordered(description)',
@@ -96,7 +82,35 @@ function configureIndex(index) {
     hitsPerPage: 20,
     highlightPreTag: '<mark>',
     highlightPostTag: '</mark>'
+  };
+
+  // Create a slave index that is sorted by `modified`
+  var indexSlaveSettings = Object.assign({}, indexSettings);
+  indexSlaveSettings.customRanking = ['desc(modified)'];
+
+  // To be able to move the master index, the slave was configured on the site
+  // indexSettings.slaves = [ indexNameSlave ];
+
+  var allRecords = [];
+  sources.forEach(function(source) {
+    var records = require(source.file);
+    var type = source.type;
+    allRecords = allRecords.concat(formatRecordsForSearch(records, type));
   });
+
+  return configureIndex(indexTmp, indexSettings)
+    .then(promiseLog('[' + indexNameTmp +']: Configured index'))
+    .then(configureIndex(indexSlave, indexSlaveSettings))
+    .then(promiseLog('[' + indexNameTmp +']: Configured slave index'))
+    .then(pushRecords(allRecords, indexTmp))
+    .then(promiseLog('[' + indexNameTmp +']: Pushed all chunks'))
+    .then(overwriteTmpIndex(client, indexNameTmp, indexName))
+    .then(promiseLog('[' + indexNameTmp +']: Delete tmp index'))
+    .catch(console.log);
+}
+
+function configureIndex(index, settings) {
+  return index.setSettings(settings);
 }
 
 function pushRecords(records, index) {

@@ -5,6 +5,7 @@ var algoliaAppId = 'POLDBPK8LK';
 var algoliaSearchAPIKey = 'e23f93113f47b926771abfcf68496ef5';
 var AlgoliaClient = AlgoliaSearch(algoliaAppId, algoliaSearchAPIKey);
 var AlgoliaIndex = AlgoliaClient.initIndex('reactparts');
+var AlgoliaSlaveIndex = AlgoliaClient.initIndex('reactparts_slave');
 
 function getSearchResults({ query = '', type = 'native', page = 0, perPage = 20 }) {
   var searchConfig = {
@@ -14,7 +15,10 @@ function getSearchResults({ query = '', type = 'native', page = 0, perPage = 20 
     page: page
   };
 
-  return AlgoliaIndex.search(query, searchConfig).then(function(data) {
+  // If there isn't a query, use the slave index which is sorted by `modified`
+  var index = query === "" ? AlgoliaSlaveIndex : AlgoliaIndex;
+
+  return index.search(query, searchConfig).then(function(data) {
     // Search results
     var searchResults = data.hits.map(function(hit) {
       hit.modified = new Date(hit.modified).toISOString();
@@ -34,4 +38,3 @@ function getSearchResults({ query = '', type = 'native', page = 0, perPage = 20 
 }
 
 export default getSearchResults;
-
