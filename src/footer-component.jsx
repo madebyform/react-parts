@@ -12,43 +12,43 @@ let Footer = React.createClass({
     let styles = {
       footer: {
         fontSize: this.remCalc(15),
-        marginBottom: this.remCalc(30),
+        marginBottom: this.remCalc(15),
         marginTop: this.remCalc(40),
-        position: "relative"
-      },
-      content: {
-        marginLeft: this.remCalc(62)
-      },
-      label: {
-        paddingRight: this.remCalc(16)
+        position: "relative",
+        textAlign: "center"
       },
       link: {
         color: "#253b6b",
         fontWeight: 600,
-        paddingRight: this.remCalc(14),
+        paddingLeft: this.remCalc(14),
         textDecoration: "none"
-      },
-      logo: {
-        height: this.remCalc(44),
-        left: 0,
-        marginBottom: this.remCalc(16),
-        marginRight: this.remCalc(16),
-        position: "absolute",
-        width: this.remCalc(44)
       },
       copy: {
         color: "#999",
-        fontWeight: 200
+        fontWeight: 200,
+        marginTop: this.remCalc(2)
+      },
+      copyLink: {
+        borderBottom: "1px solid #c4c5c7",
+        color: "inherit",
+        fontWeight: 400,
+        textDecoration: "none"
+      },
+      sponsors: {
+        marginLeft: "auto",
+        marginRight: "auto",
+        marginTop: this.remCalc(16),
+        width: "100%"
+      },
+      logo: {
+        height: this.remCalc(30),
+        padding: this.remCalc(17)
       }
     };
     return (
       <div style={styles.footer}>
-        <a href="http://madebyform.com">
-          <img style={styles.logo} src="/madebyform-logo.svg" alt="Made by Form" draggable="false" />
-        </a>
-
-        <div style={styles.content}>
-          <span style={styles.label}>More Resources</span>
+        <div>
+          <span>More Resources</span>
 
           <a style={styles.link} href="https://discuss.reactjs.org/">
             Discussions
@@ -57,10 +57,10 @@ let Footer = React.createClass({
             Slack
           </a>
           <a style={styles.link} href="https://github.com/facebook/react/wiki/">
-            Wiki
+            React Wiki
           </a>
           <a style={styles.link} href="https://github.com/ericvicenti/react-native-community/">
-            <span className="u-hideSmall">React Native</span> Community
+            React Native Community
           </a>
           <a style={styles.link} href="https://github.com/enaqx/awesome-react/">
             Awesome React
@@ -70,9 +70,22 @@ let Footer = React.createClass({
           </a>
 
           <div style={styles.copy}>
-            React, React Native and logos are copyright of Facebook.
             This page is not affiliated with Facebook.
+            Proudly hosted by <a style={styles.copyLink} href="https://digitalocean.com/?utm_source=react.parts">DigitalOcean</a>.
+            Search powered by <a style={styles.copyLink} href="https://algolia.com/?utm_source=react.parts">Algolia</a>.
           </div>
+        </div>
+
+        <div style={styles.sponsors}>
+          <a href="http://madebyform.com">
+            <img style={styles.logo} src="/madebyform-logo.svg" alt="Made by Form" draggable="false" />
+          </a>
+          <a href="https://digitalocean.com/?utm_source=react.parts">
+            <img style={styles.logo} src="/digitalocean-logo.svg" alt="Digital Ocean" draggable="false" />
+          </a>
+          <a href="https://algolia.com/?utm_source=react.parts">
+            <img style={styles.logo} src="/algolia-logo.svg" alt="Algolia" draggable="false" />
+          </a>
         </div>
       </div>
     );
