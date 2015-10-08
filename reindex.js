@@ -1,8 +1,10 @@
-/*jshint node:true, unused:true */
+/*jshint esnext:true, node:true, unused:true */
+
 var ent = require('ent');
 var keys = require('./keys.json');
 var algoliasearch = require('algoliasearch');
 var client = algoliasearch(keys.algolia.appId, keys.algolia.writeAPIKey);
+var env = process.argv[2];
 
 function arrayChunk(list, chunkSize) {
   var chunks = [];
@@ -40,7 +42,7 @@ function promiseLog(text) {
 }
 
 function pushDataToAlgolia(sources) {
-  var indexName = 'reactparts';
+  var indexName = `reactparts${ env === "production" ? "" : "_dev" }`;
   var indexNameTmp = indexName + '_tmp';
   var indexNameSlave = indexName + '_slave';
   var indexTmp = client.initIndex(indexNameTmp);

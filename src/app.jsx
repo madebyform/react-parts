@@ -120,7 +120,8 @@ export var App = React.createClass({
       query: searchQuery,
       type: type,
       page: page - 1, // In Algolia, pagination starts with 0
-      perPage: this.props.perPage
+      perPage: this.props.perPage,
+      production: !this.props.debugMode
     }
     getSearchResults(searchOptions).then((data) => {
       this.setState({

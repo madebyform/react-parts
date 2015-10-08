@@ -53,7 +53,8 @@ server.get('/:type(web|native)', function(req, res) {
   var currentPage = parseInt(req.query.page || 1, 10);
   var searchOptions = {
     type: req.params.type,
-    page: Math.max(0, currentPage - 1) // In Algolia, pagination starts with 0
+    page: Math.max(0, currentPage - 1), // In Algolia, pagination starts with 0
+    production: production
   };
 
   getSearchResults(searchOptions).then(function(data) {
