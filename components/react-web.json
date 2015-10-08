@@ -9735,7 +9735,7 @@
   {
     "name": "react-test-unit",
     "repo": "jarsbe/react-test-unit",
-    "description": "A set of utilities to make testing stateless components simple, readable and fast. This is in early stage development. I wouldn't recommend using it just yet.",
+    "description": "<strong>Warning</strong> Currently in active development, not quite ready for prime time. There WILL be major break changes.",
     "custom_description": "A set of utilities to make testing stateless components simple, readable and fast."
   },
   {
@@ -10109,11 +10109,6 @@
     "description": "Components to effectively manage text entry in React using FieldKit."
   },
   {
-    "name": "react-stateless-generator",
-    "repo": "broucz/react-stateless-generator",
-    "description": "Component generator inpired by the Elm architecture"
-  },
-  {
     "name": "react-tic-tac-toe",
     "repo": "negomi/react-tic-tac-toe",
     "description": "A React implementation of Tic Tac Toe for one or two players"
@@ -10142,5 +10137,40 @@
     "name": "react-sod",
     "repo": "cshenoy/react-sod",
     "description": "Yet another React component to style/replace select elements."
+  },
+  {
+    "name": "apeman-react-checkbox",
+    "repo": "apeman-react-labo/apeman-react-checkbox",
+    "description": "apeman react package for checkbox component."
+  },
+  {
+    "name": "apeman-react-password",
+    "repo": "apeman-react-labo/apeman-react-password",
+    "description": "apeman react package for password component."
+  },
+  {
+    "name": "apeman-react-radio",
+    "repo": "apeman-react-labo/apeman-react-radio",
+    "description": "apeman react package for radio component."
+  },
+  {
+    "name": "cs-react-pager",
+    "repo": "chenxsan/pager",
+    "description": "A simple react pagination component"
+  },
+  {
+    "name": "react-delay",
+    "repo": "nearengine/react-delay",
+    "description": "Easily delay rendering of child components with a timer"
+  },
+  {
+    "name": "react-display-name",
+    "repo": "jurassix/react-display-name",
+    "description": "utility to return a react components display name"
+  },
+  {
+    "name": "redux-storage",
+    "repo": "michaelcontento/redux-storage",
+    "description": "Persistence layer for redux with flexible backends"
   }
 ]

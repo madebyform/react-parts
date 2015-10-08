@@ -1555,5 +1555,40 @@
     "name": "react-native-privacy-snapshot",
     "repo": "kayla-tech/react-native-privacy-snapshot",
     "description": "Obscure passwords and other sensitive personal information when a react-native app transitions to the background"
+  },
+  {
+    "name": "react-native-android-statusbar",
+    "repo": "NishanthShankar/react-native-android-statusbar",
+    "description": "A react native android package to control the status bar."
+  },
+  {
+    "name": "react-native-audio-player",
+    "repo": "sh3rawi/react-native-audio-player",
+    "description": "A React Native module to play audio on Android"
+  },
+  {
+    "name": "react-native-custom-action-sheet",
+    "repo": "eyaleizenberg/react-native-custom-action-sheet",
+    "description": "iOS custom sheet with fade in/out overlay"
+  },
+  {
+    "name": "react-native-emoji",
+    "repo": "jorilallo/react-native-emoji",
+    "description": "Emoji component for React Native"
+  },
+  {
+    "name": "react-native-grid",
+    "repo": "thewei/react-native-grid",
+    "description": "The 24-column grid component for react-native"
+  },
+  {
+    "name": "react-native-hawk",
+    "repo": "andyscott/react-native-hawk",
+    "description": "Hawk wrapper for react-native"
+  },
+  {
+    "name": "react-native-material-switch",
+    "repo": "Recr0ns/react-native-material-switch",
+    "description": "Customizable material style switch"
   }
 ]
