@@ -75,19 +75,8 @@ function pushDataToAlgolia(sources) {
       'keywords',
       'githubUser'
     ],
-    ranking: [
-      // Similar to the default ranking but "custom" is in second instead of last. Eg:
-      // - If the query `video` is matched in both name and keywords in 1 record, and
-      //   only in the name in another, we still want the one with more stars on top.
-      // - If `card` matches `react-card` with 10 stars and `react-carousel` with 100,
-      //   we want the one with 0 typos on top.
-      "typo",
-      "custom",
-      "words",
-      "proximity",
-      "attribute",
-      "exact"
-    ],
+    // Disable the exact criterion when there is only one word
+    useQueryEqualsOneAttributeInRanking: false,
     customRanking: [
       'desc(stars)',
       'desc(downloads)',
