@@ -5,7 +5,7 @@
 We have several scripts defined in the `package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
 - `npm run update` downloads new packages from NPM, stores them into `data/npm.json`, parses that and updates the `components/react-*.json` files;
 - `npm run fetch:all` goes through all components in the `components/react-*.json` files and gets updated metadata (stars, etc.) from NPM & GitHub and stores that into `data/react-*.json`;
-- `npm run publish` uploads the `data/react-*.json` files to the server and pushes the updated `components/react-*.json` files to GitHub.
+- `npm run publish` pushes the `data/react-*.json` files to the search server and pushes the updated `components/react-*.json` files to GitHub.
 
 Some observations:
 - This means `fetch:all` can run in a cron job if we want it too;
@@ -22,7 +22,7 @@ React.parts is a regular database-less Node.js app, so you can host it however y
 git push dokku master
 ```
 
-For updating the catalog, we simply call `npm run publish` which, among other things, uploads the static files via `scp`.
+For updating the catalog, we simply call `npm run publish` which, among other things, updates the search index.
 
 
 ### Setting up a production environment
@@ -32,13 +32,7 @@ As mentioned before we use Dokku, so to setup a similar environment you need to:
 ```
 git remote add dokku dokku@react.parts:react-parts
 git push dokku master
-```
-
-Since the `data/react-*.json` files are not in our git repository (only `components/react-*.json` are) we need to use Dokku's persistence storage:
-
-```
-mkdir -p /var/www/react-parts/data
-dokku docker-options:add react-parts "-v /var/www/react-parts/data:/app/data"
+ssh -t react.parts 'dokku config:set react-parts NODE_ENV=production'
 ```
 
 ---
