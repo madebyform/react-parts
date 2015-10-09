@@ -82,7 +82,8 @@ function pushDataToAlgolia(sources) {
       'desc(downloads)',
       'desc(modified)'
     ],
-    minWordSizefor1Typo: 3,
+    queryType: "prefixAll",
+    minWordSizefor1Typo: 4,
     minWordSizefor2Typos: 7,
     hitsPerPage: 20,
     highlightPreTag: '<mark>',
