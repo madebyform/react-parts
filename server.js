@@ -12,7 +12,6 @@ let express = require('express');
 let cachify = require('connect-cachify');
 let ejs = require('ejs');
 let getSearchResults = require('./src/get-search-results');
-let sortBy = require('./src/sort');
 let server = express();
 let production = (process.env.NODE_ENV != "development");
 

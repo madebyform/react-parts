@@ -14,7 +14,6 @@ import Scroller from './scroller-component.jsx';
 import Footer from './footer-component.jsx';
 import Twitter from './twitter-component.jsx';
 import getSearchResults from './get-search-results';
-import sortBy from './sort';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;
