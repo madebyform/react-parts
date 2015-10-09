@@ -5,7 +5,6 @@
   },
   "dependencies": {
     "algoliasearch": "^3.8.1",
-    "async": "^1.4.2",
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
@@ -19,6 +18,7 @@
     "react": "^0.13.3",
     "react-debounce-input": "^1.1.4",
     "react-router": "^0.13.3",
+    "readline-sync": "^1.2.21",
     "request": "^2.63.0",
     "timeago": "0.2.0",
     "uglifyjs": "^2.4.10"
@@ -37,7 +37,7 @@
 
     "download:all": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
     "download:yesterday": "curl -L https://registry.npmjs.org/-/all/static/yesterday.json -o data/npm.json",
-    "parse": "node parse.js",
+    "parse": "node parse.js -i",
     "fetch": "node fetch.js",
     "fetch:all": "npm run fetch:all:native && npm run fetch:all:web",
     "fetch:all:native": "for i in {1..10}; do npm run fetch react-native $i; done",

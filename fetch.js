@@ -91,6 +91,10 @@ components.forEach(function(component) {
           latestVersion: npm["dist-tags"].latest
         };
 
+        // Log if the new data doesn't have stars information or a description
+        if (typeof data.stars === 'undefined') console.log(`Component ${ component.name } has no stars`);
+        if (!data.description) console.log(`Component ${ component.name } has no description`);
+
         // To save some bytes, if package name and repo name are equal, keep only one
         if (data.name === data.githubName) delete data.githubName;
 
@@ -104,7 +108,7 @@ components.forEach(function(component) {
         }
 
         // Add a trailing dot to the description
-        if (data.description[data.description.length - 1] != "." && !isDoubleByte(data.description)) {
+        if (!/[\.\?\!]$/.test(data.description) && !isDoubleByte(data.description)) {
           data.description += ".";
         }
 

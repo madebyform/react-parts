@@ -3,6 +3,8 @@
 
 let fs = require('fs');
 let path = require('path');
+let readlineSync = require('readline-sync');
+var execSync = require('child_process').execSync;
 
 // Paths to the JSON files with the lists of components
 let nativeComponentsFilename = path.join(__dirname, "components", "react-native.json");
@@ -20,14 +22,18 @@ toObject(existingWebComponents, existing);
 toObject(rejectedComponents, existing);
 
 let npmDataFilename = path.join(__dirname, 'data', 'npm.json');
-let sinceDate = new Date(process.argv[2] || "2010-01-01");
+let defaultSinceDate = new Date("2010-01-01");
+let githubUrl = "https://github.com";
+let interactive = process.argv.indexOf("-i") !== -1;
+let sinceDateArg = new Date(process.argv[2]);
+let sinceDate = isNaN(sinceDateArg.getTime()) ? defaultSinceDate : sinceDateArg;
 
 // Keywords that identify a component for react for web
 // For eg: `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
 let webKeywords = [
   "react-component",
   ["react", "component"],
-  ["reactjs", "component"]
+  // "react", "relay", "graphql", "redux", "flux", "rackt"
 ];
 
 // Keywords that identify a component for react native
@@ -36,7 +42,7 @@ let nativeKeywords = [
   "react-native-component",
   ["react-native", "component"],
   ["react-native", "react-component"],
-  ["react", "native", "component"]
+  ["react", "native"]
 ];
 
 function toObject(array, object) {
@@ -89,14 +95,27 @@ function repoUrlToShortRepo(url) {
 }
 
 // Keep only the component name and its repo
-function slimComponentInfo(components) {
-  return components.map(function(candidate) {
-    return {
-      name: candidate.name,
-      repo: repoUrlToShortRepo(candidate.repository.url),
-      description: candidate.description
-    };
-  });
+function slimComponentInfo(candidate) {
+  return {
+    name: candidate.name,
+    repo: repoUrlToShortRepo(candidate.repository.url),
+    description: candidate.description
+  };
+}
+
+function validateCandidate(candidates, newCandidate, type) {
+  let component = slimComponentInfo(newCandidate);
+  let shouldAdd = true;
+
+  if (interactive) {
+    console.log(`✨ ${ type }: ${ component.name }\n${ component.description }`);
+    execSync(`open ${ githubUrl }/${ component.repo }`);
+    shouldAdd = readlineSync.question("Add to the components file [yn]? ") == "y";
+    console.log();
+  }
+  if (shouldAdd) {
+    candidates.push(component);
+  }
 }
 
 function parseAndSave(data) {
@@ -117,10 +136,10 @@ function parseAndSave(data) {
     // Search for keywords in the `keywords` prop
     if (candidate.keywords && candidate.keywords instanceof Array) {
       if (matcher(candidate.keywords, nativePartialStore, nativeKeywords)) {
-        return nativeCandidates.push(candidate);
+        return validateCandidate(nativeCandidates, candidate, "native");
       }
       if (matcher(candidate.keywords, webPartialStore, webKeywords)) {
-        return webCandidates.push(candidate);
+        return validateCandidate(webCandidates, candidate, "web");
       }
     }
 
@@ -128,10 +147,10 @@ function parseAndSave(data) {
     for (let prop of ["name", "description", "readme"]) {
       if (candidate[prop]) {
         if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
-          return nativeCandidates.push(candidate);
+          return validateCandidate(nativeCandidates, candidate, "native");
         }
         if (matcher(candidate[prop].toLowerCase(), webPartialStore, webKeywords)) {
-          return webCandidates.push(candidate);
+          return validateCandidate(webCandidates, candidate, "web");
         }
       }
     }
@@ -144,10 +163,10 @@ function parseAndSave(data) {
         ["dependencies", "peerDependencies", "devDependencies"].forEach(function(prop) {
           if (version[prop]) {
             if (matcher(version[prop], nativePartialStore, nativeKeywords)) {
-              return nativeCandidates.push(candidate);
+              return validateCandidate(nativeCandidates, candidate, "native");
             }
             if (matcher(version[prop], webPartialStore, webKeywords)) {
-              return webCandidates.push(candidate);
+              return validateCandidate(webCandidates, candidate, "web");
             }
           }
         });
@@ -158,9 +177,9 @@ function parseAndSave(data) {
   // Log information about new components that can be used for tweeting
   nativeCandidates.concat(webCandidates).forEach(function(component) {
     let tweet = `🆕 ${ component.name }: <DSC>`;
-    let maxLength = 140 - 31 - tweet.length;
+    let maxLength = 140 - 29 - tweet.length;
 
-    let homepage = `${ component.homepage }`.replace("#readme", "");
+    let homepage = `${ githubUrl }/${ component.repo }`;
     let description = `${ component.description }`;
 
     if (description.length > maxLength) {
@@ -168,13 +187,9 @@ function parseAndSave(data) {
     } else if (description[description.length - 1] == ".") {
       description = description.substring(0, description.length - 1);
     }
-    tweet = tweet.replace("<DSC>", description) + ` ${ homepage } ⚛`;
+    tweet = tweet.replace("<DSC>", description) + ` ${ homepage }`;
     console.log(tweet);
   });
-
-  // Keep only the component name and its repo
-  webCandidates = slimComponentInfo(webCandidates);
-  nativeCandidates = slimComponentInfo(nativeCandidates);
 
   // Update the JSON files
   let webComponents = existingWebComponents.concat(webCandidates);
@@ -182,7 +197,7 @@ function parseAndSave(data) {
   fs.writeFile(webComponentsFilename, JSON.stringify(webComponents, null, '  '));
   fs.writeFile(nativeComponentsFilename, JSON.stringify(nativeComponents, null, '  '));
 
-  console.log(`Completed with ${ webCandidates.length } web components ` +
+  console.log(`\nCompleted with ${ webCandidates.length } web components ` +
     `and ${ nativeCandidates.length } native components`);
 }
 
