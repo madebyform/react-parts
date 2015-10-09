@@ -92,9 +92,10 @@ let Navbar = React.createClass({
             <img style={styles.logo} src="/react-logo.svg" alt="Logo" draggable="false" />
           </a>
         </div>
-        <div style={styles.center}>
+        <form style={styles.center} action="" onSubmit={this.handleSubmit}>
           <input
             className="u-forceSmall16"
+            name="search"
             ref="search"
             style={styles.search}
             type="text"
@@ -104,7 +105,7 @@ let Navbar = React.createClass({
             autoCapitalize="off"
             spellCheck="false"
           />
-        </div>
+        </form>
         <div style={styles.right}>
           <a className="u-hideSmall" style={styles.link} href="/submit">
             Submit a component
@@ -117,6 +118,10 @@ let Navbar = React.createClass({
     let field = React.findDOMNode(this.refs.search);
     let value = field.value.trim();
     this.props.onSearch(value);
+  },
+  handleSubmit(e) {
+    // When the user presses <return> nothing should happen
+    e.preventDefault();
   }
 });
 
