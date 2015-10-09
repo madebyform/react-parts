@@ -10172,5 +10172,75 @@
     "name": "redux-storage",
     "repo": "michaelcontento/redux-storage",
     "description": "Persistence layer for redux with flexible backends"
+  },
+  {
+    "name": "algolia-react-input",
+    "repo": "revolunet/algolia-react-input",
+    "description": "A simple react input component to query your algolia index"
+  },
+  {
+    "name": "apeman-react-touchable",
+    "repo": "apeman-react-labo/apeman-react-touchable",
+    "description": "apeman react package for touchable component."
+  },
+  {
+    "name": "frrb",
+    "repo": "joakimbeng/frrb",
+    "description": "Fat Responsive Radiobutton"
+  },
+  {
+    "name": "kendo-ui-react",
+    "repo": "jakubkottnauer/kendo-ui-react",
+    "description": "React Component Library for Kendo UI Widgets. There exists a React Component named for every Kendo widget in the kendo.ui namespace. Tested on React 0.14 and KendoUI 2015.2.902."
+  },
+  {
+    "name": "react-atoms",
+    "repo": "philcockfield/react-atoms",
+    "description": "Low level react components (the 'atoms' of larger UI structures)."
+  },
+  {
+    "name": "react-categorized-tag-input",
+    "repo": "mvader/react-categorized-tag-input",
+    "description": "React.js component for making tag autocompletion inputs with categorized results."
+  },
+  {
+    "name": "react-date-range",
+    "repo": "Adphorus/react-date-range",
+    "description": "A React component for choosing dates and date ranges."
+  },
+  {
+    "name": "react-github-components",
+    "repo": "mamal72/react-github-components",
+    "description": "A set of useful Github components for React"
+  },
+  {
+    "name": "react-reflex-layout",
+    "repo": "chetanism/react-reflex-layout",
+    "description": "A simple implementation flexbox layout components."
+  },
+  {
+    "name": "react-scroll-up",
+    "repo": "milosjanda/react-scroll-up",
+    "description": "React component to render element for scroll to top of page"
+  },
+  {
+    "name": "react-stateful-input",
+    "repo": "mrblueblue/react-stateful-input",
+    "description": "React Input component that holds state"
+  },
+  {
+    "name": "react-stateless",
+    "repo": "troch/react-stateless",
+    "description": "Helpers to write stateless components in React"
+  },
+  {
+    "name": "react-transform-boilerplate",
+    "repo": "gaearon/react-transform-boilerplate",
+    "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level."
+  },
+  {
+    "name": "replux",
+    "repo": "gregthebusker/replux",
+    "description": "Enhancements for Redux to use with greater self contained components"
   }
 ]

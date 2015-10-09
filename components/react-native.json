@@ -583,7 +583,9 @@
   },
   {
     "name": "react-paypal",
-    "repo": "MattFoley/react-native-paypal"
+    "repo": "MattFoley/react-native-paypal",
+    "description": "",
+    "custom_description": "Paypal wrapper for React Native, currently only supports the bare minimum of buying a product."
   },
   {
     "name": "popeye",
@@ -1590,5 +1592,25 @@
     "name": "react-native-material-switch",
     "repo": "Recr0ns/react-native-material-switch",
     "description": "Customizable material style switch"
+  },
+  {
+    "name": "react-native-android-vitamio",
+    "repo": "sejoker/react-native-android-vitamio",
+    "description": "React-native component for android Vitamio video player"
+  },
+  {
+    "name": "react-native-file-download",
+    "repo": "plrthink/react-native-file-download",
+    "description": "A simple file download module for react-native"
+  },
+  {
+    "name": "react-native-material-button",
+    "repo": "Recr0ns/react-native-material-button",
+    "description": "Customizable material style button"
+  },
+  {
+    "name": "react-native-zip-archive",
+    "repo": "plrthink/react-native-zip-archive",
+    "description": "A little wrapper on ZipArchive for react-native"
   }
 ]
