@@ -114,7 +114,7 @@ export var App = React.createClass({
     // Clear the list and display loading message
     this.setState({ components: [], count: 0, loading: true });
 
-    getSearchResults(searchOptions).then((data) => {
+    getSearchResults(searchOptions, (data) => {
       this.setState({
         components: data.components,
         count: data.searchCount,

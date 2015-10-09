@@ -61,7 +61,7 @@ server.get('/:type(web|native)', function(req, res) {
       production: production
     };
 
-    getSearchResults(searchOptions).then(function(data) {
+    getSearchResults(searchOptions, function(data) {
       let initialData = {
         initialComponents: data.components,
         initialCount: data.searchCount,
@@ -82,7 +82,7 @@ server.get('/:type(web|native)', function(req, res) {
         output: React.renderToString(content),
         initialData: JSON.stringify(initialData)
       });
-    }).catch(console.error);
+    });
   });
 });
 

@@ -26,10 +26,11 @@ function formatRecordsForSearch(records, type) {
     record.type = type;
     record.keywords = record.keywords.split(',');
     record.modified = stringDateToUnixTimestamp(record.modified);
+    record.description = ent.encode(record.description || ''); // For browsing
     // There currently is an issue in the way the Algolia API handle HTML chars
     // in the _highlightResult attribute. All htmlencoded data gets decoded, so
     // we need to encode it twice to get the correct display.
-    record.description_encoded = ent.encode(ent.encode(record.description || ''));
+    record.description_encoded = ent.encode(record.description); // For searching (w/ highlights)
     return record;
   });
 }
