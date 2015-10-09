@@ -60,7 +60,7 @@ export var App = React.createClass({
       }
     };
     return (
-      <Scroller className="u-scrollable" position={debugMode ? "same" : "top"} style={styles.container}>
+      <Scroller className="u-scrollable" position="top" style={styles.container}>
         <Navbar
           title={title}
           height={this.remCalc(55)}

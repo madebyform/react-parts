@@ -18,13 +18,7 @@ let ComponentItem = React.createClass({
     modified: React.PropTypes.string.isRequired,
     name: React.PropTypes.string.isRequired,
     stars: React.PropTypes.number.isRequired,
-    platforms: React.PropTypes.object,
-    debugMode: React.PropTypes.bool
-  },
-  getDefaultProps() {
-    return {
-      debugMode: false
-    };
+    platforms: React.PropTypes.object
   },
   render() {
     let styles = {
@@ -132,13 +126,6 @@ let ComponentItem = React.createClass({
         textAlign: "right"
       }
     };
-
-    if (this.props.debugMode) {
-      ['description', 'modified', 'stars'].forEach((prop) => {
-        if (typeof this.props[prop] == "undefined")
-          console.log(`Undefined ${ prop } for ${ this.props.name }`);
-      });
-    }
 
     return (
       <a className="u-visited" style={styles.container}
