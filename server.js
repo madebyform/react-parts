@@ -1,24 +1,24 @@
-/*jshint node:true */
+/*jshint esnext:true, node:true */
 'use strict';
 
 // Start by registering a hook that makes calls to `require` run ES6 code
 // This will be the only file where JSX and ES6 features are not supported
 require('babel/register');
 
-var fs = require('fs');
-var React = require('react');
-var Router = require('react-router');
-var express = require('express');
-var cachify = require('connect-cachify');
-var ejs = require('ejs');
-var getSearchResults = require('./src/get-search-results');
-var sortBy = require('./src/sort');
-var server = express();
-var production = (process.env.NODE_ENV != "development");
+let fs = require('fs');
+let React = require('react');
+let Router = require('react-router');
+let express = require('express');
+let cachify = require('connect-cachify');
+let ejs = require('ejs');
+let getSearchResults = require('./src/get-search-results');
+let sortBy = require('./src/sort');
+let server = express();
+let production = (process.env.NODE_ENV != "development");
 
 // List of assets where the keys are your production urls, and the value
 // is a  list of development urls that produce the same asset
-var assets = {
+let assets = {
   "/app.min.js": [ "/app.js" ]
 };
 
@@ -50,37 +50,40 @@ server.get('/native-ios', function(req, res) {
 
 // Return the HTML page with the list of native components for iOS or components for web
 server.get('/:type(web|native)', function(req, res) {
-  var currentPage = parseInt(req.query.page || 1, 10);
-  var searchOptions = {
-    type: req.params.type,
-    page: Math.max(0, currentPage - 1), // In Algolia, pagination starts with 0
-    production: production
-  };
+  Router.run(routes, req.url, function (handler, state) {
+    let perPage = 20;
+    let currentPage = Math.max(1, parseInt(state.query.page, 10) || 1);
 
-  getSearchResults(searchOptions).then(function(data) {
-    var components = data.components;
+    let searchOptions = {
+      query: state.query.search,
+      type: state.params.type,
+      page: currentPage - 1, // In Algolia, pagination starts with 0
+      perPage: perPage,
+      production: production
+    };
 
-    Router.run(routes, req.url, function (handler, state) {
-      var initialData = {
-        components: components,
-        currentPage: currentPage,
-        debugMode: !production,
-        searchQuery: state.searchQuery,
-        searchCount: data.searchCount,
-        type: state.params.type
+    getSearchResults(searchOptions).then(function(data) {
+      let initialData = {
+        initialComponents: data.components,
+        initialCount: data.searchCount,
+        perPage: perPage,
+        debugMode: !production
       };
 
       // Render the app and send the markup for faster page loads and SEO
       // On the client, React will preserve the markup and only attach event handlers
-      var Handler = React.createFactory(handler);
-      var content = new Handler(initialData);
-      var output = React.renderToString(content);
+      let Handler = React.createFactory(handler);
+      let props = Object.assign({}, initialData, {
+        params: state.params,
+        query: state.query
+      });
+      let content = new Handler(props);
 
       res.render('template', {
-        output: output,
+        output: React.renderToString(content),
         initialData: JSON.stringify(initialData)
       });
-    });
+    }).catch(console.error);
   });
 });
 

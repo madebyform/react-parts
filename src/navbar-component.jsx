@@ -11,6 +11,7 @@ let Navbar = React.createClass({
   propTypes: {
     title: React.PropTypes.string.isRequired,
     height: React.PropTypes.string.isRequired,
+    defaultValue: React.PropTypes.string,
     onSearch: React.PropTypes.func
   },
   getDefaultProps() {
@@ -99,6 +100,7 @@ let Navbar = React.createClass({
             type="text"
             placeholder="Search"
             onKeyUp={this.handleKeyUp}
+            defaultValue={this.props.defaultValue}
             autoCapitalize="off"
             spellCheck="false"
           />
@@ -113,8 +115,8 @@ let Navbar = React.createClass({
   },
   handleKeyUp() {
     let field = React.findDOMNode(this.refs.search);
-    let value = field.value.trim().toLowerCase();
-    this.props.onSearch({ searchQuery: value });
+    let value = field.value.trim();
+    this.props.onSearch(value);
   }
 });
 

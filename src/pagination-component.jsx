@@ -14,12 +14,12 @@ let Pagination = React.createClass({
     return (
       <Tabs>
         <Tab {...this.props}
-          query={{page: this.previousPage()}}
+          query={ Object.assign({}, this.props.query, {page: this.previousPage()}) }
           disabled={this.props.currentPage <= 1}>
             Previous
         </Tab>
         <Tab {...this.props}
-          query={{page: this.nextPage()}}
+          query={ Object.assign({}, this.props.query, {page: this.nextPage()}) }
           disabled={this.props.currentPage >= this.lastPage()}>
             Next
         </Tab>

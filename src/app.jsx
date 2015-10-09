@@ -13,7 +13,7 @@ import Pagination from './pagination-component.jsx';
 import Scroller from './scroller-component.jsx';
 import Footer from './footer-component.jsx';
 import Twitter from './twitter-component.jsx';
-import getSearchResults from './get-search-results'
+import getSearchResults from './get-search-results';
 import sortBy from './sort';
 
 let Route = Router.Route;
@@ -25,36 +25,26 @@ export var App = React.createClass({
     router: React.PropTypes.func
   },
   propTypes: {
-    components: React.PropTypes.array.isRequired,
-    currentPage: React.PropTypes.number,
-    debugMode: React.PropTypes.bool,
-    searchQuery: React.PropTypes.string,
-    searchCount: React.PropTypes.number,
-    type: React.PropTypes.string
-  },
-  getDefaultProps() {
-    return {
-      currentPage: 1,
-      debugMode: false,
-      perPage: 20
-    };
+    params: React.PropTypes.object.isRequired,
+    query: React.PropTypes.object.isRequired,
+    initialComponents: React.PropTypes.array.isRequired,
+    initialCount: React.PropTypes.number.isRequired,
+    perPage: React.PropTypes.number.isRequired,
+    debugMode: React.PropTypes.bool.isRequired,
   },
   getInitialState() {
     return {
-      components: this.props.components,
-      currentPage: this.props.currentPage,
-      searchQuery: this.props.searchQuery,
-      searchCount: this.props.searchCount,
-      type: this.props.type
+      components: this.props.initialComponents,
+      count: this.props.initialCount
     };
   },
   render() {
     let title = "React.parts";
-    let type = this.state.type;
+    let type = this.props.params.type;
+    let search = this.props.query.search;
+    let searchInputQuery = search ? decodeURIComponent(search) : null;
     let components = this.state.components;
-    let searchCount = this.state.searchCount;
     let debugMode = this.props.debugMode;
-    let loading = this.state.loading;
 
     let styles = {
       container:  {
@@ -71,72 +61,70 @@ export var App = React.createClass({
       }
     };
     return (
-      <Scroller className="u-scrollable" position={ debugMode ? "same" : "top" } style={styles.container}>
-        <Navbar title={title} height={this.remCalc(55)} onSearch={this.handleSearch} />
+      <Scroller className="u-scrollable" position={debugMode ? "same" : "top"} style={styles.container}>
+        <Navbar
+          title={title}
+          height={this.remCalc(55)}
+          onSearch={this.handleSearchInput}
+          defaultValue={searchInputQuery}
+        />
 
         <div style={styles.content}>
           <Tabs>
-            <Tab to="components" params={{type: "native"}}>React Native</Tab>
-            <Tab to="components" params={{type: "web"}}>React for Web</Tab>
+            <Tab to="components" params={{type: "native"}} query={{search}}>React Native</Tab>
+            <Tab to="components" params={{type: "web"}} query={{search}}>React for Web</Tab>
           </Tabs>
 
           <RouteHandler
             components={components}
             debugMode={debugMode}
-            loading={loading}
+            loading={this.state.loading}
           />
 
           <Pagination
             to="components"
-            params={{ type }}
-            currentPage={this.state.currentPage}
+            params={this.props.params}
+            query={this.props.query}
+            currentPage={this.parsePage(this.props.query.page)}
             perPage={this.props.perPage}
-            totalItems={searchCount}
+            totalItems={this.state.count}
           />
 
           <Footer />
         </div>
-        <Twitter />
 
+        <Twitter />
       </Scroller>
     );
   },
   componentWillReceiveProps(newProps) {
-    let searchQuery = this.state.searchQuery;
-    let currentType = this.state.type;
-    let newType = newProps.params.type;
-    let type = newType || currentType
-    let page = newProps.query.page || this.state.currentPage;
-
-    // Revert to first page if switching type
-    if (newType !== currentType) {
-      page = 1;
-    }
-
-    this.handleSearch({ searchQuery, type, page});
+    this.performSearch({
+      query: newProps.query.search,
+      type: newProps.params.type,
+      page: this.parsePage(newProps.query.page) - 1, // In Algolia, pagination starts with 0
+      perPage: newProps.perPage,
+      production: !newProps.debugMode
+    });
   },
-  handleSearch({ searchQuery = '', type = this.state.type, page = this.state.currentPage }) {
-    let searchOptions = {
-      query: searchQuery,
-      type: type,
-      page: page - 1, // In Algolia, pagination starts with 0
-      perPage: this.props.perPage,
-      production: !this.props.debugMode
-    }
+  handleSearchInput(searchQuery) {
+    let queryParams = {};
+    if (searchQuery) queryParams.search = searchQuery;
+    this.context.router.transitionTo("/:type", this.props.params, queryParams);
+  },
+  performSearch(searchOptions) {
+    // Clear the list and display loading message
+    this.setState({ components: [], count: 0, loading: true });
+
     getSearchResults(searchOptions).then((data) => {
       this.setState({
-        type: type,
-        searchQuery: searchQuery,
         components: data.components,
-        searchCount: data.searchCount,
-        currentPage: data.page + 1
+        count: data.searchCount,
+        loading: false
       });
     });
   },
-  currentPage() {
-    let currentPage = parseInt(this.props.query.page); // May return NaN
-    if (isNaN(currentPage)) currentPage = 1; // This works, even for 0
-    return currentPage;
+  parsePage(page) {
+    return Math.max(1, parseInt(page, 10) || 1);
   }
 });
 
