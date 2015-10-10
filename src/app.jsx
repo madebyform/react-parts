@@ -10,7 +10,6 @@ import Navbar from './navbar-component.jsx';
 import ComponentList from './list-component.jsx';
 import {Tabs, Tab} from './tabs-component.jsx';
 import Pagination from './pagination-component.jsx';
-import Scroller from './scroller-component.jsx';
 import Footer from './footer-component.jsx';
 import Twitter from './twitter-component.jsx';
 import getSearchResults from './get-search-results';
@@ -60,7 +59,7 @@ export var App = React.createClass({
       }
     };
     return (
-      <Scroller className="u-scrollable" position="top" style={styles.container}>
+      <div style={styles.container}>
         <Navbar
           title={title}
           height={this.remCalc(55)}
@@ -93,7 +92,7 @@ export var App = React.createClass({
         </div>
 
         <Twitter />
-      </Scroller>
+      </div>
     );
   },
   componentWillReceiveProps(newProps) {
@@ -104,6 +103,9 @@ export var App = React.createClass({
       perPage: newProps.perPage,
       production: !newProps.debugMode
     });
+  },
+  componentDidUpdate() {
+    window.scrollTo(0, 0); // Scroll to top (TODO Update react-router!)
   },
   handleSearchInput(searchQuery) {
     let queryParams = {};

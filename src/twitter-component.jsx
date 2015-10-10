@@ -14,7 +14,7 @@ let Twitter = React.createClass({
       bottom: this.remCalc(38),
       color: "#aaa",
       fontSize: this.remCalc(32),
-      position: "absolute",
+      position: "fixed",
       right: this.remCalc(42),
       textDecoration: "none"
     };
