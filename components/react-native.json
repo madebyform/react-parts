@@ -1612,5 +1612,20 @@
     "name": "react-native-zip-archive",
     "repo": "plrthink/react-native-zip-archive",
     "description": "A little wrapper on ZipArchive for react-native"
+  },
+  {
+    "name": "react-native-date",
+    "repo": "nucleartux/react-native-date",
+    "description": "React Native date and time pickers for Android"
+  },
+  {
+    "name": "react-native-viewpager",
+    "repo": "race604/react-native-viewpager",
+    "description": "ViewPager componnent for React Native"
+  },
+  {
+    "name": "react-native-webkit-localstorage-reader",
+    "repo": "wootwoot1234/react-native-webkit-localstorage-reader",
+    "description": "A react-native wrapper for reading existing localstorage created by apps built with cordova/phonegap."
   }
 ]

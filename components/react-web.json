@@ -10242,5 +10242,35 @@
     "name": "replux",
     "repo": "gregthebusker/replux",
     "description": "Enhancements for Redux to use with greater self contained components"
+  },
+  {
+    "name": "apeman-react-form",
+    "repo": "apeman-react-labo/apeman-react-form",
+    "description": "apeman react package for form component."
+  },
+  {
+    "name": "react-fake-components",
+    "repo": "dariocravero/react-fake-components",
+    "description": "Fake a number of React components at will"
+  },
+  {
+    "name": "react-google-static-map",
+    "repo": "dwr/react-google-static-map",
+    "description": "A wrapper for Google's Static Maps"
+  },
+  {
+    "name": "react-image-crop",
+    "repo": "DominicTobias/react-image-crop",
+    "description": "A responsive image cropping tool for React"
+  },
+  {
+    "name": "react-vimjs",
+    "repo": "rhysd/react-vimjs",
+    "description": "Vim.js component for React.js"
+  },
+  {
+    "name": "style-builder",
+    "repo": "ActionIQ/style-builder",
+    "description": "JavaScript Utility to convert shorthand CSS properties into subcomponents"
   }
 ]
