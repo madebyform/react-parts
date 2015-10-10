@@ -3,14 +3,14 @@
 
 import React from 'react/addons';
 import StylingMixin from './styling-mixin.jsx';
-
-let PureRenderMixin = React.addons.PureRenderMixin;
+import DebounceInput from 'react-debounce-input';
 
 let Navbar = React.createClass({
-  mixins: [StylingMixin, PureRenderMixin],
+  mixins: [StylingMixin],
   propTypes: {
     title: React.PropTypes.string.isRequired,
     height: React.PropTypes.string.isRequired,
+    defaultValue: React.PropTypes.string,
     onSearch: React.PropTypes.func
   },
   getDefaultProps() {
@@ -91,18 +91,23 @@ let Navbar = React.createClass({
             <img style={styles.logo} src="/react-logo.svg" alt="Logo" draggable="false" />
           </a>
         </div>
-        <div style={styles.center}>
-          <input
+        <form style={styles.center} action="" onSubmit={this.handleSubmit}>
+          <DebounceInput
             className="u-forceSmall16"
+            name="search"
             ref="search"
             style={styles.search}
             type="text"
             placeholder="Search"
-            onKeyUp={this.handleKeyUp}
+            onChange={this.handleChange}
+            minLength={0}
+            debounceTimeout={300}
+            value={this.props.defaultValue || ""}
             autoCapitalize="off"
+            autoCorrect="off"
             spellCheck="false"
           />
-        </div>
+        </form>
         <div style={styles.right}>
           <a className="u-hideSmall" style={styles.link} href="/submit">
             Submit a component
@@ -111,10 +116,17 @@ let Navbar = React.createClass({
       </div>
     );
   },
-  handleKeyUp() {
-    var field = React.findDOMNode(this.refs.search);
-    var value = field.value.trim().toLowerCase();
-    this.props.onSearch(value);
+  shouldComponentUpdate() {
+    // This is a simple way of allowing the user to type while the search results
+    // are updated, without flickering the input or changing it's value
+    return false;
+  },
+  handleChange(value) {
+    this.props.onSearch(value.trim());
+  },
+  handleSubmit(e) {
+    // When the user presses <return> nothing should happen
+    e.preventDefault();
   }
 });
 

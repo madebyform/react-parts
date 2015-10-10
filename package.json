@@ -4,6 +4,7 @@
     "node": "4.1.x"
   },
   "dependencies": {
+    "algoliasearch": "^3.8.1",
     "async": "^1.4.2",
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
@@ -12,9 +13,11 @@
     "co-request": "^1.0.0",
     "connect-cachify": "^0.0.17",
     "ejs": "^2.3.4",
+    "ent": "^2.2.0",
     "express": "^4.13.3",
     "isomorphic-fetch": "^2.1.1",
     "react": "^0.13.3",
+    "react-debounce-input": "^1.1.4",
     "react-router": "^0.13.3",
     "request": "^2.63.0",
     "timeago": "0.2.0",
@@ -39,15 +42,14 @@
     "fetch:all": "npm run fetch:all:native && npm run fetch:all:web",
     "fetch:all:native": "for i in {1..10}; do npm run fetch react-native $i; done",
     "fetch:all:web": "for i in {1..50}; do npm run fetch react-web $i; done",
-    "upload": "npm run upload:native && npm run upload:web",
-    "upload:native": "scp data/react-native.json react.parts:/var/www/react/data",
-    "upload:web": "scp data/react-web.json react.parts:/var/www/react/data",
+    "search:index": "node reindex.js",
+    "search:push": "node reindex.js production",
     "bender:set": "git config user.name 'Bender Rodriguez' && git config user.email 'bender@react.parts'",
     "bender:unset": "git config --unset-all user.name && git config --unset-all user.email",
     "push": "git add components && git commit -m 'Update lists of react components' && git push origin master",
 
     "update": "npm run download:yesterday && npm run parse",
-    "prepare": "npm run fetch:all && npm run live",
-    "publish": "npm run upload && npm run bender:set && npm run push && npm run bender:unset"
+    "prepare": "npm run fetch:all && npm run search:index && npm run live",
+    "publish": "npm run search:push && npm run bender:set && npm run push && npm run bender:unset"
   }
 }
