@@ -109,8 +109,9 @@ let Navbar = React.createClass({
           />
         </form>
         <div style={styles.right}>
-          <a className="u-hideSmall" style={styles.link} href="/submit">
-            Submit a component
+          <a className="u-hideSmall" style={styles.link}
+            href="https://github.com/madebyform/react-parts#start-of-content">
+              Submit a component
           </a>
         </div>
       </div>
