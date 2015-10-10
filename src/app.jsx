@@ -2,7 +2,6 @@
 'use strict';
 
 import 'babel/polyfill';
-import 'isomorphic-fetch';
 import React from 'react/addons';
 import Router from 'react-router';
 import StylingMixin from './styling-mixin.jsx';
