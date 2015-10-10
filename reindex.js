@@ -63,7 +63,7 @@ function pushDataToAlgolia(sources) {
       'description_encoded',
       'downloads',
       'githubUser',
-      'homepage',
+      'githubName',
       'latestVersion',
       'modified',
       'name',
