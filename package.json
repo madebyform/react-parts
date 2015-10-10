@@ -17,6 +17,7 @@
     "express": "^4.13.3",
     "isomorphic-fetch": "^2.1.1",
     "react": "^0.13.3",
+    "react-debounce-input": "^1.1.4",
     "react-router": "^0.13.3",
     "request": "^2.63.0",
     "timeago": "0.2.0",

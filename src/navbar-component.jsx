@@ -3,11 +3,10 @@
 
 import React from 'react/addons';
 import StylingMixin from './styling-mixin.jsx';
-
-let PureRenderMixin = React.addons.PureRenderMixin;
+import DebounceInput from 'react-debounce-input';
 
 let Navbar = React.createClass({
-  mixins: [StylingMixin, PureRenderMixin],
+  mixins: [StylingMixin],
   propTypes: {
     title: React.PropTypes.string.isRequired,
     height: React.PropTypes.string.isRequired,
@@ -93,16 +92,19 @@ let Navbar = React.createClass({
           </a>
         </div>
         <form style={styles.center} action="" onSubmit={this.handleSubmit}>
-          <input
+          <DebounceInput
             className="u-forceSmall16"
             name="search"
             ref="search"
             style={styles.search}
             type="text"
             placeholder="Search"
-            onKeyUp={this.handleKeyUp}
-            defaultValue={this.props.defaultValue}
+            onChange={this.handleChange}
+            minLength={0}
+            debounceTimeout={300}
+            value={this.props.defaultValue || ""}
             autoCapitalize="off"
+            autoCorrect="off"
             spellCheck="false"
           />
         </form>
@@ -114,10 +116,13 @@ let Navbar = React.createClass({
       </div>
     );
   },
-  handleKeyUp() {
-    let field = React.findDOMNode(this.refs.search);
-    let value = field.value.trim();
-    this.props.onSearch(value);
+  shouldComponentUpdate() {
+    // This is a simple way of allowing the user to type while the search results
+    // are updated, without flickering the input or changing it's value
+    return false;
+  },
+  handleChange(value) {
+    this.props.onSearch(value.trim());
   },
   handleSubmit(e) {
     // When the user presses <return> nothing should happen
