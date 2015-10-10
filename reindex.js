@@ -1,10 +1,15 @@
 /*jshint esnext:true, node:true, unused:true */
 
+var readlineSync = require('readline-sync');
 var ent = require('ent');
 var keys = require('./keys.json');
 var algoliasearch = require('algoliasearch');
 var client = algoliasearch(keys.algolia.appId, keys.algolia.writeAPIKey);
 var env = process.argv[2];
+
+if (env === "production" && !readlineSync.keyInYN("Are you sure you want to update the production index?")) {
+  process.exit();
+}
 
 function arrayChunk(list, chunkSize) {
   var chunks = [];
