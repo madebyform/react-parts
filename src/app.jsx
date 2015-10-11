@@ -45,10 +45,11 @@ export var App = React.createClass({
 
     let styles = {
       container:  {
+        cursor: "default",
         fontFamily: "Source Sans Pro, sans-serif",
         fontSize: this.remCalc(20),
         lineHeight: "1.5",
-        cursor: "default"
+        width: "100%"
       },
       content: {
         margin: "0 auto",

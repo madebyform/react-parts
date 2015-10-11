@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600");
+@import url("normalize.css");
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #c9cdd6;
+}
+
+#container {
+  background: #ebedf2;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* Temporary hack for Safari */
+.u-displayFlex {
+  display: -webkit-box;
+  -webkit-align-items: center;
+}
+
+/* Hides a link until it has been visited by the user */
+.u-visited {
+  /* Assume the background is white. `transparent` or `rgba` doesn't work */
+  color: #fff;
+}
+.u-visited:visited {
+  color: #777;
+}
+
+/* For search highlights */
+mark {
+  background: transparent;
+  color: inherit;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+::-moz-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+:-ms-input-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    /* Scale down the entire site */
+    font-size: 80%;
+  }
+  .u-forceSmall16 {
+    /* Prevent zoom on input focus */
+    font-size: 16px !important;
+  }
+  .u-hideSmall {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .u-hideMedium {
+    display: none !important;
+  }
+}

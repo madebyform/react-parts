@@ -18,7 +18,8 @@ let production = (process.env.NODE_ENV != "development");
 // List of assets where the keys are your production urls, and the value
 // is a  list of development urls that produce the same asset
 let assets = {
-  "/app.min.js": [ "/app.js" ]
+  "/app.min.js": [ "/app.js" ],
+  "/app.min.css": [ "/app.css" ]
 };
 
 // Enable browser cache and HTTP caching (cache busting, etc.)
