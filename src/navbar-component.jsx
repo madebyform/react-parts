@@ -76,7 +76,7 @@ let Navbar = React.createClass({
         display: "block",
         float: "right",
         fontSize: this.remCalc(17),
-        fontWeight: 200,
+        fontWeight: 300,
         margin: this.remCalc(7),
         minWidth: this.remCalc(186),
         padding: this.remCalc(8, 20),

@@ -38,7 +38,7 @@ export let Tab = React.createClass({
       },
       disabledTab: {
         color: "#aaa",
-        fontWeight: 200
+        fontWeight: 300
       }
     };
     if (!this.props.disabled) {

@@ -67,9 +67,8 @@ let ComponentItem = React.createClass({
       },
       visited: {
         WebkitFontSmoothing: "antialiased",
-        display: "inline-block",
-        paddingLeft: this.remCalc(6),
-        transform: "skewX(-9deg)"
+        paddingLeft: this.remCalc(4),
+        fontStyle: "italic"
       },
       stats: {
         color: "#aaa",

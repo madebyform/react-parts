@@ -25,7 +25,7 @@ let Footer = React.createClass({
       },
       copy: {
         color: "#999",
-        fontWeight: 200,
+        fontWeight: 300,
         marginTop: this.remCalc(2)
       },
       copyLink: {
