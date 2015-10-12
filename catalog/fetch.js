@@ -2,18 +2,17 @@
 'use strict';
 
 let fs = require('fs');
-let path = require('path');
 let co = require("co");
 let request = require("co-request");
 let keys = require('./keys.json');
 
 // Pass the components list you which to update ("react" or "react-native")
 let componentsType = process.argv[2] || "react-native";
-let componentsFile = path.join(__dirname, "components", `${ componentsType }.json`);
+let componentsFile = `./components/${ componentsType }.json`;
 let components = require(componentsFile);
 
 // Load the existing data file, with all the existing metadata
-let componentsDataFile = path.join(__dirname, "data", `${ componentsType }.json`);
+let componentsDataFile = `./data/${ componentsType }.json`;
 let oldComponentsData = [];
 
 try { oldComponentsData = require(componentsDataFile); }

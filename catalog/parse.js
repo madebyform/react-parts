@@ -2,14 +2,13 @@
 'use strict';
 
 let fs = require('fs');
-let path = require('path');
 let readlineSync = require('readline-sync');
 var execSync = require('child_process').execSync;
 
 // Paths to the JSON files with the lists of components
-let nativeComponentsFilename = path.join(__dirname, "components", "react-native.json");
-let webComponentsFilename = path.join(__dirname, "components", "react-web.json");
-let rejectedComponentsFilename = path.join(__dirname, "components", "rejected.json");
+let nativeComponentsFilename = "./components/react-native.json";
+let webComponentsFilename = "./components/react-web.json";
+let rejectedComponentsFilename = "./components/rejected.json";
 
 // Load existing components
 let existingNativeComponents = require(nativeComponentsFilename);
@@ -21,7 +20,7 @@ let existing = toObject(existingNativeComponents, {});
 toObject(existingWebComponents, existing);
 toObject(rejectedComponents, existing);
 
-let npmDataFilename = path.join(__dirname, 'data', 'npm.json');
+let npmDataFilename = "./data/npm.json";
 let defaultSinceDate = new Date("2010-01-01");
 let githubUrl = "https://github.com";
 let interactive = process.argv.indexOf("-i") !== -1;

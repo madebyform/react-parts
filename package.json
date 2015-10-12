@@ -8,17 +8,12 @@
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
-    "co": "^4.6.0",
-    "co-request": "^1.0.0",
     "connect-cachify": "^0.0.17",
     "ejs": "^2.3.4",
-    "ent": "^2.2.0",
     "express": "^4.13.3",
     "react": "^0.13.3",
     "react-debounce-input": "^1.1.4",
     "react-router": "^0.13.3",
-    "readline-sync": "^1.2.21",
-    "request": "^2.63.0",
     "timeago": "0.2.0",
     "uglifyjs": "^2.4.10"
   },
@@ -33,22 +28,8 @@
     "js:build": "browserify src/app.jsx -t babelify --outfile assets/app.js",
     "js:minify": "uglifyjs assets/app.js -o assets/app.min.js",
     "js:watch": "watchify src/app.jsx -t babelify --outfile assets/app.js",
-
-    "download:all": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
-    "download:yesterday": "curl -L https://registry.npmjs.org/-/all/static/yesterday.json -o data/npm.json",
-    "parse": "node parse.js -i",
-    "fetch": "node fetch.js",
-    "fetch:all": "npm run fetch:all:native && npm run fetch:all:web",
-    "fetch:all:native": "for i in {1..10}; do npm run fetch react-native $i; done",
-    "fetch:all:web": "for i in {1..50}; do npm run fetch react-web $i; done",
-    "search:index": "node reindex.js",
-    "search:push": "node reindex.js production",
-    "bender:set": "git config user.name 'Bender Rodriguez' && git config user.email 'bender@react.parts'",
-    "bender:unset": "git config --unset-all user.name && git config --unset-all user.email",
-    "push": "git add components && git commit -m 'Update lists of react components' && git push origin-bender master",
-
-    "pull": "npm run download:yesterday && npm run parse",
-    "update": "npm run fetch:all && npm run search:index",
-    "publish": "npm run search:push && npm run bender:set && npm run push && npm run bender:unset"
+    "pull": "cd catalog && npm run pull",
+    "update": "cd catalog && npm run update",
+    "publish": "cd catalog && npm run publish"
   }
 }

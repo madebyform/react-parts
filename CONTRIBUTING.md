@@ -2,7 +2,7 @@
 
 ### Updating the catalog
 
-We have several scripts defined in the `package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
+We have several scripts defined in the `catalog/package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
 - `npm run pull` downloads new packages from NPM, stores them into `data/npm.json`, parses that and updates the `components/react-*.json` files;
 - `npm run update` goes through all components in the `components/react-*.json` files and gets updated metadata (stars, etc.) from NPM & GitHub and stores that into `data/react-*.json`;
 - `npm run publish` pushes the `data/react-*.json` files to the search server and pushes the updated `components/react-*.json` files to GitHub.
