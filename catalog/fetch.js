@@ -22,7 +22,7 @@ catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 let rejectedComponents = toObject(require('./components/rejected.json'), {});
 
 // Load existing documentation
-let docsFile = "./data/docs.json";
+let docsFile = "./data/readmes.json";
 let docs = {};
 
 try { docs = require(docsFile); }
