@@ -21,6 +21,13 @@ catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 // Load rejected components. Rejected components will be removed from the data files
 let rejectedComponents = toObject(require('./components/rejected.json'), {});
 
+// Load existing documentation
+let docsFile = "./data/docs.json";
+let docs = {};
+
+try { docs = require(docsFile); }
+catch (e) { console.log(`Creating a new data file for ${ docsFile }.`); }
+
 // We'll fetch metadata from NPM, GitHub and NPM-Stat
 let endpoints = {
   npm: "https://registry.npmjs.com/",
@@ -144,6 +151,9 @@ components.forEach(function(component) {
           }
         }
 
+        // Save the content of the readme file, if it's markdown
+        saveReadme(component, npm);
+
         resolve(data);
         process.stdout.write(".");
 
@@ -173,5 +183,92 @@ Promise.all(promises).then(function(newData) {
   let str = JSON.stringify(newList);
   fs.writeFile(componentsDataFile, str);
 
+  // Persist the new docs
+  str = JSON.stringify(docs, null, '  ');
+  fs.writeFile(docsFile, str);
+
   console.log("\nSuccess!");
 });
+
+
+/* Additional work for storing and rendering readme files */
+
+let marked = require('marked');
+let hljs = require('highlight.js');
+
+function override(object, f, callback) {
+  object[f] = callback(object[f]);
+}
+
+// Set marked options (similar to GitHub)
+marked.setOptions({
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: true,
+  smartLists: true,
+  smartypants: true
+});
+
+// Apply syntax highlighting to fenced code blocks using the highlight plugin
+marked.setOptions({
+  highlight: function (code, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, code).value;
+      } catch (err) {}
+    }
+    try {
+      return hljs.highlightAuto(code).value;
+    } catch (err) {}
+
+    return ''; // use external default escaping
+  },
+  langPrefix: "hljs language-"
+});
+
+// Save the content of the readme file
+function saveReadme(component, npm) {
+  // Don't continue if readme is not written in markdown
+  if (!/\.md$/.test(npm.readmeFilename)) return;
+
+  // Discover the branch to fix local paths used in images and links
+  let distTags = npm['dist-tags'] || {};
+  let versions = npm.versions || {};
+  let latest = versions[distTags.latest] || {};
+  let branch = latest.gitHead || 'master';
+
+  let renderer = new marked.Renderer();
+
+  let fixRelativeLinks = function(prefix, href) {
+    if (!/^(https?:)?\/\//.test(href)) { // If doesn't start with "//", "https://" or "http://"
+      let path = href.replace(/^\.?\//, ""); // Remove initial slash or "./"
+      href = `${ prefix }/${ path }`;
+    }
+    return href;
+  };
+
+  // Fix local links
+  override(renderer, 'link', function(original) {
+    return function (href, title, text) {
+      let prefix = `https://github.com/${ component.repo }/blob/${ branch }`;
+      href = fixRelativeLinks(prefix, href);
+      return original.apply(this, [ href, title, text ]);
+    };
+  });
+
+  // Fix local images
+  override(renderer, 'image', function(original) {
+    return function (href, title, text) {
+      let prefix = `https://raw.githubusercontent.com/${ component.repo }/${ branch }`;
+      href = fixRelativeLinks(prefix, href);
+      return original.apply(this, [ href, title, text ]);
+    };
+  });
+
+  marked.setOptions({ renderer });
+
+  // Render and save it to persist it later
+  docs[component.name] = marked(npm.readme);
+}
