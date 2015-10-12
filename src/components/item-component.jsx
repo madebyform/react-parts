@@ -3,8 +3,10 @@
 
 import React from 'react/addons';
 import StylingMixin from '../helpers/styling-mixin.jsx';
+import InteractionStylingMixin from '../helpers/interaction-mixin.jsx';
 import Icon from './icon-component.jsx';
 import TimeAgo from './timeago-component.jsx';
+import ToggleButton from './toggle-button-component.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;
 
@@ -168,7 +170,7 @@ let Platforms = React.createClass({
 });
 
 let ComponentItem = React.createClass({
-  mixins: [StylingMixin, PureRenderMixin],
+  mixins: [StylingMixin, InteractionStylingMixin, PureRenderMixin],
   propTypes: {
     description: React.PropTypes.string,
     githubUser: React.PropTypes.string.isRequired,
@@ -213,7 +215,7 @@ let ComponentItem = React.createClass({
     let highlightedDescription = this.props.descriptionHighlight || this.props.description;
 
     return (
-      <div style={styles.container}>
+      <div style={styles.container} {...this.trackInteractionStateHover()}>
         <a className="u-displayFlex u-visited" style={styles.content} href={homepage}>
 
           <div style={styles.main}>
@@ -231,6 +233,9 @@ let ComponentItem = React.createClass({
           </div>
 
           <Stats stars={this.props.stars} downloads={this.props.downloads} />
+
+          <ToggleButton name="component" detail={this.props.name}
+            hideUntoggled={!this.interactionStateIsHover()} />
         </a>
       </div>
     );

@@ -88,6 +88,14 @@ server.get('/:type(web|native)', function(req, res) {
   });
 });
 
+// Return JSON with the documentation for a given component
+server.get('/api/docs/:componentName', function(req, res) {
+  fs.readFile('./data/docs.json', function(error, data) {
+    let docs = JSON.parse(data);
+    res.json({ doc: docs[req.params.componentName] });
+  });
+});
+
 // Listen for connections
 server.listen(process.env.PORT || 8080, function() {
   console.log('Server is listening...');

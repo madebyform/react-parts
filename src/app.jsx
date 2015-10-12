@@ -12,6 +12,7 @@ import {Tabs, Tab} from './components/tabs-component.jsx';
 import Pagination from './components/pagination-component.jsx';
 import Footer from './components/footer-component.jsx';
 import Twitter from './components/twitter-component.jsx';
+import Readme from './components/readme-component.jsx';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;
@@ -42,6 +43,8 @@ export var App = React.createClass({
     let searchInputQuery = search ? decodeURIComponent(search) : null;
     let components = this.state.components;
     let debugMode = this.props.debugMode;
+    let contentMaxWidth = this.state.showReadme ? 1280 : 730;
+    let panelWidth = this.state.showReadme ? "50%" : "100%";
 
     let styles = {
       container:  {
@@ -53,42 +56,65 @@ export var App = React.createClass({
       },
       content: {
         margin: "0 auto",
+        maxWidth: this.remCalc(contentMaxWidth),
         fontSize: this.remCalc(15),
-        maxWidth: this.remCalc(710),
-        padding: this.remCalc(50, 10, 10)
+        padding: this.remCalc(10),
+        paddingTop: this.remCalc(50),
+        boxSizing: "border-box"
+      },
+      mainPanel: {
+        float: "left",
+        boxSizing: "border-box",
+        width: panelWidth
+      },
+      sidePanel: {
+        float: "right",
+        padding: this.remCalc(1, 0, 10, 10),
+        boxSizing: "border-box",
+        width: panelWidth
       }
     };
+
     return (
       <div style={styles.container}>
         <Navbar
           title={title}
-          height={this.remCalc(55)}
           onSearch={this.handleSearchInput}
           defaultValue={searchInputQuery}
+          largeSearch={!!this.state.showReadme}
+          searchMaxWidth={contentMaxWidth}
+          height={this.remCalc(55)}
         />
 
         <div style={styles.content}>
-          <Tabs>
-            <Tab to="components" params={{type: "native"}} query={{search}}>React Native</Tab>
-            <Tab to="components" params={{type: "web"}} query={{search}}>React for Web</Tab>
-          </Tabs>
+          { this.state.showReadme &&
+            <div id="side-panel" style={styles.sidePanel}>
+              <Readme componentName={ this.state.showReadme } />
+            </div> }
 
-          <RouteHandler
-            components={components}
-            debugMode={debugMode}
-            loading={this.state.loading}
-          />
+          <div id="main-panel" style={styles.mainPanel}>
+            <Tabs>
+              <Tab to="components" params={{type: "native"}} query={{search}}>React Native</Tab>
+              <Tab to="components" params={{type: "web"}} query={{search}}>React for Web</Tab>
+            </Tabs>
 
-          <Pagination
-            to="components"
-            params={this.props.params}
-            query={this.props.query}
-            currentPage={this.parsePage(this.props.query.page)}
-            perPage={this.props.perPage}
-            totalItems={this.state.count}
-          />
+            <RouteHandler
+              components={components}
+              debugMode={debugMode}
+              loading={this.state.loading}
+            />
 
-          <Footer />
+            <Pagination
+              to="components"
+              params={this.props.params}
+              query={this.props.query}
+              currentPage={this.parsePage(this.props.query.page)}
+              perPage={this.props.perPage}
+              totalItems={this.state.count}
+            />
+
+            <Footer />
+          </div>
         </div>
 
         <Twitter />
@@ -104,12 +130,21 @@ export var App = React.createClass({
       production: !newProps.debugMode
     });
   },
-  componentDidUpdate() {
-    window.scrollTo(0, 0); // Scroll to top (TODO Update react-router!)
+  componentDidUpdate(prevProps, prevState) {
+    let pageChanged = prevProps.query.page != this.props.query.page;
+    let searchChanged = prevProps.query.search != this.props.query.search;
+
+    // If the current page or the search query changed, scroll to the top
+    if (pageChanged || searchChanged) {
+      window.scrollTo(0, 0);
+    }
   },
   handleSearchInput(searchQuery) {
-    let queryParams = {};
-    if (searchQuery) queryParams.search = searchQuery;
+    let queryParams = Object.assign({}, this.props.query);
+    delete queryParams.page; // Reset the current page
+    delete queryParams.search; // Reset the current search query if it exists
+    if (searchQuery) queryParams.search = searchQuery; // Set the new search query
+
     this.context.router.transitionTo("/:type", this.props.params, queryParams);
   },
   performSearch(searchOptions) {
@@ -126,6 +161,38 @@ export var App = React.createClass({
   },
   parsePage(page) {
     return Math.max(1, parseInt(page, 10) || 1);
+  },
+  componentDidMount() {
+    document.addEventListener("toggle-component", this.handleToggleComponent, false);
+    document.addEventListener("untoggle-component", this.handleUntoggleComponent, false);
+    this.setupStickyMainPanel();
+  },
+  componentWillUnmount() {
+    document.removeEventListener("toggle-component", this.handleToggleComponent);
+    document.removeEventListener("untoggle-component", this.handleUntoggleComponent);
+  },
+  handleToggleComponent(e) {
+    let componentName = e.detail;
+    this.setState({ showReadme: componentName });
+  },
+  handleUntoggleComponent(e) {
+    this.setState({ showReadme: false });
+  },
+  setupStickyMainPanel() {
+    window.addEventListener("scroll", function() {
+      let belowFold = document.body.scrollTop > window.innerHeight;
+      let mainPanel = document.getElementById("main-panel");
+      let marginTop = parseInt(mainPanel.style.marginTop, 10) || 0;
+      let bottomRelativePos = mainPanel.getBoundingClientRect().bottom - marginTop;
+
+      // If scroll reached the end of the main panel, keep it with fixed position
+      if (belowFold && bottomRelativePos < window.innerHeight) {
+        let diff = window.innerHeight - bottomRelativePos;
+        mainPanel.style.marginTop = `${ diff }px`;
+      } else {
+        mainPanel.style.marginTop = "0";
+      }
+    });
   }
 });
 
