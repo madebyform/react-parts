@@ -138,6 +138,9 @@ export var App = React.createClass({
     if (pageChanged || searchChanged) {
       window.scrollTo(0, 0);
     }
+
+    let panel = document.getElementById("side-panel");
+    if (panel) this.setPositionTop(panel);
   },
   handleSearchInput(searchQuery) {
     let queryParams = Object.assign({}, this.props.query);
@@ -165,7 +168,14 @@ export var App = React.createClass({
   componentDidMount() {
     document.addEventListener("toggle-component", this.handleToggleComponent, false);
     document.addEventListener("untoggle-component", this.handleUntoggleComponent, false);
-    this.setupStickyMainPanel();
+
+    window.addEventListener("scroll", () => {
+      let panel = document.getElementById("main-panel");
+      if (panel) this.updateStickyPosition(panel);
+
+      panel = document.getElementById("side-panel");
+      if (panel) this.updateStickyPosition(panel);
+    });
   },
   componentWillUnmount() {
     document.removeEventListener("toggle-component", this.handleToggleComponent);
@@ -178,21 +188,45 @@ export var App = React.createClass({
   handleUntoggleComponent(e) {
     this.setState({ showReadme: false });
   },
-  setupStickyMainPanel() {
-    window.addEventListener("scroll", function() {
-      let belowFold = document.body.scrollTop > window.innerHeight;
-      let mainPanel = document.getElementById("main-panel");
-      let marginTop = parseInt(mainPanel.style.marginTop, 10) || 0;
-      let bottomRelativePos = mainPanel.getBoundingClientRect().bottom - marginTop;
+  updateStickyPosition(panel, paddingTop = 10) {
+    let topRelativePos = panel.getBoundingClientRect().top;
+    let bottomRelativePos = panel.getBoundingClientRect().bottom;
+    let smallerThanScreen = panel.offsetHeight < window.innerHeight;
 
-      // If scroll reached the end of the main panel, keep it with fixed position
-      if (belowFold && bottomRelativePos < window.innerHeight) {
-        let diff = window.innerHeight - bottomRelativePos;
-        mainPanel.style.marginTop = `${ diff }px`;
-      } else {
-        mainPanel.style.marginTop = "0";
-      }
-    });
+    // If the element's top is below screen's top or is smaller than the screen, update position top
+    if (topRelativePos >= paddingTop || smallerThanScreen) {
+      this.setPositionTop(panel);
+    // If the element's bottom is above screen's bottom and is not smaller than screen, update position bottom
+    } else if (bottomRelativePos < window.innerHeight && !smallerThanScreen) {
+      this.setPositionBottom(panel);
+    }
+  },
+  // Set the position at `paddingTop` pixels from the top of the window, or
+  // the `defaultOffsetTop` if the scroll position is smaller than that.
+  // TODO Improve code by removing magic number (105 = navbar height + top padding)
+  setPositionTop(panel, defaultOffsetTop = 105, paddingTop = 10) {
+    let scrolledPastDefaultOffset = document.body.scrollTop > defaultOffsetTop;
+
+    if (scrolledPastDefaultOffset) {
+      let diff = document.body.scrollTop - defaultOffsetTop + paddingTop;
+      panel.style.marginTop = `${ diff }px`;
+    } else {
+      panel.style.marginTop = "0";
+    }
+  },
+  // Set the position at the bottom of the element
+  setPositionBottom(panel) {
+    let belowFold = document.body.scrollTop > window.innerHeight;
+    let tallerThanScreen = panel.offsetHeight > window.innerHeight;
+    let marginTop = parseInt(panel.style.marginTop, 10) || 0;
+    let bottomRelativePos = panel.getBoundingClientRect().bottom - marginTop;
+
+    if (belowFold && tallerThanScreen && bottomRelativePos < window.innerHeight) {
+      let diff = window.innerHeight - bottomRelativePos;
+      panel.style.marginTop = `${ diff }px`;
+    } else {
+      panel.style.marginTop = "0";
+    }
   }
 });
 
