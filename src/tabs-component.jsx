@@ -2,10 +2,8 @@
 'use strict';
 
 import React from 'react/addons';
-import Router from 'react-router';
+import {Link} from 'react-router';
 import StylingMixin from './styling-mixin.jsx';
-
-let Link = Router.Link;
 
 export let Tab = React.createClass({
   mixins: [StylingMixin],

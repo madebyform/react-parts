@@ -162,10 +162,10 @@ Promise.all(promises).then(function(newData) {
   // Merge old fetched data with the new one, since we may have done a
   // partial fetch this time
   oldComponentsData.concat(newData).forEach(function(c) {
-    allData[c.name] = Object.assign(allData[c.name] || {}, c);
+    allData[c.name] = c;
   });
 
-  // Convert back to an array and make sure there aren't duplicates
+  // Convert back to an array and make sure we ignore rejects
   Object.keys(allData).forEach(function(key) {
     if (!rejectedComponents[key]) newList.push(allData[key]);
   });
