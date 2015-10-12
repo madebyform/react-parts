@@ -1627,5 +1627,15 @@
     "name": "react-native-webkit-localstorage-reader",
     "repo": "wootwoot1234/react-native-webkit-localstorage-reader",
     "description": "A react-native wrapper for reading existing localstorage created by apps built with cordova/phonegap."
+  },
+  {
+    "name": "react-native-fading-slides",
+    "repo": "chagasaway/react-native-fading-slides",
+    "description": "Simple looped fading slides carousel for React Native"
+  },
+  {
+    "name": "react-native-view-snapshot",
+    "repo": "jsierles/react-native-view-snapshot",
+    "description": "Save React Native views as PNG snapshots on device storage."
   }
 ]

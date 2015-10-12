@@ -8421,11 +8421,6 @@
     "description": "React SVG icon component"
   },
   {
-    "name": "router-loader",
-    "repo": "uooo/react-router-loader",
-    "description": "Dynamically load react-router components on-demand"
-  },
-  {
     "name": "cursor-pure-render",
     "repo": "spicydonuts/cursor-pure-render",
     "description": "omniscient's shouldComponentUpdate as an es2016 decorator"
@@ -10272,5 +10267,40 @@
     "name": "style-builder",
     "repo": "ActionIQ/style-builder",
     "description": "JavaScript Utility to convert shorthand CSS properties into subcomponents"
+  },
+  {
+    "name": "generator-react-redux-kit",
+    "repo": "mattludwigs/generator-react-redux-kit",
+    "description": "Yeoman Generator for building SPA with React, Redux, and React Router"
+  },
+  {
+    "name": "react-buttons",
+    "repo": "mlaursen/react-buttons",
+    "description": "A few common buttons with css and helpers."
+  },
+  {
+    "name": "react-charts-plus",
+    "repo": "mukeshsoni/react-charts-plus",
+    "description": "D3 charts for React"
+  },
+  {
+    "name": "react-flexify",
+    "repo": "jl-/react-flexify",
+    "description": "react flex flexbox"
+  },
+  {
+    "name": "react-image-size-loader",
+    "repo": "andreypopp/react-image-size-loader",
+    "description": "Webpack loader for images which generate <img /> React components"
+  },
+  {
+    "name": "react-portal-wrap",
+    "repo": "nsmith7989/react-portal-wrap",
+    "description": "Higher order react component for rendering children at different mount points"
+  },
+  {
+    "name": "uxcore-formatter",
+    "repo": "uxcore/uxcore-formatter",
+    "description": "a formatter library for uxcore"
   }
 ]
