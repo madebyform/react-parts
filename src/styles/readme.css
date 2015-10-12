@@ -1,0 +1,38 @@
+/*
+ * Styles for the readmes, from GitHub (https://git.io/Gxy92Q).
+ * The imported file is processed by PostCSS using the `readme.json` options.
+ * By setting a default font size of 17px, the typography and elements will be scaled down.
+ */
+@import url("github-markdown-css/github-markdown.css");
+
+.markdown-body {
+  font-family: Source Sans Pro, sans-serif;
+  line-height: 1.4;
+  color: #000;
+
+  h1, h2 {
+    border-color: #ebedf2;
+    font-weight: 700;
+  }
+  h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  a {
+    color: #4b67a5;
+  }
+  .markdown-body :checked+.radio-label {
+    border-color: #4b67a5;
+  }
+  .highlight pre, pre, code {
+    background-color: #f7f8fa;
+  }
+}

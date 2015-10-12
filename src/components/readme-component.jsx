@@ -24,8 +24,7 @@ let Readme = React.createClass({
     let styles = {
       container: {
         background: "#fff",
-        padding: this.remCalc(30, 30, 40),
-        zoom: "90%" // TODO
+        padding: this.remCalc(30, 30, 40)
       }
     };
 
