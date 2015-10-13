@@ -45,7 +45,7 @@
     "search:push": "node reindex.js production",
     "bender:set": "git config user.name 'Bender Rodriguez' && git config user.email 'bender@react.parts'",
     "bender:unset": "git config --unset-all user.name && git config --unset-all user.email",
-    "push": "git add components && git commit -m 'Update lists of react components' && git push origin master",
+    "push": "git add components && git commit -m 'Update lists of react components' && git push origin-bender master",
 
     "update": "npm run download:yesterday && npm run parse",
     "prepare": "npm run fetch:all && npm run search:index && npm run live",
