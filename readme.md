@@ -1,40 +1,21 @@
 [![React.parts — A catalog of React Native components](https://react.parts/react-parts.svg)](https://react.parts)
 
-### Updating the catalog
+#### Adding a new component to the catalog
 
-We have several scripts defined in the `package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
-- `npm run update` downloads new packages from NPM, stores them into `data/npm.json`, parses that and updates the `components/react-*.json` files;
-- `npm run fetch:all` goes through all components in the `components/react-*.json` files and gets updated metadata (stars, etc.) from NPM & GitHub and stores that into `data/react-*.json`;
-- `npm run publish` pushes the `data/react-*.json` files to the search server and pushes the updated `components/react-*.json` files to GitHub.
+If you want your React component to show up in the catalog, simply add the `react-component` keyword to your `package.json` file and publish it on the NPM registry. If your component is for React Native, we recommend that you also add the `react-native` keyword, and make sure your package has `react-native` in the [`peerDependencies`](https://docs.npmjs.com/files/package.json#peerdependencies) property. Here's an example for React Native:
 
-Some observations:
-- This means `fetch:all` can run in a cron job if we want it too;
-- `update` is called once per day and its output is manually reviewed because there are packages published to NPM that have not been open sourced on GitHub, don't have a readme yet or are forks meant to be merged upstream in the near future (just to mention some of the most common cases), and so we don't include them right away. Also, when authors don't set a description for their packages, NPM generates one by using the readme, but it isn't always good, so sometimes we end up writing one ourselves;
-- The `components/react-*.json` files are pushed to GitHub just to make sure these manually curated lists are also easily available to anyone and can be reused by other projects. You may argue that having auto-generated commits pushed into master is not a great idea, but it's simple.
-
-To retrieve information from GitHub you will need to create a `keys.json` file (see `keys.json.example`). You can use your credentials but we recommend you generate a [Personal Access Token](https://github.com/settings/tokens) instead. Under "Select scopes", simply check "public_repo". You can then use that token as the value for the `username` key and leave `password` empty.
-
-### Deploying new features
-
-React.parts is a regular database-less Node.js app, so you can host it however you like. We use Dokku, so deploying new features is as easy as:
-
-```
-git push dokku master
+```js
+{
+  "name": "my-npm-package-name",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.5"
+  }
+}, …
 ```
 
-For updating the catalog, we simply call `npm run publish` which, among other things, updates the search index.
-
-
-### Setting up a production environment
-
-As mentioned before we use Dokku, so to setup a similar environment you need to:
-
-```
-git remote add dokku dokku@react.parts:react-parts
-git push dokku master
-ssh -t react.parts 'dokku config:set react-parts NODE_ENV=production'
-```
-
----
-
-_Feedback, bug reports and other contributions are always welcomed! [React.parts](https://react.parts) :blue_heart: you._
+We also retrieve additional information from GitHub. If your component's source code is not hosted on Github, or you didn't specify the [`repository`](https://docs.npmjs.com/files/package.json#repository) property in your `package.json` file, we will not be able to show statistics (such as stars) for the time being. Results from NPM are manually curated and the site is updated regularly.
