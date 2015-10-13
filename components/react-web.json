@@ -8734,7 +8734,7 @@
   },
   {
     "name": "router-view",
-    "repo": "mvc-works/router-view",
+    "repo": "teambition/router-view",
     "description": "Router view for React"
   },
   {
@@ -10204,11 +10204,6 @@
     "description": "A React component for choosing dates and date ranges."
   },
   {
-    "name": "react-github-components",
-    "repo": "mamal72/react-github-components",
-    "description": "A set of useful Github components for React"
-  },
-  {
     "name": "react-reflex-layout",
     "repo": "chetanism/react-reflex-layout",
     "description": "A simple implementation flexbox layout components."
@@ -10302,5 +10297,72 @@
     "name": "uxcore-formatter",
     "repo": "uxcore/uxcore-formatter",
     "description": "a formatter library for uxcore"
+  },
+  {
+    "name": "actions-recorder",
+    "repo": "teambition/actions-recorder",
+    "description": "React Actions Recorder(like Redux)"
+  },
+  {
+    "name": "component-scan",
+    "repo": "walmartreact/component-scan",
+    "description": "A simple react component scanner"
+  },
+  {
+    "name": "ecology",
+    "repo": "FormidableLabs/ecology",
+    "description": "React Component"
+  },
+  {
+    "name": "mvu-react-form",
+    "repo": "broucz/mvu-react-form",
+    "description": "A form generator using React stateless components and the Model-View-Update architecture"
+  },
+  {
+    "name": "posthtml-static-react",
+    "repo": "rasmusfl0e/posthtml-static-react",
+    "description": "A PostHTML plugin to render custom elements as static React components."
+  },
+  {
+    "name": "react-cheat-sheet",
+    "repo": "chantastic/react-cheat-sheet",
+    "description": "React Cheat Sheet",
+    "custom_description": "A searchable API reference for React.js"
+  },
+  {
+    "name": "react-clslide",
+    "repo": "CezarLuiz0/react-clslide",
+    "description": "CLSlide",
+    "custom_description": "A simple, responsive and easy slideshow made with React"
+  },
+  {
+    "name": "react-dynamic-dropzone",
+    "repo": "overthinker29/react-dynamic-dropzone",
+    "description": "React.js Dropzone dynamically created on Dragover."
+  },
+  {
+    "name": "react-github",
+    "repo": "mamal72/react-github",
+    "description": "A set of useful Github components for React"
+  },
+  {
+    "name": "react-postcss",
+    "repo": "mungell/react-postcss",
+    "description": "CSS styles for React components using PostCSS"
+  },
+  {
+    "name": "react-router-link-target",
+    "repo": "superRaytin/react-router-link-target",
+    "description": "An updated version of the Link component for react-router"
+  },
+  {
+    "name": "react-router-old",
+    "repo": "nkt/react-router-old",
+    "description": "A complete routing library for React.js"
+  },
+  {
+    "name": "rodal",
+    "repo": "chenjiahan/rodal",
+    "description": "A React modal with animations."
   }
 ]

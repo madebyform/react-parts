@@ -1637,5 +1637,15 @@
     "name": "react-native-view-snapshot",
     "repo": "jsierles/react-native-view-snapshot",
     "description": "Save React Native views as PNG snapshots on device storage."
+  },
+  {
+    "name": "react-native-keyboard-spacer",
+    "repo": "Andr3wHur5t/react-native-keyboard-spacer",
+    "description": "Plug and play react-Native keyboard spacer view."
+  },
+  {
+    "name": "react-native-route-navigator",
+    "repo": "Andr3wHur5t/react-native-route-navigator",
+    "description": "React-Native page navigation using URIs."
   }
 ]
