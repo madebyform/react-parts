@@ -10364,5 +10364,25 @@
     "name": "rodal",
     "repo": "chenjiahan/rodal",
     "description": "A React modal with animations."
+  },
+  {
+    "name": "react-lazy-cache",
+    "repo": "erikras/react-lazy-cache",
+    "description": "A utility to lazily calculate and cache values in a react component based on props"
+  },
+  {
+    "name": "react-render-cli",
+    "repo": "PlatziDev/react-render-cli",
+    "description": "CLI app to render React components to strings and output the result on console"
+  },
+  {
+    "name": "react-seamstress",
+    "repo": "namuol/react-seamstress",
+    "description": "Experimental interface for exposing style-related state inside complex React components"
+  },
+  {
+    "name": "react-tooltip-component",
+    "repo": "vn38minhtran/react-tooltip-component",
+    "description": "React tooltip component."
   }
 ]
