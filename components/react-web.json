@@ -10384,5 +10384,30 @@
     "name": "react-tooltip-component",
     "repo": "vn38minhtran/react-tooltip-component",
     "description": "React tooltip component."
+  },
+  {
+    "name": "react-clipboard.js",
+    "repo": "nihey/react-clipboard",
+    "description": "Clipboard.js wrapper for ReactJS"
+  },
+  {
+    "name": "react-component-tools",
+    "repo": "luqin/react-component-tools",
+    "description": "Gulp Build Tasks for React Component Projects"
+  },
+  {
+    "name": "react-desktop",
+    "repo": "gabrielbull/react-desktop",
+    "description": "OS X and Windows UI components built with React"
+  },
+  {
+    "name": "uxcore-select2",
+    "repo": "uxcore/select",
+    "description": "select ui component for react"
+  },
+  {
+    "name": "react-native-listener",
+    "repo": "erikras/react-native-listener",
+    "description": "A utility component to allow easy access to browser native events"
   }
 ]

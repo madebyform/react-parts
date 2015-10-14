@@ -55,11 +55,6 @@
     "description": "A <LinearGradient> element for react-native"
   },
   {
-    "name": "react-native-listener",
-    "repo": "erikras/react-native-listener",
-    "description": "A utility component to allow easy access to browser native events"
-  },
-  {
     "name": "react-native-looped-carousel",
     "repo": "appintheair/react-native-looped-carousel",
     "description": "Looped carousel for React Native"
@@ -1652,5 +1647,16 @@
     "name": "react-native-2-side-menus",
     "repo": "alinz/react-native-2-side-menus",
     "description": "Imagine having `react-native-side-menu` component with 2 side menus."
+  },
+  {
+    "name": "react-native-order-children",
+    "repo": "DashOS/react-native-order-children",
+    "description": "Orders the children of the component by the \"order\" prop unless otherwise defined by providing it with a prop \"by\"",
+    "custom_description": "Order children components by the order props"
+  },
+  {
+    "name": "react-native-rest-kit",
+    "repo": "peter4k/react-native-rest-kit",
+    "description": "A React Native RESTful API kit that use the fetch method"
   }
 ]
