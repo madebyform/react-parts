@@ -25,16 +25,33 @@ let Readme = React.createClass({
       container: {
         background: "#fff",
         padding: this.remCalc(30, 30, 40)
+      },
+      loader: {
+        background: "#fff",
+        padding: this.remCalc(40),
+        textAlign: "center"
+      },
+      img: {
+        width: this.remCalc(50),
+        opacity: 0.2
       }
     };
 
-    return (
-      <div
-        style={styles.container}
-        className="markdown-body"
-        dangerouslySetInnerHTML={{__html: this.state.content || "Loading..." }}
-      />
-    );
+    if (this.state.content) {
+      return (
+        <div
+          style={styles.container}
+          className="markdown-body"
+          dangerouslySetInnerHTML={{__html: this.state.content }}
+        />
+      );
+    } else {
+      return (
+        <div style={styles.loader}>
+          <img style={styles.img} src="/loader.gif" alt="Loading…" />
+        </div>
+      );
+    }
   },
   componentDidMount() {
     this.fetchContent(this.props.componentName);
