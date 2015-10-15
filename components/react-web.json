@@ -9730,8 +9730,7 @@
   {
     "name": "react-test-unit",
     "repo": "jarsbe/react-test-unit",
-    "description": "<strong>Warning</strong> Currently in active development, not quite ready for prime time. There WILL be major break changes.",
-    "custom_description": "A set of utilities to make testing stateless components simple, readable and fast."
+    "description": "Recursive shallow rendering and helpers for efficiently testing React components"
   },
   {
     "name": "react-time-select",
@@ -10409,5 +10408,35 @@
     "name": "react-native-listener",
     "repo": "erikras/react-native-listener",
     "description": "A utility component to allow easy access to browser native events"
+  },
+  {
+    "name": "flummox-component",
+    "repo": "TransferGo/flummox-component",
+    "description": "A simple way to connect React components to flummox stores and actions"
+  },
+  {
+    "name": "react-contexter",
+    "repo": "Schniz/react-contexter",
+    "description": "Higher order components with parent/child context"
+  },
+  {
+    "name": "react-formio",
+    "repo": "formio/react-formio",
+    "description": "React rendering library for form.io embedded forms."
+  },
+  {
+    "name": "tinydoc-plugin-react",
+    "repo": "tinydoc/tinydoc-plugin-react",
+    "description": "Document React components and preview them in Tinydoc."
+  },
+  {
+    "name": "uxcore-collapse",
+    "repo": "uxcore/uxcore-collapse",
+    "description": "uxcore-collapse component for uxcore."
+  },
+  {
+    "name": "uxcore-progress",
+    "repo": "uxcore/uxcore-progress",
+    "description": "uxcore-progress component for uxcore."
   }
 ]

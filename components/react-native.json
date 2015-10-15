@@ -1658,5 +1658,10 @@
     "name": "react-native-rest-kit",
     "repo": "peter4k/react-native-rest-kit",
     "description": "A React Native RESTful API kit that use the fetch method"
+  },
+  {
+    "name": "react-native-google-places-autocomplete",
+    "repo": "FaridSafi/react-native-google-places-autocomplete",
+    "description": "Customizable Google Places autocomplete component for iOS and Android React-Native apps"
   }
 ]
