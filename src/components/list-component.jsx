@@ -2,7 +2,7 @@
 'use strict';
 
 import React from 'react/addons';
-import StylingMixin from './styling-mixin.jsx';
+import StylingMixin from '../helpers/styling-mixin.jsx';
 import ComponentItem from './item-component.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;

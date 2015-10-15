@@ -3,7 +3,7 @@
 
 import React from 'react/addons';
 import {Link} from 'react-router';
-import StylingMixin from './styling-mixin.jsx';
+import StylingMixin from '../helpers/styling-mixin.jsx';
 
 export let Tab = React.createClass({
   mixins: [StylingMixin],

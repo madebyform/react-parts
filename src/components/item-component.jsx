@@ -2,7 +2,7 @@
 'use strict';
 
 import React from 'react/addons';
-import StylingMixin from './styling-mixin.jsx';
+import StylingMixin from '../helpers/styling-mixin.jsx';
 import Icon from './icon-component.jsx';
 import TimeAgo from './timeago-component.jsx';
 

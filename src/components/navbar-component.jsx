@@ -2,7 +2,7 @@
 'use strict';
 
 import React from 'react/addons';
-import StylingMixin from './styling-mixin.jsx';
+import StylingMixin from '../helpers/styling-mixin.jsx';
 import DebounceInput from 'react-debounce-input';
 
 let Navbar = React.createClass({

@@ -11,7 +11,7 @@ let Router = require('react-router');
 let express = require('express');
 let cachify = require('connect-cachify');
 let ejs = require('ejs');
-let getSearchResults = require('./src/get-search-results');
+let getSearchResults = require('./src/helpers/get-search-results');
 let server = express();
 let production = (process.env.NODE_ENV != "development");
 
@@ -32,6 +32,7 @@ server.use('/', express.static('assets'));
 
 // Use Embedded JavaScript to embed the output from React into our layout
 server.set('view engine', 'ejs');
+server.set('views', 'src');
 
 // Require and wrap the React main component in a factory before calling it
 // This is necessary because we'll do `App()` instead of <App />
@@ -78,7 +79,7 @@ server.get('/:type(web|native)', function(req, res) {
       });
       let content = new Handler(props);
 
-      res.render('template', {
+      res.render('layout', {
         output: React.renderToString(content),
         initialData: JSON.stringify(initialData)
       });

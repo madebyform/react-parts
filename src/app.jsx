@@ -4,14 +4,14 @@
 import 'babel/polyfill';
 import React from 'react/addons';
 import Router from 'react-router';
-import StylingMixin from './styling-mixin.jsx';
-import Navbar from './navbar-component.jsx';
-import ComponentList from './list-component.jsx';
-import {Tabs, Tab} from './tabs-component.jsx';
-import Pagination from './pagination-component.jsx';
-import Footer from './footer-component.jsx';
-import Twitter from './twitter-component.jsx';
-import getSearchResults from './get-search-results';
+import StylingMixin from './helpers/styling-mixin.jsx';
+import getSearchResults from './helpers/get-search-results';
+import Navbar from './components/navbar-component.jsx';
+import ComponentList from './components/list-component.jsx';
+import {Tabs, Tab} from './components/tabs-component.jsx';
+import Pagination from './components/pagination-component.jsx';
+import Footer from './components/footer-component.jsx';
+import Twitter from './components/twitter-component.jsx';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;

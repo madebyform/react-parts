@@ -3,7 +3,7 @@
 
 import timeago from 'timeago';
 import React from 'react/addons';
-import StylingMixin from './styling-mixin.jsx';
+import StylingMixin from '../helpers/styling-mixin.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;
 
