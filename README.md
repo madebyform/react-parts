@@ -2,7 +2,7 @@
 
 #### Adding a new component to the catalog
 
-If you want your React component to show up in the catalog, simply add the `react-component` keyword to your `package.json` file and publish it on the NPM registry. If your component is for React Native, we recommend that you also add the `react-native` keyword, and make sure your package has `react-native` in the [`peerDependencies`](https://docs.npmjs.com/files/package.json#peerdependencies) property. Here's an example for React Native:
+If you want your React component to show up in the catalog, simply add the `react-component` keyword to your `package.json` file and publish it on the NPM registry. If your component is for React Native, we recommend that you also add the `react-native` and `ios` keywords (and or alternatively `android`, depending on which platforms your component supports), and make sure your package has `react-native` in the [`peerDependencies`](https://docs.npmjs.com/files/package.json#peerdependencies) property. Here's an example for React Native:
 
 ```js
 {

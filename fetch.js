@@ -129,6 +129,20 @@ components.forEach(function(component) {
             data.platforms = data.platforms || {};
             data.platforms.ios = true;
           }
+
+          // Some older packages may be JavaScript only, and work in Android, but have just the "ios" keyword.
+          // So only if there's Java or Objective-C code in the repo, we should check the keywords too.
+          if (data.platforms && /iOS|Android/i.test(`${ data.keywords }`)) {
+            // CLIs generate boilerplate code for both platforms, so using languages is unreliable.
+            // However, using only the keywords here doesn't give better results either.
+            // The best results were obtained when we used both approaches.
+            if (/Android/i.test(data.keywords)) {
+              data.platforms.android = true;
+            }
+            if (/iOS/i.test(data.keywords)) {
+              data.platforms.ios = true;
+            }
+          }
         }
 
         resolve(data);
