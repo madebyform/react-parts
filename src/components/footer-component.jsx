@@ -35,7 +35,6 @@ let Footer = React.createClass({
         textDecoration: "none"
       },
       sponsors: {
-        fontSize: this.remCalc(14),
         marginLeft: "auto",
         marginRight: "auto",
         marginTop: this.remCalc(16),
@@ -54,8 +53,11 @@ let Footer = React.createClass({
           <a style={styles.link} href="https://discuss.reactjs.org/">
             Discussions
           </a>
+          <a style={styles.link} href="http://reactiflux.com/">
+            Slack
+          </a>
           <a style={styles.link} href="https://github.com/facebook/react/wiki/">
-            Wiki
+            React Wiki
           </a>
           <a style={styles.link} href="https://github.com/ericvicenti/react-native-community/">
             React Native Community

@@ -43,8 +43,7 @@ let ToggleButton = React.createClass({
         marginLeft: this.remCalc(4),
         marginRight: this.remCalc(-32),
         padding: this.remCalc(2),
-        width: this.remCalc(24),
-        zIndex: 100
+        width: this.remCalc(24)
       },
       untoggle: {
         background: "#253b6b"

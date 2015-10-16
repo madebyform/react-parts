@@ -12,15 +12,11 @@ let Navbar = React.createClass({
     title: React.PropTypes.string.isRequired,
     height: React.PropTypes.string.isRequired,
     defaultValue: React.PropTypes.string,
-    onSearch: React.PropTypes.func,
-    largeSearch: React.PropTypes.bool,
-    searchMaxWidth: React.PropTypes.number
+    onSearch: React.PropTypes.func
   },
   getDefaultProps() {
     return {
-      onSearch() {},
-      largeSearch: false,
-      searchInputMaxWidth: 0
+      onSearch() {}
     };
   },
   render() {
@@ -36,8 +32,7 @@ let Navbar = React.createClass({
       },
       left: {
         WebkitBoxFlex: 1,
-        flex: 1,
-        minWidth: this.remCalc(80)
+        flex: 1
       },
       logo: {
         float: "right",
@@ -47,17 +42,16 @@ let Navbar = React.createClass({
       center: {
         WebkitBoxFlexBasis: 1,
         flexBasis: 1,
-        WebkitBoxFlexGrow: (this.props.largeSearch ? 12 : 3),
-        flexGrow: (this.props.largeSearch ? 16 : 3),
+        WebkitBoxFlexGrow: 4,
+        flexGrow: 4,
         alignItems: "center",
         background: "#4b67a5 url(/search.svg) no-repeat 16px center",
         backgroundSize: "auto 100%",
         height: "100%",
         justifyContent: "center",
         marginLeft: this.remCalc(12),
-        maxWidth: this.remCalc(this.props.searchMaxWidth - 10),
-        paddingRight: this.remCalc(10),
-        boxSizing: "border-box"
+        maxWidth: this.remCalc(710),
+        paddingRight: this.remCalc(10)
       },
       search: {
         background: "transparent",
