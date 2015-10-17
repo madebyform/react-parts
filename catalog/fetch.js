@@ -194,6 +194,7 @@ Promise.all(promises).then(function(newData) {
 /* Additional work for storing and rendering readme files */
 
 let marked = require('marked');
+var Renderer = require('marked-sanitized')(marked.Renderer);
 let hljs = require('highlight.js');
 
 function override(object, f, callback) {
@@ -206,7 +207,6 @@ marked.setOptions({
   tables: true,
   breaks: false,
   pedantic: false,
-  sanitize: true,
   smartLists: true,
   smartypants: true
 });
@@ -270,5 +270,5 @@ function saveReadme(component, npm) {
   marked.setOptions({ renderer });
 
   // Render and save it to persist it later
-  docs[component.name] = marked(npm.readme);
+  docs[component.name] = renderer.html(marked(npm.readme));
 }

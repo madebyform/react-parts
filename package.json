@@ -15,7 +15,6 @@
     "github-markdown-css": "^2.0.11",
     "highlight.js": "^8.8.0",
     "isomorphic-fetch": "^2.1.1",
-    "marked": "^0.3.5",
     "normalize.css": "^3.0.3",
     "postcss": "^5.0.9",
     "postcss-cli": "^2.2.0",
