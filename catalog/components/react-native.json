@@ -1663,5 +1663,40 @@
     "name": "react-native-google-places-autocomplete",
     "repo": "FaridSafi/react-native-google-places-autocomplete",
     "description": "Customizable Google Places autocomplete component for iOS and Android React-Native apps"
+  },
+  {
+    "name": "natal",
+    "repo": "dmotz/natal",
+    "description": "Bootstrap ClojureScript React Native apps"
+  },
+  {
+    "name": "react-native-contacts",
+    "repo": "rt2zz/react-native-contacts",
+    "description": "React Native Contacts (android & ios)"
+  },
+  {
+    "name": "react-native-cordova-plugin",
+    "repo": "axemclion/react-native-cordova-plugin",
+    "description": "Cordova Plugin Adapter for React Native "
+  },
+  {
+    "name": "react-native-refresh-control-view",
+    "repo": "IVaE-Consultants/react-native-refresh-control-view",
+    "description": "Pull-To-Refresh Implementation of UIRefreshControl wrapped inside UIScrollView."
+  },
+  {
+    "name": "react-native-wechat",
+    "repo": "weflex/react-native-wechat",
+    "description": "react-native library for wechat app"
+  },
+  {
+    "name": "cyclet",
+    "repo": "RGBz/cyclet",
+    "description": "Simple, immutable, unidirectional data flow for React Native."
+  },
+  {
+    "name": "react-native-form",
+    "repo": "julianocomg/react-native-form",
+    "description": "A simple react-native component to wrap your form fields!"
   }
 ]

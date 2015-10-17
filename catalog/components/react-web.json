@@ -7406,8 +7406,7 @@
   {
     "name": "react-maps",
     "repo": "dcousens/react-maps",
-    "description": "[![Version](http://img.shields.io/npm/v/react-maps.svg)](https://www.npmjs.org/package/react-maps)",
-    "custom_description": "React component for Google Maps."
+    "description": "A Google map API wrapper for React"
   },
   {
     "name": "react-mini-router",
@@ -10438,5 +10437,50 @@
     "name": "uxcore-progress",
     "repo": "uxcore/uxcore-progress",
     "description": "uxcore-progress component for uxcore."
+  },
+  {
+    "name": "dayz",
+    "repo": "nathanstitt/dayz",
+    "description": "A Day/Week/Month display React component"
+  },
+  {
+    "name": "exgrid",
+    "repo": "chemzqm/exgrid",
+    "description": "extremely powerful yet extensible gird component"
+  },
+  {
+    "name": "nnn-ui",
+    "repo": "react-ps/nnn-ui",
+    "description": "China Material Design UI components built with React"
+  },
+  {
+    "name": "rc-queue-anim",
+    "repo": "react-component/queue-anim",
+    "description": "Queue animation component for react"
+  },
+  {
+    "name": "react-ellipsis-text",
+    "repo": "georgeosddev/react-ellipsis-text",
+    "description": "React component which ellipsis text"
+  },
+  {
+    "name": "react-rx-bing-map",
+    "repo": "CatalystCode/ReactRxBingMap",
+    "description": "A ReactJS component for the RxJS version of the Bing Maps Ajax Web Control"
+  },
+  {
+    "name": "victory-pie",
+    "repo": "FormidableLabs/victory-pie",
+    "description": "D3 pie & donut chart component for React"
+  },
+  {
+    "name": "express-react",
+    "repo": "mlrawlings/express-react",
+    "description": "middleware to render react components with express and optionally mount on the client"
+  },
+  {
+    "name": "react-collapse",
+    "repo": "nkbt/react-collapse",
+    "description": "Component-wrapper for collapse animation with react-motion for elements with variable (and dynamic) height"
   }
 ]
