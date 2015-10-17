@@ -87,6 +87,13 @@ let Readme = React.createClass({
       content: {
         padding: this.remCalc(32)
       },
+      npmInput: {
+        fontFamily: "Consolas, Liberation Mono, Menlo, Courier, monospace",
+        border: "none",
+        background: "transparent",
+        padding: 0,
+        width: "50%"
+      },
       loader: {
         padding: this.remCalc(32),
         textAlign: "center"
@@ -100,7 +107,14 @@ let Readme = React.createClass({
     return (
       <div style={styles.container}>
         <div style={styles.header}>
-          <code>npm install --save { this.props.componentName }</code>
+          <input
+            type="text"
+            ref="install"
+            style={styles.npmInput}
+            value={`npm install --save ${ this.props.componentName }`}
+            onClick={this.handleClick}
+            readOnly
+          />
           <Links {...this.props} />
         </div>
 
@@ -132,6 +146,10 @@ let Readme = React.createClass({
         this.setState({ content: data.doc });
       });
     });
+  },
+  handleClick() {
+    let field = React.findDOMNode(this.refs.install);
+    field.select();
   }
 });
 
