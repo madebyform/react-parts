@@ -35,7 +35,7 @@ git push dokku master
 ssh -t react.parts 'dokku config:set react-parts NODE_ENV=production'
 ```
 
-Since the `data/readmes.json` file is not in our git repository, we need to use Dokku's persistence storage:
+Since the `data/docs.json` file is not in our git repository, we need to use Dokku's persistence storage:
 
 ```
 mkdir -p /var/www/react-parts/catalog/data

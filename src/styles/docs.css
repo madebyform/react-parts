@@ -1,6 +1,6 @@
 /*
  * Styles for the readmes, from GitHub (https://git.io/Gxy92Q).
- * The imported file is processed by PostCSS using the `readme.json` options.
+ * The imported file is processed by PostCSS using the `docs.json` options.
  * By setting a default font size of 17px, the typography and elements will be scaled down.
  */
 @import url("github-markdown-css/github-markdown.css");

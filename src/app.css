@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700");
 @import url("normalize.css");
 @import url("highlight.js/styles/github.css");
-@import url("../assets/readme.css");
+@import url("../assets/docs.css");
 
 html, body {
   width: 100%;

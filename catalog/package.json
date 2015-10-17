@@ -24,12 +24,12 @@
     "fetch:all:web": "for i in {1..50}; do npm run fetch react-web $i; done",
     "search:index": "node reindex.js",
     "search:push": "node reindex.js production",
-    "upload:readmes": "scp data/readmes.json react.parts:/var/www/react-parts/catalog/data",
+    "upload:docs": "scp data/docs.json react.parts:/var/www/react-parts/catalog/data",
     "bender:set": "git config user.name 'Bender Rodriguez' && git config user.email 'bender@react.parts'",
     "bender:unset": "git config --unset-all user.name && git config --unset-all user.email",
     "push": "git add components && git commit -m 'Update lists of react components' && git push origin-bender master",
     "pull": "npm run download:yesterday && npm run parse",
     "update": "npm run fetch:all && npm run search:index",
-    "publish": "npm run search:push && npm run upload:readmes && npm run bender:set && npm run push && npm run bender:unset"
+    "publish": "npm run search:push && npm run upload:docs && npm run bender:set && npm run push && npm run bender:unset"
   }
 }
