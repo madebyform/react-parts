@@ -38,8 +38,7 @@ let LoadingComponents = React.createClass({
         background: "#fff",
         margin: 1,
         padding: this.remCalc(20, 0, 15),
-        textAlign: "center",
-        width: "100%"
+        textAlign: "center"
       },
       img: {
         width: this.remCalc(50),
@@ -74,9 +73,9 @@ let ComponentList = React.createClass({
     };
     let components = this.props.components.map((item, index) => {
       return (
-        <li key={index}>
+        <div key={index}>
           <ComponentItem {...item} debugMode={ this.props.debugMode } />
-        </li>
+        </div>
       );
     });
 
@@ -91,9 +90,9 @@ let ComponentList = React.createClass({
     }
 
     return (
-      <ul style={styles}>
+      <div style={styles}>
         {components}
-      </ul>
+      </div>
     );
   }
 });

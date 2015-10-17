@@ -11,6 +11,8 @@ let Footer = React.createClass({
   render() {
     let styles = {
       footer: {
+        MozUserSelect: "none",
+        WebkitUserSelect: "none",
         fontSize: this.remCalc(15),
         marginBottom: this.remCalc(15),
         marginTop: this.remCalc(40),

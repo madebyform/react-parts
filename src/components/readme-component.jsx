@@ -19,7 +19,6 @@ let Links = React.createClass({
       container: {
         WebkitFontSmoothing: "antialiased",
         boxSizing: "border-box",
-        float: "right",
         fontSize: this.remCalc(15),
         letterSpacing: this.remCalc(-0.4)
       },
@@ -45,14 +44,14 @@ let Links = React.createClass({
       <div style={styles.container}>
         <a style={styles.link} href={this.props.npmUrl}>
           <Icon icon="npm" style={styles.npmIcon} />
-          <span className="u-hideSmall" style={styles.label}>
-            View on NPM
+          <span style={styles.label}>
+            <span className="u-hideSmall">View on </span>NPM
           </span>
         </a>
         <a style={styles.link} href={this.props.githubUrl}>
           <Icon icon="github" style={styles.githubIcon} />
-          <span className="u-hideSmall" style={styles.label}>
-            View on GitHub
+          <span style={styles.label}>
+            <span className="u-hideSmall">View on </span>GitHub
           </span>
         </a>
       </div>
@@ -78,21 +77,25 @@ let Readme = React.createClass({
       container: {
       },
       header: {
+        alignItems: "center",
         background: "#e6f1f6",
         border: "1px solid #c1dce8",
         borderLeft: "none",
         borderRight: "none",
+        display: "flex",
         padding: this.remCalc(8, 16)
+      },
+      npmInput: {
+        background: "transparent",
+        border: "none",
+        flex: 1,
+        fontFamily: "Consolas, Liberation Mono, Menlo, Courier, monospace",
+        padding: this.remCalc(1, 0, 0),
+        WebkitBoxFlex: 1,
+        width: "100%"
       },
       content: {
         padding: this.remCalc(32)
-      },
-      npmInput: {
-        fontFamily: "Consolas, Liberation Mono, Menlo, Courier, monospace",
-        border: "none",
-        background: "transparent",
-        padding: 0,
-        width: "50%"
       },
       loader: {
         padding: this.remCalc(32),
@@ -106,7 +109,7 @@ let Readme = React.createClass({
 
     return (
       <div style={styles.container}>
-        <div style={styles.header}>
+        <div className="u-displayFlex" style={styles.header}>
           <input
             type="text"
             ref="install"

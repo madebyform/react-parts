@@ -193,6 +193,11 @@ let ComponentItem = React.createClass({
         background: "#fff",
         margin: 1
       },
+      expandedContainer: {
+        background: "#fff",
+        borderRadius: 2,
+        margin: this.remCalc(1, -15)
+      },
       content: {
         MozUserSelect: "none",
         WebkitUserSelect: "none",
@@ -215,16 +220,6 @@ let ComponentItem = React.createClass({
       }
     };
 
-    if (this.state.showReadme) {
-      Object.assign(styles, {
-        container: {
-          background: "#fff",
-          borderRadius: 2,
-          margin: this.remCalc(1, -15)
-        }
-      });
-    }
-
     let githubUrl = `https://github.com/${ this.props.githubUser }/${ this.props.githubName || this.props.name }`;
     let npmUrl = `https://npmjs.com/package/${ this.props.name }`;
     let highlightedName = this.props.nameHighlight || this.props.name;
@@ -232,7 +227,7 @@ let ComponentItem = React.createClass({
     let highlightedDescription = this.props.descriptionHighlight || this.props.description;
 
     return (
-      <div style={styles.container}>
+      <div style={ this.mergeStyles(styles.container, (this.state.showReadme && styles.expandedContainer)) }>
         <a className="u-displayFlex u-visited" style={styles.content}
           href={githubUrl} {...this.trackInteractionStateHover()}>
 

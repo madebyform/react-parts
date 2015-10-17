@@ -31,19 +31,22 @@ let ToggleButton = React.createClass({
     let styles = {
       container: {
         background: "#fff",
-        color: "#4b67a5",
         borderRadius: this.remCalc(40),
         boxShadow: "0 1px 3px rgba(0,0,0,.25)",
-        height: this.remCalc(24),
+        boxSizing: "border-box",
+        color: "#4b67a5",
+        height: this.remCalc(28),
         marginLeft: this.remCalc(4),
         marginRight: this.remCalc(-32),
-        padding: this.remCalc(3, 2, 1),
-        width: this.remCalc(24)
+        padding: this.remCalc(2, 1),
+        textAlign: "center",
+        width: this.remCalc(28)
       },
       untoggle: {
       },
       icon: {
-        fontSize: this.remCalc(27)
+        fontSize: this.remCalc(27),
+        verticalAlign: "middle"
       }
     };
 

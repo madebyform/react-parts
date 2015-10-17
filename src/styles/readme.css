@@ -28,17 +28,22 @@
   }
   a {
     color: #4b67a5;
-  }
-  .markdown-body :checked+.radio-label {
+  },
+  :checked+.radio-label {
     border-color: #4b67a5;
+  }
+  hr {
+    background-color: #ebedf2;
+    height: 2px;
+  }
+  table tr:nth-child(2n) {
+    background-color: #f7f8fa;
+  }
+  table th,
+  table td {
+    border-color: #ebedf2;
   }
   .highlight pre, pre, code {
     background-color: #f7f8fa;
-  }
-
-  /* Hide the first title of all (usually the name of the component) */
-  & > h1:first-child,
-  & > h2:first-child {
-    display: none;
   }
 }
