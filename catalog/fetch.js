@@ -235,7 +235,14 @@ marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
 // Save the content of the readme file
 function saveReadme(component, npm) {
   // Don't continue if readme is not written in markdown
-  if (!/\.md$/.test(npm.readmeFilename)) return;
+  if (!/\.md$/.test(npm.readmeFilename) || npm.readme == "ERROR: No README data found!") {
+    // console.log(`No README available for ${ component.name }`);
+
+    let home = `https://github.com/${ component.repo }`;
+    npm.readme = `No documentation is available for this component. You may find it on ` +
+      `[GitHub](${ home }).  \nIf the repository doesn't have a README file, ` +
+      `consider helping the community by [writing one](${ home }/new/master?readme=1).`;
+  }
 
   // Discover the branch to fix local paths used in images and links
   let distTags = npm['dist-tags'] || {};
