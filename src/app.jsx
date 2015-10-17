@@ -12,6 +12,7 @@ import {Tabs, Tab} from './components/tabs-component.jsx';
 import Pagination from './components/pagination-component.jsx';
 import Footer from './components/footer-component.jsx';
 import Twitter from './components/twitter-component.jsx';
+import Sticky from './components/sticky-component.jsx';
 import Readme from './components/readme-component.jsx';
 
 let Route = Router.Route;
@@ -43,8 +44,13 @@ export var App = React.createClass({
     let searchInputQuery = search ? decodeURIComponent(search) : null;
     let components = this.state.components;
     let debugMode = this.props.debugMode;
+
     let contentMaxWidth = this.state.showReadme ? 1280 : 730;
     let panelWidth = this.state.showReadme ? "50%" : "100%";
+    let navbarHeight = 55;
+    let paddingTop = 50;
+    let offsetTop = navbarHeight + paddingTop;
+    let gutter = 10;
 
     let styles = {
       container:  {
@@ -58,8 +64,8 @@ export var App = React.createClass({
         margin: "0 auto",
         maxWidth: this.remCalc(contentMaxWidth),
         fontSize: this.remCalc(15),
-        padding: this.remCalc(10),
-        paddingTop: this.remCalc(50),
+        padding: this.remCalc(gutter),
+        paddingTop: this.remCalc(paddingTop),
         boxSizing: "border-box"
       },
       mainPanel: {
@@ -69,7 +75,7 @@ export var App = React.createClass({
       },
       sidePanel: {
         float: "right",
-        padding: this.remCalc(1, 0, 10, 10),
+        padding: this.remCalc(1, 0, gutter, gutter),
         boxSizing: "border-box",
         width: panelWidth
       }
@@ -83,38 +89,47 @@ export var App = React.createClass({
           defaultValue={searchInputQuery}
           largeSearch={!!this.state.showReadme}
           searchMaxWidth={contentMaxWidth}
-          height={this.remCalc(55)}
+          height={this.remCalc(navbarHeight)}
         />
 
         <div style={styles.content}>
           { this.state.showReadme &&
-            <div id="side-panel" style={styles.sidePanel}>
-              <Readme componentName={ this.state.showReadme } />
-            </div> }
+            <Sticky id="side-panel"
+              style={styles.sidePanel}
+              top={gutter}
+              offsetTop={offsetTop}
+              disable={!this.state.showReadme}
+              fixOnUpdate={true}>
+                <Readme componentName={ this.state.showReadme } />
+            </Sticky> }
 
-          <div id="main-panel" style={styles.mainPanel}>
-            <Tabs>
-              <Tab to="components" params={{type: "native"}} query={{search}}>React Native</Tab>
-              <Tab to="components" params={{type: "web"}} query={{search}}>React for Web</Tab>
-            </Tabs>
+          <Sticky id="main-panel"
+            style={styles.mainPanel}
+            top={gutter}
+            offsetTop={offsetTop}
+            disable={!this.state.showReadme}>
+              <Tabs>
+                <Tab to="components" params={{type: "native"}} query={{search}}>React Native</Tab>
+                <Tab to="components" params={{type: "web"}} query={{search}}>React for Web</Tab>
+              </Tabs>
 
-            <RouteHandler
-              components={components}
-              debugMode={debugMode}
-              loading={this.state.loading}
-            />
+              <RouteHandler
+                components={components}
+                debugMode={debugMode}
+                loading={this.state.loading}
+              />
 
-            <Pagination
-              to="components"
-              params={this.props.params}
-              query={this.props.query}
-              currentPage={this.parsePage(this.props.query.page)}
-              perPage={this.props.perPage}
-              totalItems={this.state.count}
-            />
+              <Pagination
+                to="components"
+                params={this.props.params}
+                query={this.props.query}
+                currentPage={this.parsePage(this.props.query.page)}
+                perPage={this.props.perPage}
+                totalItems={this.state.count}
+              />
 
-            <Footer />
-          </div>
+              <Footer />
+          </Sticky>
         </div>
 
         <Twitter />
@@ -138,9 +153,6 @@ export var App = React.createClass({
     if (pageChanged || searchChanged) {
       window.scrollTo(0, 0);
     }
-
-    let panel = document.getElementById("side-panel");
-    if (panel) this.setPositionTop(panel);
   },
   handleSearchInput(searchQuery) {
     let queryParams = Object.assign({}, this.props.query);
@@ -168,14 +180,6 @@ export var App = React.createClass({
   componentDidMount() {
     document.addEventListener("toggle-component", this.handleToggleComponent, false);
     document.addEventListener("untoggle-component", this.handleUntoggleComponent, false);
-
-    window.addEventListener("scroll", () => {
-      let panel = document.getElementById("main-panel");
-      if (panel) this.updateStickyPosition(panel);
-
-      panel = document.getElementById("side-panel");
-      if (panel) this.updateStickyPosition(panel);
-    });
   },
   componentWillUnmount() {
     document.removeEventListener("toggle-component", this.handleToggleComponent);
@@ -187,46 +191,6 @@ export var App = React.createClass({
   },
   handleUntoggleComponent(e) {
     this.setState({ showReadme: false });
-  },
-  updateStickyPosition(panel, paddingTop = 10) {
-    let topRelativePos = panel.getBoundingClientRect().top;
-    let bottomRelativePos = panel.getBoundingClientRect().bottom;
-    let smallerThanScreen = panel.offsetHeight < window.innerHeight;
-
-    // If the element's top is below screen's top or is smaller than the screen, update position top
-    if (topRelativePos >= paddingTop || smallerThanScreen) {
-      this.setPositionTop(panel);
-    // If the element's bottom is above screen's bottom and is not smaller than screen, update position bottom
-    } else if (bottomRelativePos < window.innerHeight && !smallerThanScreen) {
-      this.setPositionBottom(panel);
-    }
-  },
-  // Set the position at `paddingTop` pixels from the top of the window, or
-  // the `defaultOffsetTop` if the scroll position is smaller than that.
-  // TODO Improve code by removing magic number (105 = navbar height + top padding)
-  setPositionTop(panel, defaultOffsetTop = 105, paddingTop = 10) {
-    let scrolledPastDefaultOffset = document.body.scrollTop > defaultOffsetTop;
-
-    if (scrolledPastDefaultOffset) {
-      let diff = document.body.scrollTop - defaultOffsetTop + paddingTop;
-      panel.style.marginTop = `${ diff }px`;
-    } else {
-      panel.style.marginTop = "0";
-    }
-  },
-  // Set the position at the bottom of the element
-  setPositionBottom(panel) {
-    let belowFold = document.body.scrollTop > window.innerHeight;
-    let tallerThanScreen = panel.offsetHeight > window.innerHeight;
-    let marginTop = parseInt(panel.style.marginTop, 10) || 0;
-    let bottomRelativePos = panel.getBoundingClientRect().bottom - marginTop;
-
-    if (belowFold && tallerThanScreen && bottomRelativePos < window.innerHeight) {
-      let diff = window.innerHeight - bottomRelativePos;
-      panel.style.marginTop = `${ diff }px`;
-    } else {
-      panel.style.marginTop = "0";
-    }
   }
 });
 

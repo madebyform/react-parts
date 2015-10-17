@@ -90,7 +90,7 @@ server.get('/:type(web|native)', function(req, res) {
 
 // Return JSON with the documentation for a given component
 server.get('/api/docs/:componentName', function(req, res) {
-  fs.readFile('./data/readmes.json', function(error, data) {
+  fs.readFile('./catalog/data/readmes.json', function(error, data) {
     let docs = JSON.parse(data);
     res.json({ doc: docs[req.params.componentName] });
   });

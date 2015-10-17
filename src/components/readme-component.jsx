@@ -58,7 +58,6 @@ let Readme = React.createClass({
   },
   componentWillReceiveProps(newProps) {
     if (this.props.componentName != newProps.componentName) {
-      this.setState({ content: "" });
       this.fetchContent(newProps.componentName);
     }
   },
