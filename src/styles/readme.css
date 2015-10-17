@@ -35,4 +35,10 @@
   .highlight pre, pre, code {
     background-color: #f7f8fa;
   }
+
+  /* Hide the first title of all (usually the name of the component) */
+  & > h1:first-child,
+  & > h2:first-child {
+    display: none;
+  }
 }

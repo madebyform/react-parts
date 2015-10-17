@@ -8,8 +8,7 @@ import Icon from './icon-component.jsx';
 let PureRenderMixin = React.addons.PureRenderMixin;
 
 /*
- * A simple toggle button. Only one toggle is on at each time.
- * An event gets triggered to turn off other toggle buttons.
+ * A simple toggle button. Events get triggered on toggle and untoggle.
  */
 let ToggleButton = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
@@ -24,21 +23,17 @@ let ToggleButton = React.createClass({
     return {
       hideUntoggled: false,
       toggleIcon: "expand",
-      untoggleIcon: "close"
-    };
-  },
-  getInitialState() {
-    return {
+      untoggleIcon: "close",
       toggled: false
     };
   },
   render() {
     let styles = {
       container: {
-        background: "#4b67a5",
-        borderRadius: this.remCalc(20),
+        background: "#fff",
+        color: "#4b67a5",
+        borderRadius: this.remCalc(40),
         boxShadow: "0 1px 3px rgba(0,0,0,.25)",
-        color: "#f7f8fa",
         height: this.remCalc(24),
         marginLeft: this.remCalc(4),
         marginRight: this.remCalc(-32),
@@ -46,22 +41,21 @@ let ToggleButton = React.createClass({
         width: this.remCalc(24)
       },
       untoggle: {
-        background: "#253b6b"
       },
       icon: {
         fontSize: this.remCalc(27)
       }
     };
 
-    if (!this.state.toggled && !this.props.hideUntoggled) {
+    if (!this.props.toggled && !this.props.hideUntoggled) {
       return (
-        <div style={styles.container} onClick={this.handleToggle} className="u-hideMedium">
+        <div style={styles.container} onClick={this.props.handleToggle} className="u-hideSmall">
           <Icon icon={this.props.toggleIcon} style={styles.icon} />
         </div>
       );
-    } else if (this.state.toggled) {
+    } else if (this.props.toggled) {
       return (
-        <div style={this.mergeStyles(styles.container, styles.untoggle)} onClick={this.handleUntoggle}>
+        <div style={this.mergeStyles(styles.container, styles.untoggle)} onClick={this.props.handleUntoggle}>
           <Icon icon={this.props.untoggleIcon} style={styles.icon} />
         </div>
       );
@@ -75,8 +69,6 @@ let ToggleButton = React.createClass({
     let eventName = `toggle-${ this.props.name }`;
     let event = new CustomEvent(eventName, { detail: this.props.detail });
     document.dispatchEvent(event);
-
-    this.setState({ toggled: true });
   },
   handleUntoggle(e) {
     e.preventDefault();
@@ -84,22 +76,6 @@ let ToggleButton = React.createClass({
     let eventName = `untoggle-${ this.props.name }`;
     let event = new CustomEvent(eventName);
     document.dispatchEvent(event);
-
-    this.setState({ toggled: false });
-  },
-  componentDidMount() {
-    let eventName = `toggle-${ this.props.name }`;
-    document.addEventListener(eventName, this.handleExternalToggle, false);
-  },
-  componentWillUnmount() {
-    let eventName = `toggle-${ this.props.name }`;
-    document.removeEventListener(eventName, this.handleExternalToggle);
-  },
-  handleExternalToggle(e) {
-    let detail = e.detail;
-    if (this.props.detail != detail) {
-      this.setState({ toggled: false });
-    }
   }
 });
 

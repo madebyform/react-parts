@@ -7,6 +7,7 @@ import InteractionStylingMixin from '../helpers/interaction-mixin.jsx';
 import Icon from './icon-component.jsx';
 import TimeAgo from './timeago-component.jsx';
 import ToggleButton from './toggle-button-component.jsx';
+import Readme from './readme-component.jsx';
 
 let PureRenderMixin = React.addons.PureRenderMixin;
 
@@ -24,7 +25,6 @@ let Header = React.createClass({
         fontSize: this.remCalc(16),
         fontWeight: 400,
         margin: 0,
-        marginBottom: this.remCalc(4),
         overflow: "hidden",
         textOverflow: "ellipsis",
         whiteSpace: "nowrap"
@@ -182,6 +182,11 @@ let ComponentItem = React.createClass({
     downloads: React.PropTypes.number.isRequired,
     platforms: React.PropTypes.object
   },
+  getInitialState() {
+    return {
+      showReadme: false
+    };
+  },
   render() {
     let styles = {
       container: {
@@ -202,6 +207,7 @@ let ComponentItem = React.createClass({
         flex: 1,
       },
       body: {
+        marginTop: this.remCalc(4),
         boxSizing: "border-box",
         color: "#000",
         fontSize: this.remCalc(15.5),
@@ -209,36 +215,97 @@ let ComponentItem = React.createClass({
       }
     };
 
-    let homepage = `https://github.com/${ this.props.githubUser }/${ this.props.githubName || this.props.name }`;
+    if (this.state.showReadme) {
+      Object.assign(styles, {
+        container: {
+          background: "#fff",
+          borderRadius: 2,
+          margin: this.remCalc(1, -15)
+        }
+      });
+    }
+
+    let githubUrl = `https://github.com/${ this.props.githubUser }/${ this.props.githubName || this.props.name }`;
+    let npmUrl = `https://npmjs.com/package/${ this.props.name }`;
     let highlightedName = this.props.nameHighlight || this.props.name;
     let highlightedGitHubUser = this.props.githubUserHighlight || this.props.githubUser;
     let highlightedDescription = this.props.descriptionHighlight || this.props.description;
 
     return (
-      <div style={styles.container} {...this.trackInteractionStateHover()}>
-        <a className="u-displayFlex u-visited" style={styles.content} href={homepage}>
+      <div style={styles.container}>
+        <a className="u-displayFlex u-visited" style={styles.content}
+          href={githubUrl} {...this.trackInteractionStateHover()}>
 
-          <div style={styles.main}>
-            <Header
-              name={ highlightedName }
-              githubUser={ highlightedGitHubUser }
-              latestVersion={ this.props.latestVersion }
-              modified={ this.props.modified }
-            />
-            <div
-              style={styles.body}
-              dangerouslySetInnerHTML={{__html: highlightedDescription}}
-            />
-            { this.props.platforms && <Platforms {...this.props.platforms} /> }
-          </div>
+            <div style={styles.main}>
+              <Header
+                name={ highlightedName }
+                githubUser={ highlightedGitHubUser }
+                latestVersion={ this.props.latestVersion }
+                modified={ this.props.modified }
+              />
+              <div
+                style={styles.body}
+                dangerouslySetInnerHTML={{__html: highlightedDescription}}
+              />
+              { this.props.platforms && <Platforms {...this.props.platforms} /> }
+            </div>
 
-          <Stats stars={this.props.stars} downloads={this.props.downloads} />
+            <Stats stars={this.props.stars} downloads={this.props.downloads} />
 
-          <ToggleButton name="component" detail={this.props.name}
-            hideUntoggled={!this.interactionStateIsHover()} />
+            <ToggleButton name="component" detail={this.props.name}
+              toggled={this.state.showReadme}
+              handleToggle={this.handleToggle}
+              handleUntoggle={this.handleUntoggle}
+              hideUntoggled={!this.interactionStateIsHover()} />
         </a>
+
+        { this.state.showReadme &&
+          <Readme
+              componentName={this.props.name}
+              githubUrl={githubUrl}
+              npmUrl={npmUrl}
+            /> }
       </div>
     );
+  },
+  componentWillUnmount() {
+    document.removeEventListener("untoggle-component", this.handleUntoggle);
+  },
+  dispatchUntoggleEvent() {
+    let event = new CustomEvent("untoggle-component");
+    document.dispatchEvent(event);
+  },
+  handleUntoggle(e) {
+    if (e) e.preventDefault();
+    document.removeEventListener("untoggle-component", this.handleUntoggle);
+    this.setState({ showReadme: false });
+  },
+  handleToggle(e) {
+    if (e) e.preventDefault();
+    this.setState({ showReadme: true });
+    this.dispatchUntoggleEvent();
+    document.addEventListener("untoggle-component", this.handleUntoggle, false);
+  },
+  componentWillUpdate(nextProps, nextState) {
+    // If the readme was open and will now be closed,
+    // save the current body height and the scroll position
+    if (this.state.showReadme && !nextState.showReadme) {
+      this.scrollHeight = document.documentElement.scrollHeight;
+      this.scrollTop = window.pageYOffset;
+    }
+  },
+  componentDidUpdate(prevProps, prevState) {
+    // If we are nearer the top after closing the readme, it means the readme was
+    // above our current position. The new position must then be the old one minus
+    // the difference of heights.
+    if (prevState.showReadme && !this.state.showReadme) {
+      let scrollHeight = document.documentElement.scrollHeight;
+      let scrollTop = window.pageYOffset;
+
+      if (scrollTop < this.scrollTop) {
+        window.scrollTo(0, this.scrollTop - (this.scrollHeight - scrollHeight));
+      }
+    }
   }
 });
 
