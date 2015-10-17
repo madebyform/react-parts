@@ -253,7 +253,10 @@ function saveReadme(component, npm) {
   let renderer = new marked.Renderer();
 
   let fixRelativeLinks = function(prefix, href) {
-    if (!/^(https?:)?\/\//.test(href)) { // If doesn't start with "//", "https://" or "http://"
+    if (href[0] === "#") { // If it's an anchor
+      return `https://github.com/${ component.repo }${ href }`;
+    }
+    else if (!/^(https?:)?\/\//.test(href)) { // If doesn't start with "//", "https://" or "http://"
       let path = href.replace(/^\.?\//, ""); // Remove initial slash or "./"
       href = `${ prefix }/${ path }`;
     }
