@@ -228,6 +228,10 @@ marked.setOptions({
   langPrefix: "hljs language-"
 });
 
+// Fix bug on Marked that doesn't support `#Testing` on GFM (see git.io/vCFe8)
+marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;
+marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
+
 // Save the content of the readme file
 function saveReadme(component, npm) {
   // Don't continue if readme is not written in markdown
