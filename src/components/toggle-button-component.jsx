@@ -22,7 +22,7 @@ let ToggleButton = React.createClass({
   getDefaultProps() {
     return {
       hideUntoggled: false,
-      toggleIcon: "expand",
+      toggleIcon: "more",
       untoggleIcon: "close",
       toggled: false
     };
@@ -37,7 +37,7 @@ let ToggleButton = React.createClass({
         height: this.remCalc(24),
         marginLeft: this.remCalc(4),
         marginRight: this.remCalc(-32),
-        padding: this.remCalc(2),
+        padding: this.remCalc(3, 2, 1),
         width: this.remCalc(24)
       },
       untoggle: {
