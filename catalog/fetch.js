@@ -242,6 +242,41 @@ let markyOptions = {
 marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;
 marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
 
+// Add support for Github Task Lists
+function setGithubTaskLists($) {
+  let input, $el, html, match,
+    changed = false,
+    regex = /^(<p>)?(\[[\sx]\])/i;
+
+  $("li").each(function(i, el) {
+    $el = $(el);
+    html = $el.html();
+    match = html.match(regex);
+    match = match ? match[2] : "";
+
+    if (match.toLowerCase() === "[x]") {
+      input = '<input type="checkbox" class="task-list-item-checkbox" disabled checked>';
+    } else if (match === "[ ]") {
+      input = '<input type="checkbox" class="task-list-item-checkbox" disabled>';
+    } else {
+      return;
+    }
+
+    html = html.replace(regex, `$1${ input }`);
+    $el.html(html);
+    $el.addClass("task-list-item");
+    $el.parent("ul").addClass("task-list");
+
+    changed = true;
+  });
+
+  // When there are nested task lists, changes are lost. Recursively call this function
+  // until all task lists have been transformed. TODO Improve this code.
+  if (changed) return setGithubTaskLists($);
+
+  return $;
+}
+
 function saveReadme(component, npm) {
   // Don't continue if readme is not written in markdown
   if (!/\.md$/.test(npm.readmeFilename) || npm.readme == "ERROR: No README data found!") {
@@ -264,5 +299,6 @@ function saveReadme(component, npm) {
   };
 
   // Render and save it to persist it later
-  docs[component.name] = marky(npm.readme, markyOptions).html();
+  var $html = marky(npm.readme, markyOptions);
+  docs[component.name] = setGithubTaskLists($html).html();
 }
