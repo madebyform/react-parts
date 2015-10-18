@@ -9,6 +9,7 @@
   font-family: Source Sans Pro, sans-serif;
   line-height: 1.4;
   color: #000;
+  cursor: auto;
 
   h1, h2 {
     border-color: #ebedf2;

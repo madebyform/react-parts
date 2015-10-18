@@ -193,19 +193,20 @@ Promise.all(promises).then(function(newData) {
 
 /* Additional work for storing and rendering readme files */
 
-let MarkdownIt = require("markdown-it");
-let lazyHeaders = require('markdown-it-lazy-headers');
-let imsize = require('markdown-it-imsize');
+let marked = require('marked');
 let marky = require("marky-markdown");
 let hljs = require("highlight.js");
 
 // Apply syntax highlighting to fenced code blocks using the highlight plugin
-let highlight = function (code, lang) {
-  if (lang && hljs.getLanguage(lang)) {
-    return hljs.highlight(lang, code).value;
-  }
-  return hljs.highlightAuto(code).value;
-};
+marked.setOptions({
+  highlight: function (code, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      return hljs.highlight(lang, code).value;
+    }
+    return hljs.highlightAuto(code).value;
+  },
+  langPrefix: "hljs language-"
+});
 
 /*
  * Aspects of GitHub Flavored Markdown (git.io/vCAcc) we should support:
@@ -213,15 +214,18 @@ let highlight = function (code, lang) {
  * - URL autolinking works by using the `linkify` markdown-it option
  * - Strikethrough fenced code blocks and tables enabled by default by markdown-it
  */
-let mdOptions = {       /* `markdown-it` options */
-  html: true,           // Enable HTML tags in source (same as `marky-markdown`)
-  breaks: false,        // Convert '\n' into <br> (same as GitHub and `marky-markdown`)
-  linkify: true,        // Autoconvert URL-like text to links (same as GitHub)
-  typographer: true,    // Enable some language-neutral replacement + quotes beautification
-  highlight: highlight, // Use highlight.js instead of atom highlights (results seem better)
-  langPrefix: "hljs language-",
-};
-let markyOptions = {         /* `marky-markdown` options */
+marked.setOptions({
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: true,
+  renderer: new marked.Renderer()
+});
+
+let markyOptions = {
   sanitize: false,           // False in order to keep ~~strike~~ and <sup> (git.io/vCAUj)
   highlightSyntax: false,    // Run highlights on code blocks. We use highlight.js instead
   prefixHeadingIds: false,   // Prevent DOM id collisions
@@ -230,14 +234,13 @@ let markyOptions = {         /* `marky-markdown` options */
 
   // We can't override the options `marky-markdown` sends down to `markdown-it`.
   // We are using a fork that enables us to pass a `renderer` option.
-  renderer: new MarkdownIt(mdOptions)
-    // The `#heading` syntax, without space after hashtag is supported by GitHub and made
-    // possible using the markdown-it-lazy-headers plugin
-    .use(lazyHeaders)
-    // GitHub doesn't support image sizes (eg: `![](http://i.imgur.com/zrsazAG.gif =300x)`)
-    // but some images work (replacing the " " with "%20" returns the image in some servers)
-    .use(imsize)
+  // We can pass an instance of `markdown-it` or anything else that has a `render` method.
+  renderer: { render(html) { return marked(html); } }
 };
+
+// Fix bug on Marked that doesn't support `#Testing` on GFM (see git.io/vCFe8)
+marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;
+marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
 
 function saveReadme(component, npm) {
   // Don't continue if readme is not written in markdown
@@ -250,7 +253,8 @@ function saveReadme(component, npm) {
       `consider helping the community by [writing one](${ home }/new/master?readme=1).`;
   }
 
-  markyOptions.package = { // npm package metadata to rewrite relative URLs, etc.
+  // npm package metadata to rewrite relative URLs, etc.
+  markyOptions.package = {
     name: component.name,
     repository: {
       type: "git",
