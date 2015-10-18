@@ -256,7 +256,7 @@ function saveReadme(component, npm) {
     if (href[0] === "#") { // If it's an anchor
       return `https://github.com/${ component.repo }${ href }`;
     }
-    else if (!/^(https?:)?\/\//.test(href)) { // If doesn't start with "//", "https://" or "http://"
+    else if (!/^(https?:|mailto:)?\/\//.test(href)) { // If doesn't start with //, http or mailto
       let path = href.replace(/^\.?\//, ""); // Remove initial slash or "./"
       href = `${ prefix }/${ path }`;
     }
