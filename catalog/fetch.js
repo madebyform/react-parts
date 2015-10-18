@@ -256,6 +256,7 @@ function saveReadme(component, npm) {
   // npm package metadata to rewrite relative URLs, etc.
   markyOptions.package = {
     name: component.name,
+    description: component.description,
     repository: {
       type: "git",
       url: `https://github.com/${ component.repo }`

@@ -58,4 +58,16 @@
       text-decoration: none;
     }
   }
+
+  /* If a redundant package name or description is found in the readme, hide them */
+  .package-name-redundant,
+  .package-description-redundant {
+    display: none;
+  }
+  & > .package-name-redundant:first-child + * {
+    margin-top: 0 !important;
+  }
+  & > .package-name-redundant:first-child + .package-description-redundant + * {
+    margin-top: 0 !important;
+  }
 }
