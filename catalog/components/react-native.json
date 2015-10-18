@@ -1383,7 +1383,8 @@
   {
     "name": "react-native-switcher",
     "repo": "olivierlesnicki/react-native-switcher",
-    "description": "## Installation"
+    "description": "## Installation",
+    "custom_description": "A dead simple zoomable-swiper made popular by the Kardashians' apps."
   },
   {
     "name": "react-native-android-sqlite",
@@ -1698,5 +1699,10 @@
     "name": "react-native-form",
     "repo": "julianocomg/react-native-form",
     "description": "A simple react-native component to wrap your form fields!"
+  },
+  {
+    "name": "react-native-touchable-icons",
+    "repo": "chagasaway/react-native-touchable-icons",
+    "description": "Simple touchable icons acting as buttons"
   }
 ]

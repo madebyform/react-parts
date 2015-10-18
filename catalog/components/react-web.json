@@ -10482,5 +10482,31 @@
     "name": "react-collapse",
     "repo": "nkbt/react-collapse",
     "description": "Component-wrapper for collapse animation with react-motion for elements with variable (and dynamic) height"
+  },
+  {
+    "name": "alt-container",
+    "repo": "altjs/container",
+    "description": "A flux container for alt"
+  },
+  {
+    "name": "endothermic",
+    "repo": "dralletje/endothermic",
+    "description": "Link up react components with firebase"
+  },
+  {
+    "name": "react-animachine-enhancer",
+    "repo": "animachine/react-animachine-enhancer",
+    "description": "###Work in progress",
+    "custom_description": "Makes React components animatable with animachine."
+  },
+  {
+    "name": "uxcore-const",
+    "repo": "uxcore/uxcore-const",
+    "description": "uxcore-const component for uxcore."
+  },
+  {
+    "name": "uxcore-transfer",
+    "repo": "uxcore/transfer",
+    "description": "transfer ui component for react"
   }
 ]
