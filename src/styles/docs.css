@@ -46,4 +46,15 @@
   .highlight pre, pre, code {
     background-color: #f7f8fa;
   }
+
+  /* We convert headings into anchored hyperlinks, but hide it visually for now */
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      color: inherit;
+    }
+    a:hover,
+    a:active {
+      text-decoration: none;
+    }
+  }
 }

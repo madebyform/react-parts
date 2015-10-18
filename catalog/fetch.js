@@ -193,46 +193,52 @@ Promise.all(promises).then(function(newData) {
 
 /* Additional work for storing and rendering readme files */
 
-let marked = require('marked');
-var Renderer = require('marked-sanitized')(marked.Renderer);
-let hljs = require('highlight.js');
-
-function override(object, f, callback) {
-  object[f] = callback(object[f]);
-}
-
-// Set marked options (similar to GitHub)
-marked.setOptions({
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  smartLists: true,
-  smartypants: true
-});
+let MarkdownIt = require("markdown-it");
+let lazyHeaders = require('markdown-it-lazy-headers');
+let imsize = require('markdown-it-imsize');
+let marky = require("marky-markdown");
+let hljs = require("highlight.js");
 
 // Apply syntax highlighting to fenced code blocks using the highlight plugin
-marked.setOptions({
-  highlight: function (code, lang) {
-    if (lang && hljs.getLanguage(lang)) {
-      try {
-        return hljs.highlight(lang, code).value;
-      } catch (err) {}
-    }
-    try {
-      return hljs.highlightAuto(code).value;
-    } catch (err) {}
+let highlight = function (code, lang) {
+  if (lang && hljs.getLanguage(lang)) {
+    return hljs.highlight(lang, code).value;
+  }
+  return hljs.highlightAuto(code).value;
+};
 
-    return ''; // use external default escaping
-  },
-  langPrefix: "hljs language-"
-});
+/*
+ * Aspects of GitHub Flavored Markdown (git.io/vCAcc) we should support:
+ * - Multiple underscores in words (eg: wow_great_stuff) enabled by default by markdown-it
+ * - URL autolinking works by using the `linkify` markdown-it option
+ * - Strikethrough fenced code blocks and tables enabled by default by markdown-it
+ */
+let mdOptions = {       /* `markdown-it` options */
+  html: true,           // Enable HTML tags in source (same as `marky-markdown`)
+  breaks: false,        // Convert '\n' into <br> (same as GitHub and `marky-markdown`)
+  linkify: true,        // Autoconvert URL-like text to links (same as GitHub)
+  typographer: true,    // Enable some language-neutral replacement + quotes beautification
+  highlight: highlight, // Use highlight.js instead of atom highlights (results seem better)
+  langPrefix: "hljs language-",
+};
+let markyOptions = {         /* `marky-markdown` options */
+  sanitize: false,           // False in order to keep ~~strike~~ and <sup> (git.io/vCAUj)
+  highlightSyntax: false,    // Run highlights on code blocks. We use highlight.js instead
+  prefixHeadingIds: false,   // Prevent DOM id collisions
+  serveImagesWithCDN: false, // Use npm's CDN to proxy images over HTTPS
+  debug: false,              // console.log() all the things
 
-// Fix bug on Marked that doesn't support `#Testing` on GFM (see git.io/vCFe8)
-marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;
-marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
+  // We can't override the options `marky-markdown` sends down to `markdown-it`.
+  // We are using a fork that enables us to pass a `renderer` option.
+  renderer: new MarkdownIt(mdOptions)
+    // The `#heading` syntax, without space after hashtag is supported by GitHub and made
+    // possible using the markdown-it-lazy-headers plugin
+    .use(lazyHeaders)
+    // GitHub doesn't support image sizes (eg: `![](http://i.imgur.com/zrsazAG.gif =300x)`)
+    // but some images work (replacing the " " with "%20" returns the image in some servers)
+    .use(imsize)
+};
 
-// Save the content of the readme file
 function saveReadme(component, npm) {
   // Don't continue if readme is not written in markdown
   if (!/\.md$/.test(npm.readmeFilename) || npm.readme == "ERROR: No README data found!") {
@@ -244,45 +250,14 @@ function saveReadme(component, npm) {
       `consider helping the community by [writing one](${ home }/new/master?readme=1).`;
   }
 
-  // Discover the branch to fix local paths used in images and links
-  let distTags = npm['dist-tags'] || {};
-  let versions = npm.versions || {};
-  let latest = versions[distTags.latest] || {};
-  let branch = latest.gitHead || 'master';
-
-  let renderer = new marked.Renderer();
-
-  let fixRelativeLinks = function(prefix, href) {
-    if (href[0] === "#") { // If it's an anchor
-      return `https://github.com/${ component.repo }${ href }`;
+  markyOptions.package = { // npm package metadata to rewrite relative URLs, etc.
+    name: component.name,
+    repository: {
+      type: "git",
+      url: `https://github.com/${ component.repo }`
     }
-    else if (!/^(https?:|mailto:)?\/\//.test(href)) { // If doesn't start with //, http or mailto
-      let path = href.replace(/^\.?\//, ""); // Remove initial slash or "./"
-      href = `${ prefix }/${ path }`;
-    }
-    return href;
   };
 
-  // Fix local links
-  override(renderer, 'link', function(original) {
-    return function (href, title, text) {
-      let prefix = `https://github.com/${ component.repo }/blob/${ branch }`;
-      href = fixRelativeLinks(prefix, href);
-      return original.apply(this, [ href, title, text ]);
-    };
-  });
-
-  // Fix local images
-  override(renderer, 'image', function(original) {
-    return function (href, title, text) {
-      let prefix = `https://raw.githubusercontent.com/${ component.repo }/${ branch }`;
-      href = fixRelativeLinks(prefix, href);
-      return original.apply(this, [ href, title, text ]);
-    };
-  });
-
-  marked.setOptions({ renderer });
-
   // Render and save it to persist it later
-  docs[component.name] = renderer.html(marked(npm.readme));
+  docs[component.name] = marky(npm.readme, markyOptions).html();
 }

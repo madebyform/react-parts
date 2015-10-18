@@ -9,8 +9,10 @@
     "co-request": "^1.0.0",
     "ent": "^2.2.0",
     "highlight.js": "^8.8.0",
-    "marked": "^0.3.5",
-    "marked-sanitized": "^0.1.1",
+    "markdown-it": "^5.0.0",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-lazy-headers": "^0.1.3",
+    "marky-markdown": "dmfrancisco/marky-markdown",
     "readline-sync": "^1.2.21",
     "request": "^2.63.0"
   },
