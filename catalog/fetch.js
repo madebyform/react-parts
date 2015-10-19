@@ -5,6 +5,8 @@ let fs = require('fs');
 let co = require("co");
 let request = require("co-request");
 let keys = require('./keys.json');
+let cheerio = require("cheerio");
+let marky = require("marky-markdown");
 
 // Pass the components list you which to update ("react" or "react-native")
 let componentsType = process.argv[2] || "react-native";
@@ -59,6 +61,20 @@ if (process.argv[3]) {
   let sliceEnd   = sliceArg * interval; // 100
   components = components.slice(sliceStart, sliceEnd);
 }
+
+// Options for `marky-markdown`, that helps us process READMEs
+let markyOptions = {
+  sanitize: false,           // False since it's already done by GitHub
+  highlightSyntax: false,    // Also done by GitHub
+  prefixHeadingIds: false,   // Prevent DOM id collisions
+  serveImagesWithCDN: false, // Use npm's CDN to proxy images over HTTPS
+  debug: false,              // console.log() all the things
+
+  // We can't override the options `marky-markdown` sends down to `markdown-it`.
+  // We are using a fork that enables us to pass a `renderer` option.
+  // In this case we are passing the already rendered HTML from GitHub.
+  renderer: { render(html) { return html; } }
+};
 
 components.forEach(function(component) {
   promises.push(
@@ -151,14 +167,47 @@ components.forEach(function(component) {
           }
         }
 
-        // Save the content of the readme file, if it's markdown
-        saveReadme(component, npm);
+        // Get the readme from GitHub. They are more frequently updated than `npm.readme` and we can grab
+        // them rendered, which minimizes the chance of displaying them differently than they appear on GitHub
+        options = {
+          url: endpoints.github + component.repo + "/readme",
+          headers: { 'User-Agent': 'request', 'Accept': "application/vnd.github.v3.html+json" },
+          auth: { 'user': keys.github.username, 'pass': keys.github.password },
+          json: true
+        };
+        let readme = (yield request(options)).body;
+
+        if (typeof readme !== "string") {
+          readme = `No documentation is available for this component.  \nConsider helping the community by ` +
+            `<a href="https://github.com/${ component.repo }/new/master?readme=1">writing a README</a>.`;
+        }
+
+        // Remove the anchors GitHub adds to titles
+        let $ = cheerio.load(readme);
+        $(".anchor").remove();
+
+        // NPM package metadata to rewrite relative URLs, etc.
+        markyOptions.package = {
+          name: component.name,
+          description: component.description,
+          repository: {
+            type: "git",
+            url: `https://github.com/${ component.repo }`
+          }
+        };
+
+        // Convert relative URLs and images, removing redundant info, etc.
+        $ = marky($.html(), markyOptions);
+
+        // Save the content of the readme file
+        docs[component.name] = $.html();
 
         resolve(data);
         process.stdout.write(".");
 
-      }).catch(function() {
-        process.stdout.write(` Problems with data for: ${ component.name } `);
+      }).catch(function(e) {
+        console.log(`Problems with data for: ${ component.name }:`);
+        console.log(e);
         resolve(component);
       });
     })
@@ -189,116 +238,3 @@ Promise.all(promises).then(function(newData) {
 
   console.log("\nSuccess!");
 });
-
-
-/* Additional work for storing and rendering readme files */
-
-let marked = require('marked');
-let marky = require("marky-markdown");
-let hljs = require("highlight.js");
-
-// Apply syntax highlighting to fenced code blocks using the highlight plugin
-marked.setOptions({
-  highlight: function (code, lang) {
-    if (lang && hljs.getLanguage(lang)) {
-      return hljs.highlight(lang, code).value;
-    }
-    return hljs.highlightAuto(code).value;
-  },
-  langPrefix: "hljs language-"
-});
-
-/*
- * Aspects of GitHub Flavored Markdown (git.io/vCAcc) we should support:
- * - Multiple underscores in words (eg: wow_great_stuff) enabled by default by markdown-it
- * - URL autolinking works by using the `linkify` markdown-it option
- * - Strikethrough fenced code blocks and tables enabled by default by markdown-it
- */
-marked.setOptions({
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: false,
-  smartLists: true,
-  smartypants: true,
-  renderer: new marked.Renderer()
-});
-
-let markyOptions = {
-  sanitize: false,           // False in order to keep ~~strike~~ and <sup> (git.io/vCAUj)
-  highlightSyntax: false,    // Run highlights on code blocks. We use highlight.js instead
-  prefixHeadingIds: false,   // Prevent DOM id collisions
-  serveImagesWithCDN: false, // Use npm's CDN to proxy images over HTTPS
-  debug: false,              // console.log() all the things
-
-  // We can't override the options `marky-markdown` sends down to `markdown-it`.
-  // We are using a fork that enables us to pass a `renderer` option.
-  // We can pass an instance of `markdown-it` or anything else that has a `render` method.
-  renderer: { render(html) { return marked(html); } }
-};
-
-// Fix bug on Marked that doesn't support `#Testing` on GFM (see git.io/vCFe8)
-marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;
-marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
-
-// Add support for Github Task Lists
-function setGithubTaskLists($) {
-  let input, $el, html, match,
-    changed = false,
-    regex = /^(<p>)?(\[[\sx]\])/i;
-
-  $("li").each(function(i, el) {
-    $el = $(el);
-    html = $el.html();
-    match = html.match(regex);
-    match = match ? match[2] : "";
-
-    if (match.toLowerCase() === "[x]") {
-      input = '<input type="checkbox" class="task-list-item-checkbox" disabled checked>';
-    } else if (match === "[ ]") {
-      input = '<input type="checkbox" class="task-list-item-checkbox" disabled>';
-    } else {
-      return;
-    }
-
-    html = html.replace(regex, `$1${ input }`);
-    $el.html(html);
-    $el.addClass("task-list-item");
-    $el.parent("ul").addClass("task-list");
-
-    changed = true;
-  });
-
-  // When there are nested task lists, changes are lost. Recursively call this function
-  // until all task lists have been transformed. TODO Improve this code.
-  if (changed) return setGithubTaskLists($);
-
-  return $;
-}
-
-function saveReadme(component, npm) {
-  // Don't continue if readme is not written in markdown
-  if (!/\.md$/.test(npm.readmeFilename) || npm.readme == "ERROR: No README data found!") {
-    // console.log(`No README available for ${ component.name }`);
-
-    let home = `https://github.com/${ component.repo }`;
-    npm.readme = `No documentation is available for this component. You may find it on ` +
-      `[GitHub](${ home }).  \nIf the repository doesn't have a README file, ` +
-      `consider helping the community by [writing one](${ home }/new/master?readme=1).`;
-  }
-
-  // npm package metadata to rewrite relative URLs, etc.
-  markyOptions.package = {
-    name: component.name,
-    description: component.description,
-    repository: {
-      type: "git",
-      url: `https://github.com/${ component.repo }`
-    }
-  };
-
-  // Render and save it to persist it later
-  var $html = marky(npm.readme, markyOptions);
-  docs[component.name] = setGithubTaskLists($html).html();
-}

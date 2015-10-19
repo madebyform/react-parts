@@ -14,7 +14,6 @@
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "github-markdown-css": "^2.0.11",
-    "highlight.js": "^8.8.0",
     "isomorphic-fetch": "^2.1.1",
     "normalize.css": "^3.0.3",
     "postcss": "^5.0.9",
