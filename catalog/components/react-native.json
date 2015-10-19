@@ -1704,5 +1704,15 @@
     "name": "react-native-touchable-icons",
     "repo": "chagasaway/react-native-touchable-icons",
     "description": "Simple touchable icons acting as buttons"
+  },
+  {
+    "name": "react-native-sound",
+    "repo": "zmxv/react-native-sound",
+    "description": "React Native module for playing sound clips"
+  },
+  {
+    "name": "react-native-video-gstreamer",
+    "repo": "ms88privat/react-native-video-gstreamer",
+    "description": "React-Native VideoPlayer Component for Android with gstreamer"
   }
 ]

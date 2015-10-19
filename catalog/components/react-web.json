@@ -10508,5 +10508,131 @@
     "name": "uxcore-transfer",
     "repo": "uxcore/transfer",
     "description": "transfer ui component for react"
+  },
+  {
+    "name": "arch-dom",
+    "repo": "arch-js/dom",
+    "description": "Easy to use React DOM DSL, for when you don't or can't use JSX"
+  },
+  {
+    "name": "babel-plugin-react-remove-properties",
+    "repo": "oliviertassinari/babel-plugin-react-remove-properties",
+    "description": "Removes React properties"
+  },
+  {
+    "name": "electron-react-boilerplate",
+    "repo": "chentsulin/electron-react-boilerplate",
+    "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development"
+  },
+  {
+    "name": "electron-react-scaffold",
+    "repo": "ryaneof/electron-react-scaffold",
+    "description": "Just another scaffold."
+  },
+  {
+    "name": "flambeau",
+    "repo": "BurntCaramel/flambeau",
+    "description": "Lightweight flux library"
+  },
+  {
+    "name": "golden-type",
+    "repo": "Demi-IO/golden-type",
+    "description": "Beautiful, semantic typography for React"
+  },
+  {
+    "name": "hippy",
+    "repo": "stanleycyang/hippy",
+    "description": "An elegantly simple ReactJS Generator"
+  },
+  {
+    "name": "loopback-redux-react-boilerplate",
+    "repo": "tngan/loopback-redux-react-boilerplate",
+    "description": "A boilerplate for a Redux-React application using LoopBack"
+  },
+  {
+    "name": "mirror-creator",
+    "repo": "alexfedoseev/mirror-creator",
+    "description": "Another way to create an object with values equal to its key names"
+  },
+  {
+    "name": "react-fullpage",
+    "repo": "subtirelumihail/react-fullpage",
+    "description": "An implementation of fullpage.js in react"
+  },
+  {
+    "name": "react-hyperscript",
+    "repo": "mlmorg/react-hyperscript",
+    "description": "Hyperscript syntax for React.js markup"
+  },
+  {
+    "name": "react-tabtab",
+    "repo": "ctxhou/react-tabtab",
+    "description": "react, tabs",
+    "custom_description": "Another react tab component."
+  },
+  {
+    "name": "redux-devtools-dock-monitor",
+    "repo": "gaearon/redux-devtools-dock-monitor",
+    "description": "A resizable and movable dock for Redux DevTools monitors"
+  },
+  {
+    "name": "redux-skip-by-action",
+    "repo": "tshelburne/redux-skip-by-action",
+    "description": "redux store enhancer that allows skipping subscriber notifications by action metadata"
+  },
+  {
+    "name": "reflexbox",
+    "repo": "jxnblk/reflexbox",
+    "description": "React flexbox layout and grid system"
+  },
+  {
+    "name": "static-jsx-webpack-plugin",
+    "repo": "mfellner/static-jsx-webpack-plugin",
+    "description": "Render JSX to static HTML with webpack"
+  },
+  {
+    "name": "structor",
+    "repo": "ipselon/structor",
+    "description": "A user interface constructor for React"
+  },
+  {
+    "name": "tag-search",
+    "repo": "snowkeeper/tag-search",
+    "description": "search and list html tags like named anchor links"
+  },
+  {
+    "name": "react-typist",
+    "repo": "jstejada/react-typist",
+    "description": "Typing animations with React"
+  },
+  {
+    "name": "redux-thunk",
+    "repo": "gaearon/redux-thunk",
+    "description": "Thunk middleware for Redux."
+  },
+  {
+    "name": "redux-analytics",
+    "repo": "markdalgleish/redux-analytics",
+    "description": "Analytics middleware for Redux"
+  },
+  {
+    "name": "redux-logger",
+    "repo": "fcomb/redux-logger",
+    "description": "Logger for redux"
+  },
+  {
+    "name": "redux-immutable-state-invariant",
+    "repo": "leoasis/redux-immutable-state-invariant",
+    "description": "Redux middleware that detects mutations between and outside redux dispatches. For development use only."
+  },
+  {
+    "name": "redux-optimist",
+    "repo": "ForbesLindesay/redux-optimist",
+    "description": "Optimistically apply actions that can be later commited or reverted."
+  },
+  {
+    "name": "redux-undo",
+    "repo": "omnidan/redux-undo",
+    "description": "simple undo/redo functionality for redux state containers"
   }
 ]
