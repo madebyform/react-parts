@@ -2,6 +2,7 @@
 'use strict';
 
 import React from 'react/addons';
+import CustomEvent from 'custom-event';
 import StylingMixin from '../helpers/styling-mixin.jsx';
 import InteractionStylingMixin from '../helpers/interaction-mixin.jsx';
 import Icon from './icon-component.jsx';

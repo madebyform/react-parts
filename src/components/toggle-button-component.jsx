@@ -65,20 +65,6 @@ let ToggleButton = React.createClass({
     } else {
       return <div />;
     }
-  },
-  handleToggle(e) {
-    e.preventDefault();
-
-    let eventName = `toggle-${ this.props.name }`;
-    let event = new CustomEvent(eventName, { detail: this.props.detail });
-    document.dispatchEvent(event);
-  },
-  handleUntoggle(e) {
-    e.preventDefault();
-
-    let eventName = `untoggle-${ this.props.name }`;
-    let event = new CustomEvent(eventName);
-    document.dispatchEvent(event);
   }
 });
 
