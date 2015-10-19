@@ -2,6 +2,7 @@
 'use strict';
 
 import React from 'react/addons';
+import shallowEqual from 'react/lib/shallowEqual';
 import StylingMixin from '../helpers/styling-mixin.jsx';
 import DebounceInput from 'react-debounce-input';
 
@@ -39,12 +40,13 @@ let Navbar = React.createClass({
         width: this.remCalc(62)
       },
       center: {
-        WebkitBoxFlex: 1,
+        WebkitBoxFlexBasis: 1,
+        flexBasis: 1,
+        WebkitBoxFlexGrow: 4,
+        flexGrow: 4,
         alignItems: "center",
         background: "#4b67a5 url(/search.svg) no-repeat 16px center",
         backgroundSize: "auto 100%",
-        flex: 1,
-        flexGrow: 4,
         height: "100%",
         justifyContent: "center",
         marginLeft: this.remCalc(12),
@@ -84,6 +86,7 @@ let Navbar = React.createClass({
         textDecoration: "none"
       }
     };
+
     return (
       <div className="Navbar u-displayFlex" style={styles.container}>
         <div style={styles.left}>
@@ -117,10 +120,12 @@ let Navbar = React.createClass({
       </div>
     );
   },
-  shouldComponentUpdate() {
-    // This is a simple way of allowing the user to type while the search results
-    // are updated, without flickering the input or changing it's value
-    return false;
+  shouldComponentUpdate(nextProps) {
+    // If what changed was the `defaultValue` for the input, don't update the view.
+    // This prevents the input from flickering while the user rights.
+    let props = Object.assign({}, this.props, { defaultValue: "" });
+    nextProps = Object.assign({}, nextProps, { defaultValue: "" });
+    return !shallowEqual(props, nextProps);
   },
   handleChange(value) {
     this.props.onSearch(value.trim());

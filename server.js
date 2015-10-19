@@ -18,7 +18,8 @@ let production = (process.env.NODE_ENV != "development");
 // List of assets where the keys are your production urls, and the value
 // is a  list of development urls that produce the same asset
 let assets = {
-  "/app.min.js": [ "/app.js" ]
+  "/app.min.js": [ "/app.js" ],
+  "/app.min.css": [ "/app.css" ]
 };
 
 // Enable browser cache and HTTP caching (cache busting, etc.)
@@ -84,6 +85,14 @@ server.get('/:type(web|native)', function(req, res) {
         initialData: JSON.stringify(initialData)
       });
     });
+  });
+});
+
+// Return JSON with the documentation for a given component
+server.get('/api/docs/:componentName', function(req, res) {
+  fs.readFile('./catalog/data/docs.json', function(error, data) {
+    let docs = data ? JSON.parse(data) : {};
+    res.json({ doc: docs[req.params.componentName] });
   });
 });
 

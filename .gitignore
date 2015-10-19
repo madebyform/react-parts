@@ -1,5 +1,6 @@
 # Project specific
-assets/app.*
+assets/*.css
+assets/*.js
 data
 keys.json
 

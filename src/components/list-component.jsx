@@ -9,9 +9,6 @@ let PureRenderMixin = React.addons.PureRenderMixin;
 
 let NoComponents = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
-  propTypes: {
-    message: React.PropTypes.string.isRequired
-  },
   render() {
     let styles = {
       container: {
@@ -27,7 +24,30 @@ let NoComponents = React.createClass({
     };
     return (
       <div style={styles.container}>
-        <p style={styles.message}>{this.props.message}</p>
+        <p style={styles.message}>No components found.</p>
+      </div>
+    );
+  }
+});
+
+let LoadingComponents = React.createClass({
+  mixins: [StylingMixin, PureRenderMixin],
+  render() {
+    let styles = {
+      container: {
+        background: "#fff",
+        margin: 1,
+        padding: this.remCalc(20, 0, 15),
+        textAlign: "center"
+      },
+      img: {
+        width: this.remCalc(50),
+        opacity: 0.2
+      }
+    };
+    return (
+      <div style={styles.container}>
+        <img style={styles.img} src="/loader.gif" alt="Loading…" />
       </div>
     );
   }
@@ -53,26 +73,26 @@ let ComponentList = React.createClass({
     };
     let components = this.props.components.map((item, index) => {
       return (
-        <li key={index}>
+        <div key={index}>
           <ComponentItem {...item} debugMode={ this.props.debugMode } />
-        </li>
+        </div>
       );
     });
 
     if (this.props.loading) {
       return (
-        <NoComponents message="Loading…" />
+        <LoadingComponents />
       );
     } else if (components.length === 0) {
       return (
-        <NoComponents message="No components found."/>
+        <NoComponents />
       );
     }
 
     return (
-      <ul style={styles}>
+      <div style={styles}>
         {components}
-      </ul>
+      </div>
     );
   }
 });

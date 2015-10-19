@@ -21,6 +21,13 @@ catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 // Load rejected components. Rejected components will be removed from the data files
 let rejectedComponents = toObject(require('./components/rejected.json'), {});
 
+// Load existing documentation
+let docsFile = "./data/docs.json";
+let docs = {};
+
+try { docs = require(docsFile); }
+catch (e) { console.log(`Creating a new data file for ${ docsFile }.`); }
+
 // We'll fetch metadata from NPM, GitHub and NPM-Stat
 let endpoints = {
   npm: "https://registry.npmjs.com/",
@@ -144,6 +151,9 @@ components.forEach(function(component) {
           }
         }
 
+        // Save the content of the readme file, if it's markdown
+        saveReadme(component, npm);
+
         resolve(data);
         process.stdout.write(".");
 
@@ -173,5 +183,122 @@ Promise.all(promises).then(function(newData) {
   let str = JSON.stringify(newList);
   fs.writeFile(componentsDataFile, str);
 
+  // Persist the new docs
+  str = JSON.stringify(docs, null, '  ');
+  fs.writeFile(docsFile, str);
+
   console.log("\nSuccess!");
 });
+
+
+/* Additional work for storing and rendering readme files */
+
+let marked = require('marked');
+let marky = require("marky-markdown");
+let hljs = require("highlight.js");
+
+// Apply syntax highlighting to fenced code blocks using the highlight plugin
+marked.setOptions({
+  highlight: function (code, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      return hljs.highlight(lang, code).value;
+    }
+    return hljs.highlightAuto(code).value;
+  },
+  langPrefix: "hljs language-"
+});
+
+/*
+ * Aspects of GitHub Flavored Markdown (git.io/vCAcc) we should support:
+ * - Multiple underscores in words (eg: wow_great_stuff) enabled by default by markdown-it
+ * - URL autolinking works by using the `linkify` markdown-it option
+ * - Strikethrough fenced code blocks and tables enabled by default by markdown-it
+ */
+marked.setOptions({
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: true,
+  renderer: new marked.Renderer()
+});
+
+let markyOptions = {
+  sanitize: false,           // False in order to keep ~~strike~~ and <sup> (git.io/vCAUj)
+  highlightSyntax: false,    // Run highlights on code blocks. We use highlight.js instead
+  prefixHeadingIds: false,   // Prevent DOM id collisions
+  serveImagesWithCDN: false, // Use npm's CDN to proxy images over HTTPS
+  debug: false,              // console.log() all the things
+
+  // We can't override the options `marky-markdown` sends down to `markdown-it`.
+  // We are using a fork that enables us to pass a `renderer` option.
+  // We can pass an instance of `markdown-it` or anything else that has a `render` method.
+  renderer: { render(html) { return marked(html); } }
+};
+
+// Fix bug on Marked that doesn't support `#Testing` on GFM (see git.io/vCFe8)
+marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;
+marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
+
+// Add support for Github Task Lists
+function setGithubTaskLists($) {
+  let input, $el, html, match,
+    changed = false,
+    regex = /^(<p>)?(\[[\sx]\])/i;
+
+  $("li").each(function(i, el) {
+    $el = $(el);
+    html = $el.html();
+    match = html.match(regex);
+    match = match ? match[2] : "";
+
+    if (match.toLowerCase() === "[x]") {
+      input = '<input type="checkbox" class="task-list-item-checkbox" disabled checked>';
+    } else if (match === "[ ]") {
+      input = '<input type="checkbox" class="task-list-item-checkbox" disabled>';
+    } else {
+      return;
+    }
+
+    html = html.replace(regex, `$1${ input }`);
+    $el.html(html);
+    $el.addClass("task-list-item");
+    $el.parent("ul").addClass("task-list");
+
+    changed = true;
+  });
+
+  // When there are nested task lists, changes are lost. Recursively call this function
+  // until all task lists have been transformed. TODO Improve this code.
+  if (changed) return setGithubTaskLists($);
+
+  return $;
+}
+
+function saveReadme(component, npm) {
+  // Don't continue if readme is not written in markdown
+  if (!/\.md$/.test(npm.readmeFilename) || npm.readme == "ERROR: No README data found!") {
+    // console.log(`No README available for ${ component.name }`);
+
+    let home = `https://github.com/${ component.repo }`;
+    npm.readme = `No documentation is available for this component. You may find it on ` +
+      `[GitHub](${ home }).  \nIf the repository doesn't have a README file, ` +
+      `consider helping the community by [writing one](${ home }/new/master?readme=1).`;
+  }
+
+  // npm package metadata to rewrite relative URLs, etc.
+  markyOptions.package = {
+    name: component.name,
+    description: component.description,
+    repository: {
+      type: "git",
+      url: `https://github.com/${ component.repo }`
+    }
+  };
+
+  // Render and save it to persist it later
+  var $html = marky(npm.readme, markyOptions);
+  docs[component.name] = setGithubTaskLists($html).html();
+}

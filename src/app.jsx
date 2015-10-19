@@ -45,10 +45,11 @@ export var App = React.createClass({
 
     let styles = {
       container:  {
+        cursor: "default",
         fontFamily: "Source Sans Pro, sans-serif",
         fontSize: this.remCalc(20),
         lineHeight: "1.5",
-        cursor: "default"
+        width: "100%"
       },
       content: {
         margin: "0 auto",
@@ -103,12 +104,21 @@ export var App = React.createClass({
       production: !newProps.debugMode
     });
   },
-  componentDidUpdate() {
-    window.scrollTo(0, 0); // Scroll to top (TODO Update react-router!)
+  componentDidUpdate(prevProps, prevState) {
+    let pageChanged = prevProps.query.page != this.props.query.page;
+    let searchChanged = prevProps.query.search != this.props.query.search;
+
+    // If the current page or the search query changed, scroll to the top
+    if (pageChanged || searchChanged) {
+      window.scrollTo(0, 0);
+    }
   },
   handleSearchInput(searchQuery) {
-    let queryParams = {};
-    if (searchQuery) queryParams.search = searchQuery;
+    let queryParams = Object.assign({}, this.props.query);
+    delete queryParams.page; // Reset the current page
+    delete queryParams.search; // Reset the current search query if it exists
+    if (searchQuery) queryParams.search = searchQuery; // Set the new search query
+
     this.context.router.transitionTo("/:type", this.props.params, queryParams);
   },
   performSearch(searchOptions) {
