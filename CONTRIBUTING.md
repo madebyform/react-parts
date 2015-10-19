@@ -39,7 +39,8 @@ Since the `data/docs.json` file is not in our git repository, we need to use Dok
 
 ```
 mkdir -p /var/www/react-parts/catalog/data
-dokku docker-options:add react-parts "-v /var/www/react-parts/catalog/data:/app/catalog/data"
+dokku docker-options:add react-parts deploy "-v /var/www/react-parts/catalog/data:/app/catalog/data"
+dokku docker-options:add react-parts run "-v /var/www/react-parts/catalog/data:/app/catalog/data"
 ```
 
 ---
