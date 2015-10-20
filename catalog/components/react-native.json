@@ -905,11 +905,6 @@
     "description": "Navigate to external URLs, handle in-app URLs, and access system URLs"
   },
   {
-    "name": "react-native-web-polyfill",
-    "repo": "mattiamanzati/react-native-web-polyfill",
-    "description": "A set of classes and react components to make work your react-native app in a browser. (with some limitations obviously)"
-  },
-  {
     "name": "redux-middleware-react-native-appstate",
     "repo": "michaelcontento/redux-middleware-react-native-appstate",
     "description": "Glue AppState from react-native to Redux."
@@ -1714,5 +1709,35 @@
     "name": "react-native-video-gstreamer",
     "repo": "ms88privat/react-native-video-gstreamer",
     "description": "React-Native VideoPlayer Component for Android with gstreamer"
+  },
+  {
+    "name": "cairn",
+    "repo": "adamterlson/cairn",
+    "description": "A string-based selector engine for React Native styling"
+  },
+  {
+    "name": "react-native-animatable",
+    "repo": "oblador/react-native-animatable",
+    "description": "Standard set of easy to use animations for React Native"
+  },
+  {
+    "name": "react-native-braintree",
+    "repo": "alawong/react-native-braintree",
+    "description": "A react native interface for integrating payments using Braintree's v.zero SDK"
+  },
+  {
+    "name": "react-native-desktop",
+    "repo": "ptmt/react-native-desktop",
+    "description": "A framework for building desktop native apps using React"
+  },
+  {
+    "name": "react-native-progress-dialog-android",
+    "repo": "damonYuan/react-native-progress-dialog-android",
+    "description": "React native android module to present progress dialog"
+  },
+  {
+    "name": "react-native-signalr",
+    "repo": "olofd/react-native-signalr",
+    "description": "Connect to a SignalR server from react-native"
   }
 ]

@@ -9104,8 +9104,7 @@
   {
     "name": "react-youtube-player",
     "repo": "gajus/react-youtube-player",
-    "description": "[![Travis build status](http://img.shields.io/travis/gajus/react-youtube-player/master.svg?style=flat)](https://travis-ci.org/gajus/react-youtube-player) [![NPM version](http://img.shields.io/npm/v/react-youtube-player.svg?style=flat)](https://www.npmjs.o",
-    "custom_description": "React component that encapsulates YouTube IFrame Player API and exposes player controls using the component properties."
+    "description": "React component that encapsulates YouTube IFrame Player API and exposes player controls using the component properties."
   },
   {
     "name": "redux-pouchdb",
@@ -10634,5 +10633,106 @@
     "name": "redux-undo",
     "repo": "omnidan/redux-undo",
     "description": "simple undo/redo functionality for redux state containers"
+  },
+  {
+    "name": "browser-redux",
+    "repo": "zalmoxisus/browser-redux",
+    "description": "Building Chrome apps and cross-browser extensions with Redux and Webpack."
+  },
+  {
+    "name": "chai-react-suite",
+    "repo": "kossnocorp/chai-react-suite",
+    "description": "TODO",
+    "custom_description": "For testing React components"
+  },
+  {
+    "name": "classnames",
+    "repo": "JedWatson/classnames",
+    "description": "A simple utility for conditionally joining classNames together"
+  },
+  {
+    "name": "flint",
+    "repo": "flintjs/flint",
+    "description": "An amazing way to build apps with React"
+  },
+  {
+    "name": "gyrejs",
+    "repo": "WRidder/gyrejs",
+    "description": "Experimental data fetching and state library geared towards ReactJS"
+  },
+  {
+    "name": "haxe-react",
+    "repo": "massiveinteractive/haxe-react",
+    "description": "A Haxe library offering externs and tool functions leveraging Haxe's excellent type system and compile time macros to offer a strongly typed language to work with the increasingly popular React library."
+  },
+  {
+    "name": "keo",
+    "repo": "Wildhoney/Keo",
+    "description": "Plain functions for a more functional approach to creating React components, using function goodies such as compose, memoize, etc..."
+  },
+  {
+    "name": "react-blessed",
+    "repo": "yomguithereal/react-blessed",
+    "description": "A react renderer for blessed."
+  },
+  {
+    "name": "react-cellblock",
+    "repo": "dowjones/react-cellblock",
+    "description": "A react-based grid for smarter responsive components"
+  },
+  {
+    "name": "react-console",
+    "repo": "snowkeeper/react-console",
+    "description": "in app console built with react"
+  },
+  {
+    "name": "react-diode",
+    "repo": "traveloka/react-diode",
+    "description": "Endpoint agnostic, unidirectional data fetching for React applications"
+  },
+  {
+    "name": "react-global-event-decorator",
+    "repo": "blainekasten/react-global-event-decorator",
+    "description": "An abuse of the decorator pattern"
+  },
+  {
+    "name": "react-image-diff",
+    "repo": "cezary/react-image-diff",
+    "description": "Highlight differences between images"
+  },
+  {
+    "name": "react-kaminari",
+    "repo": "whistlerbrk/react-kaminari",
+    "description": "React Component which provides pagination helpers for Kaminari (Rails)"
+  },
+  {
+    "name": "react-redux-provide",
+    "repo": "loggur/react-redux-provide",
+    "description": "Wrap components with a smart component and later assign providers (i.e., stores and action creators) to it."
+  },
+  {
+    "name": "react-vr-player",
+    "repo": "antoinejaussoin/react-vr-player",
+    "description": "A 360° HTML5 video player as a React Component"
+  },
+  {
+    "name": "react-webpack-template",
+    "repo": "weblogixx/react-webpack-template",
+    "description": "A base skeleton template for react and webpack without task runners"
+  },
+  {
+    "name": "redux-batched-actions",
+    "repo": "tshelburne/redux-batched-actions",
+    "description": "redux higher order reducer + action creator to reduce actions under a single subscriber notification"
+  },
+  {
+    "name": "slush-react-builder",
+    "repo": "jamiecopeland/slush-react-builder",
+    "description": "A Slush generator for ES6 React components that creates a .jsx file and a .scss (or css, less, stylus etc) file at a specified path."
+  },
+  {
+    "name": "slush-react-redux",
+    "repo": "shinzui/slush-react-redux",
+    "description": "Slush React/Redux boilerplate generator"
   }
 ]
