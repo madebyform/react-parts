@@ -7,16 +7,18 @@ let request = require("co-request");
 let keys = require('./keys.json');
 let cheerio = require("cheerio");
 let marky = require("marky-markdown");
+require('colors');
 
-// Pass the components list you which to update ("react" or "react-native")
+// Pass the components list you which to update ("react-web" or "react-native")
+// and optionally an index to make a partial update to the data file.
+// Example usage: `npm run fetch react-web 2`
 let componentsType = process.argv[2] || "react-native";
 let componentsFile = `./components/${ componentsType }.json`;
-let components = require(componentsFile);
+let components = sliceArray(require(componentsFile), process.argv[3], 50);
 
-// Load the existing data file, with all the existing metadata
+// Load the data file with all the existing metadata
 let componentsDataFile = `./data/${ componentsType }.json`;
 let oldComponentsData = [];
-
 try { oldComponentsData = require(componentsDataFile); }
 catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 
@@ -26,16 +28,17 @@ let rejectedComponents = toObject(require('./components/rejected.json'), {});
 // Load existing documentation
 let docsFile = "./data/docs.json";
 let docs = {};
-
 try { docs = require(docsFile); }
-catch (e) { console.log(`Creating a new data file for ${ docsFile }.`); }
+catch (e) { console.log(`Creating a new data file for docs.`); }
 
 // We'll fetch metadata from NPM, GitHub and NPM-Stat
-let endpoints = {
+const endpoints = {
   npm: "https://registry.npmjs.com/",
   github: "https://api.github.com/repos/",
   npmStat: "http://npm-stat.com/downloads/range/"
 };
+
+/* Utility functions */
 
 function toObject(array, object) {
   array.forEach((element) => { object[element.name] = element; });
@@ -49,63 +52,186 @@ function isDoubleByte(str) {
   return false;
 }
 
-let currentTime = new Date().toISOString().substr(0, 10), startTime;
-let promises = [], options = {};
-
-// Example usage: `npm run fetch react-web 2`
-// This will make a partial update to the data file
-if (process.argv[3]) {
-  let interval = 50;
-  let sliceArg = parseInt(process.argv[3]); // Eg: 2
-  let sliceStart = sliceArg * interval - interval; // 50
-  let sliceEnd   = sliceArg * interval; // 100
-  components = components.slice(sliceStart, sliceEnd);
+function sliceArray(array, index, size) {
+  if (index) {
+    let sliceIndex = parseInt(index, 10);      // Eg: 2
+    let sliceStart = sliceIndex * size - size; // Eg: 50
+    let sliceEnd   = sliceIndex * size;        // Eg: 100
+    return array.slice(sliceStart, sliceEnd);
+  } else {
+    return array;
+  }
 }
 
-// Options for `marky-markdown`, that helps us process READMEs
-let markyOptions = {
-  sanitize: false,           // False since it's already done by GitHub
-  highlightSyntax: false,    // Also done by GitHub
-  prefixHeadingIds: false,   // Prevent DOM id collisions
-  serveImagesWithCDN: false, // Use npm's CDN to proxy images over HTTPS
-  debug: false,              // console.log() all the things
+/* Functions for fetching data from remote services */
 
-  // We can't override the options `marky-markdown` sends down to `markdown-it`.
-  // We are using a fork that enables us to pass a `renderer` option.
-  // In this case we are passing the already rendered HTML from GitHub.
-  renderer: { render(html) { return html; } }
+let Fetch = {
+  npm: function* (component) {
+    let options = {
+      url: `${ endpoints.npm }${ component.name }`,
+      json: true
+    };
+    let result = (yield request(options)).body;
+    if (!result.description && !component.custom_description) {
+      throw `Component ${ component.name } has no description`;
+    }
+    return result;
+  },
+  npmStat: function* (component, createdAt) {
+    let startTime = new Date(createdAt).toISOString().substr(0,10);
+    let currentTime = new Date().toISOString().substr(0, 10);
+    let options = {
+      url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`,
+      json: true
+    };
+    let result = (yield request(options)).body;
+    return result;
+  },
+  githubRepo: function* (component) {
+    let options = {
+      url: `${ endpoints.github }${ component.repo }`,
+      headers: { 'User-Agent': 'request' },
+      auth: { 'user': keys.github.username, 'pass': keys.github.password },
+      json: true
+    };
+    let result = (yield request(options)).body;
+    if (result.message) {
+      throw result.message;
+    }
+    return result;
+  },
+  githubLanguages: function* (component) {
+    let auth = keys.githubLanguages || keys.github;
+    let options = {
+      url: `${ endpoints.github }${ component.repo }/languages`,
+      headers: { 'User-Agent': 'request' },
+      auth: { 'user': auth.username, 'pass': auth.password },
+      json: true
+    };
+    let result = (yield request(options)).body;
+    if (result.message) {
+      throw result.message;
+    }
+    return result;
+  },
+  githubReadme: function* (component) {
+    let auth = keys.githubReadme || keys.github;
+    let options = {
+      url: `${ endpoints.github }${ component.repo }/readme`,
+      headers: { 'User-Agent': 'request', 'Accept': "application/vnd.github.v3.html+json" },
+      auth: { 'user': auth.username, 'pass': auth.password },
+      json: true
+    };
+    let result = (yield request(options)).body;
+    if (typeof result !== "string") {
+      if (result.message === "Not Found") {
+        return `No documentation is available for this component. Consider helping the community by ` +
+          `<a href="https://github.com/${ component.repo }/new/master?readme=1">writing a README</a>.`;
+      } else {
+        throw result.message;
+      }
+    }
+    return result;
+  }
 };
+
+/* Functions for processing the data */
+
+let Process = {
+  description(npmDescription, component) {
+    let description = (npmDescription || "").trim();
+
+    // Check if our custom description should be used instead
+    if (component.custom_description) {
+      if (component.description != description) { // Check if our custom_description is outdated
+        console.log(`${ component.name } has a new description: '${ description }'`.yellow);
+      } else {
+        description = component.custom_description; // Use our custom description
+      }
+    }
+    // Add a trailing dot to the description
+    if (!/[\.\?\!]$/.test(description) && !isDoubleByte(description)) {
+      description += ".";
+    }
+    return description;
+  },
+  platforms(languages, keywords) {
+    let platforms;
+
+    if (languages.Java) {
+      platforms = { android: true };
+    }
+    if (languages['Objective-C']) {
+      platforms = platforms || {};
+      platforms.ios = true;
+    }
+
+    // Some older packages may be JavaScript only, and work in Android, but have just the "ios" keyword.
+    // So only if there's Java or Objective-C code in the repo, we should check the keywords too.
+    //
+    // CLIs generate boilerplate code for both platforms, so using languages is unreliable.
+    // However, using only the keywords here doesn't give better results either.
+    // The best results were obtained when we used both approaches.
+    if (platforms && /Android/i.test(keywords)) {
+      platforms.android = true;
+    }
+    if (platforms && /iOS/i.test(keywords)) {
+      platforms.ios = true;
+    }
+    return platforms;
+  },
+  readme(html, component) {
+    // Options for `marky-markdown`, that helps us process READMEs
+    let markyOptions = {
+      sanitize: false,           // False since it's already done by GitHub
+      highlightSyntax: false,    // Also done by GitHub
+      prefixHeadingIds: false,   // Prevent DOM id collisions
+      serveImagesWithCDN: false, // Use npm's CDN to proxy images over HTTPS
+      debug: false,              // console.log() all the things
+
+      // NPM package metadata to rewrite relative URLs, etc.
+      package: {
+        name: component.name,
+        description: component.description,
+        repository: {
+          type: "git",
+          url: `https://github.com/${ component.repo }`
+        }
+      },
+      // We can't override the options `marky-markdown` sends down to `markdown-it`.
+      // We are using a fork that enables us to pass a `renderer` option.
+      // In this case we are passing the already rendered HTML from GitHub.
+      renderer: { render(html) { return html; } }
+    };
+
+    // Remove the anchors GitHub adds to titles
+    let $ = cheerio.load(html);
+    $(".anchor").remove();
+
+    // Convert relative URLs and images, removing redundant info, etc.
+    $ = marky($.html(), markyOptions);
+
+    return $.html();
+  }
+};
+
+/* Iterate through the batch and update metadata and readmes */
+
+let promises = [];
+let errors = [];
 
 components.forEach(function(component) {
   promises.push(
     new Promise(function(resolve) {
       co(function* () {
-        options = {
-          url: endpoints.npm + component.name,
-          json: true
-        };
-        let npm = (yield request(options)).body;
-
-        options = {
-          url: endpoints.github + component.repo,
-          headers: { 'User-Agent': 'request' },
-          auth: { 'user': keys.github.username, 'pass': keys.github.password },
-          json: true
-        };
-        let github = (yield request(options)).body;
-
-        startTime = new Date(npm.time.created).toISOString().substr(0,10);
-        options = {
-          url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`,
-          json: true
-        };
-        let stat = (yield request(options)).body;
+        let npm    = yield Fetch.npm(component);
+        let stat   = yield Fetch.npmStat(component, npm.time.created);
+        let github = yield Fetch.githubRepo(component);
 
         let data = {
           name:        component.name,
           githubUser:  component.repo.split("/")[0],
           githubName:  component.repo.split("/")[1],
-          description: (npm.description || "").trim(),
           keywords:    (npm.versions[npm["dist-tags"].latest].keywords || []).join(", "),
           modified:    npm.time.modified,
           stars:       github.stargazers_count,
@@ -113,102 +239,31 @@ components.forEach(function(component) {
           latestVersion: npm["dist-tags"].latest
         };
 
-        // Log if the new data doesn't have stars information or a description
-        if (typeof data.stars === 'undefined') console.log(`Component ${ component.name } has no stars`);
-        if (!data.description) console.log(`Component ${ component.name } has no description`);
-
         // To save some bytes, if package name and repo name are equal, keep only one
         if (data.name === data.githubName) delete data.githubName;
 
-        // Check if our custom description should be used instead
-        if (component.custom_description) {
-          if (component.description != data.description) { // Check if our custom_description is outdated
-            console.log(`Component ${ component.name } has a new description: '${ data.description }'`);
-          } else {
-            data.description = component.custom_description; // Use our custom description
-          }
-        }
-
-        // Add a trailing dot to the description
-        if (!/[\.\?\!]$/.test(data.description) && !isDoubleByte(data.description)) {
-          data.description += ".";
-        }
+        // Use a custom description if necessary and add trailing dot
+        data.description = Process.description(npm.description, component);
 
         // If it's a react native component, check which platforms it has specific code for
         if (componentsType == "react-native") {
-          options = {
-            url: `${ endpoints.github }${ component.repo }/languages`,
-            headers: { 'User-Agent': 'request' },
-            auth: { 'user': keys.github.username, 'pass': keys.github.password },
-            json: true
-          };
-          let languages = (yield request(options)).body;
-
-          if (languages.Java) {
-            data.platforms = { android: true };
-          }
-          if (languages['Objective-C']) {
-            data.platforms = data.platforms || {};
-            data.platforms.ios = true;
-          }
-
-          // Some older packages may be JavaScript only, and work in Android, but have just the "ios" keyword.
-          // So only if there's Java or Objective-C code in the repo, we should check the keywords too.
-          if (data.platforms && /iOS|Android/i.test(`${ data.keywords }`)) {
-            // CLIs generate boilerplate code for both platforms, so using languages is unreliable.
-            // However, using only the keywords here doesn't give better results either.
-            // The best results were obtained when we used both approaches.
-            if (/Android/i.test(data.keywords)) {
-              data.platforms.android = true;
-            }
-            if (/iOS/i.test(data.keywords)) {
-              data.platforms.ios = true;
-            }
-          }
+          let languages = yield Fetch.githubLanguages(component);
+          data.platforms = Process.platforms(languages, data.keywords);
         }
 
-        // Get the readme from GitHub. They are more frequently updated than `npm.readme` and we can grab
-        // them rendered, which minimizes the chance of displaying them differently than they appear on GitHub
-        options = {
-          url: endpoints.github + component.repo + "/readme",
-          headers: { 'User-Agent': 'request', 'Accept': "application/vnd.github.v3.html+json" },
-          auth: { 'user': keys.github.username, 'pass': keys.github.password },
-          json: true
-        };
-        let readme = (yield request(options)).body;
-
-        if (typeof readme !== "string") {
-          readme = `No documentation is available for this component.  \nConsider helping the community by ` +
-            `<a href="https://github.com/${ component.repo }/new/master?readme=1">writing a README</a>.`;
-        }
-
-        // Remove the anchors GitHub adds to titles
-        let $ = cheerio.load(readme);
-        $(".anchor").remove();
-
-        // NPM package metadata to rewrite relative URLs, etc.
-        markyOptions.package = {
-          name: component.name,
-          description: component.description,
-          repository: {
-            type: "git",
-            url: `https://github.com/${ component.repo }`
-          }
-        };
-
-        // Convert relative URLs and images, removing redundant info, etc.
-        $ = marky($.html(), markyOptions);
-
-        // Save the content of the readme file
-        docs[component.name] = $.html();
+        // Get the readme from GitHub. They are more frequently updated than `npm.readme`
+        // and we can grab them rendered, which minimizes the chance of displaying them
+        // differently than they appear on GitHub.
+        let readme = yield Fetch.githubReadme(component);
+        docs[component.name] = Process.readme(readme, component);
 
         resolve(data);
-        process.stdout.write(".");
+        process.stdout.write(".".green);
 
       }).catch(function(e) {
-        console.log(`Problems with data for: ${ component.name }:`);
-        console.log(e);
         resolve(component);
+        process.stdout.write("✕".red);
+        errors.push(`Problems with data for ${ component.name }: ${ e }`);
       });
     })
   );
@@ -217,8 +272,8 @@ components.forEach(function(component) {
 Promise.all(promises).then(function(newData) {
   let allData = {}, newList = [];
 
-  // Merge old fetched data with the new one, since we may have done a
-  // partial fetch this time
+  // Merge old fetched data with the new one, since we may have
+  // done a partial fetch this time
   oldComponentsData.concat(newData).forEach(function(c) {
     allData[c.name] = c;
   });
@@ -228,13 +283,18 @@ Promise.all(promises).then(function(newData) {
     if (!rejectedComponents[key]) newList.push(allData[key]);
   });
 
-  // Persist the new data
+  // Persist the new metadata
   let str = JSON.stringify(newList);
   fs.writeFile(componentsDataFile, str);
 
   // Persist the new docs
-  str = JSON.stringify(docs, null, '  ');
+  str = JSON.stringify(docs);
   fs.writeFile(docsFile, str);
 
-  console.log("\nSuccess!");
+  if (!errors.length) {
+    console.log("\nSuccess!".green);
+  } else {
+    console.log("\nErrors:".red);
+    errors.forEach((msg) => { console.log(msg); });
+  }
 });
