@@ -1739,5 +1739,10 @@
     "name": "react-native-signalr",
     "repo": "olofd/react-native-signalr",
     "description": "Connect to a SignalR server from react-native"
+  },
+  {
+    "name": "react-native-action-button",
+    "repo": "mastermoo/react-native-action-button",
+    "description": "customizable multi-action-button component for react-native"
   }
 ]

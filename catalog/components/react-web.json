@@ -10734,5 +10734,120 @@
     "name": "slush-react-redux",
     "repo": "shinzui/slush-react-redux",
     "description": "Slush React/Redux boilerplate generator"
+  },
+  {
+    "name": "alt",
+    "repo": "goatslacker/alt",
+    "description": "A flux implementation"
+  },
+  {
+    "name": "alt-react",
+    "repo": "altjs/react",
+    "description": "Connect flux to react"
+  },
+  {
+    "name": "alt-resolver",
+    "repo": "altjs/resolver",
+    "description": "A connect to stores that works with react resolver"
+  },
+  {
+    "name": "cianca",
+    "repo": "jameslnewell/cianca",
+    "description": "An isomorphic router for React."
+  },
+  {
+    "name": "fluxex",
+    "repo": "zordius/fluxex",
+    "description": "An extended Flux implement to build isomorphic javascript React app."
+  },
+  {
+    "name": "formsy-material-ui",
+    "repo": "mbrookes/formsy-material-ui",
+    "description": "A formsy-react compatibility wrapper for Material-UI form components."
+  },
+  {
+    "name": "generator-bare-react",
+    "repo": "ironsource/node-generator-bare-react",
+    "description": "Generator for React apps and components"
+  },
+  {
+    "name": "global-react",
+    "repo": "wizawu/global-react",
+    "description": "Let multiple browserified React components co-exists"
+  },
+  {
+    "name": "horse-react",
+    "repo": "reddit/horse-react",
+    "description": "react-specific implementation of `horse`"
+  },
+  {
+    "name": "pui-css-autocomplete",
+    "repo": "pivotal-cf/pivotal-ui",
+    "description": "CSS for react autocomplete"
+  },
+  {
+    "name": "react-async-render",
+    "repo": "StubHubLabs/react-async-render",
+    "description": "Using Redux to resolve React asynchronous rendering issue on server side"
+  },
+  {
+    "name": "react-image-fallback",
+    "repo": "socialtables/react-image-fallback",
+    "description": "if your image doesn't exist, fallback onto another provided image."
+  },
+  {
+    "name": "react-lazy-locales",
+    "repo": "jarsbe/react-lazy-locales",
+    "description": "Lazy developer locales"
+  },
+  {
+    "name": "react-lite-image",
+    "repo": "teambition/react-lite-image",
+    "description": "Image component"
+  },
+  {
+    "name": "react-materialize",
+    "repo": "react-materialize/react-materialize",
+    "description": "Material design for react"
+  },
+  {
+    "name": "react-media-queries",
+    "repo": "bloodyowl/react-media-queries",
+    "description": "provider and decorator to manage media queries with react"
+  },
+  {
+    "name": "react-nav-tabs",
+    "repo": "jmfurlott/react-nav-tabs",
+    "description": "Generic, flexible tabbed based navigation with optional react-router support"
+  },
+  {
+    "name": "react-nest-link-state",
+    "repo": "zodiac-xl/NestLinkedStateMixin",
+    "description": "A React mixin for linking form fields to a deep structure of data within the component's state."
+  },
+  {
+    "name": "react-observable-mixin",
+    "repo": "doctolib/react-observable-mixin",
+    "description": "Container like observable mixin for ReactJS."
+  },
+  {
+    "name": "react-prop-types-check",
+    "repo": "dmitriiabramov/react-prop-types-check",
+    "description": "React.PropTypes outside of react"
+  },
+  {
+    "name": "react-redux-provide-list",
+    "repo": "loggur/react-redux-provide-list",
+    "description": "Provides a handful of common actions and props specific to lists and items."
+  },
+  {
+    "name": "react-redux-provide-selectable",
+    "repo": "loggur/react-redux-provide-selectable",
+    "description": "Provides a handful of common actions and props specific to selecting keys within some object."
+  },
+  {
+    "name": "react-whitebox",
+    "repo": "amannn/react-whitebox",
+    "description": "A component to display your errors."
   }
 ]
