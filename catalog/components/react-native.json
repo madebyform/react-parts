@@ -1744,5 +1744,35 @@
     "name": "react-native-action-button",
     "repo": "mastermoo/react-native-action-button",
     "description": "customizable multi-action-button component for react-native"
+  },
+  {
+    "name": "react-native-code-push",
+    "repo": "Microsoft/react-native-code-push",
+    "description": "React Native plugin for the CodePush service"
+  },
+  {
+    "name": "react-native-floating-label-text-input",
+    "repo": "eyaleizenberg/react-native-floating-label-text-input",
+    "description": "iOS text input with animated floating label"
+  },
+  {
+    "name": "react-native-fm-picker",
+    "repo": "peter4k/React-Native-FMPicker",
+    "description": "A React Native PickerIOS at the bottom of the page"
+  },
+  {
+    "name": "react-native-sneer",
+    "repo": "sneerteam/react-native-sneer",
+    "description": "A react native android module to talk with the Sneer api."
+  },
+  {
+    "name": "react-native-utils",
+    "repo": "darkrishabh/react-native-utils",
+    "description": "A Native Utility module to wrap a set of simple methods."
+  },
+  {
+    "name": "react-native-webview-js-context",
+    "repo": "shayne/react-native-webview-js-context",
+    "description": "Utilize the JavaScript VM running inside an iOS UIWebView to exploit libraries targeting the DOM (e.g. Google Charts)."
   }
 ]

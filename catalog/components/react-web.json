@@ -10495,7 +10495,7 @@
   {
     "name": "react-animachine-enhancer",
     "repo": "animachine/react-animachine-enhancer",
-    "description": "###Work in progress",
+    "description": "###*Work in progress*",
     "custom_description": "Makes React components animatable with animachine."
   },
   {
@@ -10849,5 +10849,105 @@
     "name": "react-whitebox",
     "repo": "amannn/react-whitebox",
     "description": "A component to display your errors."
+  },
+  {
+    "name": "babel-plugin-react-pure-components",
+    "repo": "thejameskyle/babel-plugin-react-pure-components",
+    "description": "Optimize React code by making pure classes into functions"
+  },
+  {
+    "name": "babel-utils-react",
+    "repo": "thejameskyle/babel-utils-react",
+    "description": "Utility functions for building Babel plugins for React code"
+  },
+  {
+    "name": "bly",
+    "repo": "JaapRood/bly",
+    "description": "Flux app framework with hapi like interface"
+  },
+  {
+    "name": "bly-react-mixin",
+    "repo": "JaapRood/bly-react-mixin",
+    "description": "React mixin to easily integrate with the Bly flux framework"
+  },
+  {
+    "name": "common-calendar",
+    "repo": "jonira/react-datepicker",
+    "description": "A calendar component for React. Forked from react-datepicker."
+  },
+  {
+    "name": "commonmark-react-renderer",
+    "repo": "rexxars/commonmark-react-renderer",
+    "description": "React renderer for CommonMark (rationalized Markdown)"
+  },
+  {
+    "name": "css-modules-component-template",
+    "repo": "nkbt/css-modules-component-template",
+    "description": "Styled UI component template with CSS-Modules"
+  },
+  {
+    "name": "generator-iso-alt",
+    "repo": "talyssonoc/generator-iso-alt",
+    "description": "Generator for isomorphic flux apps with React and Alt"
+  },
+  {
+    "name": "megawizard",
+    "repo": "ZeroarcSoftware/megawizard",
+    "description": "Reactjs Step Wizard"
+  },
+  {
+    "name": "package-react",
+    "repo": "guylaor/packagereact",
+    "description": "Helper to packages React components for distribution into other projects"
+  },
+  {
+    "name": "re-notif",
+    "repo": "indexiatech/re-notif",
+    "description": "Redux & React based Notifications center"
+  },
+  {
+    "name": "react-element-to-jsx-string",
+    "repo": "algolia/react-element-to-jsx-string",
+    "description": "Turn a ReactElement into the corresponding JSX string."
+  },
+  {
+    "name": "react-money-component",
+    "repo": "musicglue/react-money-component",
+    "description": "React.js Money Component"
+  },
+  {
+    "name": "react-pacomo",
+    "repo": "jamesknelson/react-pacomo",
+    "description": "Provide structure to your component's CSS."
+  },
+  {
+    "name": "react-slide-deck",
+    "repo": "jl-/react-slide-deck",
+    "description": "react slide deck, carousel"
+  },
+  {
+    "name": "react-swiper",
+    "repo": "joakimbeng/react-swiper",
+    "description": "Detects and triggers touch events for swiping such as onSwipeLeft, onSwipeDown, etc. with ReactJS"
+  },
+  {
+    "name": "react-tele",
+    "repo": "alexdrel/react-tele",
+    "description": "React JS telepresence - rendering outside of own DOM subtree"
+  },
+  {
+    "name": "react-world-time",
+    "repo": "dbachko/react-world-time",
+    "description": "World clock widget for React"
+  },
+  {
+    "name": "slammy-router",
+    "repo": "WelcomWeb/Slammy-Router",
+    "description": "A tiny router implementation for React"
+  },
+  {
+    "name": "web-react",
+    "repo": "darul75/web-react",
+    "description": "Another Webpack/React/Flux starter kit."
   }
 ]
