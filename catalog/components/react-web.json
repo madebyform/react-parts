@@ -8340,11 +8340,6 @@
     "description": "Validation decorator for ReactJS base on joi."
   },
   {
-    "name": "react-wenv",
-    "repo": "ishvetsov/react-wenv",
-    "description": "A tool for better creating \"Atomic Design\" components"
-  },
-  {
     "name": "react-year",
     "repo": "jasonbellamy/react-year",
     "description": "A react-component to format and display a year."
@@ -10949,5 +10944,10 @@
     "name": "web-react",
     "repo": "darul75/web-react",
     "description": "Another Webpack/React/Flux starter kit."
+  },
+  {
+    "name": "statinamic",
+    "repo": "MoOx/statinamic",
+    "description": "A static website generator to create dynamic website using React components."
   }
 ]
