@@ -6197,11 +6197,6 @@
     "description": "organise your inline styles flexible and forkable"
   },
   {
-    "name": "fontello-react-component",
-    "repo": "mderrick/fontello-react-component",
-    "description": "Generates a react component from a Fontello SVG icon"
-  },
-  {
     "name": "mobservable",
     "repo": "mweststrate/mobservable",
     "description": "Keeps views automatically in sync with state. Unobtrusively."
@@ -10949,5 +10944,90 @@
     "name": "statinamic",
     "repo": "MoOx/statinamic",
     "description": "A static website generator to create dynamic website using React components."
+  },
+  {
+    "name": "alt-mutators",
+    "repo": "mull/alt-mutators",
+    "description": "Mutators for alt with a familiar API."
+  },
+  {
+    "name": "alt-router",
+    "repo": "altjs/router",
+    "description": "Connect react-router to alt"
+  },
+  {
+    "name": "grunt-fontello-react",
+    "repo": "mderrick/grunt-fontello-react",
+    "description": "Generates a react component from a Fontello SVG icon"
+  },
+  {
+    "name": "react-component-tester",
+    "repo": "craigbilner/react-component-tester",
+    "description": "A simple helper to make testing react components with shallow rendering easier"
+  },
+  {
+    "name": "react-cookie",
+    "repo": "eXon/react-cookie",
+    "description": "Load and save cookies within your React application"
+  },
+  {
+    "name": "react-dom-stream",
+    "repo": "aickin/react-dom-stream",
+    "description": "A streaming server-side rendering library for React."
+  },
+  {
+    "name": "react-html-document",
+    "repo": "venmo/react-html-document",
+    "description": "A foundational React component useful for rendering full html documents on the server."
+  },
+  {
+    "name": "react-icheck",
+    "repo": "luqin/react-icheck",
+    "description": "iCheck components built with React. Highly customizable checkboxes and radio buttons"
+  },
+  {
+    "name": "react-icons",
+    "repo": "gorangajic/react-icons",
+    "description": "svg react icons of popular icon packs using ES6 imports"
+  },
+  {
+    "name": "react-json-editor",
+    "repo": "ismaelga/react-json-editor",
+    "description": "A React dynamic form component for react using JSON-Schema."
+  },
+  {
+    "name": "react-loopback",
+    "repo": "diogodoreto/react-loopback",
+    "description": "React plugin to load data from a Loopback API server"
+  },
+  {
+    "name": "react-render-plugin",
+    "repo": "dangw/react-render-plugin",
+    "description": "A webpack plugin for build time rendering of react components"
+  },
+  {
+    "name": "react-rpg",
+    "repo": "james-oldfield/react-rpg",
+    "description": "A React component for responsive photo grids in square aspect ratio"
+  },
+  {
+    "name": "react-share",
+    "repo": "nygardk/react-share",
+    "description": "Easy social media share buttons and share counts."
+  },
+  {
+    "name": "react-textcompleter",
+    "repo": "jnoleau/react-textcompleter",
+    "description": "React multi-autocompleter for text inputs"
+  },
+  {
+    "name": "react-window-resize-listener",
+    "repo": "cesarandreu/react-window-resize-listener",
+    "description": "React component for listening to window resize events"
+  },
+  {
+    "name": "shorti",
+    "repo": "tonyspiro/shorti",
+    "description": "Shorti helps you add style to your React components by rendering short-hand \"class names\" into inline styles."
   }
 ]

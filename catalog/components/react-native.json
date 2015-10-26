@@ -1774,5 +1774,35 @@
     "name": "react-native-webview-js-context",
     "repo": "shayne/react-native-webview-js-context",
     "description": "Utilize the JavaScript VM running inside an iOS UIWebView to exploit libraries targeting the DOM (e.g. Google Charts)."
+  },
+  {
+    "name": "react-native-callintent",
+    "repo": "syarul/react-native-callintent",
+    "description": "A React Native Call intent for Android."
+  },
+  {
+    "name": "react-native-mapintent",
+    "repo": "syarul/react-native-mapintent",
+    "description": "A React Native map intent for Android. Allows to open Android Stock Map Application"
+  },
+  {
+    "name": "react-native-select-contact-address-ios",
+    "repo": "rhaker/react-native-select-contact-address-ios",
+    "description": "A react-native interface for selecting a contact and returning an address. Uses async promises (ios8 or higher only)."
+  },
+  {
+    "name": "react-native-select-contact-email-ios",
+    "repo": "rhaker/react-native-select-contact-email-ios",
+    "description": "A react-native interface for selecting a contact and returning an email. Uses async promises (ios8 or higher only)."
+  },
+  {
+    "name": "react-native-select-contact-phone-ios",
+    "repo": "rhaker/react-native-select-contact-phone-ios",
+    "description": "A react-native interface for selecting a contact and returning a phone number. Uses async promises (ios8 or higher only)."
+  },
+  {
+    "name": "react-native-tableview-simple",
+    "repo": "Purii/react-native-tableview-simple",
+    "description": "React Native component for TableView made with pure CSS"
   }
 ]
