@@ -17,8 +17,8 @@ html, body {
 
 /* Temporary hack for Safari */
 .u-displayFlex {
-  display: -webkit-box;
-  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Hides a link until it has been visited by the user */
@@ -37,15 +37,7 @@ mark {
   border-bottom: 1px solid #e0e0e0;
 }
 
-::-webkit-input-placeholder {
-  color: #fff;
-  font-weight: 300;
-}
-::-moz-placeholder {
-  color: #fff;
-  font-weight: 300;
-}
-:-ms-input-placeholder {
+::placeholder {
   color: #fff;
   font-weight: 300;
 }

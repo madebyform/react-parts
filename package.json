@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "algoliasearch": "^3.8.1",
+    "autoprefixer": "^6.0.3",
     "babel": "^5.8.29",
     "babel-core": "^5.8.29",
     "babel-loader": "^5.3.2",
@@ -42,8 +43,8 @@
     "live": "npm run css:build && nodemon server.js --ignore src/",
     "postinstall": "npm run js:build && npm run css:build && npm run css:minify",
     "js:build": "webpack",
-    "css:build:docs": "postcss src/styles/docs.css --use postcss-import --use postcss-pxtorem -o assets/docs.css -c src/styles/docs.json",
-    "css:build:app": "postcss src/app.css --use postcss-import --use postcss-nested -o assets/app.css",
+    "css:build:docs": "postcss src/styles/docs.css --use postcss-import --use postcss-pxtorem --use autoprefixer -o assets/docs.css -c src/styles/docs.json",
+    "css:build:app": "postcss src/app.css --use postcss-import --use postcss-nested --use autoprefixer -o assets/app.css",
     "css:build": "npm run css:build:docs && npm run css:build:app",
     "css:minify": "postcss assets/app.css --use cssnano -o assets/app.min.css",
     "pull": "cd catalog && npm run pull",
