@@ -1804,5 +1804,10 @@
     "name": "react-native-tableview-simple",
     "repo": "Purii/react-native-tableview-simple",
     "description": "React Native component for TableView made with pure CSS"
+  },
+  {
+    "name": "react-native-gestures",
+    "repo": "kiddkai/react-native-gestures",
+    "description": "composable gesture system in react native"
   }
 ]

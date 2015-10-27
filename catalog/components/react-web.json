@@ -3926,11 +3926,6 @@
     "description": "A collection of components for React."
   },
   {
-    "name": "react-ui-kit",
-    "repo": "Krossnine/react-uikit",
-    "description": "UiKit components built with ReactJS"
-  },
-  {
     "name": "react-unmount-listener-mixin",
     "repo": "syranide/react-unmount-listener-mixin",
     "description": "React mixin for listenable componentWillUnmount"
@@ -11029,5 +11024,82 @@
     "name": "shorti",
     "repo": "tonyspiro/shorti",
     "description": "Shorti helps you add style to your React components by rendering short-hand \"class names\" into inline styles."
+  },
+  {
+    "name": "akkad",
+    "repo": "brochington/Akkad",
+    "description": "A React webgl target"
+  },
+  {
+    "name": "ambidex",
+    "repo": "appsforartists/ambidex",
+    "description": "Effortlessly host your React app on both the client and the server.  Some call it isomorphic JavaScript - we call it Ambidex."
+  },
+  {
+    "name": "autoprefix-style-prop",
+    "repo": "appsforartists/autoprefix-style-prop",
+    "description": "Adds `Webkit` prefix to flexbox properties in a React style prop"
+  },
+  {
+    "name": "dumb-relay",
+    "repo": "xenohunter/DumbRelay",
+    "description": "Simple data-binding tool for React.js based on Relay philosophy."
+  },
+  {
+    "name": "leafletmap",
+    "repo": "sstur/react-leaflet",
+    "description": "React wrapper component for Leaflet"
+  },
+  {
+    "name": "react-autofill",
+    "repo": "Pephers/react-autofill",
+    "description": "A polyfill for Safari that triggers a change event on autofill"
+  },
+  {
+    "name": "react-html5video",
+    "repo": "mderrick/react-html5video",
+    "description": "A really simple customizeable HTML5 Video that uses the familiar HTML5 video markup with custom controls. View the [demo](http://mderrick.github.io/react-html5video/).",
+    "custom_description": "A really simple customizeable HTML5 Video that uses the familiar HTML5 video markup with custom controls."
+  },
+  {
+    "name": "react-map-gl",
+    "repo": "uber/react-map-gl",
+    "description": "A React wrapper for MapboxGL-js and overlay API."
+  },
+  {
+    "name": "react-router-assembly",
+    "repo": "tniezg/react-router-assembly",
+    "description": "React Router Assembly (RRA) configures [React](https://facebook.github.io/react/) and [React Router](http://https://github.com/rackt/react-router) on top of [Express](http://expressjs.com/) for easy server- and client-side rendering. It assumes mostly sep",
+    "custom_description": "React Router Assembly (RRA) configures React and React Router on top of Express for easy server and client-side rendering."
+  },
+  {
+    "name": "react-router5",
+    "repo": "router5/react-router5",
+    "description": "router5 helpers for React"
+  },
+  {
+    "name": "react-text-highlighter",
+    "repo": "swennemans/react-text-highlighter",
+    "description": "Simple higher order component for React for text highlighting. Works nicely with React 0.14+ and stateless components"
+  },
+  {
+    "name": "react-three-renderer",
+    "repo": "toxicFork/react-three-renderer",
+    "description": "Render into a three.js canvas using React."
+  },
+  {
+    "name": "react-tooltipper",
+    "repo": "jmrog/react-tooltipper",
+    "description": "Create and trigger responsive tooltips for your ReactJS apps"
+  },
+  {
+    "name": "redux-router5",
+    "repo": "router5/redux-router5",
+    "description": "Router5 integration with redux"
+  },
+  {
+    "name": "rism",
+    "repo": "rapid7/rism",
+    "description": "Tools to streamline inline style management for React elements"
   }
 ]
