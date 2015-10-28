@@ -1809,5 +1809,15 @@
     "name": "react-native-gestures",
     "repo": "kiddkai/react-native-gestures",
     "description": "composable gesture system in react native"
+  },
+  {
+    "name": "react-native-contacts-rx",
+    "repo": "JeanLebrument/react-native-contacts-rx",
+    "description": "react-native-contacts counterpart that include the support of RxJS."
+  },
+  {
+    "name": "react-native-player",
+    "repo": "xeodou/react-native-player",
+    "description": "Media player for react-native"
   }
 ]

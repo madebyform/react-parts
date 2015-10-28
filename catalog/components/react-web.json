@@ -11101,5 +11101,80 @@
     "name": "rism",
     "repo": "rapid7/rism",
     "description": "Tools to streamline inline style management for React elements"
+  },
+  {
+    "name": "backbone-react-component-fix",
+    "repo": "magalhas/backbone-react-component",
+    "description": "Backbone.React.Component is a wrapper for React.Component and brings all the power of Facebook's React to Backbone.js"
+  },
+  {
+    "name": "gulp-render-react",
+    "repo": "abramz/gulp-render-react",
+    "description": "Render react components to string or static markup"
+  },
+  {
+    "name": "icg-griddle-react",
+    "repo": "GriddleGriddle/Griddle",
+    "description": "Griddle - A fast and flexible grid component for React."
+  },
+  {
+    "name": "jasmine-react-matchers",
+    "repo": "jstejada/jasmine-react-matchers",
+    "description": "Custom matchers to test React Elements"
+  },
+  {
+    "name": "justore",
+    "repo": "regou/justore",
+    "description": "We don't need flux , just the store please"
+  },
+  {
+    "name": "react-bubble-chart",
+    "repo": "kauffecup/react-bubble-chart",
+    "description": "A React+D3 animated bubble chart"
+  },
+  {
+    "name": "react-digits",
+    "repo": "cgarvis/react-digits",
+    "description": "React component for Twitter's Digits"
+  },
+  {
+    "name": "react-loading-indicator",
+    "repo": "exponentjs/react-loading-indicator",
+    "description": "A loading indicator written purely in React that uses SVG and no images"
+  },
+  {
+    "name": "react-page-parts",
+    "repo": "robcolburn/react-page-parts",
+    "description": "A way to extract other parts page, such as meta tags, from a React app."
+  },
+  {
+    "name": "react-photonkit",
+    "repo": "react-photon/react-photonkit",
+    "description": "Photon components built with React"
+  },
+  {
+    "name": "react-pubsub-via-radio.js",
+    "repo": "espeakers/react-pubsub-via-radio.js",
+    "description": "Some mixins and utilities to make radio.js publish/subscribe work smoothly with react.js"
+  },
+  {
+    "name": "react-social-buttons",
+    "repo": "StevenIseki/react-social-buttons",
+    "description": "social buttons component for react, includes google, facebook, twitter, pinterest and more"
+  },
+  {
+    "name": "react-stamp",
+    "repo": "stampit-org/react-stamp",
+    "description": "Composables for React."
+  },
+  {
+    "name": "react-transform-jspm-hmr",
+    "repo": "tyscorp/react-transform-jspm-hmr",
+    "description": "A React Transform that enables hot reloading React classes using JSPM"
+  },
+  {
+    "name": "universal-react",
+    "repo": "DominicTobias/universal-react",
+    "description": "A universal react starter, with routing, meta, title, and data features"
   }
 ]
