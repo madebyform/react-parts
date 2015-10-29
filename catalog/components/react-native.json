@@ -1819,5 +1819,40 @@
     "name": "react-native-player",
     "repo": "xeodou/react-native-player",
     "description": "Media player for react-native"
+  },
+  {
+    "name": "react-native-circular-progress",
+    "repo": "bgryszko/react-native-circular-progress",
+    "description": "React Native component for creating animated, circular progress with ReactART"
+  },
+  {
+    "name": "react-native-fabric-digits",
+    "repo": "JeanLebrument/react-native-fabric-digits",
+    "description": "Fabric Digits wrapper to use it in React-Native"
+  },
+  {
+    "name": "react-native-gmaps",
+    "repo": "teamrota/react-native-gmaps",
+    "description": "React Native Android Google Maps implementation."
+  },
+  {
+    "name": "react-native-icloud",
+    "repo": "watert/react-native-icloud",
+    "description": "wrapping nsfilemanager for icloud usage"
+  },
+  {
+    "name": "react-native-select-contact-birthday-ios",
+    "repo": "rhaker/react-native-select-contact-birthday-ios",
+    "description": "A react-native interface for selecting a contact and returning a birthday. Uses async promises (ios8 or higher only)."
+  },
+  {
+    "name": "react-native-select-contact-name-ios",
+    "repo": "rhaker/react-native-select-contact-name-ios",
+    "description": "A react-native interface for selecting a contact and returning a name. Uses async promises (ios8 or higher only)."
+  },
+  {
+    "name": "react-native-sqlite3",
+    "repo": "ramsundark5/react-native-sqlite3",
+    "description": "SQlite3 binding for react native based on FMDB."
   }
 ]

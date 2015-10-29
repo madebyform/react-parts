@@ -11176,5 +11176,55 @@
     "name": "universal-react",
     "repo": "DominicTobias/universal-react",
     "description": "A universal react starter, with routing, meta, title, and data features"
+  },
+  {
+    "name": "animaxe",
+    "repo": "tomlarkworthy/animaxe",
+    "description": "A vector drawing library across time. A functional reactive approach to animation."
+  },
+  {
+    "name": "babel-plugin-react-cssmoduleify",
+    "repo": "walmartreact/babel-plugin-react-cssmoduleify",
+    "description": "Babel plugin to transform traditional classNames to CSS Modules"
+  },
+  {
+    "name": "babel-plugin-react-intl",
+    "repo": "yahoo/babel-plugin-react-intl",
+    "description": "Extracts string messages for translation from modules that use React Intl."
+  },
+  {
+    "name": "neal-react",
+    "repo": "dennybritz/neal-react",
+    "description": "react components for startup landing pages."
+  },
+  {
+    "name": "react-csstransitgroup",
+    "repo": "stolksdorf/react-csstransitgroup",
+    "description": "Replacement for React's css transition group addon"
+  },
+  {
+    "name": "react-listview-sticky-header",
+    "repo": "cht8687/react-listview-sticky-header",
+    "description": "react listview with sticky header"
+  },
+  {
+    "name": "react-notice",
+    "repo": "TossShinHwa/react-notice",
+    "description": "A mixin way for notifications."
+  },
+  {
+    "name": "react-paginatify",
+    "repo": "briansokol/react-paginatify",
+    "description": "Simple, configurable, truncatable pagination for React."
+  },
+  {
+    "name": "react-render-loader",
+    "repo": "jas-chen/react-render-loader",
+    "description": "A webpack loader that renders React components to HTML strings."
+  },
+  {
+    "name": "turbo-react",
+    "repo": "ssorallen/turbo-react",
+    "description": "Transitions between static HTML pages; no app server required."
   }
 ]
