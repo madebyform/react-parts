@@ -11226,5 +11226,80 @@
     "name": "turbo-react",
     "repo": "ssorallen/turbo-react",
     "description": "Transitions between static HTML pages; no app server required."
+  },
+  {
+    "name": "mingus",
+    "repo": "jmcriffey/mingus",
+    "description": "A testing library for React/Babel."
+  },
+  {
+    "name": "mkapp",
+    "repo": "epferrari/mkapp",
+    "description": "An opinionated command line build tool for React apps"
+  },
+  {
+    "name": "rc-trigger",
+    "repo": "react-component/trigger",
+    "description": "base abstract trigger component for react"
+  },
+  {
+    "name": "react-autolinker",
+    "repo": "moudy/react-autolinker",
+    "description": "React Component that wraps Autolinker.js"
+  },
+  {
+    "name": "react-component-debug",
+    "repo": "romainberger/react-component-debug",
+    "description": "Debug component"
+  },
+  {
+    "name": "react-fluxible-intraspector",
+    "repo": "BespokeInsights/react-fluxible-intraspector",
+    "description": "Intraspector for Fluxible applications"
+  },
+  {
+    "name": "react-formalize",
+    "repo": "malte-wessel/react-formalize",
+    "description": "Serialize react forms"
+  },
+  {
+    "name": "react-goban",
+    "repo": "desgeeko/react-goban",
+    "description": "A stateless React component displaying a Goban"
+  },
+  {
+    "name": "react-imageblurloader",
+    "repo": "jide/react-imageblurloader",
+    "description": "Image loader using blur."
+  },
+  {
+    "name": "react-lightning-design-system",
+    "repo": "stomita/react-lightning-design-system",
+    "description": "Salesforce Lightning Design System components built with React"
+  },
+  {
+    "name": "react-lite-json-viewer",
+    "repo": "teambition/react-lite-json-viewer",
+    "description": "Component for exploring store in JSON"
+  },
+  {
+    "name": "react-statevalidator",
+    "repo": "javierbyte/react-statevalidator",
+    "description": "A simple React state validation tool mixin."
+  },
+  {
+    "name": "react-timepicker",
+    "repo": "radekmie/react-timepicker",
+    "description": "React timepicker in Android KitKat style"
+  },
+  {
+    "name": "react-with-display-name",
+    "repo": "jaketrent/react-with-display-name",
+    "description": "Higher-order component that sets the display name"
+  },
+  {
+    "name": "react-wysiwyg",
+    "repo": "bmcmahen/react-wysiwyg",
+    "description": "enable limited interaction with a content editable element, useful for in-place, wysiwyg editing"
   }
 ]

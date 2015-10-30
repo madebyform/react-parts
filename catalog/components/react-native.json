@@ -1854,5 +1854,25 @@
     "name": "react-native-sqlite3",
     "repo": "ramsundark5/react-native-sqlite3",
     "description": "SQlite3 binding for react native based on FMDB."
+  },
+  {
+    "name": "react-native-audio-manager",
+    "repo": "Tricy/react-native-audio-manager",
+    "description": "Audio player library for react native Android"
+  },
+  {
+    "name": "react-native-bonjour",
+    "repo": "Apercu/react-native-bonjour",
+    "description": "A Bonjour discovery utility for react-native"
+  },
+  {
+    "name": "react-native-meteor",
+    "repo": "inProgress-team/react-native-meteor",
+    "description": "DDP React-native Client"
+  },
+  {
+    "name": "react-native-zeroconf",
+    "repo": "Apercu/react-native-zeroconf",
+    "description": "A Zeroconf discovery utility for react-native"
   }
 ]
