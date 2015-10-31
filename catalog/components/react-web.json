@@ -11058,8 +11058,7 @@
   {
     "name": "react-html5video",
     "repo": "mderrick/react-html5video",
-    "description": "A really simple customizeable HTML5 Video that uses the familiar HTML5 video markup with custom controls. View the [demo](http://mderrick.github.io/react-html5video/).",
-    "custom_description": "A really simple customizeable HTML5 Video that uses the familiar HTML5 video markup with custom controls."
+    "description": "A simple customizeable HTML5 Video that uses the familiar HTML5 video markup but with added custom and configurable controls."
   },
   {
     "name": "react-map-gl",
@@ -11301,5 +11300,101 @@
     "name": "react-wysiwyg",
     "repo": "bmcmahen/react-wysiwyg",
     "description": "enable limited interaction with a content editable element, useful for in-place, wysiwyg editing"
+  },
+  {
+    "name": "auto-prefixer",
+    "repo": "yonatanmn/react-inline-auto-prefixer",
+    "description": "react autoPrefixer",
+    "custom_description": "Strong utility for adding browser prefixes to your inline styles in React.js"
+  },
+  {
+    "name": "alt-localstore",
+    "repo": "felixmc/alt-localstore",
+    "description": "save and restore alt store state to localStorage, listens to changes"
+  },
+  {
+    "name": "automata-canvas",
+    "repo": "Demi-IO/automata-canvas",
+    "description": "Performant React component for displaying 2d arrays."
+  },
+  {
+    "name": "derma",
+    "repo": "derma/derma",
+    "description": "Dynamic style system for use with React"
+  },
+  {
+    "name": "generator-redux",
+    "repo": "banderson/generator-redux",
+    "description": "CLI for Redux: next-gen functional Flux/React with devtools"
+  },
+  {
+    "name": "react-height",
+    "repo": "nkbt/react-height",
+    "description": "Component-wrapper to determine and report children elements height"
+  },
+  {
+    "name": "react-pixi",
+    "repo": "Izzimach/react-pixi",
+    "description": "Construct PIXI.js scenes using React"
+  },
+  {
+    "name": "react-redux-provide-map",
+    "repo": "loggur/react-redux-provide-map",
+    "description": "Provides a handful of common actions and props specific to selecting keys within some object."
+  },
+  {
+    "name": "react-set-animate",
+    "repo": "petermoresi/react-state-animation",
+    "description": "Simple animations with React state"
+  },
+  {
+    "name": "react-stickynode",
+    "repo": "yahoo/react-stickynode",
+    "description": "A performant and comprehensive React sticky"
+  },
+  {
+    "name": "react-svg-morph",
+    "repo": "gorangajic/react-svg-morph",
+    "description": "morph your svg component one into another other"
+  },
+  {
+    "name": "react-translate",
+    "repo": "bloodyowl/react-translate",
+    "description": "react utilities for simple i18n"
+  },
+  {
+    "name": "react-user-tour",
+    "repo": "socialtables/react-user-tour",
+    "description": "give your user a guided tour around your application"
+  },
+  {
+    "name": "react-virtual-select",
+    "repo": "code-artisan/react-select",
+    "description": "Virtual select component for React."
+  },
+  {
+    "name": "reactive-lite",
+    "repo": "chemzqm/reactive-lite",
+    "description": "reactive simple works"
+  },
+  {
+    "name": "reactjs-credit-card",
+    "repo": "keppelen/react-credit-card",
+    "description": "A Simple React component Credit Card"
+  },
+  {
+    "name": "redux-theme",
+    "repo": "SamLebarbare/redux-theme",
+    "description": "Theme and Styles provider for Redux"
+  },
+  {
+    "name": "remojs",
+    "repo": "fossmo/remo",
+    "description": "An easy to use modal dialog for ReactJS"
+  },
+  {
+    "name": "selectly",
+    "repo": "souporserious/selectly",
+    "description": "Build custom, accessible, select menus for React."
   }
 ]

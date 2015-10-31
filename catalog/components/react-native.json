@@ -1874,5 +1874,25 @@
     "name": "react-native-zeroconf",
     "repo": "Apercu/react-native-zeroconf",
     "description": "A Zeroconf discovery utility for react-native"
+  },
+  {
+    "name": "react-native-gifted-listview",
+    "repo": "FaridSafi/react-native-gifted-listview",
+    "description": "A ListView that embed some recurrents features like pull-to-refresh, infinite scrolling and more for Android and iOS React-Native apps"
+  },
+  {
+    "name": "react-native-gifted-spinner",
+    "repo": "FaridSafi/react-native-gifted-spinner",
+    "description": "Simple loading spinner that use React-Native ProgressBarAndroid or ActivityIndicatorIOS depending of the platform"
+  },
+  {
+    "name": "react-native-sqlite-storage",
+    "repo": "andpor/react-native-sqlite-storage",
+    "description": "SQLite bindings for React Native"
+  },
+  {
+    "name": "react-native-triangle",
+    "repo": "Jpoliachik/react-native-triangle",
+    "description": "draw triangle views in react native"
   }
 ]
