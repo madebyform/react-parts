@@ -1,5 +1,8 @@
 /*jshint esnext:true, node:true */
+/* globals __DEV__ */
 'use strict';
+
+global.__DEV__ = (process.env.NODE_ENV != "production");
 
 // Start by registering a hook that makes calls to `require` run ES6 code
 // This will be the only file where JSX and full ES6 are not supported
@@ -13,9 +16,8 @@ let cachify = require('connect-cachify');
 let ejs = require('ejs');
 let getSearchResults = require('./src/helpers/get-search-results');
 let server = express();
-let production = (process.env.NODE_ENV == "production");
 
-if (!production) {
+if (__DEV__) {
   // Create and configure a webpack compiler
   let webpack = require('webpack');
   let webpackConfig = require('./webpack.config');
@@ -43,7 +45,7 @@ let assets = {
 // Enable browser cache and HTTP caching (cache busting, etc.)
 server.use(cachify.setup(assets, {
   root: "assets",
-  production: production
+  production: !__DEV__
 }));
 
 // Serve static files
@@ -77,16 +79,14 @@ server.get('/:type(web|native)', function(req, res) {
       query: state.query.search,
       type: state.params.type,
       page: currentPage - 1, // In Algolia, pagination starts with 0
-      perPage: perPage,
-      production: production
+      perPage: perPage
     };
 
     getSearchResults(searchOptions, function(data) {
       let initialData = {
         initialComponents: data.components,
         initialCount: data.searchCount,
-        perPage: perPage,
-        debugMode: !production
+        perPage: perPage
       };
 
       // Render the app and send the markup for faster page loads and SEO

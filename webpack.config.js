@@ -3,12 +3,13 @@
 
 let path = require('path');
 let webpack = require('webpack');
+let production = (process.env.NODE_ENV == "production");
 let Config = {};
 
 Config.common = function() {
   return {
     output: {
-      path: path.join(__dirname, "assets"),
+      path: path.resolve("./assets"),
       filename: "app.js",
       publicPath: "/"
     },
@@ -19,28 +20,31 @@ Config.common = function() {
       loaders: [{
         test: /\.jsx?$/,
         loader: "babel",
-        include: path.join(__dirname, "src")
+        include: path.resolve("./src")
       }]
-    }
+    },
+    plugins: [
+      new webpack.DefinePlugin({ __DEV__: JSON.stringify(!production) })
+    ]
   };
 };
 
 Config.production = function() {
-  let config = Object.assign({}, Config.common(), {
-    plugins: [
-      new webpack.optimize.OccurenceOrderPlugin(),
-      new webpack.DefinePlugin({
-        'process.env': {
-          'NODE_ENV': JSON.stringify('production')
-        }
-      }),
-      new webpack.optimize.UglifyJsPlugin({
-        compressor: {
-          warnings: false
-        }
-      })
-    ]
-  });
+  let config = Object.assign({}, Config.common());
+
+  config.plugins.push(
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
+    })
+  );
 
   config.output.filename = "app.min.js";
 
@@ -49,13 +53,14 @@ Config.production = function() {
 
 Config.development = function() {
   let config = Object.assign({}, Config.common(), {
-    devtool: 'eval',
-    plugins: [
-      /* Plugins required by webpack-hot-middleware */
-      new webpack.HotModuleReplacementPlugin(), // Hot module replacement
-      new webpack.NoErrorsPlugin(), // No errors is used to handle errors more cleanly
-    ]
+    devtool: 'eval'
   });
+
+  config.plugins.push(
+    /* Plugins required by webpack-hot-middleware */
+    new webpack.HotModuleReplacementPlugin(), // Hot module replacement
+    new webpack.NoErrorsPlugin() // No errors is used to handle errors more cleanly
+  );
 
   // Add new client that allows connection to the server to receive notifications
   // when the bundle rebuilds and then updates the app bundle accordingly
@@ -81,5 +86,4 @@ Config.development = function() {
   return config;
 };
 
-let production = (process.env.NODE_ENV == "production");
 module.exports = production ? Config.production() : Config.development();
