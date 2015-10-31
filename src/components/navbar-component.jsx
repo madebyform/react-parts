@@ -22,11 +22,13 @@ let Navbar = React.createClass({
   render() {
     let styles = {
       container: {
+        WebkitBoxAlign: "center",
+        WebkitAlignItems: "center",
         alignItems: "center",
         background: "#253b6b",
         boxSizing: "border-box",
         color: "#fff",
-        display: "flex",
+        display: "flex; display: -webkit-box; display: -webkit-flex",
         height: this.props.height,
         overflow: "hidden"
       },
@@ -44,6 +46,8 @@ let Navbar = React.createClass({
         flexBasis: 1,
         WebkitBoxFlexGrow: 4,
         flexGrow: 4,
+        WebkitBoxAlign: "center",
+        WebkitAlignItems: "center",
         alignItems: "center",
         background: "#4b67a5 url(/search.svg) no-repeat 16px center",
         backgroundSize: "auto 100%",
@@ -66,9 +70,9 @@ let Navbar = React.createClass({
       },
       right: {
         WebkitBoxFlex: 1,
+        flex: 1,
         background: "#4b67a5",
-        height: "100%",
-        flex: 1
+        height: "100%"
       },
       link: {
         background: "#253b6b",
@@ -88,7 +92,7 @@ let Navbar = React.createClass({
     };
 
     return (
-      <div className="Navbar u-displayFlex" style={styles.container}>
+      <div style={styles.container}>
         <div style={styles.left}>
           <a href="/">
             <img style={styles.logo} src="/react-logo.svg" alt="Logo" draggable="false" />

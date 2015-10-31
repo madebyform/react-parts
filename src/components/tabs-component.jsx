@@ -18,12 +18,12 @@ export let Tab = React.createClass({
   render() {
     let styles = {
       tab: {
-        MozUserSelect: "none",
         WebkitBoxFlex: 1,
+        flex: 1,
+        MozUserSelect: "none",
         WebkitUserSelect: "none",
         color: "#4b67a5",
         display: "block",
-        flex: 1,
         fontSize: this.remCalc(20),
         letterSpacing: this.remCalc(0),
         padding: this.remCalc(10, 10, 11),
@@ -70,12 +70,12 @@ export let Tabs = React.createClass({
     let styles = {
       container: {
         background: "#f7f8fa",
-        display: "flex",
+        display: "flex; display: -webkit-box; display: -webkit-flex",
         margin: 1
       },
     };
     return (
-      <div style={styles.container} className="u-displayFlex">
+      <div style={styles.container}>
         {this.props.children}
       </div>
     );

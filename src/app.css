@@ -15,12 +15,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Temporary hack for Safari */
-.u-displayFlex {
-  display: flex;
-  align-items: center;
-}
-
 /* Hides a link until it has been visited by the user */
 .u-visited {
   /* Assume the background is white. `transparent` or `rgba` doesn't work */
