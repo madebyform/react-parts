@@ -11378,11 +11378,6 @@
     "description": "reactive simple works"
   },
   {
-    "name": "reactjs-credit-card",
-    "repo": "keppelen/react-credit-card",
-    "description": "A Simple React component Credit Card"
-  },
-  {
     "name": "redux-theme",
     "repo": "SamLebarbare/redux-theme",
     "description": "Theme and Styles provider for Redux"
@@ -11396,5 +11391,90 @@
     "name": "selectly",
     "repo": "souporserious/selectly",
     "description": "Build custom, accessible, select menus for React."
+  },
+  {
+    "name": "cerebral-react",
+    "repo": "christianalfoni/cerebral-react",
+    "description": "React View layer package for Cerebral"
+  },
+  {
+    "name": "flyd-lift-react",
+    "repo": "jwoudenberg/flyd-lift-react",
+    "description": "Lift React components to take Flyd streams."
+  },
+  {
+    "name": "morearty",
+    "repo": "moreartyjs/moreartyjs",
+    "description": "Centralized state management for React in pure JavaScript."
+  },
+  {
+    "name": "pinax-images-panel",
+    "repo": "pinax/pinax-images-panel",
+    "description": "a React component for uploading and managing images with the pinax-images Django reusable app"
+  },
+  {
+    "name": "ramdb",
+    "repo": "internalfx/ramdb",
+    "description": "A client side in-memory database for React."
+  },
+  {
+    "name": "razz",
+    "repo": "geekytime/razz",
+    "description": "React component testing without all the fuss."
+  },
+  {
+    "name": "react-drop",
+    "repo": "souporserious/react-drop",
+    "description": "Drop content anywhere on the page."
+  },
+  {
+    "name": "react-notifier",
+    "repo": "mboperator/react-notifier",
+    "description": "It notifies the page."
+  },
+  {
+    "name": "react-observe-store",
+    "repo": "capaj/react-observe-store",
+    "description": "a function, which tries to match store paths/properties accessed in render function, observe them and call render on your component"
+  },
+  {
+    "name": "react-ordinary-calendar",
+    "repo": "torisashi/react-ordinary-calendar",
+    "description": "A ordinary calendar component built with React.js"
+  },
+  {
+    "name": "react-progressbar.js",
+    "repo": "kimmobrunfeldt/react-progressbar.js",
+    "description": "React wrapper for progressbar.js"
+  },
+  {
+    "name": "react-reform",
+    "repo": "danielberndt/react-reform",
+    "description": "A React Form Framework"
+  },
+  {
+    "name": "react-treebeard",
+    "repo": "alexcurtis/react-treebeard",
+    "description": "React Tree View Component"
+  },
+  {
+    "name": "realloc",
+    "repo": "foomorrow/realloc",
+    "description": "A Immutable State Manager for Javascript Applications"
+  },
+  {
+    "name": "retransmitter",
+    "repo": "alexeyraspopov/retransmitter",
+    "description": "Async-friendly stateful React containers"
+  },
+  {
+    "name": "universal-redux-router",
+    "repo": "colinmeinke/universal-redux-router",
+    "description": "A very simple router for Redux and React that works on both server and client"
+  },
+  {
+    "name": "virtualized",
+    "repo": "bvaughn/virtualized",
+    "description": "Virtualized list and table components for React"
   }
 ]
