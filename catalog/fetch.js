@@ -33,13 +33,6 @@ let docs = {};
 try { docs = require(docsFile); }
 catch (e) { console.log(`Creating a new data file for docs.`); }
 
-// We'll fetch metadata from NPM, GitHub and NPM-Stat
-const endpoints = {
-  npm: "https://registry.npmjs.com/",
-  github: "https://api.github.com/repos/",
-  npmStat: "http://npm-stat.com/downloads/range/"
-};
-
 /* Utility functions */
 
 let errors = [];
@@ -80,12 +73,23 @@ function sliceArray(array, index, size) {
 
 /* Functions for fetching data from remote services */
 
+const requestOptions = {
+  json: true,
+  timeout: 20000
+};
+
+// We'll fetch metadata from NPM, GitHub and NPM-Stat
+const endpoints = {
+  npm: "https://registry.npmjs.com/",
+  github: "https://api.github.com/repos/",
+  npmStat: "http://npm-stat.com/downloads/range/"
+};
+
 let Fetch = {
   npm: function* (component) {
-    let options = {
-      url: `${ endpoints.npm }${ component.name }`,
-      json: true
-    };
+    let options = Object.assign({}, requestOptions, {
+      url: `${ endpoints.npm }${ component.name }`
+    });
     let result = (yield request(options)).body;
     if (!result.description && !component.custom_description) {
       throw `Component ${ component.name } has no description`;
@@ -95,20 +99,18 @@ let Fetch = {
   npmStat: function* (component, createdAt) {
     let startTime = new Date(createdAt).toISOString().substr(0,10);
     let currentTime = new Date().toISOString().substr(0, 10);
-    let options = {
-      url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`,
-      json: true
-    };
+    let options = Object.assign({}, requestOptions, {
+      url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`
+    });
     let result = (yield request(options)).body;
     return result;
   },
   githubRepo: function* (component) {
-    let options = {
+    let options = Object.assign({}, requestOptions, {
       url: `${ endpoints.github }${ component.repo }`,
       headers: { 'User-Agent': 'request' },
-      auth: { 'user': keys.github.username, 'pass': keys.github.password },
-      json: true
-    };
+      auth: { 'user': keys.github.username, 'pass': keys.github.password }
+    });
     let result = (yield request(options)).body;
     if (result.message) {
       throw result.message;
@@ -117,12 +119,11 @@ let Fetch = {
   },
   githubLanguages: function* (component) {
     let auth = keys.githubLanguages || keys.github;
-    let options = {
+    let options = Object.assign({}, requestOptions, {
       url: `${ endpoints.github }${ component.repo }/languages`,
       headers: { 'User-Agent': 'request' },
-      auth: { 'user': auth.username, 'pass': auth.password },
-      json: true
-    };
+      auth: { 'user': auth.username, 'pass': auth.password }
+    });
     let result = (yield request(options)).body;
     if (result.message) {
       throw result.message;
@@ -131,12 +132,11 @@ let Fetch = {
   },
   githubReadme: function* (component) {
     let auth = keys.githubReadme || keys.github;
-    let options = {
+    let options = Object.assign({}, requestOptions, {
       url: `${ endpoints.github }${ component.repo }/readme`,
       headers: { 'User-Agent': 'request', 'Accept': "application/vnd.github.v3.html+json" },
-      auth: { 'user': auth.username, 'pass': auth.password },
-      json: true
-    };
+      auth: { 'user': auth.username, 'pass': auth.password }
+    });
     let result = (yield request(options)).body;
     if (typeof result !== "string") {
       if (result.message === "Not Found") {
