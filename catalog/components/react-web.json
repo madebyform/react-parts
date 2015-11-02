@@ -26,7 +26,7 @@
   },
   {
     "name": "react-tabs",
-    "repo": "mzabriskie/react-tabs",
+    "repo": "rackt/react-tabs",
     "description": "React tabs component"
   },
   {
@@ -62,6 +62,7 @@
   {
     "name": "react-select-box",
     "repo": "instructure-react/react-select-box",
+    "original_repo": "instructure/react-select-box",
     "description": "An accessible select box component for React."
   },
   {
@@ -72,6 +73,7 @@
   {
     "name": "react-router-bootstrap",
     "repo": "mtscout6/react-router-bootstrap",
+    "original_repo": "react-bootstrap/react-router-bootstrap",
     "description": "Integration between React Router and React-Bootstrap"
   },
   {
@@ -87,6 +89,7 @@
   {
     "name": "react-radio-group",
     "repo": "jergason/react-radio-group",
+    "original_repo": "chenglou/react-radio-group",
     "description": "Better radio buttons."
   },
   {
@@ -182,6 +185,7 @@
   {
     "name": "idle-maps",
     "repo": "zpratt/idle-maps",
+    "original_repo": "zpratt/react-maps",
     "description": "Google maps react components"
   },
   {
@@ -267,6 +271,7 @@
   {
     "name": "hamburger-basement",
     "repo": "arnemart/hamburger-basement",
+    "original_repo": "arnemart/hamburger-button",
     "description": "A hamburger basement component for React and Topcoat"
   },
   {
@@ -277,6 +282,7 @@
   {
     "name": "made-with-heart",
     "repo": "jugoncalves/heart",
+    "original_repo": "",
     "description": "made with <3 component for React"
   },
   {
@@ -292,7 +298,7 @@
   {
     "name": "rc-calendar",
     "repo": "react-component/calendar",
-    "description": "calendar ui component for react"
+    "description": "React Calendar"
   },
   {
     "name": "rc-cascade-select",
@@ -357,8 +363,8 @@
   {
     "name": "react-animate",
     "repo": "elierotenberg/react-animate",
-    "description": "react-animate ============= Allows to animate parts of a React components programmatically, without bypassing React internals and without altering the DOM directly.",
-    "custom_description": "Allows to animate parts of a React components programmatically, without bypassing React internals and without altering the DOM directly."
+    "description": "Allows to animate parts of a React components programmatically, without bypassing React internals and without altering the DOM directly.",
+    "original_description": "react-animate ============= Allows to animate parts of a React components programmatically, without bypassing React internals and without altering the DOM directly."
   },
   {
     "name": "react-anything-sortable",
@@ -468,13 +474,14 @@
   {
     "name": "react-easy-sortable-table",
     "repo": "brettdewoody/react-easy-sortable-table",
+    "original_repo": "brettdewoody/react-table-component",
     "description": "A component to display tabular data with simple sorting. Give it some JSON data, it'll give you a sortable table."
   },
   {
     "name": "react-editable-div",
     "repo": "svenanders/react-editable-div",
-    "description": "[React][1] Component that enables editable divs.",
-    "custom_description": "React Component that enables editable divs."
+    "description": "React Component that enables editable divs.",
+    "original_description": "[React][1] Component that enables editable divs."
   },
   {
     "name": "react-emoji",
@@ -504,6 +511,7 @@
   {
     "name": "react-fittext",
     "repo": "gianu/react-fittext",
+    "original_repo": "",
     "description": "A React plugin to fit the text in the screen"
   },
   {
@@ -519,8 +527,8 @@
   {
     "name": "react-gif",
     "repo": "cezary/react-gif",
-    "description": "React port of [x-gif](http://geelen.github.io/x-gif/)",
-    "custom_description": "Control gif playback. A react port of x-gif."
+    "description": "Control gif playback. A react port of x-gif.",
+    "original_description": "React port of [x-gif](http://geelen.github.io/x-gif/)"
   },
   {
     "name": "react-gist",
@@ -535,6 +543,7 @@
   {
     "name": "react-github-fork-ribbon",
     "repo": "jessy1092/react-github-fork-ribbon",
+    "original_repo": "",
     "description": "Pure inline style github fork ribbon on React component"
   },
   {
@@ -600,6 +609,7 @@
   {
     "name": "react-icon-rating",
     "repo": "dlau/react-icon-rating",
+    "original_repo": "",
     "description": "react component for simple web font backed ratings"
   },
   {
@@ -655,6 +665,7 @@
   {
     "name": "react-magic-move",
     "repo": "ryanflorence/react-magic-move",
+    "original_repo": "rpflorence/react-magic-move",
     "description": "MagicMove for React.js"
   },
   {
@@ -785,6 +796,7 @@
   {
     "name": "react-spreadsheet",
     "repo": "asm-products/little-sheet-react-spreadsheet",
+    "original_repo": "asm-products/sheetsh-react-spreadsheet",
     "description": "A pluggable spreadsheet component."
   },
   {
@@ -875,6 +887,7 @@
   {
     "name": "react-textgradient",
     "repo": "javierbyte/react-textgradient",
+    "original_repo": "",
     "description": "Text gradient react component. CSS with SVG fallback."
   },
   {
@@ -979,8 +992,9 @@
   },
   {
     "name": "react-youtube",
-    "repo": "compedit/react-youtube",
-    "description": "react.js powered YouTube player component"
+    "repo": "troybetz/react-youtube",
+    "description": "react.js powered YouTube player component",
+    "original_repo": "compedit/react-youtube"
   },
   {
     "name": "react-zeroclipboard",
@@ -1035,6 +1049,7 @@
   {
     "name": "react-table-simple",
     "repo": "ZachBergh/react-table-simple",
+    "original_repo": "ZachBergh/react-table",
     "description": "A simple react table"
   },
   {
@@ -1070,6 +1085,7 @@
   {
     "name": "react-stylist",
     "repo": "yuanyan/barium",
+    "original_repo": "yuanyan/react-stylist",
     "description": "Style Sheet Component for React"
   },
   {
@@ -1090,6 +1106,7 @@
   {
     "name": "react-stuck",
     "repo": "dowjones/react-stuck",
+    "original_repo": "areusjs/react-stuck",
     "description": "React component which loosely implements `position: sticky`"
   },
   {
@@ -1124,8 +1141,9 @@
   },
   {
     "name": "react-soundcloud-widget",
-    "repo": "compedit/react-soundcloud-widget",
-    "description": "react.js powered SoundCloud player component"
+    "repo": "troybetz/react-soundcloud-widget",
+    "description": "react.js powered SoundCloud player component",
+    "original_repo": "compedit/react-soundcloud-widget"
   },
   {
     "name": "react-sortable-table",
@@ -1135,6 +1153,7 @@
   {
     "name": "react-sortable-item",
     "repo": "aaronshaf/react-sortable-item",
+    "original_repo": "aaronshaf/react-sortable-list",
     "description": "Reorder elements in a list. Uses the native HTML5 Drag and Drop API."
   },
   {
@@ -1165,6 +1184,7 @@
   {
     "name": "react-selector",
     "repo": "Doist/react-selector",
+    "original_repo": "jvalente/react-selector",
     "description": "A React component that allows to filter and move item between two lists."
   },
   {
@@ -1175,8 +1195,8 @@
   {
     "name": "react-segment-display",
     "repo": "luigy/react-segment-display",
-    "description": "React Segment Display ===================== Render digits calculator style. Uses canvas for rendering.",
-    "custom_description": "Render digits calculator style. Uses canvas for rendering."
+    "description": "Render digits calculator style. Uses canvas for rendering.",
+    "original_description": "React Segment Display ===================== Render digits calculator style. Uses canvas for rendering."
   },
   {
     "name": "react-search",
@@ -1215,8 +1235,9 @@
   },
   {
     "name": "react-responsive",
-    "repo": "wearefractal/react-responsive",
-    "description": "Media queries in react for responsive design"
+    "repo": "contra/react-responsive",
+    "description": "Media queries in react for responsive design",
+    "original_repo": "wearefractal/react-responsive"
   },
   {
     "name": "react-toastr-redux",
@@ -1226,8 +1247,8 @@
   {
     "name": "react-tweenable",
     "repo": "MandarinConLaBarba/react-tweenable",
-    "description": "A simple component and mixin that wraps the excellent [react-tween-state](https://github.com/chenglou/react-tween-state).",
-    "custom_description": "A simple component and mixin that wraps the excellent react-tween-state."
+    "description": "A simple component and mixin that wraps the excellent react-tween-state.",
+    "original_description": "A simple component and mixin that wraps the excellent [react-tween-state](https://github.com/chenglou/react-tween-state)."
   },
   {
     "name": "xd-calendar",
@@ -1236,8 +1257,9 @@
   },
   {
     "name": "hymn",
-    "repo": "wearefractal/hymn",
-    "description": "React audio player component"
+    "repo": "contra/hymn",
+    "description": "React audio player component",
+    "original_repo": "wearefractal/hymn"
   },
   {
     "name": "immutable-reactfire",
@@ -1247,6 +1269,7 @@
   {
     "name": "jackphel-material-ui",
     "repo": "jackphel/material-ui",
+    "original_repo": "callemall/material-ui",
     "description": "Material Design UI components built with React"
   },
   {
@@ -1352,13 +1375,13 @@
   {
     "name": "react-bootstrap",
     "repo": "react-bootstrap/react-bootstrap",
-    "description": "Bootstrap 3 components build with React"
+    "description": "Bootstrap 3 components built with React"
   },
   {
     "name": "react-bootstrap-daterangepicker",
     "repo": "skratchdot/react-bootstrap-daterangepicker",
-    "description": "A date/time picker for react (using bootstrap). This is a react port of: https://github.com/dangrossman/bootstrap-daterangepicker",
-    "custom_description": "A date/time picker for react (using bootstrap). This is a react port of bootstrap-daterangepicker."
+    "description": "A date/time picker for react (using bootstrap). This is a react port of bootstrap-daterangepicker.",
+    "original_description": "A date/time picker for react (using bootstrap). This is a react port of: https://github.com/dangrossman/bootstrap-daterangepicker"
   },
   {
     "name": "react-bootstrap-datetimepicker",
@@ -1368,14 +1391,14 @@
   {
     "name": "react-bootstrap-modal",
     "repo": "jquense/react-bootstrap-modal",
-    "description": "React Bootstrap Modal\r ===================================",
-    "custom_description": "React port of jschr's better bootstrap modals."
+    "description": "React port of jschr's better bootstrap modals.",
+    "original_description": "React Bootstrap Modal\r ==================================="
   },
   {
     "name": "react-bootstrap-multiselect",
     "repo": "skratchdot/react-bootstrap-multiselect",
-    "description": "A multiselect component for react (with bootstrap). This is a react port of: https://github.com/davidstutz/bootstrap-multiselect",
-    "custom_description": "A multiselect component for react (with bootstrap). This is a react port of: bootstrap-multiselect."
+    "description": "A multiselect component for react (with bootstrap). This is a react port of: bootstrap-multiselect.",
+    "original_description": "A multiselect component for react (with bootstrap). This is a react port of: https://github.com/davidstutz/bootstrap-multiselect"
   },
   {
     "name": "react-bootstrap-native-slider",
@@ -1634,7 +1657,7 @@
   },
   {
     "name": "react-fontawesome",
-    "repo": "builtbybig/react-fontawesome",
+    "repo": "danawoodman/react-fontawesome",
     "description": "A React component for the font-awesome icon library."
   },
   {
@@ -1715,6 +1738,7 @@
   {
     "name": "react-image-grid",
     "repo": "KyleAMathews/react-component-gallery",
+    "original_repo": "KyleAMathews/react-image-grid",
     "description": "React component for laying out an evenly spaced grid of images"
   },
   {
@@ -1735,12 +1759,13 @@
   {
     "name": "react-infinite-list",
     "repo": "jankopriva/react-infinite-list",
-    "description": "React Infinite List =================== A component that displays large list of data efficiently. Reuses DOM elements during scrolling. It uses different rendering approach than [https://github.com/Morhaus/react-list-view] or Ember ListView. Instead of tr",
-    "custom_description": "A component that display large list of data efficiently. Reuses DOM elements during scrolling."
+    "description": "A component that display large list of data efficiently. Reuses DOM elements during scrolling.",
+    "original_description": "React Infinite List =================== A component that displays large list of data efficiently. Reuses DOM elements during scrolling. It uses different rendering approach than [https://github.com/Morhaus/react-list-view] or Ember ListView. Instead of tr"
   },
   {
     "name": "react-infinity",
     "repo": "nmn/react-infinity",
+    "original_repo": "naman34/react-infinity",
     "description": "an implementation of the UITableView from iOS for the web"
   },
   {
@@ -1866,6 +1891,7 @@
   {
     "name": "react-menu",
     "repo": "instructure-react/react-menu",
+    "original_repo": "knomedia/react-menu",
     "description": "Accessible menu component for React.JS"
   },
   {
@@ -1981,6 +2007,7 @@
   {
     "name": "react-picture-show",
     "repo": "dowjones/react-picture-show",
+    "original_repo": "areusjs/react-picture-show",
     "description": "Slideshow Component for React.js"
   },
   {
@@ -2101,131 +2128,157 @@
   {
     "name": "pui-react-alerts",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components to display flash messages to the user"
   },
   {
     "name": "pui-react-buttons",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A collection of React components providing styled buttons and links"
   },
   {
     "name": "pui-react-collapse",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components providing accordions for showing and hiding content"
   },
   {
     "name": "pui-react-dividers",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components providing horizontal rules for dividing content"
   },
   {
     "name": "pui-react-draggable-list",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for showing a list of items that can be re-ordered by the user"
   },
   {
     "name": "pui-react-dropdowns",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React dropdown component"
   },
   {
     "name": "pui-react-expander",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component that provides an accordion for showing and hiding content where the toggle and the content can be in separate places"
   },
   {
     "name": "pui-react-grids",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components for laying-out content in a grid"
   },
   {
     "name": "pui-react-iconography",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for rendering Font Awesome icons"
   },
   {
     "name": "pui-react-images",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for rendering responsive and linked images"
   },
   {
     "name": "pui-react-labels",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for showing a colored pill of text"
   },
   {
     "name": "pui-react-lists",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A collection of React components for rendering different kinds of lists"
   },
   {
     "name": "pui-react-media",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components for laying out images/audio/video next to text content"
   },
   {
     "name": "pui-react-modals",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components for opening and closing modal windows"
   },
   {
     "name": "pui-react-notifications",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for showing a dropdown of notification messages"
   },
   {
     "name": "pui-react-overlay-trigger",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for displaying a tooltip or popover on user action"
   },
   {
     "name": "pui-react-panels",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components that provide containers for related content"
   },
   {
     "name": "pui-react-panes",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components that provide large browser-filling containers for content"
   },
   {
     "name": "pui-react-radio",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component that provides styled radio buttons"
   },
   {
     "name": "pui-react-radio-group",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component for managing groups of radio buttons"
   },
   {
     "name": "pui-react-ribbons",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components that provide informational text callouts"
   },
   {
     "name": "pui-react-search-input",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component that provides a styled text input for inputting search queries"
   },
   {
     "name": "pui-react-sortable-table",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component that provides a table that can be sorted by column"
   },
   {
     "name": "pui-react-tabs",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components for tab-based content toggling"
   },
   {
     "name": "pui-react-tooltip",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A React component that provides styled tooltips"
   },
   {
     "name": "pui-react-typography",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "A collection of React components that provide standard typographical headers"
   },
   {
@@ -2376,6 +2429,7 @@
   {
     "name": "reactypeahead",
     "repo": "raymondmuller/reactypeahead",
+    "original_repo": "",
     "description": "A react typeahead component"
   },
   {
@@ -2426,6 +2480,7 @@
   {
     "name": "pui-react-back-to-top",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React Back to Top component"
   },
   {
@@ -2631,11 +2686,13 @@
   {
     "name": "component-resolver-webpack",
     "repo": "toptal/component-resolver-webpack",
+    "original_repo": "kossnocorp/component-resolver-webpack",
     "description": "Webpack plugin that simplifies process of components loading"
   },
   {
     "name": "compwnents",
     "repo": "willowtreeapps/branches",
+    "original_repo": "willowtreeapps/compwnents",
     "description": "A set of React components used by the Web Apps Team at WillowTree, Inc."
   },
   {
@@ -2655,8 +2712,9 @@
   },
   {
     "name": "dom-helpers",
-    "repo": "jquense/dom-helpers",
-    "description": "tiny modular DOM lib for ie8+ "
+    "repo": "react-bootstrap/dom-helpers",
+    "description": "tiny modular DOM lib for ie8+ ",
+    "original_repo": "jquense/dom-helpers"
   },
   {
     "name": "dust-react",
@@ -2785,17 +2843,18 @@
   },
   {
     "name": "generator-react-ui-component",
-    "repo": "React-UI/generator-react-ui-component",
+    "repo": "react-ui/generator-react-ui-component",
     "description": "Yeoman generator for create ReactJS components"
   },
   {
     "name": "generator-react-webpack",
     "repo": "newtriks/generator-react-webpack",
-    "description": "Yeoman generator for ReactJS and Webpack"
+    "description": "Yeoman generator for using React with Webpack via Babel"
   },
   {
     "name": "generator-turris-component",
     "repo": "turrisjs/generator-turris-component",
+    "original_repo": "yamalight/generator-turris-component",
     "description": "Yeoman generator for standalone React ES6 component for Turris.js"
   },
   {
@@ -3071,6 +3130,7 @@
   {
     "name": "react-bar-chart",
     "repo": "MateusZitelli/react-pie",
+    "original_repo": "MateusZitelli/react-bar-chart",
     "description": "A bar chart component made with React.js and D3.js"
   },
   {
@@ -3081,8 +3141,8 @@
   {
     "name": "react-bootstrap-daterangepicker-plus",
     "repo": "skratchdot/react-bootstrap-daterangepicker",
-    "description": "A date/time picker for react (using bootstrap). This is a react port of: https://github.com/dangrossman/bootstrap-daterangepicker",
-    "custom_description": "A date/time picker for react (using bootstrap). This is a react port of dangrossman/bootstrap-daterangepicker."
+    "description": "A date/time picker for react (using bootstrap). This is a react port of dangrossman/bootstrap-daterangepicker.",
+    "original_description": "A date/time picker for react (using bootstrap). This is a react port of: https://github.com/dangrossman/bootstrap-daterangepicker"
   },
   {
     "name": "react-breakpoints-mixin",
@@ -3117,11 +3177,13 @@
   {
     "name": "react-clickdrag-mixin",
     "repo": "tleunen/react-clickdrag",
+    "original_repo": "tleunen/react-clickdrag-mixin",
     "description": "Easily click and drag a react component"
   },
   {
     "name": "react-collapsible-mixin",
     "repo": "die-hards/react-collapsible-mixin",
+    "original_repo": "hongymagic/react-collapsible-mixin",
     "description": "React component mixin to enable Bootstrap style collapse elements"
   },
   {
@@ -3147,6 +3209,7 @@
   {
     "name": "react-component-loader",
     "repo": "react-components/react-component-loader",
+    "original_repo": "react-components/react-reload-loader",
     "description": "lazy-load and hot swap react components"
   },
   {
@@ -3252,6 +3315,7 @@
   {
     "name": "react-essence",
     "repo": "PearlVentures/Essence",
+    "original_repo": "",
     "description": "React Essence Components - basic Material Design UI framework"
   },
   {
@@ -3317,6 +3381,7 @@
   {
     "name": "react-formly",
     "repo": "formly-js/react-formly",
+    "original_repo": "kentcdodds/react-formly",
     "description": "JSON powered forms for react - Currently in alpha state, API subject to change..."
   },
   {
@@ -3522,8 +3587,8 @@
   {
     "name": "react-map",
     "repo": "matnel/react-maps",
-    "description": "A map component for [React](https://github.com/facebook/react), the declarative UI library. Allow your React sites to use Google Maps easily.",
-    "custom_description": "Allow your React sites to use Google Maps easily."
+    "description": "Allow your React sites to use Google Maps easily.",
+    "original_description": "A map component for [React](https://github.com/facebook/react), the declarative UI library. Allow your React sites to use Google Maps easily."
   },
   {
     "name": "react-masonry-mixin",
@@ -3613,6 +3678,7 @@
   {
     "name": "react-pokemon",
     "repo": "passy/react-pokemon",
+    "original_repo": "",
     "description": "A react component to display Pokemon"
   },
   {
@@ -3673,6 +3739,7 @@
   {
     "name": "react-responsive-decorator",
     "repo": "damassi/react-responsive-decorator",
+    "original_repo": "damass/react-responsive-decorator",
     "description": "Higher order component wrapper / decorator around enquire for developing responsive react components"
   },
   {
@@ -3688,6 +3755,7 @@
   {
     "name": "react-rispa",
     "repo": "Laiff/react-rispa",
+    "original_repo": "Laiff/react-isomorphic",
     "description": "Reflux Isomorphic Single Page Application - boilerplate"
   },
   {
@@ -3713,6 +3781,7 @@
   {
     "name": "react-scoped-style",
     "repo": "react-component/react-scoped-style",
+    "original_repo": "react-component/react-scoped-css",
     "description": "scope react element by transform external style into inline styles"
   },
   {
@@ -3737,8 +3806,9 @@
   },
   {
     "name": "react-selectbox",
-    "repo": "prometheusresearch/react-selectbox",
-    "description": "Selectbox (with autocompletion) component for React"
+    "repo": "prometheusresearch/react-autocomplete",
+    "description": "Selectbox (with autocompletion) component for React",
+    "original_repo": "prometheusresearch/react-selectbox"
   },
   {
     "name": "react-shadow",
@@ -3838,6 +3908,7 @@
   {
     "name": "react-swipe-to-reveal-options",
     "repo": "enki-com/react-swipe-to-reveal-options",
+    "original_repo": "mathieudutour/react-swipe-to-reveal-options",
     "description": "Simple react.js component for a swipe-to-reveal-option item."
   },
   {
@@ -3918,6 +3989,7 @@
   {
     "name": "typography",
     "repo": "KyleAMathews/typography.js",
+    "original_repo": "KyleAMathews/react-typography",
     "description": "Opinionated toolkit for building websites with beautiful typography"
   },
   {
@@ -4143,11 +4215,13 @@
   {
     "name": "y-header",
     "repo": "floatdrop/y-header",
+    "original_repo": "y-components/y-header",
     "description": "y-component header"
   },
   {
     "name": "y-tabs",
     "repo": "floatdrop/y-tabs",
+    "original_repo": "y-components/y-tabs",
     "description": "y-component tabs"
   },
   {
@@ -4227,7 +4301,7 @@
   },
   {
     "name": "react-inline-edit",
-    "repo": "vasanthk/React-InlineEdit",
+    "repo": "vasanthk/react-inline-edit",
     "description": "A React component that allows inline/in-place edits."
   },
   {
@@ -4238,8 +4312,8 @@
   {
     "name": "react-validator-prop-types",
     "repo": "pwmckenna/react-validator-prop-types",
-    "description": "[React PropType](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) wrappers around [validator.js functions](https://github.com/chriso/validator.js#validators).",
-    "custom_description": "React PropType wrappers around validator.js functions."
+    "description": "React PropType wrappers around validator.js functions.",
+    "original_description": "[React PropType](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) wrappers around [validator.js functions](https://github.com/chriso/validator.js#validators)."
   },
   {
     "name": "react-pathevaluator",
@@ -4379,6 +4453,7 @@
   {
     "name": "stilr",
     "repo": "kodyl/stilr",
+    "original_repo": "chriskjaer/stilr",
     "description": "Encapsulated styling for your javascript components with all the power of javascript and CSS combined. Usefull with React"
   },
   {
@@ -4394,12 +4469,14 @@
   {
     "name": "react-mobiscroll",
     "repo": "xicombd/react-mobiscroll",
+    "original_repo": "sinfo/react-mobiscroll",
     "description": "A simple wrapper of Mobiscroll for ReactJS."
   },
   {
     "name": "react-subrouter",
-    "repo": "UgnisSoftware/react-subrouter",
-    "description": "A react-router inspired subrouting library"
+    "repo": "TransferGo/react-subrouter",
+    "description": "A react-router inspired subrouting library",
+    "original_repo": "UgnisSoftware/react-subrouter"
   },
   {
     "name": "uxcore-layout",
@@ -4519,6 +4596,7 @@
   {
     "name": "component-css-loader",
     "repo": "toptal/component-css-loader",
+    "original_repo": "kossnocorp/component-css-loader",
     "description": "Component stylesheets loader"
   },
   {
@@ -4614,6 +4692,7 @@
   {
     "name": "kimagure-etch-sketch",
     "repo": "justinwoo/etch-sketch",
+    "original_repo": "kimagure/etch-sketch",
     "description": "Etch-A-Sketch React Component"
   },
   {
@@ -4634,8 +4713,8 @@
   {
     "name": "olay-react",
     "repo": "orgsync/olay-react",
-    "description": "[Olay] implemented as a [React] component.",
-    "custom_description": "Olay implemented as a React component."
+    "description": "Olay implemented as a React component.",
+    "original_description": "[Olay] implemented as a [React] component."
   },
   {
     "name": "pivotal-ui-react",
@@ -4745,6 +4824,7 @@
   {
     "name": "react-dropzone-component",
     "repo": "felixrieseberg/React-Dropzone-Component",
+    "original_repo": "felixrieseberg/React-Dropzone",
     "description": "A Dropzone Component for ReactJS"
   },
   {
@@ -4775,6 +4855,7 @@
   {
     "name": "react-if-else",
     "repo": "justinwoo/react-if-else",
+    "original_repo": "kimagure/react-if-else",
     "description": "If/Else rendering components for React"
   },
   {
@@ -4815,8 +4896,8 @@
   {
     "name": "react-list",
     "repo": "orgsync/react-list",
-    "description": "A versatile infinite scroll [React] component.",
-    "custom_description": "A versatile infinite scroll React component."
+    "description": "A versatile infinite scroll React component.",
+    "original_description": "A versatile infinite scroll [React] component."
   },
   {
     "name": "react-mapboxmap",
@@ -4836,11 +4917,13 @@
   {
     "name": "react-outsideclickhandler",
     "repo": "ericsuh/react-outsideclickhandler",
+    "original_repo": "www.ericsuh/react-outsideclickhandler",
     "description": "React component for handling clicks outside of a child element tree"
   },
   {
     "name": "react-paginator",
     "repo": "colleenjoyce/react-paginator",
+    "original_repo": "landau/react-paginator",
     "description": "A Paginator Component for Reactjs"
   },
   {
@@ -4861,8 +4944,8 @@
   {
     "name": "react-pstate",
     "repo": "mgechev/react-pstate",
-    "description": "`ReactPersistentState` is a mixin, which allows saving the current state of ReactJS component. It provides predefined persistent storage, which uses `localStorage`. The storage has asynchronous interface in order to provide functionality for saving the st",
-    "custom_description": "Mixin which allows saving the current state of a react component. It provides a predefined persistent storage, which uses localStorage. The storage has an asynchronous interface for saving the state using XHR, WebSockets, etc."
+    "description": "Mixin which allows saving the current state of a react component. It provides a predefined persistent storage, which uses localStorage. The storage has an asynchronous interface for saving the state using XHR, WebSockets, etc.",
+    "original_description": "`ReactPersistentState` is a mixin, which allows saving the current state of ReactJS component. It provides predefined persistent storage, which uses `localStorage`. The storage has asynchronous interface in order to provide functionality for saving the st"
   },
   {
     "name": "react-querystring-router",
@@ -4952,6 +5035,7 @@
   {
     "name": "react-timeago",
     "repo": "nmn/react-timeago",
+    "original_repo": "naman34/react-timeago",
     "description": "A simple Time-Ago component for ReactJs"
   },
   {
@@ -4967,6 +5051,7 @@
   {
     "name": "react-tokeninput",
     "repo": "instructure-react/react-tokeninput",
+    "original_repo": "instructure/react-tokeninput",
     "description": "Tokeninput component for React"
   },
   {
@@ -5047,6 +5132,7 @@
   {
     "name": "pui-react-portals",
     "repo": "pivotal-cf/pivotal-ui-react",
+    "original_repo": "pivotal-cf/pivotal-ui",
     "description": "React components that provide portals"
   },
   {
@@ -5072,8 +5158,8 @@
   {
     "name": "kwik-e-mart",
     "repo": "jquense/kwik-e-mart",
-    "description": "kwik-e-mart\r =============",
-    "custom_description": "Another flux implementation. Based on the excellent Alt."
+    "description": "Another flux implementation. Based on the excellent Alt.",
+    "original_description": "kwik-e-mart\r ============="
   },
   {
     "name": "react-sticky-notes",
@@ -5138,8 +5224,8 @@
   {
     "name": "protoncms-core",
     "repo": "jhsware/protoncms-core",
-    "description": "ProtonCMS –– a node CMS framework built with React.js and the ZTK-inspired component-registry",
-    "custom_description": "A node CMS framework built with React.js and the ZTK-inspired component-registry."
+    "description": "A node CMS framework built with React.js and the ZTK-inspired component-registry.",
+    "original_description": "ProtonCMS –– a node CMS framework built with React.js and the ZTK-inspired component-registry"
   },
   {
     "name": "react-bootstrap-components",
@@ -5279,6 +5365,7 @@
   {
     "name": "bapmrl-react-autocomplete",
     "repo": "bapmrl/bapmrl-react-autocomplete",
+    "original_repo": "bapmrl/react-autocomplete",
     "description": "React Autocomplete Component"
   },
   {
@@ -5313,8 +5400,9 @@
   },
   {
     "name": "react-subcomponent",
-    "repo": "UgnisSoftware/react-subcomponent",
-    "description": "A stateless react component"
+    "repo": "TransferGo/react-subcomponent",
+    "description": "A stateless react component",
+    "original_repo": "UgnisSoftware/react-subcomponent"
   },
   {
     "name": "responsive-fixed-data-table",
@@ -5448,7 +5536,7 @@
   },
   {
     "name": "dlr-list-filter",
-    "repo": "mattstyles/dlr-list-filter",
+    "repo": "dotlabel/dlr-list-filter",
     "description": "Filterable and sortable high level list react component"
   },
   {
@@ -5569,8 +5657,8 @@
   {
     "name": "hire-forms-select",
     "repo": "Hire-Forms/hire-forms-select",
-    "description": "[![Build Status](https://travis-ci.org/Hire-Forms/hire-forms-select.svg?branch=master)](https://travis-ci.org/Hire-Forms/hire-forms-select)",
-    "custom_description": "React Component representing a select element."
+    "description": "React Component representing a select element.",
+    "original_description": "[![Build Status](https://travis-ci.org/Hire-Forms/hire-forms-select.svg?branch=master)](https://travis-ci.org/Hire-Forms/hire-forms-select)"
   },
   {
     "name": "hire-forms-textarea",
@@ -5640,8 +5728,8 @@
   {
     "name": "c3-react",
     "repo": "terry81811/c3-react",
-    "description": "c3-react is a reusable react component for [c3](https://github.com/masayuki0812/c3) charts",
-    "custom_description": "c3-react is a reusable react component for c3 charts"
+    "description": "c3-react is a reusable react component for c3 charts",
+    "original_description": "c3-react is a reusable react component for [c3](https://github.com/masayuki0812/c3) charts"
   },
   {
     "name": "flux-common-store",
@@ -5676,8 +5764,8 @@
   {
     "name": "hire-forms-select-list",
     "repo": "Hire-Forms/hire-forms-select-list",
-    "description": "[![Build Status](https://travis-ci.org/Hire-Forms/hire-forms-select-list.svg?branch=master)](https://travis-ci.org/Hire-Forms/hire-forms-select-list)",
-    "custom_description": "React Component representing a select list element."
+    "description": "React Component representing a select list element.",
+    "original_description": "[![Build Status](https://travis-ci.org/Hire-Forms/hire-forms-select-list.svg?branch=master)](https://travis-ci.org/Hire-Forms/hire-forms-select-list)"
   },
   {
     "name": "react-flags",
@@ -5687,7 +5775,7 @@
   {
     "name": "react-helmet",
     "repo": "nfl/react-helmet",
-    "description": "Specify the page title, meta & link tags per component in a nested fashion"
+    "description": "A document head manager for React"
   },
   {
     "name": "react-layer-manager",
@@ -5787,6 +5875,7 @@
   {
     "name": "x-view",
     "repo": "x-view/x-view",
+    "original_repo": "lixiaoyan/x-view",
     "description": "A JavaScript library like React, but uses Web Components."
   },
   {
@@ -5826,8 +5915,9 @@
   },
   {
     "name": "react-visualizer",
-    "repo": "cheminfo/visualizer-react",
-    "description": "The visualizer in a react component"
+    "repo": "cheminfo/react-visualizer",
+    "description": "The visualizer in a react component",
+    "original_repo": "cheminfo/visualizer-react"
   },
   {
     "name": "velocity-transition-group",
@@ -5882,6 +5972,7 @@
   {
     "name": "generator-react-fullstack",
     "repo": "kriasoft/react-starter-kit",
+    "original_repo": "kriasoft/react-starter-kit/tree/yeoman-generator",
     "description": "Yeoman generator for React.js projects based on React Starter Kit (ES6+, Babel, React.js, Express, Webpack, BrowserSync)"
   },
   {
@@ -5911,8 +6002,9 @@
   },
   {
     "name": "nodeproto",
-    "repo": "Inkdpixels/NodeProto",
-    "description": "A prototypical class that makes it easy to create Components with nodes, a powerfull instance configuration system and a react-like API."
+    "repo": "reduct/component",
+    "description": "A prototypical class that makes it easy to create Components with nodes, a powerfull instance configuration system and a react-like API.",
+    "original_repo": "Inkdpixels/NodeProto"
   },
   {
     "name": "pyxley",
@@ -5922,6 +6014,7 @@
   {
     "name": "rc-datepicker",
     "repo": "buildo/rc-datepicker",
+    "original_repo": "buildo/react-semantic-datepicker",
     "description": "DatePicker and DatePickerInput to be used with React"
   },
   {
@@ -5932,6 +6025,7 @@
   {
     "name": "react-alloy",
     "repo": "skeswa/react-alloy",
+    "original_repo": "skeswa/alloy",
     "description": "A component library for React.js that takes cues from Material Design."
   },
   {
@@ -6027,6 +6121,7 @@
   {
     "name": "react-lite-audio",
     "repo": "teambition/react-lite-dropdown",
+    "original_repo": "teambition/react-lite-audio",
     "description": "Audio Player of jianliao.com"
   },
   {
@@ -6037,6 +6132,7 @@
   {
     "name": "react-memorystats",
     "repo": "vigneshshanmugam/react-memorystats",
+    "original_repo": "vigneshshanmugam/react-memory-stats",
     "description": "React Component for Memory Stats"
   },
   {
@@ -6071,8 +6167,9 @@
   },
   {
     "name": "react-renderif",
-    "repo": "ericlynnpeterson/react-renderif",
-    "description": "Conditional rendering of React components"
+    "repo": "elpete/react-renderif",
+    "description": "Conditional rendering of React components",
+    "original_repo": "ericlynnpeterson/react-renderif"
   },
   {
     "name": "react-chosen",
@@ -6097,8 +6194,8 @@
   {
     "name": "react-material-icons",
     "repo": "mikamaunula/react-material-icons",
-    "description": "Material design icons as [material-ui](https://github.com/callemall/material-ui) SvgIcon component. Icon components build with iconbuilder tool from material-ui.",
-    "custom_description": "Material design icons as material-ui SvgIcon component. Icon components build with iconbuilder tool from material-ui."
+    "description": "Material design icons as material-ui SvgIcon component. Icon components build with iconbuilder tool from material-ui.",
+    "original_description": "Material design icons as [material-ui](https://github.com/callemall/material-ui) SvgIcon component. Icon components build with iconbuilder tool from material-ui."
   },
   {
     "name": "react-rotation",
@@ -6117,7 +6214,7 @@
   },
   {
     "name": "react-colors-picker",
-    "repo": "noyobo/react-colors-picker",
+    "repo": "react-component/react-colors-picker",
     "description": "color-picker ui component for react"
   },
   {
@@ -6178,8 +6275,8 @@
   {
     "name": "buildo-react-components",
     "repo": "buildo/react-components",
-    "description": "This is a collection of reusable React components used at [buildo](http://buildo.io/).",
-    "custom_description": "This is a collection of reusable React components used at buildo.io."
+    "description": "This is a collection of reusable React components used at buildo.io.",
+    "original_description": "This is a collection of reusable React components used at [buildo](http://buildo.io/)."
   },
   {
     "name": "react-rx-component",
@@ -6194,7 +6291,7 @@
   {
     "name": "mobservable",
     "repo": "mweststrate/mobservable",
-    "description": "Keeps views automatically in sync with state. Unobtrusively."
+    "description": "Observable data. Reactive functions. Simple code."
   },
   {
     "name": "react-components-9dots",
@@ -6209,6 +6306,7 @@
   {
     "name": "react-multi-select-dropdown",
     "repo": "belongco/react-multi-select-dropdown",
+    "original_repo": "bhargav175/react-multi-select-dropdown",
     "description": "A React Dropdown which shows a list of items which can be multi selcted."
   },
   {
@@ -6219,8 +6317,8 @@
   {
     "name": "react-splitter",
     "repo": "mauricedb/react-splitter",
-    "description": "This component is a wrapper around the [jquery.splitter](https://github.com/jcubic/jquery.splitter) component by [Jakub Jankiewicz](http://jcubic.pl).",
-    "custom_description": "This component is a wrapper around the jquery.splitter component by Jakub Jankiewicz."
+    "description": "This component is a wrapper around the jquery.splitter component by Jakub Jankiewicz.",
+    "original_description": "This component is a wrapper around the [jquery.splitter](https://github.com/jcubic/jquery.splitter) component by [Jakub Jankiewicz](http://jcubic.pl)."
   },
   {
     "name": "react-themeable",
@@ -6244,7 +6342,7 @@
   },
   {
     "name": "react-crop",
-    "repo": "shichongrui/react-crop",
+    "repo": "instructure-react/react-crop",
     "description": "An image cropper that moves the cropper rather than the image"
   },
   {
@@ -6340,8 +6438,8 @@
   {
     "name": "react-dimensions",
     "repo": "digidem/react-dimensions",
-    "description": "React [higher-order component](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775) to get dimensions of container",
-    "custom_description": "React higher-order component to get dimensions of container"
+    "description": "React higher-order component to get dimensions of container",
+    "original_description": "React [higher-order component](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775) to get dimensions of container"
   },
   {
     "name": "react-progress-deck",
@@ -6401,21 +6499,24 @@
   {
     "name": "basscss-logo",
     "repo": "basscss/logo",
+    "original_repo": "",
     "description": "React component and SVG logo for Basscss"
   },
   {
     "name": "express-cjsx",
     "repo": "CarbinCreative/express-cjsx",
+    "original_repo": "",
     "description": "CoffeeScript React component view engine for Express"
   },
   {
     "name": "react-toolbox",
-    "repo": "soyjavi/react-toolbox",
+    "repo": "react-toolbox/react-toolbox",
     "description": "A set of complementary tools to ReactJS."
   },
   {
     "name": "fluxis",
     "repo": "stvkoch/fluxis",
+    "original_repo": "",
     "description": "Tiny implementation of flux architecture"
   },
   {
@@ -6426,16 +6527,19 @@
   {
     "name": "react-soundplayer",
     "repo": "soundblogs/react-soundplayer",
+    "original_repo": "",
     "description": "Create custom SoundCloud players with React"
   },
   {
     "name": "radon-select",
     "repo": "FormidableLabs/radon-select",
+    "original_repo": "",
     "description": "React select box replacement component"
   },
   {
     "name": "react-autodoc",
     "repo": "Skookum/react-autodoc",
+    "original_repo": "",
     "description": "A React component and webpack loader to autogenerate documentation for your React components"
   },
   {
@@ -6451,11 +6555,13 @@
   {
     "name": "react-combobox",
     "repo": "jmreidy/react-combobox",
+    "original_repo": "",
     "description": "A ARIA compliant React combobox component"
   },
   {
     "name": "react-data-calendar",
     "repo": "zdoc01/react-data-calendar",
+    "original_repo": "",
     "description": "React data calendar component."
   },
   {
@@ -6466,31 +6572,37 @@
   {
     "name": "react-google-calendar-events-list",
     "repo": "VinSpee/react-gcal-events-list",
+    "original_repo": "",
     "description": "Reusable ReactJS component for rendering a list of events from a google calendar."
   },
   {
     "name": "react-fitter-happier-text",
     "repo": "jxnblk/react-fitter-happier-text",
+    "original_repo": "",
     "description": "React component for fully fluid headings"
   },
   {
     "name": "react-inline-svg",
     "repo": "loopj/react-inline-svg",
+    "original_repo": "",
     "description": "React Component to load and inline SVG images, allowing you to target and style them using CSS"
   },
   {
     "name": "text-transition",
     "repo": "nmn/text-transition",
+    "original_repo": "",
     "description": "A simple utility to Animate between different strings"
   },
   {
     "name": "roguelikeboard",
     "repo": "prettymuchbryce/roguelikeboard",
+    "original_repo": "",
     "description": "A simple react.js component for rendering ASCII inspired roguelike boards on the web"
   },
   {
     "name": "soundplayer-widget",
     "repo": "soundblogs/soundplayer-widget",
+    "original_repo": "",
     "description": "Lightweight embedded SoundCloud player widgets"
   },
   {
@@ -6501,21 +6613,25 @@
   {
     "name": "react-autosize",
     "repo": "akiran/react-autosize",
+    "original_repo": "",
     "description": "React component to adjust textarea height automatically to fit text"
   },
   {
     "name": "react-hydra",
     "repo": "mr-damagii/react-hydra",
+    "original_repo": "",
     "description": "A service for server-side rendering of react components"
   },
   {
     "name": "react-konva",
     "repo": "olimsaidov/react-konva",
+    "original_repo": "",
     "description": "Using Konva library with React"
   },
   {
     "name": "react-kube",
     "repo": "raymondmuller/react-kube",
+    "original_repo": "",
     "description": "Kube CSS in React Components"
   },
   {
@@ -6526,93 +6642,111 @@
   {
     "name": "react-number-easing",
     "repo": "javierbyte/react-number-easing",
+    "original_repo": "",
     "description": "React component for fancy transition for numbers."
   },
   {
     "name": "react-odometer",
     "repo": "adamrneary/react-odometer",
+    "original_repo": "",
     "description": "React component to insert Hubspot's Odometer"
   },
   {
     "name": "react-popup-menu",
     "repo": "wizawu/react-popup-menu",
-    "description": "react-popup-menu ===",
-    "custom_description": "A react popup menu"
+    "original_repo": "",
+    "description": "A react popup menu",
+    "original_description": "react-popup-menu ==="
   },
   {
     "name": "react-radial-menu",
     "repo": "Antho2407/react-radial-menu",
+    "original_repo": "",
     "description": "ReactJS circular menu"
   },
   {
     "name": "react-scrollbars",
     "repo": "ojame/react-scrollbars",
+    "original_repo": "",
     "description": "Stateful scrollbar component for React"
   },
   {
     "name": "react-select-multiple",
     "repo": "AdeleD/react-select-multiple",
+    "original_repo": "",
     "description": "**A ReactJS component to render a multiselect (with a filter).**"
   },
   {
     "name": "react-semantify",
     "repo": "jessy1092/react-semantify",
+    "original_repo": "",
     "description": "Integrate Semantic-ui with react components."
   },
   {
     "name": "react-shrinking-header",
     "repo": "lapanoid/react-shrinking-header",
-    "description": "I am a big fan of gulp and sadly I did not found any gulp webpack seed project, so I made one.\r This seed based on [React Infinite Scroll component](https://github.com/lapanoid/react-infinite-scroll)",
-    "custom_description": "I am a big fan of gulp and sadly I did not found any gulp webpack seed project, so I made one. This seed based on React Infinite Scroll component lapanoid/react-infinite-scroll"
+    "original_repo": "",
+    "description": "I am a big fan of gulp and sadly I did not found any gulp webpack seed project, so I made one. This seed based on React Infinite Scroll component lapanoid/react-infinite-scroll",
+    "original_description": "I am a big fan of gulp and sadly I did not found any gulp webpack seed project, so I made one.\r This seed based on [React Infinite Scroll component](https://github.com/lapanoid/react-infinite-scroll)"
   },
   {
     "name": "react-snackbar",
     "repo": "raymondmuller/react-snackbar",
+    "original_repo": "",
     "description": "A react snackbar component"
   },
   {
     "name": "react-sound",
     "repo": "leoasis/react-sound",
+    "original_repo": "",
     "description": "React Sound component using soundmanager2"
   },
   {
     "name": "react-star-rating",
     "repo": "cameronjroe/react-star-rating",
+    "original_repo": "",
     "description": "A simple star rating component built with React."
   },
   {
     "name": "react-stepper",
     "repo": "wuct/react-stepper",
+    "original_repo": "",
     "description": "It is like an UIStepper in iOS."
   },
   {
     "name": "react-styleable",
     "repo": "pluralsight/react-styleable",
+    "original_repo": "",
     "description": "Higher-order component for styling react"
   },
   {
     "name": "react-thrift",
     "repo": "ymichael/react-thrift",
+    "original_repo": "",
     "description": "A simple Thrift service for prerendering React Components on the server-side using nodejs."
   },
   {
     "name": "react-tinymce",
-    "repo": "mzabriskie/react-tinymce",
+    "repo": "instructure-react/react-tinymce",
+    "original_repo": "mzabriskie/react-tinymce",
     "description": "React TinyMCE component"
   },
   {
     "name": "react-vtt",
     "repo": "ChineseCubes/react-vtt",
+    "original_repo": "",
     "description": "A React component for displaying WebVTT tracks."
   },
   {
     "name": "react-zh-stroker",
     "repo": "g0v/react-zh-stroker",
+    "original_repo": "",
     "description": "A stroke drawing React component for zh-stroke-data"
   },
   {
     "name": "rebass-example",
     "repo": "jxnblk/rebass-example",
+    "original_repo": "",
     "description": "Rebass React component for showing JSX examples"
   },
   {
@@ -6632,7 +6766,7 @@
   },
   {
     "name": "zingchart-react",
-    "repo": "zingchart/zingchart-react",
+    "repo": "zingchart/ZingChart-React",
     "description": "React components to generate interactive javascript charts using the ZingChart library"
   },
   {
@@ -6672,8 +6806,9 @@
   },
   {
     "name": "react-simple-calendar",
-    "repo": "souporserious/react-simple-calendar",
-    "description": "Simple calendar for React."
+    "repo": "souporserious/react-dately",
+    "description": "Simple calendar for React.",
+    "original_repo": "souporserious/react-simple-calendar"
   },
   {
     "name": "cycle-react",
@@ -6712,7 +6847,8 @@
   },
   {
     "name": "react-redux",
-    "repo": "gaearon/react-redux",
+    "repo": "rackt/react-redux",
+    "original_repo": "gaearon/react-redux",
     "description": "Official React bindings for Redux"
   },
   {
@@ -6737,7 +6873,7 @@
   },
   {
     "name": "redux",
-    "repo": "gaearon/redux",
+    "repo": "rackt/redux",
     "description": "Predictable state container for JavaScript apps"
   },
   {
@@ -6753,6 +6889,7 @@
   {
     "name": "thundercats-react",
     "repo": "ThunderCatsJS/thundercats-react",
+    "original_repo": "berkeleytrue/thundercats-react",
     "description": "Thundercats addon for use with React"
   },
   {
@@ -6798,8 +6935,9 @@
   {
     "name": "iflux",
     "repo": "QianmiOpen/iflux",
-    "description": "iflux是我们探索将immutable.js和react.js更好的粘合的一种方案",
-    "custom_description": "iflux = immutable.js + react.js"
+    "original_repo": "hufeng/iflux",
+    "description": "iflux = immutable.js + react.js",
+    "original_description": "iflux是我们探索将immutable.js和react.js更好的粘合的一种方案"
   },
   {
     "name": "material-design-react",
@@ -6884,6 +7022,7 @@
   {
     "name": "react-responsive-display",
     "repo": "wbeard/react-responsive-display",
+    "original_repo": "",
     "description": "Conditionally render react components based on common viewport breakpoints."
   },
   {
@@ -6908,7 +7047,8 @@
   },
   {
     "name": "react-material",
-    "repo": "SanderSpies/react-material",
+    "repo": "BerkeleyTrue/react-material",
+    "original_repo": "SanderSpies/react-material",
     "description": "React Material Design Components === Material design components written with React.js and React Style."
   },
   {
@@ -6943,7 +7083,7 @@
   },
   {
     "name": "reflux",
-    "repo": "spoike/refluxjs",
+    "repo": "reflux/refluxjs",
     "description": "A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux"
   },
   {
@@ -7019,11 +7159,13 @@
   {
     "name": "redux-react-connector",
     "repo": "pluralsight/redux-react-connector",
+    "original_repo": "",
     "description": "Higher-order React component for listening to redux stores"
   },
   {
     "name": "react-flex-kit",
-    "repo": "rofrischmann/react-flex-kit",
+    "repo": "rofrischmann/react-layout-components",
+    "original_repo": "rofrischmann/react-flex-kit/",
     "description": "Layout Components for React based on Flexbox"
   },
   {
@@ -7088,8 +7230,9 @@
   },
   {
     "name": "react-passthrough",
-    "repo": "jamesknelson/react-passthrough",
-    "description": "Higher order component to pass through unknown props to a child component."
+    "repo": "unicorn-standard/react-passthrough",
+    "description": "Higher order component to pass through unknown props to a child component.",
+    "original_repo": "jamesknelson/react-passthrough"
   },
   {
     "name": "react-rating",
@@ -7129,6 +7272,7 @@
   {
     "name": "generator-javascript",
     "repo": "kriasoft/babel-starter-kit",
+    "original_repo": "kriasoft/babel-starter-kit/tree/yeoman-generator",
     "description": "A project template for authoring and publishing JavaScript libraries"
   },
   {
@@ -7139,6 +7283,7 @@
   {
     "name": "generator-fluxible",
     "repo": "yahoo/generator-fluxible",
+    "original_repo": "yahoo/fluxible",
     "description": "Yeoman generator for Fluxible"
   },
   {
@@ -7163,8 +7308,9 @@
   },
   {
     "name": "reselect",
-    "repo": "faassen/reselect",
-    "description": "Selectors for Redux."
+    "repo": "rackt/reselect",
+    "description": "Selectors for Redux.",
+    "original_repo": "faassen/reselect"
   },
   {
     "name": "synapse-react-autocomplete",
@@ -7209,6 +7355,7 @@
   {
     "name": "react-pikaday-component",
     "repo": "voronianski/react-pikaday-component",
+    "original_repo": "",
     "description": "React wrapper around Pikaday.js"
   },
   {
@@ -7264,8 +7411,8 @@
   {
     "name": "react-nexus",
     "repo": "elierotenberg/react-nexus",
-    "description": "React Nexus 4.x\r ===============",
-    "custom_description": "Isomorphic React apps done right well. Server-side rendering, data prefetching, SEO for free."
+    "description": "Isomorphic React apps done right well. Server-side rendering, data prefetching, SEO for free.",
+    "original_description": "React Nexus 4.x\r ==============="
   },
   {
     "name": "react-stampit",
@@ -7285,8 +7432,8 @@
   {
     "name": "material-ui-with-sass",
     "repo": "sarink/material-ui-with-sass",
-    "description": "material-ui-with-sass is a combination fork of [material-ui](https://github.com/callemall/material-ui)@v0.7.5 and [material-ui-sass](https://github.com/gpbl/material-ui-sass) that still uses traditional css (well, sass) to apply styles.",
-    "custom_description": "material-ui-with-sass is a combination fork of material-ui and material-ui-sass that still uses traditional css (well, sass) to apply styles."
+    "description": "material-ui-with-sass is a combination fork of material-ui and material-ui-sass that still uses traditional css (well, sass) to apply styles.",
+    "original_description": "material-ui-with-sass is a combination fork of [material-ui](https://github.com/callemall/material-ui)@v0.7.5 and [material-ui-sass](https://github.com/gpbl/material-ui-sass) that still uses traditional css (well, sass) to apply styles."
   },
   {
     "name": "react-geojson-cluster",
@@ -7325,7 +7472,7 @@
   },
   {
     "name": "generator-formidable-react-component",
-    "repo": "formidablelabs/generator-formidable-react-component",
+    "repo": "FormidableLabs/generator-formidable-react-component",
     "description": "React component Yeoman generator"
   },
   {
@@ -7406,8 +7553,8 @@
   {
     "name": "react-mixin",
     "repo": "brigand/react-mixin",
-    "description": "![travis](https://travis-ci.org/brigand/react-mixin.svg)",
-    "custom_description": "mixins in react with es6 style classes"
+    "description": "mixins in react with es6 style classes",
+    "original_description": "![travis](https://travis-ci.org/brigand/react-mixin.svg)"
   },
   {
     "name": "tag-input",
@@ -7501,8 +7648,9 @@
   },
   {
     "name": "babel-plugin-react-autoprefix",
-    "repo": "uxtemple/babel-plugin-react-prefix-styles",
-    "description": "Adds vendor prefixes to inline styles in React elements"
+    "repo": "UXtemple/babel-plugin-react-autoprefix",
+    "description": "Adds vendor prefixes to inline styles in React elements",
+    "original_repo": "uxtemple/babel-plugin-react-prefix-styles"
   },
   {
     "name": "center-aligning-jumbotron",
@@ -7576,8 +7724,9 @@
   },
   {
     "name": "router5-react",
-    "repo": "router5/router5-react",
-    "description": "router5 helpers for React"
+    "repo": "router5/react-router5",
+    "description": "router5 helpers for React",
+    "original_repo": "router5/router5-react"
   },
   {
     "name": "react-as-event-mixin",
@@ -7687,6 +7836,7 @@
   {
     "name": "browserify-react-live",
     "repo": "Kureev/browserify-react-live",
+    "original_repo": "",
     "description": "React live module reload for browserify"
   },
   {
@@ -7707,6 +7857,7 @@
   {
     "name": "react-geosuggest-sw",
     "repo": "ubilabs/react-geosuggest",
+    "original_repo": "spendwell-health/react-geosuggest",
     "description": "A React autosuggest for the Google Maps Places API."
   },
   {
@@ -7721,13 +7872,15 @@
   },
   {
     "name": "react-seinfeld",
-    "repo": "sotojuan/react-seinfeld",
-    "description": "Custom Seinfeld logo component"
+    "repo": "sotojuan/seinfeld",
+    "description": "Custom Seinfeld logo component",
+    "original_repo": "sotojuan/react-seinfeld"
   },
   {
     "name": "uxcore-button",
-    "repo": "uxcore/button",
-    "description": "uxcore-button ui component for react"
+    "repo": "uxcore/uxcore-button",
+    "description": "uxcore-button ui component for react",
+    "original_repo": "uxcore/button"
   },
   {
     "name": "uxcore-dialog",
@@ -7742,6 +7895,7 @@
   {
     "name": "generator-react-static",
     "repo": "koistya/react-static-boilerplate",
+    "original_repo": "koistya/react-static-boilerplate/tree/yeoman-generator",
     "description": "Generate a static website from React.js components"
   },
   {
@@ -7772,6 +7926,7 @@
   {
     "name": "totoui",
     "repo": "callemall/material-ui",
+    "original_repo": "jiachitor/TOTO-UI",
     "description": "TOTO UI components built with React.js"
   },
   {
@@ -7906,8 +8061,9 @@
   },
   {
     "name": "redux-loader",
-    "repo": "sporto/redux-loader",
-    "description": "Loader component for Redux"
+    "repo": "Versent/redux-loader",
+    "description": "Loader component for Redux",
+    "original_repo": "sporto/redux-loader"
   },
   {
     "name": "talk-message-forms",
@@ -8006,8 +8162,9 @@
   },
   {
     "name": "react-loadscript",
-    "repo": "threepointone/react-script",
-    "description": "script tag as a react component"
+    "repo": "threepointone/react-loadscript",
+    "description": "script tag as a react component",
+    "original_repo": "threepointone/react-script"
   },
   {
     "name": "react-pacman-progress",
@@ -8021,7 +8178,7 @@
   },
   {
     "name": "simple-react-modal",
-    "repo": "zackify/simple-react-modal",
+    "repo": "legitcode/modal",
     "description": "The simplest modal"
   },
   {
@@ -8032,6 +8189,7 @@
   {
     "name": "react-layout-components",
     "repo": "rofrischmann/react-layout-components",
+    "original_repo": "rofrischmann/react-layout-components/",
     "description": "Layout Components for React based on Flexbox"
   },
   {
@@ -8061,8 +8219,9 @@
   },
   {
     "name": "react-context-provider",
-    "repo": "gnoff/react-context-provider",
-    "description": "React component and decorator for context injection"
+    "repo": "gnoff/react-tunnel",
+    "description": "React component and decorator for context injection",
+    "original_repo": "gnoff/react-context-provider"
   },
   {
     "name": "react-finance",
@@ -8122,11 +8281,12 @@
   {
     "name": "suggestible-input",
     "repo": "robmclarty/suggestible-input",
-    "description": "A React component for providing as-you-type suggestions while filling out an input field."
+    "description": "A React component that quacks like an HTML <input> but which includes a selectable list of suggestions for filling in its value."
   },
   {
     "name": "react-mousedown-awayable",
     "repo": "RonaldoLee/react-mousedown-awayable",
+    "original_repo": "",
     "description": "Mousedown away mixin for react component."
   },
   {
@@ -8217,12 +8377,14 @@
   {
     "name": "react-input-completion",
     "repo": "imcnally/react-input-completion",
+    "original_repo": "www.imcnally/react-input-completion",
     "description": "A cross-browser autocomplete component for React"
   },
   {
     "name": "react-intl-es6",
-    "repo": "AlexJozwicki/react-intl",
-    "description": "React ES6 Components for internationalization."
+    "repo": "AlexJozwicki/react-intl-es6",
+    "description": "React ES6 Components for internationalization.",
+    "original_repo": "AlexJozwicki/react-intl"
   },
   {
     "name": "react-line",
@@ -8272,12 +8434,12 @@
   {
     "name": "react-player",
     "repo": "CookPete/react-player",
-    "description": "A react component for playing media from YouTube, SoundCloud or Vimeo"
+    "description": "A react component for playing a variety of URLs, including file paths, YouTube, SoundCloud and Vimeo"
   },
   {
     "name": "react-propmatch",
     "repo": "brigand/react-propmatch",
-    "description": "propmatch is a useful utility for all high order components. It's useful because strings are brittle identifiers in composition."
+    "description": "propmatch is a useful utility for all high order components. It's useful because strings are brittle identifiers in composition, and it allows you to see where props are coming from in the wrapped component."
   },
   {
     "name": "react-proxy",
@@ -8321,8 +8483,9 @@
   },
   {
     "name": "react-table-for-bootstrap",
-    "repo": "petermoresi/react-bootstrap-table",
-    "description": "React.js component for bootstrap styled table"
+    "repo": "petermoresi/react-table-for-bootstrap",
+    "description": "React.js component for bootstrap styled table",
+    "original_repo": "petermoresi/react-bootstrap-table"
   },
   {
     "name": "react-validation-decorator",
@@ -8397,6 +8560,7 @@
   {
     "name": "react-router-loader",
     "repo": "uooo/react-router-loader",
+    "original_repo": "luqin/react-router-loader",
     "description": "Dynamically load react-router components on-demand"
   },
   {
@@ -8476,8 +8640,9 @@
   },
   {
     "name": "mx-react-components",
-    "repo": "moneydesktop/mx-react-components",
-    "description": "A collection of generic React UI components"
+    "repo": "mxenabled/mx-react-components",
+    "description": "A collection of generic React UI components",
+    "original_repo": "moneydesktop/mx-react-components"
   },
   {
     "name": "react-ellipsify",
@@ -8491,8 +8656,9 @@
   },
   {
     "name": "react-ghost-i18n",
-    "repo": "pzavolinsky/react-i18n",
-    "description": "Augment existing react components with non-intrusive internationalization."
+    "repo": "pzavolinsky/react-ghost-i18n",
+    "description": "Augment existing react components with non-intrusive internationalization.",
+    "original_repo": "pzavolinsky/react-i18n"
   },
   {
     "name": "react-knob",
@@ -8512,8 +8678,8 @@
   {
     "name": "react-strict-prop-types",
     "repo": "gajus/react-strict-prop-types",
-    "description": "[![Travis build status](http://img.shields.io/travis/gajus/react-strict-prop-types/master.svg?style=flat)](https://travis-ci.org/gajus/react-strict-prop-types) [![NPM version](http://img.shields.io/npm/v/react-strict-prop-types.svg?style=flat)](https://ww",
-    "custom_description": "A higher order component that raises an error if component is used with an unknown property."
+    "description": "A higher order component that raises an error if component is used with an unknown property.",
+    "original_description": "[![Travis build status](http://img.shields.io/travis/gajus/react-strict-prop-types/master.svg?style=flat)](https://travis-ci.org/gajus/react-strict-prop-types) [![NPM version](http://img.shields.io/npm/v/react-strict-prop-types.svg?style=flat)](https://ww"
   },
   {
     "name": "react-toaster",
@@ -8568,8 +8734,8 @@
   {
     "name": "matter-react",
     "repo": "stevenmiller888/matter-react",
-    "description": "[Matter](https://stevenmiller888/matter) components rebuilt in React.",
-    "custom_description": "Matter components rebuilt in React."
+    "description": "Matter components rebuilt in React.",
+    "original_description": "[Matter](https://stevenmiller888/matter) components rebuilt in React."
   },
   {
     "name": "react-accordion-menu",
@@ -8588,8 +8754,9 @@
   },
   {
     "name": "react-controllable",
-    "repo": "jamesknelson/react-controllable",
-    "description": "Higher order component to manage control-related events and state."
+    "repo": "unicorn-standard/react-controllable",
+    "description": "Higher order component to manage control-related events and state.",
+    "original_repo": "jamesknelson/react-controllable"
   },
   {
     "name": "react-debounce-input",
@@ -8668,8 +8835,9 @@
   },
   {
     "name": "react-patch",
-    "repo": "gaearon/react-patch",
-    "description": "Patches React components without unmounting or losing their state."
+    "repo": "gaearon/react-proxy",
+    "description": "Patches React components without unmounting or losing their state.",
+    "original_repo": "gaearon/react-patch"
   },
   {
     "name": "react-qrsvg",
@@ -8748,7 +8916,7 @@
   },
   {
     "name": "electrode-bolt",
-    "repo": "walmartreact/bolt",
+    "repo": "walmartreact/electrode-bolt",
     "description": "Opinionated meta config runner for react components"
   },
   {
@@ -8789,6 +8957,7 @@
   {
     "name": "spectacle",
     "repo": "FormidableLabs/spectacle",
+    "original_repo": "",
     "description": "ReactJS Powered Presentation Framework"
   },
   {
@@ -8853,8 +9022,9 @@
   },
   {
     "name": "uxcore-dropdown",
-    "repo": "uxcore/dropdown",
-    "description": "dropdown component "
+    "repo": "uxcore/uxcore-dropdown",
+    "description": "dropdown component ",
+    "original_repo": "uxcore/dropdown"
   },
   {
     "name": "uxcore-form",
@@ -8864,12 +9034,13 @@
   {
     "name": "uxcore-grid",
     "repo": "uxcore/uxcore-grid",
-    "description": "grid ui component for react"
+    "description": "uxcore-grid component for uxcore."
   },
   {
     "name": "uxcore-mention",
-    "repo": "uxcore/mention",
-    "description": "mention ui component for react"
+    "repo": "uxcore/uxcore-mention",
+    "description": "mention ui component for react",
+    "original_repo": "uxcore/mention"
   },
   {
     "name": "uxcore-pagination",
@@ -8878,8 +9049,9 @@
   },
   {
     "name": "uxcore-tabs",
-    "repo": "uxcore/tabs",
-    "description": "easy tab component based on react"
+    "repo": "uxcore/uxcore-tabs",
+    "description": "easy tab component based on react",
+    "original_repo": "uxcore/tabs"
   },
   {
     "name": "uxcore-tooltip",
@@ -8899,7 +9071,7 @@
   {
     "name": "mobservable-react",
     "repo": "mweststrate/mobservable-react",
-    "description": "React bindings for mobservable. Create fully reactive view components."
+    "description": "React bindings for mobservable. Create fully reactive components."
   },
   {
     "name": "react-body-classname",
@@ -8944,7 +9116,7 @@
   {
     "name": "react-selectize",
     "repo": "furqanZafar/react-selectize",
-    "description": "react implementation of selectize"
+    "description": "A Stateless & Flexible Select component for React inspired by Selectize"
   },
   {
     "name": "react-shallow-output",
@@ -9108,7 +9280,7 @@
   },
   {
     "name": "paper-input",
-    "repo": "standard-analytics/paper-input",
+    "repo": "scienceai/paper-input",
     "description": "Paper Input React component"
   },
   {
@@ -9188,8 +9360,9 @@
   },
   {
     "name": "react-imgix",
-    "repo": "frederickfogerty/react-imgix",
-    "description": "React Component for displaying an image from Imgix"
+    "repo": "imgix/react-imgix",
+    "description": "React Component for displaying an image from Imgix",
+    "original_repo": "frederickfogerty/react-imgix"
   },
   {
     "name": "paper-textarea",
@@ -9213,8 +9386,8 @@
   },
   {
     "name": "react-to-commonjs",
-    "repo": "goncalvesjoao/react-to-commonJS",
-    "description": "A tool to help you build your react component and distribute it as a commonJS module."
+    "repo": "goncalvesjoao/react-to-commonjs",
+    "description": "A tool to help you build your React Component and distribute it as a commonJS module."
   },
   {
     "name": "react-window-kit",
@@ -9244,8 +9417,8 @@
   {
     "name": "bapmrl-react-multiselect",
     "repo": "bapmrl/bapmrl-react-multiselect",
-    "description": "React Multiselect Component",
-    "custom_description": "Provides a filterable react multiselect component."
+    "description": "Provides a filterable react multiselect component.",
+    "original_description": "React Multiselect Component"
   },
   {
     "name": "formsy-react-inputs",
@@ -9319,13 +9492,15 @@
   },
   {
     "name": "velocity-react",
-    "repo": "crashlytics/velocity-react",
-    "description": "React components to wrap Velocity animations"
+    "repo": "twitter-fabric/velocity-react",
+    "description": "React components to wrap Velocity animations",
+    "original_repo": "crashlytics/velocity-react"
   },
   {
     "name": "pushtell-react",
-    "repo": "pushtell/react",
-    "description": "A/B Testing React Components"
+    "repo": "pushtell/react-ab-test",
+    "description": "A/B Testing React Components",
+    "original_repo": "pushtell/react"
   },
   {
     "name": "react-component-sol-footer",
@@ -9414,13 +9589,15 @@
   },
   {
     "name": "nordnet-i18n",
-    "repo": "nordnet/nordnet-18n",
-    "description": "Nordnet React and Intl locale configuration"
+    "repo": "nordnet/nordnet-i18n",
+    "description": "Nordnet React and Intl locale configuration",
+    "original_repo": "nordnet/nordnet-18n"
   },
   {
     "name": "prop-type",
-    "repo": "c9/prop-type",
-    "description": "Small wrapper to wrap your custom type check so that you can use `myCustomType.isRequired` in a similar fasion to React's built-in types."
+    "repo": "cloud9ide/prop-type",
+    "description": "Small wrapper to wrap your custom type check so that you can use `myCustomType.isRequired` in a similar fasion to React's built-in types.",
+    "original_repo": "c9/prop-type"
   },
   {
     "name": "react-cond",
@@ -9500,8 +9677,8 @@
   {
     "name": "expanded-react-test-utils",
     "repo": "dataminr/expanded-react-test-utils",
-    "description": "Additional functions beyond the [existing ReactJS test utilities](http://facebook.github.io/react/docs/test-utils.html) to make testing quicker and easier. Adds the following functionality:",
-    "custom_description": "Additional functions beyond the existing ReactJS test utilities to make testing quicker and easier"
+    "description": "Additional functions beyond the existing ReactJS test utilities to make testing quicker and easier",
+    "original_description": "Additional functions beyond the [existing ReactJS test utilities](http://facebook.github.io/react/docs/test-utils.html) to make testing quicker and easier. Adds the following functionality:"
   },
   {
     "name": "flourish",
@@ -9520,8 +9697,9 @@
   },
   {
     "name": "gatsby",
-    "repo": "gatsby-group/gatsby",
-    "description": "React.js Static Site Generator"
+    "repo": "gatsbyjs/gatsby",
+    "description": "React.js Static Site Generator",
+    "original_repo": "gatsby-group/gatsby"
   },
   {
     "name": "livereactload",
@@ -9580,8 +9758,9 @@
   },
   {
     "name": "react-testutil-query",
-    "repo": "jquense/react-testutil-query",
-    "description": "small wrapper around react test utils so I don't have to write long method names"
+    "repo": "jquense/teaspoon",
+    "description": "small wrapper around react test utils so I don't have to write long method names",
+    "original_repo": "jquense/react-testutil-query"
   },
   {
     "name": "react-tinymce-mention",
@@ -9626,8 +9805,8 @@
   {
     "name": "reindex-js",
     "repo": "reindexio/reindex-js",
-    "description": "Client library for Reindex",
-    "custom_description": "Client library for Reindex — Instant GraphQL Backend for Your React Apps"
+    "description": "Client library for Reindex — Instant GraphQL Backend for Your React Apps",
+    "original_description": "Client library for Reindex"
   },
   {
     "name": "skin-deep",
@@ -9657,6 +9836,7 @@
   {
     "name": "drag-reorderable",
     "repo": "zooniverse-ui/drag-reorderable",
+    "original_repo": "",
     "description": "This is a React component for simple reordering of items in an array."
   },
   {
@@ -9687,12 +9867,14 @@
   {
     "name": "react-d3-basic",
     "repo": "react-d3/react-d3-basic",
+    "original_repo": "",
     "description": "react chart component"
   },
   {
     "name": "react-d3-core",
     "repo": "react-d3/react-d3-core",
-    "description": "react chart core component"
+    "original_repo": "",
+    "description": "react-d3 chart core component"
   },
   {
     "name": "react-inline-confirm",
@@ -9707,17 +9889,19 @@
   {
     "name": "react-scroll-selectable",
     "repo": "kako0507/react-scroll-selectable",
-    "description": "A compoent for react that allows mouse selection of child items with auto-scrolling.",
-    "custom_description": "A component for react that allows mouse selection of child items with auto-scrolling."
+    "description": "A component for react that allows mouse selection of child items with auto-scrolling.",
+    "original_description": "A compoent for react that allows mouse selection of child items with auto-scrolling."
   },
   {
     "name": "react-test-unit",
     "repo": "jarsbe/react-test-unit",
+    "original_repo": "",
     "description": "Recursive shallow rendering and helpers for efficiently testing React components"
   },
   {
     "name": "react-time-select",
     "repo": "shackpank/react-time-select",
+    "original_repo": "holidayextras/react-time-select",
     "description": "Component to generate a dropdown list populated with a configurable time range"
   },
   {
@@ -9743,7 +9927,7 @@
   {
     "name": "bloql",
     "repo": "adriantoine/bloql",
-    "description": "Blog engine powered by blog engine powered by React using Relay and GraphQL to interact with data"
+    "description": "Blog engine powered by React using Relay and GraphQL to interact with data"
   },
   {
     "name": "learnyoureact",
@@ -9813,7 +9997,7 @@
   {
     "name": "react-month-calendar",
     "repo": "dbachko/react-month-calendar",
-    "description": "Simple month calendar widget for React"
+    "description": "Month calendar widget for React"
   },
   {
     "name": "react-number-control",
@@ -9922,8 +10106,9 @@
   },
   {
     "name": "apeman-scaffold-react",
-    "repo": "apeman-scaffold-labo/apeman-scaffold-react",
-    "description": "Scaffold for React projects."
+    "repo": "apeman-scff-labo/apeman-scff-react",
+    "description": "Scaffold for React projects.",
+    "original_repo": "apeman-scaffold-labo/apeman-scaffold-react"
   },
   {
     "name": "class-name",
@@ -9948,6 +10133,7 @@
   {
     "name": "relay-sink",
     "repo": "acdlite/relay-sink",
+    "original_repo": "",
     "description": "Use Relay to fetch and store data outside of a React component."
   },
   {
@@ -9958,7 +10144,7 @@
   {
     "name": "redux-actions",
     "repo": "acdlite/redux-actions",
-    "description": "Flux Standard Action utlities for Redux."
+    "description": "Flux Standard Action utlities for Redux"
   },
   {
     "name": "redux-transducers",
@@ -9973,16 +10159,19 @@
   {
     "name": "redux-rx",
     "repo": "acdlite/redux-rx",
+    "original_repo": "",
     "description": "RxJS utilities for Redux"
   },
   {
     "name": "flux-standard-action",
     "repo": "acdlite/flux-standard-action",
+    "original_repo": "",
     "description": "A human-friendly standard for Flux action objects"
   },
   {
     "name": "redux-router",
     "repo": "rackt/redux-router",
+    "original_repo": "rackt/redux-react-router",
     "description": "Redux bindings for React Router — keep your router state inside your Redux Store."
   },
   {
@@ -10033,7 +10222,7 @@
   {
     "name": "react-ab-test",
     "repo": "pushtell/react-ab-test",
-    "description": "A/B Testing React Components"
+    "description": "A/B testing React components and debug tools. Isomorphic with a simple, universal interface. Well documented and lightweight. Tested in popular browsers and Node.js. Includes helpers for Mixpanel and Segment.com."
   },
   {
     "name": "react-click-outside",
@@ -10063,7 +10252,7 @@
   {
     "name": "apeman-react-text",
     "repo": "apeman-react-labo/apeman-react-text",
-    "description": "apeman react package text component."
+    "description": "apeman react package for text component."
   },
   {
     "name": "chamel",
@@ -10078,6 +10267,7 @@
   {
     "name": "react-coverflow",
     "repo": "andyyou/react-coverflow",
+    "original_repo": "",
     "description": "Carousel of coverflow effect"
   },
   {
@@ -10093,16 +10283,16 @@
   {
     "name": "recompose",
     "repo": "acdlite/recompose",
-    "description": "A microcomponentization toolkit for React"
+    "description": "A React utility belt for function components and higher-order components"
   },
   {
     "name": "tabletable",
     "repo": "ZeroarcSoftware/tabletable",
-    "description": "A simple, but extremely flexible table component written in ReactJS."
+    "description": "A simple and extremely flexible table component written in React."
   },
   {
     "name": "webpack-react-graph",
-    "repo": "joshuaborn/webpack-react-graph",
+    "repo": "customink/webpack-react-graph",
     "description": "A webpack plugin to create a graph visualization of a React component tree"
   },
   {
@@ -10258,6 +10448,7 @@
   {
     "name": "react-charts-plus",
     "repo": "mukeshsoni/react-charts-plus",
+    "original_repo": "mukeshsoni/react-charts-plus/",
     "description": "D3 charts for React"
   },
   {
@@ -10308,14 +10499,14 @@
   {
     "name": "react-cheat-sheet",
     "repo": "chantastic/react-cheat-sheet",
-    "description": "React Cheat Sheet",
-    "custom_description": "A searchable API reference for React.js"
+    "description": "A searchable API reference for React.js",
+    "original_description": "React Cheat Sheet"
   },
   {
     "name": "react-clslide",
     "repo": "CezarLuiz0/react-clslide",
-    "description": "CLSlide",
-    "custom_description": "A simple, responsive and easy slideshow made with React"
+    "description": "A simple, responsive and easy slideshow made with React",
+    "original_description": "CLSlide"
   },
   {
     "name": "react-dynamic-dropzone",
@@ -10360,6 +10551,7 @@
   {
     "name": "react-seamstress",
     "repo": "namuol/react-seamstress",
+    "original_repo": "",
     "description": "Experimental interface for exposing style-related state inside complex React components"
   },
   {
@@ -10375,17 +10567,19 @@
   {
     "name": "react-component-tools",
     "repo": "luqin/react-component-tools",
+    "original_repo": "",
     "description": "Gulp Build Tasks for React Component Projects"
   },
   {
     "name": "react-desktop",
     "repo": "gabrielbull/react-desktop",
-    "description": "OS X and Windows UI components built with React"
+    "description": "React UI Components for OS X El Capitan and Windows 10"
   },
   {
     "name": "uxcore-select2",
-    "repo": "uxcore/select",
-    "description": "select ui component for react"
+    "repo": "uxcore/uxcore-select2",
+    "description": "select ui component for react",
+    "original_repo": "uxcore/select"
   },
   {
     "name": "react-native-listener",
@@ -10480,8 +10674,8 @@
   {
     "name": "react-animachine-enhancer",
     "repo": "animachine/react-animachine-enhancer",
-    "description": "###*Work in progress*",
-    "custom_description": "Makes React components animatable with animachine."
+    "description": "Makes React components animatable with animachine.",
+    "original_description": "###*Work in progress*"
   },
   {
     "name": "uxcore-const",
@@ -10490,8 +10684,9 @@
   },
   {
     "name": "uxcore-transfer",
-    "repo": "uxcore/transfer",
-    "description": "transfer ui component for react"
+    "repo": "uxcore/uxcore-transfer",
+    "description": "transfer ui component for react",
+    "original_repo": "uxcore/transfer"
   },
   {
     "name": "arch-dom",
@@ -10535,8 +10730,9 @@
   },
   {
     "name": "mirror-creator",
-    "repo": "alexfedoseev/mirror-creator",
-    "description": "Another way to create an object with values equal to its key names"
+    "repo": "shakacode/mirror-creator",
+    "description": "Another way to create an object with values equal to its key names",
+    "original_repo": "alexfedoseev/mirror-creator"
   },
   {
     "name": "react-fullpage",
@@ -10551,8 +10747,8 @@
   {
     "name": "react-tabtab",
     "repo": "ctxhou/react-tabtab",
-    "description": "react, tabs",
-    "custom_description": "Another react tab component."
+    "description": "Another react tab component.",
+    "original_description": "react, tabs"
   },
   {
     "name": "redux-devtools-dock-monitor",
@@ -10577,7 +10773,7 @@
   {
     "name": "structor",
     "repo": "ipselon/structor",
-    "description": "A user interface constructor for React"
+    "description": "A user interface builder for React"
   },
   {
     "name": "tag-search",
@@ -10607,6 +10803,7 @@
   {
     "name": "redux-immutable-state-invariant",
     "repo": "leoasis/redux-immutable-state-invariant",
+    "original_repo": "",
     "description": "Redux middleware that detects mutations between and outside redux dispatches. For development use only."
   },
   {
@@ -10622,13 +10819,15 @@
   {
     "name": "browser-redux",
     "repo": "zalmoxisus/browser-redux",
+    "original_repo": "zalmoxisus/browser-extension-boilerplate",
     "description": "Building Chrome apps and cross-browser extensions with Redux and Webpack."
   },
   {
     "name": "chai-react-suite",
-    "repo": "kossnocorp/chai-react-suite",
-    "description": "TODO",
-    "custom_description": "For testing React components"
+    "repo": "toptal/chai-react-suite",
+    "description": "For testing React components",
+    "original_description": "TODO",
+    "original_repo": "kossnocorp/chai-react-suite"
   },
   {
     "name": "classnames",
@@ -10638,6 +10837,7 @@
   {
     "name": "flint",
     "repo": "flintjs/flint",
+    "original_repo": "flint-lang/flint",
     "description": "An amazing way to build apps with React"
   },
   {
@@ -10653,7 +10853,7 @@
   {
     "name": "keo",
     "repo": "Wildhoney/Keo",
-    "description": "Plain functions for a more functional approach to creating React components, using function goodies such as compose, memoize, etc..."
+    "description": "Plain functions for a more functional Deku approach to creating React components, with functional goodies such as compose, memoize, etc... for free."
   },
   {
     "name": "react-blessed",
@@ -10758,6 +10958,7 @@
   {
     "name": "global-react",
     "repo": "wizawu/global-react",
+    "original_repo": "",
     "description": "Let multiple browserified React components co-exists"
   },
   {
@@ -10783,6 +10984,7 @@
   {
     "name": "react-lazy-locales",
     "repo": "jarsbe/react-lazy-locales",
+    "original_repo": "",
     "description": "Lazy developer locales"
   },
   {
@@ -10827,8 +11029,9 @@
   },
   {
     "name": "react-redux-provide-selectable",
-    "repo": "loggur/react-redux-provide-selectable",
-    "description": "Provides a handful of common actions and props specific to selecting keys within some object."
+    "repo": "loggur/react-redux-provide-map",
+    "description": "Provides a handful of common actions and props specific to selecting keys within some object.",
+    "original_repo": "loggur/react-redux-provide-selectable"
   },
   {
     "name": "react-whitebox",
@@ -10857,8 +11060,9 @@
   },
   {
     "name": "common-calendar",
-    "repo": "jonira/react-datepicker",
-    "description": "A calendar component for React. Forked from react-datepicker."
+    "repo": "jonira/common-calendar",
+    "description": "A calendar component for React. Forked from react-datepicker.",
+    "original_repo": "jonira/react-datepicker"
   },
   {
     "name": "commonmark-react-renderer",
@@ -10902,13 +11106,14 @@
   },
   {
     "name": "react-pacomo",
-    "repo": "jamesknelson/react-pacomo",
-    "description": "Provide structure to your component's CSS."
+    "repo": "unicorn-standard/react-pacomo",
+    "description": "Provide structure to your component's CSS.",
+    "original_repo": "jamesknelson/react-pacomo"
   },
   {
     "name": "react-slide-deck",
     "repo": "jl-/react-slide-deck",
-    "description": "react slide deck, carousel"
+    "description": "react slide deck, carousel, page scroll, swipe"
   },
   {
     "name": "react-swiper",
@@ -11028,6 +11233,7 @@
   {
     "name": "akkad",
     "repo": "brochington/Akkad",
+    "original_repo": "",
     "description": "A React webgl target"
   },
   {
@@ -11058,7 +11264,8 @@
   {
     "name": "react-html5video",
     "repo": "mderrick/react-html5video",
-    "description": "A simple customizeable HTML5 Video that uses the familiar HTML5 video markup but with added custom and configurable controls."
+    "original_repo": "",
+    "description": "A customizeable HTML5 Video that uses the familiar HTML5 video markup but with custom and configurable controls."
   },
   {
     "name": "react-map-gl",
@@ -11068,8 +11275,9 @@
   {
     "name": "react-router-assembly",
     "repo": "tniezg/react-router-assembly",
-    "description": "React Router Assembly (RRA) configures [React](https://facebook.github.io/react/) and [React Router](http://https://github.com/rackt/react-router) on top of [Express](http://expressjs.com/) for easy server- and client-side rendering. It assumes mostly sep",
-    "custom_description": "React Router Assembly (RRA) configures React and React Router on top of Express for easy server and client-side rendering."
+    "original_repo": "",
+    "description": "React Router Assembly (RRA) configures React and React Router on top of Express for easy server and client-side rendering.",
+    "original_description": "React Router Assembly (RRA) configures [React](https://facebook.github.io/react/) and [React Router](http://https://github.com/rackt/react-router) on top of [Express](http://expressjs.com/) for easy server- and client-side rendering. It assumes mostly sep"
   },
   {
     "name": "react-router5",
@@ -11079,6 +11287,7 @@
   {
     "name": "react-text-highlighter",
     "repo": "swennemans/react-text-highlighter",
+    "original_repo": "",
     "description": "Simple higher order component for React for text highlighting. Works nicely with React 0.14+ and stateless components"
   },
   {
@@ -11148,7 +11357,7 @@
   },
   {
     "name": "react-photonkit",
-    "repo": "react-photon/react-photonkit",
+    "repo": "react-photonkit/react-photonkit",
     "description": "Photon components built with React"
   },
   {
@@ -11274,6 +11483,7 @@
   {
     "name": "react-lightning-design-system",
     "repo": "stomita/react-lightning-design-system",
+    "original_repo": "",
     "description": "Salesforce Lightning Design System components built with React"
   },
   {
@@ -11294,6 +11504,7 @@
   {
     "name": "react-with-display-name",
     "repo": "jaketrent/react-with-display-name",
+    "original_repo": "",
     "description": "Higher-order component that sets the display name"
   },
   {
@@ -11304,8 +11515,8 @@
   {
     "name": "auto-prefixer",
     "repo": "yonatanmn/react-inline-auto-prefixer",
-    "description": "react autoPrefixer",
-    "custom_description": "Strong utility for adding browser prefixes to your inline styles in React.js"
+    "description": "Strong utility for adding browser prefixes to your inline styles in React.js",
+    "original_description": "react autoPrefixer"
   },
   {
     "name": "alt-localstore",
@@ -11319,8 +11530,9 @@
   },
   {
     "name": "derma",
-    "repo": "derma/derma",
-    "description": "Dynamic style system for use with React"
+    "repo": "react-derma/derma",
+    "description": "Dynamic style system for use with React",
+    "original_repo": "derma/derma"
   },
   {
     "name": "generator-redux",
@@ -11344,8 +11556,9 @@
   },
   {
     "name": "react-set-animate",
-    "repo": "petermoresi/react-state-animation",
-    "description": "Simple animations with React state"
+    "repo": "petermoresi/react-set-animate",
+    "description": "Simple animations with React state",
+    "original_repo": "petermoresi/react-state-animation"
   },
   {
     "name": "react-stickynode",
@@ -11360,6 +11573,7 @@
   {
     "name": "react-translate",
     "repo": "bloodyowl/react-translate",
+    "original_repo": "",
     "description": "react utilities for simple i18n"
   },
   {
@@ -11415,6 +11629,7 @@
   {
     "name": "ramdb",
     "repo": "internalfx/ramdb",
+    "original_repo": "",
     "description": "A client side in-memory database for React."
   },
   {
@@ -11430,6 +11645,7 @@
   {
     "name": "react-notifier",
     "repo": "mboperator/react-notifier",
+    "original_repo": "",
     "description": "It notifies the page."
   },
   {
@@ -11450,6 +11666,7 @@
   {
     "name": "react-reform",
     "repo": "danielberndt/react-reform",
+    "original_repo": "",
     "description": "A React Form Framework"
   },
   {
@@ -11460,6 +11677,7 @@
   {
     "name": "realloc",
     "repo": "foomorrow/realloc",
+    "original_repo": "",
     "description": "A Immutable State Manager for Javascript Applications"
   },
   {
@@ -11471,10 +11689,5 @@
     "name": "universal-redux-router",
     "repo": "colinmeinke/universal-redux-router",
     "description": "A very simple router for Redux and React that works on both server and client"
-  },
-  {
-    "name": "virtualized",
-    "repo": "bvaughn/virtualized",
-    "description": "Virtualized list and table components for React"
   }
 ]
