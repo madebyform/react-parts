@@ -239,6 +239,11 @@ components.forEach(function(component) {
           latestVersion: npm["dist-tags"].latest
         };
 
+        // Check if this package is still associated with the same github repo
+        if (component.repo.toLowerCase() != github.full_name.toLowerCase()) {
+          console.log(`\n${ component.name } has a new repo: ${ github.full_name }`.yellow);
+        }
+
         // To save some bytes, if package name and repo name are equal, keep only one
         if (data.name === data.githubName) delete data.githubName;
 
