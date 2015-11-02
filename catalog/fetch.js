@@ -7,14 +7,16 @@ let request = require("co-request");
 let keys = require('./keys.json');
 let cheerio = require("cheerio");
 let marky = require("marky-markdown");
+let throat = require('throat')(50); // 50 is the max number of parallel requests
 require('colors');
 
 // Pass the components list you which to update ("react-web" or "react-native")
 // and optionally an index to make a partial update to the data file.
 // Example usage: `npm run fetch react-web 2`
+let batchSize = 50; // 50 is the size of the batch that will be updated
 let componentsType = process.argv[2] || "react-native";
 let componentsFile = `./components/${ componentsType }.json`;
-let components = sliceArray(require(componentsFile), process.argv[3], 50);
+let components = sliceArray(require(componentsFile), process.argv[3], batchSize);
 
 // Load the data file with all the existing metadata
 let componentsDataFile = `./data/${ componentsType }.json`;
@@ -233,8 +235,8 @@ let Process = {
 let promises = [];
 
 components.forEach(function(component) {
-  promises.push(
-    new Promise(function(resolve) {
+  promises.push(throat(function() {
+    return new Promise(function(resolve) {
       co(function* () {
         let npm    = yield Fetch.npm(component);
         let stat   = yield Fetch.npmStat(component, npm.time.created);
@@ -278,12 +280,12 @@ components.forEach(function(component) {
         process.stdout.write(".".green);
 
       }).catch(function(e) {
-        resolve(component);
+        resolve(null);
         process.stdout.write("✕".red);
         error(component.name, `Problems with data for component - ${ e }`);
       });
-    })
-  );
+    });
+  }));
 });
 
 Promise.all(promises).then(function(newData) {
@@ -292,7 +294,7 @@ Promise.all(promises).then(function(newData) {
   // Merge old fetched data with the new one, since we may have
   // done a partial fetch this time
   oldComponentsData.concat(newData).forEach(function(c) {
-    allData[c.name] = c;
+    if (c) allData[c.name] = c;
   });
 
   // Convert back to an array and make sure we ignore rejects
