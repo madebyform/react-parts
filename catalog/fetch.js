@@ -13,10 +13,10 @@ require('colors');
 // Pass the components list you which to update ("react-web" or "react-native")
 // and optionally an index to make a partial update to the data file.
 // Example usage: `npm run fetch react-web 2`
-let batchSize = 50; // 50 is the size of the batch that will be updated
 let componentsType = process.argv[2] || "react-native";
 let componentsFile = `./components/${ componentsType }.json`;
-let components = sliceArray(require(componentsFile), process.argv[3], batchSize);
+let components = require(componentsFile);
+let batchSize = 50; // 50 is the size of the batch that will be updated
 
 // Load the data file with all the existing metadata
 let componentsDataFile = `./data/${ componentsType }.json`;
@@ -43,9 +43,7 @@ function error(ref, msg) {
 }
 
 function warn(ref, msg) {
-  let str = `\`${ ref }\`: ${ msg }`;
-  process.stdout.write(` ${ str } `.yellow);
-  warnings.push(str);
+  warnings.push(`\`${ ref }\`: ${ msg }`);
 }
 
 function toObject(array, object) {
@@ -71,6 +69,14 @@ function sliceArray(array, index, size) {
   }
 }
 
+// Receives an URL to GitHub and returns a shorthand
+// (eg: "http://github.com/madebyform/react-parts" becomes "madebyform/react-parts")
+function githubUrlToRepo(url) {
+  return url.replace(/^.*\:\/?\/?/, "") // Remove protocol (eg: "http://", "github:")
+    .replace(/\.git(#.+)?$/, "") // Remove .git (and optional branch) suffix
+    .replace(/(\w+@)?github\.com[\/\:]/, ""); // Remove domain or ssh clone url
+}
+
 /* Functions for fetching data from remote services */
 
 const requestOptions = {
@@ -91,7 +97,7 @@ let Fetch = {
       url: `${ endpoints.npm }${ component.name }`
     });
     let result = (yield request(options)).body;
-    if (!result.description && !component.custom_description) {
+    if (!result.description && !component.description) {
       throw `Component ${ component.name } has no description`;
     }
     return result;
@@ -150,20 +156,47 @@ let Fetch = {
   }
 };
 
+/* Functions for keeping the `components/*` files updated */
+
+let Update = {
+  description(npm, component) {
+    let newDescription = npm.description || "";
+
+    if (typeof component.original_description !== "undefined") {
+      if (component.original_description != newDescription) {
+        component.original_description = newDescription;
+        warn(component.name, `Component with custom description has new description: '${ newDescription }'`);
+      }
+    } else if (component.description != newDescription) {
+      component.description = newDescription;
+    }
+  },
+  repoWithNpm(npm, component) {
+    let repo = (typeof component.original_repo !== "undefined") ? component.original_repo : component.repo;
+    let newRepo = (npm.repository && npm.repository.url) ? githubUrlToRepo(npm.repository.url) : "";
+
+    // Check if the repository has changed. This may happen if the component's author offered
+    // the package name to someone else for a new component. If we have a custom repo,
+    // only perform a change if the original changed. This allows us to wrong repos.
+    if (newRepo !== "" && newRepo !== repo) {
+      component.repo = newRepo;
+      delete component.original_repo;
+    }
+  },
+  repoWithGithub(github, component) {
+    if (github.full_name && github.full_name.toLowerCase() != component.repo.toLowerCase()) {
+      if (!component.original_repo) component.original_repo = component.repo;
+      component.repo = github.full_name;
+    }
+  }
+};
+
 /* Functions for processing the data */
 
 let Process = {
   description(npmDescription, component) {
-    let description = (npmDescription || "").trim();
+    let description = component.description.trim();
 
-    // Check if our custom description should be used instead
-    if (component.custom_description) {
-      if (component.description != description) { // Check if our custom_description is outdated
-        warn(component.name, `Component with custom description has new description: '${ description }'`);
-      } else {
-        description = component.custom_description; // Use our custom description
-      }
-    }
     // Add a trailing dot to the description
     if (!/[\.\?\!]$/.test(description) && !isDoubleByte(description)) {
       description += ".";
@@ -234,13 +267,18 @@ let Process = {
 
 let promises = [];
 
-components.forEach(function(component) {
+sliceArray(components, process.argv[3], batchSize).forEach(function(component) {
   promises.push(throat(function() {
     return new Promise(function(resolve) {
       co(function* () {
-        let npm    = yield Fetch.npm(component);
-        let stat   = yield Fetch.npmStat(component, npm.time.created);
+        let npm = yield Fetch.npm(component);
+        Update.description(npm, component);
+        Update.repoWithNpm(npm, component);
+
         let github = yield Fetch.githubRepo(component);
+        Update.repoWithGithub(github, component);
+
+        let stat = yield Fetch.npmStat(component, npm.time.created);
 
         let data = {
           name:        component.name,
@@ -252,11 +290,6 @@ components.forEach(function(component) {
           downloads:   (stat.downloads || [{ downloads: 0 }]).reduce((total, daily) => total + daily.downloads, 0),
           latestVersion: npm["dist-tags"].latest
         };
-
-        // Check if this package is still associated with the same github repo
-        if (component.repo.toLowerCase() != github.full_name.toLowerCase()) {
-          console.log(`\n${ component.name } has a new repo: ${ github.full_name }`.yellow);
-        }
 
         // To save some bytes, if package name and repo name are equal, keep only one
         if (data.name === data.githubName) delete data.githubName;
@@ -309,6 +342,10 @@ Promise.all(promises).then(function(newData) {
   // Persist the new docs
   str = JSON.stringify(docs);
   fs.writeFile(docsFile, str);
+
+  // Persist updates done to attributes of components file (repo, description)
+  str = JSON.stringify(components, null, '  ');
+  fs.writeFile(componentsFile, str);
 
   if (!errors.length) {
     console.log("\nSuccess!".green);
