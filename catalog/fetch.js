@@ -40,6 +40,19 @@ const endpoints = {
 
 /* Utility functions */
 
+let errors = [];
+let warnings = [];
+
+function error(ref, msg) {
+  errors.push(`\`${ ref }\`: ${ msg }`);
+}
+
+function warn(ref, msg) {
+  let str = `\`${ ref }\`: ${ msg }`;
+  process.stdout.write(` ${ str } `.yellow);
+  warnings.push(str);
+}
+
 function toObject(array, object) {
   array.forEach((element) => { object[element.name] = element; });
   return object;
@@ -144,7 +157,7 @@ let Process = {
     // Check if our custom description should be used instead
     if (component.custom_description) {
       if (component.description != description) { // Check if our custom_description is outdated
-        console.log(`${ component.name } has a new description: '${ description }'`.yellow);
+        warn(component.name, `Component with custom description has new description: '${ description }'`);
       } else {
         description = component.custom_description; // Use our custom description
       }
@@ -218,7 +231,6 @@ let Process = {
 /* Iterate through the batch and update metadata and readmes */
 
 let promises = [];
-let errors = [];
 
 components.forEach(function(component) {
   promises.push(
@@ -268,7 +280,7 @@ components.forEach(function(component) {
       }).catch(function(e) {
         resolve(component);
         process.stdout.write("✕".red);
-        errors.push(`Problems with data for ${ component.name }: ${ e }`);
+        error(component.name, `Problems with data for component - ${ e }`);
       });
     })
   );
@@ -300,6 +312,10 @@ Promise.all(promises).then(function(newData) {
     console.log("\nSuccess!".green);
   } else {
     console.log("\nErrors:".red);
-    errors.forEach((msg) => { console.log(msg); });
+    errors.forEach((msg) => console.log(msg));
+  }
+  if (warnings.length) {
+    console.log("\nWarnings:".yellow);
+    warnings.forEach((msg) => console.log(msg));
   }
 });
