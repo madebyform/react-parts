@@ -7,6 +7,7 @@ let request = require("co-request");
 let keys = require('./keys.json');
 let cheerio = require("cheerio");
 let marky = require("marky-markdown");
+let throat = require('throat')(50); // 50 is the max number of parallel requests
 require('colors');
 
 // Pass the components list you which to update ("react-web" or "react-native")
@@ -14,7 +15,8 @@ require('colors');
 // Example usage: `npm run fetch react-web 2`
 let componentsType = process.argv[2] || "react-native";
 let componentsFile = `./components/${ componentsType }.json`;
-let components = sliceArray(require(componentsFile), process.argv[3], 50);
+let components = require(componentsFile);
+let batchSize = 50; // 50 is the size of the batch that will be updated
 
 // Load the data file with all the existing metadata
 let componentsDataFile = `./data/${ componentsType }.json`;
@@ -31,14 +33,18 @@ let docs = {};
 try { docs = require(docsFile); }
 catch (e) { console.log(`Creating a new data file for docs.`); }
 
-// We'll fetch metadata from NPM, GitHub and NPM-Stat
-const endpoints = {
-  npm: "https://registry.npmjs.com/",
-  github: "https://api.github.com/repos/",
-  npmStat: "http://npm-stat.com/downloads/range/"
-};
-
 /* Utility functions */
+
+let errors = [];
+let warnings = [];
+
+function error(ref, msg) {
+  errors.push(`\`${ ref }\`: ${ msg }`);
+}
+
+function warn(ref, msg) {
+  warnings.push(`\`${ ref }\`: ${ msg }`);
+}
 
 function toObject(array, object) {
   array.forEach((element) => { object[element.name] = element; });
@@ -63,16 +69,35 @@ function sliceArray(array, index, size) {
   }
 }
 
+// Receives an URL to GitHub and returns a shorthand
+// (eg: "http://github.com/madebyform/react-parts" becomes "madebyform/react-parts")
+function githubUrlToRepo(url) {
+  return url.replace(/^.*\:\/?\/?/, "") // Remove protocol (eg: "http://", "github:")
+    .replace(/\.git(#.+)?$/, "") // Remove .git (and optional branch) suffix
+    .replace(/(\w+@)?github\.com[\/\:]/, ""); // Remove domain or ssh clone url
+}
+
 /* Functions for fetching data from remote services */
+
+const requestOptions = {
+  json: true,
+  timeout: 20000
+};
+
+// We'll fetch metadata from NPM, GitHub and NPM-Stat
+const endpoints = {
+  npm: "https://registry.npmjs.com/",
+  github: "https://api.github.com/repos/",
+  npmStat: "http://npm-stat.com/downloads/range/"
+};
 
 let Fetch = {
   npm: function* (component) {
-    let options = {
-      url: `${ endpoints.npm }${ component.name }`,
-      json: true
-    };
+    let options = Object.assign({}, requestOptions, {
+      url: `${ endpoints.npm }${ component.name }`
+    });
     let result = (yield request(options)).body;
-    if (!result.description && !component.custom_description) {
+    if (!result.description && !component.description) {
       throw `Component ${ component.name } has no description`;
     }
     return result;
@@ -80,20 +105,18 @@ let Fetch = {
   npmStat: function* (component, createdAt) {
     let startTime = new Date(createdAt).toISOString().substr(0,10);
     let currentTime = new Date().toISOString().substr(0, 10);
-    let options = {
-      url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`,
-      json: true
-    };
+    let options = Object.assign({}, requestOptions, {
+      url: `${ endpoints.npmStat }${ startTime }:${ currentTime }/${ component.name }`
+    });
     let result = (yield request(options)).body;
     return result;
   },
   githubRepo: function* (component) {
-    let options = {
+    let options = Object.assign({}, requestOptions, {
       url: `${ endpoints.github }${ component.repo }`,
       headers: { 'User-Agent': 'request' },
-      auth: { 'user': keys.github.username, 'pass': keys.github.password },
-      json: true
-    };
+      auth: { 'user': keys.github.username, 'pass': keys.github.password }
+    });
     let result = (yield request(options)).body;
     if (result.message) {
       throw result.message;
@@ -102,12 +125,11 @@ let Fetch = {
   },
   githubLanguages: function* (component) {
     let auth = keys.githubLanguages || keys.github;
-    let options = {
+    let options = Object.assign({}, requestOptions, {
       url: `${ endpoints.github }${ component.repo }/languages`,
       headers: { 'User-Agent': 'request' },
-      auth: { 'user': auth.username, 'pass': auth.password },
-      json: true
-    };
+      auth: { 'user': auth.username, 'pass': auth.password }
+    });
     let result = (yield request(options)).body;
     if (result.message) {
       throw result.message;
@@ -116,12 +138,11 @@ let Fetch = {
   },
   githubReadme: function* (component) {
     let auth = keys.githubReadme || keys.github;
-    let options = {
+    let options = Object.assign({}, requestOptions, {
       url: `${ endpoints.github }${ component.repo }/readme`,
       headers: { 'User-Agent': 'request', 'Accept': "application/vnd.github.v3.html+json" },
-      auth: { 'user': auth.username, 'pass': auth.password },
-      json: true
-    };
+      auth: { 'user': auth.username, 'pass': auth.password }
+    });
     let result = (yield request(options)).body;
     if (typeof result !== "string") {
       if (result.message === "Not Found") {
@@ -135,20 +156,47 @@ let Fetch = {
   }
 };
 
+/* Functions for keeping the `components/*` files updated */
+
+let Update = {
+  description(npm, component) {
+    let newDescription = npm.description || "";
+
+    if (typeof component.original_description !== "undefined") {
+      if (component.original_description != newDescription) {
+        component.original_description = newDescription;
+        warn(component.name, `Component with custom description has new description: '${ newDescription }'`);
+      }
+    } else if (component.description != newDescription) {
+      component.description = newDescription;
+    }
+  },
+  repoWithNpm(npm, component) {
+    let repo = (typeof component.original_repo !== "undefined") ? component.original_repo : component.repo;
+    let newRepo = (npm.repository && npm.repository.url) ? githubUrlToRepo(npm.repository.url) : "";
+
+    // Check if the repository has changed. This may happen if the component's author offered
+    // the package name to someone else for a new component. If we have a custom repo,
+    // only perform a change if the original changed. This allows us to wrong repos.
+    if (newRepo !== "" && newRepo !== repo) {
+      component.repo = newRepo;
+      delete component.original_repo;
+    }
+  },
+  repoWithGithub(github, component) {
+    if (github.full_name && github.full_name.toLowerCase() != component.repo.toLowerCase()) {
+      if (!component.original_repo) component.original_repo = component.repo;
+      component.repo = github.full_name;
+    }
+  }
+};
+
 /* Functions for processing the data */
 
 let Process = {
   description(npmDescription, component) {
-    let description = (npmDescription || "").trim();
+    let description = component.description.trim();
 
-    // Check if our custom description should be used instead
-    if (component.custom_description) {
-      if (component.description != description) { // Check if our custom_description is outdated
-        console.log(`${ component.name } has a new description: '${ description }'`.yellow);
-      } else {
-        description = component.custom_description; // Use our custom description
-      }
-    }
     // Add a trailing dot to the description
     if (!/[\.\?\!]$/.test(description) && !isDoubleByte(description)) {
       description += ".";
@@ -218,15 +266,19 @@ let Process = {
 /* Iterate through the batch and update metadata and readmes */
 
 let promises = [];
-let errors = [];
 
-components.forEach(function(component) {
-  promises.push(
-    new Promise(function(resolve) {
+sliceArray(components, process.argv[3], batchSize).forEach(function(component) {
+  promises.push(throat(function() {
+    return new Promise(function(resolve) {
       co(function* () {
-        let npm    = yield Fetch.npm(component);
-        let stat   = yield Fetch.npmStat(component, npm.time.created);
+        let npm = yield Fetch.npm(component);
+        Update.description(npm, component);
+        Update.repoWithNpm(npm, component);
+
         let github = yield Fetch.githubRepo(component);
+        Update.repoWithGithub(github, component);
+
+        let stat = yield Fetch.npmStat(component, npm.time.created);
 
         let data = {
           name:        component.name,
@@ -261,12 +313,12 @@ components.forEach(function(component) {
         process.stdout.write(".".green);
 
       }).catch(function(e) {
-        resolve(component);
+        resolve(null);
         process.stdout.write("✕".red);
-        errors.push(`Problems with data for ${ component.name }: ${ e }`);
+        error(component.name, `Problems with data for component - ${ e }`);
       });
-    })
-  );
+    });
+  }));
 });
 
 Promise.all(promises).then(function(newData) {
@@ -275,7 +327,7 @@ Promise.all(promises).then(function(newData) {
   // Merge old fetched data with the new one, since we may have
   // done a partial fetch this time
   oldComponentsData.concat(newData).forEach(function(c) {
-    allData[c.name] = c;
+    if (c) allData[c.name] = c;
   });
 
   // Convert back to an array and make sure we ignore rejects
@@ -291,10 +343,18 @@ Promise.all(promises).then(function(newData) {
   str = JSON.stringify(docs);
   fs.writeFile(docsFile, str);
 
+  // Persist updates done to attributes of components file (repo, description)
+  str = JSON.stringify(components, null, '  ');
+  fs.writeFile(componentsFile, str);
+
   if (!errors.length) {
     console.log("\nSuccess!".green);
   } else {
     console.log("\nErrors:".red);
-    errors.forEach((msg) => { console.log(msg); });
+    errors.forEach((msg) => console.log(msg));
+  }
+  if (warnings.length) {
+    console.log("\nWarnings:".yellow);
+    warnings.forEach((msg) => console.log(msg));
   }
 });

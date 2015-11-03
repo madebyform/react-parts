@@ -107,8 +107,8 @@
   {
     "name": "sidemenu",
     "repo": "khanghoang/RNSideMenu",
-    "description": "iOS Side View with React Native </br> ![Demo](://raw.githubusercontent.com/khanghoang/RNSideView-Examples/master/demo.gif)",
-    "custom_description": "Side menu for React Native"
+    "description": "Side menu for React Native",
+    "original_description": "iOS Side View with React Native </br> ![Demo](://raw.githubusercontent.com/khanghoang/RNSideView-Examples/master/demo.gif)"
   },
   {
     "name": "tcomb-form-native",
@@ -161,11 +161,6 @@
     "description": "Awesome navigation for your native app."
   },
   {
-    "name": "react-native-audiorecorder",
-    "repo": "jsierles/react-native-audio",
-    "description": "React Native library for simple audio recording. Wraps AVAudioRecorder."
-  },
-  {
     "name": "react-native-calendar-picker",
     "repo": "stephy/CalendarPicker",
     "description": "Calendar Picker Component for React Native"
@@ -197,8 +192,9 @@
   },
   {
     "name": "react-native-ibeacon",
-    "repo": "geniuxconsulting/react-native-ibeacon",
-    "description": "iBeacon support for React Native. The API is very similar to the CoreLocation Objective-C one with the only major difference that regions are plain JavaScript objects. Beacons don't work in the iOS simulator."
+    "repo": "frostney/react-native-ibeacon",
+    "description": "iBeacon support for React Native. The API is very similar to the CoreLocation Objective-C one with the only major difference that regions are plain JavaScript objects. Beacons don't work in the iOS simulator.",
+    "original_repo": "geniuxconsulting/react-native-ibeacon"
   },
   {
     "name": "react-native-ab",
@@ -262,7 +258,7 @@
   },
   {
     "name": "react-native-realtimemessaging-ios",
-    "repo": "realtime-framework/RCTRealtimeMessaging",
+    "repo": "realtime-framework/RCTRealtimeMessagingIOS",
     "description": "The Realtime Framework Cloud Messaging Pub/Sub client for React-Native"
   },
   {
@@ -332,7 +328,8 @@
   },
   {
     "name": "react-native-html",
-    "repo": "turingou/react-native-html",
+    "repo": "guo-yu/react-native-html",
+    "original_repo": "turingou/react-native-html",
     "description": "render html as react native custom elements"
   },
   {
@@ -343,12 +340,13 @@
   {
     "name": "react-native-del",
     "repo": "yuanyan/react-native-del",
+    "original_repo": "",
     "description": "Deleted Text Component"
   },
   {
     "name": "react-native-progress",
-    "repo": "MandarinConLaBarba/react-native-progress",
-    "description": "A progress bar component for React Native"
+    "repo": "oblador/react-native-progress",
+    "description": "Progress indicators and spinners for React Native using ReactART"
   },
   {
     "name": "react-native-carrier-info",
@@ -438,8 +436,9 @@
   {
     "name": "react-native-link",
     "repo": "exponentjs/react-native-link",
-    "description": "A link component, similar to `<A href` from HTML",
-    "custom_description": "A <Link> element for React Native, analogous to the <A> tag in HTML"
+    "original_repo": "650Industries/react-native-link",
+    "description": "A <Link> element for React Native, analogous to the <A> tag in HTML",
+    "original_description": "A link component, similar to `<A href` from HTML"
   },
   {
     "name": "react-native-progress-hud",
@@ -514,7 +513,7 @@
   {
     "name": "react-native-collapsible",
     "repo": "oblador/react-native-collapsible",
-    "description": "Animated collapsible component for React Native using the new Animated API with fallback. Good for accordions, toggles etc"
+    "description": "Animated collapsible component for React Native using the Animated API. Good for accordions, toggles etc"
   },
   {
     "name": "react-native-drawer",
@@ -579,8 +578,8 @@
   {
     "name": "react-paypal",
     "repo": "MattFoley/react-native-paypal",
-    "description": "",
-    "custom_description": "Paypal wrapper for React Native, currently only supports the bare minimum of buying a product."
+    "description": "Paypal wrapper for React Native, currently only supports the bare minimum of buying a product.",
+    "original_description": ""
   },
   {
     "name": "popeye",
@@ -599,12 +598,14 @@
   },
   {
     "name": "react-native-touchable-ripple",
-    "repo": "apolkingg8/React-Native-Touchable-Ripple",
-    "description": "Ripple touch effect from Google Material Design."
+    "repo": "fomahaut/React-Native-Touchable-Ripple",
+    "description": "Ripple touch effect from Google Material Design.",
+    "original_repo": "apolkingg8/React-Native-Touchable-Ripple"
   },
   {
     "name": "react-native-device-display",
     "repo": "kkjdaniel/react-native-device-display",
+    "original_repo": "kkjdaniel/react-native-display-view",
     "description": "A simple way to create dynamic views through device and display detection, allowing the creation of adaptable and universal apps."
   },
   {
@@ -710,6 +711,7 @@
   {
     "name": "react-native-responsive-image",
     "repo": "Dharmoslap/react-native-responsive-image",
+    "original_repo": "Dharmoslap/react-native-responsive-images",
     "description": "Image component, that resizes itself appropriately on all different iOS screens."
   },
   {
@@ -740,6 +742,7 @@
   {
     "name": "react-native-image-progress",
     "repo": "oblador/react-native-image-progress",
+    "original_repo": "",
     "description": "Progress indicator for networked images, supports progress bar and spinner"
   },
   {
@@ -755,8 +758,8 @@
   {
     "name": "rn-calendar",
     "repo": "vczero/react-native-calendar",
-    "description": "基于React Native的日历",
-    "custom_description": "A calendar component for React Native"
+    "description": "A calendar component for React Native",
+    "original_description": "基于React Native的日历"
   },
   {
     "name": "react-native-localsearch",
@@ -821,16 +824,19 @@
   {
     "name": "react-native-fbsdkcore",
     "repo": "facebook/react-native-fbsdk",
+    "original_repo": "",
     "description": "iOS FBSDKCoreKit support for React Native apps."
   },
   {
     "name": "react-native-fbsdklogin",
     "repo": "facebook/react-native-fbsdk",
+    "original_repo": "",
     "description": "iOS FBSDKLoginKit support for React Native apps."
   },
   {
     "name": "react-native-fbsdkshare",
     "repo": "facebook/react-native-fbsdk",
+    "original_repo": "",
     "description": "iOS FBSDKShareKit support for React Native apps."
   },
   {
@@ -861,13 +867,14 @@
   {
     "name": "react-native-cookies",
     "repo": "joeferraro/react-native-cookies",
+    "original_repo": "",
     "description": "Cookie manager for react native"
   },
   {
     "name": "angular-react-native-renderer",
     "repo": "angular/react-native-renderer",
-    "description": "**ATTENTION:** This pacakge is an *experimental* renderer for Angular 2 and React Native.",
-    "custom_description": "An angular 2 renderer for react native"
+    "description": "An angular 2 renderer for react native",
+    "original_description": "**ATTENTION:** This pacakge is an *experimental* renderer for Angular 2 and React Native."
   },
   {
     "name": "react-native-background-geolocation",
@@ -887,6 +894,7 @@
   {
     "name": "react-native-sglistview",
     "repo": "sghiassy/react-native-sglistview",
+    "original_repo": "",
     "description": "A React Native module to provide a memory efficent ListView over the native implementation"
   },
   {
@@ -897,6 +905,7 @@
   {
     "name": "react-native-versions",
     "repo": "reployapp/react-native-versions",
+    "original_repo": "",
     "description": "Update and manage your React Native javascript bundle versions"
   },
   {
@@ -916,8 +925,9 @@
   },
   {
     "name": "react-native-leancloud",
-    "repo": "turingou/react-native-leancloud",
-    "description": "a react native LeanCloud component"
+    "repo": "guo-yu/react-native-leancloud",
+    "description": "a react native LeanCloud component",
+    "original_repo": "turingou/react-native-leancloud"
   },
   {
     "name": "react-native-slider-button",
@@ -947,6 +957,7 @@
   {
     "name": "react-native-applinks",
     "repo": "facebook/react-native-applinks",
+    "original_repo": "",
     "description": "AppLinks support for React Native. applinks.org"
   },
   {
@@ -977,6 +988,7 @@
   {
     "name": "react-native-device-clock-format",
     "repo": "brentvatne/react-native-device-clock-format",
+    "original_repo": "",
     "description": "Determine whether the device is set to 12 or 24 hour time."
   },
   {
@@ -987,12 +999,13 @@
   {
     "name": "react-native-env",
     "repo": "joeferraro/react-native-env",
+    "original_repo": "",
     "description": "Environment manager for react native"
   },
   {
     "name": "react-native-event-source",
     "repo": "jordanbyron/react-native-event-source",
-    "description": "A react-native interface for EventSource: Server-Sent Events for iOS"
+    "description": "A react-native component for EventSource: Server-Sent Events for iOS"
   },
   {
     "name": "react-native-file-transfer",
@@ -1022,7 +1035,7 @@
   {
     "name": "react-native-networking",
     "repo": "eduedix/react-native-networking",
-    "description": "react-native module to download and upload files with AFNetworking"
+    "description": "react-native module to download and upload files on iOS and Android."
   },
   {
     "name": "react-native-refreshable-scroll-view",
@@ -1032,6 +1045,7 @@
   {
     "name": "react-native-routes",
     "repo": "wenkesj/react-native-routes",
+    "original_repo": "",
     "description": "A react native router with awesome transitions."
   },
   {
@@ -1156,8 +1170,9 @@
   },
   {
     "name": "react-native-assets",
-    "repo": "llanox/react-native-assests",
-    "description": "Module to manage assets. It allows you download assests from a network and store into a specific local folder on iOS"
+    "repo": "llanox/react-native-assets",
+    "description": "Module to manage assets. It allows you download assests from a network and store into a specific local folder on iOS",
+    "original_repo": "llanox/react-native-assests"
   },
   {
     "name": "react-native-drawer-addmenu",
@@ -1317,7 +1332,7 @@
   {
     "name": "react-native-ble",
     "repo": "jacobrosenthal/react-native-ble",
-    "description": "React Native BLE using noble api surface"
+    "description": "Central role BLE for react native noble api surface"
   },
   {
     "name": "react-native-ios-network-audio",
@@ -1336,8 +1351,9 @@
   },
   {
     "name": "react-native-tab",
-    "repo": "vczero/react-native-tab",
-    "description": "react-native-tab is a simple module for add a \"Tab Menu\" to your React Native app."
+    "repo": "vczero/react-native-tab-menu",
+    "description": "react-native-tab is a simple module for add a \"Tab Menu\" to your React Native app.",
+    "original_repo": "vczero/react-native-tab"
   },
   {
     "name": "envirs-react-native-cli",
@@ -1347,8 +1363,8 @@
   {
     "name": "react-native-drawer-layout",
     "repo": "iodine/react-native-drawer-layout",
-    "description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android. Why? Because the drawer layout is a useful component regardless of the platform! And if you can use it without changing any code, that's perfect",
-    "custom_description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android."
+    "description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android.",
+    "original_description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android. Why? Because the drawer layout is a useful component regardless of the platform! And if you can use it without changing any code, that's perfect"
   },
   {
     "name": "react-native-record-audio-ios",
@@ -1378,8 +1394,8 @@
   {
     "name": "react-native-switcher",
     "repo": "olivierlesnicki/react-native-switcher",
-    "description": "## Installation",
-    "custom_description": "A dead simple zoomable-swiper made popular by the Kardashians' apps."
+    "description": "A dead simple zoomable-swiper made popular by the Kardashians' apps.",
+    "original_description": "## Installation"
   },
   {
     "name": "react-native-android-sqlite",
@@ -1429,8 +1445,8 @@
   {
     "name": "react-stateful-stream",
     "repo": "gilbox/react-stateful-stream",
-    "description": "stateful bliss",
-    "custom_description": "Stateful bliss. Re-examining modular state."
+    "description": "Stateful bliss. Re-examining modular state.",
+    "original_description": "stateful bliss"
   },
   {
     "name": "rn-websocket-stream",
@@ -1469,22 +1485,26 @@
   },
   {
     "name": "react-native-card.io",
-    "repo": "BBB/card.io-react-native",
-    "description": "A Card.io component for react-native"
+    "repo": "BBB/react-native-card.io",
+    "description": "A Card.io component for react-native",
+    "original_repo": "BBB/card.io-react-native"
   },
   {
     "name": "react-native-gcm",
     "repo": "bh5-pods/react-native-gcm",
+    "original_repo": "bh5-pods/bh5-gcm",
     "description": "Google Cloud Messaging for React Native"
   },
   {
     "name": "rn-redux-mixpanel",
-    "repo": "danscan/redux-mixpanel",
-    "description": "Configurable redux middleware that sends your actions & user profile data to Mixpanel."
+    "repo": "danscan/rn-redux-mixpanel",
+    "description": "Configurable redux middleware that sends your actions & user profile data to Mixpanel.",
+    "original_repo": "danscan/redux-mixpanel"
   },
   {
     "name": "react-native-timer-mixin",
     "repo": "exponentjs/react-native-timer-mixin",
+    "original_repo": "reactjs/react-timer-mixin",
     "description": "TimerMixin provides timer functions for executing code in the future that are safely cleaned up when the component unmounts. This is a fork that includes react-native InteractionManager support."
   },
   {
@@ -1495,12 +1515,13 @@
   {
     "name": "react-native-xkcd",
     "repo": "hemanth/react-native-xkcd",
-    "description": "Loads a random [XKCD](http://xkcd.com/) comic with caption.",
-    "custom_description": "Loads a random XKCD comic with caption."
+    "description": "Loads a random XKCD comic with caption.",
+    "original_description": "Loads a random [XKCD](http://xkcd.com/) comic with caption."
   },
   {
     "name": "rn-nodeify",
     "repo": "mvayngrib/rn-nodeify",
+    "original_repo": "",
     "description": "Run after npm install and you can use node core modules in your React Native app."
   },
   {
@@ -1510,19 +1531,20 @@
   },
   {
     "name": "react-native-device-specs",
-    "repo": "peachmeco/react-native-device-specs",
-    "description": "Detect the specifications of a device on iOS or android in react-native.",
-    "custom_description": "Detect the specifications of a device in react-native. Not yet implemented for Android."
+    "repo": "fixt/react-native-device-specs",
+    "description": "Detect the specifications of a device in react-native. Not yet implemented for Android.",
+    "original_repo": "peachmeco/react-native-device-specs",
+    "original_description": "Detect the specifications of a device on iOS or android in react-native."
   },
   {
     "name": "react-native-awesome-button",
     "repo": "larsvinter/react-native-awesome-button",
-    "description": "A button React Native component supporting showing different states with animations"
+    "description": "A React Native component rendering a button supporting showing different appearances and functionality given the passed props"
   },
   {
     "name": "react-native-i18n-complete",
     "repo": "mrKlar/react-native-i18n",
-    "description": "React Native and I18n.js integration. This is a fork with Android support."
+    "description": "React Native and I18n.js integration"
   },
   {
     "name": "react-native-card-io",
@@ -1642,13 +1664,14 @@
   {
     "name": "react-native-2-side-menus",
     "repo": "alinz/react-native-2-side-menus",
+    "original_repo": "",
     "description": "Imagine having `react-native-side-menu` component with 2 side menus."
   },
   {
     "name": "react-native-order-children",
     "repo": "DashOS/react-native-order-children",
-    "description": "Orders the children of the component by the \"order\" prop unless otherwise defined by providing it with a prop \"by\"",
-    "custom_description": "Order children components by the order props"
+    "description": "Order children components by the order props",
+    "original_description": "Orders the children of the component by the \"order\" prop unless otherwise defined by providing it with a prop \"by\""
   },
   {
     "name": "react-native-rest-kit",
@@ -1708,6 +1731,7 @@
   {
     "name": "react-native-video-gstreamer",
     "repo": "ms88privat/react-native-video-gstreamer",
+    "original_repo": "",
     "description": "React-Native VideoPlayer Component for Android with gstreamer"
   },
   {
@@ -1718,7 +1742,7 @@
   {
     "name": "react-native-animatable",
     "repo": "oblador/react-native-animatable",
-    "description": "Standard set of easy to use animations for React Native"
+    "description": "Standard set of easy to use animations and declarative transitions for React Native"
   },
   {
     "name": "react-native-braintree",
@@ -1828,6 +1852,7 @@
   {
     "name": "react-native-fabric-digits",
     "repo": "JeanLebrument/react-native-fabric-digits",
+    "original_repo": "JeanLebrument/react-native-fabric-digit",
     "description": "Fabric Digits wrapper to use it in React-Native"
   },
   {

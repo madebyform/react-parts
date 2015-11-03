@@ -12,7 +12,8 @@
     "ent": "^2.2.0",
     "marky-markdown": "dmfrancisco/marky-markdown",
     "readline-sync": "^1.2.21",
-    "request": "^2.63.0"
+    "request": "^2.63.0",
+    "throat": "^2.0.2"
   },
   "scripts": {
     "download:all": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
