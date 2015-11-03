@@ -72,8 +72,7 @@
   },
   {
     "name": "react-router-bootstrap",
-    "repo": "mtscout6/react-router-bootstrap",
-    "original_repo": "react-bootstrap/react-router-bootstrap",
+    "repo": "react-bootstrap/react-router-bootstrap",
     "description": "Integration between React Router and React-Bootstrap"
   },
   {
@@ -88,8 +87,7 @@
   },
   {
     "name": "react-radio-group",
-    "repo": "jergason/react-radio-group",
-    "original_repo": "chenglou/react-radio-group",
+    "repo": "chenglou/react-radio-group",
     "description": "Better radio buttons."
   },
   {
@@ -1083,12 +1081,6 @@
     "description": "Shockwave Flash Player component for React"
   },
   {
-    "name": "react-stylist",
-    "repo": "yuanyan/barium",
-    "original_repo": "yuanyan/react-stylist",
-    "description": "Style Sheet Component for React"
-  },
-  {
     "name": "react-stylesheet",
     "repo": "prometheusresearch/react-stylesheet",
     "description": "React components with predefined styles"
@@ -1265,12 +1257,6 @@
     "name": "immutable-reactfire",
     "repo": "JustinTulloss/reactfire",
     "description": "Firebase mixin for ReactJS"
-  },
-  {
-    "name": "jackphel-material-ui",
-    "repo": "jackphel/material-ui",
-    "original_repo": "callemall/material-ui",
-    "description": "Material Design UI components built with React"
   },
   {
     "name": "kenburns-editor",
@@ -1734,12 +1720,6 @@
     "name": "react-image-gallery",
     "repo": "linxtion/react-image-gallery",
     "description": "Image gallery component for React.JS"
-  },
-  {
-    "name": "react-image-grid",
-    "repo": "KyleAMathews/react-component-gallery",
-    "original_repo": "KyleAMathews/react-image-grid",
-    "description": "React component for laying out an evenly spaced grid of images"
   },
   {
     "name": "react-infinite",
@@ -2691,7 +2671,7 @@
   },
   {
     "name": "compwnents",
-    "repo": "willowtreeapps/branches",
+    "repo": "willowtreeapps/compwnents",
     "original_repo": "willowtreeapps/compwnents",
     "description": "A set of React components used by the Web Apps Team at WillowTree, Inc."
   },
@@ -3129,8 +3109,7 @@
   },
   {
     "name": "react-bar-chart",
-    "repo": "MateusZitelli/react-pie",
-    "original_repo": "MateusZitelli/react-bar-chart",
+    "repo": "MateusZitelli/react-bar-chart",
     "description": "A bar chart component made with React.js and D3.js"
   },
   {
@@ -3173,12 +3152,6 @@
     "name": "react-cli",
     "repo": "magalhas/react-cli",
     "description": "Render React components through the command line"
-  },
-  {
-    "name": "react-clickdrag-mixin",
-    "repo": "tleunen/react-clickdrag",
-    "original_repo": "tleunen/react-clickdrag-mixin",
-    "description": "Easily click and drag a react component"
   },
   {
     "name": "react-collapsible-mixin",
@@ -6120,8 +6093,7 @@
   },
   {
     "name": "react-lite-audio",
-    "repo": "teambition/react-lite-dropdown",
-    "original_repo": "teambition/react-lite-audio",
+    "repo": "teambition/react-lite-audio",
     "description": "Audio Player of jianliao.com"
   },
   {
@@ -6805,12 +6777,6 @@
     "description": "React component wrappers around Google's Material Design Lite library"
   },
   {
-    "name": "react-simple-calendar",
-    "repo": "souporserious/react-dately",
-    "description": "Simple calendar for React.",
-    "original_repo": "souporserious/react-simple-calendar"
-  },
-  {
     "name": "cycle-react",
     "repo": "pH200/cycle-react",
     "description": "Rx functional interface to Facebook's React"
@@ -7163,12 +7129,6 @@
     "description": "Higher-order React component for listening to redux stores"
   },
   {
-    "name": "react-flex-kit",
-    "repo": "rofrischmann/react-layout-components",
-    "original_repo": "rofrischmann/react-flex-kit/",
-    "description": "Layout Components for React based on Flexbox"
-  },
-  {
     "name": "ars-arsenal",
     "repo": "vigetlabs/ars-arsenal",
     "description": "A gallery picker"
@@ -7270,7 +7230,7 @@
     "description": "Higher-order component that can measure component performance"
   },
   {
-    "name": "generator-javascript",
+    "name": "babel-starter-kit",
     "repo": "kriasoft/babel-starter-kit",
     "original_repo": "kriasoft/babel-starter-kit/tree/yeoman-generator",
     "description": "A project template for authoring and publishing JavaScript libraries"
@@ -7282,8 +7242,7 @@
   },
   {
     "name": "generator-fluxible",
-    "repo": "yahoo/generator-fluxible",
-    "original_repo": "yahoo/fluxible",
+    "repo": "yahoo/fluxible",
     "description": "Yeoman generator for Fluxible"
   },
   {
@@ -7723,12 +7682,6 @@
     "description": "React custom renderer for Appcelerator® Titanium™ SDK"
   },
   {
-    "name": "router5-react",
-    "repo": "router5/react-router5",
-    "description": "router5 helpers for React",
-    "original_repo": "router5/router5-react"
-  },
-  {
     "name": "react-as-event-mixin",
     "repo": "LingyuCoder/react-as-event-mixin",
     "description": "An event mixin for React components"
@@ -7855,12 +7808,6 @@
     "description": "Minimal flux implementation"
   },
   {
-    "name": "react-geosuggest-sw",
-    "repo": "ubilabs/react-geosuggest",
-    "original_repo": "spendwell-health/react-geosuggest",
-    "description": "A React autosuggest for the Google Maps Places API."
-  },
-  {
     "name": "react-latex",
     "repo": "zzish/react-latex",
     "description": "React component to render latex strings"
@@ -7925,8 +7872,7 @@
   },
   {
     "name": "totoui",
-    "repo": "callemall/material-ui",
-    "original_repo": "jiachitor/TOTO-UI",
+    "repo": "jiachitor/TOTO-UI",
     "description": "TOTO UI components built with React.js"
   },
   {
@@ -8216,12 +8162,6 @@
     "name": "react-color",
     "repo": "casesandberg/react-color",
     "description": "A Collection of Color Pickers from Sketch, Photoshop, Chrome & more"
-  },
-  {
-    "name": "react-context-provider",
-    "repo": "gnoff/react-tunnel",
-    "description": "React component and decorator for context injection",
-    "original_repo": "gnoff/react-context-provider"
   },
   {
     "name": "react-finance",
@@ -8832,12 +8772,6 @@
     "name": "react-page-click",
     "repo": "nkbt/react-page-click",
     "description": "React component-wrapper to detect page clicks (outside of wrapped element)."
-  },
-  {
-    "name": "react-patch",
-    "repo": "gaearon/react-proxy",
-    "description": "Patches React components without unmounting or losing their state.",
-    "original_repo": "gaearon/react-patch"
   },
   {
     "name": "react-qrsvg",
@@ -9497,12 +9431,6 @@
     "original_repo": "crashlytics/velocity-react"
   },
   {
-    "name": "pushtell-react",
-    "repo": "pushtell/react-ab-test",
-    "description": "A/B Testing React Components",
-    "original_repo": "pushtell/react"
-  },
-  {
     "name": "react-component-sol-footer",
     "repo": "soldotno/react-component-sol-footer",
     "description": "A React component that displays SOLs footer. It's basically a colophon."
@@ -9757,7 +9685,7 @@
     "description": "Import SVG as ReactDOM element"
   },
   {
-    "name": "react-testutil-query",
+    "name": "teaspoon",
     "repo": "jquense/teaspoon",
     "description": "small wrapper around react test utils so I don't have to write long method names",
     "original_repo": "jquense/react-testutil-query"
@@ -10105,7 +10033,7 @@
     "description": "load svg icons as react components"
   },
   {
-    "name": "apeman-scaffold-react",
+    "name": "apeman-scff-react",
     "repo": "apeman-scff-labo/apeman-scff-react",
     "description": "Scaffold for React projects.",
     "original_repo": "apeman-scaffold-labo/apeman-scaffold-react"
@@ -11026,12 +10954,6 @@
     "name": "react-redux-provide-list",
     "repo": "loggur/react-redux-provide-list",
     "description": "Provides a handful of common actions and props specific to lists and items."
-  },
-  {
-    "name": "react-redux-provide-selectable",
-    "repo": "loggur/react-redux-provide-map",
-    "description": "Provides a handful of common actions and props specific to selecting keys within some object.",
-    "original_repo": "loggur/react-redux-provide-selectable"
   },
   {
     "name": "react-whitebox",

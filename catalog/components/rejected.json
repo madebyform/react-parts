@@ -405,27 +405,82 @@
   },
   {
     "name": "react-router-android",
-    "repo": "rackt/react-router",
-    "description": "A complete routing library for React.js"
+    "repo": "rackt/react-router"
   },
   {
     "name": "scrollview-lazyload",
-    "repo": "IskenHuang/react-native-scrollview-lazyload",
-    "description": "react-native scrollview with image lazy load"
+    "repo": "IskenHuang/react-native-scrollview-lazyload"
   },
   {
     "name": "react-server-pages",
-    "repo": "philcockfield/react-server-pages",
-    "description": "Connect middleware for serving React components from a standard folder structure."
+    "repo": "philcockfield/react-server-pages"
   },
   {
     "name": "router-loader",
-    "repo": "uooo/react-router-loader",
-    "description": "Dynamically load react-router components on-demand"
+    "repo": "uooo/react-router-loader"
   },
   {
     "name": "react-native-web-polyfill",
-    "repo": "mattiamanzati/react-native-web-polyfill",
-    "description": "A set of classes and react components to make work your react-native app in a browser. (with some limitations obviously)"
+    "repo": "mattiamanzati/react-native-web-polyfill"
+  },
+  {
+    "name": "react-stylist",
+    "repo": "yuanyan/react-stylist"
+  },
+  {
+    "name": "jackphel-material-ui",
+    "repo": "jackphel/material-ui"
+  },
+  {
+    "name": "react-image-grid",
+    "repo": "KyleAMathews/react-component-gallery"
+  },
+  {
+    "name": "react-clickdrag-mixin",
+    "repo": "tleunen/react-clickdrag"
+  },
+  {
+    "name": "react-simple-calendar",
+    "repo": "souporserious/react-dately"
+  },
+  {
+    "name": "react-flex-kit",
+    "repo": "rofrischmann/react-layout-components"
+  },
+  {
+    "name": "router5-react",
+    "repo": "router5/react-router5"
+  },
+  {
+    "name": "react-geosuggest-sw",
+    "repo": "ubilabs/react-geosuggest"
+  },
+  {
+    "name": "react-context-provider",
+    "repo": "gnoff/react-tunnel"
+  },
+  {
+    "name": "react-patch",
+    "repo": "gaearon/react-proxy"
+  },
+  {
+    "name": "pushtell-react",
+    "repo": "pushtell/react-ab-test"
+  },
+  {
+    "name": "react-testutil-query",
+    "repo": "jquense/teaspoon"
+  },
+  {
+    "name": "apeman-scaffold-react",
+    "repo": "apeman-scff-labo/apeman-scff-react"
+  },
+  {
+    "name": "react-redux-provide-selectable",
+    "repo": "loggur/react-redux-provide-map"
+  },
+  {
+    "name": "generator-javascript",
+    "repo": "kriasoft/babel-starter-kit"
   }
 ]
