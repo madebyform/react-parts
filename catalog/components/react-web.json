@@ -1090,8 +1090,8 @@
   },
   {
     "name": "react-stylesheet",
-    "repo": "andreypopp/react-stylesheet",
-    "description": "A component for React to declare stylesheet dependencies"
+    "repo": "prometheusresearch/react-stylesheet",
+    "description": "React components with predefined styles"
   },
   {
     "name": "react-styler",
@@ -11689,5 +11689,95 @@
     "name": "universal-redux-router",
     "repo": "colinmeinke/universal-redux-router",
     "description": "A very simple router for Redux and React that works on both server and client"
+  },
+  {
+    "name": "essential-ui",
+    "repo": "domadams/essential-ui",
+    "description": "A collection of React components"
+  },
+  {
+    "name": "folio-leaflet",
+    "repo": "volkanunsal/folio",
+    "description": "Simple React bindings for Leaflet"
+  },
+  {
+    "name": "mcfly-combinereducers",
+    "repo": "doubleu23/mcfly-combinereducers",
+    "description": "Util to use in a McFly-Store's callback. Turns an object whose values are different reducer functions, into a single reducerFunction"
+  },
+  {
+    "name": "multiple-date-picker-react",
+    "repo": "arca-computing/MultipleDatePickerReact",
+    "description": "React component to show a calendar and select multiple dates"
+  },
+  {
+    "name": "react-atv-img",
+    "repo": "keyanzhang/react-atv-img",
+    "description": "A port of @drewwilson’s atvImg (Apple TV 3D parallax effect) library in React"
+  },
+  {
+    "name": "react-date-time-group",
+    "repo": "holidayextras/react-date-time-group",
+    "description": "Datepicker with optional time"
+  },
+  {
+    "name": "react-dejt",
+    "repo": "limelights/react-dejt",
+    "description": "A Simple, minimalistic React Datepicker which includes server side rendering by default"
+  },
+  {
+    "name": "react-fetcher",
+    "repo": "markdalgleish/react-fetcher",
+    "description": "Simple universal data fetching library for React"
+  },
+  {
+    "name": "react-function-plot",
+    "repo": "angus-c/react-function-plot",
+    "description": "react component to plot a function as an svg path"
+  },
+  {
+    "name": "react-highlight.js",
+    "repo": "bvaughn/react-highlight.js",
+    "description": "A lightweight React wrapper around the Highlight.js syntaxt highlighting library"
+  },
+  {
+    "name": "react-i18n",
+    "repo": "alvinsj/react-i18n",
+    "description": "i18n-js integration with React"
+  },
+  {
+    "name": "react-mf-modal",
+    "repo": "Sandreu/react-mf-modal",
+    "description": "A markup free modal component for React"
+  },
+  {
+    "name": "react-numeric-input",
+    "repo": "vlad-ignatov/react-numeric-input",
+    "description": "Number input component that can replace the native number input which is not yet very well supported and where it is, it does not have the same appearance across the browsers. Additionally this component offers more flexible options and can be used for an"
+  },
+  {
+    "name": "react-object",
+    "repo": "philcockfield/react-object",
+    "description": "Rich visual representation and editor of javascript objects and values."
+  },
+  {
+    "name": "react-parallax-hover",
+    "repo": "TylerK/react-parallax-hover",
+    "description": "A pointer driven hover effect that rotates images in place with subtle parallax effects"
+  },
+  {
+    "name": "react-schema",
+    "repo": "philcockfield/react-schema",
+    "description": "Use react PropTypes for generic object validation."
+  },
+  {
+    "name": "react-speed-reader",
+    "repo": "Radivarig/react-speed-reader",
+    "description": "Speed Reader component for React"
+  },
+  {
+    "name": "react-wait-to-render",
+    "repo": "bvaughn/react-wait-to-render",
+    "description": "A function, component and mixin to defer component rendering until all required props are present"
   }
 ]

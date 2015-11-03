@@ -1919,5 +1919,30 @@
     "name": "react-native-triangle",
     "repo": "Jpoliachik/react-native-triangle",
     "description": "draw triangle views in react native"
+  },
+  {
+    "name": "react-native-dialogs",
+    "repo": "aakashns/react-native-dialogs",
+    "description": "React Native wrappers for https://github.com/afollestad/material-dialogs "
+  },
+  {
+    "name": "react-native-fbintent",
+    "repo": "syarul/react-native-fbintent",
+    "description": "A React Native intent for Android Facebook App"
+  },
+  {
+    "name": "react-native-hyperscript",
+    "repo": "reqshark/react-native-hyperscript",
+    "description": "Hyperscript syntax for React Native"
+  },
+  {
+    "name": "react-native-image-animation",
+    "repo": "remobile/react-native-image-animation",
+    "description": "A pure js image animation like ios animationImages, support ios and android"
+  },
+  {
+    "name": "react-native-refresh-infinite-listview",
+    "repo": "remobile/react-native-refresh-infinite-listview",
+    "description": "A awesome pull-down-refresh and pull-up-loadmore listview"
   }
 ]
