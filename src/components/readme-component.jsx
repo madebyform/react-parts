@@ -77,21 +77,23 @@ let Readme = React.createClass({
       container: {
       },
       header: {
+        WebkitBoxAlign: "center",
+        WebkitAlignItems: "center",
         alignItems: "center",
         background: "#e6f1f6",
         border: "1px solid #c1dce8",
         borderLeft: "none",
         borderRight: "none",
-        display: "flex",
+        display: "flex; display: -webkit-box; display: -webkit-flex",
         padding: this.remCalc(8, 16)
       },
       npmInput: {
+        WebkitBoxFlex: 1,
+        flex: 1,
         background: "transparent",
         border: "none",
-        flex: 1,
         fontFamily: "Consolas, Liberation Mono, Menlo, Courier, monospace",
         padding: this.remCalc(1, 0, 0),
-        WebkitBoxFlex: 1,
         width: "100%"
       },
       content: {
@@ -109,7 +111,7 @@ let Readme = React.createClass({
 
     return (
       <div style={styles.container}>
-        <div className="u-displayFlex" style={styles.header}>
+        <div style={styles.header}>
           <input
             type="text"
             ref="install"

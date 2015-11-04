@@ -1,4 +1,5 @@
 /*jshint esnext:true, node:true */
+/* globals __DEV__ */
 'use strict';
 
 // Be sure your Algolia API key is allowed the following operations: "Search", "Browse Index"
@@ -12,7 +13,7 @@ let algoliaIndex;
 let algoliaSlaveIndex;
 let cachedComponents = {};
 
-function getSearchResults({ query, type, page, perPage, production }, callback) {
+function getSearchResults({ query, type, page, perPage }, callback) {
   let searchConfig = {
     facets: ['type'],
     facetFilters: ['type:' + type],
@@ -23,7 +24,7 @@ function getSearchResults({ query, type, page, perPage, production }, callback) 
   // If this is the first time the function is being called, choose the indexes
   // There is always a master and a slave. There's 2 per environment (prod and dev)
   if (!algoliaIndex) {
-    let indexName = `reactparts${ production ? "" : "_dev" }`;
+    let indexName = `reactparts${ __DEV__ ? "_dev" : "" }`;
     algoliaIndex = algoliaClient.initIndex(indexName);
     algoliaSlaveIndex = algoliaClient.initIndex(`${ indexName }_slave`);
   }
@@ -36,7 +37,7 @@ function getSearchResults({ query, type, page, perPage, production }, callback) 
   // If the user is searching, or is browsing through the first 1000 records,
   // we can use algolia's `search` API
   if (query || perPage*(page+1) <= 1000) {
-    if (!production) console.log("[search] Performing query");
+    if (__DEV__) console.log("[search] Performing query");
 
     return index.search(query, searchConfig).then(function(data) {
       let searchResults = data.hits.map(function(hit) {
@@ -65,7 +66,7 @@ function getSearchResults({ query, type, page, perPage, production }, callback) 
   // Using the `browse` methods on the client-side requires HTTPS.
   // In develop, you can setup something like this: https://github.com/jugyo/tunnels
   } else {
-    if (!production) console.log("[browse] Performing query");
+    if (__DEV__) console.log("[browse] Performing query");
 
     // The `browse` method is similar to `search` but requires you to pass a `cursor`
     // after the first 1000 records. Since the user may go to a random page instead of
@@ -77,7 +78,7 @@ function getSearchResults({ query, type, page, perPage, production }, callback) 
 
     // If the result as been cached
     if (cachedComponents[type]) {
-      if (!production) console.log("[browse] Using cache");
+      if (__DEV__) console.log("[browse] Using cache");
 
       callback({
         components: sliceResults(cachedComponents[type]),
@@ -94,7 +95,7 @@ function getSearchResults({ query, type, page, perPage, production }, callback) 
       });
 
       browser.on('end', function onEnd() {
-        if (!production) console.log(`[browse] We got ${ hits.length } records`);
+        if (__DEV__) console.log(`[browse] We got ${ hits.length } records`);
 
         cachedComponents[type] = hits.map(function(hit) {
           hit.modified = new Date(hit.modified).toISOString();

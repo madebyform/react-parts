@@ -130,10 +130,12 @@ let Platforms = React.createClass({
     let styles = {
       container: {
         WebkitFontSmoothing: "antialiased",
+        WebkitBoxAlign: "center",
+        WebkitAlignItems: "center",
         alignItems: "center",
         boxSizing: "border-box",
         color: "#aaa",
-        display: "flex",
+        display: "flex; display: -webkit-box; display: -webkit-flex",
         fontSize: this.remCalc(15),
         letterSpacing: this.remCalc(-0.4),
         marginTop: this.remCalc(5)
@@ -153,7 +155,7 @@ let Platforms = React.createClass({
     };
 
     return (
-      <div className="u-displayFlex" style={styles.container}>
+      <div style={styles.container}>
         <span style={styles.content}>
           { this.props.ios &&
             <span style={styles.platform}>
@@ -202,9 +204,11 @@ let ComponentItem = React.createClass({
       content: {
         MozUserSelect: "none",
         WebkitUserSelect: "none",
+        WebkitBoxAlign: "center",
+        WebkitAlignItems: "center",
         alignItems: "center",
         boxSizing: "border-box",
-        display: "flex",
+        display: "flex; display: -webkit-box; display: -webkit-flex",
         textDecoration: "none",
         padding: this.remCalc(12, 16, 14)
       },
@@ -230,7 +234,7 @@ let ComponentItem = React.createClass({
 
     return (
       <div style={ this.mergeStyles(styles.container, (this.state.showReadme && styles.expandedContainer)) }>
-        <a className="u-displayFlex u-visited" style={styles.content}
+        <a className="u-visited" style={styles.content}
           href={githubUrl} {...this.trackInteractionStateHover()}>
 
             <div style={styles.main}>

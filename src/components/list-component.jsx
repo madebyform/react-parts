@@ -57,13 +57,7 @@ let ComponentList = React.createClass({
   mixins: [StylingMixin, PureRenderMixin],
   propTypes: {
     components: React.PropTypes.array.isRequired,
-    loading: React.PropTypes.bool,
-    debugMode: React.PropTypes.bool
-  },
-  getDefaultProps() {
-    return {
-      debugMode: false
-    };
+    loading: React.PropTypes.bool
   },
   render() {
     let styles = {
@@ -74,7 +68,7 @@ let ComponentList = React.createClass({
     let components = this.props.components.map((item, index) => {
       return (
         <div key={index}>
-          <ComponentItem {...item} debugMode={ this.props.debugMode } />
+          <ComponentItem {...item} />
         </div>
       );
     });

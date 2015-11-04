@@ -26,8 +26,7 @@ export var App = React.createClass({
     query: React.PropTypes.object.isRequired,
     initialComponents: React.PropTypes.array.isRequired,
     initialCount: React.PropTypes.number.isRequired,
-    perPage: React.PropTypes.number.isRequired,
-    debugMode: React.PropTypes.bool.isRequired,
+    perPage: React.PropTypes.number.isRequired
   },
   getInitialState() {
     return {
@@ -41,7 +40,6 @@ export var App = React.createClass({
     let search = this.props.query.search;
     let searchInputQuery = search ? decodeURIComponent(search) : null;
     let components = this.state.components;
-    let debugMode = this.props.debugMode;
 
     let styles = {
       container:  {
@@ -75,7 +73,6 @@ export var App = React.createClass({
 
           <RouteHandler
             components={components}
-            debugMode={debugMode}
             loading={this.state.loading}
           />
 
@@ -100,8 +97,7 @@ export var App = React.createClass({
       query: newProps.query.search,
       type: newProps.params.type,
       page: this.parsePage(newProps.query.page) - 1, // In Algolia, pagination starts with 0
-      perPage: newProps.perPage,
-      production: !newProps.debugMode
+      perPage: newProps.perPage
     });
   },
   componentDidUpdate(prevProps, prevState) {

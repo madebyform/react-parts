@@ -1,8 +1,11 @@
 /*jshint esnext:true, node:true */
+/* globals __DEV__ */
 'use strict';
 
+global.__DEV__ = (process.env.NODE_ENV != "production");
+
 // Start by registering a hook that makes calls to `require` run ES6 code
-// This will be the only file where JSX and ES6 features are not supported
+// This will be the only file where JSX and full ES6 are not supported
 require('babel/register');
 
 let fs = require('fs');
@@ -13,10 +16,27 @@ let cachify = require('connect-cachify');
 let ejs = require('ejs');
 let getSearchResults = require('./src/helpers/get-search-results');
 let server = express();
-let production = (process.env.NODE_ENV != "development");
+
+if (__DEV__) {
+  // Create and configure a webpack compiler
+  let webpack = require('webpack');
+  let webpackConfig = require('./webpack.config');
+  let compiler = webpack(webpackConfig);
+
+  // Attach the dev middleware to the compiler and the server
+  let devMiddleware = require('webpack-dev-middleware');
+  server.use(devMiddleware(compiler, {
+    noInfo: true,
+    publicPath: webpackConfig.output.publicPath
+  }));
+
+  // Attach the hot middleware to the compiler and the server
+  let hotMiddleware = require('webpack-hot-middleware');
+  server.use(hotMiddleware(compiler));
+}
 
 // List of assets where the keys are your production urls, and the value
-// is a  list of development urls that produce the same asset
+// is a list of development urls that produce the same asset
 let assets = {
   "/app.min.js": [ "/app.js" ],
   "/app.min.css": [ "/app.css" ]
@@ -25,7 +45,7 @@ let assets = {
 // Enable browser cache and HTTP caching (cache busting, etc.)
 server.use(cachify.setup(assets, {
   root: "assets",
-  production: production
+  production: !__DEV__
 }));
 
 // Serve static files
@@ -59,16 +79,14 @@ server.get('/:type(web|native)', function(req, res) {
       query: state.query.search,
       type: state.params.type,
       page: currentPage - 1, // In Algolia, pagination starts with 0
-      perPage: perPage,
-      production: production
+      perPage: perPage
     };
 
     getSearchResults(searchOptions, function(data) {
       let initialData = {
         initialComponents: data.components,
         initialCount: data.searchCount,
-        perPage: perPage,
-        debugMode: !production
+        perPage: perPage
       };
 
       // Render the app and send the markup for faster page loads and SEO
