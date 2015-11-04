@@ -211,6 +211,7 @@ let ComponentItem = React.createClass({
       main: {
         WebkitBoxFlex: 1,
         flex: 1,
+        minWidth: 0
       },
       body: {
         marginTop: this.remCalc(4),
