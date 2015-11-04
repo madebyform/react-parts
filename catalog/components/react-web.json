@@ -4680,8 +4680,9 @@
   },
   {
     "name": "ngreact",
-    "repo": "davidchang/ngReact",
-    "description": "Use React Components in Angular"
+    "repo": "ngReact/ngReact",
+    "description": "Use React Components in Angular",
+    "original_repo": "davidchang/ngReact"
   },
   {
     "name": "olay-react",
@@ -7230,12 +7231,6 @@
     "description": "Higher-order component that can measure component performance"
   },
   {
-    "name": "babel-starter-kit",
-    "repo": "kriasoft/babel-starter-kit",
-    "original_repo": "kriasoft/babel-starter-kit/tree/yeoman-generator",
-    "description": "A project template for authoring and publishing JavaScript libraries"
-  },
-  {
     "name": "reapp",
     "repo": "reapp/reapp",
     "description": "a server, build system, and helpers for react apps"
@@ -9687,8 +9682,7 @@
   {
     "name": "teaspoon",
     "repo": "jquense/teaspoon",
-    "description": "small wrapper around react test utils so I don't have to write long method names",
-    "original_repo": "jquense/react-testutil-query"
+    "description": "jQuery-esque Api for React elements and instances, supports complex css selectors"
   },
   {
     "name": "react-tinymce-mention",
@@ -10035,8 +10029,7 @@
   {
     "name": "apeman-scff-react",
     "repo": "apeman-scff-labo/apeman-scff-react",
-    "description": "Scaffold for React projects.",
-    "original_repo": "apeman-scaffold-labo/apeman-scaffold-react"
+    "description": "Scaffold for React projects."
   },
   {
     "name": "class-name",
@@ -11209,7 +11202,6 @@
   {
     "name": "react-text-highlighter",
     "repo": "swennemans/react-text-highlighter",
-    "original_repo": "",
     "description": "Simple higher order component for React for text highlighting. Works nicely with React 0.14+ and stateless components"
   },
   {
@@ -11588,7 +11580,6 @@
   {
     "name": "react-reform",
     "repo": "danielberndt/react-reform",
-    "original_repo": "",
     "description": "A React Form Framework"
   },
   {
@@ -11701,5 +11692,213 @@
     "name": "react-wait-to-render",
     "repo": "bvaughn/react-wait-to-render",
     "description": "A function, component and mixin to defer component rendering until all required props are present"
+  },
+  {
+    "name": "babel-plugin-dev-expression",
+    "repo": "4Catalyzer/babel-plugin-dev-expression",
+    "description": "A mirror of Facebook's dev-expression Babel plugin"
+  },
+  {
+    "name": "babel-plugin-transform-react-inline-elements",
+    "repo": "babel/babel",
+    "original_repo": "babel/babel/tree/master/packages/babel-plugin-transform-react-inline-elements",
+    "description": "Turn JSX elements into exploded React objects"
+  },
+  {
+    "name": "babel-plugin-transform-react-jsx",
+    "repo": "babel/babel",
+    "original_repo": "babel/babel/tree/master/packages/babel-plugin-transform-jsx",
+    "description": "Turn JSX into React function calls"
+  },
+  {
+    "name": "connect-alt",
+    "repo": "iam4x/connect-alt",
+    "description": "Decorator for passing Altjs store state through props"
+  },
+  {
+    "name": "graphql-relay",
+    "repo": "graphql/graphql-relay-js",
+    "description": "A library to help construct a graphql-js server supporting react-relay."
+  },
+  {
+    "name": "isomorphic-flux-boilerplate",
+    "repo": "iam4x/isomorphic-flux-boilerplate",
+    "description": "An ES7 isomorphic Flux/ReactJS boilerplate"
+  },
+  {
+    "name": "js-data",
+    "repo": "js-data/js-data",
+    "description": "Robust, framework-agnostic in-memory data store."
+  },
+  {
+    "name": "knockout-bind-react",
+    "repo": "calvinwoo/knockout-bind-react",
+    "description": "A custom binding for KnockoutJS that renders a given ReactJS component within the specified element. Use when adding React components to an application that is KnockoutJS heavy, such as one that employs the Durandal framework."
+  },
+  {
+    "name": "mach-react",
+    "repo": "rolandpoulter/mach-react",
+    "description": "Fast, and tiny react implementation."
+  },
+  {
+    "name": "react-addons-clone-with-props",
+    "original_repo": "",
+    "description": "This package provides the React cloneWithProps add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-create-fragment",
+    "original_repo": "",
+    "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-css-transition-group",
+    "original_repo": "",
+    "description": "This package provides the React CSSTransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-linked-state-mixin",
+    "original_repo": "",
+    "description": "This package provides the React LinkedStateMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-perf",
+    "original_repo": "",
+    "description": "This package provides the React Perf add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-pure-render-mixin",
+    "original_repo": "",
+    "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-shallow-compare",
+    "original_repo": "",
+    "description": "This package provides the React shallowCompare add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-test-utils",
+    "original_repo": "",
+    "description": "This package provides the React TestUtils add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-transition-group",
+    "original_repo": "",
+    "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-addons-update",
+    "original_repo": "",
+    "description": "This package provides the React updates add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "react-big-calendar",
+    "repo": "jquense/react-big-calendar",
+    "original_repo": "jaquense/react-big-calendar",
+    "description": "Calendar! with events"
+  },
+  {
+    "name": "react-dom",
+    "repo": "facebook/react",
+    "description": "React package for working with the DOM."
+  },
+  {
+    "name": "react-dragula",
+    "repo": "bevacqua/react-dragula",
+    "description": "Drag and drop so simple it hurts"
+  },
+  {
+    "name": "react-embedded-twitter-timeline",
+    "repo": "marissagrove/react-embedded-twitter-timeline",
+    "description": "React component to easily embed a Twitter timeline.",
+    "original_description": "React component to easily embed a Twitter timeline (https://dev.twitter.com/web/embedded-timelines)."
+  },
+  {
+    "name": "react-externs",
+    "repo": "steida/react-externs",
+    "description": "Closure Compiler externs for Facebook React.js"
+  },
+  {
+    "name": "react-gateway",
+    "original_repo": "",
+    "description": "Render React DOM into a new context on document.body",
+    "repo": "thejameskyle/react-gateway"
+  },
+  {
+    "name": "react-infinity-menu",
+    "repo": "socialtables/react-infinity-menu",
+    "description": "An unlimited deep side menu",
+    "original_description": "[![Circle CI](https://circleci.com/gh/socialtables/react-infinity-menu.svg?style=svg&circle-token=230aaa396d006f1dc8d875b340834234c4937bbc)](https://circleci.com/gh/socialtables/react-infinity-menu)"
+  },
+  {
+    "name": "react-markdown2",
+    "repo": "reactbits/markdown",
+    "description": "Yet another react component to render markdown."
+  },
+  {
+    "name": "react-modal2",
+    "original_repo": "",
+    "description": "Stateless modal component for React.",
+    "repo": "thejameskyle/react-modal2"
+  },
+  {
+    "name": "react-plupload",
+    "repo": "lemonCMS/react-plupload",
+    "description": "React plugin for plupload"
+  },
+  {
+    "name": "react-redux-universal-hot-example",
+    "repo": "erikras/react-redux-universal-hot-example",
+    "description": "Example of an isomorphic (universal) webapp using react redux and hot reloading"
+  },
+  {
+    "name": "react-render-to-json",
+    "repo": "gorangajic/react-render-to-json",
+    "description": "hacky way to figure out what is passed to this.props.children in react"
+  },
+  {
+    "name": "react-router-named-routes",
+    "repo": "adamziel/react-router-named-routes",
+    "description": "Adds support for named routes to React-Router 1.0.0"
+  },
+  {
+    "name": "react-starterify",
+    "repo": "Granze/react-starterify",
+    "description": "React JS application skeleton using Browserify and other awesome tools"
+  },
+  {
+    "name": "relpers",
+    "repo": "croudcare/relpers",
+    "description": "A group of small React Helpers to reduce your React boilerplate."
+  },
+  {
+    "name": "sitb-react-icon",
+    "repo": "sitb-software/react-icon",
+    "description": "React component for font awesome."
+  },
+  {
+    "name": "taula",
+    "repo": "tnwinc/Taula",
+    "description": "A table that will scroll forever, if you give it enough data."
+  },
+  {
+    "name": "toolbox-loader",
+    "original_repo": "",
+    "description": "A loader used to add SASS themes for React Toolbox",
+    "repo": "react-toolbox/toolbox-loader"
+  },
+  {
+    "name": "topeka",
+    "repo": "jquense/topeka",
+    "description": "Idiomatic, two-way bindings, in React"
   }
 ]

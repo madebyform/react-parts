@@ -1944,5 +1944,20 @@
     "name": "react-native-refresh-infinite-listview",
     "repo": "remobile/react-native-refresh-infinite-listview",
     "description": "A awesome pull-down-refresh and pull-up-loadmore listview"
+  },
+  {
+    "name": "react-native-for-web-stylesheet",
+    "repo": "KodersLab/react-native-for-web-stylesheet",
+    "description": "Reuse your React Native styles inside your React DOM application!"
+  },
+  {
+    "name": "react-native-marquee-label",
+    "repo": "remobile/react-native-marquee-label",
+    "description": "A marquee label for react-native"
+  },
+  {
+    "name": "react-native-pingpp",
+    "repo": "weflex/react-native-pingpp",
+    "description": "A React-Native(RN) binding library for Ping++"
   }
 ]

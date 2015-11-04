@@ -482,5 +482,49 @@
   {
     "name": "generator-javascript",
     "repo": "kriasoft/babel-starter-kit"
+  },
+  {
+    "name": "babel-starter-kit",
+    "repo": "kriasoft/babel-starter-kit"
+  },
+  {
+    "name": "cncjs",
+    "repo": "cheton/cnc.js"
+  },
+  {
+    "name": "code-push-cli",
+    "repo": "Microsoft/code-push"
+  },
+  {
+    "name": "derivable",
+    "repo": "ds300/derivablejs"
+  },
+  {
+    "name": "eslint-config-remitbri",
+    "repo": "remitbri/eslint-config-remitbri"
+  },
+  {
+    "name": "fairmont-reactive",
+    "repo": "dyoder/fairmont"
+  },
+  {
+    "name": "gem.js",
+    "repo": "Tixit/gem.js"
+  },
+  {
+    "name": "generator-aoletsgo",
+    "repo": "bitbucket.org/space87/aoworkspace"
+  },
+  {
+    "name": "prax",
+    "repo": "Mitranim/prax"
+  },
+  {
+    "name": "react",
+    "repo": "facebook/react"
+  },
+  {
+    "name": "spincycle",
+    "repo": "psvensson/spincycle"
   }
 ]
