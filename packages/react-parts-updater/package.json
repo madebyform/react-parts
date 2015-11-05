@@ -28,7 +28,7 @@
     "upload:docs": "scp data/docs.json react.parts:/var/www/react-parts-data",
     "bender:set": "git config user.name 'Bender Rodriguez' && git config user.email 'bender@react.parts'",
     "bender:unset": "git config --remove-section user",
-    "push": "git add components && git commit -m 'Update lists of react components' && git push origin-bender master",
+    "push": "git add components && git commit -m 'Update lists of react components' && git push github-bot master",
     "pull": "npm run download:yesterday && npm run parse",
     "update": "npm run fetch:all && npm run search:index",
     "publish": "npm run upload:docs && npm run search:push && npm run bender:set && npm run push && npm run bender:unset"

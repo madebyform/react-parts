@@ -19,15 +19,13 @@ To retrieve information from GitHub you will need to create a `keys.json` file (
 The `publish` script commits the new `components/react-*.json` files to GitHub. You should setup the right `remote`:
 
 ```
-git remote add origin-bender git@github.com:madebyform/react-parts.git
+git remote add github-bot git@github.com:madebyform/react-parts.git
 ```
 
 If you don't want the commits to be created with your personal GitHub account, generate a [Personal Access Token](https://github.com/settings/tokens) with the `repo` scope and use it like this:
 
 ```
-export GITHUB_TOKEN_USERNAME=<your-username>
-export GITHUB_TOKEN_PASSWORD=<your-token>
-git remote add origin-bender https://$GITHUB_TOKEN_USERNAME:$GITHUB_TOKEN_PASSWORD@github.com/madebyform/react-parts.git"
+git remote add github-bot https://<your-username>:<your-token>@github.com/madebyform/react-parts.git
 ```
 
 ---
