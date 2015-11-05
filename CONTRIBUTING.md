@@ -2,7 +2,7 @@
 
 ### Updating the catalog
 
-We have several scripts defined in the `catalog/package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
+We have several scripts defined in the `packages/updater/package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
 - `npm run pull` downloads new packages from NPM, stores them into `data/npm.json`, parses that and updates the `components/react-*.json` files;
 - `npm run update` goes through all components in the `components/react-*.json` files and gets updated metadata (stars, etc.) from NPM & GitHub and stores that into `data/react-*.json`;
 - `npm run publish` pushes the `data/react-*.json` files to the search server and pushes the updated `components/react-*.json` files to GitHub.
@@ -38,9 +38,9 @@ ssh -t react.parts 'dokku config:set react-parts NODE_ENV=production'
 Since the `data/docs.json` file is not in our git repository, we need to use Dokku's persistence storage:
 
 ```
-mkdir -p /var/www/react-parts/catalog/data
-dokku docker-options:add react-parts deploy "-v /var/www/react-parts/catalog/data:/app/catalog/data"
-dokku docker-options:add react-parts run "-v /var/www/react-parts/catalog/data:/app/catalog/data"
+mkdir /var/www/react-parts-data
+dokku docker-options:add react-parts deploy "-v /var/www/react-parts-data:/app/packages/updater/data"
+dokku docker-options:add react-parts run "-v /var/www/react-parts-data/data:/app/packages/updater/data"
 ```
 
 ---
