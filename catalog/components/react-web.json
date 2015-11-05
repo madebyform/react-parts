@@ -10568,11 +10568,6 @@
     "description": "A ReactJS component for the RxJS version of the Bing Maps Ajax Web Control"
   },
   {
-    "name": "victory-pie",
-    "repo": "FormidableLabs/victory-pie",
-    "description": "D3 pie & donut chart component for React"
-  },
-  {
     "name": "express-react",
     "repo": "mlrawlings/express-react",
     "description": "middleware to render react components with express and optionally mount on the client"
@@ -11900,5 +11895,99 @@
     "name": "topeka",
     "repo": "jquense/topeka",
     "description": "Idiomatic, two-way bindings, in React"
+  },
+  {
+    "name": "victory",
+    "repo": "FormidableLabs/victory",
+    "description": "Victory is a data visualization methodology that swaps out D3's DOM model for ReactJS. It combines low level control of animations and transitions with chart reusibility. It's a total joy to work with, hence the name."
+  },
+  {
+    "name": "victory-line",
+    "repo": "formidablelabs/victory-line",
+    "description": "Line Component for Victory"
+  },
+  {
+    "name": "victory-pie",
+    "repo": "FormidableLabs/victory-pie",
+    "description": "D3 pie & donut chart component for React"
+  },
+  {
+    "name": "victory-tree",
+    "repo": "FormidableLabs/victory-tree",
+    "description": "Tree Component for Victory",
+    "original_description": "[![Travis Status][trav_img]][trav_site]"
+  },
+  {
+    "name": "victory-scatter",
+    "repo": "formidablelabs/victory-scatter",
+    "original_repo": "formidable-labs/victory-scatter",
+    "description": "Scatter component for Victory"
+  },
+  {
+    "name": "victory-axis",
+    "repo": "formidablelabs/victory-axis",
+    "description": "Axis Component for Victory"
+  },
+  {
+    "name": "builder-react-component",
+    "repo": "FormidableLabs/builder-react-component",
+    "description": "Builder Archetype - React Component"
+  },
+  {
+    "name": "react-date-time-range",
+    "repo": "holidayextras/react-date-time-range",
+    "description": "React Component implementing a range by wrapping two date-time-groups.",
+    "original_description": "[React](https://facebook.github.io/react/) Component implementing a range by wrapping two [date-time-group](https://github.com/holidayextras/react-date-time-group)s.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-flex",
+    "repo": "zippyui/react-flex",
+    "description": "Flex component built for React",
+    "original_description": "> Flex component built for React",
+    "original_repo": "radubrehar/react-flex"
+  },
+  {
+    "name": "react-flexi-textarea",
+    "repo": "rmdort/react-flexi-textarea",
+    "original_repo": "rmdort/react-autogrow-textarea.git",
+    "description": "Automatically adjusts textarea height when user types"
+  },
+  {
+    "name": "react-lite-space",
+    "repo": "teambition/react-lite-space",
+    "description": "React component for space"
+  },
+  {
+    "name": "react-mouse-pointer-tools",
+    "repo": "koalabears/react-mouse-pointer-tools",
+    "description": "toolkit that allows you to track the mouse and create rulers",
+    "original_repo": ""
+  },
+  {
+    "name": "react-obcache",
+    "repo": "brigand/react-obcache",
+    "description": "observable based cache interface for client side apps"
+  },
+  {
+    "name": "react-the-final-countdown",
+    "repo": "fcscripters/react-final-countdown",
+    "description": "sets a countdown timer that triggers a user-defined function",
+    "original_repo": ""
+  },
+  {
+    "name": "redux-devtools-bubbles-monitor",
+    "repo": "eknuth/redux-devtools-bubbles-monitor",
+    "description": "Toastr notifications of redux actions"
+  },
+  {
+    "name": "redux-simple-router",
+    "repo": "jlongster/redux-simple-router",
+    "description": "Ruthlessly simple bindings to keep react-router and redux in sync"
+  },
+  {
+    "name": "timeout-transition-group",
+    "repo": "rhobot/timeout-transition-group",
+    "description": "non-JSX version of timeout-transition-group created by Khan Academy"
   }
 ]

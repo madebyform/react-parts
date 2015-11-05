@@ -253,7 +253,8 @@
   },
   {
     "name": "react-native-realtimestorage-ios",
-    "repo": "realtime-framework/RCTRealtimeCloudStorage",
+    "repo": "realtime-framework/RCTRealtimeCloudStorageIOS",
+    "orignal_repo": "realtime-framework/RCTRealtimeCloudStorage",
     "description": "The Realtime Framework Cloud Storage client for React-Native"
   },
   {
@@ -1959,5 +1960,60 @@
     "name": "react-native-pingpp",
     "repo": "weflex/react-native-pingpp",
     "description": "A React-Native(RN) binding library for Ping++"
+  },
+  {
+    "name": "react-native-des",
+    "repo": "remobile/react-native-des",
+    "description": "A des crypto for react-native"
+  },
+  {
+    "name": "react-native-fileupload",
+    "repo": "PhilippKrone/react-native-fileupload",
+    "description": "A file upload plugin for react-native"
+  },
+  {
+    "name": "react-native-fm-form",
+    "repo": "peter4k/react-native-fm-form",
+    "description": "Generate list view form of React Native in few line of codes"
+  },
+  {
+    "name": "react-native-keyboard-aware-scroll-view",
+    "repo": "APSL/react-native-keyboard-aware-scroll-view",
+    "description": "A React Native ScrollView component that resizes when the keyboard appears."
+  },
+  {
+    "name": "react-native-materialdialog-android",
+    "repo": "marsprince/react-native-materialDialogAndroid",
+    "description": "A React Native materialDialog for Android."
+  },
+  {
+    "name": "react-native-navigator-wrapper",
+    "repo": "APSL/react-native-navigator-wrapper",
+    "description": "A React Native Navigator component wrapper that implements nested navigators for both push and modal transitions."
+  },
+  {
+    "name": "react-native-send-intent",
+    "repo": "lucasferreira/react-native-send-intent",
+    "description": "React Native Android module to use Android's Intent actions for send text to shareable apps"
+  },
+  {
+    "name": "react-native-simple-button",
+    "repo": "remobile/react-native-simple-button",
+    "description": "A simple react-native button"
+  },
+  {
+    "name": "react-native-simpledialog-android",
+    "repo": "lucasferreira/react-native-simpledialog-android",
+    "description": "React Native Android module to use Android's AlertDialog - same idea of AlertIOS"
+  },
+  {
+    "name": "react-native-tabbar-navigator",
+    "repo": "DickyT/react-native-tabbar-navigator",
+    "description": "A component which builds excellent Navigator + TabBar based application, have a good solution for implementing hidesBottomBarWhenPushed in iOS."
+  },
+  {
+    "name": "react-native-webview-android",
+    "repo": "lucasferreira/react-native-webview-android",
+    "description": "Simple React Native Android module to use Android's WebView inside your app"
   }
 ]
