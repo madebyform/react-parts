@@ -2,47 +2,6 @@
 'use strict';
 
 let fs = require('fs');
-let readlineSync = require('readline-sync');
-var execSync = require('child_process').execSync;
-
-// Paths to the JSON files with the lists of components
-let nativeComponentsFilename = "./components/react-native.json";
-let webComponentsFilename = "./components/react-web.json";
-let rejectedComponentsFilename = "./components/rejected.json";
-
-// Load existing components
-let existingNativeComponents = require(nativeComponentsFilename);
-let existingWebComponents = require(webComponentsFilename);
-let rejectedComponents = require(rejectedComponentsFilename);
-
-// List of all existing components (native, web and rejected)
-let existing = toObject(existingNativeComponents, {});
-toObject(existingWebComponents, existing);
-toObject(rejectedComponents, existing);
-
-let npmDataFilename = "./data/npm.json";
-let defaultSinceDate = new Date("2010-01-01");
-let githubUrl = "https://github.com";
-let interactive = process.argv.indexOf("-i") !== -1;
-let sinceDateArg = new Date(process.argv[2]);
-let sinceDate = isNaN(sinceDateArg.getTime()) ? defaultSinceDate : sinceDateArg;
-
-// Keywords that identify a component for react for web
-// For eg: `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
-let webKeywords = [
-  "react-component",
-  ["react", "component"],
-  // "react", "relay", "graphql", "redux", "flux", "rackt"
-];
-
-// Keywords that identify a component for react native
-let nativeKeywords = [
-  "react-native",
-  "react-native-component",
-  ["react-native", "component"],
-  ["react-native", "react-component"],
-  ["react", "native"]
-];
 
 function toObject(array, object) {
   array.forEach((element) => { object[element.name] = element; });
@@ -102,22 +61,42 @@ function slimComponentInfo(candidate) {
   };
 }
 
-function validateCandidate(candidates, newCandidate, type) {
-  let component = slimComponentInfo(newCandidate);
-  let shouldAdd = true;
+function parseAndSave(data, decide, callback, options) {
+  // Paths to the JSON files with the lists of components
+  let nativeComponentsFilename = "./components/react-native.json";
+  let webComponentsFilename = "./components/react-web.json";
+  let rejectedComponentsFilename = "./components/rejected.json";
 
-  if (interactive) {
-    console.log(`✨ ${ type }: ${ component.name }\n${ component.description }`);
-    execSync(`open ${ githubUrl }/${ component.repo }`);
-    shouldAdd = readlineSync.question("Add to the components file [yn]? ") == "y";
-    console.log();
-  }
-  if (shouldAdd) {
-    candidates.push(component);
-  }
-}
+  // Load existing components
+  let existingNativeComponents = require(nativeComponentsFilename);
+  let existingWebComponents = require(webComponentsFilename);
+  let rejectedComponents = require(rejectedComponentsFilename);
 
-function parseAndSave(data) {
+  // List of all existing components (native, web and rejected)
+  let existing = toObject(existingNativeComponents, {});
+  toObject(existingWebComponents, existing);
+  toObject(rejectedComponents, existing);
+
+  options = options || {};
+  let since = options.since || new Date("2010-01-01");
+
+  // Keywords that identify a component for react for web
+  // For eg: `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
+  let webKeywords = options.webKeywords || [
+    "react-component",
+    ["react", "component"],
+    // "relay", "graphql", "redux", "flux", "rackt"
+  ];
+
+  // Keywords that identify a component for react native
+  let nativeKeywords = options.nativeKeywords || [
+    "react-native",
+    "react-native-component",
+    ["react-native", "component"],
+    ["react-native", "react-component"],
+    ["react", "native"]
+  ];
+
   let webCandidates = [];
   let nativeCandidates = [];
 
@@ -127,7 +106,7 @@ function parseAndSave(data) {
     let nativePartialStore = {};
 
     // A component is considered if it's hosted on GitHub and matches the given timestamp
-    if (!(candidate instanceof Object) || !isModifiedSince(candidate, sinceDate) ||
+    if (!(candidate instanceof Object) || !isModifiedSince(candidate, since) ||
       !isGitHubBased(candidate) || existing[candidate.name]) {
         return;
     }
@@ -135,10 +114,10 @@ function parseAndSave(data) {
     // Search for keywords in the `keywords` prop
     if (candidate.keywords && candidate.keywords instanceof Array) {
       if (matcher(candidate.keywords, nativePartialStore, nativeKeywords)) {
-        return validateCandidate(nativeCandidates, candidate, "native");
+        return decide("native", nativeCandidates, candidate, slimComponentInfo);
       }
       if (matcher(candidate.keywords, webPartialStore, webKeywords)) {
-        return validateCandidate(webCandidates, candidate, "web");
+        return decide("web", webCandidates, candidate, slimComponentInfo);
       }
     }
 
@@ -146,10 +125,10 @@ function parseAndSave(data) {
     for (let prop of ["name", "description", "readme"]) {
       if (candidate[prop]) {
         if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
-          return validateCandidate(nativeCandidates, candidate, "native");
+          return decide("native", nativeCandidates, candidate, slimComponentInfo);
         }
         if (matcher(candidate[prop].toLowerCase(), webPartialStore, webKeywords)) {
-          return validateCandidate(webCandidates, candidate, "web");
+          return decide("web", webCandidates, candidate, slimComponentInfo);
         }
       }
     }
@@ -162,32 +141,15 @@ function parseAndSave(data) {
         ["dependencies", "peerDependencies", "devDependencies"].forEach(function(prop) {
           if (version[prop]) {
             if (matcher(version[prop], nativePartialStore, nativeKeywords)) {
-              return validateCandidate(nativeCandidates, candidate, "native");
+              return decide("native", nativeCandidates, candidate, slimComponentInfo);
             }
             if (matcher(version[prop], webPartialStore, webKeywords)) {
-              return validateCandidate(webCandidates, candidate, "web");
+              return decide("web", webCandidates, candidate, slimComponentInfo);
             }
           }
         });
       });
     }
-  });
-
-  // Log information about new components that can be used for tweeting
-  nativeCandidates.concat(webCandidates).forEach(function(component) {
-    let tweet = `🆕 ${ component.name }: <DSC>`;
-    let maxLength = 140 - 29 - tweet.length;
-
-    let homepage = `${ githubUrl }/${ component.repo }`;
-    let description = `${ component.description }`;
-
-    if (description.length > maxLength) {
-      description = description.substring(0, maxLength - 1) + "…";
-    } else if (description[description.length - 1] == ".") {
-      description = description.substring(0, description.length - 1);
-    }
-    tweet = tweet.replace("<DSC>", description) + ` ${ homepage }`;
-    console.log(tweet);
   });
 
   // Update the JSON files
@@ -196,12 +158,45 @@ function parseAndSave(data) {
   fs.writeFile(webComponentsFilename, JSON.stringify(webComponents, null, '  '));
   fs.writeFile(nativeComponentsFilename, JSON.stringify(nativeComponents, null, '  '));
 
-  console.log(`\nCompleted with ${ webCandidates.length } web components ` +
-    `and ${ nativeCandidates.length } native components`);
+  callback(webCandidates, nativeCandidates);
 }
 
-// Read and parse all the data in the file downloaded from NPM
-fs.readFile(npmDataFilename, "utf8", function (err, data) {
-  let json = JSON.parse(data);
-  parseAndSave(json);
-});
+// If being executed from the command-line
+if (!module.parent) {
+  let npmDataFilename = "./data/npm.json";
+  let since = new Date(process.argv[2]);
+  let options = isNaN(since.getTime()) ? {} : { since };
+
+  let decide = (type, candidates, newCandidate, slim) => candidates.push(slim(newCandidate));
+
+  // Read and parse all the data in the file downloaded from NPM
+  fs.readFile(npmDataFilename, "utf8", function (err, data) {
+    let json = JSON.parse(data);
+
+    parseAndSave(json, decide, function(webCandidates, nativeCandidates) {
+
+      // Log information about new components that can be used for tweeting
+      nativeCandidates.concat(webCandidates).forEach(function(component) {
+        let tweet = `🆕 ${ component.name }: <DSC>`;
+        let maxLength = 140 - 29 - tweet.length;
+
+        let homepage = `https://github.com/${ component.repo }`;
+        let description = `${ component.description }`;
+
+        if (description.length > maxLength) {
+          description = description.substring(0, maxLength - 1) + "…";
+        } else if (description[description.length - 1] == ".") {
+          description = description.substring(0, description.length - 1);
+        }
+        tweet = tweet.replace("<DSC>", description) + ` ${ homepage }`;
+        console.log(tweet);
+      });
+
+      console.log(`\nCompleted with ${ webCandidates.length } web components ` +
+        `and ${ nativeCandidates.length } native components`);
+
+    }, options);
+  });
+}
+
+module.exports = parseAndSave;

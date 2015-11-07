@@ -18,7 +18,7 @@
   "scripts": {
     "download:all": "curl -L http://registry.npmjs.eu/-/all -o data/npm.json",
     "download:yesterday": "curl -L https://registry.npmjs.org/-/all/static/yesterday.json -o data/npm.json",
-    "parse": "node parse.js -i",
+    "parse": "node parse.js",
     "fetch": "node fetch.js",
     "fetch:all": "npm run fetch:all:native && npm run fetch:all:web",
     "fetch:all:native": "for i in {1..10}; do npm run fetch react-native $i; done",
