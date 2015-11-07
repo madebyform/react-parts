@@ -2,6 +2,7 @@
 'use strict';
 
 let fs = require('fs');
+let path = require('path');
 
 function toObject(array, object) {
   array.forEach((element) => { object[element.name] = element; });
@@ -63,9 +64,9 @@ function slimComponentInfo(candidate) {
 
 function parseAndSave(data, decide, callback, options) {
   // Paths to the JSON files with the lists of components
-  let nativeComponentsFilename = "./components/react-native.json";
-  let webComponentsFilename = "./components/react-web.json";
-  let rejectedComponentsFilename = "./components/rejected.json";
+  let nativeComponentsFilename = path.resolve(__dirname, "./components/react-native.json");
+  let webComponentsFilename = path.resolve(__dirname, "./components/react-web.json");
+  let rejectedComponentsFilename = path.resolve(__dirname, "./components/rejected.json");
 
   // Load existing components
   let existingNativeComponents = require(nativeComponentsFilename);
@@ -163,7 +164,7 @@ function parseAndSave(data, decide, callback, options) {
 
 // If being executed from the command-line
 if (!module.parent) {
-  let npmDataFilename = "./data/npm.json";
+  let npmDataFilename = path.resolve(__dirname, "./data/npm.json");
   let since = new Date(process.argv[2]);
   let options = isNaN(since.getTime()) ? {} : { since };
 
