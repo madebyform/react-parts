@@ -230,7 +230,7 @@ let Process = {
 
 /* Iterate through the batch and update metadata and readmes */
 
-function execute(componentsType, callback, options) {
+function fetch(componentsType, callback, options) {
   let componentsFile = `./components/${ componentsType }.json`;
 
   // Load the data file with all the existing metadata
@@ -359,7 +359,7 @@ if (!module.parent) {
 
   let options = { batchIndex, batchSize, error, warn };
 
-  execute(type, function() {
+  fetch(type, function() {
     if (!errors.length) {
       console.log("\nSuccess!".green);
     } else {
@@ -373,4 +373,4 @@ if (!module.parent) {
   }, options);
 }
 
-module.exports = execute;
+module.exports = fetch;
