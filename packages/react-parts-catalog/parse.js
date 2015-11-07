@@ -73,7 +73,7 @@ let existingWebComponents = require(webComponentsFilename);
 let rejectedComponents = require(rejectedComponentsFilename);
 
 let Parser = {
-  parse(data, decide, callback, options) {
+  parse(data, callback, options) {
     // List of all existing components (native, web and rejected)
     let existing = toObject(existingNativeComponents, {});
     toObject(existingWebComponents, existing);
@@ -116,10 +116,10 @@ let Parser = {
       // Search for keywords in the `keywords` prop
       if (candidate.keywords && candidate.keywords instanceof Array) {
         if (matcher(candidate.keywords, nativePartialStore, nativeKeywords)) {
-          return decide("native", nativeCandidates, candidate, slimComponentInfo);
+          return nativeCandidates.push(candidate);
         }
         if (matcher(candidate.keywords, webPartialStore, webKeywords)) {
-          return decide("web", webCandidates, candidate, slimComponentInfo);
+          return webCandidates.push(candidate);
         }
       }
 
@@ -127,10 +127,10 @@ let Parser = {
       for (let prop of ["name", "description", "readme"]) {
         if (candidate[prop]) {
           if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
-            return decide("native", nativeCandidates, candidate, slimComponentInfo);
+            return nativeCandidates.push(candidate);
           }
           if (matcher(candidate[prop].toLowerCase(), webPartialStore, webKeywords)) {
-            return decide("web", webCandidates, candidate, slimComponentInfo);
+            return webCandidates.push(candidate);
           }
         }
       }
@@ -143,10 +143,10 @@ let Parser = {
           ["dependencies", "peerDependencies", "devDependencies"].forEach(function(prop) {
             if (version[prop]) {
               if (matcher(version[prop], nativePartialStore, nativeKeywords)) {
-                return decide("native", nativeCandidates, candidate, slimComponentInfo);
+                return nativeCandidates.push(candidate);
               }
               if (matcher(version[prop], webPartialStore, webKeywords)) {
-                return decide("web", webCandidates, candidate, slimComponentInfo);
+                return webCandidates.push(candidate);
               }
             }
           });
@@ -157,10 +157,13 @@ let Parser = {
     callback(webCandidates, nativeCandidates);
   },
   save(webCandidates, nativeCandidates) {
-    // Update the JSON files
+    webCandidates = webCandidates.map((c) => slimComponentInfo(c));
+    nativeCandidates = nativeCandidates.map((c) => slimComponentInfo(c));
+
     let webComponents = existingWebComponents.concat(webCandidates);
     let nativeComponents = existingNativeComponents.concat(nativeCandidates);
 
+    // Update the JSON files
     fs.writeFile(webComponentsFilename, JSON.stringify(webComponents, null, '  '));
     fs.writeFile(nativeComponentsFilename, JSON.stringify(nativeComponents, null, '  '));
   }
@@ -172,13 +175,11 @@ if (!module.parent) {
   let since = new Date(process.argv[2]);
   let options = isNaN(since.getTime()) ? {} : { since };
 
-  let decide = (type, candidates, newCandidate, slim) => candidates.push(slim(newCandidate));
-
   // Read and parse all the data in the file downloaded from NPM
   fs.readFile(npmDataFilename, "utf8", function (err, data) {
     let json = JSON.parse(data);
 
-    Parser.parse(json, decide, function(webCandidates, nativeCandidates) {
+    Parser.parse(json, function(webCandidates, nativeCandidates) {
       Parser.save(webCandidates, nativeCandidates);
 
       // Log information about new components that can be used for tweeting
