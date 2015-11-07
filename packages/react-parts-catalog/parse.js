@@ -62,105 +62,109 @@ function slimComponentInfo(candidate) {
   };
 }
 
-function parseAndSave(data, decide, callback, options) {
-  // Paths to the JSON files with the lists of components
-  let nativeComponentsFilename = path.resolve(__dirname, "./components/react-native.json");
-  let webComponentsFilename = path.resolve(__dirname, "./components/react-web.json");
-  let rejectedComponentsFilename = path.resolve(__dirname, "./components/rejected.json");
+// Paths to the JSON files with the lists of components
+let nativeComponentsFilename = path.resolve(__dirname, "./components/react-native.json");
+let webComponentsFilename = path.resolve(__dirname, "./components/react-web.json");
+let rejectedComponentsFilename = path.resolve(__dirname, "./components/rejected.json");
 
-  // Load existing components
-  let existingNativeComponents = require(nativeComponentsFilename);
-  let existingWebComponents = require(webComponentsFilename);
-  let rejectedComponents = require(rejectedComponentsFilename);
+// Load existing components
+let existingNativeComponents = require(nativeComponentsFilename);
+let existingWebComponents = require(webComponentsFilename);
+let rejectedComponents = require(rejectedComponentsFilename);
 
-  // List of all existing components (native, web and rejected)
-  let existing = toObject(existingNativeComponents, {});
-  toObject(existingWebComponents, existing);
-  toObject(rejectedComponents, existing);
+let Parser = {
+  parse(data, decide, callback, options) {
+    // List of all existing components (native, web and rejected)
+    let existing = toObject(existingNativeComponents, {});
+    toObject(existingWebComponents, existing);
+    toObject(rejectedComponents, existing);
 
-  options = options || {};
-  let since = options.since || new Date("2010-01-01");
+    options = options || {};
+    let since = options.since || new Date("2010-01-01");
 
-  // Keywords that identify a component for react for web
-  // For eg: `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
-  let webKeywords = options.webKeywords || [
-    "react-component",
-    ["react", "component"],
-    // "relay", "graphql", "redux", "flux", "rackt"
-  ];
+    // Keywords that identify a component for react for web
+    // For eg: `['foo', ['bar','baz']]` translates to `foo || (bar && baz)`
+    let webKeywords = options.webKeywords || [
+      "react-component",
+      ["react", "component"],
+      // "relay", "graphql", "redux", "flux", "rackt"
+    ];
 
-  // Keywords that identify a component for react native
-  let nativeKeywords = options.nativeKeywords || [
-    "react-native",
-    "react-native-component",
-    ["react-native", "component"],
-    ["react-native", "react-component"],
-    ["react", "native"]
-  ];
+    // Keywords that identify a component for react native
+    let nativeKeywords = options.nativeKeywords || [
+      "react-native",
+      "react-native-component",
+      ["react-native", "component"],
+      ["react-native", "react-component"],
+      ["react", "native"]
+    ];
 
-  let webCandidates = [];
-  let nativeCandidates = [];
+    let webCandidates = [];
+    let nativeCandidates = [];
 
-  Object.keys(data).forEach(function(key) {
-    let candidate = data[key];
-    let webPartialStore = {};
-    let nativePartialStore = {};
+    Object.keys(data).forEach(function(key) {
+      let candidate = data[key];
+      let webPartialStore = {};
+      let nativePartialStore = {};
 
-    // A component is considered if it's hosted on GitHub and matches the given timestamp
-    if (!(candidate instanceof Object) || !isModifiedSince(candidate, since) ||
-      !isGitHubBased(candidate) || existing[candidate.name]) {
-        return;
-    }
-
-    // Search for keywords in the `keywords` prop
-    if (candidate.keywords && candidate.keywords instanceof Array) {
-      if (matcher(candidate.keywords, nativePartialStore, nativeKeywords)) {
-        return decide("native", nativeCandidates, candidate, slimComponentInfo);
+      // A component is considered if it's hosted on GitHub and matches the given timestamp
+      if (!(candidate instanceof Object) || !isModifiedSince(candidate, since) ||
+        !isGitHubBased(candidate) || existing[candidate.name]) {
+          return;
       }
-      if (matcher(candidate.keywords, webPartialStore, webKeywords)) {
-        return decide("web", webCandidates, candidate, slimComponentInfo);
-      }
-    }
 
-    // Search for keywords in the other text props
-    for (let prop of ["name", "description", "readme"]) {
-      if (candidate[prop]) {
-        if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
+      // Search for keywords in the `keywords` prop
+      if (candidate.keywords && candidate.keywords instanceof Array) {
+        if (matcher(candidate.keywords, nativePartialStore, nativeKeywords)) {
           return decide("native", nativeCandidates, candidate, slimComponentInfo);
         }
-        if (matcher(candidate[prop].toLowerCase(), webPartialStore, webKeywords)) {
+        if (matcher(candidate.keywords, webPartialStore, webKeywords)) {
           return decide("web", webCandidates, candidate, slimComponentInfo);
         }
       }
-    }
 
-    // Search for keywords inside versions
-    if (candidate.versions && candidate.versions instanceof Object) {
-      let versions = Object.keys(candidate.versions);
-
-      versions.forEach(function(version) {
-        ["dependencies", "peerDependencies", "devDependencies"].forEach(function(prop) {
-          if (version[prop]) {
-            if (matcher(version[prop], nativePartialStore, nativeKeywords)) {
-              return decide("native", nativeCandidates, candidate, slimComponentInfo);
-            }
-            if (matcher(version[prop], webPartialStore, webKeywords)) {
-              return decide("web", webCandidates, candidate, slimComponentInfo);
-            }
+      // Search for keywords in the other text props
+      for (let prop of ["name", "description", "readme"]) {
+        if (candidate[prop]) {
+          if (matcher(candidate[prop].toLowerCase(), nativePartialStore, nativeKeywords)) {
+            return decide("native", nativeCandidates, candidate, slimComponentInfo);
           }
+          if (matcher(candidate[prop].toLowerCase(), webPartialStore, webKeywords)) {
+            return decide("web", webCandidates, candidate, slimComponentInfo);
+          }
+        }
+      }
+
+      // Search for keywords inside versions
+      if (candidate.versions && candidate.versions instanceof Object) {
+        let versions = Object.keys(candidate.versions);
+
+        versions.forEach(function(version) {
+          ["dependencies", "peerDependencies", "devDependencies"].forEach(function(prop) {
+            if (version[prop]) {
+              if (matcher(version[prop], nativePartialStore, nativeKeywords)) {
+                return decide("native", nativeCandidates, candidate, slimComponentInfo);
+              }
+              if (matcher(version[prop], webPartialStore, webKeywords)) {
+                return decide("web", webCandidates, candidate, slimComponentInfo);
+              }
+            }
+          });
         });
-      });
-    }
-  });
+      }
+    });
 
-  // Update the JSON files
-  let webComponents = existingWebComponents.concat(webCandidates);
-  let nativeComponents = existingNativeComponents.concat(nativeCandidates);
-  fs.writeFile(webComponentsFilename, JSON.stringify(webComponents, null, '  '));
-  fs.writeFile(nativeComponentsFilename, JSON.stringify(nativeComponents, null, '  '));
+    callback(webCandidates, nativeCandidates);
+  },
+  save(webCandidates, nativeCandidates) {
+    // Update the JSON files
+    let webComponents = existingWebComponents.concat(webCandidates);
+    let nativeComponents = existingNativeComponents.concat(nativeCandidates);
 
-  callback(webCandidates, nativeCandidates);
-}
+    fs.writeFile(webComponentsFilename, JSON.stringify(webComponents, null, '  '));
+    fs.writeFile(nativeComponentsFilename, JSON.stringify(nativeComponents, null, '  '));
+  }
+};
 
 // If being executed from the command-line
 if (!module.parent) {
@@ -174,7 +178,8 @@ if (!module.parent) {
   fs.readFile(npmDataFilename, "utf8", function (err, data) {
     let json = JSON.parse(data);
 
-    parseAndSave(json, decide, function(webCandidates, nativeCandidates) {
+    Parser.parse(json, decide, function(webCandidates, nativeCandidates) {
+      Parser.save(webCandidates, nativeCandidates);
 
       // Log information about new components that can be used for tweeting
       nativeCandidates.concat(webCandidates).forEach(function(component) {
@@ -200,4 +205,4 @@ if (!module.parent) {
   });
 }
 
-module.exports = parseAndSave;
+module.exports = Parser;
