@@ -1,20 +1,15 @@
 /*jshint esnext:true, node:true, unused:true */
+'use strict';
 
-var readlineSync = require('readline-sync');
-var ent = require('ent');
-var keys = require('./keys.json');
-var algoliasearch = require('algoliasearch');
-var client = algoliasearch(keys.algolia.appId, keys.algolia.writeAPIKey);
-var env = process.argv[2];
-
-if (env === "production" && !readlineSync.keyInYN("Are you sure you want to update the production index?")) {
-  process.exit();
-}
+let ent = require('ent');
+let keys = require('./keys.json');
+let algoliasearch = require('algoliasearch');
+let client = algoliasearch(keys.algolia.appId, keys.algolia.writeAPIKey);
 
 function arrayChunk(list, chunkSize) {
-  var chunks = [];
-  var max = list.length;
-  var i = 0;
+  let chunks = [];
+  let max = list.length;
+  let i = 0;
 
   while (i < max) {
     chunks.push(list.slice(i, i += chunkSize));
@@ -47,14 +42,22 @@ function promiseLog(text) {
   };
 }
 
-function pushDataToAlgolia(sources) {
-  var indexName = `reactparts${ env === "production" ? "" : "_dev" }`;
-  var indexNameTmp = indexName + '_tmp';
-  var indexNameSlave = indexName + '_slave';
-  var indexTmp = client.initIndex(indexNameTmp);
-  var indexSlave = client.initIndex(indexNameSlave);
+function pushDataToAlgolia(env, sources) {
+  sources = sources || [{
+    file: './data/react-web.json',
+    type: 'web'
+  }, {
+    file: './data/react-native.json',
+    type: 'native'
+  }];
 
-  var indexSettings = {
+  let indexName = `reactparts${ env === "production" ? "" : "_dev" }`;
+  let indexNameTmp = indexName + '_tmp';
+  let indexNameSlave = indexName + '_slave';
+  let indexTmp = client.initIndex(indexNameTmp);
+  let indexSlave = client.initIndex(indexNameSlave);
+
+  let indexSettings = {
     attributesToIndex: [
       'unordered(name)',
       'unordered(description)',
@@ -96,16 +99,16 @@ function pushDataToAlgolia(sources) {
   };
 
   // Create a slave index that is sorted by `modified`
-  var indexSlaveSettings = Object.assign({}, indexSettings);
+  let indexSlaveSettings = Object.assign({}, indexSettings);
   indexSlaveSettings.customRanking = ['desc(modified)'];
 
   // To be able to move the master index, the slave was configured on the site
   // indexSettings.slaves = [ indexNameSlave ];
 
-  var allRecords = [];
+  let allRecords = [];
   sources.forEach(function(source) {
-    var records = require(source.file);
-    var type = source.type;
+    let records = require(source.file);
+    let type = source.type;
     allRecords = allRecords.concat(formatRecordsForSearch(records, type));
   });
 
@@ -125,7 +128,7 @@ function configureIndex(index, settings) {
 }
 
 function pushRecords(records, index) {
-  var pushOrders = [];
+  let pushOrders = [];
 
   arrayChunk(records, 500).forEach(function(chunkedRecords) {
     pushOrders.push(index.addObjects(chunkedRecords));
@@ -145,12 +148,16 @@ function overwriteTmpIndex(client, indexNameTmp, indexName) {
   };
 }
 
-pushDataToAlgolia([
-  {
-    file: './data/react-web.json',
-    type: 'web'
-  }, {
-    file: './data/react-native.json',
-    type: 'native'
+// If being executed from the command-line
+if (!module.parent) {
+  let readlineSync = require('readline-sync');
+  let env = process.argv[2];
+
+  if (env === "production" && !readlineSync.keyInYN("Are you sure you want to update the production index?")) {
+    process.exit();
   }
-]);
+
+  pushDataToAlgolia(env);
+}
+
+module.exports = pushDataToAlgolia;
