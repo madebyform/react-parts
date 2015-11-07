@@ -33,12 +33,6 @@ function partialMatcher(prop, keywords, partialStore) {
   return complete;
 }
 
-// Checks if the component is hosted on GitHub
-function isGitHubBased(candidate) {
-  return (candidate.repository && candidate.repository.url &&
-    candidate.repository.url.indexOf("github.com") != -1);
-}
-
 // Check if the given candidate has been modified since a given date
 function isModifiedSince(candidate, since) {
   return (candidate.time && candidate.time.modified &&
@@ -47,8 +41,8 @@ function isModifiedSince(candidate, since) {
 
 // Receives an URL to GitHub and returns a shorthand
 // (eg: "http://github.com/madebyform/react-parts" becomes "madebyform/react-parts")
-function repoUrlToShortRepo(url) {
-  return url.replace(/^.*\:\/\//, "") // Remove protocol
+function githubUrlToRepo(url) {
+  return (url||"").replace(/^.*\:\/?\/?/, "") // Remove protocol (eg: "http://", "github:")
     .replace(/\.git(#.+)?$/, "") // Remove .git (and optional branch) suffix
     .replace(/(\w+@)?github\.com[\/\:]/, ""); // Remove domain or ssh clone url
 }
@@ -57,7 +51,7 @@ function repoUrlToShortRepo(url) {
 function slimComponentInfo(candidate) {
   return {
     name: candidate.name,
-    repo: repoUrlToShortRepo(candidate.repository.url),
+    repo: githubUrlToRepo(candidate.repository && candidate.repository.url),
     description: candidate.description
   };
 }
@@ -108,9 +102,8 @@ let Parser = {
       let nativePartialStore = {};
 
       // A component is considered if it's hosted on GitHub and matches the given timestamp
-      if (!(candidate instanceof Object) || !isModifiedSince(candidate, since) ||
-        !isGitHubBased(candidate) || existing[candidate.name]) {
-          return;
+      if (!(candidate instanceof Object) || !isModifiedSince(candidate, since) || existing[candidate.name]) {
+        return;
       }
 
       // Search for keywords in the `keywords` prop
