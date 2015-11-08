@@ -134,7 +134,7 @@ let Update = {
         warn(component.name, `Component with custom description has new description: '${ newDescription }'`);
       }
     } else if (component.description != newDescription) {
-      component.description = newDescription;
+      component.description = newDescription || component.description;
     }
   },
   repoWithNpm(npm, component) {
