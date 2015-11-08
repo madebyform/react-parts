@@ -1193,7 +1193,7 @@
   {
     "name": "react-search",
     "repo": "StevenIseki/react-search",
-    "description": "a simple search box component"
+    "description": "a simple search component"
   },
   {
     "name": "react-scroll-components",
@@ -5624,11 +5624,6 @@
     "description": "React mixin and focus controller for navigation using arrow keys"
   },
   {
-    "name": "building-os-charts",
-    "repo": "luciddg/building-os-charts",
-    "description": "Plug-and-play chart components based on d3 and React"
-  },
-  {
     "name": "hire-forms-select",
     "repo": "Hire-Forms/hire-forms-select",
     "description": "React Component representing a select element.",
@@ -6701,7 +6696,6 @@
   {
     "name": "react-tinymce",
     "repo": "instructure-react/react-tinymce",
-    "original_repo": "mzabriskie/react-tinymce",
     "description": "React TinyMCE component"
   },
   {
@@ -7110,7 +7104,7 @@
   },
   {
     "name": "subschema",
-    "repo": "jspears/subschema",
+    "repo": "subschema/subschema",
     "description": "Backbone Forms like declaritive forms for react"
   },
   {
@@ -7263,8 +7257,7 @@
   {
     "name": "reselect",
     "repo": "rackt/reselect",
-    "description": "Selectors for Redux.",
-    "original_repo": "faassen/reselect"
+    "description": "Selectors for Redux."
   },
   {
     "name": "synapse-react-autocomplete",
@@ -9853,8 +9846,9 @@
   },
   {
     "name": "learnyoureact",
-    "repo": "tako-black/learnyoureact",
-    "description": "Learn React.js and server side rendering!"
+    "repo": "kohei-takata/learnyoureact",
+    "description": "Learn React.js and server side rendering!",
+    "original_repo": "tako-black/learnyoureact"
   },
   {
     "name": "matrix-react-sdk",
@@ -10092,7 +10086,6 @@
   {
     "name": "redux-router",
     "repo": "rackt/redux-router",
-    "original_repo": "rackt/redux-react-router",
     "description": "Redux bindings for React Router — keep your router state inside your Redux Store."
   },
   {
@@ -10753,7 +10746,6 @@
   {
     "name": "flint",
     "repo": "flintjs/flint",
-    "original_repo": "flint-lang/flint",
     "description": "An amazing way to build apps with React"
   },
   {
@@ -11989,5 +11981,35 @@
     "name": "timeout-transition-group",
     "repo": "rhobot/timeout-transition-group",
     "description": "non-JSX version of timeout-transition-group created by Khan Academy"
+  },
+  {
+    "name": "griddle-react-bedrock",
+    "repo": "GriddleGriddle/Griddle",
+    "description": "Griddle - A fast and flexible grid component for React Modified for Bedrock."
+  },
+  {
+    "name": "react-drops",
+    "repo": "juanmnl/react-drops",
+    "description": "Easily Drop React Component Templates on your Project"
+  },
+  {
+    "name": "react-expanding-textarea",
+    "repo": "rpearce/react-expanding-textarea",
+    "description": "React textarea component to automatically expand and contract your textareas"
+  },
+  {
+    "name": "react-hash-router",
+    "repo": "cluxton/react-hash-router",
+    "description": "A basic hash router with support for nested routes. <12kb."
+  },
+  {
+    "name": "react-i",
+    "repo": "leecade/react-i",
+    "description": "A simple way to use icon element in your react-like project"
+  },
+  {
+    "name": "react-json-schema",
+    "repo": "TechniqueSoftware/react-json-schema",
+    "description": "Write component schema in JSON; parse to create react elements."
   }
 ]

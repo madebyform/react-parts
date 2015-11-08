@@ -562,11 +562,6 @@
     "description": "React Native - Grid Layout Example"
   },
   {
-    "name": "react-native-swipeable-modal",
-    "repo": "apolkingg8/React-Native-Swipeable-Modal",
-    "description": "Swipeable modal component for react-native."
-  },
-  {
     "name": "react-native-speech",
     "repo": "naoufal/react-native-speech",
     "description": "A text-to-speech library for React Native."
@@ -596,12 +591,6 @@
     "name": "react-native-timeago",
     "repo": "TylerLH/react-native-timeago",
     "description": "Auto-updating timeago component for React Native"
-  },
-  {
-    "name": "react-native-touchable-ripple",
-    "repo": "fomahaut/React-Native-Touchable-Ripple",
-    "description": "Ripple touch effect from Google Material Design.",
-    "original_repo": "apolkingg8/React-Native-Touchable-Ripple"
   },
   {
     "name": "react-native-device-display",
@@ -1720,11 +1709,6 @@
     "description": "A simple react-native component to wrap your form fields!"
   },
   {
-    "name": "react-native-touchable-icons",
-    "repo": "chagasaway/react-native-touchable-icons",
-    "description": "Simple touchable icons acting as buttons"
-  },
-  {
     "name": "react-native-sound",
     "repo": "zmxv/react-native-sound",
     "description": "React Native module for playing sound clips"
@@ -2015,5 +1999,40 @@
     "name": "react-native-webview-android",
     "repo": "lucasferreira/react-native-webview-android",
     "description": "Simple React Native Android module to use Android's WebView inside your app"
+  },
+  {
+    "name": "react-native-android-speech",
+    "repo": "mihirsoni/react-native-android-speech",
+    "description": "This is simple module for React Native for Android Text to Speech Engine"
+  },
+  {
+    "name": "react-native-keyboard-toolbar",
+    "repo": "DickyT/react-native-keyboard-toolbar",
+    "description": "A react native extendsion which allows you to add UIBarButtonItems to the keyboard of TextInput."
+  },
+  {
+    "name": "react-native-lock-ios",
+    "repo": "auth0/react-native-lock-ios",
+    "description": "Auth0 Lock for React Native (iOS)"
+  },
+  {
+    "name": "react-native-progress-circular",
+    "repo": "andy9775/React-Native-CircularProgress",
+    "description": "A pure React Native Component for circular progress bars for both iOS and Android."
+  },
+  {
+    "name": "react-native-seekbar-android",
+    "repo": "DispatcherInc/react-native-seekbar-android",
+    "description": "A React Native wrapper Android's SeekBar"
+  },
+  {
+    "name": "react-native-simple-sound",
+    "repo": "mikehedman/react-native-simple-sound",
+    "description": "Start, stop, and pause a sound. iOS only. Derived from https://github.com/zmxv/react-native-sound"
+  },
+  {
+    "name": "react-native-sudoku-grid",
+    "repo": "ZackLeonardo/react-native-sudokuGrid",
+    "description": "grid of sudoku style(or box style) for react native"
   }
 ]
