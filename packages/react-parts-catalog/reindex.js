@@ -2,8 +2,9 @@
 'use strict';
 
 let ent = require('ent');
-let keys = require('./keys.json');
+let path = require('path');
 let algoliasearch = require('algoliasearch');
+let keys = require("./keys.json");
 let client = algoliasearch(keys.algolia.appId, keys.algolia.writeAPIKey);
 
 function arrayChunk(list, chunkSize) {
@@ -44,10 +45,10 @@ function promiseLog(text) {
 
 function pushDataToAlgolia(env, sources) {
   sources = sources || [{
-    file: './data/react-web.json',
+    file: path.resolve(__dirname, './data/react-web.json'),
     type: 'web'
   }, {
-    file: './data/react-native.json',
+    file: path.resolve(__dirname, './data/react-native.json'),
     type: 'native'
   }];
 

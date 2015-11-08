@@ -1,10 +1,11 @@
 /*jshint esnext:true, node:true, unused:true */
 'use strict';
 
-let fs = require('fs');
+let fs = require("fs");
+let path = require("path");
 let co = require("co");
 let request = require("co-request");
-let keys = require('./keys.json');
+let keys = require("./keys.json");
 let cheerio = require("cheerio");
 let marky = require("marky-markdown");
 let throat = require('throat')(50); // 50 is the max number of parallel requests
@@ -231,20 +232,20 @@ let Process = {
 /* Iterate through the batch and update metadata and readmes */
 
 function fetch(componentsType, callback, options) {
-  let componentsFile = `./components/${ componentsType }.json`;
+  let componentsFile = path.resolve(__dirname, `./components/${ componentsType }.json`);
 
   // Load the data file with all the existing metadata
-  let componentsDataFile = `./data/${ componentsType }.json`;
+  let componentsDataFile = path.resolve(__dirname, `./data/${ componentsType }.json`);
   let oldComponentsData = [];
   try { oldComponentsData = require(componentsDataFile); }
   catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 
   // Load rejected components. Rejected components will be removed from the data files
-  let rejectedComponentsFile = './components/rejected.json';
+  let rejectedComponentsFile = path.resolve(__dirname, './components/rejected.json');
   let rejectedComponents = toObject(require(rejectedComponentsFile), {});
 
   // Load existing documentation
-  let docsFile = "./data/docs.json";
+  let docsFile = path.resolve(__dirname, "./data/docs.json");
   let docs = {};
   try { docs = require(docsFile); }
   catch (e) { console.log(`Creating a new data file for docs.`); }
