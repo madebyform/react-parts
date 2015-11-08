@@ -9,6 +9,7 @@ let keys = require("./keys.json");
 let cheerio = require("cheerio");
 let marky = require("marky-markdown");
 let throat = require('throat')(50); // 50 is the max number of parallel requests
+require('colors');
 
 /* Utility functions */
 
@@ -338,14 +339,12 @@ function fetch(componentsType, callback, options) {
     str = JSON.stringify(components, null, '  ');
     fs.writeFile(componentsFile, str);
 
-    callback();
+    callback(batchIndex);
   });
 }
 
 // If being executed from the command-line
 if (!module.parent) {
-  require('colors');
-
   // Pass the components list you which to update ("react-web" or "react-native")
   // and optionally an index to make a partial update to the data file.
   // Example usage: `npm run fetch react-web 2`
