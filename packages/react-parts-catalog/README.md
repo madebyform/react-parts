@@ -2,7 +2,7 @@
 
 ### Updating the catalog
 
-We have several scripts defined in the `catalog/package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
+We have several scripts defined in the `package.json` file that help us keep the catalog updated. Here are the main ones, usually ran in sequence:
 - `npm run pull` downloads new packages from NPM, stores them into `data/npm.json`, parses that and updates the `components/react-*.json` files;
 - `npm run update` goes through all components in the `components/react-*.json` files and gets updated metadata (stars, etc.) from NPM & GitHub and stores that into `data/react-*.json`;
 - `npm run publish` pushes the `data/react-*.json` files to the search server and pushes the updated `components/react-*.json` files to GitHub.
@@ -14,33 +14,18 @@ Some observations:
 
 To retrieve information from GitHub you will need to create a `keys.json` file (see `keys.json.example`). You can use your credentials but we recommend you generate a [Personal Access Token](https://github.com/settings/tokens) instead. Under "Select scopes", simply check "public_repo". You can then use that token as the value for the `username` key and leave `password` empty.
 
-### Deploying new features
+### Initial setup
 
-React.parts is a regular database-less Node.js app, so you can host it however you like. We use Dokku, so deploying new features is as easy as:
-
-```
-git push dokku master
-```
-
-For updating the catalog, we simply call `npm run publish` which, among other things, updates the search index.
-
-
-### Setting up a production environment
-
-As mentioned before we use Dokku, so to setup a similar environment you need to:
+The `publish` script commits the new `components/react-*.json` files to GitHub. You should setup the right `remote`:
 
 ```
-git remote add dokku dokku@react.parts:react-parts
-git push dokku master
-ssh -t react.parts 'dokku config:set react-parts NODE_ENV=production'
+git remote add github-bot git@github.com:madebyform/react-parts.git
 ```
 
-Since the `data/docs.json` file is not in our git repository, we need to use Dokku's persistence storage:
+If you don't want the commits to be created with your personal GitHub account, generate a [Personal Access Token](https://github.com/settings/tokens) with the `repo` scope and use it like this:
 
 ```
-mkdir -p /var/www/react-parts/catalog/data
-dokku docker-options:add react-parts deploy "-v /var/www/react-parts/catalog/data:/app/catalog/data"
-dokku docker-options:add react-parts run "-v /var/www/react-parts/catalog/data:/app/catalog/data"
+git remote add github-bot https://<your-username>:<your-token>@github.com/madebyform/react-parts.git
 ```
 
 ---

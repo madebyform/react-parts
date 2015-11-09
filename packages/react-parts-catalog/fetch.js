@@ -1,50 +1,17 @@
 /*jshint esnext:true, node:true, unused:true */
 'use strict';
 
-let fs = require('fs');
+let fs = require("fs");
+let path = require("path");
 let co = require("co");
 let request = require("co-request");
-let keys = require('./keys.json');
+let keys = require("./keys.json");
 let cheerio = require("cheerio");
 let marky = require("marky-markdown");
 let throat = require('throat')(50); // 50 is the max number of parallel requests
 require('colors');
 
-// Pass the components list you which to update ("react-web" or "react-native")
-// and optionally an index to make a partial update to the data file.
-// Example usage: `npm run fetch react-web 2`
-let componentsType = process.argv[2] || "react-native";
-let componentsFile = `./components/${ componentsType }.json`;
-let components = require(componentsFile);
-let batchSize = 50; // 50 is the size of the batch that will be updated
-
-// Load the data file with all the existing metadata
-let componentsDataFile = `./data/${ componentsType }.json`;
-let oldComponentsData = [];
-try { oldComponentsData = require(componentsDataFile); }
-catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
-
-// Load rejected components. Rejected components will be removed from the data files
-let rejectedComponents = toObject(require('./components/rejected.json'), {});
-
-// Load existing documentation
-let docsFile = "./data/docs.json";
-let docs = {};
-try { docs = require(docsFile); }
-catch (e) { console.log(`Creating a new data file for docs.`); }
-
 /* Utility functions */
-
-let errors = [];
-let warnings = [];
-
-function error(ref, msg) {
-  errors.push(`\`${ ref }\`: ${ msg }`);
-}
-
-function warn(ref, msg) {
-  warnings.push(`\`${ ref }\`: ${ msg }`);
-}
 
 function toObject(array, object) {
   array.forEach((element) => { object[element.name] = element; });
@@ -159,7 +126,7 @@ let Fetch = {
 /* Functions for keeping the `components/*` files updated */
 
 let Update = {
-  description(npm, component) {
+  description(npm, component, warn) {
     let newDescription = npm.description || "";
 
     if (typeof component.original_description !== "undefined") {
@@ -168,7 +135,7 @@ let Update = {
         warn(component.name, `Component with custom description has new description: '${ newDescription }'`);
       }
     } else if (component.description != newDescription) {
-      component.description = newDescription;
+      component.description = newDescription || component.description;
     }
   },
   repoWithNpm(npm, component) {
@@ -265,96 +232,145 @@ let Process = {
 
 /* Iterate through the batch and update metadata and readmes */
 
-let promises = [];
+function fetch(componentsType, callback, options) {
+  let componentsFile = path.resolve(__dirname, `./components/${ componentsType }.json`);
 
-sliceArray(components, process.argv[3], batchSize).forEach(function(component) {
-  promises.push(throat(function() {
-    return new Promise(function(resolve) {
-      co(function* () {
-        let npm = yield Fetch.npm(component);
-        Update.description(npm, component);
-        Update.repoWithNpm(npm, component);
+  // Load the data file with all the existing metadata
+  let componentsDataFile = path.resolve(__dirname, `./data/${ componentsType }.json`);
+  let oldComponentsData = [];
+  try { oldComponentsData = require(componentsDataFile); }
+  catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 
-        let github = yield Fetch.githubRepo(component);
-        Update.repoWithGithub(github, component);
+  // Load rejected components. Rejected components will be removed from the data files
+  let rejectedComponentsFile = path.resolve(__dirname, './components/rejected.json');
+  let rejectedComponents = toObject(require(rejectedComponentsFile), {});
 
-        let stat = yield Fetch.npmStat(component, npm.time.created);
+  // Load existing documentation
+  let docsFile = path.resolve(__dirname, "./data/docs.json");
+  let docs = {};
+  try { docs = require(docsFile); }
+  catch (e) { console.log(`Creating a new data file for docs.`); }
 
-        let data = {
-          name:        component.name,
-          githubUser:  component.repo.split("/")[0],
-          githubName:  component.repo.split("/")[1],
-          keywords:    (npm.versions[npm["dist-tags"].latest].keywords || []).join(", "),
-          modified:    npm.time.modified,
-          stars:       github.stargazers_count,
-          downloads:   (stat.downloads || [{ downloads: 0 }]).reduce((total, daily) => total + daily.downloads, 0),
-          latestVersion: npm["dist-tags"].latest
-        };
+  let promises = [];
 
-        // To save some bytes, if package name and repo name are equal, keep only one
-        if (data.name === data.githubName) delete data.githubName;
+  let components = options.components || require(componentsFile);
+  let error = options.error || console.error;
+  let warn = options.warn || console.warn;
+  let batchIndex = options.batchIndex; // If null, batch includes all components
+  let batchSize = options.batchSize || 50;
 
-        // Use a custom description if necessary and add trailing dot
-        data.description = Process.description(npm.description, component);
+  sliceArray(components, batchIndex, batchSize).forEach(function(component) {
+    promises.push(throat(function() {
+      return new Promise(function(resolve) {
+        co(function* () {
+          let npm = yield Fetch.npm(component);
+          Update.description(npm, component, warn);
+          Update.repoWithNpm(npm, component);
 
-        // If it's a react native component, check which platforms it has specific code for
-        if (componentsType == "react-native") {
-          let languages = yield Fetch.githubLanguages(component);
-          data.platforms = Process.platforms(languages, data.keywords);
-        }
+          let github = yield Fetch.githubRepo(component);
+          Update.repoWithGithub(github, component);
 
-        // Get the readme from GitHub. They are more frequently updated than `npm.readme`
-        // and we can grab them rendered, which minimizes the chance of displaying them
-        // differently than they appear on GitHub.
-        let readme = yield Fetch.githubReadme(component);
-        docs[component.name] = Process.readme(readme, component);
+          let stat = yield Fetch.npmStat(component, npm.time.created);
 
-        resolve(data);
-        process.stdout.write(".".green);
+          let data = {
+            name:        component.name,
+            githubUser:  component.repo.split("/")[0],
+            githubName:  component.repo.split("/")[1],
+            keywords:    (npm.versions[npm["dist-tags"].latest].keywords || []).join(", "),
+            modified:    npm.time.modified,
+            stars:       github.stargazers_count,
+            downloads:   (stat.downloads || [{ downloads: 0 }]).reduce((total, daily) => total + daily.downloads, 0),
+            latestVersion: npm["dist-tags"].latest
+          };
 
-      }).catch(function(e) {
-        resolve(null);
-        process.stdout.write("✕".red);
-        error(component.name, `Problems with data for component - ${ e }`);
+          // To save some bytes, if package name and repo name are equal, keep only one
+          if (data.name === data.githubName) delete data.githubName;
+
+          // Use a custom description if necessary and add trailing dot
+          data.description = Process.description(npm.description, component);
+
+          // If it's a react native component, check which platforms it has specific code for
+          if (componentsType == "react-native") {
+            let languages = yield Fetch.githubLanguages(component);
+            data.platforms = Process.platforms(languages, data.keywords);
+          }
+
+          // Get the readme from GitHub. They are more frequently updated than `npm.readme`
+          // and we can grab them rendered, which minimizes the chance of displaying them
+          // differently than they appear on GitHub.
+          let readme = yield Fetch.githubReadme(component);
+          docs[component.name] = Process.readme(readme, component);
+
+          resolve(data);
+          process.stdout.write(".".green);
+
+        }).catch(function(e) {
+          resolve(null);
+          process.stdout.write("✕".red);
+          error(component.name, `Problems with data for component - ${ e }`);
+        });
       });
+    }));
+  });
+
+  Promise.all(promises).then(function(newData) {
+    let allData = {}, newList = [];
+
+    // Merge old fetched data with the new one, since we may have
+    // done a partial fetch this time
+    oldComponentsData.concat(newData).forEach(function(c) {
+      if (c) allData[c.name] = c;
     });
-  }));
-});
 
-Promise.all(promises).then(function(newData) {
-  let allData = {}, newList = [];
+    // Convert back to an array and make sure we ignore rejects
+    Object.keys(allData).forEach(function(key) {
+      if (!rejectedComponents[key]) newList.push(allData[key]);
+    });
 
-  // Merge old fetched data with the new one, since we may have
-  // done a partial fetch this time
-  oldComponentsData.concat(newData).forEach(function(c) {
-    if (c) allData[c.name] = c;
+    // Persist the new metadata
+    let str = JSON.stringify(newList);
+    fs.writeFile(componentsDataFile, str);
+
+    // Persist the new docs
+    str = JSON.stringify(docs);
+    fs.writeFile(docsFile, str);
+
+    // Persist updates done to attributes of components file (repo, description)
+    str = JSON.stringify(components, null, '  ');
+    fs.writeFile(componentsFile, str);
+
+    callback(batchIndex);
   });
+}
 
-  // Convert back to an array and make sure we ignore rejects
-  Object.keys(allData).forEach(function(key) {
-    if (!rejectedComponents[key]) newList.push(allData[key]);
-  });
+// If being executed from the command-line
+if (!module.parent) {
+  // Pass the components list you which to update ("react-web" or "react-native")
+  // and optionally an index to make a partial update to the data file.
+  // Example usage: `npm run fetch react-web 2`
+  let type = process.argv[2] || "react-native";
+  let batchIndex = process.argv[3];
+  let batchSize = 50; // 50 is the size of the batch that will be updated
 
-  // Persist the new metadata
-  let str = JSON.stringify(newList);
-  fs.writeFile(componentsDataFile, str);
+  let errors = [];
+  let warnings = [];
+  let error = (ref, msg) => errors.push(`\`${ ref }\`: ${ msg }`);
+  let warn = (ref, msg) => warnings.push(`\`${ ref }\`: ${ msg }`);
 
-  // Persist the new docs
-  str = JSON.stringify(docs);
-  fs.writeFile(docsFile, str);
+  let options = { batchIndex, batchSize, error, warn };
 
-  // Persist updates done to attributes of components file (repo, description)
-  str = JSON.stringify(components, null, '  ');
-  fs.writeFile(componentsFile, str);
+  fetch(type, function() {
+    if (!errors.length) {
+      console.log("\nSuccess!".green);
+    } else {
+      console.log("\nErrors:".red);
+      errors.forEach((msg) => console.log(msg));
+    }
+    if (warnings.length) {
+      console.log("\nWarnings:".yellow);
+      warnings.forEach((msg) => console.log(msg));
+    }
+  }, options);
+}
 
-  if (!errors.length) {
-    console.log("\nSuccess!".green);
-  } else {
-    console.log("\nErrors:".red);
-    errors.forEach((msg) => console.log(msg));
-  }
-  if (warnings.length) {
-    console.log("\nWarnings:".yellow);
-    warnings.forEach((msg) => console.log(msg));
-  }
-});
+module.exports = fetch;
