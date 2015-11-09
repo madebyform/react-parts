@@ -62,9 +62,9 @@ let webComponentsFilename = path.resolve(__dirname, "./components/react-web.json
 let rejectedComponentsFilename = path.resolve(__dirname, "./components/rejected.json");
 
 // Load existing components
-let existingNativeComponents = require(nativeComponentsFilename);
-let existingWebComponents = require(webComponentsFilename);
-let rejectedComponents = require(rejectedComponentsFilename);
+let existingNativeComponents = JSON.parse(fs.readFileSync(nativeComponentsFilename));
+let existingWebComponents = JSON.parse(fs.readFileSync(webComponentsFilename));
+let rejectedComponents = JSON.parse(fs.readFileSync(rejectedComponentsFilename));
 
 function parse(data, callback, options) {
   // List of all existing components (native, web and rejected)

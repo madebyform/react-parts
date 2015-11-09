@@ -238,22 +238,22 @@ function fetch(componentsType, callback, options) {
   // Load the data file with all the existing metadata
   let componentsDataFile = path.resolve(__dirname, `./data/${ componentsType }.json`);
   let oldComponentsData = [];
-  try { oldComponentsData = require(componentsDataFile); }
+  try { oldComponentsData = JSON.parse(fs.readFileSync(componentsDataFile)); }
   catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 
   // Load rejected components. Rejected components will be removed from the data files
   let rejectedComponentsFile = path.resolve(__dirname, './components/rejected.json');
-  let rejectedComponents = toObject(require(rejectedComponentsFile), {});
+  let rejectedComponents = toObject(JSON.parse(fs.readFileSync(rejectedComponentsFile)), {});
 
   // Load existing documentation
   let docsFile = path.resolve(__dirname, "./data/docs.json");
   let docs = {};
-  try { docs = require(docsFile); }
+  try { docs = JSON.parse(fs.readFileSync(docsFile)); }
   catch (e) { console.log(`Creating a new data file for docs.`); }
 
   let promises = [];
 
-  let components = options.components || require(componentsFile);
+  let components = options.components || JSON.parse(fs.readFileSync(componentsFile));
   let error = options.error || console.error;
   let warn = options.warn || console.warn;
   let batchIndex = options.batchIndex; // If null, batch includes all components

@@ -2,6 +2,7 @@
 'use strict';
 
 let ent = require('ent');
+let fs = require('fs');
 let path = require('path');
 let algoliasearch = require('algoliasearch');
 let keys = require("./keys.json");
@@ -108,7 +109,7 @@ function pushDataToAlgolia(env, sources) {
 
   let allRecords = [];
   sources.forEach(function(source) {
-    let records = require(source.file);
+    let records = JSON.parse(fs.readFileSync(source.file));
     let type = source.type;
     allRecords = allRecords.concat(formatRecordsForSearch(records, type));
   });
