@@ -5,7 +5,7 @@
 React.parts is a regular database-less Node.js app, so you can host it however you like. We use Dokku, so deploying new features is as easy as:
 
 ```
-git push dokku master
+git subtree push --prefix packages/react-parts-web dokku master
 ```
 
 For updating the catalog, we simply call `npm run publish` which, among other things, updates the search index.
