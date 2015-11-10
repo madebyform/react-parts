@@ -253,7 +253,7 @@
   },
   {
     "name": "react-native-realtimestorage-ios",
-    "repo": "realtime-framework/RCTRealtimeCloudStorageIOS",
+    "repo": "realtime-framework/RCTRealtimeCloudStorage",
     "orignal_repo": "realtime-framework/RCTRealtimeCloudStorage",
     "description": "The Realtime Framework Cloud Storage client for React-Native"
   },
@@ -1898,7 +1898,7 @@
   {
     "name": "react-native-sqlite-storage",
     "repo": "andpor/react-native-sqlite-storage",
-    "description": "SQLite bindings for React Native"
+    "description": "SQLite3 bindings for React Native (++Promise)"
   },
   {
     "name": "react-native-triangle",
@@ -2034,5 +2034,40 @@
     "name": "react-native-sudoku-grid",
     "repo": "ZackLeonardo/react-native-sudokuGrid",
     "description": "grid of sudoku style(or box style) for react native"
+  },
+  {
+    "name": "react-native-item-checkbox",
+    "repo": "mhollweck/react-native-item-checkbox",
+    "description": "create a custom checkbox with an icon inside"
+  },
+  {
+    "name": "react-native-facebook-messenger",
+    "repo": "1985media/react-native-facebook-messenger",
+    "description": "A React Native Module and UI Component used to integrate Facebook Messenger functionality into a React Native application."
+  },
+  {
+    "name": "react-native-instagram-share",
+    "repo": "watzak/react-native-instagram-share",
+    "description": "A react-native interface to share images and videos within instagram (iOS)"
+  },
+  {
+    "name": "react-native-material-design-styles",
+    "repo": "binggg/react-native-material-design-styles",
+    "description": "Material Design styles for React Native"
+  },
+  {
+    "name": "react-native-snap-slider",
+    "repo": "franfran/react-native-snap-slider",
+    "description": "Provide snap control for SliderIOS"
+  },
+  {
+    "name": "rn-geolocation",
+    "repo": "Tiagojdferreira/rn-geolocation",
+    "description": "Geolocation for react native android"
+  },
+  {
+    "name": "scene-router",
+    "repo": "pressly/scene-router",
+    "description": "A complete scene routing library for react native"
   }
 ]

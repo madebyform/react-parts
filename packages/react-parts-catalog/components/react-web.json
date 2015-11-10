@@ -7814,8 +7814,7 @@
   {
     "name": "uxcore-button",
     "repo": "uxcore/uxcore-button",
-    "description": "uxcore-button ui component for react",
-    "original_repo": "uxcore/button"
+    "description": "uxcore-button ui component for react"
   },
   {
     "name": "uxcore-dialog",
@@ -8261,11 +8260,6 @@
     "name": "react-classy",
     "repo": "inturn/classy",
     "description": "A composable, extensible, and simple solution for styling React components."
-  },
-  {
-    "name": "react-coffee-timer",
-    "repo": "coffee-timers/react-coffee-timer",
-    "description": "Coffee timer component for React"
   },
   {
     "name": "react-colgroup",
@@ -10074,7 +10068,6 @@
   {
     "name": "redux-rx",
     "repo": "acdlite/redux-rx",
-    "original_repo": "",
     "description": "RxJS utilities for Redux"
   },
   {
@@ -11167,7 +11160,7 @@
     "name": "react-html5video",
     "repo": "mderrick/react-html5video",
     "original_repo": "",
-    "description": "A customizeable HTML5 Video that uses the familiar HTML5 video markup but with custom and configurable controls."
+    "description": "A customizeable HTML5 Video that uses the familiar HTML5 video markup but with custom and configurable controls with i18n and a11y."
   },
   {
     "name": "react-map-gl",
@@ -11964,8 +11957,7 @@
   {
     "name": "react-the-final-countdown",
     "repo": "fcscripters/react-final-countdown",
-    "description": "sets a countdown timer that triggers a user-defined function",
-    "original_repo": ""
+    "description": "sets a countdown timer that triggers a user-defined function"
   },
   {
     "name": "redux-devtools-bubbles-monitor",
@@ -11975,7 +11967,7 @@
   {
     "name": "redux-simple-router",
     "repo": "jlongster/redux-simple-router",
-    "description": "Ruthlessly simple bindings to keep react-router and redux in sync"
+    "description": "Ruthlessly simple bindings to keep react-router and redux in syncy"
   },
   {
     "name": "timeout-transition-group",
@@ -12011,5 +12003,186 @@
     "name": "react-json-schema",
     "repo": "TechniqueSoftware/react-json-schema",
     "description": "Write component schema in JSON; parse to create react elements."
+  },
+  {
+    "name": "bacon.react",
+    "repo": "polytypic/bacon.react",
+    "description": "Embed Bacon streams into React Virtual DOM"
+  },
+  {
+    "name": "chai-equal-jsx",
+    "repo": "echenley/chai-equal-jsx",
+    "description": "JSX assertions for Chai"
+  },
+  {
+    "name": "chai-have-react-component",
+    "repo": "relekang/chai-have-react-component",
+    "description": "expect(element).to.have.component(Blink)"
+  },
+  {
+    "name": "cjsx-loader",
+    "repo": "KyleAMathews/cjsx-loader",
+    "description": "coffee-react-transform loader module for webpack"
+  },
+  {
+    "name": "condux",
+    "repo": "epferrari/condux",
+    "description": "An over-the-wire unidirectional data-flow architecture utilizing Reflux as the flux pattern implementation and SockJS as the websocket implementation."
+  },
+  {
+    "name": "condux-client",
+    "repo": "epferrari/condux-client",
+    "description": "Client half of `condux`, an over-the-wire unidirectional data-flow architecture utilizing Reflux as the flux pattern implementation and SockJS as the websocket implementation."
+  },
+  {
+    "name": "dragonfruit",
+    "repo": "reubn/dragonfruit",
+    "description": "Webpack ClassName Exports"
+  },
+  {
+    "name": "eslint-config-awake",
+    "repo": "awakenetworks/eslint-config-awake",
+    "description": "An opinionated ESLint config for ES2015 and React"
+  },
+  {
+    "name": "generator-rails-react-webpack",
+    "repo": "hung-phan/generator-rails-react-webpack",
+    "description": "Yeoman generator"
+  },
+  {
+    "name": "jsx-chai",
+    "repo": "bkonkle/jsx-chai",
+    "description": "JSX assertions for Chai using Algolia's react-element-to-jsx-string"
+  },
+  {
+    "name": "material-flux",
+    "repo": "azu/material-flux",
+    "description": "No magical flux implementation."
+  },
+  {
+    "name": "preact-compat",
+    "repo": "developit/preact-compat",
+    "description": "A React compatibility layer for Preact"
+  },
+  {
+    "name": "react-autocompleter",
+    "repo": "invertase/react-autocompleter",
+    "description": "A simple, configurable, styleable ReactJS component which completes your phrase with keyboard navigation support."
+  },
+  {
+    "name": "react-combinators",
+    "repo": "milankinen/megablob",
+    "description": "Seamless combination of React and reactive programming"
+  },
+  {
+    "name": "react-d3-map-choropleth",
+    "repo": "react-d3/react-d3-map-choropleth",
+    "description": "react-d3 map choropleth component",
+    "original_repo": ""
+  },
+  {
+    "name": "react-d3-map-core",
+    "repo": "react-d3/react-d3-map-core",
+    "description": "react-d3 map core component",
+    "original_repo": ""
+  },
+  {
+    "name": "react-daterangepicker",
+    "repo": "youngerheart/react-daterangepicker",
+    "description": "a simple react-daterangepicker base on date-range-picker"
+  },
+  {
+    "name": "react-datetime-customized",
+    "repo": "arqex/react-datetime",
+    "description": "A lightweight but complete datetime picker React.js component."
+  },
+  {
+    "name": "react-influx",
+    "repo": "bluejamesbond/Influx.js",
+    "description": "ES6 React 0.14 Component, Dispatcher, Store communication"
+  },
+  {
+    "name": "react-listento",
+    "repo": "tgohn/react-listenTo",
+    "description": " mixin for React.js that provide easy event binding"
+  },
+  {
+    "name": "react-log-lifecycle",
+    "repo": "guyellis/react-log-lifecycle",
+    "description": "Logs Lifecycle methods of a React component to assist learning and debugging"
+  },
+  {
+    "name": "react-magnifying-glass",
+    "repo": "kat4/react-magnifier",
+    "description": "React Magnifier is a versatile react component which allows the user to create a zoom pane for an image that they input.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-map-gl-heatmap-overlay",
+    "repo": "vicapow/react-map-gl-heatmap-overlay",
+    "description": "A heatmap overlay for react-map-gl built using webgl-heatmap.",
+    "original_repo": "",
+    "original_description": "A heatmap overlay for [react-map-gl](https://github.com/uber/react-map-gl) built using [webgl-heatmap](https://github.com/vicapow/webgl-heatmap)."
+  },
+  {
+    "name": "react-render-service",
+    "repo": "mic159/react-render",
+    "description": "HTTP microservice for rendering React to HTML on the server side"
+  },
+  {
+    "name": "react-router-form",
+    "repo": "insin/react-router-form",
+    "description": "<Form> is to <form> as <Link> is to <a>"
+  },
+  {
+    "name": "react-semantic-syntax",
+    "repo": "javascriptismagic/react-semantic-syntax",
+    "description": "Semantic Syntax for className in React for easily working with CSS Frameworks such as Semantic-UI, Bootstrap, and others."
+  },
+  {
+    "name": "react-smallgrid",
+    "repo": "Tjorriemorrie/react-smallgrid",
+    "description": "A datatable for react (bootstrap themed)"
+  },
+  {
+    "name": "react-tether",
+    "repo": "souporserious/react-tether",
+    "description": "Drop content anywhere on the page."
+  },
+  {
+    "name": "react-transform-bem",
+    "repo": "jedmao/react-transform-bem",
+    "description": "Constructs BEM classes from block, element and modifiers attributes."
+  },
+  {
+    "name": "react-waterfall",
+    "repo": "bluejamesbond/Waterfall.js",
+    "description": "Small React-based waterfall charting library with support for drilldowns"
+  },
+  {
+    "name": "react-yarg",
+    "repo": "BobNisco/react-yarg",
+    "description": "Yet Another Responsive Grid. But this ain't your grandparent's grid.",
+    "original_repo": ""
+  },
+  {
+    "name": "recompose-relay",
+    "repo": "acdlite/recompose",
+    "description": "Recompose helpers for Relay."
+  },
+  {
+    "name": "redux-form-generator",
+    "repo": "lemonCMS/redux-form-generator",
+    "description": "Generate forms with redux-form"
+  },
+  {
+    "name": "uxcore-multi-select",
+    "repo": "uxcore/uxcore-multi-select",
+    "description": "uxcore-multi-select component for uxcore."
+  },
+  {
+    "name": "uxcore-totop",
+    "repo": "uxcore/uxcore-totop",
+    "description": "uxcore-totop component for uxcore."
   }
 ]
