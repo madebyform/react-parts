@@ -240,25 +240,20 @@ function fetch(componentsType, callback, options) {
   let batchIndex = options.batchIndex; // If null, batch includes all components
   let batchSize = options.batchSize || 50;
 
-  let componentsFile = path.resolve(__dirname, `./components/${ componentsType }.json`);
-  let componentsDataFile = path.resolve(__dirname, `./data/${ componentsType }.json`);
-  let rejectedComponentsFile = path.resolve(__dirname, './components/rejected.json');
-  let docsFile = path.resolve(__dirname, "./data/docs.json");
-
   // Load the data file with all the existing metadata
   let oldComponentsData = [];
-  try { oldComponentsData = options.data || JSON.parse(fs.readFileSync(componentsDataFile)); }
+  try { oldComponentsData = options.data || JSON.parse(fs.readFileSync(options.dataFile)); }
   catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
 
   // Load rejected components. Rejected components will be removed from the data files
-  let rejectedComponents = toObject(options.rejected || JSON.parse(fs.readFileSync(rejectedComponentsFile)), {});
+  let rejectedComponents = toObject(options.rejected || JSON.parse(fs.readFileSync(options.rejectedFile)), {});
 
   // Load existing documentation
   let docs = {};
-  try { docs = options.docs || JSON.parse(fs.readFileSync(docsFile)); }
+  try { docs = options.docs || JSON.parse(fs.readFileSync(options.docsFile)); }
   catch (e) { console.log(`Creating a new data file for docs.`); }
 
-  let components = options.components || JSON.parse(fs.readFileSync(componentsFile));
+  let components = options.components || JSON.parse(fs.readFileSync(options.componentsFile));
 
   let promises = [];
 
@@ -330,19 +325,7 @@ function fetch(componentsType, callback, options) {
       if (!rejectedComponents[key]) newList.push(allData[key]);
     });
 
-    // Persist the new metadata
-    let str = JSON.stringify(newList);
-    fs.writeFile(componentsDataFile, str);
-
-    // Persist the new docs
-    str = JSON.stringify(docs);
-    fs.writeFile(docsFile, str);
-
-    // Persist updates done to attributes of components file (repo, description)
-    str = JSON.stringify(components, null, '  ');
-    fs.writeFile(componentsFile, str);
-
-    callback(batchIndex);
+    callback(batchIndex, components, newList, docs);
   });
 }
 
@@ -360,9 +343,27 @@ if (!module.parent) {
   let error = (ref, msg) => errors.push(`\`${ ref }\`: ${ msg }`);
   let warn = (ref, msg) => warnings.push(`\`${ ref }\`: ${ msg }`);
 
-  let options = { batchIndex, batchSize, error, warn };
+  let rejectedFile = path.resolve(__dirname, './components/rejected.json');
+  let componentsFile = path.resolve(__dirname, `./components/${ type }.json`);
+  let dataFile = path.resolve(__dirname, `./data/${ type }.json`);
+  let docsFile = path.resolve(__dirname, "./data/docs.json");
 
-  fetch(type, function() {
+  let options = { batchIndex, batchSize, error, warn,
+    componentsFile, rejectedFile, dataFile, docsFile };
+
+  fetch(type, function(batchIndex, components, data, docs) {
+    // Persist the new metadata
+    let str = JSON.stringify(data);
+    fs.writeFile(dataFile, str);
+
+    // Persist the new docs
+    str = JSON.stringify(docs);
+    fs.writeFile(docsFile, str);
+
+    // Persist updates done to attributes of components file (repo, description)
+    str = JSON.stringify(components, null, '  ');
+    fs.writeFile(componentsFile, str);
+
     if (!errors.length) {
       console.log("\nSuccess!".green);
     } else {
