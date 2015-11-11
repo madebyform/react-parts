@@ -233,31 +233,34 @@ let Process = {
 /* Iterate through the batch and update metadata and readmes */
 
 function fetch(componentsType, callback, options) {
-  let componentsFile = path.resolve(__dirname, `./components/${ componentsType }.json`);
+  options = options || {};
 
-  // Load the data file with all the existing metadata
-  let componentsDataFile = path.resolve(__dirname, `./data/${ componentsType }.json`);
-  let oldComponentsData = [];
-  try { oldComponentsData = JSON.parse(fs.readFileSync(componentsDataFile)); }
-  catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
-
-  // Load rejected components. Rejected components will be removed from the data files
-  let rejectedComponentsFile = path.resolve(__dirname, './components/rejected.json');
-  let rejectedComponents = toObject(JSON.parse(fs.readFileSync(rejectedComponentsFile)), {});
-
-  // Load existing documentation
-  let docsFile = path.resolve(__dirname, "./data/docs.json");
-  let docs = {};
-  try { docs = JSON.parse(fs.readFileSync(docsFile)); }
-  catch (e) { console.log(`Creating a new data file for docs.`); }
-
-  let promises = [];
-
-  let components = options.components || JSON.parse(fs.readFileSync(componentsFile));
   let error = options.error || console.error;
   let warn = options.warn || console.warn;
   let batchIndex = options.batchIndex; // If null, batch includes all components
   let batchSize = options.batchSize || 50;
+
+  let componentsFile = path.resolve(__dirname, `./components/${ componentsType }.json`);
+  let componentsDataFile = path.resolve(__dirname, `./data/${ componentsType }.json`);
+  let rejectedComponentsFile = path.resolve(__dirname, './components/rejected.json');
+  let docsFile = path.resolve(__dirname, "./data/docs.json");
+
+  // Load the data file with all the existing metadata
+  let oldComponentsData = [];
+  try { oldComponentsData = options.data || JSON.parse(fs.readFileSync(componentsDataFile)); }
+  catch (e) { console.log(`Creating a new data file for ${ componentsType }.`); }
+
+  // Load rejected components. Rejected components will be removed from the data files
+  let rejectedComponents = toObject(options.rejected || JSON.parse(fs.readFileSync(rejectedComponentsFile)), {});
+
+  // Load existing documentation
+  let docs = {};
+  try { docs = options.docs || JSON.parse(fs.readFileSync(docsFile)); }
+  catch (e) { console.log(`Creating a new data file for docs.`); }
+
+  let components = options.components || JSON.parse(fs.readFileSync(componentsFile));
+
+  let promises = [];
 
   sliceArray(components, batchIndex, batchSize).forEach(function(component) {
     promises.push(throat(function() {
