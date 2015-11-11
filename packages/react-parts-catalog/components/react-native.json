@@ -47,7 +47,7 @@
   {
     "name": "react-native-icons",
     "repo": "corymsmith/react-native-icons",
-    "description": "Use 1000's of icon fonts in your React Native app including the tab bar."
+    "description": "Use 1000's of icon fonts easily in your React Native apps."
   },
   {
     "name": "react-native-linear-gradient",
@@ -2007,7 +2007,7 @@
   },
   {
     "name": "react-native-keyboard-toolbar",
-    "repo": "DickyT/react-native-keyboard-toolbar",
+    "repo": "DickyT/react-native-textinput-utils",
     "description": "A react native extendsion which allows you to add UIBarButtonItems to the keyboard of TextInput."
   },
   {
@@ -2069,5 +2069,20 @@
     "name": "scene-router",
     "repo": "pressly/scene-router",
     "description": "A complete scene routing library for react native"
+  },
+  {
+    "name": "react-native-metro-grid",
+    "repo": "ZackLeonardo/react-native-metro-grid",
+    "description": "sample metroUI for react-native."
+  },
+  {
+    "name": "react-native-mongoose",
+    "repo": "remobile/react-native-mongoose",
+    "description": "A AsyncStorage based mongoose like storage for react-native"
+  },
+  {
+    "name": "react-native-textinput-utils",
+    "repo": "DickyT/react-native-textinput-utils",
+    "description": "A react native extension which allows you to control TextInput better."
   }
 ]

@@ -526,5 +526,25 @@
   {
     "name": "spincycle",
     "repo": "psvensson/spincycle"
+  },
+  {
+    "name": "cyclejs",
+    "repo": "cyclejs/cycle-core"
+  },
+  {
+    "name": "fairmont-filesystem",
+    "repo": "dyoder/fairmont"
+  },
+  {
+    "name": "immutable-backbone",
+    "repo": "timecounts/immutable-backbone"
+  },
+  {
+    "name": "panda-9000",
+    "repo": "dyoder/panda-9000"
+  },
+  {
+    "name": "riot",
+    "repo": "riot/riot"
   }
 ]

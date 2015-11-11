@@ -1321,7 +1321,7 @@
   {
     "name": "react-auto-form",
     "repo": "insin/react-auto-form",
-    "description": "A React component which simplifies getting user input from forms via nChange and onSubmit"
+    "description": "Simplifies getting user input from basic forms via onChange and onSubmit events"
   },
   {
     "name": "react-auto-kana",
@@ -3155,7 +3155,7 @@
   },
   {
     "name": "react-collapsible-mixin",
-    "repo": "die-hards/react-collapsible-mixin",
+    "repo": "hongymagic/react-collapsible-mixin",
     "original_repo": "hongymagic/react-collapsible-mixin",
     "description": "React component mixin to enable Bootstrap style collapse elements"
   },
@@ -12184,5 +12184,56 @@
     "name": "uxcore-totop",
     "repo": "uxcore/uxcore-totop",
     "description": "uxcore-totop component for uxcore."
+  },
+  {
+    "name": "attributes-kit",
+    "repo": "apiaryio/attributes-kit",
+    "description": "React component for MSON rendering"
+  },
+  {
+    "name": "chai-react-assertions",
+    "repo": "momentumft/chai-react-assertions",
+    "description": "React assertion helpers for Chai"
+  },
+  {
+    "name": "d3-react-squared-c3-loader",
+    "repo": "bgrsquared/d3-react-squared-c3-loader",
+    "description": "Load c3 charts in d3-react-squared"
+  },
+  {
+    "name": "generator-react-redux-modules",
+    "repo": "jermspeaks/generator-react-redux",
+    "description": "React with Redux code generator using Yeoman"
+  },
+  {
+    "name": "hapi-react-handler",
+    "repo": "tanepiper/hapi-react-handler",
+    "description": "A handler for hapi routes that renders via react-router"
+  },
+  {
+    "name": "isomorphic-relay",
+    "repo": "denvned/isomorphic-relay",
+    "description": "Adds server side rendering support to React Relay"
+  },
+  {
+    "name": "macropod-tools",
+    "repo": "macropodhq/macropod-tools",
+    "description": "Development server and build tools for webpack and React, used by Macropod's products."
+  },
+  {
+    "name": "react-d3-map-bubble",
+    "repo": "react-d3/react-d3-map-bubble",
+    "description": "react-d3 map bubble component",
+    "original_repo": ""
+  },
+  {
+    "name": "rx-react",
+    "repo": "fdecampredon/rx-react",
+    "description": "ReactJS bindings for RxJS"
+  },
+  {
+    "name": "rx-recompose",
+    "repo": "acdlite/recompose",
+    "description": "RxJS utilities for React and Recompose."
   }
 ]
