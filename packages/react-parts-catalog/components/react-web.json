@@ -12235,5 +12235,145 @@
     "name": "rx-recompose",
     "repo": "acdlite/recompose",
     "description": "RxJS utilities for React and Recompose."
+  },
+  {
+    "name": "apeman-react-spinner",
+    "repo": "apeman-react-labo/apeman-react-spinner",
+    "description": "apeman react package for spinner."
+  },
+  {
+    "name": "autheus",
+    "repo": "ssilab/autheus",
+    "description": "A generic user auth/session module for front-end web apps."
+  },
+  {
+    "name": "babel-plugin-react-bemed",
+    "repo": "smacker/babel-plugin-react-bemed",
+    "description": "Bemed react jsx plugin for Babel"
+  },
+  {
+    "name": "babel-plugin-remove-proptypes",
+    "repo": "andrewimm/babel-plugin-remove-proptypes",
+    "description": "Remove static declarations of React propTypes"
+  },
+  {
+    "name": "babel-plugin-transform-react-constant-elements",
+    "repo": "babel/babel",
+    "description": "Treat React JSX elements as value types and hoist them to the highest scope",
+    "original_repo": "babel/babel/tree/master/packages/babel-plugin-transform-react-constant-elements"
+  },
+  {
+    "name": "babel-plugin-transform-react-jsx-compat",
+    "repo": "babel/babel",
+    "description": "Turn JSX into React Pre-0.12 function calls",
+    "original_repo": "babel/babel/tree/master/packages/babel-plugin-transform-react-jsx-compat"
+  },
+  {
+    "name": "babel-plugin-transform-react-jsx-source",
+    "repo": "babel/babel",
+    "description": "Add a __source prop to all JSX Elements",
+    "original_repo": "babel/babel/tree/master/packages/babel-plugin-transform-react-jsx-source"
+  },
+  {
+    "name": "eslint-config-react",
+    "repo": "patrio/eslint-config-react",
+    "description": "A set of opinionated ESLint rules (all rules included) tailored for React projects"
+  },
+  {
+    "name": "eslint-config-strict-react",
+    "repo": "keithamus/eslint-config-strict",
+    "description": "eslint-config-strict for React"
+  },
+  {
+    "name": "flint-stilr",
+    "repo": "kodyl/stilr",
+    "description": "Encapsulated styling for your javascript components with all the power of javascript and CSS combined. Usefull with React",
+    "original_repo": "chriskjaer/stilr"
+  },
+  {
+    "name": "isomorphic-relay-router",
+    "repo": "denvned/isomorphic-relay-router",
+    "description": "Adds server side rendering support to react-router-relay"
+  },
+  {
+    "name": "react-asyncbutton",
+    "repo": "revolunet/react-asyncbutton",
+    "description": "async button to call urls with visual feedback"
+  },
+  {
+    "name": "react-bacon-component",
+    "repo": "aparticka/react-bacon-component",
+    "description": "Utility for attaching Bacon.js to React components"
+  },
+  {
+    "name": "react-bootstrap-switch",
+    "repo": "Julusian/react-bootstrap-switch",
+    "description": "Turn checkboxes and radio buttons into toggle switches."
+  },
+  {
+    "name": "react-chatview",
+    "repo": "dustingetz/react-chatview",
+    "description": "Infinite scroll chat or feed component for React.js"
+  },
+  {
+    "name": "react-data-viewer",
+    "repo": "jalba/react-data-viewer",
+    "description": "A small React component to visualise JSON, plain JavaScript objectsor arrays"
+  },
+  {
+    "name": "react-for-atom",
+    "repo": "jgebhardt/react-for-atom",
+    "description": "Require this to get a single instance of React in Atom. Addons are lazily loaded."
+  },
+  {
+    "name": "react-infscroll",
+    "repo": "alexcurtis/react-infscroll",
+    "description": "React Infinite Scrolling Component"
+  },
+  {
+    "name": "react-inline-grid-transform-boilerplate",
+    "repo": "broucz/react-inline-grid",
+    "description": "Workspace for react-inline-gridA using https://github.com/gaearon/react-transform-boilerplate."
+  },
+  {
+    "name": "react-marvel",
+    "repo": "OmerHerera/react-marvel",
+    "description": "start using react, reacting :-) and MARVEL open API"
+  },
+  {
+    "name": "react-notify",
+    "repo": "k4wo/react-notify",
+    "description": "Tiny React's module that shows notifications.",
+    "original_repo": "k4wo/ReactNotify"
+  },
+  {
+    "name": "react-page-slider",
+    "repo": "chunkiat82/react-page-slider",
+    "description": "To insert an overlay in a page for a customized experience"
+  },
+  {
+    "name": "react-render",
+    "repo": "markfinger/react-render",
+    "description": "React rendering wrapper"
+  },
+  {
+    "name": "react-smoothie",
+    "repo": "cinderblock/react-smoothie",
+    "description": "React wrapper for SmoothieChart"
+  },
+  {
+    "name": "react-webpack-starter-kit",
+    "repo": "cht8687/react-webpack-starter-kit",
+    "description": "react webpack starter kit"
+  },
+  {
+    "name": "react-x11",
+    "repo": "sidorares/react-x11",
+    "description": "react renderer with X11 as a target"
+  },
+  {
+    "name": "teact",
+    "repo": "hurrymaplelad/teact",
+    "description": "Generate React elements with CoffeeScript functions"
   }
 ]

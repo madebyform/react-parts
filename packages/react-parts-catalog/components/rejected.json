@@ -546,5 +546,9 @@
   {
     "name": "riot",
     "repo": "riot/riot"
+  },
+  {
+    "name": "admin-config",
+    "repo": "marmelab/admin-config"
   }
 ]

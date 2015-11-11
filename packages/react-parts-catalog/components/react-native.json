@@ -2006,11 +2006,6 @@
     "description": "This is simple module for React Native for Android Text to Speech Engine"
   },
   {
-    "name": "react-native-keyboard-toolbar",
-    "repo": "DickyT/react-native-textinput-utils",
-    "description": "A react native extendsion which allows you to add UIBarButtonItems to the keyboard of TextInput."
-  },
-  {
     "name": "react-native-lock-ios",
     "repo": "auth0/react-native-lock-ios",
     "description": "Auth0 Lock for React Native (iOS)"
@@ -2084,5 +2079,30 @@
     "name": "react-native-textinput-utils",
     "repo": "DickyT/react-native-textinput-utils",
     "description": "A react native extension which allows you to control TextInput better."
+  },
+  {
+    "name": "react-native-action-sheet",
+    "repo": "remobile/react-native-action-sheet",
+    "description": "A pure js ActionSheet like ios ActionSheet, support ios and android"
+  },
+  {
+    "name": "react-native-android-location",
+    "repo": "syarul/react-native-android-location",
+    "description": "A React Native location acquisition through network or GPS without using Google Play Service"
+  },
+  {
+    "name": "react-native-geolocation-android",
+    "repo": "lxsameer/react-native-geolocation-android",
+    "description": "Geolocation module for react native android"
+  },
+  {
+    "name": "react-native-layout",
+    "repo": "jerolimov/react-native-layout",
+    "description": "Semantic JSX layout components for react-native"
+  },
+  {
+    "name": "react-native-mixpanel",
+    "repo": "davodesign84/react-native-mixpanel",
+    "description": "A React Native wrapper for Mixpanel tracking"
   }
 ]
