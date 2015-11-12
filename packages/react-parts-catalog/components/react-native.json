@@ -2104,5 +2104,10 @@
     "name": "react-native-mixpanel",
     "repo": "davodesign84/react-native-mixpanel",
     "description": "A React Native wrapper for Mixpanel tracking"
+  },
+  {
+    "name": "react-native-refresh-control",
+    "repo": "DickyT/RCTRefreshControl",
+    "description": "A pull down to refresh control for react native."
   }
 ]

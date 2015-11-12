@@ -432,7 +432,7 @@
   {
     "name": "react-day-picker",
     "repo": "gpbl/react-day-picker",
-    "description": "Customizable date picker and calendar component for React.js"
+    "description": "Flexible date picker component for React"
   },
   {
     "name": "react-disqus-thread",
@@ -3161,8 +3161,9 @@
   },
   {
     "name": "react-combo",
-    "repo": "radubrehar/react-combo",
-    "description": "React Combo"
+    "repo": "zippyui/react-combo",
+    "description": "React Combo",
+    "original_repo": "radubrehar/react-combo"
   },
   {
     "name": "react-component",
@@ -3237,8 +3238,9 @@
   },
   {
     "name": "react-date-field",
-    "repo": "radubrehar/react-date-field",
-    "description": "React DateField"
+    "repo": "zippyui/react-date-field",
+    "description": "React DateField",
+    "original_repo": "radubrehar/react-date-field"
   },
   {
     "name": "react-debug",
@@ -11783,7 +11785,6 @@
   {
     "name": "react-big-calendar",
     "repo": "jquense/react-big-calendar",
-    "original_repo": "jaquense/react-big-calendar",
     "description": "Calendar! with events"
   },
   {
@@ -11809,9 +11810,9 @@
   },
   {
     "name": "react-gateway",
-    "original_repo": "",
+    "original_repo": "thejameskyle/react-gateway",
     "description": "Render React DOM into a new context on document.body",
-    "repo": "thejameskyle/react-gateway"
+    "repo": "cloudflare/react-gateway"
   },
   {
     "name": "react-infinity-menu",
@@ -11826,9 +11827,9 @@
   },
   {
     "name": "react-modal2",
-    "original_repo": "",
+    "original_repo": "thejameskyle/react-modal2",
     "description": "Stateless modal component for React.",
-    "repo": "thejameskyle/react-modal2"
+    "repo": "cloudflare/react-modal2"
   },
   {
     "name": "react-plupload",
@@ -12090,11 +12091,6 @@
     "name": "react-daterangepicker",
     "repo": "youngerheart/react-daterangepicker",
     "description": "a simple react-daterangepicker base on date-range-picker"
-  },
-  {
-    "name": "react-datetime-customized",
-    "repo": "arqex/react-datetime",
-    "description": "A lightweight but complete datetime picker React.js component."
   },
   {
     "name": "react-influx",
@@ -12375,5 +12371,65 @@
     "name": "teact",
     "repo": "hurrymaplelad/teact",
     "description": "Generate React elements with CoffeeScript functions"
+  },
+  {
+    "name": "ducts",
+    "repo": "steadicat/ducts",
+    "description": "A Flux implementation that's even more minimal than Redux."
+  },
+  {
+    "name": "flux-constant",
+    "repo": "jedireza/flux-constant",
+    "description": "Unique constants for Flux apps."
+  },
+  {
+    "name": "flux-dispatcher",
+    "repo": "jedireza/flux-dispatcher",
+    "description": "A Flux dispatcher ready for action."
+  },
+  {
+    "name": "flux-store",
+    "repo": "jedireza/flux-store",
+    "description": "A simple store for Flux."
+  },
+  {
+    "name": "rb-controllerview",
+    "repo": "chrisjhoughton/react-backbone-controllerview",
+    "description": "A simple mixin to bind Backbone models and collections to React components."
+  },
+  {
+    "name": "react-inline",
+    "repo": "martinandert/react-inline",
+    "description": "Transform inline styles defined in JavaScript modules into static CSS code and class names so they become available to, e.g. the `className` prop of React elements."
+  },
+  {
+    "name": "redux-easy-app",
+    "repo": "poetcyborg/redux-easy-app",
+    "description": "Wrapper library for a Redux Isomorphic App with Router"
+  },
+  {
+    "name": "redux-react-fetch",
+    "repo": "Legitcode/redux-react-fetch",
+    "description": "merge in styling with ajax requests in redux"
+  },
+  {
+    "name": "simple-markdown",
+    "repo": "Khan/simple-markdown",
+    "description": "Javascript markdown parsing, made simple"
+  },
+  {
+    "name": "unexpected-htmllike-jsx-adapter",
+    "repo": "bruderstein/unexpected-htmllike-jsx-adapter",
+    "description": "Adapter for unexpected-htmllike for ReactElements, e.g. JSX and the shallow renderer"
+  },
+  {
+    "name": "welp",
+    "repo": "rtorr/welp",
+    "description": "A small base component and base store for immutable flux"
+  },
+  {
+    "name": "zlux",
+    "repo": "jzlxiaohei/zlux",
+    "description": "simple alternative for redux with OOP pattern"
   }
 ]

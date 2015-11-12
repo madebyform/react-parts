@@ -550,5 +550,13 @@
   {
     "name": "admin-config",
     "repo": "marmelab/admin-config"
+  },
+  {
+    "name": "ng-syncano",
+    "repo": "Syncano/ng-syncano"
+  },
+  {
+    "name": "react-datetime-customized",
+    "repo": "arqex/react-datetime"
   }
 ]
