@@ -2109,5 +2109,20 @@
     "name": "react-native-refresh-control",
     "repo": "DickyT/RCTRefreshControl",
     "description": "A pull down to refresh control for react native."
+  },
+  {
+    "name": "nuclide-react-native-node-executor",
+    "repo": "facebook/nuclide",
+    "description": "Executes React Native application javascript in a node process."
+  },
+  {
+    "name": "react-native-alphabetlistview",
+    "repo": "sunnylqm/react-native-alphabetlistview",
+    "description": "A Listview with a sidebar to jump to sections directly, based on johanneslumpe's react-native-selectablesectionlistview"
+  },
+  {
+    "name": "react-native-orientation-controller",
+    "repo": "inProgress-team/react-native-orientation-controller",
+    "description": "A react-native library for obtaining and controlling the current device and application orientation"
   }
 ]

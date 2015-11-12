@@ -12431,5 +12431,97 @@
     "name": "zlux",
     "repo": "jzlxiaohei/zlux",
     "description": "simple alternative for redux with OOP pattern"
+  },
+  {
+    "name": "cyclet-web",
+    "repo": "RGBz/cyclet-web",
+    "description": "Simple, immutable, unidirectional data flow for React."
+  },
+  {
+    "name": "expect-react-shallow",
+    "repo": "sapegin/expect-react-shallow",
+    "description": "JSX assertions with Chai-like API (based on unexpected-react-shallow)"
+  },
+  {
+    "name": "formo",
+    "repo": "redpelicans/formo",
+    "description": "reactive form helper and validation library"
+  },
+  {
+    "name": "frh-react-phone-lookup",
+    "repo": "FarmRadioHangar/react-phone-lookup",
+    "description": "React component for looking up phone book entries by name or number."
+  },
+  {
+    "name": "gulp-svg-to-jsx",
+    "repo": "janjakubnanista/gulp-svg-to-jsx",
+    "description": "Gulp wrapper for svg-to-jsx"
+  },
+  {
+    "name": "immutable-editor",
+    "repo": "Lokeh/immutable-editor",
+    "description": "React JSON editor"
+  },
+  {
+    "name": "koa-react-view",
+    "repo": "koajs/react-view",
+    "description": "server side react render for koa"
+  },
+  {
+    "name": "react-custom-password-mask",
+    "repo": "jisaacks/react-custom-password-mask",
+    "description": "Allows to set a custom char as the mask for a password",
+    "original_repo": ""
+  },
+  {
+    "name": "react-di",
+    "repo": "janjakubnanista/react-di",
+    "description": "Dependency management for React.js"
+  },
+  {
+    "name": "react-mousetrap",
+    "repo": "alvinsj/react-mousetrap",
+    "description": "React's higher order component for Mousetrap integration"
+  },
+  {
+    "name": "react-radioactive",
+    "repo": "briandamaged/react-radioactive",
+    "description": "DRY radio buttons for React"
+  },
+  {
+    "name": "react-refetch",
+    "repo": "heroku/react-refetch",
+    "description": "React bindings for URL data"
+  },
+  {
+    "name": "react-resize",
+    "repo": "carloscuatin/react-resize",
+    "description": "Screen complete and resizable for ReactJS"
+  },
+  {
+    "name": "react-router-ad-hocs",
+    "repo": "dlmanning/react-router-ad-hocs",
+    "description": "Higher-order components that do what react-router's mixins do"
+  },
+  {
+    "name": "react-tourist",
+    "repo": "khankuan/react-tourist",
+    "description": "A library for in-app tour guide in React.",
+    "original_description": "A library for in-app tour guide in React. Checkout the [example](http://khankuan.github.io/react-tourist) page."
+  },
+  {
+    "name": "reactjs-eu-cookies",
+    "repo": "Dununan/reactjs-eu-cookies",
+    "description": "Notice bar about cookies for EU users"
+  },
+  {
+    "name": "uxcore-table",
+    "repo": "uxcore/uxcore-table",
+    "description": "table ui component for react"
+  },
+  {
+    "name": "vitreum",
+    "repo": "stolksdorf/vitreum",
+    "description": "Web app build system using Browserify, Gulp, React.js and Less"
   }
 ]
