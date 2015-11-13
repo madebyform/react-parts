@@ -4,6 +4,8 @@ url = require('url')
 exec = require('child_process').exec
 _ = require('lodash')
 webshot = require('webshot')
+schedule = require('node-schedule')
+Twit = require('twit')
 
 # Paths to the catalog files
 catalogPath = path.resolve(__dirname, "../repo/packages/react-parts-catalog/")
@@ -19,9 +21,11 @@ catalogParse = require path.resolve(catalogPath, "./parse")
 catalogFetch = require path.resolve(catalogPath, "./fetch")
 catalogIndex = require path.resolve(catalogPath, "./reindex")
 
-# Configurations
+# Configs
+
 appUrl = process.env.HEROKU_URL || "http://localhost/"
-room = "scripts" # Room to where neptr should send messages
+room   = process.env.NEPTR_ROOM || "scripts" # Room to where neptr should send messages
+
 screenshots =
   path: "/screenshots"
   url: url.resolve(appUrl, "screenshots")
@@ -34,6 +38,16 @@ screenshots =
       width: 1100
     shotSize:
       height: "all"
+
+gist =
+  token: process.env.NEPTR_GIST_TOKEN
+  id: process.env.NEPTR_GIST_ID
+
+twitter = new Twit
+  consumer_key: process.env.TWITTER_CONSUMER_KEY
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET
+  access_token: process.env.TWITTER_ACCESS_TOKEN
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 
 # Utility functions
 
@@ -250,33 +264,46 @@ module.exports = (robot) ->
     components.native = readJSON(nativeComponentsFilename).concat(newComponents.native)
     _saveFiles(components)
 
-  # Generate text for new tweets based on array of components
-  _tweets = (newComponents) ->
+  _updateGist = (content) ->
+    data = JSON.stringify
+      description: "Pending tweets to be published by @reactparts",
+      files:
+        "tweets.json":
+          content: JSON.stringify(content, null, '  ')
+
+    robot.http("https://api.github.com/gists/#{ gist.id }")
+      .header("Authorization", "token #{ gist.token }")
+      .patch(data) (error, res, body) ->
+        robot.messageRoom room, error.message if error
+        robot.messageRoom room, body.message if body.message
+
+  _getGist = (callback) ->
+    robot.http("https://api.github.com/gists/#{ gist.id }")
+      .header("Authorization", "token #{ gist.token }")
+      .get() (error, res, body) ->
+        return robot.messageRoom room, error.message if error
+        return robot.messageRoom room, body.message if body.message
+
+        json = JSON.parse body
+        content = JSON.parse json.files["tweets.json"].content
+        callback content
+
+  _generateTweet = (component, linkLength = 22, tweetMaxLength = 140) ->
+    head = "🆕 #{ component.name }:"
+    desc = component.description.trim().replace(/\.$/, '')
+    link = "https://github.com/#{ component.repo }"
+    descMaxLength = tweetMaxLength - linkLength - head.length - 2 # spaces
+    desc = desc.substring(0, descMaxLength - 1) + "…" if desc.length > descMaxLength
+    return "#{ head } #{ desc } #{ link }"
+
+  # Generate text for new tweets based on array of components and save them on a gist
+  _saveTweets = (newComponents) ->
     # Alternate between native and web components
     components = _(newComponents.native).zip(newComponents.web).flatten().compact().value()
-
-    components.forEach (component) ->
-      tweet = "🆕 #{ component.name }: <DSC>"
-      maxLength = 140 - 29 - tweet.length
-      homepage = "https://github.com/#{ component.repo }"
-      description = "#{ component.description }"
-
-      if description.length > maxLength
-        description = description.substring(0, maxLength - 1) + "…";
-      else if description[description.length - 1] == "."
-        description = description.substring(0, description.length - 1)
-
-      tweet = tweet.replace("<DSC>", description) + " #{ homepage }"
-
-      if robot.adapterName != "slack"
-        robot.messageRoom room, tweet
-      else
-        robot.emit "slack-attachment",
-          channel: room
-          content:
-            fallback: "New tweet: #{ tweet }"
-            color: "#5CACE8",
-            text: tweet
+    tweets = components.map (component) -> _generateTweet(component)
+    robot.messageRoom room, "New tweets: \n>>> #{ tweets.join("\n") }"
+    _getGist (oldTweets) ->
+      _updateGist oldTweets.concat(tweets)
 
   # Finishes the process of reviewing by saving the changes and generating tweets
   _finishReviewing = ->
@@ -284,7 +311,7 @@ module.exports = (robot) ->
     _addToFiles(acceptedComponents)
     robot.brain.remove("context")
     robot.messageRoom room, "New components saved successfully!"
-    _tweets(acceptedComponents)
+    _saveTweets(acceptedComponents)
 
   _editComponent = (component, prop, val) ->
     switch prop
@@ -418,6 +445,11 @@ module.exports = (robot) ->
       _parse res, arg, json, (pendingComponents) ->
         _startReviewing res, pendingComponents
 
+  _tweet = (tweet, callback) ->
+    twitter.post "statuses/update", status: tweet, (error, data, response) ->
+      return robot.messageRoom room, error.message if error
+      callback()
+
   reset = ->
     robot.brain.remove("context")
     robot.brain.set("pendingComponents", { web: [], native: [] })
@@ -497,6 +529,15 @@ module.exports = (robot) ->
       addComponent(type, json)
     else
       res.reply msgUnknown()
+
+  # Tweet about recently added components every hour on the hour
+  robot.hear /^tweet$/i, (res) ->
+    schedule.scheduleJob minute: 0, ->
+      _getGist (tweets) ->
+        return unless tweets.length
+        _tweet tweets.shift(), ->
+          _updateGist tweets
+    res.send "I will be tweeting, father."
 
   # Serve screenshots
   robot.router.get url.resolve(screenshots.path, ":componentName"), (req, res) ->

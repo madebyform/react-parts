@@ -7,7 +7,8 @@ This hubot makes it easier to review new components and run other maintenance ta
 ![N.E.P.T.R.](./screenshots/neptr.gif)
 
 Start configuring your Slack integration by going to: `https://<your-team>.slack.com/services/new/hubot`  
-Also, go to GitHub and generate a [Personal Access Token](https://github.com/settings/tokens) with the `repo` scope.
+Also, go to GitHub and generate a [Personal Access Token](https://github.com/settings/tokens) with the `repo` and `gist` scopes.
+
 
 In your client machine, deploy the bot to the server:
 
@@ -30,6 +31,12 @@ Configure the app for hubot:
 ```
 dokku config:set react-parts-neptr HUBOT_SLACK_TOKEN=<slack-token>
 dokku config:set react-parts-neptr HEROKU_URL=<app-url>
+dokku config:set react-parts-neptr NEPTR_GIST_TOKEN=<your-github-token>
+dokku config:set react-parts-neptr NEPTR_GIST_ID=<gist-for-storing-tweets>
+dokku config:set react-parts-neptr TWITTER_CONSUMER_KEY=<twitter-consumer-key>
+dokku config:set react-parts-neptr TWITTER_CONSUMER_SECRET=<twitter-consumer-secret>
+dokku config:set react-parts-neptr TWITTER_ACCESS_TOKEN=<twitter-access-token>
+dokku config:set react-parts-neptr TWITTER_ACCESS_TOKEN_SECRET=<twitter-access-token-secret>
 dokku config:set react-parts-neptr DOKKU_WAIT_TO_RETIRE=0
 ```
 
