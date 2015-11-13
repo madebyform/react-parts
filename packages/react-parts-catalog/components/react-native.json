@@ -2124,5 +2124,20 @@
     "name": "react-native-orientation-controller",
     "repo": "inProgress-team/react-native-orientation-controller",
     "description": "A react-native library for obtaining and controlling the current device and application orientation"
+  },
+  {
+    "name": "react-native-couchbase-lite",
+    "repo": "fraserxu/react-native-couchbase-lite",
+    "description": "couchbase lite binding for react-native"
+  },
+  {
+    "name": "react-native-gcm-android",
+    "repo": "oney/react-native-gcm-android",
+    "description": "GCM for React Native Android"
+  },
+  {
+    "name": "react-native-parsed-text",
+    "repo": "taskrabbit/react-native-parsed-text",
+    "description": "Parse text and make them into multiple React Native Text elements"
   }
 ]

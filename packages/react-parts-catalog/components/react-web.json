@@ -10475,8 +10475,8 @@
   },
   {
     "name": "react-component-tools",
-    "repo": "luqin/react-component-tools",
-    "original_repo": "",
+    "repo": "luqin/react-pack",
+    "original_repo": "luqin/react-component-tools",
     "description": "Gulp Build Tasks for React Component Projects"
   },
   {
@@ -11884,8 +11884,8 @@
   },
   {
     "name": "victory",
-    "repo": "FormidableLabs/victory",
-    "description": "Victory is a data visualization methodology that swaps out D3's DOM model for ReactJS. It combines low level control of animations and transitions with chart reusibility. It's a total joy to work with, hence the name."
+    "repo": "formidablelabs/victory",
+    "description": "Data viz for React"
   },
   {
     "name": "victory-line",
@@ -12523,5 +12523,61 @@
     "name": "vitreum",
     "repo": "stolksdorf/vitreum",
     "description": "Web app build system using Browserify, Gulp, React.js and Less"
+  },
+  {
+    "name": "babel-plugin-react-cl",
+    "repo": "mcrowe/babel-plugin-react-cl",
+    "description": "Babel plugin which gives you a shorthand for defining classNames in JSX"
+  },
+  {
+    "name": "create-reducer",
+    "repo": "nrn/create-reducer",
+    "description": "Create reducer from object of action handlers, for use with redux."
+  },
+  {
+    "name": "earl-react",
+    "repo": "breuleux/earl-react",
+    "description": "Earl Grey macros for React"
+  },
+  {
+    "name": "react-drill",
+    "repo": "amireh/react-drill",
+    "description": "React DOM test utils."
+  },
+  {
+    "name": "react-highlighted",
+    "repo": "barbuza/react-highlighted",
+    "description": "highlight matching text with react"
+  },
+  {
+    "name": "react-modallink",
+    "repo": "andersem/react-modallink",
+    "description": "Creates a modal and a link to open the modal"
+  },
+  {
+    "name": "react-static",
+    "repo": "rpearce/react-static",
+    "description": "React static site generator framework for Node.js"
+  },
+  {
+    "name": "react-tap-or-click",
+    "repo": "merri/react-tap-or-click",
+    "description": "Minimal and easy to use mobile click solution for React"
+  },
+  {
+    "name": "react-timeline-component",
+    "repo": "ericdfields/react-timeline-component",
+    "description": "SVG Timeline built in react. For showing dates on a line.",
+    "original_repo": ""
+  },
+  {
+    "name": "shlux",
+    "repo": "dolbyzerr/shlux",
+    "description": "Simple store for your fluxish application"
+  },
+  {
+    "name": "simple-relay-starter",
+    "repo": "mhart/simple-relay-starter",
+    "description": "A very simple example of React Relay using Browserify"
   }
 ]
