@@ -9843,8 +9843,7 @@
   {
     "name": "learnyoureact",
     "repo": "kohei-takata/learnyoureact",
-    "description": "Learn React.js and server side rendering!",
-    "original_repo": "tako-black/learnyoureact"
+    "description": "Learn React.js and server side rendering!"
   },
   {
     "name": "matrix-react-sdk",
@@ -10476,8 +10475,7 @@
   {
     "name": "react-component-tools",
     "repo": "luqin/react-pack",
-    "original_repo": "luqin/react-component-tools",
-    "description": "Gulp Build Tasks for React Component Projects"
+    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload"
   },
   {
     "name": "react-desktop",
@@ -11968,7 +11966,7 @@
   {
     "name": "redux-simple-router",
     "repo": "jlongster/redux-simple-router",
-    "description": "Ruthlessly simple bindings to keep react-router and redux in syncy"
+    "description": "Ruthlessly simple bindings to keep react-router and redux in sync"
   },
   {
     "name": "timeout-transition-group",
@@ -12579,5 +12577,131 @@
     "name": "simple-relay-starter",
     "repo": "mhart/simple-relay-starter",
     "description": "A very simple example of React Relay using Browserify"
+  },
+  {
+    "name": "praxis",
+    "repo": "hliyan/praxis",
+    "description": "A Flux mini-framework with react-router"
+  },
+  {
+    "name": "babel-plugin-jsx-display-if",
+    "repo": "craftsy/babel-plugin-jsx-display-if",
+    "description": "babel plugin to add conditional display ala ng-if to jsx"
+  },
+  {
+    "name": "babel-plugin-jsx-pragmatic",
+    "repo": "jmm/babel-plugin-jsx-pragmatic",
+    "description": "Insert code to load a module corresponding to JSX pragma."
+  },
+  {
+    "name": "babel-plugin-transform-react-require",
+    "repo": "mikaelbr/babel-plugin-transform-react-require",
+    "description": "Transform files using JSX to implicitly require React (or other implementations)"
+  },
+  {
+    "name": "babel-plugin-transform-react-stateless-component-name",
+    "repo": "wyze/babel-plugin-transform-react-stateless-component-name",
+    "description": "A babel plugin to add name for default exported stateless components."
+  },
+  {
+    "name": "fluxury",
+    "repo": "fluxury/fluxury",
+    "description": "Add luxury sugar to simplify implementing Facebook's flavor of Flux architecture."
+  },
+  {
+    "name": "generator-base-reactjs",
+    "repo": "zguillez/generator-base-reactjs",
+    "description": "ReactJS basic skeleton for webapp development. With RequireJS, Bootstrap, Sass and templating with Jade. JSX compiled with Babel."
+  },
+  {
+    "name": "generator-reactapp",
+    "repo": "jackong/generator-reactapp",
+    "description": "Yeoman generator"
+  },
+  {
+    "name": "jig-framework",
+    "repo": "lcreid/jig",
+    "description": "Start building JavaScript apps fast with Bootstrap, React, Mocha, Chai, and Gulp"
+  },
+  {
+    "name": "joi-validation-strategy",
+    "repo": "jurassix/joi-validation-strategy",
+    "description": "Joi validation strategy for react-validation-mixin"
+  },
+  {
+    "name": "list-render",
+    "repo": "chemzqm/list-render",
+    "description": "low level reactive list component"
+  },
+  {
+    "name": "react-context-hoc",
+    "repo": "taak77/react-context-hoc",
+    "description": "a utility Hoc wrapper to provide context"
+  },
+  {
+    "name": "react-easy-form",
+    "repo": "geowarin/react-easy-form",
+    "description": "Easy forms for react 0.14+. It uses React's context to allow form component to automatically update the form state. It natively uses HTML5 form validation.",
+    "original_description": "react-easy-form"
+  },
+  {
+    "name": "react-emojione",
+    "repo": "pladaria/react-emojione",
+    "description": "A tiny ES6 library to use emojis in React"
+  },
+  {
+    "name": "react-expandable-listview",
+    "repo": "cht8687/react-expandable-listview",
+    "description": "listview which can be expanded to show its children"
+  },
+  {
+    "name": "react-gridforms",
+    "repo": "insin/react-gridforms",
+    "description": "React components for form layout with Gridforms"
+  },
+  {
+    "name": "react-menu-aim",
+    "repo": "jasonslyvia/react-menu-aim",
+    "description": "A React mixin version of Amazon's jQuery-menu-aim plugin"
+  },
+  {
+    "name": "react-partial-table",
+    "repo": "petermoresi/react-partial-table",
+    "description": "Render a table tag with callbacks to get data."
+  },
+  {
+    "name": "react-place",
+    "repo": "krasimir/react-place",
+    "description": "React geo location component based on Google Maps"
+  },
+  {
+    "name": "react-reach",
+    "repo": "kennetpostigo/react-reach",
+    "description": "A small library for react to communicate with GraphQL"
+  },
+  {
+    "name": "react-server-example",
+    "repo": "mhart/react-server-example",
+    "description": "A very simple implementation of server-side React rendering"
+  },
+  {
+    "name": "react-server-routing-example",
+    "repo": "mhart/react-server-routing-example",
+    "description": "An example using shared client/server code for routing and data fetching in React with AWS"
+  },
+  {
+    "name": "react-transform-log-render",
+    "repo": "rkit/react-transform-log-render",
+    "description": "React Transform of the render method for log output"
+  },
+  {
+    "name": "redux-session-storage",
+    "repo": "conorhastings/redux-session-storage",
+    "description": "record redux actions to session storage"
+  },
+  {
+    "name": "set-state-mixin",
+    "repo": "danawoodman/set-state-mixin",
+    "description": "Reflux `setState` mixin to get React-like state behavior in Reflux stores."
   }
 ]

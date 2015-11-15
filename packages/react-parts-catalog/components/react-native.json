@@ -2139,5 +2139,16 @@
     "name": "react-native-parsed-text",
     "repo": "taskrabbit/react-native-parsed-text",
     "description": "Parse text and make them into multiple React Native Text elements"
+  },
+  {
+    "name": "react-native-fb-like-button",
+    "repo": "kdmny/react-native-fb-like-button",
+    "description": "React Native Facebook Like Button component",
+    "original_repo": ""
+  },
+  {
+    "name": "react-native-instagram-oauth",
+    "repo": "watzak/react-native-instagram-oauth",
+    "description": "react-native instagram login"
   }
 ]
