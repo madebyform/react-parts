@@ -1,5 +1,7 @@
 # Project specific
-screenshots/*.png
+screenshots/*
+!screenshots/neptr.gif
+!screenshots/slack.png
 
 # Hubot
 node_modules
