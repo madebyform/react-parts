@@ -1,21 +1,34 @@
 [![React.parts — A catalog of React Native components](https://react.parts/react-parts.svg)](https://react.parts)
 
-#### Adding a new component to the catalog
+### Adding a new project to the catalog
 
-If you want your React component to show up in the catalog, simply add the `react-component` keyword to your `package.json` file and publish it on the NPM registry. If your component is for React Native, we recommend that you also add the `react-native` and `ios` keywords (and or alternatively `android`, depending on which platforms your component supports), and make sure your package has `react-native` in the [`peerDependencies`](https://docs.npmjs.com/files/package.json#peerdependencies) property. Here's an example for React Native:
+In order to be listed in the catalog, a React-related project should meet the following criteria:
+
+- **Unscoped package published in the NPM registry**: Your package must be [published](https://docs.npmjs.com/cli/publish) on the NPM registry. Currently, [scoped packages](https://docs.npmjs.com/misc/scope) are omitted from search results, and because of that we need the package name to be unscoped.
+- **The `package.json` file has a [`repository`](https://docs.npmjs.com/files/package.json#repository) property that points to GitHub**: We currently use GitHub for displaying stars, documentation and for detecting platform support (in the case of React Native). Please, set the `repository` property so we can find your repo.
+- **The `package.json` file has a [`keywords`](https://docs.npmjs.com/files/package.json#keywords) property**: It improves discoverability if you add the `react-component` keyword to your `package.json`. If your package is for React Native, we recommend that you also add the `react-native` and `ios` keywords, and/or alternatively `android` (depending on which platforms your package supports).
+- **ReadMe file with usage examples**: The package should include instructions and examples.
+
+Here's an example of a `package.json` file for a React Native component:
 
 ```js
 {
   "name": "my-npm-package-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owner-name/repository-name"
+  },
+  "description": "A short description of your package",
   "keywords": [
     "react-component",
     "react-native",
-    "ios"
+    "ios",
+    "android"
   ],
   "peerDependencies": {
-    "react-native": ">=0.5"
-  }
-}, …
+    "react-native": "^0.14.2"
+  }, …
+}
 ```
 
-We also retrieve additional information from GitHub. If your component's source code is not hosted on Github, or you didn't specify the [`repository`](https://docs.npmjs.com/files/package.json#repository) property in your `package.json` file, we will not be able to show statistics (such as stars) for the time being. Results from NPM are manually curated and the site is updated regularly.
+The React ecosystem is made by so much more than components, and so we have been adding other kinds of packages to the catalog, including mixins, boilerplates, generators and other libraries that are related to React, Flux or GraphQL. All packages are manually reviewed, so keep in mind that your package may take days before being added to the catalog.
