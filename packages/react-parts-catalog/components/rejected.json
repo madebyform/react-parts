@@ -558,5 +558,9 @@
   {
     "name": "react-datetime-customized",
     "repo": "arqex/react-datetime"
+  },
+  {
+    "name": "react-native-keyboard-toolbar",
+    "repo": "DickyT/react-native-textinput-utils"
   }
 ]

@@ -71,7 +71,7 @@
   },
   {
     "name": "react-native-navbar",
-    "repo": "Kureev/react-native-navbar",
+    "repo": "react-native-fellowship/react-native-navbar",
     "description": "Simple customizable navbar component for react-native"
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "react-native-side-menu",
-    "repo": "Kureev/react-native-side-menu",
+    "repo": "react-native-fellowship/react-native-side-menu",
     "description": "Simple customizable component to create side menu"
   },
   {
@@ -132,7 +132,7 @@
   },
   {
     "name": "react-native-blur",
-    "repo": "Kureev/react-native-blur",
+    "repo": "react-native-fellowship/react-native-blur",
     "description": "React Native Blur component"
   },
   {
@@ -1898,7 +1898,7 @@
   {
     "name": "react-native-sqlite-storage",
     "repo": "andpor/react-native-sqlite-storage",
-    "description": "SQLite3 bindings for React Native (++Promise)"
+    "description": "SQLite3 bindings for React Native (Android and iOS)"
   },
   {
     "name": "react-native-triangle",
@@ -1978,7 +1978,7 @@
   {
     "name": "react-native-send-intent",
     "repo": "lucasferreira/react-native-send-intent",
-    "description": "React Native Android module to use Android's Intent actions for send text to shareable apps"
+    "description": "React Native Android module to use Android's Intent actions for send text to shareable apps and make phone calls"
   },
   {
     "name": "react-native-simple-button",

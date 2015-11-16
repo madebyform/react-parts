@@ -6481,7 +6481,7 @@
   {
     "name": "react-toolbox",
     "repo": "react-toolbox/react-toolbox",
-    "description": "A set of complementary tools to ReactJS."
+    "description": "A set of React components implementing Google's Material Design specification with the power of CSS Modules."
   },
   {
     "name": "fluxis",
@@ -10896,7 +10896,7 @@
   {
     "name": "react-materialize",
     "repo": "react-materialize/react-materialize",
-    "description": "Material design for react"
+    "description": "Material design components for react"
   },
   {
     "name": "react-media-queries",
@@ -12070,7 +12070,7 @@
   },
   {
     "name": "react-combinators",
-    "repo": "milankinen/megablob",
+    "repo": "milankinen/react-combinators",
     "description": "Seamless combination of React and reactive programming"
   },
   {
@@ -12703,5 +12703,50 @@
     "name": "set-state-mixin",
     "repo": "danawoodman/set-state-mixin",
     "description": "Reflux `setState` mixin to get React-like state behavior in Reflux stores."
+  },
+  {
+    "name": "generator-kyper-react",
+    "repo": "kypertech/generator-kyper-react",
+    "description": "Generator for React/Redux projects that includes sub generators for Actions, Reducers, Components, and Containers."
+  },
+  {
+    "name": "koa-react-views",
+    "repo": "danmactough/koa-react-views",
+    "description": "This is a Koa view engine that renders React components on the server. It renders static markup and *does not* support mounting those views on the client."
+  },
+  {
+    "name": "pui-cursor",
+    "repo": "pivotal-cf/pui-cursor",
+    "description": "immutable cursor implementation for react"
+  },
+  {
+    "name": "rc-time-picker",
+    "repo": "react-component/time-picker",
+    "description": "React TimePicker"
+  },
+  {
+    "name": "react-designer-core",
+    "repo": "rsamec/react-designer-core",
+    "description": "React desiginer core components."
+  },
+  {
+    "name": "react-fluid-svg",
+    "repo": "droganov/react-fluid-svg",
+    "description": "React component wrapper for rendering cross-browser fluid svg images"
+  },
+  {
+    "name": "react-tabs-navigation",
+    "repo": "pepjo/react-tabs-navigation",
+    "description": "react-tabs-navigation is a nice react component that enables navigation through tabs in your web app."
+  },
+  {
+    "name": "react-yearly-calendar",
+    "repo": "BelkaLab/react-yearly-calendar",
+    "description": "A yearly calendar built in React.js"
+  },
+  {
+    "name": "sourcejs-react-styleguidist",
+    "repo": "sourcejs/sourcejs-react-styleguidist",
+    "description": "SourceJS integration plugin for react-styleuguidist"
   }
 ]
