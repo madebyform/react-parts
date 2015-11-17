@@ -1898,7 +1898,7 @@
   {
     "name": "react-native-sqlite-storage",
     "repo": "andpor/react-native-sqlite-storage",
-    "description": "SQLite3 bindings for React Native (Android and iOS)"
+    "description": "SQLite3 bindings for React Native (Android & iOS)"
   },
   {
     "name": "react-native-triangle",
@@ -2150,5 +2150,25 @@
     "name": "react-native-instagram-oauth",
     "repo": "watzak/react-native-instagram-oauth",
     "description": "react-native instagram login"
+  },
+  {
+    "name": "react-native-android-geolocation",
+    "repo": "MasticatingMarsupial/react-native-android-geolocation",
+    "description": "React Native Module to use Android Geolocation via Google Play API"
+  },
+  {
+    "name": "react-native-inapp-browser",
+    "repo": "DickyT/react-native-inapp-browser",
+    "description": "A in-app browser for react native apps."
+  },
+  {
+    "name": "react-native-shake-event-ios",
+    "repo": "jadsonlourenco/react-native-shake-event-ios",
+    "description": "Add shake event to your React Native app (IOS only)"
+  },
+  {
+    "name": "react-native-toast",
+    "repo": "remobile/react-native-toast",
+    "description": "A android like toast for react-native support for ios and android"
   }
 ]

@@ -829,8 +829,9 @@
   },
   {
     "name": "react-tab-panel",
-    "repo": "radubrehar/react-tab-panel",
-    "description": "React TabPanel"
+    "repo": "zippyui/react-tab-panel",
+    "description": "React TabPanel",
+    "original_repo": "radubrehar/react-tab-panel"
   },
   {
     "name": "react-tabbar",
@@ -1340,8 +1341,9 @@
   },
   {
     "name": "react-basic-tabs",
-    "repo": "radubrehar/react-tab-panel",
-    "description": "React Basic TabPanel"
+    "repo": "zippyui/react-tab-panel",
+    "description": "React Basic TabPanel",
+    "original_repo": "radubrehar/react-tab-panel"
   },
   {
     "name": "react-blur",
@@ -4169,8 +4171,8 @@
   },
   {
     "name": "unexpected-react",
-    "repo": "podio/unexpected-react",
-    "description": "Extends the Unexpected assertion library for an easy integration width ReactJS components"
+    "repo": "bruderstein/unexpected-react",
+    "description": "Plugin for unexpected, to allow for assertions on the React.js virtual DOM, and the shallow renderer"
   },
   {
     "name": "unique-id-mixin",
@@ -8865,7 +8867,7 @@
   {
     "name": "react-styleguidist",
     "repo": "sapegin/react-styleguidist",
-    "description": "React components styleguide"
+    "description": "React components styleguide generator"
   },
   {
     "name": "revenge-react-components",
@@ -12748,5 +12750,67 @@
     "name": "sourcejs-react-styleguidist",
     "repo": "sourcejs/sourcejs-react-styleguidist",
     "description": "SourceJS integration plugin for react-styleuguidist"
+  },
+  {
+    "name": "babel-plugin-css-in-js",
+    "repo": "martinandert/babel-plugin-css-in-js",
+    "description": "A plugin for Babel v6 which transforms inline styles defined in JavaScript modules into class names so they become available to, e.g. the `className` prop of React elements. While transforming, the plugin processes all JavaScript style definitions found a"
+  },
+  {
+    "name": "babel-plugin-react-require",
+    "repo": "vslinko/babel-plugin-react-require",
+    "description": "Babel plugin that adds React import declaration if file contains JSX tags."
+  },
+  {
+    "name": "bix",
+    "repo": "rapid7/bix",
+    "description": "Tools to streamline inline style management for React elements"
+  },
+  {
+    "name": "react-alert",
+    "repo": "schiehll/react-alert",
+    "description": "A simple react alert component"
+  },
+  {
+    "name": "react-bem-classes",
+    "repo": "ilyaagarkov/react-bem-classes",
+    "description": "Decorator for reactjs components"
+  },
+  {
+    "name": "react-dom-parser",
+    "repo": "simonstaton/React-DOM-Parser",
+    "description": "A DOM parser for the react library, used for instantiating react components declaratively"
+  },
+  {
+    "name": "react-flexbox-grid",
+    "repo": "roylee0704/react-flexbox-grid",
+    "description": "React Component based on flexboxgrid"
+  },
+  {
+    "name": "react-render-hook",
+    "repo": "bruderstein/react-render-hook",
+    "description": "A hook using the React-devtools backend, to enable access to the virtual DOM in a node environment",
+    "original_repo": "",
+    "original_description": "`react-render-hook` uses the [React-devtools](https://github.com/facebook/react-devtools) hook to watch for rendering React components, and provide an inteface to get to the virtual DOM tree and find rendered elements and get the metadata about them."
+  },
+  {
+    "name": "sharkins-react-bootstrap-datetimepicker",
+    "repo": "quri/react-bootstrap-datetimepicker",
+    "description": "A bootstrap datetime picker component for React.js"
+  },
+  {
+    "name": "sourcejs-react-docgen",
+    "repo": "sourcejs/sourcejs-react-docgen",
+    "description": "SourceJS auto React doc builder middleware."
+  },
+  {
+    "name": "svg-inline-loader",
+    "repo": "sairion/svg-inline-loader",
+    "description": "Cleans up and inlines your SVG files into Webpack module."
+  },
+  {
+    "name": "svg-inline-react",
+    "repo": "sairion/svg-inline-react",
+    "description": "Inline SVG wrapper component for React"
   }
 ]
