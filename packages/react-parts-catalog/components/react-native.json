@@ -2170,5 +2170,20 @@
     "name": "react-native-toast",
     "repo": "remobile/react-native-toast",
     "description": "A android like toast for react-native support for ios and android"
+  },
+  {
+    "name": "apphub",
+    "repo": "AppHubPlatform/apphub",
+    "description": "React Native module for integrating with AppHub"
+  },
+  {
+    "name": "generator-irrigate",
+    "repo": "GantMan/irrigate",
+    "description": "Create new react native files that fit the IR workflow"
+  },
+  {
+    "name": "react-native-page-swiper",
+    "repo": "fixt/react-native-page-swiper",
+    "description": "Page Swiper component for React Native."
   }
 ]

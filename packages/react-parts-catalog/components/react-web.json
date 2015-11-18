@@ -12795,7 +12795,7 @@
   },
   {
     "name": "sharkins-react-bootstrap-datetimepicker",
-    "repo": "quri/react-bootstrap-datetimepicker",
+    "repo": "sharkinsspatial/react-bootstrap-datetimepicker",
     "description": "A bootstrap datetime picker component for React.js"
   },
   {
@@ -12812,5 +12812,89 @@
     "name": "svg-inline-react",
     "repo": "sairion/svg-inline-react",
     "description": "Inline SVG wrapper component for React"
+  },
+  {
+    "name": "async-props",
+    "repo": "rackt/async-props",
+    "description": "Co-located component data fetching for React Router",
+    "original_repo": "rackt/react-router-async-props"
+  },
+  {
+    "name": "atom-react",
+    "repo": "stample/atom-react",
+    "description": "An opiniated way to use ReactJS in a functional way in plain old Javascript, inspired by popular Clojurescript wrappers like Om "
+  },
+  {
+    "name": "coherence",
+    "repo": "clalimarmo/coherence",
+    "description": "Flux-inspired Models and Controllers, for React apps"
+  },
+  {
+    "name": "react-component-extension",
+    "repo": "taskrabbit/react-component-extension",
+    "description": "Easy use of Higher Order Component"
+  },
+  {
+    "name": "react-d3-map",
+    "repo": "react-d3/react-d3-map",
+    "description": "react-d3 interactive map",
+    "original_repo": ""
+  },
+  {
+    "name": "react-data-binding",
+    "repo": "yiminghe/react-data-binding",
+    "description": "do react data binding easily"
+  },
+  {
+    "name": "react-expandable-preview",
+    "repo": "lumenlearning/react-expandable-preview",
+    "description": "\"Google images inspired grid system with preview drop down\""
+  },
+  {
+    "name": "react-if-component",
+    "repo": "stigmat4j/react-if-component",
+    "description": "Render React components conditionally."
+  },
+  {
+    "name": "react-inspect",
+    "repo": "ssnau/react-inspect",
+    "description": "inspect an object in a visual way",
+    "original_repo": ""
+  },
+  {
+    "name": "react-packery-component",
+    "repo": "eiriklv/react-packery-component",
+    "description": "A Packery component for React.js"
+  },
+  {
+    "name": "react-reorder",
+    "repo": "JakeSidSmith/react-reorder",
+    "description": "Drag & drop, touch enabled, reorderable / sortable list, React component",
+    "original_repo": "JakeSidSmith/react-reorderable"
+  },
+  {
+    "name": "react-testutils-query",
+    "repo": "jameslnewell/react-testutils-query",
+    "description": "Utility functions for retrieving elements from within a React VDOM tree."
+  },
+  {
+    "name": "react-testutils-render",
+    "repo": "jameslnewell/react-testutils-query",
+    "description": "A lite wrapper for shallow rendering React components."
+  },
+  {
+    "name": "react-textfit",
+    "repo": "malte-wessel/react-textfit",
+    "description": "React component to fit headlines and paragraphs into any element"
+  },
+  {
+    "name": "reflux-connect",
+    "repo": "morlay/reflux-connect",
+    "description": "Higher order Components creator for Reflux"
+  },
+  {
+    "name": "reflux-provides-store",
+    "repo": "brigand/reflux-provides-store",
+    "description": "high order component for reflux store bindings"
   }
 ]
