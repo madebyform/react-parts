@@ -864,11 +864,6 @@
     "description": "tangle.js style input elements for react"
   },
   {
-    "name": "react-tangle-compat",
-    "repo": "mapbox/react-tangle",
-    "description": "tangle.js style input elements for react"
-  },
-  {
     "name": "react-tappable",
     "repo": "JedWatson/react-tappable",
     "description": "Touch / Tappable Event Handling Component for React"
@@ -948,11 +943,6 @@
     "name": "react-video",
     "repo": "pedronauck/react-video",
     "description": "React component to load video from Vimeo or Youtube across any device"
-  },
-  {
-    "name": "tabs-component",
-    "repo": "mheiber/react-tabs-component",
-    "description": "Use npm install react-tabs-component instead"
   },
   {
     "name": "tiny-react-router",
@@ -1121,16 +1111,6 @@
     "name": "react-spinkit",
     "repo": "KyleAMathews/react-spinkit",
     "description": "A collection of loading indicators animated with CSS for React"
-  },
-  {
-    "name": "react-spark-scroll-rekapi",
-    "repo": "gilbox/react-spark-scroll",
-    "description": "Scroll-based animation and actions for React"
-  },
-  {
-    "name": "react-spark-scroll-gsap",
-    "repo": "gilbox/react-spark-scroll",
-    "description": "Scroll-based animation and actions for React"
   },
   {
     "name": "react-soundcloud-widget",
@@ -1338,12 +1318,6 @@
     "name": "react-barchart-envelope",
     "repo": "fraserxu/react-barchart-envelope",
     "description": "React component for simple barchart envelope"
-  },
-  {
-    "name": "react-basic-tabs",
-    "repo": "zippyui/react-tab-panel",
-    "description": "React Basic TabPanel",
-    "original_repo": "radubrehar/react-tab-panel"
   },
   {
     "name": "react-blur",
@@ -1892,11 +1866,6 @@
     "description": "React component for a material menu à la Google Inbox and Evernote"
   },
   {
-    "name": "react-mfb-iceddev",
-    "repo": "nobitagit/react-material-floating-button",
-    "description": "React component for a material menu à la Path and Google Inbox"
-  },
-  {
     "name": "react-micro-bar-chart",
     "repo": "KyleAMathews/react-micro-bar-chart",
     "description": "React component for micro bar-charts rendered with D3"
@@ -2091,11 +2060,6 @@
     "name": "formsy-react",
     "repo": "christianalfoni/formsy-react",
     "description": "A form input builder and validator for React JS"
-  },
-  {
-    "name": "mnq-react-bootstrap-datetimepicker",
-    "repo": "alex1712/react-bootstrap-datetimepicker",
-    "description": "A bootstrap datetime picker component for React.js"
   },
   {
     "name": "piwik-react-router",
@@ -2335,8 +2299,10 @@
   },
   {
     "name": "react-lite-layered",
-    "repo": "teambition/react-lite-dropdown",
-    "description": "Dropdown menu from Talk by teambition"
+    "repo": "teambition/react-lite-layered",
+    "description": "Dialog, Modals, Popover, Overlay components from Talk by Teambition.",
+    "original_repo": "teambition/react-lite-dropdown",
+    "original_description": "Dropdown menu from Talk by teambition"
   },
   {
     "name": "react-lite-uploader",
@@ -2491,11 +2457,6 @@
     "description": "Cropper as React components"
   },
   {
-    "name": "react-d3-component",
-    "repo": "bgrsquared/react-d3-component",
-    "description": "Load basic or customized D3 charts in React.js."
-  },
-  {
     "name": "react-date-input",
     "repo": "JedWatson/react-date-input",
     "description": "A Date Input Component built with and for React.js"
@@ -2579,11 +2540,6 @@
     "name": "reloading",
     "repo": "ekonstantinidis/reloading",
     "description": "A Loading component for ReactJS."
-  },
-  {
-    "name": "focusjs-components",
-    "repo": "KleeGroup/focus-components",
-    "description": "Focus component repository."
   },
   {
     "name": "react-3d-carousel",
@@ -2804,11 +2760,6 @@
     "description": "yeoman generator for react component"
   },
   {
-    "name": "generator-react-coffee-webpack",
-    "repo": "newtriks/generator-react-webpack",
-    "description": "Yeoman generator for ReactJS and Webpack with CoffeeScript support. Based on a fork of generator-react-webpack https://github.com/newtriks/generator-react-webpack"
-  },
-  {
     "name": "generator-react-component",
     "repo": "JedWatson/generator-react-component",
     "description": "Yeoman generator for ReactJS Component projects"
@@ -2900,11 +2851,6 @@
     "description": "This is a Hapi view engine which renders React components on server. It renders static markup and *does not* support mounting those views on the client."
   },
   {
-    "name": "haribabu",
-    "repo": "harrybabu/react-autosuggest",
-    "description": "Pure react-based autosuggest with ajax suggestion list population"
-  },
-  {
     "name": "hoc",
     "repo": "vslinko/hoc",
     "description": "Higher-order Components Helpers"
@@ -2963,16 +2909,6 @@
     "name": "leezq-react-datetimepicker",
     "repo": "LeezQ/react-datetimepicker",
     "description": "a react datepicker component with timedicker"
-  },
-  {
-    "name": "milojs",
-    "repo": "milojs/milo",
-    "description": "Browser/nodejs reactive programming and data driven DOM manipulation with modular components."
-  },
-  {
-    "name": "mol-milo",
-    "repo": "milojs/milo",
-    "description": "Browser/nodejs reactive programming and data driven DOM manipulation with modular components."
   },
   {
     "name": "need-this",
@@ -3120,12 +3056,6 @@
     "description": "A React mixin used to simplify the binding between components and data stores."
   },
   {
-    "name": "react-bootstrap-daterangepicker-plus",
-    "repo": "skratchdot/react-bootstrap-daterangepicker",
-    "description": "A date/time picker for react (using bootstrap). This is a react port of dangrossman/bootstrap-daterangepicker.",
-    "original_description": "A date/time picker for react (using bootstrap). This is a react port of: https://github.com/dangrossman/bootstrap-daterangepicker"
-  },
-  {
     "name": "react-breakpoints-mixin",
     "repo": "deseretdigital-ui/react-breakpoints-mixin",
     "description": "BreakpointsMixin for your React Components."
@@ -3191,7 +3121,8 @@
   {
     "name": "react-component-starter",
     "repo": "KyleAMathews/react-component-starter",
-    "description": "A collection of loading indicators animated with CSS for React"
+    "description": "Quickstart for creating a Coffeescript React component with examples",
+    "original_description": "A collection of loading indicators animated with CSS for React"
   },
   {
     "name": "react-component-width-mixin",
@@ -4242,11 +4173,6 @@
     "description": "Progress bar component for ReactJS."
   },
   {
-    "name": "react-router-ie8",
-    "repo": "rackt/react-router",
-    "description": "A complete routing library for React.js"
-  },
-  {
     "name": "react-speech",
     "repo": "andrewkeig/react-speech",
     "description": "React component for the web speech synthesis api"
@@ -4509,11 +4435,6 @@
     "name": "react-either",
     "repo": "dashed/react-either",
     "description": "Higher-order component to conditionally render a component or an alternative component"
-  },
-  {
-    "name": "mnq-react-select",
-    "repo": "alex1712/react-select",
-    "description": "A Select control built with and for ReactJS"
   },
   {
     "name": "react-flatui",
@@ -4929,11 +4850,6 @@
     "name": "react-querystring-router",
     "repo": "skidding/react-querystring-router",
     "description": "Bare router for React components, using props as query string"
-  },
-  {
-    "name": "react-quill-editor",
-    "repo": "hawkrives/react-quill",
-    "description": "The Quill rich-text editor as a React component."
   },
   {
     "name": "react-raml",
@@ -5423,11 +5339,6 @@
     "description": "react size decorator, adds width and height props to component"
   },
   {
-    "name": "grove-react-router",
-    "repo": "grovelabs/react-router",
-    "description": "A complete routing library for React.js"
-  },
-  {
     "name": "react-anchorify-text",
     "repo": "georgeosddev/react-anchorify-text",
     "description": "React component which render text with anchored url(s)"
@@ -5498,11 +5409,6 @@
     "description": "React component-wrapper to swap one element with another and back"
   },
   {
-    "name": "junisphere-react-intl",
-    "repo": "yahoo/react-intl",
-    "description": "React Components for internationalization."
-  },
-  {
     "name": "pandapush-react",
     "repo": "neilgupta/pandapush-react",
     "description": "React component for Pandapush"
@@ -5568,11 +5474,6 @@
     "description": "Experimental web UI framework. Ideas from ReactJS, Polymer, Angular 2, Aurelia, made simple."
   },
   {
-    "name": "matthewmueller-react-remarkable",
-    "repo": "acdlite/react-remarkable",
-    "description": "A React component for rendering Markdown with remarkable"
-  },
-  {
     "name": "react-input-mask",
     "repo": "sanniassin/react-input-mask",
     "description": "Masked input component for React"
@@ -5596,11 +5497,6 @@
     "name": "react-auto-suggest",
     "repo": "tomkp/react-auto-suggest",
     "description": "React auto-suggest component"
-  },
-  {
-    "name": "react-bootstrap-datetimepicker-placeholder",
-    "repo": "quri/react-bootstrap-datetimepicker",
-    "description": "A bootstrap datetime picker component for React.js"
   },
   {
     "name": "react-calendar-pane",
@@ -5756,19 +5652,9 @@
     "description": "React layer manager"
   },
   {
-    "name": "react-leaflet-lmt",
-    "repo": "PaulLeCam/react-leaflet",
-    "description": "React components for Leaflet maps"
-  },
-  {
     "name": "react-pgr",
     "repo": "matt-major/react-pgr",
     "description": "React Pagination Component"
-  },
-  {
-    "name": "react-router-transition-context",
-    "repo": "buildo/react-router",
-    "description": "A complete routing library for React.js"
   },
   {
     "name": "react-svg-piechart",
@@ -5793,7 +5679,8 @@
   {
     "name": "react-form-controlled",
     "repo": "seeden/react-form-controlled",
-    "description": "React google analytics with support for react-router"
+    "description": "Controlled form for React. Why? Because it can be simple like React",
+    "original_description": "React google analytics with support for react-router"
   },
   {
     "name": "react-observable",
@@ -5875,11 +5762,6 @@
     "name": "react-dropfile-field",
     "repo": "georgeosddev/react-dropfile-field",
     "description": "React component which handle file drop and preview"
-  },
-  {
-    "name": "react-iso-animate",
-    "repo": "mangochomp/react-static-jsx",
-    "description": "Animate React components isomorphically based on state"
   },
   {
     "name": "react-labels-input",
@@ -7219,11 +7101,6 @@
     "description": "Quickly build, document and test react components via a grunt task"
   },
   {
-    "name": "react-callback-register",
-    "repo": "jamesknelson/react-base",
-    "description": "Higher order component to merge callbacks from props, your component, and decorators."
-  },
-  {
     "name": "react-perf-component",
     "repo": "sheepsteak/react-perf-component",
     "description": "Higher-order component that can measure component performance"
@@ -7385,11 +7262,6 @@
     "repo": "sarink/material-ui-with-sass",
     "description": "material-ui-with-sass is a combination fork of material-ui and material-ui-sass that still uses traditional css (well, sass) to apply styles.",
     "original_description": "material-ui-with-sass is a combination fork of [material-ui](https://github.com/callemall/material-ui)@v0.7.5 and [material-ui-sass](https://github.com/gpbl/material-ui-sass) that still uses traditional css (well, sass) to apply styles."
-  },
-  {
-    "name": "react-geojson-cluster",
-    "repo": "paulserraino/react-geojson-cluster",
-    "description": "react geojson cluster component"
   },
   {
     "name": "react-image-blur",
@@ -8223,7 +8095,8 @@
   {
     "name": "react-openpublish-profile",
     "repo": "howardwu/react-openpublish-profile",
-    "description": "A React component for querying and rendering OpenPublish assets"
+    "description": "A React component for querying and rendering user's published, tipped, and commented content on OpenPublish",
+    "original_description": "A React component for querying and rendering OpenPublish assets"
   },
   {
     "name": "bem-cx",
@@ -8401,11 +8274,6 @@
     "name": "react-static-container",
     "repo": "reactjs/react-static-container",
     "description": "Renders static content efficiently by allowing React to short-circuit the reconciliation process."
-  },
-  {
-    "name": "react-static-jsx",
-    "repo": "mangochomp/react-static-jsx",
-    "description": "Renders children components using dangerouslySetInnerHTML"
   },
   {
     "name": "react-table-for-bootstrap",
@@ -8633,11 +8501,6 @@
     "description": "Generate classname selectors for CSS components, works splendid together with e.g. React"
   },
   {
-    "name": "dbrans-react-maskedinput",
-    "repo": "insin/react-maskedinput",
-    "description": "Masked <input/> React component"
-  },
-  {
     "name": "delicate-error-reporter",
     "repo": "aulizko/delicate-error-reporter",
     "description": "A polite error reporter which delicately awaits your attention at the corner of the screen"
@@ -8715,11 +8578,6 @@
     "description": "Upload files async with xhr2 or iframe for IE. Supporting IE8+. Doing well in Tencent."
   },
   {
-    "name": "react-filtered-multiselect-custom-filter",
-    "repo": "insin/react-filtered-multiselect",
-    "description": "Filtered multi-select React component"
-  },
-  {
     "name": "react-flag-object",
     "repo": "chantastic/react-flag-object",
     "description": "React Flag Object"
@@ -8768,11 +8626,6 @@
     "name": "react-scrollspy",
     "repo": "makotot/react-scrollspy",
     "description": "react scrollspy component"
-  },
-  {
-    "name": "react-side-effect-maimai",
-    "repo": "gaearon/react-side-effect",
-    "description": "Create components whose prop changes map to a global side effect"
   },
   {
     "name": "react-simple-countdown",
@@ -9621,11 +9474,6 @@
     "description": "Live code editing with Browserify and React"
   },
   {
-    "name": "paulfri-react-inlinesvg",
-    "repo": "matthewwithanm/react-inlinesvg",
-    "description": "An SVG loader for React"
-  },
-  {
     "name": "react-case",
     "repo": "bfollington/react-case",
     "description": "Inline, declarative logic for React."
@@ -10439,11 +10287,6 @@
     "description": "An updated version of the Link component for react-router"
   },
   {
-    "name": "react-router-old",
-    "repo": "nkt/react-router-old",
-    "description": "A complete routing library for React.js"
-  },
-  {
     "name": "rodal",
     "repo": "chenjiahan/rodal",
     "description": "A React modal with animations."
@@ -11202,24 +11045,9 @@
     "description": "Router5 integration with redux"
   },
   {
-    "name": "rism",
-    "repo": "rapid7/rism",
-    "description": "Tools to streamline inline style management for React elements"
-  },
-  {
-    "name": "backbone-react-component-fix",
-    "repo": "magalhas/backbone-react-component",
-    "description": "Backbone.React.Component is a wrapper for React.Component and brings all the power of Facebook's React to Backbone.js"
-  },
-  {
     "name": "gulp-render-react",
     "repo": "abramz/gulp-render-react",
     "description": "Render react components to string or static markup"
-  },
-  {
-    "name": "icg-griddle-react",
-    "repo": "GriddleGriddle/Griddle",
-    "description": "Griddle - A fast and flexible grid component for React."
   },
   {
     "name": "jasmine-react-matchers",
@@ -11478,11 +11306,6 @@
     "description": "give your user a guided tour around your application"
   },
   {
-    "name": "react-virtual-select",
-    "repo": "code-artisan/react-select",
-    "description": "Virtual select component for React."
-  },
-  {
     "name": "reactive-lite",
     "repo": "chemzqm/reactive-lite",
     "description": "reactive simple works"
@@ -11724,62 +11547,52 @@
   },
   {
     "name": "react-addons-clone-with-props",
-    "original_repo": "",
-    "description": "This package provides the React cloneWithProps add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React cloneWithProps add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-create-fragment",
-    "original_repo": "",
-    "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React createFragment add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-css-transition-group",
-    "original_repo": "",
-    "description": "This package provides the React CSSTransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React CSSTransitionGroup add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-linked-state-mixin",
-    "original_repo": "",
-    "description": "This package provides the React LinkedStateMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React LinkedStateMixin add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-perf",
-    "original_repo": "",
-    "description": "This package provides the React Perf add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React Perf add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-pure-render-mixin",
-    "original_repo": "",
-    "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React PureRenderMixin add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-shallow-compare",
-    "original_repo": "",
-    "description": "This package provides the React shallowCompare add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React shallowCompare add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-test-utils",
-    "original_repo": "",
-    "description": "This package provides the React TestUtils add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React TestUtils add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-transition-group",
-    "original_repo": "",
-    "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React TransitionGroup add-on.",
     "repo": "facebook/react"
   },
   {
     "name": "react-addons-update",
-    "original_repo": "",
-    "description": "This package provides the React updates add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+    "description": "This package provides the React updates add-on.",
     "repo": "facebook/react"
   },
   {
@@ -12794,11 +12607,6 @@
     "original_description": "`react-render-hook` uses the [React-devtools](https://github.com/facebook/react-devtools) hook to watch for rendering React components, and provide an inteface to get to the virtual DOM tree and find rendered elements and get the metadata about them."
   },
   {
-    "name": "sharkins-react-bootstrap-datetimepicker",
-    "repo": "sharkinsspatial/react-bootstrap-datetimepicker",
-    "description": "A bootstrap datetime picker component for React.js"
-  },
-  {
     "name": "sourcejs-react-docgen",
     "repo": "sourcejs/sourcejs-react-docgen",
     "description": "SourceJS auto React doc builder middleware."
@@ -12878,11 +12686,6 @@
     "description": "Utility functions for retrieving elements from within a React VDOM tree."
   },
   {
-    "name": "react-testutils-render",
-    "repo": "jameslnewell/react-testutils-query",
-    "description": "A lite wrapper for shallow rendering React components."
-  },
-  {
     "name": "react-textfit",
     "repo": "malte-wessel/react-textfit",
     "description": "React component to fit headlines and paragraphs into any element"
@@ -12896,5 +12699,10 @@
     "name": "reflux-provides-store",
     "repo": "brigand/reflux-provides-store",
     "description": "high order component for reflux store bindings"
+  },
+  {
+    "name": "react-testutils-render",
+    "repo": "jameslnewell/react-testutils-render",
+    "description": "A lite wrapper for shallow rendering React components."
   }
 ]

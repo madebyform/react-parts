@@ -1165,11 +1165,6 @@
     "original_repo": "llanox/react-native-assests"
   },
   {
-    "name": "react-native-drawer-addmenu",
-    "repo": "rt2zz/react-native-drawer",
-    "description": "React Native Drawer"
-  },
-  {
     "name": "gl-react-native",
     "repo": "ProjectSeptemberInc/gl-react-native",
     "description": "OpenGL bindings for react-native to implement complex effects over images and components, in the descriptive VDOM paradigm"
@@ -1530,11 +1525,6 @@
     "name": "react-native-awesome-button",
     "repo": "larsvinter/react-native-awesome-button",
     "description": "A React Native component rendering a button supporting showing different appearances and functionality given the passed props"
-  },
-  {
-    "name": "react-native-i18n-complete",
-    "repo": "mrKlar/react-native-i18n",
-    "description": "React Native and I18n.js integration"
   },
   {
     "name": "react-native-card-io",
