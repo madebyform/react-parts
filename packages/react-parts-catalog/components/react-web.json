@@ -2776,8 +2776,9 @@
   },
   {
     "name": "generator-react-ui-component",
-    "repo": "react-ui/generator-react-ui-component",
-    "description": "Yeoman generator for create ReactJS components"
+    "repo": "yordis/generator-react-ui-component",
+    "description": "Yeoman generator for create ReactJS components",
+    "original_repo": "react-ui/generator-react-ui-component"
   },
   {
     "name": "generator-react-webpack",
@@ -6227,7 +6228,7 @@
   {
     "name": "react-look",
     "repo": "rofrischmann/react-look",
-    "description": "Processable, dynamic & stateful Component Styling for React & React Native"
+    "description": "Advanced & Dynamic Component Styling for React & React Native"
   },
   {
     "name": "react-pulr",
@@ -11004,7 +11005,6 @@
   {
     "name": "react-html5video",
     "repo": "mderrick/react-html5video",
-    "original_repo": "",
     "description": "A customizeable HTML5 Video that uses the familiar HTML5 video markup but with custom and configurable controls with i18n and a11y."
   },
   {
@@ -12704,5 +12704,81 @@
     "name": "react-testutils-render",
     "repo": "jameslnewell/react-testutils-render",
     "description": "A lite wrapper for shallow rendering React components."
+  },
+  {
+    "name": "minions.css",
+    "repo": "chantastic/minions.css",
+    "description": "Evil, friendly, and obedient immutable CSS class selectors.",
+    "original_description": "evil micro-classes"
+  },
+  {
+    "name": "classnames-loader",
+    "repo": "itsmepetrov/classnames-loader",
+    "description": "Webpack loader to automatically bind css-modules to classnames"
+  },
+  {
+    "name": "decorative-react",
+    "repo": "kyr0/decorative-react",
+    "description": "decorative-react.js is an ES7 micro-framework promoting @decorator pattern-driven app development using react."
+  },
+  {
+    "name": "lazytree-react",
+    "repo": "photoshelter/lazytree-react",
+    "description": "A React component for displaying large nested lists."
+  },
+  {
+    "name": "lsx",
+    "repo": "sakanabiscuit/lsx",
+    "description": "React plugin for LiveScript"
+  },
+  {
+    "name": "mutatis",
+    "repo": "steadicat/mutatis",
+    "description": "A lightweight immutability library compatible with JS built-in collections."
+  },
+  {
+    "name": "react-domcontentloaded",
+    "repo": "bjoerge/react-domcontentloaded",
+    "description": "A react component that inserts WebReflection's DOMContentLoaded fix for async scripts"
+  },
+  {
+    "name": "react-drop-down",
+    "repo": "StevenIseki/react-drop-down",
+    "description": "a simple drop down component"
+  },
+  {
+    "name": "react-globalize",
+    "repo": "kborchers/react-globalize",
+    "description": "Bringing the i18n functionality of Globalize, backed by CLDR, to React"
+  },
+  {
+    "name": "react-jwt-store",
+    "repo": "lanetix/react-jwt-store",
+    "description": "React JWT store"
+  },
+  {
+    "name": "react-plotlyjs",
+    "repo": "benjeffery/react-plotlyjs",
+    "description": "ReactJS / PlotlyJS integration. Draw plotly graphs in your react app."
+  },
+  {
+    "name": "react-simple-modal",
+    "repo": "sergiodxa/react-simple-modal",
+    "description": "React modal make it simple."
+  },
+  {
+    "name": "react-tel-input",
+    "repo": "martinrosenbergstrv/react-tel-input",
+    "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency"
+  },
+  {
+    "name": "react-timeout",
+    "repo": "plougsgaard/react-timeout",
+    "description": "A version of react-timer-mixin without the mixin part"
+  },
+  {
+    "name": "react-element-container",
+    "repo": "Jam3/react-element-container",
+    "description": "Put a native DOM element in your React render tree and easily break out back into vanilla DOM."
   }
 ]

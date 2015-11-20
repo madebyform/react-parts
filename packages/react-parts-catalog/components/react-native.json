@@ -2175,5 +2175,36 @@
     "name": "react-native-page-swiper",
     "repo": "fixt/react-native-page-swiper",
     "description": "Page Swiper component for React Native."
+  },
+  {
+    "name": "npm-native",
+    "repo": "ptmt/npm-native",
+    "description": "Manage your XCode dependencies via npm"
+  },
+  {
+    "name": "react-native-calendar-reminders",
+    "repo": "wmcmahan/React-Native-CalendarReminders",
+    "description": "React Native module for IOS EventKit Reminders"
+  },
+  {
+    "name": "react-native-fade-toogle",
+    "repo": "franfran/react-native-fade-toogle",
+    "description": "Simple fade in out toogle in your View"
+  },
+  {
+    "name": "react-native-gifted-messenger",
+    "repo": "FaridSafi/react-native-gifted-messenger",
+    "description": "The chat of your next React-Native Apps"
+  },
+  {
+    "name": "rn-spinner",
+    "repo": "RNComponents/rn-spinner",
+    "description": "Number spinner for react-native",
+    "original_repo": ""
+  },
+  {
+    "name": "react-native-qr-decoder",
+    "repo": "haobtc/react-native-qr-decoder",
+    "description": "react native qrcode decorder from local image file."
   }
 ]
