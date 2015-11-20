@@ -4277,7 +4277,7 @@
   {
     "name": "carbondream",
     "repo": "ZeroarcSoftware/carbondream",
-    "description": "Reactjs web annotation engine"
+    "description": "React web annotation engine"
   },
   {
     "name": "react-codemirror",
@@ -11671,8 +11671,9 @@
   },
   {
     "name": "relpers",
-    "repo": "croudcare/relpers",
-    "description": "A group of small React Helpers to reduce your React boilerplate."
+    "repo": "goncalvesjoao/relpers",
+    "description": "A group of small React Helpers to reduce your React boilerplate.",
+    "original_repo": "croudcare/relpers"
   },
   {
     "name": "sitb-react-icon",
@@ -12780,5 +12781,35 @@
     "name": "react-element-container",
     "repo": "Jam3/react-element-container",
     "description": "Put a native DOM element in your React render tree and easily break out back into vanilla DOM."
+  },
+  {
+    "name": "isomorphic-style-loader",
+    "repo": "kriasoft/isomorphic-style-loader",
+    "description": "Isomorphic CSS style loader for Webpack"
+  },
+  {
+    "name": "react-animate.css",
+    "repo": "thiagoc7/react-animate.css",
+    "description": "animate.css wraper for ReactCSSTransitionGroup"
+  },
+  {
+    "name": "react-dnd-item",
+    "repo": "t-hiroyoshi/react-dnd-item",
+    "description": "A draggable and droppable item comopnent for React"
+  },
+  {
+    "name": "react-dnd-touch-backend",
+    "repo": "yahoo/react-dnd-touch-backend",
+    "description": "Touch backend for react-dnd"
+  },
+  {
+    "name": "react-pull-to-refresh",
+    "repo": "bryaneaton13/react-pull-to-refresh",
+    "description": "A React component for pull to refresh on the web."
+  },
+  {
+    "name": "redux-boilerplate",
+    "repo": "fahad19/redux-boilerplate",
+    "description": "Boilerplate generator for Redux"
   }
 ]

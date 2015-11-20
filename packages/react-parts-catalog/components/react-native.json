@@ -2206,5 +2206,26 @@
     "name": "react-native-qr-decoder",
     "repo": "haobtc/react-native-qr-decoder",
     "description": "react native qrcode decorder from local image file."
+  },
+  {
+    "name": "react-native-console-panel",
+    "repo": "sospartan/react-native-console-panel",
+    "description": "react native component for display console messages. "
+  },
+  {
+    "name": "react-native-make-review-modal",
+    "repo": "djchie/react-native-make-review-modal",
+    "description": "A React Native component for displaying a modal for making reviews"
+  },
+  {
+    "name": "react-native-randombytes",
+    "repo": "mvayngrib/react-native-randombytes",
+    "description": "randomBytes for react-native",
+    "original_repo": ""
+  },
+  {
+    "name": "react-native-star-rating",
+    "repo": "djchie/react-native-star-rating",
+    "description": "A React Native component for generating and displaying interactive star ratings"
   }
 ]
