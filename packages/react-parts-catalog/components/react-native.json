@@ -2227,5 +2227,20 @@
     "name": "react-native-star-rating",
     "repo": "djchie/react-native-star-rating",
     "description": "A React Native component for generating and displaying interactive star ratings"
+  },
+  {
+    "name": "react-native-cache",
+    "repo": "timfpark/react-native-cache",
+    "description": "LRU cache built on AsyncStorage for react-native"
+  },
+  {
+    "name": "react-native-cognito",
+    "repo": "morcmarc/react-native-cognito",
+    "description": "AWS Cognito-based authentication module for React Native."
+  },
+  {
+    "name": "react-native-qrcode",
+    "repo": "cssivision/react-native-qrcode",
+    "description": "react-native qrocode generator"
   }
 ]

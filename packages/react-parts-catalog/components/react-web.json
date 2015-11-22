@@ -203,7 +203,7 @@
   },
   {
     "name": "griddle-react",
-    "repo": "DynamicTyped/Griddle",
+    "repo": "GriddleGriddle/Griddle",
     "description": "Griddle - A fast and flexible grid component for React."
   },
   {
@@ -3441,7 +3441,7 @@
   {
     "name": "react-kit",
     "repo": "yuanyan/react-kit",
-    "description": "React.js Toolkit"
+    "description": "React.js DOM Toolkit"
   },
   {
     "name": "react-kudos",
@@ -4291,8 +4291,8 @@
   },
   {
     "name": "react-ui-builder",
-    "repo": "ipselon/react-ui-builder",
-    "description": "The visual tool for prototyping UI for ReactJS components and Web applications."
+    "repo": "ipselon/structor",
+    "description": "The visual tool for prototyping UI for ReactJS components and Web applications.[DEPRECATED] Use Structor instead."
   },
   {
     "name": "reactorator",
@@ -5681,7 +5681,7 @@
     "name": "react-form-controlled",
     "repo": "seeden/react-form-controlled",
     "description": "Controlled form for React. Why? Because it can be simple like React",
-    "original_description": "React google analytics with support for react-router"
+    "original_description": "React controlled form components. The main idea is to make forms as simple as possible."
   },
   {
     "name": "react-observable",
@@ -5726,7 +5726,7 @@
   {
     "name": "reflux-state-mixin",
     "repo": "yonatanmn/reflux-state-mixin",
-    "description": "Reflux stores mixin adding 'state' syntax similar to React components."
+    "description": "Reflux stores mixin adding 'state' syntax similar to React components. es6 classes supported"
   },
   {
     "name": "shoreline-ui",
@@ -10521,7 +10521,7 @@
   {
     "name": "structor",
     "repo": "ipselon/structor",
-    "description": "A user interface builder for React"
+    "description": "A user interface builder for node.js Web applications with React UI"
   },
   {
     "name": "tag-search",
@@ -11395,8 +11395,7 @@
   {
     "name": "realloc",
     "repo": "foomorrow/realloc",
-    "original_repo": "",
-    "description": "A Immutable State Manager for Javascript Applications"
+    "description": "Observable, Immutable State Manager for Javascript Applications"
   },
   {
     "name": "retransmitter",
@@ -11672,8 +11671,7 @@
   {
     "name": "relpers",
     "repo": "goncalvesjoao/relpers",
-    "description": "A group of small React Helpers to reduce your React boilerplate.",
-    "original_repo": "croudcare/relpers"
+    "description": "A group of small React Helpers to reduce your React boilerplate."
   },
   {
     "name": "sitb-react-icon",
@@ -12811,5 +12809,85 @@
     "name": "redux-boilerplate",
     "repo": "fahad19/redux-boilerplate",
     "description": "Boilerplate generator for Redux"
+  },
+  {
+    "name": "apeman-react-accordion",
+    "repo": "apeman-react-labo/apeman-react-accordion",
+    "description": "apeman react package for accordion components."
+  },
+  {
+    "name": "apeman-react-basic",
+    "repo": "apeman-react-labo/apeman-react-basic",
+    "description": "Basic react components of apeman."
+  },
+  {
+    "name": "apeman-react-header",
+    "repo": "apeman-react-labo/apeman-react-header",
+    "description": "apeman react package for header components."
+  },
+  {
+    "name": "apeman-react-links",
+    "repo": "apeman-react-labo/apeman-react-links",
+    "description": "apeman react package for link list component."
+  },
+  {
+    "name": "apeman-react-showcase",
+    "repo": "apeman-react-labo/apeman-react-showcase",
+    "description": "apeman react package for showcase components."
+  },
+  {
+    "name": "react-cursor",
+    "repo": "dustingetz/react-cursor",
+    "description": "Functional state management abstraction for use with Facebook React"
+  },
+  {
+    "name": "react-date-picker-component",
+    "repo": "kristijan-pajtasev/react-date-picker",
+    "description": "React date picker component"
+  },
+  {
+    "name": "react-datetimepicker-bootstrap",
+    "repo": "iMasterAle/react-datetimepicker-bootstrap",
+    "description": "DateTimePicker with React and Bootstrap"
+  },
+  {
+    "name": "react-es6-commons",
+    "repo": "kyr0/react-es6-commons",
+    "description": "Common classes you may extend from to build ES6+ driven React experiences with ease and simplicity"
+  },
+  {
+    "name": "react-file-uploader",
+    "repo": "lionng429/react-file-uploader",
+    "description": "A set of file-upload-components with React.js."
+  },
+  {
+    "name": "react-picker",
+    "repo": "nickeljew/react-picker",
+    "description": "Picker Component with a popup options list similiar to the picker in iOS"
+  },
+  {
+    "name": "react-render-if-truthy",
+    "repo": "colindresj/react-render-if-truthy",
+    "description": "A JSX utility for conditionally returning virtual DOM."
+  },
+  {
+    "name": "react-resize-detector",
+    "repo": "maslianok/react-resize-detector",
+    "description": "React resize detector"
+  },
+  {
+    "name": "react-star-rating-component",
+    "repo": "voronianski/react-star-rating-component",
+    "description": "React component for star (or any other icon based) ratings"
+  },
+  {
+    "name": "react-videojs",
+    "repo": "esportsguy/react-videojs",
+    "description": "react videojs wrapper"
+  },
+  {
+    "name": "redux-component",
+    "repo": "tomchentw/redux-component",
+    "description": "Create stateful React Component using goodness from redux"
   }
 ]
