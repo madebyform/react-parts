@@ -1115,8 +1115,7 @@
   {
     "name": "react-soundcloud-widget",
     "repo": "troybetz/react-soundcloud-widget",
-    "description": "react.js powered SoundCloud player component",
-    "original_repo": "compedit/react-soundcloud-widget"
+    "description": "react.js powered SoundCloud player component"
   },
   {
     "name": "react-sortable-table",
@@ -12889,5 +12888,75 @@
     "name": "redux-component",
     "repo": "tomchentw/redux-component",
     "description": "Create stateful React Component using goodness from redux"
+  },
+  {
+    "name": "apeman-react-container",
+    "repo": "apeman-react-labo/apeman-react-container",
+    "description": "apeman react package for container component."
+  },
+  {
+    "name": "apeman-react-footer",
+    "repo": "apeman-react-labo/apeman-react-footer",
+    "description": "apeman react package for footer component."
+  },
+  {
+    "name": "burner-speech",
+    "repo": "BenNG/burner-speech",
+    "description": "React component that use the Speech Recognition API"
+  },
+  {
+    "name": "karma-chai-equal-jsx",
+    "repo": "echenley/karma-chai-equal-jsx",
+    "description": "Karma plugin for chai-equal-jsx"
+  },
+  {
+    "name": "react-google-maps-addons",
+    "repo": "11th/react-google-maps-addons",
+    "description": "Collection of addons for react-google-maps"
+  },
+  {
+    "name": "react-isolate",
+    "repo": "eisisig/react-isolate",
+    "description": "A React workbench to work/view react component in isolated environment"
+  },
+  {
+    "name": "react-prefix-loader",
+    "repo": "vmakhaev/react-prefix-loader",
+    "description": "Webpack loader that prefixes classes in React components"
+  },
+  {
+    "name": "react-prop-types-element-of-type",
+    "repo": "tomchentw/react-prop-types-element-of-type",
+    "description": "Check if given React element is created by certain Component type"
+  },
+  {
+    "name": "react-pure-render-ignore-functions",
+    "repo": "spybot/react-pure-render-ignore-functions",
+    "description": "PureRenderMixin for react.js that ignores functions when comparing component state and props"
+  },
+  {
+    "name": "react-responsive-tabs",
+    "repo": "maslianok/react-responsive-tabs",
+    "description": "React responsive tabs"
+  },
+  {
+    "name": "react-tween-state",
+    "repo": "chenglou/react-tween-state",
+    "description": "React animation."
+  },
+  {
+    "name": "redux-validate-fsa",
+    "repo": "buunguyen/redux-validate-fsa",
+    "description": "Redux middleware that validates if an action is a Flux Standard Action (FSA)"
+  },
+  {
+    "name": "simple-date-picker",
+    "repo": "gcanti/simple-date-picker",
+    "description": "A simple clean way to pick dates with React "
+  },
+  {
+    "name": "translate-maker",
+    "repo": "CherrySoftware/translate-maker",
+    "description": "Translate your project like a boss. The official core for the www.translatemaker.com"
   }
 ]

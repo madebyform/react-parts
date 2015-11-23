@@ -1712,7 +1712,7 @@
   {
     "name": "cairn",
     "repo": "adamterlson/cairn",
-    "description": "A string-based selector engine for React Native styling"
+    "description": "Simpler string-based styling for React Native"
   },
   {
     "name": "react-native-animatable",
@@ -2143,7 +2143,7 @@
   },
   {
     "name": "react-native-android-geolocation",
-    "repo": "MasticatingMarsupial/react-native-android-geolocation",
+    "repo": "garysye/react-native-android-geolocation",
     "description": "React Native Module to use Android Geolocation via Google Play API"
   },
   {
@@ -2242,5 +2242,10 @@
     "name": "react-native-qrcode",
     "repo": "cssivision/react-native-qrcode",
     "description": "react-native qrocode generator"
+  },
+  {
+    "name": "rn-navbar",
+    "repo": "RNComponents/rn-navbar",
+    "description": "Simple NavBar component for react-native"
   }
 ]
