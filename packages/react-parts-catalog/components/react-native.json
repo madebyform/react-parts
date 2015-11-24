@@ -2247,5 +2247,35 @@
     "name": "rn-navbar",
     "repo": "RNComponents/rn-navbar",
     "description": "Simple NavBar component for react-native"
+  },
+  {
+    "name": "react-native-cosmos",
+    "repo": "jerolimov/react-native-cosmos",
+    "description": "DX tool to test react-native components with defined props/state fixtures."
+  },
+  {
+    "name": "react-native-iconic-font",
+    "repo": "sospartan/react-native-iconic-font",
+    "description": "Use iconic font in a simple way."
+  },
+  {
+    "name": "react-native-rebound-scrollview",
+    "repo": "jaxchow/react-native-rebound-scrollview",
+    "description": "React Native Android ReboundScrollView implementation."
+  },
+  {
+    "name": "react-native-vksdk",
+    "repo": "doochik/react-native-vk-sdk",
+    "description": "A wrapper around the iOS VK (VKontakte) SDK for React Native apps"
+  },
+  {
+    "name": "rn-calendars",
+    "repo": "RNComponents/rn-calendars",
+    "description": "An extensible calendar component for react-native"
+  },
+  {
+    "name": "rn-focalpoint",
+    "repo": "alexcurtis/rn-focalpoint",
+    "description": "Create a high-level focus chain in React Native without the boilerplate."
   }
 ]

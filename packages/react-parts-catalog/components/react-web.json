@@ -4098,7 +4098,7 @@
   {
     "name": "uncontrollable",
     "repo": "jquense/uncontrollable",
-    "description": "Wrap a controlled react component, to allow spcific prop/handler pairs to be uncontrolled"
+    "description": "Wrap a controlled react component, to allow specific prop/handler pairs to be uncontrolled"
   },
   {
     "name": "unexpected-react",
@@ -7487,8 +7487,9 @@
   },
   {
     "name": "enter-animation",
-    "repo": "ant-design/enter-animation",
-    "description": "进场动画js"
+    "repo": "jljsj33/enter-animation",
+    "description": "进场动画js",
+    "original_repo": "ant-design/enter-animation"
   },
   {
     "name": "flux-master-flex",
@@ -11326,8 +11327,9 @@
   },
   {
     "name": "cerebral-react",
-    "repo": "christianalfoni/cerebral-react",
-    "description": "React View layer package for Cerebral"
+    "repo": "cerebral/cerebral-react",
+    "description": "React View layer package for Cerebral",
+    "original_repo": "christianalfoni/cerebral-react"
   },
   {
     "name": "flyd-lift-react",
@@ -11595,8 +11597,9 @@
   },
   {
     "name": "react-big-calendar",
-    "repo": "jquense/react-big-calendar",
-    "description": "Calendar! with events"
+    "repo": "intljusticemission/react-big-calendar",
+    "description": "Calendar! with events",
+    "original_repo": "jquense/react-big-calendar"
   },
   {
     "name": "react-dom",
@@ -12011,11 +12014,6 @@
     "name": "generator-react-redux-modules",
     "repo": "jermspeaks/generator-react-redux",
     "description": "React with Redux code generator using Yeoman"
-  },
-  {
-    "name": "hapi-react-handler",
-    "repo": "tanepiper/hapi-react-handler",
-    "description": "A handler for hapi routes that renders via react-router"
   },
   {
     "name": "isomorphic-relay",
@@ -12957,6 +12955,126 @@
   {
     "name": "translate-maker",
     "repo": "CherrySoftware/translate-maker",
-    "description": "Translate your project like a boss. The official core for the www.translatemaker.com"
+    "description": "Universal translation library"
+  },
+  {
+    "name": "apeman-react-clock",
+    "repo": "apeman-react-labo/apeman-react-clock",
+    "description": "apeman react package for clock components."
+  },
+  {
+    "name": "apeman-react-tab",
+    "repo": "apeman-react-labo/apeman-react-tab",
+    "description": "apeman react package for tab component."
+  },
+  {
+    "name": "babel-preset-node5",
+    "repo": "leebenson/babel-preset-node5",
+    "description": "Babel preset for Node 5.x (ES6, React, Flow)"
+  },
+  {
+    "name": "easy-cursors",
+    "repo": "KualiCo/easy-cursors",
+    "description": "Cursors that work with normal objects. Works with React"
+  },
+  {
+    "name": "enso",
+    "repo": "kossnocorp/enso",
+    "description": "Minimal data flow loop for async applications"
+  },
+  {
+    "name": "honzasusek-react-scroll",
+    "repo": "fisshy/react-scroll",
+    "description": "A scroll component for React.js"
+  },
+  {
+    "name": "jsx-to-string",
+    "repo": "alansouzati/jsx-to-string",
+    "description": "Parse your React JSX component to string"
+  },
+  {
+    "name": "pico-flux",
+    "repo": "stolksdorf/pico-flux",
+    "description": "An incredibly tiny version of flux"
+  },
+  {
+    "name": "qrcode-react",
+    "repo": "cssivision/qrcode-react",
+    "description": "React component to generate QRCode with logo"
+  },
+  {
+    "name": "react-c3js",
+    "repo": "bcbcarl/react-c3js",
+    "description": "React component for C3.js"
+  },
+  {
+    "name": "react-constant",
+    "repo": "yesvods/react-constant",
+    "description": "Fuck off constants.js and golobal constants in react/flux/redux/wateva."
+  },
+  {
+    "name": "react-display",
+    "repo": "luiscarli/react-display",
+    "description": "display components"
+  },
+  {
+    "name": "react-lite-markdown",
+    "repo": "teambition/react-lite-markdown",
+    "description": "React markdown renderer of 简聊"
+  },
+  {
+    "name": "react-loading-bar",
+    "repo": "lonelyclick/react-loading-bar",
+    "description": "react loading bar"
+  },
+  {
+    "name": "react-product-tour",
+    "repo": "antoniogiordano/react-product-tour",
+    "description": "A classic product tour written in React"
+  },
+  {
+    "name": "react-server-status",
+    "repo": "vgno/react-server-status",
+    "description": "A declarative way to set server status"
+  },
+  {
+    "name": "react-tabs-view",
+    "repo": "StevenIseki/react-tab-view",
+    "description": "a simple tab component"
+  },
+  {
+    "name": "redux-form-validation",
+    "repo": "CosticaPuntaru/redux-form-validation",
+    "description": "An helper to make redux form validation easyer"
+  },
+  {
+    "name": "specular",
+    "repo": "madjam002/specular",
+    "description": "Custom renderers for React."
+  },
+  {
+    "name": "specular-animation",
+    "repo": "madjam002/specular",
+    "description": "Beat and time based animation/tweening engine for React and Specular."
+  },
+  {
+    "name": "specular-dmx",
+    "repo": "madjam002/specular",
+    "description": "Control lighting fixtures and build light shows with React and Specular."
+  },
+  {
+    "name": "specular-dmx-artnet",
+    "repo": "madjam002/specular",
+    "description": "Output DMX to ArtNet from Specular."
+  },
+  {
+    "name": "specular-dmx-socket-io",
+    "repo": "madjam002/specular",
+    "description": "Output DMX to Socket.IO from Specular."
+  },
+  {
+    "name": "specular-midi",
+    "repo": "madjam002/specular",
+    "description": "Control MIDI devices with React and Specular."
   }
 ]
