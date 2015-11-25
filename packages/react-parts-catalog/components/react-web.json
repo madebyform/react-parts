@@ -7683,12 +7683,6 @@
     "description": "An ES6-friendly on-click-outside React component."
   },
   {
-    "name": "react-seinfeld",
-    "repo": "sotojuan/seinfeld",
-    "description": "Custom Seinfeld logo component",
-    "original_repo": "sotojuan/react-seinfeld"
-  },
-  {
     "name": "uxcore-button",
     "repo": "uxcore/uxcore-button",
     "description": "uxcore-button ui component for react"
@@ -12744,8 +12738,9 @@
   },
   {
     "name": "react-globalize",
-    "repo": "kborchers/react-globalize",
-    "description": "Bringing the i18n functionality of Globalize, backed by CLDR, to React"
+    "repo": "jquery-support/react-globalize",
+    "description": "Bringing the i18n functionality of Globalize, backed by CLDR, to React",
+    "original_repo": "kborchers/react-globalize"
   },
   {
     "name": "react-jwt-store",
@@ -13076,5 +13071,163 @@
     "name": "specular-midi",
     "repo": "madjam002/specular",
     "description": "Control MIDI devices with React and Specular."
+  },
+  {
+    "name": "css-video-wrap",
+    "repo": "StevenIseki/css-video-wrap",
+    "description": "a css module wrapper for embedded video youtube, vimeo, etc..."
+  },
+  {
+    "name": "formerly",
+    "repo": "chrisamaral/formerly",
+    "description": "yet another form abstraction library for react"
+  },
+  {
+    "name": "generator-react-console",
+    "repo": "bang88/generator-react-console",
+    "description": "Yeoman generator"
+  },
+  {
+    "name": "inspect-react-element",
+    "repo": "jsdf/inspect-react-element",
+    "description": "Prettyprints ReactElements and their children",
+    "original_repo": ""
+  },
+  {
+    "name": "modal-form",
+    "repo": "zooniverse-ui/modal-form",
+    "description": "These are React components. They render a form with an screen-sized underlay preventing interaction with the page.",
+    "original_repo": ""
+  },
+  {
+    "name": "natty-db",
+    "repo": "Jias/natty-db",
+    "description": "A natty little data fetching tool for react project that no longer needs to use jQuery/Zepto. "
+  },
+  {
+    "name": "pegasus-loader",
+    "repo": "tazsingh/pegasus-loader",
+    "description": "File-System based Route declarations for React Router"
+  },
+  {
+    "name": "pure-css",
+    "repo": "StevenIseki/pure-css",
+    "description": "A css module compatible version of purecss"
+  },
+  {
+    "name": "react-accordionlly",
+    "repo": "lumenlearning/react-accordionlly",
+    "description": "An Accessible Accordion React JS Component"
+  },
+  {
+    "name": "react-baron",
+    "repo": "Diokuz/react-baron",
+    "description": "React component for baron scrollbar library",
+    "original_repo": ""
+  },
+  {
+    "name": "react-blurred-img",
+    "repo": "wbinnssmith/react-blurred-img",
+    "description": "A React component to display a blurred image",
+    "original_repo": ""
+  },
+  {
+    "name": "react-document-modifier",
+    "repo": "observant/react-document-modifier",
+    "description": "Declaritive, nested, stateful `document` modification for React applications",
+    "original_repo": ""
+  },
+  {
+    "name": "react-es6-classy-mixins",
+    "repo": "HitoriSensei/react-es6-classy-mixins",
+    "description": "React ES6 components with mixins"
+  },
+  {
+    "name": "react-input-toggle",
+    "repo": "enjoylife/react-input-toggle",
+    "description": "A collection of aesthetically pleasing, accessible and customizable toggles build with React."
+  },
+  {
+    "name": "react-intercom",
+    "repo": "nhagen/react-intercom",
+    "description": "A component to initialize Intercom in your application"
+  },
+  {
+    "name": "react-pane",
+    "repo": "mariuslundgard/react-pane",
+    "description": "An advanced swipe carousel for web platforms.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-pinterest",
+    "repo": "pinterest/react-pinterest",
+    "description": "Collection of embeddable Pinterest buttons and widgets"
+  },
+  {
+    "name": "react-ratio-placeholder",
+    "repo": "wbinnssmith/react-ratio-placeholder",
+    "description": "A React component for fully responsive, aspect-ratio maintaining elements",
+    "original_repo": ""
+  },
+  {
+    "name": "react-sharethis",
+    "repo": "dtengeri/react-sharethis",
+    "description": "React component for ShareThis widgets"
+  },
+  {
+    "name": "react-wildcat",
+    "repo": "nfl/react-wildcat",
+    "description": "An opinionated React environment.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-wildcat-ensure",
+    "repo": "nfl/react-wildcat",
+    "description": "An asynchronous System.import helper.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-wildcat-handoff",
+    "repo": "nfl/react-wildcat",
+    "description": "Default client/server rendering for react-wildcat",
+    "original_repo": ""
+  },
+  {
+    "name": "react-wildcat-prefetch",
+    "repo": "nfl/react-wildcat",
+    "description": "A React decorator to prefetch component data.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-wildcat-radium",
+    "repo": "nfl/react-wildcat",
+    "description": "Radium configured for use in Wildcat",
+    "original_repo": ""
+  },
+  {
+    "name": "realm-redux",
+    "repo": "acdlite/realm-redux",
+    "description": "Enables the use of Redux extensions with Realm components",
+    "original_repo": ""
+  },
+  {
+    "name": "redux-freeze",
+    "repo": "buunguyen/redux-freeze",
+    "description": "Redux middleware that freezes state from being mutated anywhere in the app"
+  },
+  {
+    "name": "roc-web-react",
+    "repo": "vgno/roc-web-react",
+    "description": "React base extension for Roc Applications"
+  },
+  {
+    "name": "ruto",
+    "repo": "ninja/ruto",
+    "description": "Universal React Router"
+  },
+  {
+    "name": "varo-flux",
+    "repo": "vtardia/varo-flux",
+    "description": "A Flux-style action dispatcher built on top of Varo pattern match library."
   }
 ]

@@ -2199,8 +2199,7 @@
   {
     "name": "rn-spinner",
     "repo": "RNComponents/rn-spinner",
-    "description": "Number spinner for react-native",
-    "original_repo": ""
+    "description": "Number spinner for react-native"
   },
   {
     "name": "react-native-qr-decoder",
@@ -2265,7 +2264,7 @@
   },
   {
     "name": "react-native-vksdk",
-    "repo": "doochik/react-native-vk-sdk",
+    "repo": "doochik/react-native-vksdk",
     "description": "A wrapper around the iOS VK (VKontakte) SDK for React Native apps"
   },
   {
@@ -2277,5 +2276,24 @@
     "name": "rn-focalpoint",
     "repo": "alexcurtis/rn-focalpoint",
     "description": "Create a high-level focus chain in React Native without the boilerplate."
+  },
+  {
+    "name": "react-native-digits",
+    "repo": "fixt/react-native-digits",
+    "description": "Digits React Native module",
+    "original_repo": "",
+    "original_description": "##Android"
+  },
+  {
+    "name": "react-native-redux-router",
+    "repo": "aksonov/react-native-redux-router",
+    "description": "React Native Router using Redux architecture",
+    "original_repo": ""
+  },
+  {
+    "name": "react-native-router-redux",
+    "repo": "qwikly/react-native-router-redux",
+    "description": "A routing library for React Native and Redux",
+    "original_repo": ""
   }
 ]
