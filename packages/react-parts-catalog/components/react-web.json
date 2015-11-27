@@ -3390,7 +3390,7 @@
   {
     "name": "react-input",
     "repo": "pburtchaell/react-input",
-    "description": "Components for building forms in React."
+    "description": "Easy forms for React."
   },
   {
     "name": "react-input-color",
@@ -3440,7 +3440,7 @@
   {
     "name": "react-kit",
     "repo": "yuanyan/react-kit",
-    "description": "React.js DOM Toolkit"
+    "description": "Toolkit for React"
   },
   {
     "name": "react-kudos",
@@ -5724,8 +5724,9 @@
   },
   {
     "name": "reflux-state-mixin",
-    "repo": "yonatanmn/reflux-state-mixin",
-    "description": "Reflux stores mixin adding 'state' syntax similar to React components. es6 classes supported"
+    "repo": "yonatanmn/Super-Simple-Flux",
+    "description": "Reflux stores mixin adding 'state' syntax similar to React components. es6 classes supported",
+    "original_repo": "yonatanmn/reflux-state-mixin"
   },
   {
     "name": "shoreline-ui",
@@ -5756,7 +5757,7 @@
   {
     "name": "react-blocks",
     "repo": "whoisandie/react-blocks",
-    "description": "A higher-level react component to manage complex layouts using flexbox."
+    "description": "A higher-level react component to manage complex layouts using CSS flexbox."
   },
   {
     "name": "react-dropfile-field",
@@ -8348,7 +8349,7 @@
   },
   {
     "name": "react-router-loader",
-    "repo": "uooo/react-router-loader",
+    "repo": "1fe/react-router-loader",
     "original_repo": "luqin/react-router-loader",
     "description": "Dynamically load react-router components on-demand"
   },
@@ -11635,8 +11636,7 @@
   },
   {
     "name": "react-modal2",
-    "original_repo": "thejameskyle/react-modal2",
-    "description": "Stateless modal component for React.",
+    "description": "Simple modal component for React.",
     "repo": "cloudflare/react-modal2"
   },
   {
@@ -12965,7 +12965,7 @@
   {
     "name": "babel-preset-node5",
     "repo": "leebenson/babel-preset-node5",
-    "description": "Babel preset for Node 5.x (ES6, React, Flow)"
+    "description": "Babel preset for Node 5.x (ES6 / ES2015)"
   },
   {
     "name": "easy-cursors",
@@ -13102,7 +13102,7 @@
   {
     "name": "natty-db",
     "repo": "Jias/natty-db",
-    "description": "A natty little data fetching tool for react project that no longer needs to use jQuery/Zepto. "
+    "description": "A natty semantic data-fetching tool for project that no longer needs to use jQuery/Zepto's Ajax."
   },
   {
     "name": "pegasus-loader",
@@ -13229,5 +13229,60 @@
     "name": "varo-flux",
     "repo": "vtardia/varo-flux",
     "description": "A Flux-style action dispatcher built on top of Varo pattern match library."
+  },
+  {
+    "name": "apeman-react-image",
+    "repo": "apeman-react-labo/apeman-react-image",
+    "description": "apeman react package for image component."
+  },
+  {
+    "name": "apeman-react-main",
+    "repo": "apeman-react-labo/apeman-react-main",
+    "description": "apeman react package for main component."
+  },
+  {
+    "name": "clinch.jsx",
+    "repo": "Meettya/clinch.jsx",
+    "description": "React jsx processor for Clinch"
+  },
+  {
+    "name": "css-block-loader",
+    "repo": "StevenIseki/css-block-loader",
+    "description": "a stylish css module block loader..."
+  },
+  {
+    "name": "esnet-react-base",
+    "repo": "esnet/esnet-react-base",
+    "description": "Common widgets for ESnet tools"
+  },
+  {
+    "name": "pouch-redux-middleware",
+    "repo": "pgte/pouch-redux-middleware",
+    "description": "PouchDB Redux Middleware"
+  },
+  {
+    "name": "react-classname-module",
+    "repo": "51seven/react-classname-modules",
+    "description": "Write CSS Modules painless with className and classnames()"
+  },
+  {
+    "name": "react-mousetrap-mixin",
+    "repo": "georgeosddev/react-mousetrap-mixin",
+    "description": "React mixin for mousetrap"
+  },
+  {
+    "name": "react-pagers",
+    "repo": "code-artisan/react-pagers",
+    "description": "Paginator for React.JS"
+  },
+  {
+    "name": "react-resizable-box",
+    "repo": "bokuweb/react-resizable-box",
+    "description": "Resizable component for React."
+  },
+  {
+    "name": "redux-authentication",
+    "repo": "Jackong/redux-authentication",
+    "description": "authentication component for redux"
   }
 ]

@@ -1301,7 +1301,7 @@
   },
   {
     "name": "gulp-react-native-stylesheet-css",
-    "repo": "jjshammas/gulp-react-native-stylesheet-css",
+    "repo": "DriveWealth/gulp-react-native-stylesheet-css",
     "description": "Gulp plugin for converting CSS files to React Native StyleSheets."
   },
   {
@@ -2245,7 +2245,7 @@
   {
     "name": "rn-navbar",
     "repo": "RNComponents/rn-navbar",
-    "description": "Simple NavBar component for react-native"
+    "description": "NavBar component for react-native"
   },
   {
     "name": "react-native-cosmos",
@@ -2295,5 +2295,26 @@
     "repo": "qwikly/react-native-router-redux",
     "description": "A routing library for React Native and Redux",
     "original_repo": ""
+  },
+  {
+    "name": "mrn",
+    "repo": "binggg/mrn",
+    "description": "React Native Material Design Components"
+  },
+  {
+    "name": "react-native-android-blurryoverlay",
+    "repo": "kwaak/react-native-android-blurryoverlay",
+    "description": "A react native android package to show a blurry overlay.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-native-netinfo-android",
+    "repo": "MiincGu/react-native-netinfo-android",
+    "description": "Get network information on android."
+  },
+  {
+    "name": "react-native-onepassword",
+    "repo": "DriveWealth/react-native-onepassword",
+    "description": "React Native integration with the OnePassword extension."
   }
 ]
