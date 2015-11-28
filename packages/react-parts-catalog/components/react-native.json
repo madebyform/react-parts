@@ -2304,8 +2304,7 @@
   {
     "name": "react-native-android-blurryoverlay",
     "repo": "kwaak/react-native-android-blurryoverlay",
-    "description": "A react native android package to show a blurry overlay.",
-    "original_repo": ""
+    "description": "A react native android package to show a blurry overlay."
   },
   {
     "name": "react-native-netinfo-android",
@@ -2316,5 +2315,15 @@
     "name": "react-native-onepassword",
     "repo": "DriveWealth/react-native-onepassword",
     "description": "React Native integration with the OnePassword extension."
+  },
+  {
+    "name": "eslint-plugin-react-native",
+    "repo": "intellicode/eslint-plugin-react-native",
+    "description": "React Native specific linting rules for ESLint"
+  },
+  {
+    "name": "rnpm",
+    "repo": "rnpm/rnpm",
+    "description": "React Native Package Manager"
   }
 ]

@@ -9703,7 +9703,7 @@
   },
   {
     "name": "micro-emitter",
-    "repo": "khirayama/MicroEmitter",
+    "repo": "khirayama/micro-emitter",
     "description": "micro event emitter in es6."
   },
   {
@@ -12587,7 +12587,7 @@
   {
     "name": "react-flexbox-grid",
     "repo": "roylee0704/react-flexbox-grid",
-    "description": "React Component based on flexboxgrid"
+    "description": "A set of React components implementing flexboxgrid with the power of CSS Modules"
   },
   {
     "name": "react-render-hook",
@@ -13010,7 +13010,7 @@
   {
     "name": "react-display",
     "repo": "luiscarli/react-display",
-    "description": "display components"
+    "description": "React components for helping with inline styling"
   },
   {
     "name": "react-lite-markdown",
@@ -13262,8 +13262,9 @@
   },
   {
     "name": "react-classname-module",
-    "repo": "51seven/react-classname-modules",
-    "description": "Write CSS Modules painless with className and classnames()"
+    "repo": "51seven/react-classname-module",
+    "description": "Write CSS Modules painless with className and classnames()",
+    "original_repo": "51seven/react-classname-modules"
   },
   {
     "name": "react-mousetrap-mixin",
@@ -13284,5 +13285,125 @@
     "name": "redux-authentication",
     "repo": "Jackong/redux-authentication",
     "description": "authentication component for redux"
+  },
+  {
+    "name": "apeman-react-decorative",
+    "repo": "apeman-react-labo/apeman-react-decorative",
+    "description": "Decorative react components of apeman."
+  },
+  {
+    "name": "apeman-react-icon",
+    "repo": "apeman-react-labo/apeman-react-icon",
+    "description": "apeman react package for icon components."
+  },
+  {
+    "name": "apeman-react-note",
+    "repo": "apeman-react-labo/apeman-react-note",
+    "description": "apeman react package for note components."
+  },
+  {
+    "name": "apeman-react-slideshow",
+    "repo": "apeman-react-labo/apeman-react-slideshow",
+    "description": "apeman react package for slideshow components."
+  },
+  {
+    "name": "apeman-react-theme",
+    "repo": "apeman-react-labo/apeman-react-theme",
+    "description": "apeman react package for theme style components."
+  },
+  {
+    "name": "dot-prop-immutable",
+    "repo": "debitoor/dot-prop-immutable",
+    "description": "Immutable version of dot-prop with some extensions"
+  },
+  {
+    "name": "hmhyr",
+    "repo": "trungtin/HMHYR",
+    "description": "How much have you read?"
+  },
+  {
+    "name": "input-moment",
+    "repo": "wangzuo/input-moment",
+    "description": "React datetime picker powered by momentjs"
+  },
+  {
+    "name": "jsx-template-loader",
+    "repo": "danny-andrews/jsx-template-loader",
+    "description": "Allows you to keep your react templates in a separate file, rather than inlining them. This way, your React components can stay vanilla js files. (This loader should be chained with babel-loader, see webpack.config.js example for details.)"
+  },
+  {
+    "name": "jsx-utils",
+    "repo": "yujiangshui/jsx-utils",
+    "description": "Some utils make your react jsx code better."
+  },
+  {
+    "name": "material-tabs",
+    "repo": "oliverfencott/material-tabs",
+    "description": "A simple React package that provides the Material Design tab component."
+  },
+  {
+    "name": "react-animate-number",
+    "repo": "chenqingspring/react-animate-number",
+    "description": "React Animate Number"
+  },
+  {
+    "name": "react-cloud-code-mixin",
+    "repo": "rubencodes/react-cloud-code-mixin",
+    "description": "A Parse Cloud Code mixin for React.js, inspired by the ParseReact Mixin."
+  },
+  {
+    "name": "react-core-decorators",
+    "repo": "skyiea/react-core-decorators",
+    "description": "Core decorators for React project"
+  },
+  {
+    "name": "react-flickity-component",
+    "repo": "theolampert/react-flickity-component",
+    "description": "react flickity component"
+  },
+  {
+    "name": "react-icon-base",
+    "repo": "gorangajic/react-icon-base",
+    "description": "base element for react-icons"
+  },
+  {
+    "name": "react-pending",
+    "repo": "BurntCaramel/react-pending",
+    "description": "Enhancer for React components with pending content"
+  },
+  {
+    "name": "react-shift",
+    "repo": "Nase00/react-shift",
+    "description": "React carousel/slider with pagination."
+  },
+  {
+    "name": "react-simple-input",
+    "repo": "KeitIG/react-simple-input",
+    "description": "A simple text input for React"
+  },
+  {
+    "name": "react-timer-hoc",
+    "repo": "troch/react-timer-hoc",
+    "description": "A React timer higher-order component"
+  },
+  {
+    "name": "react-translate-maker",
+    "repo": "CherrySoftware/react-translate-maker",
+    "description": "Universal translation library for React"
+  },
+  {
+    "name": "redux-universal-starter",
+    "repo": "bdefore/redux-universal-starter",
+    "description": "A universal redux starter (ES6, Webpack, Express)"
+  },
+  {
+    "name": "reduxible",
+    "repo": "Pitzcarraldo/reduxible",
+    "description": "The isomorphic (universal) framework for redux applications"
+  },
+  {
+    "name": "user-unselectable",
+    "repo": "oliverfencott/user-unselectable",
+    "description": "A React package to easily inline style elements as not user selectable."
   }
 ]
