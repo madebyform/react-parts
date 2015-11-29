@@ -8469,7 +8469,7 @@
     "name": "react-strict-prop-types",
     "repo": "gajus/react-strict-prop-types",
     "description": "A higher order component that raises an error if component is used with an unknown property.",
-    "original_description": "[![Travis build status](http://img.shields.io/travis/gajus/react-strict-prop-types/master.svg?style=flat)](https://travis-ci.org/gajus/react-strict-prop-types) [![NPM version](http://img.shields.io/npm/v/react-strict-prop-types.svg?style=flat)](https://ww"
+    "original_description": "A higher order component that raises an error if component is used with an unknown property."
   },
   {
     "name": "react-toaster",
@@ -10171,8 +10171,9 @@
   },
   {
     "name": "react-google-static-map",
-    "repo": "dwr/react-google-static-map",
-    "description": "A wrapper for Google's Static Maps"
+    "repo": "viatsko/react-google-static-map",
+    "description": "A wrapper for Google's Static Maps",
+    "original_repo": "dwr/react-google-static-map"
   },
   {
     "name": "react-image-crop",
@@ -13405,5 +13406,45 @@
     "name": "user-unselectable",
     "repo": "oliverfencott/user-unselectable",
     "description": "A React package to easily inline style elements as not user selectable."
+  },
+  {
+    "name": "apeman-react-field",
+    "repo": "apeman-react-labo/apeman-react-field",
+    "description": "apeman react package for field components."
+  },
+  {
+    "name": "apeman-react-list",
+    "repo": "apeman-react-labo/apeman-react-list",
+    "description": "apeman react package for list component."
+  },
+  {
+    "name": "apeman-react-section",
+    "repo": "apeman-react-labo/apeman-react-section",
+    "description": "apeman react package for section components."
+  },
+  {
+    "name": "apeman-react-tag",
+    "repo": "apeman-react-labo/apeman-react-tag",
+    "description": "apeman react package for tag components."
+  },
+  {
+    "name": "clinch.csbx",
+    "repo": "Meettya/clinch.csbx",
+    "description": "CoffeeScript with React jsx in backticks processor for Clinch"
+  },
+  {
+    "name": "json-to-react-element",
+    "repo": "ramitos/json-to-react-element",
+    "description": "json > react-element"
+  },
+  {
+    "name": "react-json-stream",
+    "repo": "ramitos/react-json-stream",
+    "description": "react > stream > json"
+  },
+  {
+    "name": "react-state-hoc",
+    "repo": "troch/react-state-hoc",
+    "description": "A React higher-order component for abstracting state away"
   }
 ]

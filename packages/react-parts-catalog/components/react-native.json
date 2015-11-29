@@ -204,7 +204,7 @@
   {
     "name": "react-native-css",
     "repo": "sabeurthabti/react-native-css",
-    "description": "CSS style your React Components"
+    "description": "Style React-Native components with css and built in support for SASS"
   },
   {
     "name": "react-native-google-analytics",
@@ -1717,7 +1717,7 @@
   {
     "name": "react-native-animatable",
     "repo": "oblador/react-native-animatable",
-    "description": "Standard set of easy to use animations and declarative transitions for React Native"
+    "description": "Easy to use declarative transitions and a standard set of animations for React Native"
   },
   {
     "name": "react-native-braintree",
@@ -2325,5 +2325,11 @@
     "name": "rnpm",
     "repo": "rnpm/rnpm",
     "description": "React Native Package Manager"
+  },
+  {
+    "name": "rn-camera-roll",
+    "repo": "bamlab/rn-camera-roll",
+    "description": "Camera Roll for react native Android",
+    "original_repo": "Almouro/rn-camera-roll"
   }
 ]
