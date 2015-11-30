@@ -13446,5 +13446,65 @@
     "name": "react-state-hoc",
     "repo": "troch/react-state-hoc",
     "description": "A React higher-order component for abstracting state away"
+  },
+  {
+    "name": "apeman-react-captcha",
+    "repo": "apeman-react-labo/apeman-react-captcha",
+    "description": "apeman react package for captcha component."
+  },
+  {
+    "name": "apeman-react-dialog",
+    "repo": "apeman-react-labo/apeman-react-dialog",
+    "description": "apeman react package for dialog component."
+  },
+  {
+    "name": "react-choice",
+    "repo": "onefinestay/react-choice",
+    "description": "A React based customisable select box"
+  },
+  {
+    "name": "react-drawable-canvas",
+    "repo": "jonhni/react-drawable-canvas",
+    "description": "A React.js component for drawable canvas\""
+  },
+  {
+    "name": "react-hoverbox",
+    "repo": "wix/react-hoverbox",
+    "description": "ReactJS Component that knows when it's hovered over"
+  },
+  {
+    "name": "react-jqueryui-accordion",
+    "repo": "ranbena/react-jqueryui-accordion",
+    "description": "A simple react component for jquery-ui's accordion"
+  },
+  {
+    "name": "react-pr-map",
+    "repo": "jpadilla1/react-pr-map",
+    "description": "SVG Map React Component of Puerto Rico"
+  },
+  {
+    "name": "react-rx-subscriber",
+    "repo": "BurntCaramel/react-rx-subscriber",
+    "description": "React component enhancer to easily subscribe to Rx Observables"
+  },
+  {
+    "name": "react-templates-loader",
+    "repo": "AlexanderPavlenko/react-templates-loader",
+    "description": "react-templates loader module for webpack"
+  },
+  {
+    "name": "react-thermometer",
+    "repo": "conorhastings/react-thermometer",
+    "description": "a thermometer gauge component for react"
+  },
+  {
+    "name": "react-value-link",
+    "repo": "WebEngage/react-value-link",
+    "description": "An alternate to React's LinkedStateMixin"
+  },
+  {
+    "name": "state-mutate",
+    "repo": "digitalegarage/state-mutate",
+    "description": "A minimal state handling library (for React)"
   }
 ]

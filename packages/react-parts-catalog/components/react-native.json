@@ -2331,5 +2331,30 @@
     "repo": "bamlab/rn-camera-roll",
     "description": "Camera Roll for react native Android",
     "original_repo": "Almouro/rn-camera-roll"
+  },
+  {
+    "name": "react-native-calendar-android",
+    "repo": "chymtt/ReactNativeCalendarAndroid",
+    "description": "A simple material-themed calendar for react native android"
+  },
+  {
+    "name": "react-native-conekta",
+    "repo": "zo0r/react-native-conekta",
+    "description": "Conekta SDK for React Native"
+  },
+  {
+    "name": "react-native-select-contact-android",
+    "repo": "rhaker/react-native-select-contact-android",
+    "description": "A react-native module for tapping on a contact and returning an name, email, and phone."
+  },
+  {
+    "name": "react-native-sliding-up-panel",
+    "repo": "ninamanalo/react-native-sliding-up-panel",
+    "description": "react native sliding up panel"
+  },
+  {
+    "name": "react-native-wheel",
+    "repo": "shexiaoheng/react-native-wheel",
+    "description": "android wheel view for react-native"
   }
 ]
