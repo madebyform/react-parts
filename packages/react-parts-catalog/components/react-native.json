@@ -2356,5 +2356,10 @@
     "name": "react-native-wheel",
     "repo": "shexiaoheng/react-native-wheel",
     "description": "android wheel view for react-native"
+  },
+  {
+    "name": "react-native-icloud-user-token",
+    "repo": "joshuakarjala/react-native-icloud-user-token",
+    "description": "Get the unique iCloud token for a user "
   }
 ]

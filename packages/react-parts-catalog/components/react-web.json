@@ -5310,7 +5310,7 @@
   },
   {
     "name": "jsx-control-statements",
-    "repo": "valtech-au/jsx-control-statements",
+    "repo": "AlexGilleran/jsx-control-statements",
     "description": "Neater control statements (if/for) for jsx"
   },
   {
@@ -9743,8 +9743,9 @@
   },
   {
     "name": "react-keydown",
-    "repo": "jedverity/react-keydown",
-    "description": "Lightweight keydown wrapper for React components"
+    "repo": "glortho/react-keydown",
+    "description": "Lightweight keydown wrapper for React components",
+    "original_repo": "jedverity/react-keydown"
   },
   {
     "name": "react-miniflow",
@@ -11276,7 +11277,7 @@
   },
   {
     "name": "react-set-animate",
-    "repo": "petermoresi/react-set-animate",
+    "repo": "FunctionFoundry/react-set-animate",
     "description": "Simple animations with React state",
     "original_repo": "petermoresi/react-state-animation"
   },
@@ -12411,8 +12412,9 @@
   },
   {
     "name": "fluxury",
-    "repo": "fluxury/fluxury",
-    "description": "Add luxury sugar to simplify implementing Facebook's flavor of Flux architecture."
+    "repo": "FunctionFoundry/fluxury",
+    "description": "Add luxury sugar to simplify implementing Facebook's flavor of Flux architecture.",
+    "original_repo": "fluxury/fluxury"
   },
   {
     "name": "generator-base-reactjs",
@@ -12472,8 +12474,9 @@
   },
   {
     "name": "react-partial-table",
-    "repo": "petermoresi/react-partial-table",
-    "description": "Render a table tag with callbacks to get data."
+    "repo": "FunctionFoundry/react-partial-table",
+    "description": "Render a table tag with callbacks to get data.",
+    "original_repo": "petermoresi/react-partial-table"
   },
   {
     "name": "react-place",
@@ -13264,8 +13267,7 @@
   {
     "name": "react-classname-module",
     "repo": "51seven/react-classname-module",
-    "description": "Write CSS Modules painless with className and classnames()",
-    "original_repo": "51seven/react-classname-modules"
+    "description": "Write CSS Modules painless with className and classnames()"
   },
   {
     "name": "react-mousetrap-mixin",
@@ -13394,13 +13396,14 @@
   },
   {
     "name": "redux-universal-starter",
-    "repo": "bdefore/redux-universal-starter",
-    "description": "A universal redux starter (ES6, Webpack, Express)"
+    "repo": "bdefore/redux-universal-renderer",
+    "description": "A universal redux starter (ES6, Webpack, Express)",
+    "original_repo": "bdefore/redux-universal-starter"
   },
   {
     "name": "reduxible",
     "repo": "Pitzcarraldo/reduxible",
-    "description": "The isomorphic (universal) framework for redux applications"
+    "description": "The universal (isomorphic) framework for redux applications"
   },
   {
     "name": "user-unselectable",
@@ -13465,7 +13468,7 @@
   {
     "name": "react-drawable-canvas",
     "repo": "jonhni/react-drawable-canvas",
-    "description": "A React.js component for drawable canvas\""
+    "description": "A React.js component for drawable canvas."
   },
   {
     "name": "react-hoverbox",
@@ -13506,5 +13509,81 @@
     "name": "state-mutate",
     "repo": "digitalegarage/state-mutate",
     "description": "A minimal state handling library (for React)"
+  },
+  {
+    "name": "apeman-react-toast",
+    "repo": "apeman-react-labo/apeman-react-toast",
+    "description": "apeman react package for toast components."
+  },
+  {
+    "name": "generator-jd-react",
+    "repo": "jdinhlife/generator-jd-react",
+    "description": "Generator for a simple react web project - with gulp, browserify, sass & browser-sync"
+  },
+  {
+    "name": "generator-redux-app",
+    "repo": "chentsulin/generator-redux-app",
+    "description": "Scaffold out a redux app"
+  },
+  {
+    "name": "react-app-kit",
+    "repo": "joshforisha/react-app-kit",
+    "description": "A React app builder kit"
+  },
+  {
+    "name": "react-calendar-widget",
+    "repo": "eviltoylet/react-calendar-widget",
+    "description": "A calendar widget for React.js."
+  },
+  {
+    "name": "react-grid-layout",
+    "repo": "STRML/react-grid-layout",
+    "description": "A draggable and resizable grid layout with responsive breakpoints, for React."
+  },
+  {
+    "name": "react-hotels-on-map",
+    "repo": "ikr/react-hotels-on-map",
+    "description": "Presents a set of hotels as clustered markers on Google Map, each with an info window displaying the hotel name"
+  },
+  {
+    "name": "react-koa",
+    "repo": "admiralPanda/react-koa",
+    "description": "React & Koa App Boilerplate"
+  },
+  {
+    "name": "react-modal-wrapper",
+    "repo": "1stdibs/react-modal-wrapper",
+    "description": "A React Modal Wrapper that uses FlexBox to keep it's position, BYOM (bring-your-own-modal)",
+    "original_repo": ""
+  },
+  {
+    "name": "react-pdfjs",
+    "repo": "erikras/react-pdfjs",
+    "description": "A React component to wrap PDF.js"
+  },
+  {
+    "name": "react-virtualized",
+    "repo": "bvaughn/react-virtualized",
+    "description": "React components for efficiently rendering large, scrollable lists and tabular data"
+  },
+  {
+    "name": "react-worker",
+    "repo": "ramitos/react-worker",
+    "description": "react in a web worker"
+  },
+  {
+    "name": "redux-devtools-script",
+    "repo": "egoist/redux-devtools-script",
+    "description": "Use redux-devtools without React in your app."
+  },
+  {
+    "name": "redux-title",
+    "repo": "DJCordhose/redux-title",
+    "description": "Synchronization of document title and redux state"
+  },
+  {
+    "name": "redux-universal-renderer",
+    "repo": "bdefore/redux-universal-renderer",
+    "description": "A universal redux renderer (ES6, Webpack, Express)"
   }
 ]
