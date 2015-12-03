@@ -2361,5 +2361,26 @@
     "name": "react-native-icloud-user-token",
     "repo": "joshuakarjala/react-native-icloud-user-token",
     "description": "Get the unique iCloud token for a user "
+  },
+  {
+    "name": "react-native-device-battery",
+    "repo": "robinpowered/react-native-device-battery",
+    "description": "Observe battery state changes in your react native application"
+  },
+  {
+    "name": "react-native-image-resizer",
+    "repo": "bamlab/react-native-image-resizer",
+    "description": "Rescale local images with React Native",
+    "original_repo": "4ian/react-native-image-resizer"
+  },
+  {
+    "name": "react-native-imagepicker",
+    "repo": "doochik/react-native-imagepicker",
+    "description": "A React Native module which wraps ActionSheetIOS, CameraRoll and ImagePickerIOS to select a photo from the library or camera"
+  },
+  {
+    "name": "rn-resize",
+    "repo": "CodeFoundation/rn-resize",
+    "description": "resize images in react native"
   }
 ]

@@ -3516,7 +3516,7 @@
   {
     "name": "react-mixin-decorator",
     "repo": "timbur/react-mixin-decorator",
-    "description": "Just a few lines of code to make converting mixins to ES7 decorators as higher-order components quick and easy."
+    "description": "Quickly create higher-order components out of mixins and/or create higher-order components that can easily double as mixins."
   },
   {
     "name": "react-mixin-manager",
@@ -8273,7 +8273,7 @@
   },
   {
     "name": "react-table-for-bootstrap",
-    "repo": "petermoresi/react-table-for-bootstrap",
+    "repo": "FunctionFoundry/react-table-for-bootstrap",
     "description": "React.js component for bootstrap styled table",
     "original_repo": "petermoresi/react-bootstrap-table"
   },
@@ -9604,7 +9604,7 @@
   {
     "name": "gl-react",
     "repo": "ProjectSeptemberInc/gl-react",
-    "description": "WebGL bindings for react to implement complex effects over images and content, in the descriptive VDOM paradigm"
+    "description": "gl-react share code across gl-react-dom and gl-react-native. You can implement complex effects over images and components, in the descriptive VDOM paradigm"
   },
   {
     "name": "jasmine-xpath-react",
@@ -12214,8 +12214,9 @@
   },
   {
     "name": "redux-react-fetch",
-    "repo": "Legitcode/redux-react-fetch",
-    "description": "merge in styling with ajax requests in redux"
+    "repo": "Legitcode/redux-save",
+    "description": "merge in styling with ajax requests in redux",
+    "original_repo": "Legitcode/redux-react-fetch"
   },
   {
     "name": "simple-markdown",
@@ -12296,7 +12297,7 @@
   {
     "name": "react-refetch",
     "repo": "heroku/react-refetch",
-    "description": "React bindings for URL data"
+    "description": "A simple, declarative, and composable way to fetch data for React components."
   },
   {
     "name": "react-resize",
@@ -12677,7 +12678,7 @@
   {
     "name": "react-testutils-query",
     "repo": "jameslnewell/react-testutils-query",
-    "description": "Utility functions for retrieving elements from within a React VDOM tree."
+    "description": "Utility functions for retrieving elements from within a React virtual-dom tree."
   },
   {
     "name": "react-textfit",
@@ -13553,8 +13554,7 @@
   {
     "name": "react-modal-wrapper",
     "repo": "1stdibs/react-modal-wrapper",
-    "description": "A React Modal Wrapper that uses FlexBox to keep it's position, BYOM (bring-your-own-modal)",
-    "original_repo": ""
+    "description": "A React Modal Wrapper that uses FlexBox to keep it's position, BYOM (bring-your-own-modal)"
   },
   {
     "name": "react-pdfjs",
@@ -13585,5 +13585,142 @@
     "name": "redux-universal-renderer",
     "repo": "bdefore/redux-universal-renderer",
     "description": "A universal redux renderer (ES6, Webpack, Express)"
+  },
+  {
+    "name": "airflux",
+    "repo": "AlexJozwicki/airflux",
+    "description": "A pure ES6 fork of the Reflux data flow library similar to Facebook Flux"
+  },
+  {
+    "name": "asd-nav",
+    "repo": "afrxx09/2dv607-project",
+    "description": "Navigation component that reads routes from React Router to render a nested html-list of links."
+  },
+  {
+    "name": "basscss-radium",
+    "repo": "rangle/basscss-radium",
+    "description": "Basscss as Radium-flavoured inline styles."
+  },
+  {
+    "name": "flux-resource-core",
+    "repo": "taion/flux-resource-core",
+    "description": "Automatic Flux object generation for RESTful resources"
+  },
+  {
+    "name": "flux-resource-marty",
+    "repo": "taion/flux-resource-marty",
+    "description": "Automatic Marty object generation for RESTful resources"
+  },
+  {
+    "name": "generator-express-react",
+    "repo": "alingam/generator-express-react",
+    "description": "Yeoman generator"
+  },
+  {
+    "name": "generator-faithlife-app",
+    "repo": "Faithlife/generator-faithlife-app",
+    "description": "Generator for a node/React app that uses Faithlife authentication."
+  },
+  {
+    "name": "gulp-jsx-coverage",
+    "repo": "zordius/gulp-jsx-coverage",
+    "description": "Enable coverage on .JSX or .coffee files."
+  },
+  {
+    "name": "knock-knock-go",
+    "repo": "UXtemple/knock-knock-go",
+    "description": "knock-knock-go is React a helper to simplify the process of loading asynchronous components by dealing with the logic around when to render the component, an error or a loading message"
+  },
+  {
+    "name": "mullet",
+    "repo": "lynnaloo/mullet",
+    "description": "Mullet Stack: Facebook in the front. Walmart in the back. (React.js/Hapi)"
+  },
+  {
+    "name": "object-path-immutable",
+    "repo": "mariocasciaro/object-path-immutable",
+    "description": "Modify deep object properties without modifying the original object (immutability). Works great with React and Redux."
+  },
+  {
+    "name": "react-context-utils",
+    "repo": "mathieuancelin/react-context-utils",
+    "description": "Simple component and decorator to provide contexts to React components",
+    "original_repo": ""
+  },
+  {
+    "name": "react-emoji-picker",
+    "repo": "chadoh/react-emoji-picker",
+    "description": "A React component providing a visual emoji picker, similar to Slack's"
+  },
+  {
+    "name": "react-rich-markdown",
+    "repo": "mattecapu/react-rich-markdown",
+    "description": "A ready-to-go component to render rich Markdown snippets (md + LaTex + code sh)",
+    "original_repo": ""
+  },
+  {
+    "name": "react-script",
+    "repo": "1j01/react-script",
+    "description": "Elegant DSL for React"
+  },
+  {
+    "name": "react-showdown",
+    "repo": "jerolimov/react-showdown",
+    "description": "Render React components within markdown and markdown as React components!"
+  },
+  {
+    "name": "react-stackoverflow-profile",
+    "repo": "sean-clayton/react-stackoverflow-profile",
+    "description": "A React component that displays a Stack Overflow profile card"
+  },
+  {
+    "name": "react-tagcloud",
+    "repo": "madox2/react-tagcloud",
+    "description": "Tag/word cloud component for react"
+  },
+  {
+    "name": "react-test-utilities",
+    "repo": "allanhortle/react-test-utilities",
+    "description": "Testing Utilities for React",
+    "original_repo": ""
+  },
+  {
+    "name": "react-universal-boilerplate",
+    "repo": "ettrics/react-universal-boilerplate",
+    "description": "\"Isomorphic\" React simplified. This a light starter kit which provides the bare minimum.",
+    "original_repo": ""
+  },
+  {
+    "name": "redux-action-types",
+    "repo": "ripeworks/redux-action-types",
+    "description": "Shortcut for creating redux action constants."
+  },
+  {
+    "name": "redux-save",
+    "repo": "Legitcode/redux-save",
+    "description": "merge in styling with ajax requests in redux"
+  },
+  {
+    "name": "slush-jspm-react-seed",
+    "repo": "sloppylopez/slush-jspm-react-seed",
+    "description": "Slush for scaffolding, Jspm for packaging, React for the views"
+  },
+  {
+    "name": "the-other-redux-form",
+    "repo": "jameslnewell/the-other-redux-form",
+    "description": "An alternate forms framework for Redux+React.",
+    "original_repo": ""
+  },
+  {
+    "name": "vin-react-starter-kit",
+    "repo": "coryhouse/vin-javascript-starter-kit",
+    "description": "Starter kit for creating client-side apps using React at Vinsolutions",
+    "original_repo": ""
+  },
+  {
+    "name": "yellowbox-react",
+    "repo": "iamdustan/yellowbox-react",
+    "description": "YellowBox renders warnings at the bottom of the app being developed.",
+    "original_repo": ""
   }
 ]
