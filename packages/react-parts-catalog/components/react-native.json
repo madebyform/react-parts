@@ -518,8 +518,9 @@
   },
   {
     "name": "react-native-drawer",
-    "repo": "rt2zz/react-native-drawer",
-    "description": "React Native Drawer"
+    "repo": "root-two/react-native-drawer",
+    "description": "React Native Drawer",
+    "original_repo": "rt2zz/react-native-drawer"
   },
   {
     "name": "react-native-listitem",
@@ -2345,7 +2346,7 @@
   {
     "name": "react-native-select-contact-android",
     "repo": "rhaker/react-native-select-contact-android",
-    "description": "A react-native module for tapping on a contact and returning an name, email, and phone."
+    "description": "A react-native module for tapping on a contact and returning a name, email, and phone."
   },
   {
     "name": "react-native-sliding-up-panel",
@@ -2382,5 +2383,20 @@
     "name": "rn-resize",
     "repo": "CodeFoundation/rn-resize",
     "description": "resize images in react native"
+  },
+  {
+    "name": "react-native-amplitude",
+    "repo": "euwyn/react-native-amplitude",
+    "description": "React Native wrapper for native iOS Facebook SDK login button and manager"
+  },
+  {
+    "name": "react-native-dropbox-chooser",
+    "repo": "tinycreative/react-native-dropbox-chooser",
+    "description": "React Native dropbox chooser module"
+  },
+  {
+    "name": "react-native-input-password",
+    "repo": "chenchunyong/react-native-passwordInput",
+    "description": "采用React Native开发，仿支付宝付款密码输入框"
   }
 ]

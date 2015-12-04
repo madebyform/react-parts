@@ -3645,12 +3645,6 @@
     "description": "Async-rendering & data-fetching for universal React applications"
   },
   {
-    "name": "react-responsive-decorator",
-    "repo": "damassi/react-responsive-decorator",
-    "original_repo": "damass/react-responsive-decorator",
-    "description": "Higher order component wrapper / decorator around enquire for developing responsive react components"
-  },
-  {
     "name": "react-responsive-grid",
     "repo": "KyleAMathews/react-responsive-grid",
     "description": "Power tools for responsive layouts with React"
@@ -4652,8 +4646,9 @@
   },
   {
     "name": "react-bull",
-    "repo": "keyvanfatehi/react-bull",
-    "description": "React components & frontend code for bull job queue"
+    "repo": "kfatehi/react-bull",
+    "description": "React components & frontend code for bull job queue",
+    "original_repo": "keyvanfatehi/react-bull"
   },
   {
     "name": "react-cartographer",
@@ -11164,7 +11159,7 @@
   {
     "name": "mkapp",
     "repo": "epferrari/mkapp",
-    "description": "An opinionated command line build tool for React apps"
+    "description": "A CLI build tool for React + Condux"
   },
   {
     "name": "rc-trigger",
@@ -11927,8 +11922,7 @@
     "name": "react-map-gl-heatmap-overlay",
     "repo": "vicapow/react-map-gl-heatmap-overlay",
     "description": "A heatmap overlay for react-map-gl built using webgl-heatmap.",
-    "original_repo": "",
-    "original_description": "A heatmap overlay for [react-map-gl](https://github.com/uber/react-map-gl) built using [webgl-heatmap](https://github.com/vicapow/webgl-heatmap)."
+    "original_description": "A heatmap overlay for [react-map-gl](https://github.com/uber/react-map-gl) built using [webgl-heatmap](https://github.com/vicapow/webgl-heatmap) originally created by [Florian Boesch](https://github.com/pyalot)."
   },
   {
     "name": "react-render-service",
@@ -13655,8 +13649,7 @@
   {
     "name": "react-rich-markdown",
     "repo": "mattecapu/react-rich-markdown",
-    "description": "A ready-to-go component to render rich Markdown snippets (md + LaTex + code sh)",
-    "original_repo": ""
+    "description": "A ready-to-go component to render rich Markdown snippets (md + LaTex + code sh)"
   },
   {
     "name": "react-script",
@@ -13703,7 +13696,7 @@
   {
     "name": "slush-jspm-react-seed",
     "repo": "sloppylopez/slush-jspm-react-seed",
-    "description": "Slush for scaffolding, Jspm for packaging, React for the views"
+    "description": "Slush for scaffolding, Jspm for packaging, React as templating framework"
   },
   {
     "name": "the-other-redux-form",
@@ -13722,5 +13715,168 @@
     "repo": "iamdustan/yellowbox-react",
     "description": "YellowBox renders warnings at the bottom of the app being developed.",
     "original_repo": ""
+  },
+  {
+    "name": "autoaction",
+    "repo": "tonyhb/autoaction",
+    "description": "Declarative data loading for redux + react"
+  },
+  {
+    "name": "capacitor",
+    "repo": "miklschmidt/capacitor.js",
+    "description": "An implementation of facebook's flux architecture, great Scott!"
+  },
+  {
+    "name": "cascade",
+    "repo": "dlmanning/cascade",
+    "description": "Cascade style values down an object stylesheet"
+  },
+  {
+    "name": "cooltip",
+    "repo": "mapbox/cooltip",
+    "description": "a react tooltip implementation",
+    "original_repo": ""
+  },
+  {
+    "name": "donejs-react",
+    "repo": "donejs/donejs-react",
+    "description": "A plugin to add support for React to your DoneJS application http://donejs.com"
+  },
+  {
+    "name": "fluorine-lib",
+    "repo": "philplckthun/fluorine",
+    "description": "State Accumulation from a single stream of actions",
+    "original_repo": ""
+  },
+  {
+    "name": "generator-starhackit",
+    "repo": "FredericHeem/starhackit",
+    "description": "Starhackit Yeoman generator - Fullstack starterkit based on react and node"
+  },
+  {
+    "name": "gl-react-dom",
+    "repo": "ProjectSeptemberInc/gl-react-dom",
+    "description": "WebGL bindings for react to implement complex effects over images and content, in the descriptive VDOM paradigm"
+  },
+  {
+    "name": "js-managed-css",
+    "repo": "smallhelm/js-managed-css",
+    "description": "Define and insert CSS via javascript. This also generates unique class and id names automatically. Handy when doing virtual dom (or react) inline css as your primary styling."
+  },
+  {
+    "name": "point-one",
+    "repo": "Kr0na/point-one",
+    "description": "Point One - Advanced Flux/Redux for React application",
+    "original_repo": ""
+  },
+  {
+    "name": "react-absolute-grid",
+    "repo": "jrowny/react-absolute-grid",
+    "description": "An absolutely positioned responsive touch-enabled fully configurable React grid with drag/drop, filtering, and sorting",
+    "original_repo": ""
+  },
+  {
+    "name": "react-bootstrap-date-picker",
+    "repo": "pushtell/react-bootstrap-date-picker",
+    "description": "React-Bootstrap based date picker."
+  },
+  {
+    "name": "react-escape",
+    "repo": "warrenfalk/react-escape",
+    "description": "React component which can render its children outside of the original DOM tree of its parents, thus allowing them to escape"
+  },
+  {
+    "name": "react-filepreview",
+    "repo": "guidsen/react-filepreview",
+    "description": "Filepreview component for showing files and progress"
+  },
+  {
+    "name": "react-float-affixed",
+    "repo": "warrenfalk/react-float-affixed",
+    "description": "a component to float elements in a separate layer but affixed to anchors in the main tree, useful for things like dropdowns, tooltips, menu buttons etc..."
+  },
+  {
+    "name": "react-forms-ui",
+    "repo": "ivos/react-forms-ui",
+    "description": "A comprehensive UI toolbox for React."
+  },
+  {
+    "name": "react-ipa-input",
+    "repo": "kremonte/react-ipa-input",
+    "description": "React component for inputting phonetic symbols from the International Phonetic Alphabet"
+  },
+  {
+    "name": "react-keybinding-component",
+    "repo": "KeitIG/react-keybinding-component",
+    "description": "A React keybinding component, usable with es6, no mixin"
+  },
+  {
+    "name": "react-lite-textbox",
+    "repo": "teambition/react-lite-textbox",
+    "description": "Textbox component for Talk by Teambition",
+    "original_repo": "teambition/coffee-lite-textbox"
+  },
+  {
+    "name": "react-password-strength-meter",
+    "repo": "abhijeetnmishra/react-password-strength-meter",
+    "description": "react component to display password strength meter"
+  },
+  {
+    "name": "react-snowstorm",
+    "repo": "burakcan/react-snowstorm",
+    "description": "A Snow Effect component for React."
+  },
+  {
+    "name": "react-svg-inline",
+    "repo": "MoOx/react-svg-inline",
+    "description": "A React component to inline your SVGs."
+  },
+  {
+    "name": "react-trackable",
+    "repo": "lukehansell/react-trackable",
+    "description": "Adds data attributes for tracking to child components.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-vnav",
+    "repo": "gearz-lab/react-vnav",
+    "description": "A React menu component compatible with react-router"
+  },
+  {
+    "name": "react.pure.component",
+    "repo": "nadimtuhin/react-pure-component",
+    "description": "React es6, es7 pure component without purerender mixin"
+  },
+  {
+    "name": "reactcss",
+    "repo": "casesandberg/reactcss",
+    "description": "Bringing Classes to Inline Styles"
+  },
+  {
+    "name": "reactjs-components",
+    "repo": "Mesosphere/reactjs-components",
+    "description": "React UI Components by Mesosphere",
+    "original_repo": ""
+  },
+  {
+    "name": "reagent",
+    "repo": "airbnb/reagent",
+    "description": "JavaScript Testing utilities for React"
+  },
+  {
+    "name": "redux-async",
+    "repo": "symbiont-io/redux-async",
+    "description": "dispatch async actions in redux",
+    "original_repo": "kolodny/redux-async"
+  },
+  {
+    "name": "reevoo-lego",
+    "repo": "reevoo/lego",
+    "description": "React Components using the Material Design Lite library"
+  },
+  {
+    "name": "ui-harness",
+    "repo": "philcockfield/ui-harness",
+    "description": "Isolate, test and document modular UI with React."
   }
 ]
