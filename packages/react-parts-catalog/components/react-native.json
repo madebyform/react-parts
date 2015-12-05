@@ -2381,8 +2381,9 @@
   },
   {
     "name": "rn-resize",
-    "repo": "CodeFoundation/rn-resize",
-    "description": "resize images in react native"
+    "repo": "GoCoders/rn-resize",
+    "description": "resize images in react native",
+    "original_repo": "CodeFoundation/rn-resize"
   },
   {
     "name": "react-native-amplitude",
@@ -2398,5 +2399,20 @@
     "name": "react-native-input-password",
     "repo": "chenchunyong/react-native-passwordInput",
     "description": "采用React Native开发，仿支付宝付款密码输入框"
+  },
+  {
+    "name": "react-native-image-chooser",
+    "repo": "satya164/react-native-image-chooser",
+    "description": "A react-native module for showing system image chooser."
+  },
+  {
+    "name": "react-native-img-button",
+    "repo": "MiincGu/react-native-image-button",
+    "description": "##Usage"
+  },
+  {
+    "name": "react-native-navigation-bar",
+    "repo": "beefe/react-native-navigation-bar",
+    "description": "react-native-navigation-bar"
   }
 ]

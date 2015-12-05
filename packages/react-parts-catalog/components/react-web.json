@@ -9909,11 +9909,6 @@
     "description": "Idiomatic, modular, testable, isomorphic Flux. No singletons required."
   },
   {
-    "name": "redux-rx",
-    "repo": "acdlite/redux-rx",
-    "description": "RxJS utilities for Redux"
-  },
-  {
     "name": "flux-standard-action",
     "repo": "acdlite/flux-standard-action",
     "original_repo": "",
@@ -11388,7 +11383,7 @@
   {
     "name": "realloc",
     "repo": "foomorrow/realloc",
-    "description": "Observable, Immutable State Manager for Javascript Applications"
+    "description": "Observable and Immutable State Manager Base On JSONPath For Javascript Applications"
   },
   {
     "name": "retransmitter",
@@ -12025,11 +12020,6 @@
     "name": "rx-react",
     "repo": "fdecampredon/rx-react",
     "description": "ReactJS bindings for RxJS"
-  },
-  {
-    "name": "rx-recompose",
-    "repo": "acdlite/recompose",
-    "description": "RxJS utilities for React and Recompose."
   },
   {
     "name": "apeman-react-spinner",
@@ -13786,11 +13776,6 @@
     "description": "React component which can render its children outside of the original DOM tree of its parents, thus allowing them to escape"
   },
   {
-    "name": "react-filepreview",
-    "repo": "guidsen/react-filepreview",
-    "description": "Filepreview component for showing files and progress"
-  },
-  {
     "name": "react-float-affixed",
     "repo": "warrenfalk/react-float-affixed",
     "description": "a component to float elements in a separate layer but affixed to anchors in the main tree, useful for things like dropdowns, tooltips, menu buttons etc..."
@@ -13878,5 +13863,100 @@
     "name": "ui-harness",
     "repo": "philcockfield/ui-harness",
     "description": "Isolate, test and document modular UI with React."
+  },
+  {
+    "name": "atom-react-preview",
+    "repo": "VictorBjelkholm/atom-react-preview",
+    "description": "A live preview tool for Atom Editor."
+  },
+  {
+    "name": "can-ssr-plugin-react",
+    "repo": "canjs/can-ssr-plugin-react",
+    "description": "A React plugin for can-ssr"
+  },
+  {
+    "name": "mobservable-form",
+    "repo": "JamesHageman/mobservable-form",
+    "description": "mobservable-form React component"
+  },
+  {
+    "name": "pico-router",
+    "repo": "stolksdorf/pico-router",
+    "description": "An incredibly tiny React router for isomorphic apps"
+  },
+  {
+    "name": "radium-plugin-friendly-pseudos",
+    "repo": "ianobermiller/radium-plugin-friendly-pseudos",
+    "description": "Radium plugin for easier to type pseudo classes, such as onHover instead of ':hover'"
+  },
+  {
+    "name": "radium-plugin-prefix-all",
+    "repo": "rofrischmann/radium-plugin-prefix-all",
+    "description": "Radium plugin that adds all vendor prefixes"
+  },
+  {
+    "name": "radium-plugin-validity-pseudos",
+    "repo": "ianobermiller/radium-plugin-validity-pseudos",
+    "description": "Radium plugin to enable the :valid and :invalid pseudo selectors."
+  },
+  {
+    "name": "react-anion",
+    "repo": "thiagofelix/anion",
+    "description": "An incomplete implementation of Ionic components in reactjs"
+  },
+  {
+    "name": "react-component-server",
+    "repo": "jcblw/react-component-server",
+    "description": "A lib that makes serverside rendering of components easier"
+  },
+  {
+    "name": "react-render-visualizer-decorator",
+    "repo": "marcin-mazurek/react-render-visualizer-decorator",
+    "description": "Render visualizer decorator for ReactJS"
+  },
+  {
+    "name": "react-timeseries-charts",
+    "repo": "esnet/react-timeseries-charts",
+    "description": "Declarative timeseries charts"
+  },
+  {
+    "name": "react-user-media",
+    "repo": "jgradim/react-user-media",
+    "description": "React components for webcam and audio"
+  },
+  {
+    "name": "react-webpack-node",
+    "repo": "choonkending/react-webpack-node",
+    "description": "A simple Node.js app using Express 4 with Webpack, React, alt, ImmutableJS"
+  },
+  {
+    "name": "redux-devtools-remote",
+    "repo": "tyleranton/redux-devtools-remote",
+    "description": "Redux middleware for redux-devtools-electron"
+  },
+  {
+    "name": "redux-unhandled-action",
+    "repo": "socialtables/redux-unhandled-action",
+    "description": "Redux middleware that logs an error to the console when an action does not mutate state"
+  },
+  {
+    "name": "relay-decorators",
+    "repo": "4Catalyzer/relay-decorators",
+    "description": "Utility decorators for Relay components"
+  },
+  {
+    "name": "router-resolver",
+    "repo": "vn38minhtran/router-resolver",
+    "description": "React router resolver"
+  },
+  {
+    "name": "router1-react",
+    "repo": "zxbodya/router1-react",
+    "description": "React components to use with router1"
+  },
+  {
+    "name": "rx-react-container",
+    "repo": "zxbodya/rx-react-container",
+    "description": "Connects observables and observers to react components"
   }
 ]
