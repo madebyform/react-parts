@@ -1969,7 +1969,7 @@
   {
     "name": "react-native-send-intent",
     "repo": "lucasferreira/react-native-send-intent",
-    "description": "React Native Android module to use Android's Intent actions for send text to shareable apps and make phone calls"
+    "description": "React Native Android module to use Android's Intent actions for send sms, text to shareable apps or make phone calls"
   },
   {
     "name": "react-native-simple-button",
@@ -2414,5 +2414,30 @@
     "name": "react-native-navigation-bar",
     "repo": "beefe/react-native-navigation-bar",
     "description": "react-native-navigation-bar"
+  },
+  {
+    "name": "react-native-android-circles",
+    "repo": "kwaak/react-native-android-circles",
+    "description": "A react native android package to show a circle progress view."
+  },
+  {
+    "name": "react-native-async-http",
+    "repo": "szq4119/react-native-async-http",
+    "description": "React Native component for async-http"
+  },
+  {
+    "name": "react-native-paged-scroll-view",
+    "repo": "rreusser/react-native-paged-scroll-view",
+    "description": "A higher-order React Native component to compute the current and total pages of a ScrollView"
+  },
+  {
+    "name": "react-native-web-container",
+    "repo": "danrigsby/react-native-web-container",
+    "description": "A wrapper around the react native WebView to add autoHeight, scrub html, etc"
+  },
+  {
+    "name": "rnpm-plugin-apphub",
+    "repo": "ptmt/rnpm-plugin-apphub",
+    "description": "Build, export and upload .ipa to AppHub Cloud"
   }
 ]

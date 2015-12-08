@@ -3698,8 +3698,9 @@
   },
   {
     "name": "react-search-input",
-    "repo": "enki-com/react-search-input",
-    "description": "Simple react.js component for a search input, providing a filter function."
+    "repo": "enkidevs/react-search-input",
+    "description": "Simple react.js component for a search input, providing a filter function.",
+    "original_repo": "enki-com/react-search-input"
   },
   {
     "name": "react-select-pinyin",
@@ -3809,7 +3810,7 @@
   },
   {
     "name": "react-swipe-to-reveal-options",
-    "repo": "enki-com/react-swipe-to-reveal-options",
+    "repo": "enkidevs/react-swipe-to-reveal-options",
     "original_repo": "mathieudutour/react-swipe-to-reveal-options",
     "description": "Simple react.js component for a swipe-to-reveal-option item."
   },
@@ -4442,8 +4443,9 @@
   },
   {
     "name": "react-segmented-control",
-    "repo": "enki-com/react-segmented-control",
-    "description": "Simple react.js component for a segmented control"
+    "repo": "enkidevs/react-segmented-control",
+    "description": "Simple react.js component for a segmented control",
+    "original_repo": "enki-com/react-segmented-control"
   },
   {
     "name": "ainojs-react-finger",
@@ -6247,8 +6249,9 @@
   },
   {
     "name": "react-tap-to-reveal-options",
-    "repo": "enki-com/react-tap-to-reveal-options",
-    "description": "React component to flip items in list and reveal options"
+    "repo": "enkidevs/react-tap-to-reveal-options",
+    "description": "React component to flip items in list and reveal options",
+    "original_repo": "enki-com/react-tap-to-reveal-options"
   },
   {
     "name": "react-textselect",
@@ -12397,7 +12400,7 @@
   },
   {
     "name": "fluxury",
-    "repo": "FunctionFoundry/fluxury",
+    "repo": "fluxury/fluxury",
     "description": "Add luxury sugar to simplify implementing Facebook's flavor of Flux architecture.",
     "original_repo": "fluxury/fluxury"
   },
@@ -12754,7 +12757,7 @@
   {
     "name": "react-timeout",
     "repo": "plougsgaard/react-timeout",
-    "description": "A version of react-timer-mixin without the mixin part"
+    "description": "Component wrapper for setTimeout et al that cleans up after itself."
   },
   {
     "name": "react-element-container",
@@ -13381,7 +13384,7 @@
   },
   {
     "name": "redux-universal-starter",
-    "repo": "bdefore/redux-universal-renderer",
+    "repo": "bdefore/universal-redux",
     "description": "A universal redux starter (ES6, Webpack, Express)",
     "original_repo": "bdefore/redux-universal-starter"
   },
@@ -13567,8 +13570,9 @@
   },
   {
     "name": "redux-universal-renderer",
-    "repo": "bdefore/redux-universal-renderer",
-    "description": "A universal redux renderer (ES6, Webpack, Express)"
+    "repo": "bdefore/universal-redux",
+    "description": "A universal redux renderer (ES6, Webpack, Express)",
+    "original_repo": "bdefore/redux-universal-renderer"
   },
   {
     "name": "airflux",
@@ -13690,9 +13694,9 @@
   },
   {
     "name": "the-other-redux-form",
-    "repo": "jameslnewell/the-other-redux-form",
+    "repo": "jameslnewell/redux-formo",
     "description": "An alternate forms framework for Redux+React.",
-    "original_repo": ""
+    "original_repo": "jameslnewell/the-other-redux-form"
   },
   {
     "name": "vin-react-starter-kit",
@@ -13845,8 +13849,8 @@
   },
   {
     "name": "reagent",
-    "repo": "airbnb/reagent",
-    "description": "JavaScript Testing utilities for React"
+    "repo": "airbnb/enzyme",
+    "description": "JavaScript Testing utilities for React: renamed to enzyme"
   },
   {
     "name": "redux-async",
@@ -13957,6 +13961,111 @@
   {
     "name": "rx-react-container",
     "repo": "zxbodya/rx-react-container",
-    "description": "Connects observables and observers to react components"
+    "description": "Allows to use React as a view layer for RxJS application, and to wait for required data before first rendering."
+  },
+  {
+    "name": "apeman-react-photo",
+    "repo": "apeman-react-labo/apeman-react-photo",
+    "description": "apeman react package for photo components."
+  },
+  {
+    "name": "bloody-react-transition-child",
+    "repo": "bloodyowl/react-transition-child",
+    "description": "ES7 decorator to simplify ReactTransitionGroup usage"
+  },
+  {
+    "name": "enzyme",
+    "repo": "airbnb/enzyme",
+    "description": "JavaScript Testing utilities for React"
+  },
+  {
+    "name": "form-generator-react",
+    "repo": "SteveVitali/react-form-generator",
+    "description": "Generate, validate, and parse React forms based on arbitrary JSON schemas."
+  },
+  {
+    "name": "geoow-alert",
+    "repo": "geoow/geoow-alert",
+    "description": "Alert reinvented with react.js"
+  },
+  {
+    "name": "inline-edit",
+    "repo": "dbencic/inline-edit",
+    "description": "React inline edit component able to check format and parse value"
+  },
+  {
+    "name": "markdown-to-jsx",
+    "repo": "yaycmyk/markdown-to-jsx",
+    "description": "Interprets markdown text and outputs a JSX equivalent."
+  },
+  {
+    "name": "postal-react-mixin",
+    "repo": "ludwigschubert/postal-react-mixin",
+    "description": "A ReactJS component mixin adding postal.js message bus behaviors to components, including declarative subscriptions."
+  },
+  {
+    "name": "progresso",
+    "repo": "dylanharrington/progresso",
+    "description": "A progress bar component"
+  },
+  {
+    "name": "react-audio-recorder",
+    "repo": "kremonte/react-audio-recorder",
+    "description": "Audio Recorder"
+  },
+  {
+    "name": "react-backbone-app-store",
+    "repo": "SteveVitali/react-backbone-app-store",
+    "description": "Lightweight data store for React applications using Backbone models/collections"
+  },
+  {
+    "name": "react-component-date-picker",
+    "repo": "paulrenenichols/react-component-date-picker",
+    "description": "A datepicker component written in React."
+  },
+  {
+    "name": "react-component-errors",
+    "repo": "staxmanade/react-component-errors",
+    "description": "This is a little utility that wraps you're ES6 (or even ES5) React Component's lifecycle methods with a try/catch and is useful in development because it exposes errors thrown that are swallowed by React by default. Now you can more easily diagnose errors"
+  },
+  {
+    "name": "react-component-time-input",
+    "repo": "paulrenenichols/react-component-time-input",
+    "description": "A datepicker component written in React."
+  },
+  {
+    "name": "react-motion-menu",
+    "repo": "bokuweb/react-motion-menu",
+    "description": "Motion menu component for React."
+  },
+  {
+    "name": "react-shallow-query",
+    "repo": "lewie9021/react-shallow-query",
+    "description": "A React utility that makes querying a shallow rendered component easier."
+  },
+  {
+    "name": "react-sortable-items",
+    "repo": "samvtran/react-sortable-items",
+    "description": "Sort stuff with React.js"
+  },
+  {
+    "name": "react-sync-state",
+    "repo": "sharingapples/sync-state-react",
+    "description": "A client side implementation for synchronizing states with server"
+  },
+  {
+    "name": "redux-form-validate",
+    "repo": "motoedie/redux-form-validate",
+    "description": "Validate function for redux-form. Type checking based on React.PropTypes."
+  },
+  {
+    "name": "universal-redux",
+    "repo": "bdefore/universal-redux",
+    "description": "A universal redux renderer (ES6, Webpack, Express)"
+  },
+  {
+    "name": "redux-localstorage-immutable",
+    "repo": "jakelazaroff/redux-localstorage-immutable",
+    "description": "Enhancer for redux-localstorage that allows you to persist an immutable store"
   }
 ]
