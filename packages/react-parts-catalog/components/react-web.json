@@ -214,7 +214,7 @@
   {
     "name": "braintree-react",
     "repo": "jeffcarp/braintree-react",
-    "description": "> _Easier than sticking cash into a dirty envelope and mailing it to a company._"
+    "description": "A React component for Braintree Drop-In"
   },
   {
     "name": "cupcake-react-modal",
@@ -13531,7 +13531,7 @@
   {
     "name": "react-hotels-on-map",
     "repo": "ikr/react-hotels-on-map",
-    "description": "Presents a set of hotels as clustered markers on Google Map, each with an info window displaying the hotel name"
+    "description": "Presents a set of hotels as clustered markers on Google Map, each with an info window displaying the hotel summary"
   },
   {
     "name": "react-koa",
@@ -13690,13 +13690,7 @@
   {
     "name": "slush-jspm-react-seed",
     "repo": "sloppylopez/slush-jspm-react-seed",
-    "description": "Slush for scaffolding, Jspm for packaging, React as templating framework"
-  },
-  {
-    "name": "the-other-redux-form",
-    "repo": "jameslnewell/redux-formo",
-    "description": "An alternate forms framework for Redux+React.",
-    "original_repo": "jameslnewell/the-other-redux-form"
+    "description": "Slush for scaffolding, Jspm for packaging, React for templating framework"
   },
   {
     "name": "vin-react-starter-kit",
@@ -14067,5 +14061,96 @@
     "name": "redux-localstorage-immutable",
     "repo": "jakelazaroff/redux-localstorage-immutable",
     "description": "Enhancer for redux-localstorage that allows you to persist an immutable store"
+  },
+  {
+    "name": "chai-react-element",
+    "repo": "electricmonk/chai-react-element",
+    "description": "A suite of Chai assertions for ReactElement VDOMs"
+  },
+  {
+    "name": "gluestick",
+    "repo": "TrueCar/gluestick",
+    "description": "GlueStick is a command line interface for quickly developing universal web applications using React. Currently it is still very experimental and is likely to change frequently."
+  },
+  {
+    "name": "grunt-init-react",
+    "repo": "skratchdot/grunt-init-react",
+    "description": "grunt-init template for a very basic react project."
+  },
+  {
+    "name": "karma-jasmine-expect-jsx",
+    "repo": "smacker/karma-jasmine-expect-jsx",
+    "description": "A Karma plugin. Adds toEqualJSX matcher for the Jasmine BDD JavaScript testing library."
+  },
+  {
+    "name": "nestedreact",
+    "repo": "Volicon/NestedReact",
+    "description": "Advanced models, state management, and data binding solution for React",
+    "original_repo": "Volicon/react-backbone.glue"
+  },
+  {
+    "name": "nwb",
+    "repo": "insin/nwb",
+    "description": "npm web builder - a development tool for React and web modules"
+  },
+  {
+    "name": "react-accessible-fa",
+    "repo": "kwhitaker/react-accessible-fa",
+    "description": "Accessible Font Awesome icon components for React"
+  },
+  {
+    "name": "react-backstrap",
+    "repo": "moodysalem/react-backstrap",
+    "description": "group of components for building React applications"
+  },
+  {
+    "name": "react-docgen-readme",
+    "repo": "vieron/react-docgen-readme",
+    "description": "CLI tool that extracts information from React Components using react-docgen, transforms that information into Markdown and adds it to your README file."
+  },
+  {
+    "name": "react-entity",
+    "repo": "scup/react-entity",
+    "description": "Create entities base on React propTypes"
+  },
+  {
+    "name": "react-github-corner",
+    "repo": "skratchdot/react-github-corner",
+    "description": "Add a Github banner to your project page. A React version of: https://github.com/tholman/github-corners"
+  },
+  {
+    "name": "react-image-slider",
+    "repo": "azimgd/react-image-slider",
+    "description": "Image slider component for React"
+  },
+  {
+    "name": "react-pack",
+    "repo": "luqin/react-pack",
+    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload"
+  },
+  {
+    "name": "react-pubsub",
+    "repo": "cef62/react-pubsub",
+    "description": "PubSub abstraction layer for React, should support any compliant pub-sub libray."
+  },
+  {
+    "name": "react-simple-radio-group",
+    "repo": "zodiac-xl/react-simple-radio-group",
+    "description": "A React mixin for linking form fields to a deep structure of data within the component's state."
+  },
+  {
+    "name": "react-transcriber",
+    "repo": "kremonte/react-transcriber",
+    "description": "React Transcriber"
+  },
+  {
+    "name": "redux-formo",
+    "repo": "jameslnewell/redux-formo",
+    "description": "An alternate forms framework for Redux+React."
+  },
+  {
+    "name": "redux-ui",
+    "repo": "tonyhb/redux-ui",
+    "description": "UI state management for Redux and React"
   }
 ]

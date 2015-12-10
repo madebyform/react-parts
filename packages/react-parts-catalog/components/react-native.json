@@ -1728,7 +1728,7 @@
   {
     "name": "react-native-desktop",
     "repo": "ptmt/react-native-desktop",
-    "description": "A framework for building desktop native apps using React"
+    "description": "A framework for building native desktop apps using React"
   },
   {
     "name": "react-native-progress-dialog-android",
@@ -2439,5 +2439,41 @@
     "name": "rnpm-plugin-apphub",
     "repo": "ptmt/rnpm-plugin-apphub",
     "description": "Build, export and upload .ipa to AppHub Cloud"
+  },
+  {
+    "name": "react-native-couchbase",
+    "repo": "Upinion/react-native-couchbase-lite",
+    "description": "React native Couchbase allows to start a couchbase server and sync."
+  },
+  {
+    "name": "react-native-file-manager",
+    "repo": "MiincGu/react-native-file-manager",
+    "description": "A file manger for react native"
+  },
+  {
+    "name": "react-native-ichart",
+    "repo": "AdonRain/react-native-ichart",
+    "description": "ichart for react-native"
+  },
+  {
+    "name": "react-native-locale",
+    "repo": "fixdio/react-native-locale",
+    "description": "Simple locale information and methods for react native"
+  },
+  {
+    "name": "react-native-router-flux",
+    "repo": "aksonov/react-native-router-flux",
+    "description": "React Native Router using Flux architecture",
+    "original_repo": ""
+  },
+  {
+    "name": "react-native-sms-android",
+    "repo": "rhaker/react-native-sms-android",
+    "description": "A react-native module for sending a sms message to a phone number."
+  },
+  {
+    "name": "react-native-vectordrawable-android",
+    "repo": "upinion/react-native-vectordrawable-android",
+    "description": "Use android vectorDrawable in Android"
   }
 ]
