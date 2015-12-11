@@ -12822,7 +12822,7 @@
   {
     "name": "react-cursor",
     "repo": "dustingetz/react-cursor",
-    "description": "Functional state management abstraction for use with Facebook React"
+    "description": "Immutable recursive UI state management"
   },
   {
     "name": "react-date-picker-component",
@@ -14152,5 +14152,93 @@
     "name": "redux-ui",
     "repo": "tonyhb/redux-ui",
     "description": "UI state management for Redux and React"
+  },
+  {
+    "name": "apeman-react-view",
+    "repo": "apeman-react-labo/apeman-react-view",
+    "description": "apeman react package for view components."
+  },
+  {
+    "name": "builder-react-component-dev",
+    "repo": "FormidableLabs/builder-react-component",
+    "description": "Builder Archetype - React Component (Development)"
+  },
+  {
+    "name": "navigation-react",
+    "repo": "grahammendick/navigation",
+    "description": "A plugin for the Navigation routing library that lets you build Hyperlinks using React's binding syntax"
+  },
+  {
+    "name": "react-aware-mixin-decorator",
+    "repo": "BobertForever/react-aware-mixin-decorator",
+    "description": "A mixin es7 decorator that's React aware",
+    "original_repo": "BobertForever/react-mixin-decorator"
+  },
+  {
+    "name": "react-editinplace",
+    "repo": "nezriffic/react-editinplace",
+    "description": "React edit in place component"
+  },
+  {
+    "name": "react-file-processor",
+    "repo": "skratchdot/react-file-processor",
+    "description": "A React component for choosing files"
+  },
+  {
+    "name": "react-flipper",
+    "repo": "VisionistInc/react-flipper",
+    "description": "React flipper component that is agnostic to the height of its tiles, resizing accordingly.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-form-validate",
+    "repo": "0rangeT1ger/React-form-validator",
+    "description": "A React form validator. Has the same API as jQuery.validator"
+  },
+  {
+    "name": "react-resizable-component",
+    "repo": "wongherlung/react-resizable-component",
+    "description": "A simple React resizable component that comes with features that you might need.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-templatify",
+    "repo": "gja/react-templatify",
+    "description": "browserify v2 plugin for react-templates"
+  },
+  {
+    "name": "react-to-typescript-definitions",
+    "repo": "knisterpeter/react-to-typescript-definitions",
+    "description": "Create typescript definitions files (d.ts) from react components"
+  },
+  {
+    "name": "react-transform-sentry",
+    "repo": "luisrudge/react-transform-sentry",
+    "description": "A React Transform that catches errors inside React's lifecycle methods and reports to sentry."
+  },
+  {
+    "name": "redux-cropper",
+    "repo": "lapanoid/redux-cropper",
+    "description": "My supreme module"
+  },
+  {
+    "name": "requirejs-react-jsx",
+    "repo": "podio/requirejs-react-jsx",
+    "description": "A RequireJS plugin for loading jsx in require.js and r.js"
+  },
+  {
+    "name": "slush-react-materialui",
+    "repo": "johanhdm/slush-react-materialui",
+    "description": "Slush generator for creating web apps with React, MateralUI and Gulp"
+  },
+  {
+    "name": "statestore",
+    "repo": "iRalph/StateStore",
+    "description": "a simple state manager for mvc or flux"
+  },
+  {
+    "name": "videojs-responsive-layout",
+    "repo": "hartman/videojs-responsive-layout",
+    "description": "A plugin which reacts to the width of your Video.js player to change the layout."
   }
 ]

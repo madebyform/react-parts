@@ -2475,5 +2475,30 @@
     "name": "react-native-vectordrawable-android",
     "repo": "upinion/react-native-vectordrawable-android",
     "description": "Use android vectorDrawable in Android"
+  },
+  {
+    "name": "react-native-parallax-listview",
+    "repo": "jaysoo/react-native-parallax-listview",
+    "description": "ListView with parallax header support"
+  },
+  {
+    "name": "react-native-smooch",
+    "repo": "smooch/react-native-smooch",
+    "description": "A React Native client for smooch.io"
+  },
+  {
+    "name": "react-native-system-notification",
+    "repo": "Neson/react-native-system-notification",
+    "description": "Notification for React Native"
+  },
+  {
+    "name": "react-native-vs-charts",
+    "repo": "bretdabaker/react-native-vs-charts",
+    "description": "A charting library built using only View and Style"
+  },
+  {
+    "name": "react-native-wechat-ios",
+    "repo": "beefe/react-native-wechat-ios",
+    "description": "微信SDK集成示例，现已完成微信授权登录，之后将陆续包装分享等其他功能。"
   }
 ]
