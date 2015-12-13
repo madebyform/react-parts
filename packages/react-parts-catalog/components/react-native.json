@@ -2209,7 +2209,7 @@
   },
   {
     "name": "react-native-console-panel",
-    "repo": "sospartan/react-native-console-panel",
+    "repo": "NativeSH/react-native-console-panel",
     "description": "react native component for display console messages. "
   },
   {
@@ -2255,8 +2255,9 @@
   },
   {
     "name": "react-native-iconic-font",
-    "repo": "sospartan/react-native-iconic-font",
-    "description": "Use iconic font in a simple way."
+    "repo": "NativeSH/react-native-iconic-font",
+    "description": "Use iconic font in a simple way.",
+    "original_repo": "sospartan/react-native-iconic-font"
   },
   {
     "name": "react-native-rebound-scrollview",
@@ -2499,6 +2500,31 @@
   {
     "name": "react-native-wechat-ios",
     "repo": "beefe/react-native-wechat-ios",
-    "description": "微信SDK集成示例，现已完成微信授权登录，之后将陆续包装分享等其他功能。"
+    "description": "Wechat SDK for React Native(iOS)."
+  },
+  {
+    "name": "react-native-braintree-android",
+    "repo": "surialabs/react-native-braintree-android",
+    "description": "A react native interface for integrating Braintree's native Drop-in Payment UI for Android"
+  },
+  {
+    "name": "react-native-loading-container",
+    "repo": "exponentjs/react-native-loading-container",
+    "description": "LoadingContainer is a component that co-ordinates fetching data, displaying a loading indicator while that's in progress, and an error message with a retry button when a request fails."
+  },
+  {
+    "name": "react-native-qq",
+    "repo": "reactnativecn/react-native-qq",
+    "description": "QQ Login&Share support in React Native."
+  },
+  {
+    "name": "react-native-wifi-checker",
+    "repo": "Haargeeel/react-native-wifi-checker",
+    "description": "Get a list of available Wifi connections"
+  },
+  {
+    "name": "react-native-wifi-module",
+    "repo": "ccmxy/react-native-wifi-module",
+    "description": "A react-native module for viewing and connecting to Wifi networks on Android devices."
   }
 ]

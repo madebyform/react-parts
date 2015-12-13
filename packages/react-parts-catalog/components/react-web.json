@@ -3439,8 +3439,9 @@
   },
   {
     "name": "react-kit",
-    "repo": "yuanyan/react-kit",
-    "description": "Toolkit for React"
+    "repo": "yuanyan/domkit",
+    "description": "Toolkit for React",
+    "original_repo": "yuanyan/react-kit"
   },
   {
     "name": "react-kudos",
@@ -5388,7 +5389,7 @@
   {
     "name": "react-routing",
     "repo": "kriasoft/react-routing",
-    "description": "A routing and navigation solution for React.js applications"
+    "description": "Isomorphic router for React.js applications"
   },
   {
     "name": "react-simple-alert",
@@ -9448,7 +9449,7 @@
   },
   {
     "name": "fluxible-addons-react",
-    "repo": "yahoo/fluxible-addons-react",
+    "repo": "yahoo/fluxible",
     "description": "Fluxible addons for use with React"
   },
   {
@@ -12617,7 +12618,7 @@
   {
     "name": "coherence",
     "repo": "clalimarmo/coherence",
-    "description": "Flux-inspired Models and Controllers, for React apps"
+    "description": "Flux-inspired Models and Intents, for React apps"
   },
   {
     "name": "react-component-extension",
@@ -14240,5 +14241,121 @@
     "name": "videojs-responsive-layout",
     "repo": "hartman/videojs-responsive-layout",
     "description": "A plugin which reacts to the width of your Video.js player to change the layout."
+  },
+  {
+    "name": "apeman-app-react",
+    "repo": "apeman-app-labo/apeman-app-react",
+    "description": "apeman app for react prerendering."
+  },
+  {
+    "name": "bill",
+    "repo": "jquense/bill",
+    "description": "css selectors for React Elements"
+  },
+  {
+    "name": "class-decorators",
+    "repo": "wescravens/class-decorators",
+    "description": "Adds mixin support to es6 classes using decorators"
+  },
+  {
+    "name": "ebsco-widget",
+    "repo": "BibCnrs/EBSCO-widget",
+    "description": "React widget to fetch data from BibApi"
+  },
+  {
+    "name": "eslint-plugin-jsx-control-statements",
+    "repo": "vkbansal/eslint-plugin-jsx-control-statements",
+    "description": "jsx-control-statements specific linting rules for ESLint"
+  },
+  {
+    "name": "exim",
+    "repo": "hellyeahllc/exim",
+    "description": "An architecture for HTML5 apps using Facebook's Flux.js library"
+  },
+  {
+    "name": "kefir-react",
+    "repo": "iofjuupasli/kefir-react",
+    "description": "React wrapper class for linking Kefir.js observables as props value"
+  },
+  {
+    "name": "minimal-hapi-react-webpack-hmr-sandbox",
+    "repo": "raquo/minimal-hapi-react-webpack",
+    "description": "Minimal Hapi + React + Webpack + HMR (hot module reloading) Sandbox"
+  },
+  {
+    "name": "node-react-templates",
+    "repo": "jaydenlin/node-react-templates",
+    "description": "transparently require() react-templates .rt file from node"
+  },
+  {
+    "name": "omnistate",
+    "repo": "andrewluetgers/omnistate",
+    "description": "Yet another state system for react"
+  },
+  {
+    "name": "postcss-js",
+    "repo": "postcss/postcss-js",
+    "description": "PostCSS for React Inline Styles, Radium, Free Style and other CSS-in-JS"
+  },
+  {
+    "name": "rc-clearable-input",
+    "repo": "kanatzidis/rc-clearable-input",
+    "description": "A text input field with an x button that clears the field for React."
+  },
+  {
+    "name": "react-cntdwn",
+    "repo": "sungwoncho/react-cntdwn",
+    "description": "A simple, customizable countdown timer for React"
+  },
+  {
+    "name": "react-cordova-boilerplate",
+    "repo": "unimonkiez/react-cordova-boilerplate",
+    "description": "TodoMVC example for react with development tools to build a cordova application",
+    "original_repo": "yuvalsaraf/react-cordova-boilerplate"
+  },
+  {
+    "name": "react-hover",
+    "repo": "cht8687/react-hover",
+    "description": "show anything when mouse hover"
+  },
+  {
+    "name": "react-i18next",
+    "repo": "i18next/react-i18next",
+    "description": "i18next plugin for jquery usage"
+  },
+  {
+    "name": "react-photo-gallery",
+    "repo": "neptunian/react-photo-gallery",
+    "description": "Responsive React Photo Gallery Component"
+  },
+  {
+    "name": "react-pointerlock",
+    "repo": "jeongsd/react-pointerlock",
+    "description": "Pointerlock API for react.js"
+  },
+  {
+    "name": "react-safe-component",
+    "repo": "Aloompa/react-safe-component",
+    "description": "A starter place for nice react modules."
+  },
+  {
+    "name": "react-size",
+    "repo": "Xananax/react-size",
+    "description": "Helpers to manage browser size changes in React."
+  },
+  {
+    "name": "react-tmpl",
+    "repo": "Xananax/react-tmpl",
+    "description": "Abstract boilerplate from writing presentational React"
+  },
+  {
+    "name": "redux-auth",
+    "repo": "lynndylanhurley/redux-auth",
+    "description": "Complete token authentication system for react + redux."
+  },
+  {
+    "name": "rmc-cascade-select",
+    "repo": "react-component/m-cascade-select",
+    "description": "m-cascade-select ui component for react"
   }
 ]
