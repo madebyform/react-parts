@@ -544,8 +544,9 @@
   },
   {
     "name": "react-native-eupage",
-    "repo": "mmslate/react-native-eupage",
-    "description": "Easy to show html, image, video fullscreen pages. "
+    "repo": "islate/react-native-eupage",
+    "description": "Easy to show html, image, video fullscreen pages. ",
+    "original_repo": "mmslate/react-native-eupage"
   },
   {
     "name": "react-native-i18n",
@@ -2526,5 +2527,45 @@
     "name": "react-native-wifi-module",
     "repo": "ccmxy/react-native-wifi-module",
     "description": "A react-native module for viewing and connecting to Wifi networks on Android devices."
+  },
+  {
+    "name": "react-native-admob",
+    "repo": "sbugert/react-native-admob",
+    "description": "A react-native component for Google AdMob banners"
+  },
+  {
+    "name": "react-native-lock-android",
+    "repo": "auth0/react-native-lock-android",
+    "description": "Auth0 Lock for React Native (Android)"
+  },
+  {
+    "name": "react-native-picker",
+    "repo": "beefe/react-native-picker",
+    "description": "react-native-picker"
+  },
+  {
+    "name": "react-native-picker-android",
+    "repo": "beefe/react-native-picker-android",
+    "description": "react-native-picker-android"
+  },
+  {
+    "name": "react-native-segment-io-analytics",
+    "repo": "smore-inc/react-native-segment-io-analytics",
+    "description": "React Native wrapper for the Segment.com Analytics SDK"
+  },
+  {
+    "name": "react-native-selectme",
+    "repo": "gs-akhan/react-native-select",
+    "description": "A better Select dropdown menu for react-native"
+  },
+  {
+    "name": "react-native-user-defaults",
+    "repo": "wwayne/react-native-user-defaults",
+    "description": "ios UserDefaults used by react-native"
+  },
+  {
+    "name": "react-native-webview",
+    "repo": "beefe/react-native-webview",
+    "description": "andorid webview for react-native"
   }
 ]

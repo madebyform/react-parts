@@ -1403,8 +1403,9 @@
   },
   {
     "name": "react-carousel",
-    "repo": "dogfessional/react-carousel",
-    "description": "A carousel written in react"
+    "repo": "gajus/react-carousel",
+    "description": "Carousel react component",
+    "original_repo": "applaudience/react-carousel"
   },
   {
     "name": "react-chartist",
@@ -6956,7 +6957,7 @@
   {
     "name": "react-mdl",
     "repo": "tleunen/react-mdl",
-    "description": "React Components for the Material Design Lite UI framework"
+    "description": "React Components wrapper for Material Design Lite UI"
   },
   {
     "name": "react-upvote",
@@ -8914,7 +8915,7 @@
   {
     "name": "es6bindall",
     "repo": "brownieboy/es6bindall",
-    "description": "Simple function to bind multiple methods to an ES6 class's 'this' oject. Intended as an equivalent to Backbone's bindAll() method."
+    "description": "Simple function to bind multiple methods to an ES6 class's 'this' object. Intended as an equivalent to Backbone's bindAll() method."
   },
   {
     "name": "react-flex-slick",
@@ -14355,7 +14356,129 @@
   },
   {
     "name": "rmc-cascade-select",
-    "repo": "react-component/m-cascade-select",
-    "description": "m-cascade-select ui component for react"
+    "repo": "react-component/m-picker",
+    "description": "m-cascade-select ui component for react",
+    "original_repo": "react-component/m-cascade-select"
+  },
+  {
+    "name": "esx",
+    "repo": "matteodelabre/esx",
+    "description": "Use the JSX syntax in ES6 template strings!",
+    "original_repo": "MattouFP/esx"
+  },
+  {
+    "name": "fluxos",
+    "repo": "nodets/fluxos",
+    "description": "The Flux library especially for Typescript coders. Made with and works excellent with ES6."
+  },
+  {
+    "name": "inline-css-loader",
+    "repo": "marudor/inline-css-loader",
+    "description": "css loader module for webpack"
+  },
+  {
+    "name": "instyled",
+    "repo": "dlmanning/instyled",
+    "description": "React inline styled component generator"
+  },
+  {
+    "name": "marty-lib",
+    "repo": "martyjs/marty-lib",
+    "description": "A Javascript library for state management in React applications"
+  },
+  {
+    "name": "ov-react-modal-overlay",
+    "repo": "OnVelocity/react-modal-overlay",
+    "description": "modal-overlay ui component for react"
+  },
+  {
+    "name": "radium-bootstrap-grid",
+    "repo": "blueberryapps/radium-bootstrap-grid",
+    "description": "Bootstrap grid writen in inline styles (mainly for Radium)"
+  },
+  {
+    "name": "rc-echarts",
+    "repo": "somonus/react-echarts",
+    "description": "react echarts"
+  },
+  {
+    "name": "reacon",
+    "repo": "UniversalAvenue/reacon",
+    "description": "React component notation"
+  },
+  {
+    "name": "react-bootstrap-star-rating",
+    "repo": "Rudolph-Miller/react-bootstrap-star-rating",
+    "description": "React wrapper of bootstrap-star-rating"
+  },
+  {
+    "name": "react-bootstrap-sweetalert",
+    "repo": "djorg83/react-bootstrap-sweetalert",
+    "description": "A variant of sweetalert for use with React and Bootstrap"
+  },
+  {
+    "name": "react-container-query-container",
+    "repo": "VinSpee/react-container-query-container",
+    "description": "A higher-order react component enabling container queries today"
+  },
+  {
+    "name": "react-easy-router",
+    "repo": "Studio107/react-easy-router",
+    "description": "Easy and lightweight react router"
+  },
+  {
+    "name": "react-logger",
+    "repo": "contra/react-logger",
+    "description": "Dead simple logging mixin for react"
+  },
+  {
+    "name": "react-serial-forms",
+    "repo": "LevInteractive/react-serial-forms",
+    "description": "A high performance form library built specifically for React using persistent immutable data."
+  },
+  {
+    "name": "react-shallowdom-helpers",
+    "repo": "acnalesso/react-shallowdom-helpers",
+    "description": "A set of helpers to traverse the object returned by shallow renderer."
+  },
+  {
+    "name": "react-snowfetti",
+    "repo": "danillouz/react-snowfetti",
+    "description": "Generates random particles using html5 canvas API."
+  },
+  {
+    "name": "react-sonar",
+    "repo": "easyrider/react-sonar",
+    "description": "Detects an element size changes"
+  },
+  {
+    "name": "react-stormpath",
+    "repo": "stormpath/stormpath-sdk-react",
+    "description": "Stormpath SDK for React."
+  },
+  {
+    "name": "retroflux",
+    "repo": "arjanfrans/retroflux",
+    "description": "Simple flux library"
+  },
+  {
+    "name": "rmc-picker",
+    "repo": "react-component/m-picker",
+    "description": "m-picker ui component for react"
+  },
+  {
+    "name": "sflux",
+    "repo": "pfzero/s-flux",
+    "description": "A Flux dispatcher for applications that run on the server and the client."
+  },
+  {
+    "name": "sweetflux",
+    "repo": "FunctionFoundry/sweetflux",
+    "description": "Sweeten your flux"
+  },
+  {
+    "name": "uxcore-pickable",
+    "repo": "uxcore/uxcore-pickable",
+    "description": "uxcore-pickable component for uxcore."
   }
 ]
