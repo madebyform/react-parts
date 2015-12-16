@@ -2301,7 +2301,6 @@
     "name": "react-lite-layered",
     "repo": "teambition/react-lite-layered",
     "description": "Dialog, Modals, Popover, Overlay components from Talk by Teambition.",
-    "original_repo": "teambition/react-lite-dropdown",
     "original_description": "Dropdown menu from Talk by teambition"
   },
   {
@@ -13839,9 +13838,8 @@
   },
   {
     "name": "reactjs-components",
-    "repo": "Mesosphere/reactjs-components",
-    "description": "React UI Components by Mesosphere",
-    "original_repo": ""
+    "repo": "mesosphere/reactjs-components",
+    "description": "React UI Components by Mesosphere"
   },
   {
     "name": "reagent",
@@ -14480,5 +14478,90 @@
     "name": "uxcore-pickable",
     "repo": "uxcore/uxcore-pickable",
     "description": "uxcore-pickable component for uxcore."
+  },
+  {
+    "name": "facebook-plugins",
+    "repo": "studiofrenetic/facebook-plugins",
+    "description": "Facebook plugins component built with and for ReactJS"
+  },
+  {
+    "name": "multireducer-adailey14",
+    "repo": "erikras/multireducer",
+    "description": "A utility to wrap many copies of a single Redux reducer into a single key-based reducer."
+  },
+  {
+    "name": "nail-static-react",
+    "repo": "johnhenry/nail-static-react",
+    "description": "Create static pages and sites using React components"
+  },
+  {
+    "name": "rc-form",
+    "repo": "react-component/form",
+    "description": "React High Order Form Component"
+  },
+  {
+    "name": "react-class-mixin",
+    "repo": "wescravens/react-class-mixin",
+    "description": "Adds mixin support to React components that are declared as ES6 classes"
+  },
+  {
+    "name": "react-darkroom",
+    "repo": "MattMcFarland/react-darkroom",
+    "description": "Advanced HTML 5 React Component."
+  },
+  {
+    "name": "react-dropzone-s3-uploader",
+    "repo": "founderlab/react-dropzone-s3-uploader",
+    "description": "Drag and drop s3 file uploader via react-dropzone + react-s3-uploader"
+  },
+  {
+    "name": "react-formable",
+    "repo": "willowtreeapps/react-formable",
+    "description": "A simple form library for react"
+  },
+  {
+    "name": "react-input-enhancements",
+    "repo": "alexkuz/react-input-enhancements",
+    "description": "Set of enhancements for input control (bootstrap-ready)"
+  },
+  {
+    "name": "react-redux-provide-history",
+    "repo": "loggur/react-redux-provide-history",
+    "description": "Provides the HTML5 History API to React components."
+  },
+  {
+    "name": "react-resize-sensor",
+    "repo": "jehoshua02/react-resize-sensor",
+    "description": "Resize Sensor for React Components"
+  },
+  {
+    "name": "reax-avatar",
+    "repo": "luizeduard0/reax-avatar",
+    "description": "Avatar component for React"
+  },
+  {
+    "name": "redux-connected-proptypes",
+    "repo": "conorhastings/redux-connected-proptypes",
+    "description": "an interface for defining React component props using redux, react-redux and PropTypes"
+  },
+  {
+    "name": "redux-devtools-prompt-state",
+    "repo": "Pierrickouw/redux-devtools-prompt-state",
+    "description": "A redux devtools utility to prompt / copy / paste state of an app"
+  },
+  {
+    "name": "redux-search",
+    "repo": "treasure-data/redux-search",
+    "description": "Redux bindings for client-side search"
+  },
+  {
+    "name": "redux-watch",
+    "repo": "jprichardson/redux-watch",
+    "description": "Watch Redux state for changes."
+  },
+  {
+    "name": "router1",
+    "repo": "zxbodya/router1",
+    "description": "Complete routing solution for isomophic reactive applications"
   }
 ]

@@ -2567,5 +2567,20 @@
     "name": "react-native-webview",
     "repo": "beefe/react-native-webview",
     "description": "andorid webview for react-native"
+  },
+  {
+    "name": "react-native-file-transfer-android",
+    "repo": "blahoink/react-native-file-transfer-android",
+    "description": "multipart/form-data file upload for react-native android"
+  },
+  {
+    "name": "react-native-material-design",
+    "repo": "react-native-material-design/react-native-material-design",
+    "description": "React Native Material Design Components"
+  },
+  {
+    "name": "react-native-push-notification",
+    "repo": "zo0r/react-native-push-notification",
+    "description": "React Native Local and Remote Notifications"
   }
 ]
