@@ -2352,7 +2352,7 @@
   },
   {
     "name": "react-native-sliding-up-panel",
-    "repo": "ninamanalo/react-native-sliding-up-panel",
+    "repo": "ninamanalo19/react-native-sliding-up-panel",
     "description": "react native sliding up panel"
   },
   {
@@ -2582,5 +2582,35 @@
     "name": "react-native-push-notification",
     "repo": "zo0r/react-native-push-notification",
     "description": "React Native Local and Remote Notifications"
+  },
+  {
+    "name": "react-native-animated-tabs",
+    "repo": "philipshurpik/react-native-animated-tabs/",
+    "description": "Animated Tabs for React Native. Both for iOS and Android. Just swipe between tabs to navigate. Or press on tabbar labels."
+  },
+  {
+    "name": "react-native-barcode-qrcode",
+    "repo": "chenchunyong/react-native-barCode",
+    "description": "采用React Native WebView组件实现的BarCode（条形码）、二维码"
+  },
+  {
+    "name": "react-native-flip-view",
+    "repo": "DispatcherInc/react-native-flip-view",
+    "description": "JavaScript implementation of a view container that can flip between its front and back"
+  },
+  {
+    "name": "react-native-input",
+    "repo": "chenchunyong/react-native-input",
+    "description": "采用React Native 开发的Input组件"
+  },
+  {
+    "name": "react-native-simple-radio-button",
+    "repo": "moschan/react-native-simple-radio-button",
+    "description": "simple and useful radio button component for React Native"
+  },
+  {
+    "name": "react-native-text-input-layout",
+    "repo": "danielbm/react-native-text-input-layout",
+    "description": "Simple React Native module to use Android's TextInputLayout inside your app"
   }
 ]

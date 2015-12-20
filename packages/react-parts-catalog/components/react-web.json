@@ -9920,8 +9920,9 @@
   },
   {
     "name": "redux-router",
-    "repo": "rackt/redux-router",
-    "description": "Redux bindings for React Router — keep your router state inside your Redux Store."
+    "repo": "acdlite/redux-router",
+    "description": "Redux bindings for React Router — keep your router state inside your Redux Store.",
+    "original_repo": "rackt/redux-router"
   },
   {
     "name": "react-a11y",
@@ -10454,8 +10455,9 @@
   },
   {
     "name": "golden-type",
-    "repo": "Demi-IO/golden-type",
-    "description": "Beautiful, semantic typography for React"
+    "repo": "ashtonwar/golden-type",
+    "description": "Beautiful, semantic typography for React",
+    "original_repo": "Demi-IO/golden-type"
   },
   {
     "name": "hippy",
@@ -11240,8 +11242,9 @@
   },
   {
     "name": "automata-canvas",
-    "repo": "Demi-IO/automata-canvas",
-    "description": "Performant React component for displaying 2d arrays."
+    "repo": "ashtonwar/automata-canvas",
+    "description": "Performant React component for displaying 2d arrays.",
+    "original_repo": "Demi-IO/automata-canvas"
   },
   {
     "name": "derma",
@@ -11771,8 +11774,9 @@
   },
   {
     "name": "redux-simple-router",
-    "repo": "jlongster/redux-simple-router",
-    "description": "Ruthlessly simple bindings to keep react-router and redux in sync"
+    "repo": "rackt/redux-simple-router",
+    "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
+    "original_repo": "jlongster/redux-simple-router"
   },
   {
     "name": "timeout-transition-group",
@@ -12732,8 +12736,7 @@
   {
     "name": "react-globalize",
     "repo": "jquery-support/react-globalize",
-    "description": "Bringing the i18n functionality of Globalize, backed by CLDR, to React",
-    "original_repo": "kborchers/react-globalize"
+    "description": "Bringing the i18n functionality of Globalize, backed by CLDR, to React"
   },
   {
     "name": "react-jwt-store",
@@ -13695,9 +13698,9 @@
   },
   {
     "name": "vin-react-starter-kit",
-    "repo": "coryhouse/vin-javascript-starter-kit",
+    "repo": "coryhouse/vin-react-starter-kit",
     "description": "Starter kit for creating client-side apps using React at Vinsolutions",
-    "original_repo": ""
+    "original_repo": "coryhouse/vin-javascript-starter-kit"
   },
   {
     "name": "yellowbox-react",
@@ -13723,8 +13726,7 @@
   {
     "name": "cooltip",
     "repo": "mapbox/cooltip",
-    "description": "a react tooltip implementation",
-    "original_repo": ""
+    "description": "a react tooltip implementation"
   },
   {
     "name": "donejs-react",
@@ -13750,13 +13752,12 @@
   {
     "name": "js-managed-css",
     "repo": "smallhelm/js-managed-css",
-    "description": "Define and insert CSS via javascript. This also generates unique class and id names automatically. Handy when doing virtual dom (or react) inline css as your primary styling."
+    "description": "Define and insert CSS via javascript. This also generates unique class and id names automatically. Handy when using virtual-dom (or react) inline css as your primary styling."
   },
   {
     "name": "point-one",
     "repo": "Kr0na/point-one",
-    "description": "Point One - Advanced Flux/Redux for React application",
-    "original_repo": ""
+    "description": "Point One - Advanced Flux/Redux for React application"
   },
   {
     "name": "react-absolute-grid",
@@ -13786,8 +13787,9 @@
   },
   {
     "name": "react-ipa-input",
-    "repo": "kremonte/react-ipa-input",
-    "description": "React component for inputting phonetic symbols from the International Phonetic Alphabet"
+    "repo": "danrouse/react-ipa-input",
+    "description": "React component for inputting phonetic symbols from the International Phonetic Alphabet",
+    "original_repo": "kremonte/react-ipa-input"
   },
   {
     "name": "react-keybinding-component",
@@ -14004,8 +14006,9 @@
   },
   {
     "name": "react-audio-recorder",
-    "repo": "kremonte/react-audio-recorder",
-    "description": "Audio Recorder"
+    "repo": "danrouse/react-audio-recorder",
+    "description": "Audio Recorder",
+    "original_repo": "kremonte/react-audio-recorder"
   },
   {
     "name": "react-backbone-app-store",
@@ -14070,7 +14073,8 @@
   {
     "name": "gluestick",
     "repo": "TrueCar/gluestick",
-    "description": "GlueStick is a command line interface for quickly developing universal web applications using React. Currently it is still very experimental and is likely to change frequently."
+    "description": "GlueStick is a command line interface for quickly developing universal web applications using React. Currently it is still very experimental and is likely to change frequently.",
+    "original_description": "[![npm package][npm-badge]][npm]"
   },
   {
     "name": "grunt-init-react",
@@ -14140,8 +14144,9 @@
   },
   {
     "name": "react-transcriber",
-    "repo": "kremonte/react-transcriber",
-    "description": "React Transcriber"
+    "repo": "danrouse/react-transcriber",
+    "description": "React Transcriber",
+    "original_repo": "kremonte/react-transcriber"
   },
   {
     "name": "redux-formo",
@@ -14457,7 +14462,7 @@
   {
     "name": "retroflux",
     "repo": "arjanfrans/retroflux",
-    "description": "Simple flux library"
+    "description": "Minimalistic flux implementation"
   },
   {
     "name": "rmc-picker",
@@ -14563,5 +14568,176 @@
     "name": "router1",
     "repo": "zxbodya/router1",
     "description": "Complete routing solution for isomophic reactive applications"
+  },
+  {
+    "name": "aframe-react",
+    "repo": "ngokevin/aframe-react",
+    "description": "Core React components for A-Frame VR."
+  },
+  {
+    "name": "apeman-proto-react",
+    "repo": "apeman-proto-labo/apeman-proto-react",
+    "description": "Prototype for project with React."
+  },
+  {
+    "name": "bem-react-mixin",
+    "repo": "eferte/react-bem-mixin",
+    "description": "A Mixin Helper to write component classNames with a CSS BEM style for ReactJS Components"
+  },
+  {
+    "name": "bluecore-classnames",
+    "repo": "TriggerMail/bluecore-classnames",
+    "description": "Automatic class builder for React components"
+  },
+  {
+    "name": "fluxiny",
+    "repo": "krasimir/fluxiny",
+    "description": "Implementation of the Flux design pattern / architecture"
+  },
+  {
+    "name": "fluxo-react-connect-stores",
+    "repo": "fluxo-js/fluxo-react-connect-stores",
+    "description": "Utility to connect your Fluxo stores on your React.js component"
+  },
+  {
+    "name": "generator-phoenix-react",
+    "repo": "tfarla/generator-phoenix-react",
+    "description": "Generate a Phoenix app with React and Webpack"
+  },
+  {
+    "name": "gulp-font-icons",
+    "repo": "blueberryapps/gulp-font-icons",
+    "description": "A gulp-driven icon font component for react.js"
+  },
+  {
+    "name": "jsxdom",
+    "repo": "treycordova/jsxdom",
+    "description": "JSX to native DOM API transpilation."
+  },
+  {
+    "name": "kinto-admin",
+    "repo": "kinto/kinto-admin",
+    "description": "Kinto Web Administration Console in React.js"
+  },
+  {
+    "name": "react-attr-converter",
+    "repo": "noraesae/react-attr-converter",
+    "description": "Convert HTML attribute names to React props"
+  },
+  {
+    "name": "react-delete-confirm",
+    "repo": "nfpiche/react-delete-confirm",
+    "description": "A small React component to give make the deletion process more impactful, ensuring they really mean it"
+  },
+  {
+    "name": "react-es6-boilerplate",
+    "repo": "RoselPadilla/React-ES6-Boilerplate",
+    "description": "The quickest way to start hacking on a React-ES6 project"
+  },
+  {
+    "name": "react-functional",
+    "repo": "davidmarkclements/react-functional",
+    "description": "Add life cycle methods to stateless functional components, without the class noise."
+  },
+  {
+    "name": "react-illuminate",
+    "repo": "vkbansal/react-illuminate",
+    "description": "Syntax Highlighting for React"
+  },
+  {
+    "name": "react-jsonschema-form",
+    "repo": "mozilla-services/react-jsonschema-form",
+    "description": "A simple React component capable of building forms from a JSON schema."
+  },
+  {
+    "name": "react-ml",
+    "repo": "elierotenberg/react-ml",
+    "description": "React-base, extensible user-facing language (= BBCode/WikiCode for the modern web)."
+  },
+  {
+    "name": "react-render-html",
+    "repo": "noraesae/react-render-html",
+    "description": "No more dangerouslySetInnerHTML, render HTML as React element."
+  },
+  {
+    "name": "react-state-validation",
+    "repo": "jcblw/react-state-validation",
+    "description": "A way to do some simple form validation in React with a similar syntax as PropType validation"
+  },
+  {
+    "name": "react-sticky-stack",
+    "repo": "YPlan/react-sticky-stack",
+    "description": "A Sticky Stack component for React.js",
+    "original_repo": ""
+  },
+  {
+    "name": "react-uikit-alert",
+    "repo": "otissv/react-uikit-alert",
+    "description": "React uikit alert component for displaying messages."
+  },
+  {
+    "name": "react-uikit-article",
+    "repo": "otissv/react-uikit-article",
+    "description": "React uikit article component to create articles within a page."
+  },
+  {
+    "name": "react-uikit-badge",
+    "repo": "otissv/react-uikit-badge",
+    "description": "React uikit badge component to label and highlight content."
+  },
+  {
+    "name": "react-uikit-base",
+    "repo": "otissv/react-uikit-base",
+    "description": "React UIkit base HOC with uikit utility classes"
+  },
+  {
+    "name": "react-uikit-block",
+    "repo": "otissv/react-uikit-block",
+    "description": "React uikit block component for separating content sections."
+  },
+  {
+    "name": "react-uikit-button",
+    "repo": "otissv/react-uikit-button",
+    "description": "React uikit button component with different styles."
+  },
+  {
+    "name": "react-uikit-button-group",
+    "repo": "otissv/react-uikit-button-group",
+    "description": "React uikit button group component."
+  },
+  {
+    "name": "react-uikit-codeblock",
+    "repo": "otissv/react-uikit-codeblock",
+    "description": "React uikit codeblock component."
+  },
+  {
+    "name": "react-uikit-comment",
+    "repo": "otissv/react-uikit-comment",
+    "description": "React uikit comment component."
+  },
+  {
+    "name": "react-uikit-comment-list",
+    "repo": "otissv/react-uikit-comment-list",
+    "description": "React uikit comment list component."
+  },
+  {
+    "name": "react-uikit-flex",
+    "repo": "otissv/react-uikit-flex",
+    "description": "React uikit flexbox component for creating a wide range of layouts."
+  },
+  {
+    "name": "redux-grout",
+    "repo": "KyperTech/redux-grout",
+    "description": "Redux tools for Grout library."
+  },
+  {
+    "name": "redux-prefetch",
+    "repo": "makeomatic/redux-prefetch",
+    "description": "prefetch async state on the server for universal react apps built with redux"
+  },
+  {
+    "name": "redux-state-history",
+    "repo": "inakianduaga/redux-state-history",
+    "description": "Redux store enhancers for tracking and visualizing state changes"
   }
 ]
