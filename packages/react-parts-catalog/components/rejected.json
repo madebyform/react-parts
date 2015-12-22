@@ -562,5 +562,9 @@
   {
     "name": "react-native-keyboard-toolbar",
     "repo": "DickyT/react-native-textinput-utils"
+  },
+  {
+    "name": "react-native-parallax-listview",
+    "repo": "jaysoo/react-native-parallax-listview"
   }
 ]
