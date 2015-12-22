@@ -3842,8 +3842,9 @@
   },
   {
     "name": "react-textarea",
-    "repo": "radubrehar/react-textarea",
-    "description": "React Textarea"
+    "repo": "zippyui/react-textarea",
+    "description": "React Textarea",
+    "original_repo": "radubrehar/react-textarea"
   },
   {
     "name": "react-time-field",
@@ -11618,8 +11619,7 @@
   },
   {
     "name": "react-gateway",
-    "original_repo": "thejameskyle/react-gateway",
-    "description": "Render React DOM into a new context on document.body",
+    "description": "Render React DOM into a new context",
     "repo": "cloudflare/react-gateway"
   },
   {
@@ -14647,7 +14647,7 @@
   {
     "name": "react-jsonschema-form",
     "repo": "mozilla-services/react-jsonschema-form",
-    "description": "A simple React component capable of building forms from a JSON schema."
+    "description": "A simple React component capable of building HTML forms out of a JSON schema."
   },
   {
     "name": "react-ml",
@@ -14739,5 +14739,135 @@
     "name": "redux-state-history",
     "repo": "inakianduaga/redux-state-history",
     "description": "Redux store enhancers for tracking and visualizing state changes"
+  },
+  {
+    "name": "action-cable-react",
+    "repo": "schneidmaster/action-cable-react",
+    "description": "Use Rails 5 ActionCable channels with React for realtime magic."
+  },
+  {
+    "name": "core-ui",
+    "repo": "joevbruno/core-ui",
+    "description": "Core UI is a dead-simple wrapper around your (React) component library, which aims to provide two benefits: simple, flat paths for import statements and 'switchable' presentational components"
+  },
+  {
+    "name": "fastflux",
+    "repo": "rvikmanis/fastflux",
+    "description": "Lightweight FRP-inspired flux implementation"
+  },
+  {
+    "name": "generator-react-babel",
+    "repo": "bhargav175/generator-react-babel",
+    "description": "Create React Plugins seamlessly!"
+  },
+  {
+    "name": "generator-react-webpack-redux",
+    "repo": "stylesuxx/generator-react-webpack-redux",
+    "description": "Yeoman generator for ReactJS and Flux (redux) via Webpack"
+  },
+  {
+    "name": "react-autocomplete-component",
+    "repo": "AvraamMavridis/react-autocomplete-component",
+    "description": "react autocomplete component"
+  },
+  {
+    "name": "react-component-list",
+    "repo": "sonewman/react-component-list",
+    "description": "React Component List Component"
+  },
+  {
+    "name": "react-couple",
+    "repo": "weflex/react-couple",
+    "description": "Coupling your children(component) in your parent component in React"
+  },
+  {
+    "name": "react-drag-sortable",
+    "repo": "tom-s/react-drag-sortable",
+    "description": "React drag & drop sortable list component"
+  },
+  {
+    "name": "react-es6-webpack-boilerplate",
+    "repo": "vasanthk/react-es6-webpack-boilerplate",
+    "description": "Boilerplate for kick starting a React Project with ES6 (Babel) and Hot reloader using Webpack."
+  },
+  {
+    "name": "react-flux-flow-webpack-jest-es6",
+    "repo": "msalia/react-flux-flow-webpack-jest-es6",
+    "description": "React-Flux Starter Kit"
+  },
+  {
+    "name": "react-metrics",
+    "repo": "nfl/react-metrics",
+    "description": "An analytics library for React.js"
+  },
+  {
+    "name": "react-scroll-listener",
+    "repo": "phazelift/react-scroll-listener",
+    "description": "listen for and handle scroll events efficiently in React applications"
+  },
+  {
+    "name": "react-touchable-tabular",
+    "repo": "weflex/react-touchable-tabular",
+    "description": "touchable table view component for React"
+  },
+  {
+    "name": "react-ui-dropdown",
+    "repo": "Zmoki/react-ui-dropdown",
+    "description": "Selection dropdown component using Facebook React."
+  },
+  {
+    "name": "react-uikit-grid",
+    "repo": "otissv/react-uikit-grid",
+    "description": "React uikit grid component fror  fully responsive, fluid and nestable grid layouts"
+  },
+  {
+    "name": "react-uikit-img",
+    "repo": "otissv/react-uikit-img",
+    "description": "React uikit image component for responsive or cover images."
+  },
+  {
+    "name": "react-uikit-img-gallery",
+    "repo": "otissv/react-uikit-img-gallery",
+    "description": "React uikit image gallery component."
+  },
+  {
+    "name": "react-uikit-list",
+    "repo": "otissv/react-uikit-list",
+    "description": "React uikit list component."
+  },
+  {
+    "name": "react-uikit-note",
+    "repo": "otissv/react-uikit-note",
+    "description": "React uikit note component to add notes to text."
+  },
+  {
+    "name": "react-uikit-overlay",
+    "repo": "otissv/react-uikit-overlay",
+    "description": "React uikit overlay component create an overlay on top of an image."
+  },
+  {
+    "name": "react-vui-dropdown",
+    "repo": "Brightspace/react-valence-ui-dropdown",
+    "description": "React component for a dropdown menu."
+  },
+  {
+    "name": "redux-devtools-filterable-log-monitor",
+    "repo": "bvaughn/redux-devtools-filterable-log-monitor",
+    "description": "Filterable tree view monitor for Redux DevTools"
+  },
+  {
+    "name": "redux-remote-monitor",
+    "repo": "zalmoxisus/redux-remote-monitor",
+    "description": "A custom monitor for Redux DevTools to relay Redux actions."
+  },
+  {
+    "name": "redux-toastr",
+    "repo": "diegoddox/redux-toastr",
+    "description": "redux-toastr is a toastr message implemented with Redux"
+  },
+  {
+    "name": "sinux",
+    "repo": "jbpin/sinux",
+    "description": "Facebook Flux architecture implementation based on self dispatching actions and commands"
   }
 ]

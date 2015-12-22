@@ -2479,11 +2479,6 @@
     "description": "Use android vectorDrawable in Android"
   },
   {
-    "name": "react-native-parallax-listview",
-    "repo": "jaysoo/react-native-parallax-listview",
-    "description": "ListView with parallax header support"
-  },
-  {
     "name": "react-native-smooch",
     "repo": "smooch/react-native-smooch",
     "description": "A React Native client for smooch.io"
@@ -2612,5 +2607,35 @@
     "name": "react-native-text-input-layout",
     "repo": "danielbm/react-native-text-input-layout",
     "description": "Simple React Native module to use Android's TextInputLayout inside your app"
+  },
+  {
+    "name": "react-native-newsticker",
+    "repo": "moschan/react-native-newsticker",
+    "description": "The News Ticker component for React Native"
+  },
+  {
+    "name": "react-native-segment",
+    "repo": "DispatcherInc/react-native-segment",
+    "description": "Native Wrapper around Segment's SDK"
+  },
+  {
+    "name": "react-native-uploader",
+    "repo": "aroth/react-native-uploader",
+    "description": "A React Native module to upload files and camera roll assets. Supports progress notification."
+  },
+  {
+    "name": "react-native-wechat-android",
+    "repo": "beefe/react-native-wechat-android",
+    "description": "the wechat util for android"
+  },
+  {
+    "name": "rn-router",
+    "repo": "jcgertig/rn-router",
+    "description": "React native routing system based on react router"
+  },
+  {
+    "name": "react-native-parallax-scroll-view",
+    "repo": "jaysoo/react-native-parallax-listview",
+    "description": "A ScrollView-like component with parallax and sticky header support"
   }
 ]
