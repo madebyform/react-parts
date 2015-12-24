@@ -1703,7 +1703,7 @@
   {
     "name": "react-native-sound",
     "repo": "zmxv/react-native-sound",
-    "description": "React Native module for playing sound clips"
+    "description": "React Native module for playing sound clips on iOS and Android"
   },
   {
     "name": "react-native-video-gstreamer",
@@ -2162,11 +2162,6 @@
     "name": "react-native-toast",
     "repo": "remobile/react-native-toast",
     "description": "A android like toast for react-native support for ios and android"
-  },
-  {
-    "name": "apphub",
-    "repo": "AppHubPlatform/apphub",
-    "description": "React Native module for integrating with AppHub"
   },
   {
     "name": "generator-irrigate",
@@ -2635,7 +2630,37 @@
   },
   {
     "name": "react-native-parallax-scroll-view",
-    "repo": "jaysoo/react-native-parallax-listview",
+    "repo": "jaysoo/react-native-parallax-scroll-view",
     "description": "A ScrollView-like component with parallax and sticky header support"
+  },
+  {
+    "name": "react-native-android-sms",
+    "repo": "msmakhlouf/react-native-android-sms",
+    "description": "A react native android module to list/send sms."
+  },
+  {
+    "name": "react-native-chart-android",
+    "repo": "hongyin163/react-native-mpchart",
+    "description": "react-native-mpchart provide modules to add chart to android,all charts are come from mpandroidchart library."
+  },
+  {
+    "name": "react-native-date-picker",
+    "repo": "beefe/react-native-date-picker",
+    "description": "DatePicker written in pure javascript for cross-platform support"
+  },
+  {
+    "name": "react-native-extra-dimensions-android",
+    "repo": "jaysoo/react-native-extra-dimensions-android",
+    "description": "Access additional display metrics on Android devices: status bar height, soft menu bar height, real screen size."
+  },
+  {
+    "name": "react-native-intl",
+    "repo": "taggon/react-native-intl",
+    "description": "React Native module shipped native Intl implementation and Translation extension"
+  },
+  {
+    "name": "react-native-social-auth",
+    "repo": "xxsnakerxx/react-native-social-auth",
+    "description": "React Native module provides auth methods via social networks using native APIs"
   }
 ]

@@ -1404,8 +1404,7 @@
   {
     "name": "react-carousel",
     "repo": "gajus/react-carousel",
-    "description": "Carousel react component",
-    "original_repo": "applaudience/react-carousel"
+    "description": "React carousel component."
   },
   {
     "name": "react-chartist",
@@ -5735,7 +5734,6 @@
   {
     "name": "x-view",
     "repo": "x-view/x-view",
-    "original_repo": "lixiaoyan/x-view",
     "description": "A JavaScript library like React, but uses Web Components."
   },
   {
@@ -7989,7 +7987,7 @@
   {
     "name": "ya-ui",
     "repo": "ali322/ya-ui",
-    "description": "web components build with React and Reflux"
+    "description": "web components build with React"
   },
   {
     "name": "react-layout-components",
@@ -13520,7 +13518,7 @@
   {
     "name": "react-app-kit",
     "repo": "joshforisha/react-app-kit",
-    "description": "A React app builder kit"
+    "description": "Another React app kit"
   },
   {
     "name": "react-calendar-widget",
@@ -14095,7 +14093,7 @@
   {
     "name": "nwb",
     "repo": "insin/nwb",
-    "description": "npm web builder - a development tool for React and web modules"
+    "description": "A development tool for React, other web apps and npm web modules"
   },
   {
     "name": "react-accessible-fa",
@@ -14467,7 +14465,7 @@
   {
     "name": "rmc-picker",
     "repo": "react-component/m-picker",
-    "description": "m-picker ui component for react"
+    "description": "React Mobile Picker Component"
   },
   {
     "name": "sflux",
@@ -14602,7 +14600,7 @@
   {
     "name": "generator-phoenix-react",
     "repo": "tfarla/generator-phoenix-react",
-    "description": "Generate a Phoenix app with React and Webpack"
+    "description": "Generate a Phoenix 1.1 app with React and Webpack"
   },
   {
     "name": "gulp-font-icons",
@@ -14869,5 +14867,100 @@
     "name": "sinux",
     "repo": "jbpin/sinux",
     "description": "Facebook Flux architecture implementation based on self dispatching actions and commands"
+  },
+  {
+    "name": "autoreact",
+    "repo": "marcuswestin/autoreact",
+    "description": "Automatic state/view dependency management"
+  },
+  {
+    "name": "babel-plugin-react-originjs",
+    "repo": "valleykid/babel-plugin-react-originjs",
+    "description": "Make react-components into original js"
+  },
+  {
+    "name": "babel-plugin-react-remove-prop-types",
+    "repo": "nkt/babel-plugin-react-remove-prop-types",
+    "description": "Removes React propTypes"
+  },
+  {
+    "name": "babel-preset-react-hmre",
+    "repo": "danmartinez101/babel-preset-react-hmre",
+    "description": "Babel preset for React HMR and Error Catching"
+  },
+  {
+    "name": "fluxer",
+    "repo": "yuanzong/fluxer",
+    "description": "Build React/Flux app for both server and client side"
+  },
+  {
+    "name": "react-announce",
+    "repo": "tusharmath/react-announce",
+    "description": "a declarative approach to writing react components"
+  },
+  {
+    "name": "react-announce-connect",
+    "repo": "tusharmath/react-announce-connect",
+    "description": "apply a stream object to the component stream"
+  },
+  {
+    "name": "react-announce-size",
+    "repo": "tusharmath/react-announce-size",
+    "description": "a react-announce declarative that exposes component size as a stream"
+  },
+  {
+    "name": "react-baidu-map",
+    "repo": "weflex/react-baidu-map",
+    "description": "react component to work with baidu javascript API which enables you search, pinch and more"
+  },
+  {
+    "name": "react-bootstrap-navbar",
+    "repo": "haridusenadeera/react-navbar",
+    "description": "React bootstrap navigation bar"
+  },
+  {
+    "name": "react-classify",
+    "repo": "jfairbank/react-classify",
+    "description": "Classify functional React components to use component lifecycle hooks"
+  },
+  {
+    "name": "react-google-chart",
+    "repo": "kodyl/react-google-chart",
+    "description": "React component for Google Charts"
+  },
+  {
+    "name": "react-mark",
+    "repo": "casesandberg/react-mark",
+    "description": "Configurable Markdown Components in React"
+  },
+  {
+    "name": "react-parallax-component",
+    "repo": "keske/react-parallax-component",
+    "description": "Easiest way to add scroll parallax effect on the component"
+  },
+  {
+    "name": "react-progress-arc",
+    "repo": "okjake/react-progress-arc",
+    "description": "Simple circular progress meters"
+  },
+  {
+    "name": "react-pulldown",
+    "repo": "YPlan/react-pulldown",
+    "description": "A Pulldown component for React.js"
+  },
+  {
+    "name": "react-redux-provide-theme",
+    "repo": "loggur/react-redux-provide-theme",
+    "description": "Provides themes as classes created by JSS to React components."
+  },
+  {
+    "name": "react-simple-format",
+    "repo": "rilkevb/react-simple-format",
+    "description": "Turns double newlines into different paragraphs. Similar to RoR simple_format."
+  },
+  {
+    "name": "react-spotify-player",
+    "repo": "alexanderwallin/react-spotify-player",
+    "description": "Spotify player widget in React"
   }
 ]
