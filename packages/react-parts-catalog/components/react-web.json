@@ -3953,8 +3953,9 @@
   },
   {
     "name": "react-views",
-    "repo": "originalmachine/react-views",
-    "description": "Render React components server side."
+    "repo": "nicholaswyoung/react-views",
+    "description": "Render React components server side.",
+    "original_repo": "originalmachine/react-views"
   },
   {
     "name": "react-webcam",
@@ -4038,8 +4039,8 @@
   },
   {
     "name": "remark",
-    "repo": "iceddev/remark",
-    "description": "Forward-looking Markdown editor built in React"
+    "repo": "wooorm/remark",
+    "description": "Markdown processor powered by plugins"
   },
   {
     "name": "ron-react-autocomplete",
@@ -10311,8 +10312,9 @@
   },
   {
     "name": "react-component-tools",
-    "repo": "luqin/react-pack",
-    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload"
+    "repo": "luqin/react-component-tools",
+    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload",
+    "original_repo": "luqin/react-pack"
   },
   {
     "name": "react-desktop",
@@ -12609,8 +12611,7 @@
   {
     "name": "async-props",
     "repo": "rackt/async-props",
-    "description": "Co-located component data fetching for React Router",
-    "original_repo": "rackt/react-router-async-props"
+    "description": "Co-located component data fetching for React Router"
   },
   {
     "name": "atom-react",
@@ -14127,8 +14128,9 @@
   },
   {
     "name": "react-pack",
-    "repo": "luqin/react-pack",
-    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload"
+    "repo": "luqin/react-component-tools",
+    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload",
+    "original_repo": "luqin/react-pack"
   },
   {
     "name": "react-pubsub",
@@ -14962,5 +14964,95 @@
     "name": "react-spotify-player",
     "repo": "alexanderwallin/react-spotify-player",
     "description": "Spotify player widget in React"
+  },
+  {
+    "name": "apeman-react-handy",
+    "repo": "apeman-react-labo/apeman-react-handy",
+    "description": "Handy react components of apeman."
+  },
+  {
+    "name": "apeman-react-sign",
+    "repo": "apeman-react-labo/apeman-react-sign",
+    "description": "apeman react package for sign components"
+  },
+  {
+    "name": "babel-preset-jongleberry",
+    "repo": "jongleberry/babel-preset-jongleberry",
+    "description": "Jongleberry's babel presets"
+  },
+  {
+    "name": "cerebral-modules-react",
+    "repo": "garth/cerebral-modules-react",
+    "description": "A library for rendering cerebral modules"
+  },
+  {
+    "name": "flux-react",
+    "repo": "christianalfoni/flux-react",
+    "description": "A React JS FLUX expansion"
+  },
+  {
+    "name": "gl-react-dom-static-container",
+    "repo": "gre/gl-react-dom-static-container",
+    "description": "StaticContainer for gl-react-dom: render the Surface once, snapshot it and release the WebGL context"
+  },
+  {
+    "name": "i18n4react",
+    "repo": "ZBoxApp/i18n4react",
+    "description": "CLI to extract react-intl ES6 strings"
+  },
+  {
+    "name": "node-async-require",
+    "repo": "jaydenlin/node-async-require",
+    "description": "transparently require() node modules react-templates .rt file from node"
+  },
+  {
+    "name": "rc-tree-select",
+    "repo": "react-component/tree-select",
+    "description": "tree-select ui component for react"
+  },
+  {
+    "name": "react-announce-fetch",
+    "repo": "tusharmath/react-announce-fetch",
+    "description": "a react-announce declarative to create REST based data stores"
+  },
+  {
+    "name": "react-container-query",
+    "repo": "d6u/react-container-query",
+    "description": "Container Query for React Component"
+  },
+  {
+    "name": "react-dnd-html5-backend",
+    "repo": "gaearon/react-dnd-html5-backend",
+    "description": "HTML5 backend for React DnD"
+  },
+  {
+    "name": "react-idle-timer",
+    "repo": "supremetechnopriest/react-idle-timer",
+    "description": "Activity detection for React.js"
+  },
+  {
+    "name": "react-isomorphic-render",
+    "repo": "halt-hammerzeit/react-isomorphic-render",
+    "description": "Isomorphic rendering with React, Redux, React-router and Redux-router. Includes support for Webpack"
+  },
+  {
+    "name": "react-salvager",
+    "repo": "tanem/react-salvager",
+    "description": "Reuse row elements when displaying large datasets."
+  },
+  {
+    "name": "redux-devtools-filter-actions",
+    "repo": "zalmoxisus/redux-devtools-filter-actions",
+    "description": "A composable monitor for Redux DevTools with the ability to filter actions."
+  },
+  {
+    "name": "redux-segment",
+    "repo": "rangle/redux-segment",
+    "description": "Segment.io analytics integration for redux."
+  },
+  {
+    "name": "swarm-react",
+    "repo": "olebedev/swarm-react",
+    "description": "Official React bindings for Swarm.js"
   }
 ]

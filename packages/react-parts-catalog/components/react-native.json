@@ -295,7 +295,7 @@
   {
     "name": "react-native-communications",
     "repo": "anarchicknight/react-native-communications",
-    "description": "Easily call, email, text or iMessage someone in React Native"
+    "description": "Easily call, email, text or iMessage (iOS only) someone in React Native"
   },
   {
     "name": "react-native-segmented-view",
@@ -2640,7 +2640,7 @@
   },
   {
     "name": "react-native-chart-android",
-    "repo": "hongyin163/react-native-mpchart",
+    "repo": "hongyin163/react-native-chart-android",
     "description": "react-native-mpchart provide modules to add chart to android,all charts are come from mpandroidchart library."
   },
   {
@@ -2662,5 +2662,10 @@
     "name": "react-native-social-auth",
     "repo": "xxsnakerxx/react-native-social-auth",
     "description": "React Native module provides auth methods via social networks using native APIs"
+  },
+  {
+    "name": "react-native-android-kdb",
+    "repo": "ksanaforge/react-native-android-kdb",
+    "description": "KDB binding for Android"
   }
 ]
