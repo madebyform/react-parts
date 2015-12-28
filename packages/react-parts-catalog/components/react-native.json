@@ -2667,5 +2667,25 @@
     "name": "react-native-android-kdb",
     "repo": "ksanaforge/react-native-android-kdb",
     "description": "KDB binding for Android"
+  },
+  {
+    "name": "react-native-ecc",
+    "repo": "tradle/react-native-ecc",
+    "description": "basic elliptic curve crypto for React Native"
+  },
+  {
+    "name": "react-native-floating-label",
+    "repo": "APSL/react-native-floating-label",
+    "description": "A floating label text input factory for tcomb-form-native"
+  },
+  {
+    "name": "react-native-passcode-status",
+    "repo": "tradle/react-native-passcode-status",
+    "description": "check passcode status on device"
+  },
+  {
+    "name": "rn.daterangepicker",
+    "repo": "solome/RNDateRangePicker",
+    "description": "React Native component: Date range picker."
   }
 ]

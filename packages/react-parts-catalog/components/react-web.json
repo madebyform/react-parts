@@ -10313,8 +10313,7 @@
   {
     "name": "react-component-tools",
     "repo": "luqin/react-component-tools",
-    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload",
-    "original_repo": "luqin/react-pack"
+    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload"
   },
   {
     "name": "react-desktop",
@@ -14129,8 +14128,7 @@
   {
     "name": "react-pack",
     "repo": "luqin/react-component-tools",
-    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload",
-    "original_repo": "luqin/react-pack"
+    "description": "Common gulp tasks for building react components, examples. Webpack, Gulp, Babel, SASS, LESS, Live reload, React hot reload"
   },
   {
     "name": "react-pubsub",
@@ -14753,7 +14751,7 @@
   {
     "name": "fastflux",
     "repo": "rvikmanis/fastflux",
-    "description": "Lightweight FRP-inspired flux implementation"
+    "description": "Message driven reactive state management"
   },
   {
     "name": "generator-react-babel",
@@ -15003,7 +15001,7 @@
   {
     "name": "node-async-require",
     "repo": "jaydenlin/node-async-require",
-    "description": "transparently require() node modules react-templates .rt file from node"
+    "description": "Transparently require() remote contents (node moudles) in Node.js !"
   },
   {
     "name": "rc-tree-select",
@@ -15054,5 +15052,89 @@
     "name": "swarm-react",
     "repo": "olebedev/swarm-react",
     "description": "Official React bindings for Swarm.js"
+  },
+  {
+    "name": "babel-plugin-react-intl-to-properties",
+    "repo": "tarrencev/babel-plugin-react-intl-to-properties",
+    "description": "Extracts string messages for translation from modules that use React Intl into a .properties file."
+  },
+  {
+    "name": "ballade",
+    "repo": "chenmnkken/ballade",
+    "description": "For unidirectional data flow."
+  },
+  {
+    "name": "easy-flux",
+    "repo": "xblxc/flux",
+    "description": "This is just a mix of Dispatcher, EventEmmiter , and some optimization for a better encoding and debugg experience;"
+  },
+  {
+    "name": "grunt-jsxdom",
+    "repo": "treycordova/grunt-jsxdom",
+    "description": "Grunt task for jsxdom."
+  },
+  {
+    "name": "gulp-jsxdom",
+    "repo": "treycordova/gulp-jsxdom",
+    "description": "Gulp plugin for jsxdom."
+  },
+  {
+    "name": "hut",
+    "repo": "okorz001/hut",
+    "description": "A minimal framework for isomorphic apps with react and redux"
+  },
+  {
+    "name": "prot",
+    "repo": "mattdesl/prot",
+    "description": "highly opinionated dev environment"
+  },
+  {
+    "name": "react-accordion-components",
+    "repo": "cht8687/react-accordion",
+    "description": "display headers and content panels into as an accordion."
+  },
+  {
+    "name": "react-bicycle",
+    "repo": "bicyclejs/react-bicycle",
+    "description": "React bindings for the bicycle data synchronisation library"
+  },
+  {
+    "name": "react-split-layout",
+    "repo": "siuying/react-split-layout",
+    "description": "A React component that separate two or more views with a draggable divider.",
+    "original_repo": ""
+  },
+  {
+    "name": "react-split-panel",
+    "repo": "oheard/react-split-panel",
+    "description": "A split panel component for React."
+  },
+  {
+    "name": "react-towel",
+    "repo": "danmartinez101/react-towel",
+    "description": "Rapid React Prototyping"
+  },
+  {
+    "name": "redux-tooltip",
+    "repo": "kuy/redux-tooltip",
+    "description": "A tooltip React component for Redux"
+  },
+  {
+    "name": "resurge",
+    "repo": "brentvatne/resurge",
+    "description": "Instant React app setup and deploy with surge.sh",
+    "original_repo": ""
+  },
+  {
+    "name": "swagger-models-to-react-proptypes",
+    "repo": "pwmckenna/swagger-models-to-react-proptypes",
+    "description": "CLI that generates React propType definitions from a swagger endpoint",
+    "original_repo": ""
+  },
+  {
+    "name": "wysiwyg-editor-react",
+    "repo": "fayzaan/wysiwyg-editor-react",
+    "description": "WYSIWYG Editor for React JS .13.3+",
+    "original_repo": ""
   }
 ]
