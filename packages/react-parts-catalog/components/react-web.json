@@ -8700,7 +8700,7 @@
   {
     "name": "modcss",
     "repo": "jameswomack/modcss",
-    "description": "Node.js Require extension and Browserify/dcompose transform to convert CSS or Stylus into an JSON object"
+    "description": "Node.js require extension, Browserify/dcompose transform & Webpack loader for converting CSS|Stylus into JSON"
   },
   {
     "name": "react-decompiler",
@@ -10514,7 +10514,7 @@
   {
     "name": "structor",
     "repo": "ipselon/structor",
-    "description": "A user interface builder for node.js Web applications with React UI"
+    "description": "A user interface builder for Web applications with React UI"
   },
   {
     "name": "tag-search",
@@ -14093,7 +14093,7 @@
   {
     "name": "nwb",
     "repo": "insin/nwb",
-    "description": "A development tool for React, other web apps and npm web modules"
+    "description": "CLI tool for React apps and components & plain JS apps and npm modules"
   },
   {
     "name": "react-accessible-fa",
@@ -14781,7 +14781,7 @@
   {
     "name": "react-drag-sortable",
     "repo": "tom-s/react-drag-sortable",
-    "description": "React drag & drop sortable list component"
+    "description": "React drag & drop highly customizable sortable list component"
   },
   {
     "name": "react-es6-webpack-boilerplate",
@@ -14855,8 +14855,9 @@
   },
   {
     "name": "redux-remote-monitor",
-    "repo": "zalmoxisus/redux-remote-monitor",
-    "description": "A custom monitor for Redux DevTools to relay Redux actions."
+    "repo": "zalmoxisus/remote-redux-devtools",
+    "description": "A custom monitor for Redux DevTools to relay Redux actions.",
+    "original_repo": "zalmoxisus/redux-remote-monitor"
   },
   {
     "name": "redux-toastr",
@@ -15136,5 +15137,116 @@
     "repo": "fayzaan/wysiwyg-editor-react",
     "description": "WYSIWYG Editor for React JS .13.3+",
     "original_repo": ""
+  },
+  {
+    "name": "apeman-bud-react",
+    "repo": "apeman-bud-labo/apeman-bud-react",
+    "description": "apeman bud for React files."
+  },
+  {
+    "name": "babel-plugin-transform-react-remove-prop-types",
+    "repo": "oliviertassinari/babel-plugin-transform-react-remove-prop-types",
+    "description": "Remove unnecessary React propTypes from the production build"
+  },
+  {
+    "name": "html-to-react-components",
+    "repo": "roman01la/html-to-react-components",
+    "description": "Extract annotated HTML components from HTML documents into React components",
+    "original_repo": ""
+  },
+  {
+    "name": "inline-style-linter",
+    "repo": "rofrischmann/inline-style-linter",
+    "description": "Linting tools for inline style objects"
+  },
+  {
+    "name": "material-ui-html-field",
+    "repo": "maichong/material-ui-html-field",
+    "description": "Html WYSIWYG editor based on react & material-ui & simditor"
+  },
+  {
+    "name": "quik",
+    "repo": "satya164/quik",
+    "description": "A quick way to prototype apps with React and Babel."
+  },
+  {
+    "name": "rc-cascader",
+    "repo": "react-component/cascader",
+    "description": "cascade select ui component for react"
+  },
+  {
+    "name": "react-announce-hydrate",
+    "repo": "tusharmath/react-announce-hydrate",
+    "description": "dispatches component lifecyle events to an observer"
+  },
+  {
+    "name": "react-chronicle-router",
+    "repo": "artificialtrends/react-chronicle-router",
+    "description": "A router for ReactJS with full HTML5 history and Isomorphic support."
+  },
+  {
+    "name": "react-cropperjs",
+    "repo": "TAPP-TV/react-cropperjs",
+    "description": "Cropper as React components"
+  },
+  {
+    "name": "react-dev-server",
+    "repo": "dat2/react-dev-server",
+    "description": "A simple wrapper around webpack-dev-server"
+  },
+  {
+    "name": "react-dnd-sortable",
+    "repo": "influitive/react-dnd-sortable",
+    "description": "Drag/Drop sortable collections using React-DnD"
+  },
+  {
+    "name": "react-icon-svg-symbol",
+    "repo": "ryaneof/react-icon-svg-symbol",
+    "description": "A simple icon component for React using SVG Symbol."
+  },
+  {
+    "name": "react-json-pretty",
+    "repo": "chenckang/react-json-pretty",
+    "description": "A code formatting tool for raw json data"
+  },
+  {
+    "name": "react-lite",
+    "repo": "Lucifier129/react-lite",
+    "description": "simple react"
+  },
+  {
+    "name": "react-loading-order-with-animation",
+    "repo": "keske/react-loading-order-with-animation",
+    "description": "React Loading Order With Animation"
+  },
+  {
+    "name": "react-nd-date",
+    "repo": "yaolx/react-nd-date",
+    "description": "A React component for choosing dates and date ranges."
+  },
+  {
+    "name": "react-redux-controller",
+    "repo": "artsy/react-redux-controller",
+    "description": "Library for creating a controller layer to link React and Redux."
+  },
+  {
+    "name": "react-redux-ducks",
+    "repo": "salsita/react-redux-ducks",
+    "description": "React supplementary toolset for redux-ducks."
+  },
+  {
+    "name": "react-shaded",
+    "repo": "3axap4eHko/react-shaded",
+    "description": "React Shaded is a tiny JavaScript library to use ReactJS in HTML markup through Shadow DOM."
+  },
+  {
+    "name": "react-toggles",
+    "repo": "yesvods/react-toggles",
+    "description": "Full function boilerplate to take advantage of latest ECMAScript(JavaScript) Feature.Build your react component, javascript utils and so on. The limitation is your imagination"
+  },
+  {
+    "name": "react-transform-render-visualizer",
+    "repo": "spredfast/react-transform-render-visualizer",
+    "description": "Render visualizer for ReactJS"
   }
 ]

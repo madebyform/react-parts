@@ -2687,5 +2687,55 @@
     "name": "rn.daterangepicker",
     "repo": "solome/RNDateRangePicker",
     "description": "React Native component: Date range picker."
+  },
+  {
+    "name": "generator-react-dom-native",
+    "repo": "sesteva/generator-react-dom-native",
+    "description": "Yeoman generator: Create project and components for both Web and Native sharing all logic"
+  },
+  {
+    "name": "react-native-dragablelist",
+    "repo": "hzzcc/react-native-dragablelist",
+    "description": "###How do I use it?"
+  },
+  {
+    "name": "react-native-estylo",
+    "repo": "leoantongiovanni/react-native-estylo",
+    "description": "Library Style"
+  },
+  {
+    "name": "react-native-google-analytics-bridge",
+    "repo": "idehub/react-native-google-analytics-bridge",
+    "description": "React Native bridge for using native Google Analytics libraries on iOS and Android"
+  },
+  {
+    "name": "react-native-helight-button",
+    "repo": "Yu-Liang/react-native-helight-button",
+    "description": "A React Native component works like UIButton"
+  },
+  {
+    "name": "react-native-http-cache",
+    "repo": "reactnativecn/react-native-http-cache",
+    "description": "Control http cache used by fetch/XMLHttpRequest"
+  },
+  {
+    "name": "react-native-pdf-view",
+    "repo": "cnjon/react-native-pdf-view",
+    "description": "view pdf file using react-native"
+  },
+  {
+    "name": "react-native-popup",
+    "repo": "beefe/react-native-popup",
+    "description": "popup for react-native"
+  },
+  {
+    "name": "react-native-refresh-loadmore-scrollview",
+    "repo": "18603027075/react-native-refresh-loadmore-scrollview",
+    "description": "react-native-refresh-loadmore-scrollview written in java and javascript for android support"
+  },
+  {
+    "name": "react-native-videocore",
+    "repo": "GuilhermeMedeiros/react-native-videocore",
+    "description": "A react-native wrapper for the VideoCore iOS library"
   }
 ]
