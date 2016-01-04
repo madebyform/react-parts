@@ -1229,7 +1229,7 @@
   {
     "name": "react-native-gesture-password",
     "repo": "Spikef/react-native-gesture-password",
-    "description": "A gesture password component for React Native"
+    "description": "A gesture password component for React Native. It supports both iOS and Android since it's' written in pure JavaScript."
   },
   {
     "name": "react-native-html-to-pdf",
@@ -2005,7 +2005,7 @@
   {
     "name": "react-native-progress-circular",
     "repo": "andy9775/React-Native-CircularProgress",
-    "description": "A pure React Native Component for circular progress bars for both iOS and Android."
+    "description": "A pure React Native Component for circular progress bars for iOS."
   },
   {
     "name": "react-native-seekbar-android",
@@ -2695,8 +2695,9 @@
   },
   {
     "name": "react-native-dragablelist",
-    "repo": "hzzcc/react-native-dragablelist",
-    "description": "###How do I use it?"
+    "repo": "hzzcc/react-native-draggablelist",
+    "description": "###How do I use it?",
+    "original_repo": "hzzcc/react-native-dragablelist"
   },
   {
     "name": "react-native-estylo",
@@ -2710,8 +2711,9 @@
   },
   {
     "name": "react-native-helight-button",
-    "repo": "Yu-Liang/react-native-helight-button",
-    "description": "A React Native component works like UIButton"
+    "repo": "reddingit/react-native-helight-button",
+    "description": "A React Native component works like UIButton",
+    "original_repo": "Yu-Liang/react-native-helight-button"
   },
   {
     "name": "react-native-http-cache",
@@ -2737,5 +2739,25 @@
     "name": "react-native-videocore",
     "repo": "GuilhermeMedeiros/react-native-videocore",
     "description": "A react-native wrapper for the VideoCore iOS library"
+  },
+  {
+    "name": "fastui-form",
+    "repo": "roscoe054/fastui-form",
+    "description": "基于React Native的form表单"
+  },
+  {
+    "name": "react-native-busy-indicator",
+    "repo": "Durgaprasad-Budhwani/react-native-busy-indicator",
+    "description": "A simple busy indicator which can be trigger from any child or navigated page in react native application"
+  },
+  {
+    "name": "react-native-google-app-invites",
+    "repo": "slowpath/react-native-google-app-invites",
+    "description": "Google App Invites for your react native applications"
+  },
+  {
+    "name": "react-native-spinner-android",
+    "repo": "webschik/react-native-spinner-android",
+    "description": "Android Spinner component for React Native"
   }
 ]

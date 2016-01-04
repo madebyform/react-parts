@@ -279,8 +279,8 @@
   },
   {
     "name": "made-with-heart",
-    "repo": "jugoncalves/heart",
-    "original_repo": "",
+    "repo": "cyberglot/heart",
+    "original_repo": "jugoncalves/heart",
     "description": "made with <3 component for React"
   },
   {
@@ -3171,8 +3171,7 @@
   {
     "name": "react-date-field",
     "repo": "zippyui/react-date-field",
-    "description": "React DateField",
-    "original_repo": "radubrehar/react-date-field"
+    "description": "React DateField"
   },
   {
     "name": "react-debug",
@@ -4222,8 +4221,9 @@
   },
   {
     "name": "primed",
-    "repo": "iceddev/primed",
-    "description": "Stateless React components based on GitHub's Primer CSS toolkit"
+    "repo": "phated/primed",
+    "description": "Stateless React components based on GitHub's Primer CSS toolkit",
+    "original_repo": "iceddev/primed"
   },
   {
     "name": "react-aria-menubutton",
@@ -9337,7 +9337,7 @@
   {
     "name": "inline-style-prefixer",
     "repo": "rofrischmann/inline-style-prefixer",
-    "description": "Autoprefixer for Inline Style objects using userAgent and caniuse data"
+    "description": "Autoprefixer for inline styles using userAgent and caniuse data"
   },
   {
     "name": "jsx-gettext-extract-loader",
@@ -9921,8 +9921,7 @@
   {
     "name": "redux-router",
     "repo": "acdlite/redux-router",
-    "description": "Redux bindings for React Router — keep your router state inside your Redux Store.",
-    "original_repo": "rackt/redux-router"
+    "description": "Redux bindings for React Router — keep your router state inside your Redux Store."
   },
   {
     "name": "react-a11y",
@@ -13614,7 +13613,7 @@
   {
     "name": "gulp-jsx-coverage",
     "repo": "zordius/gulp-jsx-coverage",
-    "description": "Enable coverage on .JSX or .coffee files."
+    "description": "Enable istanbul or isparta coverage on ES2015/babel or coffee-script/cjsx files when you do mocha/jasmine tests, also deal with sourceMap for coverage report and stack trace."
   },
   {
     "name": "knock-knock-go",
@@ -15151,13 +15150,13 @@
   {
     "name": "html-to-react-components",
     "repo": "roman01la/html-to-react-components",
-    "description": "Extract annotated HTML components from HTML documents into React components",
+    "description": "Extract annotated portions of HTML into React components as separate modules",
     "original_repo": ""
   },
   {
     "name": "inline-style-linter",
     "repo": "rofrischmann/inline-style-linter",
-    "description": "Linting tools for inline style objects"
+    "description": "Linting tools for inline styles"
   },
   {
     "name": "material-ui-html-field",
@@ -15167,7 +15166,7 @@
   {
     "name": "quik",
     "repo": "satya164/quik",
-    "description": "A quick way to prototype apps with React and Babel."
+    "description": "A quick way to prototype apps with React and Babel with zero-setup."
   },
   {
     "name": "rc-cascader",
@@ -15212,7 +15211,7 @@
   {
     "name": "react-lite",
     "repo": "Lucifier129/react-lite",
-    "description": "simple react"
+    "description": "an implementation of React that optimizes for small script size"
   },
   {
     "name": "react-loading-order-with-animation",
@@ -15248,5 +15247,125 @@
     "name": "react-transform-render-visualizer",
     "repo": "spredfast/react-transform-render-visualizer",
     "description": "Render visualizer for ReactJS"
+  },
+  {
+    "name": "babel-plugin-react-autorequire",
+    "repo": "Coobaha/babel-plugin-react-autorequire",
+    "description": "This plugin will autorequire all jsx components from global scope"
+  },
+  {
+    "name": "create-markup",
+    "repo": "janjarfalk/create-markup",
+    "description": "Create a dangerouslySetInnerHTML object for React."
+  },
+  {
+    "name": "electron-prebuilt-compile",
+    "repo": "paulcbetts/electron-prebuilt-compile",
+    "description": "electron-prebuilt that automatically understands Babel + React + LESS"
+  },
+  {
+    "name": "express-partial-react-views",
+    "repo": "jaydenlin/express-partial-react-views",
+    "description": "Express view engine which renders partial react views in a base html file"
+  },
+  {
+    "name": "generator-redux-react",
+    "repo": "frangucc/generator-redux-react",
+    "description": "Redux react project structure for the microservices-ecs-empire-seed"
+  },
+  {
+    "name": "maco",
+    "repo": "anvaka/maco",
+    "description": "classless react"
+  },
+  {
+    "name": "react-data-actions",
+    "repo": "nuvi/react-data-actions",
+    "description": "React data managers."
+  },
+  {
+    "name": "react-fluxible-i18n",
+    "repo": "zoover/react-fluxible-i18n",
+    "description": "A simple i18n translation & localization library for React+Fluxible applications."
+  },
+  {
+    "name": "react-html-email",
+    "repo": "chromakode/react-html-email",
+    "description": "Create elegant HTML email templates using React."
+  },
+  {
+    "name": "react-komposer",
+    "repo": "kadirahq/react-komposer",
+    "description": "Compose React containers and feed data into components."
+  },
+  {
+    "name": "react-monk",
+    "repo": "themouette/react-monk",
+    "description": "React cli tool to help with your JavaScript fatigue"
+  },
+  {
+    "name": "react-pageable-table",
+    "repo": "pgrimard/react-pageable-table",
+    "description": "React pageable table component"
+  },
+  {
+    "name": "react-s-alert",
+    "repo": "juliancwirko/react-s-alert",
+    "description": "Alerts / Notifications for React with rich configuration options"
+  },
+  {
+    "name": "react-shadow-dom",
+    "repo": "3axap4eHko/react-shadow-dom",
+    "description": "React Shadow DOM is a tiny JavaScript library to use ReactJS in HTML markup through Shadow DOM."
+  },
+  {
+    "name": "react-snow-effect",
+    "repo": "jungledre/react-snow-effect",
+    "description": "let it snow"
+  },
+  {
+    "name": "react-static-webpack-plugin",
+    "repo": "iansinnott/react-static-webpack-plugin",
+    "description": "Build full static sites using React, React Router and Webpack"
+  },
+  {
+    "name": "react-svgpathplayer",
+    "repo": "saschwarz/react-svgpathplayer",
+    "description": "React component for animating an SVG path and/or a series of SVG paths."
+  },
+  {
+    "name": "react-sync",
+    "repo": "moodysalem/react-sync",
+    "description": "A react component that handles data fetching and saving, following Backbone Model and Collection patterns"
+  },
+  {
+    "name": "redouter",
+    "repo": "masotime/redouter",
+    "description": "redouter is a library of functions an opinion of how to integrate React, redux and react-router to generate universal web applications"
+  },
+  {
+    "name": "searchkit",
+    "repo": "searchkit/searchkit",
+    "description": "A suite of react components to help create a UI quickly for elasticsearch "
+  },
+  {
+    "name": "tooling",
+    "repo": "egoist/tooling",
+    "description": "One tooling, No setup."
+  },
+  {
+    "name": "transfigure-babel",
+    "repo": "popeindustries/transfigure-babel",
+    "description": "Transfigure (https://www.npmjs.com/package/transfigure) plugin for es6+ source transforms (via Babel)"
+  },
+  {
+    "name": "uxcore-calendar",
+    "repo": "uxcore/uxcore-calendar",
+    "description": "calendar componment for react"
+  },
+  {
+    "name": "webpack-hot-server",
+    "repo": "egoist/webpack-hot-server",
+    "description": "A short-hand to establish a web server for hot reloading."
   }
 ]
