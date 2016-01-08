@@ -2279,8 +2279,7 @@
     "name": "react-native-digits",
     "repo": "fixt/react-native-digits",
     "description": "Digits React Native module",
-    "original_repo": "",
-    "original_description": "##Android"
+    "original_description": "Digits wrapper to use in React Native"
   },
   {
     "name": "react-native-redux-router",
@@ -2759,5 +2758,40 @@
     "name": "react-native-spinner-android",
     "repo": "webschik/react-native-spinner-android",
     "description": "Android Spinner component for React Native"
+  },
+  {
+    "name": "react-native-android-tablayout",
+    "repo": "AlbertBrand/react-native-android-tablayout",
+    "description": "React Native Android native TabLayout component"
+  },
+  {
+    "name": "react-native-autopilot",
+    "repo": "jerolimov/react-native-autopilot",
+    "description": "Automatically push and pop navigator routes/scenes/screens if the navigator props was changed."
+  },
+  {
+    "name": "react-native-camera-android",
+    "repo": "NorthFoxz/react-native-camera-android",
+    "description": "React native camera view"
+  },
+  {
+    "name": "react-native-progress-bar-classic",
+    "repo": "moschan/react-native-progress-bar-classic",
+    "description": "Simple animated progress bar for React Native"
+  },
+  {
+    "name": "react-native-pull-to-refresh",
+    "repo": "moschan/react-native-pull-to-refresh",
+    "description": "The Pull-To-Refresh ScrollView component for React Native"
+  },
+  {
+    "name": "react-native-smart-scroll-view",
+    "repo": "jrans/react-native-smart-scroll-view",
+    "description": "Handles keyboard events and auto adjusts content to be visible above keyboard on focus. Further scrolling features available."
+  },
+  {
+    "name": "react-native-twilio",
+    "repo": "rogchap/react-native-twilio",
+    "description": "A React Native wrapper for the Twilio mobile SDK"
   }
 ]

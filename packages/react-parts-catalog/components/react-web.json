@@ -466,8 +466,9 @@
   },
   {
     "name": "react-dropzone",
-    "repo": "paramaggarwal/react-dropzone",
-    "description": "Simple HTML5 drag-drop zone with React.js"
+    "repo": "okonet/react-dropzone",
+    "description": "Simple HTML5 drag-drop zone with React.js",
+    "original_repo": "paramaggarwal/react-dropzone"
   },
   {
     "name": "react-easy-sortable-table",
@@ -7335,7 +7336,7 @@
   },
   {
     "name": "fluxible-router",
-    "repo": "yahoo/fluxible-router",
+    "repo": "yahoo/fluxible",
     "description": "Routing for Fluxible applications"
   },
   {
@@ -7942,7 +7943,7 @@
   {
     "name": "dataminr-react-components",
     "repo": "dataminr/react-components",
-    "description": "A collection of reusable React components with their own Flux lifecycle."
+    "description": "Collection of reusable React Components and utility functions"
   },
   {
     "name": "react-bem-grid",
@@ -9440,7 +9441,7 @@
     "name": "expanded-react-test-utils",
     "repo": "dataminr/expanded-react-test-utils",
     "description": "Additional functions beyond the existing ReactJS test utilities to make testing quicker and easier",
-    "original_description": "Additional functions beyond the [existing ReactJS test utilities](http://facebook.github.io/react/docs/test-utils.html) to make testing quicker and easier. Adds the following functionality:"
+    "original_description": "Additional unit testing utilities for unit testing React applications"
   },
   {
     "name": "flourish",
@@ -10408,7 +10409,7 @@
   {
     "name": "endothermic",
     "repo": "dralletje/endothermic",
-    "description": "Link up react components with firebase"
+    "description": "Create React Components with Firebase bindings w/ ES7 Syntax"
   },
   {
     "name": "react-animachine-enhancer",
@@ -14528,8 +14529,9 @@
   },
   {
     "name": "react-redux-provide-history",
-    "repo": "loggur/react-redux-provide-history",
-    "description": "Provides the HTML5 History API to React components."
+    "repo": "loggur/react-redux-provide-page",
+    "description": "Provides the HTML5 History API to React components.",
+    "original_repo": "loggur/react-redux-provide-history"
   },
   {
     "name": "react-resize-sensor",
@@ -15281,7 +15283,7 @@
   {
     "name": "react-data-actions",
     "repo": "nuvi/react-data-actions",
-    "description": "React data managers."
+    "description": "React data action generators for RESTful and stateful actions."
   },
   {
     "name": "react-fluxible-i18n",
@@ -15367,5 +15369,116 @@
     "name": "webpack-hot-server",
     "repo": "egoist/webpack-hot-server",
     "description": "A short-hand to establish a web server for hot reloading."
+  },
+  {
+    "name": "falcor-shapes-prop-types",
+    "repo": "jesstelford/falcor-shapes-prop-types",
+    "description": "Conversion from falcor-shapes to React propTypes"
+  },
+  {
+    "name": "generator-react-jspm",
+    "repo": "tyrsius/generator-react-jspm",
+    "description": "A React/jspm Full Project generator, using Redux"
+  },
+  {
+    "name": "inline-style-transformer",
+    "repo": "rofrischmann/inline-style-transformer",
+    "description": "Transformation tools for CSS and inline styles"
+  },
+  {
+    "name": "interpolate-components",
+    "repo": "Automattic/interpolate-components",
+    "description": "A module to turn strings into structured React components without dangerouslyInsertInnerHTML()"
+  },
+  {
+    "name": "lore-cli",
+    "repo": "storcery/lore-cli",
+    "description": "Command Line Interface for Lore (A convention driven framework for React + Redux applications)"
+  },
+  {
+    "name": "pouchdb-redux-helper",
+    "repo": "bmihelac/pouchdb-redux-helper",
+    "description": "Helpers for working with PouchDB in React with Redux store."
+  },
+  {
+    "name": "rc-scroll-anim",
+    "repo": "ant-motion/scroll-anim",
+    "description": "scroll-anim anim component for react"
+  },
+  {
+    "name": "rc-tween-one",
+    "repo": "ant-motion/tween-one",
+    "description": "tween-one anim component for react"
+  },
+  {
+    "name": "react-auto-scroll",
+    "repo": "cesarandreu/react-auto-scroll",
+    "description": "A HOC that will auto-scroll to the bottom when a property changes"
+  },
+  {
+    "name": "react-default-props",
+    "repo": "moodysalem/react-default-props",
+    "description": "A helper function to return a new react component with default props"
+  },
+  {
+    "name": "react-dnd-text-dragpreview",
+    "repo": "jaketrent/react-dnd-text-dragpreview",
+    "description": "Textual drag preview for react-dnd drag and drop"
+  },
+  {
+    "name": "react-easy-swipe",
+    "repo": "leandrowd/react-easy-swipe",
+    "description": "React easy swipe - Easy handler for common touch operations"
+  },
+  {
+    "name": "react-if-comp",
+    "repo": "gfdev/javascript-react-if-component",
+    "description": "React component for conditional rendering of embedded elements or props"
+  },
+  {
+    "name": "react-list-combo",
+    "repo": "shockjs/react-list-combo",
+    "description": "An isomorphic group of components for table data and pagination."
+  },
+  {
+    "name": "react-redux-provide-page",
+    "repo": "loggur/react-redux-provide-page",
+    "description": "Provides routing and server rendering utilities via the HTML5 History API to React components."
+  },
+  {
+    "name": "react-resizable-and-movable",
+    "repo": "bokuweb/react-resizable-and-movable",
+    "description": "Resizable and movable component for React.",
+    "original_repo": "bokuweb/react-resazable-and-movable"
+  },
+  {
+    "name": "react-simple-file-input",
+    "repo": "greena13/react-simple-file-input",
+    "description": "Simple wrapper for the HTML input tag and HTML5 FileReader API"
+  },
+  {
+    "name": "react-tab-layout",
+    "repo": "divyenduz/react-tab-layout",
+    "description": "A react tab layout library that looks like the Android tab layout component (http://w3z.in/27ef). This library is heavily inspired from react-swipe-views (http://w3z.in/845) but it does not support the swipe feature and supports dynamically changing child"
+  },
+  {
+    "name": "react-timestamp",
+    "repo": "nathanhoad/react-timestamp",
+    "description": "A React component for displaying a datetime in the local timezone"
+  },
+  {
+    "name": "react-uikit-components",
+    "repo": "otissv/react-uikit-components",
+    "description": "React UIkit components for UIkit CSS framework."
+  },
+  {
+    "name": "redux-devtools-chart-monitor",
+    "repo": "romseguy/redux-devtools-chart-monitor",
+    "description": "Chart monitor for Redux DevTools"
+  },
+  {
+    "name": "remote-redux-devtools",
+    "repo": "zalmoxisus/remote-redux-devtools",
+    "description": "Relay Redux actions to remote Redux DevTools."
   }
 ]
