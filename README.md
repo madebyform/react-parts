@@ -1,5 +1,9 @@
 [![React.parts — A catalog of React Native components](https://react.parts/react-parts.svg)](https://react.parts)
 
+##### We've moved! Check out our new catalog: [JS.coach](https://js.coach)
+
+---
+
 ### Adding a new project to the catalog
 
 In order to be listed in the catalog, a React-related project should meet the following criteria:

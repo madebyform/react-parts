@@ -12,6 +12,7 @@ import {Tabs, Tab} from './components/tabs-component.jsx';
 import Pagination from './components/pagination-component.jsx';
 import Footer from './components/footer-component.jsx';
 import Twitter from './components/twitter-component.jsx';
+import DeprecationNotice from './components/deprecation-notice-component.jsx';
 
 let Route = Router.Route;
 let RouteHandler = Router.RouteHandler;
@@ -58,6 +59,8 @@ export var App = React.createClass({
     };
     return (
       <div style={styles.container}>
+        <DeprecationNotice />
+
         <Navbar
           title={title}
           height={this.remCalc(55)}
